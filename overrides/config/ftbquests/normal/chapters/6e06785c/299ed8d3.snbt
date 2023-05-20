@@ -1,0 +1,37 @@
+{
+	x: 4.5d,
+	y: 0.0d,
+	dependencies: [
+		"485b3100"
+	],
+	tasks: [{
+		uid: "df7a4b28",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:mold"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d90711ea",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:mold 1 2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "67d42235",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:mold 1 4"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8ea81073",
+		type: "item",
+		item: "immersiveengineering:wirecoil 1 2",
+		count: 8
+	}]
+}

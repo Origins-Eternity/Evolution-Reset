@@ -1,0 +1,28 @@
+{
+	x: 9.5d,
+	y: 3.5d,
+	dependencies: [
+		"03527f4d"
+	],
+	tasks: [{
+		uid: "bc45450e",
+		type: "item",
+		items: [{
+			item: "draconicevolution:fusion_crafting_core"
+		}]
+	},
+	{
+		uid: "3235cdfc",
+		type: "item",
+		items: [{
+			item: "draconicevolution:crafting_injector"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "f18816f7",
+		type: "item",
+		item: "draconicevolution:draconium_ingot",
+		count: 16
+	}]
+}

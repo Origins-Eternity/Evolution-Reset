@@ -1,0 +1,15 @@
+{
+	x: 14.0d,
+	y: 0.0d,
+	dependencies: [
+		"e13017e3"
+	],
+	tasks: [{
+		uid: "d3c00080",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:stationbuilder"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	x: 5.0d,
+	y: -3.0d,
+	dependencies: [
+		"41cdad0f"
+	],
+	tasks: [{
+		uid: "52ed8c70",
+		type: "item",
+		items: [{
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "bronze"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "62e1bcd0",
+		type: "ftbmoney:money",
+		ftb_money: 100L,
+		random_bonus: 50
+	},
+	{
+		uid: "5d8f665b",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	x: 0.0d,
+	y: 1.0d,
+	can_repeat: true,
+	tasks: [{
+		uid: "d1bce2f2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "gemEmerald",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any gemEmerald"
+				}
+			}
+		}],
+		count: 64L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "4e5d55a4",
+		type: "ftbmoney:money",
+		ftb_money: 2000L,
+		random_bonus: 400
+	}]
+}

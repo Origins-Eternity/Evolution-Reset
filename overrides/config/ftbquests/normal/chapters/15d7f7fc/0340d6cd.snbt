@@ -1,0 +1,14 @@
+{
+	x: 13.5d,
+	y: -1.5d,
+	dependencies: [
+		"e13017e3"
+	],
+	tasks: [{
+		uid: "74accdb8",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:satelliteprimaryfunction 1 1"
+		}]
+	}]
+}

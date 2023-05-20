@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: -3.5d,
+	can_repeat: true,
+	tasks: [{
+		uid: "ba4ee3c5",
+		type: "kill",
+		disable_toast: true,
+		entity: "minecraft:creeper",
+		value: 10L
+	}],
+	rewards: [{
+		uid: "29be5d42",
+		type: "ftbmoney:money",
+		ftb_money: 100L
+	}]
+}

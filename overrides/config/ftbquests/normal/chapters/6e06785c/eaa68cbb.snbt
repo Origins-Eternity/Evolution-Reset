@@ -1,0 +1,22 @@
+{
+	x: 12.5d,
+	y: -2.5d,
+	dependencies: [
+		"da823e72",
+		"4856cfc2"
+	],
+	tasks: [{
+		uid: "d17bd38c",
+		type: "item",
+		items: [{
+			id: "botania:twigwand",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d88120fd",
+		type: "xp_levels",
+		xp_levels: 2
+	}]
+}

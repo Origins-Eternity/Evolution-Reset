@@ -1,0 +1,25 @@
+{
+	x: 5.5d,
+	y: -1.5d,
+	dependencies: [
+		"caa4cb2d"
+	],
+	tasks: [{
+		uid: "16d021f1",
+		type: "item",
+		items: [{
+			item: "artisanworktables:workshop"
+		}]
+	}],
+	rewards: [{
+		uid: "18c306e0",
+		type: "xp_levels",
+		xp_levels: 3
+	},
+	{
+		uid: "93b090c3",
+		type: "ftbmoney:money",
+		ftb_money: 100L,
+		random_bonus: 50
+	}]
+}

@@ -1,0 +1,31 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"5fcc2308"
+	],
+	tasks: [{
+		uid: "8b516cf0",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:oxygenscrubber"
+		}]
+	},
+	{
+		uid: "2f440a0f",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:oxygenvent"
+		}]
+	}],
+	rewards: [{
+		uid: "3b5e3353",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "48c995fd",
+		type: "random",
+		table: 0
+	}]
+}

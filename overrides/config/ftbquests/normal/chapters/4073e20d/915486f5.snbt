@@ -1,0 +1,26 @@
+{
+	x: 2.0d,
+	y: 3.0d,
+	dependencies: [
+		"cb37c27f"
+	],
+	tasks: [{
+		uid: "ccadd6d8",
+		type: "item",
+		items: [{
+			item: "scalinghealth:crystalshard"
+		}],
+		only_from_crafting: false
+	}],
+	rewards: [{
+		uid: "c8613a23",
+		type: "ftbmoney:money",
+		ftb_money: 100L,
+		random_bonus: 50
+	},
+	{
+		uid: "566e6039",
+		type: "xp",
+		xp: 10
+	}]
+}

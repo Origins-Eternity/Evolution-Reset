@@ -1,0 +1,31 @@
+{
+	x: -4.0d,
+	y: -2.0d,
+	can_repeat: true,
+	tasks: [{
+		uid: "9c6232b8",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "cropCarrot",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any cropCarrot"
+				}
+			}
+		}],
+		count: 64L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "48ff5a5d",
+		type: "ftbmoney:money",
+		ftb_money: 100L,
+		random_bonus: 50
+	}]
+}

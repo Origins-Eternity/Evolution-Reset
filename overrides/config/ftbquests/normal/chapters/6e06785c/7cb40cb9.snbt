@@ -1,0 +1,19 @@
+{
+	x: 17.0d,
+	y: 3.5d,
+	dependencies: [
+		"f85fd0fa"
+	],
+	tasks: [{
+		uid: "7416caba",
+		type: "item",
+		items: [{
+			item: "scalinghealth:difficultychanger"
+		}]
+	}],
+	rewards: [{
+		uid: "b53eb4ec",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

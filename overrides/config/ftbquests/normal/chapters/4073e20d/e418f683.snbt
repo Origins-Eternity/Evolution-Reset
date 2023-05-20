@@ -1,0 +1,32 @@
+{
+	x: 10.0d,
+	y: -1.0d,
+	dependencies: [
+		"96f28a49"
+	],
+	tasks: [{
+		uid: "ce114409",
+		type: "item",
+		items: [{
+			item: "pyrotech:bag_durable"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7021761f",
+		type: "ftbmoney:money",
+		ftb_money: 100L,
+		random_bonus: 50
+	},
+	{
+		uid: "d203ec37",
+		type: "xp_levels",
+		xp_levels: 2
+	},
+	{
+		uid: "ecea476e",
+		type: "item",
+		item: "scalinghealth:difficultychanger"
+	}]
+}

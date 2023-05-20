@@ -1,0 +1,35 @@
+{
+	x: 3.5d,
+	y: -3.5d,
+	text: [
+		"1FE=1RF"
+	],
+	dependencies: [
+		"7e65161d"
+	],
+	tasks: [{
+		uid: "adcc76d6",
+		type: "forge_energy",
+		value: 1000000L
+	}],
+	rewards: [{
+		uid: "bd31c5c2",
+		type: "xp_levels",
+		xp_levels: 10
+	},
+	{
+		uid: "8587cd13",
+		type: "item",
+		item: "libvulpes:battery 1 1"
+	},
+	{
+		uid: "5e6a27d8",
+		type: "item",
+		item: {
+			id: "mekanism:energycube",
+			tag: {
+				tier: 0
+			}
+		}
+	}]
+}

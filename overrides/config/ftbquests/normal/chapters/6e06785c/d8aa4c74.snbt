@@ -1,0 +1,26 @@
+{
+	x: -2.0d,
+	y: 6.0d,
+	dependencies: [
+		"6b35ffcf"
+	],
+	tasks: [{
+		uid: "d915d68a",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:basalt"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "97ffae58",
+		type: "xp_levels",
+		xp_levels: 2
+	},
+	{
+		uid: "4e589de7",
+		type: "ftbmoney:money",
+		ftb_money: 100L,
+		random_bonus: 50
+	}]
+}

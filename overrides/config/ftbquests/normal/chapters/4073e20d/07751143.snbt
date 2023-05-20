@@ -1,0 +1,27 @@
+{
+	x: -4.0d,
+	y: 0.0d,
+	dependencies: [
+		"583015e3"
+	],
+	tasks: [{
+		uid: "14e595d7",
+		type: "item",
+		items: [{
+			item: "tconstruct:punji"
+		}]
+	},
+	{
+		uid: "48a9db2c",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:tool"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a819070a",
+		type: "item",
+		item: "immersiveengineering:tool 1 3"
+	}]
+}

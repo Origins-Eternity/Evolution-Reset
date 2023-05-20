@@ -1,0 +1,26 @@
+{
+	x: 14.0d,
+	y: 8.5d,
+	dependencies: [
+		"c4159195"
+	],
+	tasks: [{
+		uid: "ad956911",
+		type: "item",
+		items: [{
+			item: "warpbook:warpbook"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "afc5fde1",
+		type: "xp_levels",
+		xp_levels: 1
+	},
+	{
+		uid: "802d8588",
+		type: "item",
+		item: "scalinghealth:difficultychanger"
+	}]
+}

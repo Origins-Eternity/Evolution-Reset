@@ -1,0 +1,33 @@
+{
+	x: 12.5d,
+	y: -3.0d,
+	dependencies: [
+		"bc86aed8"
+	],
+	tasks: [{
+		uid: "4b7848b8",
+		type: "item",
+		items: [{
+			item: "minecraft:bed"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bd785a74",
+		type: "item",
+		item: "minecraft:wool",
+		count: 5,
+		random_bonus: 2
+	},
+	{
+		uid: "e6da7b04",
+		type: "xp_levels",
+		xp_levels: 1
+	},
+	{
+		uid: "23f8be9f",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "bed"
+	}]
+}

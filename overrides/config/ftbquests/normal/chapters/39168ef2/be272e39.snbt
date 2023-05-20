@@ -1,0 +1,44 @@
+{
+	x: 0.0d,
+	y: -1.0d,
+	dependencies: [
+		"53d4ae77"
+	],
+	tasks: [{
+		uid: "9a3526e6",
+		type: "item",
+		items: [{
+			item: "mekanism:jetpack"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b42c96c0",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 14"
+		}]
+	},
+	{
+		uid: "2fa4df80",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 15"
+		}],
+		count: 3L
+	},
+	{
+		uid: "946e23f4",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock3 1 6"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8fdb19e7",
+		type: "random",
+		table: 2
+	}]
+}

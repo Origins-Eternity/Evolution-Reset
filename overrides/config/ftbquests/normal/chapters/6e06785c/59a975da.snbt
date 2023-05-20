@@ -1,0 +1,28 @@
+{
+	x: -4.5d,
+	y: 2.5d,
+	dependencies: [
+		"80659e05",
+		"2c3f7b43",
+		"c550895b"
+	],
+	tasks: [{
+		uid: "eb7516ad",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_nugget"
+		}],
+		count: 9L
+	}],
+	rewards: [{
+		uid: "d95c0404",
+		type: "xp_levels",
+		xp_levels: 2
+	},
+	{
+		uid: "e5d2ef97",
+		type: "item",
+		item: "pyrotech:material 1 19",
+		count: 10
+	}]
+}

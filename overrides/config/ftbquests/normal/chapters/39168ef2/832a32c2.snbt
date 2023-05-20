@@ -1,0 +1,15 @@
+{
+	x: -3.0d,
+	y: 0.5d,
+	dependencies: [
+		"4f014745",
+		"a81118d7"
+	],
+	tasks: [{
+		uid: "37429581",
+		type: "item",
+		items: [{
+			item: "endercompass:ender_compass"
+		}]
+	}]
+}

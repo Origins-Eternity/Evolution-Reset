@@ -1,0 +1,23 @@
+{
+	x: 3.5d,
+	y: -5.0d,
+	dependencies: [
+		"a5d52e83"
+	],
+	tasks: [{
+		uid: "fcf8959f",
+		type: "item",
+		items: [{
+			id: "mekanism:gastank",
+			tag: {
+				tier: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "62de27e9",
+		type: "item",
+		item: "mekanismgenerators:generator 1 3"
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	x: -0.5d,
+	y: -3.0d,
+	dependencies: [
+		"44942828",
+		"ee41ac60"
+	],
+	tasks: [{
+		uid: "cc132ad6",
+		type: "item",
+		items: [{
+			item: "tanaddons:temp_regulator"
+		}]
+	}],
+	rewards: [{
+		uid: "aba48a87",
+		type: "xp_levels",
+		xp_levels: 1
+	},
+	{
+		uid: "87ac1a44",
+		type: "ftbmoney:money",
+		ftb_money: 100L,
+		random_bonus: 50
+	}]
+}

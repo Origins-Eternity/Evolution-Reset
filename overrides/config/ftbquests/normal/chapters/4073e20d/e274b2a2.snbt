@@ -1,0 +1,26 @@
+{
+	x: -1.0d,
+	y: 2.0d,
+	dependencies: [
+		"cbad279f"
+	],
+	tasks: [{
+		uid: "79545df9",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration"
+		}],
+		count: 27L
+	}],
+	rewards: [{
+		uid: "e438c330",
+		type: "item",
+		item: "immersiveengineering:material 1 6",
+		count: 4
+	},
+	{
+		uid: "362b7732",
+		type: "item",
+		item: "pyrotech:bucket_clay"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: 10.0d,
+	y: 1.5d,
+	dependencies: [
+		"48fd2031"
+	],
+	tasks: [{
+		uid: "9f11c681",
+		type: "item",
+		items: [{
+			item: "pyrotech:compacting_bin"
+		}]
+	}],
+	rewards: [{
+		uid: "41777bb4",
+		type: "xp_levels",
+		xp_levels: 1
+	},
+	{
+		uid: "b2eec824",
+		type: "item",
+		item: "pyrotech:crude_shovel"
+	}]
+}

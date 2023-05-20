@@ -1,0 +1,3 @@
+#ignoreBracketErrors
+
+recipes.removeByMod("xlfoodmod");

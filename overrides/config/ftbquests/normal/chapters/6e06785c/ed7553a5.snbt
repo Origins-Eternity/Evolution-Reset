@@ -1,0 +1,25 @@
+{
+	x: 6.0d,
+	y: -1.5d,
+	dependencies: [
+		"1e6eb29e"
+	],
+	tasks: [{
+		uid: "31157232",
+		type: "item",
+		items: [{
+			item: "twilightforest:steeleaf_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "dbd49342",
+		type: "ftbmoney:money",
+		ftb_money: 100L,
+		random_bonus: 50
+	},
+	{
+		uid: "afbb78ea",
+		type: "xp",
+		xp: 100
+	}]
+}

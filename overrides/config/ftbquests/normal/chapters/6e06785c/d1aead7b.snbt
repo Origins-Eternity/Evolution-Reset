@@ -1,0 +1,17 @@
+{
+	x: 20.0d,
+	y: 1.0d,
+	dependencies: [
+		"ba6a50fe"
+	],
+	tasks: [{
+		uid: "fbc21c8a",
+		type: "item",
+		items: [{
+			id: "tconstruct:pan_head",
+			tag: {
+				Material: "proxii"
+			}
+		}]
+	}]
+}

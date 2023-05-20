@@ -1,0 +1,31 @@
+{
+	x: -2.5d,
+	y: -1.0d,
+	dependencies: [
+		"b104fac4",
+		"a81118d7"
+	],
+	tasks: [{
+		uid: "c494e9f0",
+		type: "item",
+		items: [{
+			item: "mekanism:controlcircuit"
+		}]
+	},
+	{
+		uid: "43296f67",
+		type: "item",
+		items: [{
+			item: "mekanism:energytablet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8e39db63",
+		type: "item",
+		items: [{
+			item: "mekanism:enrichedalloy"
+		}]
+	}]
+}

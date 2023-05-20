@@ -1,0 +1,27 @@
+{
+	x: 19.0d,
+	y: 5.5d,
+	dependencies: [
+		"f85fd0fa"
+	],
+	tasks: [{
+		uid: "77becbb2",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "gourmaryllis"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "639df44a",
+		type: "item",
+		item: "botania:animatedtorch"
+	},
+	{
+		uid: "a9256a35",
+		type: "item",
+		item: "botania:hourglass"
+	}]
+}

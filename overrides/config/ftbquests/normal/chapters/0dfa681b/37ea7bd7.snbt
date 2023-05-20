@@ -1,0 +1,25 @@
+{
+	x: 11.5d,
+	y: 0.5d,
+	dependencies: [
+		"b9444005"
+	],
+	tasks: [{
+		uid: "ebec2eb3",
+		type: "item",
+		items: [{
+			item: "pyrotech:stone_sawmill"
+		}]
+	}],
+	rewards: [{
+		uid: "bd8a62b4",
+		type: "xp_levels",
+		xp_levels: 1
+	},
+	{
+		uid: "18426707",
+		type: "item",
+		item: "pyrotech:rock 1 7",
+		count: 10
+	}]
+}

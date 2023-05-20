@@ -1,0 +1,31 @@
+{
+	x: 21.0d,
+	y: 4.5d,
+	dependencies: [
+		"637ef7fe"
+	],
+	tasks: [{
+		uid: "c1b49ff4",
+		type: "item",
+		items: [{
+			item: "botania:terraplate"
+		}]
+	},
+	{
+		uid: "264d9689",
+		type: "item",
+		items: [{
+			item: "botania:spark"
+		}]
+	}],
+	rewards: [{
+		uid: "daae0afb",
+		type: "item",
+		item: {
+			id: "botania:manaring",
+			tag: {
+				mana: 500000
+			}
+		}
+	}]
+}

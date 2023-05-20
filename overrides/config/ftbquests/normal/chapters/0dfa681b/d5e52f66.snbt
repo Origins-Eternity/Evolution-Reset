@@ -1,0 +1,25 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	dependencies: [
+		"3719a0ec"
+	],
+	tasks: [{
+		uid: "f37dd867",
+		type: "item",
+		items: [{
+			item: "pyrotech:stash"
+		}]
+	}],
+	rewards: [{
+		uid: "2cd71572",
+		type: "item",
+		item: "minecraft:cooked_rabbit",
+		count: 6
+	},
+	{
+		uid: "98eb38a5",
+		type: "item",
+		item: "pyrotech:stash"
+	}]
+}

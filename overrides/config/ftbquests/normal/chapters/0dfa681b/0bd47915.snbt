@@ -1,0 +1,37 @@
+{
+	x: 10.0d,
+	y: -1.5d,
+	dependencies: [
+		"c46dfb9e"
+	],
+	tasks: [{
+		uid: "fc46b4dc",
+		type: "item",
+		items: [{
+			item: "pyrotech:soaking_pot"
+		}]
+	}],
+	rewards: [{
+		uid: "21e0ca9b",
+		type: "xp",
+		xp: 10
+	},
+	{
+		uid: "99f55bce",
+		type: "item",
+		item: "minecraft:paper",
+		count: 2
+	},
+	{
+		uid: "66db12b2",
+		type: "item",
+		item: "minecraft:cooked_chicken",
+		count: 3
+	},
+	{
+		uid: "e11aac5a",
+		type: "item",
+		item: "minecraft:cooked_porkchop",
+		count: 3
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 0.5d,
+	y: 0.0d,
+	dependencies: [
+		"53d4ae77"
+	],
+	tasks: [{
+		uid: "128bddaf",
+		type: "item",
+		items: [{
+			item: "mekanism:controlcircuit 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "a7f5d980",
+		type: "random",
+		table: 2
+	}]
+}

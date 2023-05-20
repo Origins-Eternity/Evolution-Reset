@@ -1,0 +1,27 @@
+{
+	x: 1.0d,
+	y: 1.0d,
+	dependencies: [
+		"30988b7c"
+	],
+	tasks: [{
+		uid: "c49d1278",
+		type: "item",
+		items: [{
+			item: "pyrotech:crude_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3f0a32ee",
+		type: "xp",
+		xp: 10
+	},
+	{
+		uid: "f4f90fd6",
+		type: "item",
+		item: "pyrotech:rock",
+		count: 10
+	}]
+}

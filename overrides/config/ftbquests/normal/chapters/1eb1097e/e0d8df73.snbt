@@ -1,0 +1,17 @@
+{
+	x: 5.0d,
+	y: -3.0d,
+	dependencies: [
+		"e43b825b"
+	],
+	tasks: [{
+		uid: "17954e85",
+		type: "forge_energy",
+		value: 1000000000L
+	}],
+	rewards: [{
+		uid: "a62e3c6b",
+		type: "random",
+		table: 0
+	}]
+}

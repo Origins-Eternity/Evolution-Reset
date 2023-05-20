@@ -1,0 +1,22 @@
+{
+	x: 0.5d,
+	y: -2.5d,
+	dependencies: [
+		"44942828",
+		"ee41ac60"
+	],
+	tasks: [{
+		uid: "41612fc5",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "5db3929b",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "oreexacavator"
+	}]
+}

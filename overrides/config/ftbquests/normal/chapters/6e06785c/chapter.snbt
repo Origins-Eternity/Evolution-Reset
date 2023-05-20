@@ -1,0 +1,7 @@
+{
+	title: "{evolutionreset.chapter.basicindustry.title}",
+	icon: "immersiveengineering:metal_device1 1 2",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

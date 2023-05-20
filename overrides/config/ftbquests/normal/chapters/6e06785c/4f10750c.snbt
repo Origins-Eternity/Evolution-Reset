@@ -1,0 +1,78 @@
+{
+	x: 4.5d,
+	y: 2.5d,
+	dependencies: [
+		"e63d9c14",
+		"1b8c004a"
+	],
+	tasks: [{
+		uid: "267d1056",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 4"
+		}],
+		count: 6L
+	},
+	{
+		uid: "92e78dfd",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}],
+		count: 3L
+	},
+	{
+		uid: "fcdfc2d8",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 9L
+	},
+	{
+		uid: "2cdd2b54",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 20L
+	},
+	{
+		uid: "bd6dde6b",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 9"
+		}],
+		count: 20L
+	}],
+	rewards: [{
+		uid: "723508c1",
+		type: "item",
+		item: "minecraft:reeds",
+		count: 64
+	},
+	{
+		uid: "e2a0c62e",
+		type: "item",
+		item: "immersiveengineering:seed",
+		count: 64
+	},
+	{
+		uid: "aacd7ab0",
+		type: "item",
+		item: {
+			id: "ftbquests:screen",
+			tag: {
+				BlockEntityTag: {
+					Size: 1,
+					id: "ftbquests:screen_core"
+				},
+				display: {
+					Lore: [
+						"(+NBT)"
+					]
+				}
+			}
+		}
+	}]
+}

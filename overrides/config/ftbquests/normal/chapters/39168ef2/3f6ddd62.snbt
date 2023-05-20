@@ -1,0 +1,15 @@
+{
+	x: -3.0d,
+	y: -3.5d,
+	dependencies: [
+		"b104fac4"
+	],
+	tasks: [{
+		uid: "332cc8a4",
+		type: "item",
+		items: [{
+			item: "mekanism:enrichediron"
+		}],
+		count: 16L
+	}]
+}

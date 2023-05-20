@@ -1,0 +1,65 @@
+{
+	x: 10.5d,
+	y: 0.5d,
+	dependencies: [
+		"8975b098",
+		"cacb88d6"
+	],
+	tasks: [{
+		uid: "f0450978",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_helm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "783d305d",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_chest"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "82cdd9ea",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_legs"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "dbabf743",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a8bc569e",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_sword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6d13823d",
+		type: "item",
+		items: [{
+			item: "draconicevolution:energy_infuser"
+		}]
+	}],
+	rewards: [{
+		uid: "b04da97c",
+		type: "random",
+		table: 2
+	}]
+}

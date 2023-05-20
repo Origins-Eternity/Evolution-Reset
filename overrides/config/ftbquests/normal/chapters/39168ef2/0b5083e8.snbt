@@ -1,0 +1,19 @@
+{
+	icon: "minecraft:skull 1 5",
+	x: 1.0d,
+	y: 2.0d,
+	dependencies: [
+		"e6556f53"
+	],
+	tasks: [{
+		uid: "98d22d60",
+		type: "kill",
+		entity: "minecraft:ender_dragon",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "88843f8c",
+		type: "random",
+		table: 2
+	}]
+}

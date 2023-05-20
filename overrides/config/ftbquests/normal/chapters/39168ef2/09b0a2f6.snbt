@@ -1,0 +1,23 @@
+{
+	x: 6.5d,
+	y: 3.5d,
+	dependencies: [
+		"bf243df0",
+		"563a9366",
+		"47f1a525"
+	],
+	tasks: [{
+		uid: "3b1f54af",
+		type: "item",
+		items: [{
+			item: "draconicevolution:dislocator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "537c45a9",
+		type: "item",
+		item: "draconicevolution:dislocator_pedestal"
+	}]
+}

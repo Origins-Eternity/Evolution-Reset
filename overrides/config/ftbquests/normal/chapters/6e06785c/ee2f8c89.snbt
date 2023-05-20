@@ -1,0 +1,82 @@
+{
+	x: 6.0d,
+	y: -2.5d,
+	dependencies: [
+		"1e6eb29e"
+	],
+	tasks: [{
+		uid: "157dcbc6",
+		type: "item",
+		items: [{
+			item: "twilightforest:raw_venison"
+		}]
+	},
+	{
+		uid: "bc932707",
+		type: "item",
+		items: [{
+			item: "twilightforest:huge_waterlily"
+		}]
+	},
+	{
+		uid: "49de3f5f",
+		type: "item",
+		items: [{
+			item: "twilightforest:cicada"
+		}]
+	},
+	{
+		uid: "c223c673",
+		type: "item",
+		items: [{
+			item: "twilightforest:twilight_sapling 1 4"
+		}]
+	},
+	{
+		uid: "17c5df72",
+		type: "item",
+		items: [{
+			item: "twilightforest:liveroot"
+		}]
+	},
+	{
+		uid: "9b80d778",
+		type: "item",
+		items: [{
+			item: "twilightforest:ice_sword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c2b77f96",
+		type: "item",
+		items: [{
+			item: "twilightforest:maze_map_focus"
+		}]
+	},
+	{
+		uid: "42f2b72b",
+		type: "item",
+		items: [{
+			item: "twilightforest:armor_shard"
+		}]
+	},
+	{
+		uid: "dc0dc53b",
+		type: "item",
+		items: [{
+			item: "twilightforest:borer_essence"
+		}]
+	}],
+	rewards: [{
+		uid: "87f5cf8f",
+		type: "xp_levels",
+		xp_levels: 10
+	},
+	{
+		uid: "5f551c33",
+		type: "random",
+		table: 0
+	}]
+}

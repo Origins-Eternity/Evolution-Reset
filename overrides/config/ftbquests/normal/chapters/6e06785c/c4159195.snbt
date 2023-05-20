@@ -1,0 +1,25 @@
+{
+	x: 12.0d,
+	y: 8.5d,
+	dependencies: [
+		"4f014745"
+	],
+	tasks: [{
+		uid: "97b2aeec",
+		type: "item",
+		items: [{
+			item: "warpbook:unboundwarppage"
+		}]
+	}],
+	rewards: [{
+		uid: "d317102b",
+		type: "ftbmoney:money",
+		ftb_money: 100L,
+		random_bonus: 50
+	},
+	{
+		uid: "d5e5d97e",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

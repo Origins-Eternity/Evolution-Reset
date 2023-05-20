@@ -1,0 +1,219 @@
+{
+   "images": {
+      "title": {
+         "image": "mainmenu:textures/others/title.png",
+         "posX": 0,
+         "posY": 0,
+         "imageWidth": 1920,
+         "imageHeight": 640,
+         "width": 300,
+         "height": 100,
+         "alignment": "topleft"
+		},
+		
+        "black":
+        {
+         "image" : "mainmenu:textures/others/buttons_background.png",
+         "posX" : 165,
+         "posY" : -36,
+         "width" : 65,
+         "height" : 35,
+	     "imageWidth": 310,
+         "imageHeight": 160,
+		 "alignment" : "bottom_left"
+        }
+    },
+	
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "",
+			"texture" : "mainmenu:textures/buttons/single.png",
+            "posX" : 164,
+            "posY" : -120,
+            "width" : 40,
+            "height" : 40,
+			"imageWidth" : 640,
+			"imageHeight" : 640,
+			"alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "",
+			"texture" : "mainmenu:textures/buttons/multi.png",
+            "posX" : 149,
+            "posY" : -82,
+            "width" : 40,
+            "height" : 40,
+			"imageWidth" : 640,
+			"imageHeight" : 640,
+			"alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "",
+			"texture" : "mainmenu:textures/buttons/mods.png",
+            "posX" : 144,
+            "posY" : -41,
+            "width" : 40,
+            "height" : 40,
+			"imageWidth" : 640,
+			"imageHeight" : 640,
+			"alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "",
+			"texture" : "mainmenu:textures/buttons/settings.png",
+            "posX" : 144,
+            "posY" : 0,
+            "width" : 40,
+            "height" : 40,
+			"imageWidth" : 640,
+			"imageHeight" : 640,
+			"alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "",
+			"texture" : "mainmenu:textures/buttons/quit.png",
+            "posX" : 164,
+            "posY" : 79,
+            "width" : 40,
+            "height" : 40,
+			"imageWidth" : 640,
+			"imageHeight" : 640,
+			"alignment" : "center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        
+        "language":
+        {
+            "text" : "",
+			"texture" : "mainmenu:textures/buttons/lang.png",
+            "posX" : 149,
+            "posY" : 41,
+            "width" : 40,
+            "height" : 40,
+			"imageWidth" : 640,
+			"imageHeight" : 640,
+			"alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+		
+		"Github":
+        {
+            "text" : "",
+			"texture" : "mainmenu:textures/buttons/github.png",
+			"hoverText" : "",
+            "posX" : 170,
+            "posY" : -30,
+            "width" :25,
+            "height" : 25,
+			"imageWidth" : 150,
+			"imageHeight" : 150,
+			"alignment" : "bottom_left",
+			"action" :
+			{
+                "type" : "openLink",
+				"link" : "https://github.com/Origins-Eternal/Evolution-Reset"
+            }
+        },
+        "Curse":
+        {
+            "text" : "",
+			"texture" : "mainmenu:textures/buttons/curse.png",
+			"hoverText" : "",
+            "posX" : 200,
+            "posY" : -30,
+            "width" : 25,
+            "height" : 25,
+			"imageWidth" : 150,
+			"imageHeight" : 150,
+			"alignment" : "bottom_left",
+			"action" :
+			{
+                "type" : "openLink",
+				"link" : "https://www.curseforge.com/minecraft/modpacks/evolution-reset"
+            }
+        }
+	},
+	
+    "labels":
+    {
+        "fml":
+        {
+            "text" : "",
+            "posX" : 1,
+            "posY" : -45,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+		
+	    "author":
+        {
+            "text" : "Modpack Author: Origins_Eternal & Lacz",
+            "posX" : 1,
+            "posY" : 1,
+            "color" : -250,
+            "alignment" : "top_left"
+        },
+
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB. Do not distribute!",
+            "posX" : 1,
+            "posY" : -10,
+            "color" : -250,
+            "alignment" : "bottom_left"
+        }
+    },
+	
+    "other":
+    {
+		
+		"background": {
+         "image": "",
+         "slideshow": {
+            "images": [
+               "mainmenu:textures/others/bg1.png",
+               "mainmenu:textures/others/bg2.png"
+            ],
+            "displayDuration": 300,
+            "fadeDuration": 40
+        }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+	x: -1.5d,
+	y: -3.5d,
+	dependencies: [
+		"b104fac4"
+	],
+	tasks: [{
+		uid: "dbd5e906",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "59c19db0",
+		type: "item",
+		item: "mekanism:compresseddiamond"
+	}]
+}

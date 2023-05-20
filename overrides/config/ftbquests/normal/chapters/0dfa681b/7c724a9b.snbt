@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: -0.5d,
+	dependencies: [
+		"911cd6ab"
+	],
+	tasks: [{
+		uid: "4cad4572",
+		type: "item",
+		items: [{
+			item: "pyrotech:chopping_block"
+		}]
+	}],
+	rewards: [{
+		uid: "093ef8cc",
+		type: "xp",
+		xp: 10
+	}]
+}

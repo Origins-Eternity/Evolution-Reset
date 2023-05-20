@@ -1,0 +1,20 @@
+{
+	x: 14.0d,
+	y: -1.0d,
+	dependencies: [
+		"974d4f24"
+	],
+	tasks: [{
+		uid: "d8440b96",
+		type: "item",
+		items: [{
+			item: "minecraft:piston"
+		}]
+	}],
+	rewards: [{
+		uid: "da385c6f",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "piston"
+	}]
+}

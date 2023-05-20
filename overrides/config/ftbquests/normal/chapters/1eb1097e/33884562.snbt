@@ -1,0 +1,20 @@
+{
+	x: 3.0d,
+	y: -2.0d,
+	dependencies: [
+		"0bbee4f6"
+	],
+	tasks: [{
+		uid: "1e7ceb07",
+		type: "item",
+		items: [{
+			item: "environmentaltech:void_ore_miner_cont_1"
+		}]
+	}],
+	rewards: [{
+		uid: "57d3ce78",
+		type: "item",
+		item: "environmentaltech:laser_core",
+		count: 2
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: 6.5d,
+	y: 3.0d,
+	dependencies: [
+		"fee18654"
+	],
+	tasks: [{
+		uid: "491e4147",
+		type: "item",
+		items: [{
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "nucleum"
+			}
+		}]
+	}]
+}
