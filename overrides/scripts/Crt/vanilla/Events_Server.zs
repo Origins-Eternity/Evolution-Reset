@@ -101,9 +101,6 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
 var player = event.player as IPlayer;
 var ser = server.commandManager as ICommandManager;
 player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.hello"));
-    if (checkworldtype != false) {
-        ser.executeCommand(server, "tpd " + event.player.name + " 312");
-    }
     if (!player.hasGameStage("master")) {
         ser.executeCommand(server, "gamestage silentadd " + event.player.name + " master");
         var start = [
