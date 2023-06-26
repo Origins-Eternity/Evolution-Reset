@@ -399,7 +399,7 @@ GraniteAnvil.addRecipe("nugget_from_ingot_tin", <mekanism:nugget:6> * 9, <ore:in
 GraniteAnvil.addRecipe("nugget_from_ingot_bronze", <mekanism:nugget:2> * 9, <ore:ingotBronze>, 10, "hammer", true);
 GraniteAnvil.addRecipe("copper_plate_from_block", <immersiveengineering:metal:30> * 3, <ore:blockCopper>, 27, "hammer", true);
 GraniteAnvil.addRecipe("gold_plate_from_block", <immersiveengineering:metal:40> * 3, <ore:blockGold>, 27, "hammer", true);
-GraniteAnvil.addRecipe("flint_from_limestone", <minecraft:flint> * 3, <ore:stoneLimestone>, 15, "pickaxe", true);
+GraniteAnvil.addRecipe("flint_from_limestone", <minecraft:flint> * 3, <ore:dustLimestone>, 15, "pickaxe", true);
 
 MechanicalCompactor.removeRecipes(<minecraft:grass>);
 MechanicalCompactor.addRecipe("iron_block_from_ingot", <minecraft:iron_block>, <ore:ingotIron>, 9);
