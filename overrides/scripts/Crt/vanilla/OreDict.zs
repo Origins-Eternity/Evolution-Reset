@@ -16,7 +16,6 @@ import crafttweaker.item.IItemStack;
 <ore:tnt>.add(<minecraft:tnt>);
 <ore:steel>.add(<immersiveengineering:metal:8>);
 <ore:steel>.add(<mekanism:ingot:4>);
-<ore:oreSulfur>.add(<ercore:sulphur_ore>);
 <ore:whitesand>.add(<minecraft:sand>);
 <ore:whitesand>.add(<biomesoplenty:white_sand>);
 <ore:gravel>.add(<biomesoplenty:dried_sand>);
@@ -27,14 +26,12 @@ import crafttweaker.item.IItemStack;
 <ore:blockSeven>.addAll(<ore:oreSulfur>);
 <ore:fiery>.add(<twilightforest:fiery_blood>);
 <ore:fiery>.add(<twilightforest:fiery_tears>);
-<ore:oreTitanium>.add(<ercore:rutile_ore>);
 <ore:sandpile>.add(<pyrotech:rock:5>);
 <ore:sandpile>.add(<pyrotech:rock:9>);
 <ore:ballClay>.add(<minecraft:clay_ball>);
 <ore:oreTungsten>.add(<ercore:tungsten_ore>);
 <ore:oreCopper>.add(<ercore:copper_ore>);
 <ore:oreTin>.add(<ercore:tin_ore>);
-<ore:oreIridium>.add(<ercore:iridium_ore>);
 <ore:blockFour>.add(<biomesoplenty:hard_ice>);
 <ore:erstone>.add(<biomesoplenty:grass>);
 <ore:erstone>.add(<biomesoplenty:grass:1>);
@@ -57,11 +54,6 @@ for d in dirts {
 
 var doors =[
 <minecraft:wooden_door>,
-<minecarft:spruce_door>,
-<minecarft:birch_door>,
-<minecarft:jungle_door>,
-<minecarft:acacia_door>,
-<minecarft:dark_oak_door>,
 <minecraft:trapdoor>,
 <twilightforest:twilight_oak_door>,
 <twilightforest:canopy_door>,
@@ -159,25 +151,6 @@ var respirators = [
 
 for r in respirators {
     <ore:respirator>.add(r);
-}
-
-var foods = loadedMods["xlfoodmod"].items;
-
-for food in foods {
-    <ore:xlfood>.add(food);
-}
-
-var banfoods = [
-<xlfoodmod:top_bun>,
-<xlfoodmod:dough>,
-<xlfoodmod:potato_bread>,
-<xlfoodmod:rice_bread>,
-<xlfoodmod:baguette>,
-<xlfoodmod:bottom_bun>
-] as IItemStack[];
-
-for banfood in banfoods {
-    <ore:xlfood>.remove(banfood);
 }
 
 var botflowers = [
@@ -403,10 +376,6 @@ var tool = [
 <minecraft:chainmail_leggings>,
 <minecraft:chainmail_boots>,
 <minecraft:furnace>,
-<betternether:cincinnasite_axe>,
-<betternether:cincinnasite_axe_diamond>,
-<betternether:cincinnasite_pickaxe>,
-<betternether:cincinnasite_pickaxe_diamond>,
 <minecraft:sugar>,
 <mekanism:cardboardbox>,
 <mekanism:anchorupgrade>,
