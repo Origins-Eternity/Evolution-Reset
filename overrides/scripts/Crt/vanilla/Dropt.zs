@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 import mods.dropt.Dropt;
 import mods.dropt.Harvester;
 import crafttweaker.item.IItemStack;

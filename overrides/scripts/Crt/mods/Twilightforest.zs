@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 import crafttweaker.item.IItemStack;
 
 var items = [

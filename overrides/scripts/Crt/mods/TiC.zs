@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 #priority 1000
 import mods.tconstruct.Drying;
 import crafttweaker.item.IItemStack;

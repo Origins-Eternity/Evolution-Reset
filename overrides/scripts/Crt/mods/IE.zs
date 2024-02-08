@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import mods.immersiveengineering.BlastFurnace;
@@ -104,15 +104,6 @@ var slags as IItemStack[] = [
 <pyrotech:generated_pile_slag_silver>,
 <pyrotech:generated_pile_slag_tin>,
 <pyrotech:generated_pile_slag_uranium>,
-<pyrotech:generated_pile_slag_dilithium>,
-<pyrotech:generated_pile_slag_abyssum>,
-<pyrotech:generated_pile_slag_eezo>,
-<pyrotech:generated_pile_slag_osram>,
-<pyrotech:generated_pile_slag_palladium>,
-<pyrotech:generated_pile_slag_prometheum>,
-<pyrotech:generated_pile_slag_valyrium>,
-<pyrotech:generated_pile_slag_uru>,
-<pyrotech:generated_pile_slag_tiberium>,
 <pyrotech:generated_pile_slag_tungsten>,
 <pyrotech:generated_pile_slag_iridium>,
 <twilightforest:ironwood_raw>,
@@ -132,17 +123,7 @@ var ingots as IItemStack[] = [
 <immersiveengineering:metal:3>,
 <mekanism:ingot:6>,
 <immersiveengineering:metal:5>,
-<taiga:dilithium_ingot>,
-<taiga:abyssum_ingot>,
-<taiga:eezo_ingot>,
-<taiga:osram_ingot>,
-<taiga:palladium_ingot>,
-<taiga:prometheum_ingot>,
-<taiga:valyrium_ingot>,
-<taiga:uru_ingot>,
-<taiga:tiberium_ingot>,
 <ercore:tungsten_ingot>,
-<libvulpes:productingot:10>,
 <twilightforest:ironwood_ingot>,
 <twilightforest:knightmetal_ingot>
 ];

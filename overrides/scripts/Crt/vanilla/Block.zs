@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 import crafttweaker.block.IBlockDefinition;
 import crafttweaker.item.IItemStack;
 

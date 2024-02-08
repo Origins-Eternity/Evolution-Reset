@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerLeftClickBlockEvent;
 import crafttweaker.event.IEventCancelable;

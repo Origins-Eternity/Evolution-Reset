@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 #priority 99999
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.block.IBlockDefinition;
@@ -22,11 +22,9 @@ import crafttweaker.item.IItemStack;
 <ore:gravel>.add(<biomesoplenty:dried_sand>);
 <ore:radsand>.add(<minecraft:sand:1>);
 <ore:skull>.add(<minecraft:skull:*>);
-<ore:torch>.add(<advancedrocketry:unlittorch>);
 <ore:ergravel>.addAll(<ore:gravel>);
 <ore:ergravel>.add(<minecraft:flint>);
 <ore:blockSeven>.addAll(<ore:oreSulfur>);
-<ore:blockBasalt>.add(<advancedrocketry:basalt>);
 <ore:fiery>.add(<twilightforest:fiery_blood>);
 <ore:fiery>.add(<twilightforest:fiery_tears>);
 <ore:oreTitanium>.add(<ercore:rutile_ore>);
@@ -106,34 +104,22 @@ for i in flowers {
 }
 
 var tools = [
-<ore:artisansAthame>,
 <ore:artisansBeaker>,
 <ore:artisansBurner>,
 <ore:artisansCarver>,
 <ore:artisansChisel>,
-<ore:artisansCompass>,
 <ore:artisansCutters>,
-<ore:artisansCuttingBoard>,
 <ore:artisansDriver>,
-<ore:artisansFile>,
-<ore:artisansFramingHammer>,
-<ore:artisansGemCutter>,
-<ore:artisansGrimoire>,
 <ore:artisansGroover>,
 <ore:artisansHammer>,
 <ore:artisansHandsaw>,
-<ore:artisansHatchet>,
-<ore:artisansKnife>,
 <ore:artisansLens>,
 <ore:artisansNeedle>,
 <ore:artisansPan>,
-<ore:artisansPencil>,
-<ore:artisansPliers>,
 <ore:artisansPunch>,
-<ore:artisansQuill>,
+<ore:artisansmortar>,
 <ore:artisansShears>,
 <ore:artisansSifter>,
-<ore:artisansSolderer>,
 <ore:artisansSpanner>,
 <ore:artisansTrowel>,
 <ore:artisansTSquare>,
@@ -376,16 +362,6 @@ for item in <ore:cstone>.items {
     <ore:erstone>.remove(item);
 }
 
-var rocketparts =[
-<advancedrocketry:fueltank>,
-<advancedrocketry:bipropellantfueltank>,
-<advancedrocketry:oxidizerfueltank>
-] as IItemStack[];
-
-for i in rocketparts {
-    <ore:rocketparts>.add(i);
-}
-
 var tool = [
 <minecraft:stone_axe>,
 <minecraft:iron_axe>,
@@ -443,10 +419,7 @@ var tool = [
 <doggytalents:creative_collar>,
 <doggytalents:creative_radar>,
 <draconicevolution:creative_rf_source>,
-<projecte:item.pe_tome>,
 <conarm:gauntlet_mat_reach>,
-<projecte:item.pe_rm_katar>,
-<projecte:item.pe_rm_sword>,
 <botania:terrapick>,
 <refinedstorage:silicon>,
 <twilightforest:fiery_sword>,
@@ -465,8 +438,8 @@ var tool = [
 <betternether:cincinnasite_forge>,
 <betternether:cincinnasite_forge>,
 <toughasnails:campfire>,
-<projecte:rm_furnace>,
-<projecte:dm_furnace>
+<minecraft:bow>,
+<minecraft:wooden_sword>
 ] as IItemStack[];
 
 for items in tool {	

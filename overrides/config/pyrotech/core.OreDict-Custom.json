@@ -221,42 +221,6 @@
       "minecraft:string",
       "pyrotech:material:14",
       "pyrotech:material:26"
-    ],
-	  "oreAbyssum": [
-      "taiga:abyssum_ore"
-    ],
-	  "oreEezo": [
-      "taiga:eezo_ore"
-    ],
-	  "oreOsram": [
-      "taiga:osram_ore"
-    ],
-	  "orePalladium": [
-      "taiga:palladium_ore"
-    ],
-	  "orePrometheum": [
-      "taiga:prometheum_ore"
-    ],
-	  "oreTiberium": [
-      "taiga:tiberium_ore"
-    ],
-	  "oreVibranium": [
-      "taiga:vibranium_ore"
-    ],
-    "oreDilithium": [
-      "taiga:dilithium_ore"
-    ],
-	  "oreValyrium": [
-      "taiga:valyrium_ore"
-    ],
-    "oreUru": [
-      "taiga:uru_ore"
-    ],
-    "blockMeteorite": [
-      "taiga:meteorite_block"
-    ],
-    "blockObsidiorit": [
-      "taiga:obsidiorite_block"
     ]
   }
 }

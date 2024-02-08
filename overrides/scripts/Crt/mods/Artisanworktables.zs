@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.Copy;
@@ -304,71 +304,6 @@ RecipeBuilder.get("potter")
 .setExtraOutputTwo(<pyrotech:material:16> * 2, 0.5)	
 .setExtraOutputThree(<pyrotech:material:4> * 4, 0.3)	
 .addOutput(<immersiveengineering:stone_decoration>)
-.create();
-  
-RecipeBuilder.get("engineer")
-.setShaped([
-    [<ore:blockLapis>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockLapis>],
-    [<ore:blockLapis>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <ore:blockLapis>],
-    [<ore:blockLapis>, <ore:blockLapis>, <ore:blockLapis>, <ore:blockLapis>, <ore:blockLapis>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
-.setName("mage_workstation")
-.setMaximumTier(2)
-.setExtraOutputOne(<immersiveengineering:metal:28> * 5, 0.5)	 
-.setExtraOutputTwo(<pyrotech:material:16> * 2, 0.2)	
-.setExtraOutputThree(<minecraft:dye:4> * 6, 0.3)	 
-.addTool(<ore:artisansCarver>, 15)
-.addTool(<ercore:mage_workstation_blueprint>, 2)
-.addTool(<ore:artisansHammer>, 30)
-.addOutput(<artisanworktables:workstation:7>)
-.create();
-
-RecipeBuilder.get("engineer")
- .setCopy(
-        Copy.byOutput([<artisanworktables:workshop:7>]).runAfter())
-.setName("mage_workshop")
-.setLevelRequired(15)
-.setMaximumTier(2)
-.setExtraOutputOne(<minecraft:dye:4> * 5, 0.8)	 
-.setExtraOutputTwo(<pyrotech:material:23> * 6, 0.2)	
-.addTool(<ore:artisansAthame>, 17)
-.addTool(<ercore:mage_workshop_blueprint>, 2)
-.addOutput(<artisanworktables:workshop:7>)
-.create();
-
-RecipeBuilder.get("mage")
-.setShaped([
-    [null, null, null],
-    [<botania:livingrock>, <botania:manabottle>, <botania:livingrock>],
-    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
-.setName("pool")
-.setLevelRequired(5)
-.setExtraOutputOne(<minecraft:dye:4> * 3, 0.4)	 
-.setExtraOutputTwo(<pyrotech:rock:7> * 2, 0.5)	
-.addTool(<ercore:magic_pool_blueprint>, 2)
-.addTool(<ore:artisansGrimoire>, 15)
-.addRequirement(GameStages.allOf(["one", "two"]))
-.addOutput(<botania:pool>)
-.create();
-
-RecipeBuilder.get("mage")
-.setShaped([
-    [<ore:cobblestone>, <botania:petal:*>, <botania:mushroom:*>, <botania:petal:*>, <ore:cobblestone>],
-    [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
-    [null, <ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>, null],
-    [null, <ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>, null],
-    [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]])
-.setName("alter")
-.setLevelRequired(10)
-.setMaximumTier(2)
-.setExtraOutputOne(<minecraft:dye:4> * 4, 0.2)	 
-.setExtraOutputTwo(<pyrotech:rock> * 3, 0.2)	
-.setExtraOutputThree(<minecraft:stone_slab:3> * 1, 0.6)	 
-.addTool(<ore:artisansGrimoire>, 20)
-.addTool(<ore:artisansAthame>, 15)
-.addTool(<ercore:anther_table_blueprint>, 2)
-.addOutput(<botania:altar>)
 .create();
 
 RecipeBuilder.get("basic")
@@ -1002,22 +937,6 @@ RecipeBuilder.get("engineer")
 .addOutput(<minecraft:ladder>)
 .create();
 
-RecipeBuilder.get("jeweler")
-.setShapeless([<pyrotech:generated_pile_slag_tiberium>])
-.setName("tiberiumcrystal")
-.setLevelRequired(30)
-.setConsumeExperience(false)
-.setMaximumTier(2)
-.addRequirement(GameStages.allOf(["one", "two", "three", "four"]))
-.setFluid(<liquid:water> * 1000)		
-.addTool(<ore:artisansPliers>, 25)
-.addTool(<ore:artisansGemCutter>, 30)
-.addTool(<ore:artisansLens>, 10)
-.setExtraOutputOne(<pyrotech:rock> * 4, 0.3)	 
-.setExtraOutputTwo(<pyrotech:rock:4> * 3, 0.3)	
-.setExtraOutputThree(<pyrotech:rock:5> * 2, 0.4)  
-.addOutput(<taiga:tiberium_crystal>)
-.create();
 
 RecipeBuilder.get("engineer")
 .setShaped([
@@ -1052,21 +971,6 @@ RecipeBuilder.get("engineer")
 .setExtraOutputOne(<minecraft:gold_nugget> * 6, 0.5)
 .setExtraOutputTwo(<pyrotech:material:23> * 5, 0.5)
 .addOutput(<artisanworktables:workshop:4>)
-.create();
-  
-RecipeBuilder.get("jeweler")
-.setShaped([
-    [null, <ore:dustThermite>, <pyrotech:material:26>],
-    [null, <ore:stickTreatedWood>, <ore:dustThermite>],
-    [<ore:stickTreatedWood>, null, null]])
-.setName("hermitetorch")
-.setLevelRequired(10)
-.setConsumeExperience(false)
-.addTool(<ore:artisansPliers>, 10)
-.addTool(<ore:artisansLens>, 5)
-.setExtraOutputOne(<pyrotech:material:13> * 5, 0.25)	 
-.setExtraOutputTwo(<pyrotech:rock:7> * 2, 0.75)	
-.addOutput(<advancedrocketry:thermitetorch>)
 .create();
 
 for recipe2 in recipes.getRecipesFor(<ore:vacuumbag>) {

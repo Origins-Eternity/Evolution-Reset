@@ -23,12 +23,10 @@
     "oreAluminum": {
       "slagColor": "e2e2e3",
       "langKey": [
-        "immersiveengineering:tile.immersiveengineering.ore.aluminum",
-        "libvulpes:material.Aluminum"
+        "immersiveengineering:tile.immersiveengineering.ore.aluminum"
       ],
       "output": [
-        "immersiveengineering:metal:21",
-        "libvulpes:productnugget:9"
+        "immersiveengineering:metal:21"
       ],
       "bloomYieldMinMax": [
         12,
@@ -79,12 +77,10 @@
         "ercore:tile.ercore.copper_ore",
         "earthenbounty:tile.copper_ore",
         "immersiveengineering:tile.immersiveengineering.ore.copper",
-        "libvulpes:material.Copper",
         "mekanism:tile.OreBlock.CopperOre"
       ],
       "output": [
         "immersiveengineering:metal:20",
-        "libvulpes:productnugget:4",
         "mekanism:nugget:5"
       ],
       "bloomYieldMinMax": [
@@ -103,23 +99,6 @@
       ],
       "output": [
         "minecraft:gold_nugget:0"
-      ],
-      "bloomYieldMinMax": [
-        12,
-        15
-      ],
-      "slagBloomYieldMinMax": [
-        12,
-        15
-      ]
-    },
-    "oreIridium": {
-      "slagColor": "d5d4e7",
-      "langKey": [
-        "ercore:tile.ercore.iridium_ore"
-      ],
-      "output": [
-        "libvulpes:productnugget:10"
       ],
       "bloomYieldMinMax": [
         12,
@@ -221,11 +200,9 @@
       "langKey": [
         "ercore:tile.ercore.tin_ore",
         "earthenbounty:tile.tin_ore",
-        "libvulpes:material.Tin",
         "mekanism:tile.OreBlock.TinOre"
       ],
       "output": [
-        "libvulpes:productnugget:5",
         "mekanism:nugget:6"
       ],
       "bloomYieldMinMax": [
@@ -261,125 +238,6 @@
       ],
       "output": [
         "ercore:tungsten_nugget"
-      ]
-    },
-	  "oreDilithium": {
-      "slagColor": "607f85",
-      "langKey": [
-        "taiga:tile.dilithium_ore"
-      ],
-      "output": [
-        "taiga:dilithium_nugget"
-      ]
-    },
-	  "oreAbyssum": {
-      "slagColor": "103d45",
-      "langKey": [
-        "taiga:tile.abyssum_ore"
-      ],
-      "output": [
-        "taiga:abyssum_nugget"
-      ]
-    },
-    "oreEezo": {
-      "slagColor": "2c2c2c",
-      "langKey": [
-        "taiga:tile.eezo_ore"
-      ],
-      "output": [
-        "taiga:eezo_nugget"
-      ]
-    },
-    "oreOsram": {
-      "slagColor": "d48744",
-      "langKey": [
-        "taiga:tile.osram_ore"
-      ],
-      "output": [
-        "taiga:osram_nugget"
-      ]
-    },
-    "orePalladium": {
-      "slagColor": "d8711e",
-      "langKey": [
-        "taiga:tile.palladium_ore"
-      ],
-      "output": [
-        "taiga:palladium_nugget"
-      ]
-    },
-    "orePrometheum": {
-      "slagColor": "373138",
-      "langKey": [
-        "taiga:tile.prometheum_ore"
-      ],
-      "output": [
-        "taiga:prometheum_nugget"
-      ]
-    },
-	"oreValyrium": {
-      "slagColor": "9e2c44",
-      "langKey": [
-        "taiga:tile.valyrium_ore"
-      ],
-      "output": [
-        "taiga:valyrium_nugget"
-      ]
-    },
-	"oreUru": {
-      "slagColor": "685d74",
-      "langKey": [
-        "taiga:tile.uru_ore"
-      ],
-      "output": [
-        "taiga:uru_nugget"
-      ]
-    },
-	"oreTiberium": {
-      "slagColor": "648c0e",
-      "langKey": [
-        "taiga:tile.tiberium_ore"
-      ],
-      "output": [
-        "taiga:tiberium_nugget"
-      ]
-    },
-	"oreVibranium": {
-      "slagColor": "a4b9c4",
-      "langKey": [
-        "taiga:tile.vibranium_ore"
-      ],
-      "output": [
-        "taiga:vibranium_nugget"
-      ]
-    },
-	"oreObsidiorit": {
-      "slagColor": "897673",
-      "langKey": [
-		    "taiga:tile.obsidioritecobble_block", 
-		    "taiga:tile.obsidiorite_block"
-      ],
-      "output": [
-        "taiga:obsidiorite_nugget"
-      ]
-    },
-	"oreMeteorite": {
-      "slagColor": "897673",
-      "langKey": [
-	    	"taiga:tile.meteoritecobble_block", 
-        "taiga.meteorite_block"
-      ],
-      "output": [
-        "taiga:meteorite_nugget"
-      ]
-    },
-   "oreTitanium": {
-      "slagColor": "6b503c",
-      "langKey": [
-        "ercore:tile.ercore.rutile_ore"
-      ],
-      "output": [
-        "libvulpes:productnugget:7"
       ]
     }
   }

@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
@@ -126,13 +126,11 @@ mods.tconstruct.Alloy.addRecipe(<liquid:obsidiorite_fluid> * 1, [<liquid:meteori
 mods.tconstruct.Alloy.addRecipe(<liquid:adamant_fluid> * 4, [<liquid:vibranium_fluid> * 2, <liquid:solarium_fluid> * 3, <liquid:iox_fluid> * 5, <liquid:iridium> * 3]);
 
 var castliquids =[
-<liquid:iridium>,
 <liquid:aluminum>,
 <liquid:tungsten>
 ] as ILiquidStack[];
 
 var castingots = [
-<libvulpes:productingot:10>,
 <immersiveengineering:metal:1>,
 <ercore:tungsten_ingot>
 ] as IItemStack[];
