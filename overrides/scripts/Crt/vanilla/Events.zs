@@ -14,6 +14,7 @@ import crafttweaker.block.IBlock;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.world.IWorld;
 import crafttweaker.event.PlayerInteractBlockEvent;
+import crafttweaker.event.BlockBreakEvent;
 
 var names as string[] = [
 "crafting_table",
@@ -79,6 +80,17 @@ val block as IBlock = event.block;
             if(name.contains("hoe")) return;
             if(name.contains("sword")) return;
             event.cancel();
+        }
+    }
+});
+
+events.onBlockBreak(function(event as BlockBreakEvent) {
+    if(!event.world.remote) {
+        val block as IBlock = event.block;
+        if(block.definition.id.contains("ore")) {
+            event.player.setAllowFTBUltimine(true);
+        } else {
+            event.player.setAllowFTBUltimine(false);
         }
     }
 });
