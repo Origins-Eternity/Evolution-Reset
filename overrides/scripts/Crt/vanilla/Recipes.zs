@@ -190,17 +190,7 @@ recipes.addShaped(<artisanworktables:workshop>,
 [<ore:wool>, <artisanworktables:workstation>, <ore:wool>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
-recipes.addShaped(<artisanworktables:workshop:9>,
-[[<immersiveengineering:metal:8>, <minecraft:emerald>, <immersiveengineering:metal:8>],
-[<minecraft:potion>.withTag({Potion: "minecraft:long_fire_resistance"}), <artisanworktables:workstation:9>, <minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"})],
-[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
-
 recipes.addShaped(<artisanworktables:workshop:13>,
 [[<minecraft:leather>, <minecraft:leather>, <minecraft:leather>],
 [<pyrotech:planks_tarred>, <artisanworktables:workstation:13>, <pyrotech:planks_tarred>],
 [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>]]);
-
-recipes.addShaped(<minecraft:stone_pickaxe>.withTag({ench: [{lvl: 3 as short, id: 32 as short}, {lvl: 1 as short, id: 34 as short}], RepairCost: 3}),
-[[<pyrotech:material:16>, <pyrotech:material:16>, <pyrotech:material:16>],
-[null, <minecraft:stick>, null],
-[null, <minecraft:stick>, null]]);

@@ -325,7 +325,6 @@ IroncladAnvil.addRecipe("nugget_from_ingot_ardite", <tconstruct:nuggets:1> * 9, 
 IroncladAnvil.addRecipe("nugget_from_ingot_manyullyn", <tconstruct:nuggets:2> * 9, <ore:ingotManyullyn>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_knightslime", <tconstruct:nuggets:3> * 9, <ore:ingotKnightslime>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_alubrass", <tconstruct:nuggets:5> * 9, <ore:ingotAlubrass>, 20, "hammer");
-IroncladAnvil.addRecipe("obsidian_from_basalt", <minecraft:obsidian>, <ercore:basalt_coaltar>, 50, "hammer");
 
 GraniteAnvil.addRecipe("nugget_from_ingot_gold", <minecraft:gold_nugget> * 9, <ore:ingotGold>, 10, "hammer", true);
 GraniteAnvil.addRecipe("nugget_from_ingot_copper", <immersiveengineering:meta:20> * 9, <ore:ingotCopper>, 10, "hammer", true);

@@ -221,6 +221,9 @@
       "minecraft:string",
       "pyrotech:material:14",
       "pyrotech:material:26"
+    ],
+    "slakedLime": [
+      "pyrotech:material:8"
     ]
   }
 }

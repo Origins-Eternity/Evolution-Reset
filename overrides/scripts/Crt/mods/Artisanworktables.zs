@@ -542,28 +542,8 @@ RecipeBuilder.get("tailor")
 .addOutput(colorfulbeds)  
 .create();
 }
-	
-RecipeBuilder.get("basic")
-.setShaped([
-    [<immersiveengineering:storage:8>, <immersiveengineering:storage:8>, <minecraft:emerald_block>, <immersiveengineering:storage:8>, <immersiveengineering:storage:8>],
-    [<minecraft:iron_block>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <minecraft:iron_block>],
-    [<minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
-.setName("chemist_workstation")
-.setLevelRequired(30)
-.setConsumeExperience(false) 
-.setMaximumTier(2)
-.addTool(<ore:artisansLens>, 20)
-.addTool(<ore:artisansNeedle>, 20)
-.addTool(<ercore:apothecary_workstation_blueprint>, 2)
-.setExtraOutputOne(<pyrotech:material:16>, 0.6)	 
-.setExtraOutputTwo(<minecraft:iron_nugget> * 5, 0.2)	
-.setExtraOutputThree(<pyrotech:material:23>, 0.2)	  
-.addOutput(<artisanworktables:workstation:9>)
-.create();
 
-RecipeBuilder.get("chemist")
+RecipeBuilder.get("blacksmith")
 .setShaped([
     [<ore:stickStone>, null, <ore:stickStone>],
     [null, <ore:rodBlaze>, null],
@@ -578,18 +558,6 @@ RecipeBuilder.get("chemist")
 .create();
 
 RecipeBuilder.get("engineer")
-.setCopy(
-        Copy.byOutput([<artisanworktables:workshop:9>]).runAfter())
-.setName("chemist_workshop")
-.setLevelRequired(15)
-.addTool(<ercore:apothecary_workshop_blueprint>, 2)
-.addTool(<ore:artisansHammer>, 20)
-.setExtraOutputOne(<pyrotech:material:23> * 2, 0.5)	 
-.setExtraOutputTwo(<immersiveengineering:metal:28> * 4, 0.3)	
-.addOutput(<artisanworktables:workshop:9>)
-.create();
-
-RecipeBuilder.get("chemist")
  .setShaped([
     [<immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:25>],
     [<immersiveengineering:material:25>, <immersiveengineering:material:24>, <minecraft:coal:1>, <immersiveengineering:material:24>, <immersiveengineering:material:25>],
@@ -802,7 +770,7 @@ RecipeBuilder.get("tanner")
 .addOutput(<pyrotech:bag_durable>)
 .create();
   
-RecipeBuilder.get("chemist")
+RecipeBuilder.get("engineer")
 .setShaped([
     [<ore:sandpile>, <ore:gunpowder>, <ore:powderBlaze>, <ore:gunpowder>, <ore:sandpile>],
     [<ore:gunpowder>, <ore:powderBlaze>, <ore:sandpile>, <ore:powderBlaze>, <ore:gunpowder>],
@@ -946,3 +914,71 @@ for recipe4 in recipes.all {
         .create();
     }
 }
+
+function awBlackSmithShaped(name as string, output as IItemStack, input as IOreDictEntry){
+RecipeBuilder.get("blacksmith")
+ .setShaped([
+    [input, input, input],
+    [input, input, input],
+    [input, input, input]])
+ .addOutput(output)
+ .addTool(<ore:artisansHammer>, 10)
+ .setFluid(<liquid:lava> * 100)
+ .create();
+}
+
+function awBlackSmithShapeless(name as string, output as IItemStack, input as IOreDictEntry, mount as int){
+RecipeBuilder.get("blacksmith")
+ .setShapeless([input])
+ .addOutput(output * mount)
+ .addTool(<ore:artisansHammer>, 10)
+ .create();
+}
+
+awBlackSmithShaped("iron_block_from_ingot", <minecraft:iron_block>, <ore:ingotIron>);
+awBlackSmithShaped("gold_block_from_ingot", <minecraft:gold_block>, <ore:ingotGold>);
+awBlackSmithShaped("diamond_block_from_diamond", <minecraft:diamond_block>, <ore:gemDiamond>);
+awBlackSmithShaped("emerald_block_from_emerald", <minecraft:emerald_block>, <ore:gemEmerald>);
+awBlackSmithShaped("slime_block_from_slimeball", <minecraft:slime>, <ore:slimeball>);
+awBlackSmithShaped("slakedlime_block_from_slakedlime", <ercore:slakedlime_block>, <ore:slakedLime>);
+awBlackSmithShaped("slakedlime_block_from_cement_powder", <tconstruct:soil>, <ercore:cement_powder>);
+awBlackSmithShaped("steel_block_from_ingot", <immersiveengineering:storage:8>, <ore:ingotSteel>);
+awBlackSmithShaped("quartz_block_from_ingot", <minecraft:quartz_block>, <ore:gemQuartz>);
+awBlackSmithShaped("copper_block_from_ingot", <galacticraftcore:basic_block_core:9>, <ore:ingotCopper>);
+awBlackSmithShaped("cobalt_block_from_ingot", <tconstruct:metal>, <ore:ingotCobalt>);
+awBlackSmithShaped("ardite_block_from_ingot", <tconstruct:metal:1>, <ore:blockArdite>);
+awBlackSmithShaped("manyullyn_block_from_ingot", <tconstruct:metal:2>, <ore:blockManyullyn>);
+awBlackSmithShaped("knightslime_block_from_ingot", <tconstruct:metal:3>, <ore:blockKnightslime>);
+awBlackSmithShaped("alubrass_block_from_ingot", <tconstruct:metal:5>, <ore:blockAlubrass>);
+awBlackSmithShaped("knightmetal_block_from_ingot", <twilightforest:knightmetal_block>, <ore:ingotKnightmetal>);
+awBlackSmithShaped("fiery_block_from_ingot", <twilightforest:block_storage:1>, <ore:ingotFiery>);
+awBlackSmithShaped("ironwood_block_from_ingot", <twilightforest:block_storage>, <ore:ingotIronwood>);
+awBlackSmithShaped("Electrum_block_from_ingot", <immersiveengineering:storage:7>, <ore:ingotElectrum>);
+awBlackSmithShaped("constantan_block_from_ingot", <immersiveengineering:storage:6>, <ore:blockConstantan>);
+awBlackSmithShaped("nickel_block_from_ingot", <immersiveengineering:storage:4>, <ore:blockNickel>);
+awBlackSmithShaped("silver_block_from_ingot", <immersiveengineering:storage:3>, <ore:blockSilver>);
+awBlackSmithShaped("uranium_block_from_ingot", <immersiveengineering:storage:5>, <ore:blockUranium>);
+awBlackSmithShaped("steeleaf_block_from_ingot", <twilightforest:block_storage:2>, <ore:ingotSteeleaf>);
+awBlackSmithShaped("carminite_block_from_ingot", <twilightforest:block_storage:4>, <ore:carminite>);
+awBlackSmithShaped("lead_block_from_ingot", <immersiveengineering:storage:2>, <ore:ingotLead>);
+awBlackSmithShaped("furarctic_block_from_ingot", <twilightforest:block_storage:3>, <ore:furArctic>);
+
+awBlackSmithShapeless("nugget_from_ingot_tungsten", <ercore:tungsten_nugget>, <ore:ingotTungsten>, 9);
+awBlackSmithShapeless("nugget_from_ingot_aluminum", <immersiveengineering:metal:21>, <ore:ingotAluminum>, 9);
+awBlackSmithShapeless("nugget_from_ingot_lead", <immersiveengineering:metal:22>, <ore:ingotLead>, 9);
+awBlackSmithShapeless("nugget_from_ingot_silver", <immersiveengineering:metal:24>, <ore:ingotSilver>, 9);
+awBlackSmithShapeless("nugget_from_ingot_nickel", <immersiveengineering:metal:23>, <ore:ingotNickel>, 9);
+awBlackSmithShapeless("nugget_from_ingot_uranium", <immersiveengineering:metal:25>, <ore:ingotUranium>, 9);
+awBlackSmithShapeless("nugget_from_ingot_constantan", <immersiveengineering:metal:26>, <ore:ingotConstantan>, 9);
+awBlackSmithShapeless("nugget_from_ingot_electrum", <immersiveengineering:metal:27>, <ore:ingotElectrum>, 9);
+awBlackSmithShapeless("nugget_from_ingot_cobalt", <tconstruct:nuggets>, <ore:ingotCobalt>, 9);
+awBlackSmithShapeless("nugget_from_ingot_ardite", <tconstruct:nuggets:1>, <ore:ingotArdite>, 9);
+awBlackSmithShapeless("nugget_from_ingot_manyullyn", <tconstruct:nuggets:2>, <ore:ingotManyullyn>, 9);
+awBlackSmithShapeless("nugget_from_ingot_knightslime", <tconstruct:nuggets:3>, <ore:ingotKnightslime>, 9);
+awBlackSmithShapeless("nugget_from_ingot_alubrass", <tconstruct:nuggets:5>, <ore:ingotAlubrass>, 9);
+awBlackSmithShapeless("nugget_from_ingot_gold", <minecraft:gold_nugget>, <ore:ingotGold>, 9)
+awBlackSmithShapeless("nugget_from_ingot_copper", <immersiveengineering:meta:20>, <ore:ingotCopper>, 9)
+awBlackSmithShapeless("nugget_from_ingot_tin", <ercore:tin_nugget>, <ore:ingotTin>, 9)
+awBlackSmithShapeless("copper_plate_from_block", <immersiveengineering:metal:30>, <ore:blockCopper>, 3);
+awBlackSmithShapeless("gold_plate_from_block", <immersiveengineering:metal:40>, <ore:blockGold>, 3);
+awBlackSmithShapeless("flint_from_limestone", <minecraft:flint>, <ore:stoneLimestone>, 3);

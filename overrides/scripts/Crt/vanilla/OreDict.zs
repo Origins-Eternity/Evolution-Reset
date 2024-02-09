@@ -96,7 +96,6 @@ for i in flowers {
 
 var tools = [
 <ore:artisansBeaker>,
-<ore:artisansBurner>,
 <ore:artisansCarver>,
 <ore:artisansChisel>,
 <ore:artisansCutters>,
@@ -106,7 +105,6 @@ var tools = [
 <ore:artisansHandsaw>,
 <ore:artisansLens>,
 <ore:artisansNeedle>,
-<ore:artisansPan>,
 <ore:artisansPunch>,
 <ore:artisansmortar>,
 <ore:artisansShears>,
