@@ -209,13 +209,9 @@ for threeblock in threeblocks {
 <ore:blockThree>.remove(<minecraft:stone>);
 
 var fourblocks = [
-<ore:oreDilithium>,
-<ore:oreAbyssum>,
-<ore:oreEezo>,
-<ore:oreOsram>,
-<ore:oreTiberium>,
-<ore:obsidian>,
-<ore:oreTitanium>
+<ore:oreTitanium>,
+<ore:blockIron>,
+<ore:oreTungsten>
 ] as IOreDictEntry[];
 
 for fourblock in fourblocks {
@@ -223,58 +219,12 @@ for fourblock in fourblocks {
 }
 
 var fiveblocks = [
-<ore:oreUru>,
-<ore:oreValyrium>,
-<ore:blockObsidiorit>
+<ore:oreDiamond>,
+<ore:blockDiamond>
 ] as IOreDictEntry[];
 
 for fiveblock in fiveblocks {
     <ore:blockFive>.addAll(fiveblock);
-}
-
-var sixblocks = [
-<ore:oreDiamond>,
-<ore:blockDiamond>,
-<ore:oreDraconium>
-] as IOreDictEntry[];
-
-for sixblock in sixblocks {
-    <ore:blockSix>.addAll(sixblock);
-}
-
-var sevenblocks = [
-<ore:blockBasalt>,
-<ore:blockIron>
-] as IOreDictEntry[];
-
-for sevenblock in sevenblocks {
-    <ore:blockSeven>.addAll(sevenblock);
-}
-
-var eightblocks = [
-<ore:orePalladium>,
-<ore:orePrometheum>
-] as IOreDictEntry[];
-
-for eightblock in eightblocks {
-    <ore:blockEight>.addAll(eightblock);
-}
-
-var nineblocks = [
-<ore:oreVibranium>,
-<ore:oreTungsten>
-] as IOreDictEntry[];
-
-for nineblock in nineblocks {
-    <ore:blockNine>.addAll(nineblock);
-}
-
-var tenblocks = [
-<ore:oreIridium>
-] as IOreDictEntry[];
-
-for tenblock in tenblocks {
-    <ore:blockTen>.addAll(tenblock);
 }
 
 var stones = [
@@ -372,7 +322,6 @@ var tool = [
 <minecraft:chainmail_leggings>,
 <minecraft:chainmail_boots>,
 <minecraft:furnace>,
-<minecraft:sugar>,
 <conarm:gauntlet_mat_reach>,
 <twilightforest:fiery_sword>,
 <twilightforest:fiery_pickaxe>,

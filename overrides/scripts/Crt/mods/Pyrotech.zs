@@ -65,7 +65,12 @@ var items = [
 <pyrotech:furnace_core>,
 <pyrotech:worktable_stone>,
 <pyrotech:flint_hammer>,
-<pyrotech:cog_diamond>
+<pyrotech:cog_diamond>,
+<pyrotech:obsidian_axe>,
+<pyrotech:obsidian_hoe>,
+<pyrotech:obsidian_pickaxe>,
+<pyrotech:obsidian_shovel>,
+<pyrotech:obsidian_sword>
 ] as IItemStack[];
 
 for item in items {

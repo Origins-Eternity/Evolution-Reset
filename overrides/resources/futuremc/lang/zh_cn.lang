@@ -1,0 +1,271 @@
+# Chinese simplified translations thanks to yilangyo
+
+# Functional Block
+tile.futuremc.lantern.name=灯笼
+tile.futuremc.barrel.name=木桶
+tile.futuremc.loom.name=织布机
+tile.futuremc.stonecutter.name=碎石机
+tile.futuremc.blast_furnace.name=高炉
+tile.futuremc.smoker.name=烟熏炉
+tile.futuremc.grindstone.name=磨石
+tile.futuremc.composter.name=堆肥桶
+tile.futuremc.cartography_table.name=制图台
+
+# Plant
+tile.futuremc.lily_of_the_valley.name=铃兰
+tile.futuremc.wither_rose.name=凋零玫瑰
+tile.futuremc.cornflower.name=矢车菊
+tile.futuremc.sweet_berry_bush.name=甜浆果
+tile.futuremc.campfire.name=营火
+tile.futuremc.stripped_oak_log.name=去皮橡木原木
+tile.futuremc.stripped_spruce_log.name=去皮云杉原木
+tile.futuremc.stripped_birch_log.name=去皮白桦原木
+tile.futuremc.stripped_jungle_log.name=去皮丛林原木
+tile.futuremc.stripped_acacia_log.name=去皮金合欢原木
+tile.futuremc.stripped_dark_oak_log.name=去皮深色橡木原木
+death.attack.berryBush=%1$s 被甜浆果灌木刺死
+death.attack.sting=%1$s 被蛰死了
+death.attack.trident=%1$s 被 %2$s 刺穿
+death.attack.trident.item=%1$s 被刺穿 %2$s 和 %3$s 刺穿
+
+# Wall
+tile.futuremc.brick_wall.name=砖块墙
+tile.futuremc.andesite_wall.name=安山岩墙
+tile.futuremc.diorite_wall.name=闪长岩墙
+tile.futuremc.granite_wall.name=花岗岩石砖墙
+tile.futuremc.prismarine_wall.name=海晶石墙
+tile.futuremc.stone_brick_wall.name=石砖墙
+tile.futuremc.mossy_stone_brick_wall.name=苔石砖墙
+tile.futuremc.end_stone_brick_wall.name=末地石砖墙
+tile.futuremc.nether_brick_wall.name=下界砖墙
+tile.futuremc.sandstone_wall.name=砂岩墙
+tile.futuremc.red_sandstone_wall.name=红砂岩墙
+tile.futuremc.red_nether_brick_wall.name=红色下界砖墙
+
+# Slab
+tile.futuremc.granite_slab.name=花岗岩台阶
+tile.futuremc.andesite_slab.name=安山岩台阶
+tile.futuremc.diorite_slab.name=闪长岩台阶
+tile.futuremc.polished_granite_slab.name=磨制花岗岩台阶
+tile.futuremc.polished_andesite_slab.name=磨制安山岩台阶
+tile.futuremc.polished_diorite_slab.name=磨制闪长岩台阶
+tile.futuremc.stone_slab.name=石台阶
+tile.futuremc.prismarine_slab.name=海晶石台阶
+tile.futuremc.dark_prismarine_slab.name=深色海晶石台阶
+tile.futuremc.prismarine_brick_slab.name=海晶石砖台阶
+tile.futuremc.smooth_red_sandstone_slab.name=平滑红砂岩台阶
+tile.futuremc.smooth_sandstone_slab.name=平滑砂岩台阶
+tile.futuremc.mossy_stone_brick_slab.name=苔石砖台阶
+tile.futuremc.mossy_stone_slab.name=苔藓石台阶
+tile.futuremc.smooth_quartz_slab.name=平滑石英台阶
+tile.futuremc.red_nether_brick_slab.name=红色地狱砖台阶
+tile.futuremc.end_stone_brick_slab.name=末地石砖台阶
+tile.futuremc.bamboo.name=竹子
+tile.futuremc.bee_nest.name=蜂巢
+tile.futuremc.beehive.name=巨型蜂巢
+tile.futuremc.honey_block.name=蜂蜜块
+tile.futuremc.honeycomb_block.name=蜜脾块
+
+# Decorative Block
+tile.futuremc.smooth_stone.name=平滑石
+tile.futuremc.smooth_sandstone.name=平滑砂岩
+tile.futuremc.smooth_red_sandstone.name=平滑红砂岩
+tile.futuremc.smooth_quartz.name=平滑石英块
+tile.futuremc.soul_soil.name=灵魂土
+tile.futuremc.fletching_table.name=制箭台
+tile.futuremc.smithing_table.name=锻造台
+tile.futuremc.blue_ice.name=蓝冰
+tile.futuremc.soul_fire_torch.name=灵魂火把
+tile.futuremc.soul_fire_lantern.name=灵魂灯笼
+tile.futuremc.acacia_trapdoor.name=金合欢木活板门
+tile.futuremc.jungle_trapdoor.name=丛林木活板门
+tile.futuremc.birch_trapdoor.name=白桦木活板门
+tile.futuremc.spruce_trapdoor.name=云杉木活板门
+tile.futuremc.dark_oak_trapdoor.name=深色橡木活板门
+tile.futuremc.bell.name=钟
+tile.futuremc.acacia_wood.name=金合欢木
+tile.futuremc.jungle_wood.name=丛林木
+tile.futuremc.birch_wood.name=白桦木
+tile.futuremc.oak_wood.name=橡木
+tile.futuremc.spruce_wood.name=云杉木
+tile.futuremc.dark_oak_wood.name=深色橡木
+tile.futuremc.stripped_acacia_wood.name=去皮金合欢木
+tile.futuremc.stripped_jungle_wood.name=去皮丛林木
+tile.futuremc.stripped_birch_wood.name=去皮白桦木
+tile.futuremc.stripped_oak_wood.name=去皮橡木
+tile.futuremc.stripped_spruce_wood.name=去皮云杉木
+tile.futuremc.stripped_dark_oak_wood.name=去皮深色橡木
+tile.futuremc.chain.name=锁链
+tile.futuremc.ancient_debris.name=远古残骸
+tile.futuremc.netherite_block.name=下界合金块
+entity.ItemFrame.name=物品展示框
+
+# Banner
+item.banner.globe.black=黑色旗帜
+item.banner.globe.red=红色旗帜
+item.banner.globe.green=绿色旗帜
+item.banner.globe.brown=棕色旗帜
+item.banner.globe.blue=蓝色旗帜
+item.banner.globe.purple=紫色旗帜
+item.banner.globe.cyan=青色旗帜
+item.banner.globe.silver=浅灰色旗帜
+item.banner.globe.gray=灰色旗帜
+item.banner.globe.pink=粉红色旗帜
+item.banner.globe.lime=黄绿色旗帜
+item.banner.globe.yellow=黄色旗帜
+item.banner.globe.lightBlue=浅蓝色旗帜
+item.banner.globe.magenta=品红色旗帜
+item.banner.globe.orange=橙色旗帜
+item.banner.globe.white=白色旗帜
+
+# Crafting Materials
+item.futuremc.dye.0.name=白色染料
+item.futuremc.dye.1.name=蓝色染料
+item.futuremc.dye.2.name=棕色染料
+item.futuremc.dye.3.name=黑色染料
+
+# Item
+item.futuremc.trident.name=三叉戟
+item.futuremc.crossbow.name=十字弩
+item.futuremc.crossbow_loaded.name=填装好的十字弩
+item.futuremc.suspicious_stew.name=谜之炖菜
+item.futuremc.sweet_berries.name=甜浆果
+item.futuremc.bamboo.name=竹子
+item.futuremc.banner_pattern.name=旗帜图案
+item.futuremc.banner_pattern.flower=花朵印花
+item.futuremc.banner_pattern.creeper=爬行者印花
+item.futuremc.banner_pattern.skull=骷髅印花
+item.futuremc.banner_pattern.thing=玩意儿
+item.futuremc.banner_pattern.globe=球装物
+item.futuremc.banner_pattern.snout=象鼻虫
+item.futuremc.honey_bottle.name=蜂蜜瓶
+item.futuremc.honeycomb.name=蜂窝
+item.futuremc.nautilus_shell.name=鹦鹉螺壳
+item.futuremc.pufferfish_bucket.name=河豚桶
+item.futuremc.salmon_bucket.name=鲑鱼桶
+item.futuremc.cod_bucket.name=鳕鱼桶
+item.futuremc.tropical_fish_bucket.name=热带鱼桶
+item.futuremc.netherite_axe.name=下界合金斧
+item.futuremc.netherite_hoe.name=下界合金锄
+item.futuremc.netherite_pickaxe.name=下界合金镐
+item.futuremc.netherite_shovel.name=下界合金锹
+item.futuremc.netherite_sword.name=下界合金剑
+item.futuremc.netherite_scrap.name=下界合金剑碎片
+item.futuremc.netherite_helmet.name=下界合金头盔
+item.futuremc.netherite_chestplate.name=下界合金胸甲
+item.futuremc.netherite_leggings.name=下界合金护腿
+item.futuremc.netherite_boots.name=下界合金靴子
+item.futuremc.netherite_ingot.name=下界合金锭
+item.record.futuremc.pigstep.desc=Lena Raine - Pigstep
+item.futuremc.record_pigstep.name=音乐光盘
+
+# GUI
+container.barrel=木桶
+container.blast_furnace=高炉
+container.smoker=烟熏炉
+container.grindstone=修复 & 分解
+container.stonecutter=切石机
+container.loom=织布机
+container.smithing=升级齿轮
+
+# Entity
+entity.futuremc:trident.name=三叉戟
+entity.futuremc:panda.name=熊猫
+entity.futuremc:bee.name=蜜蜂
+entity.futuremc:cod.name=鳕鱼
+entity.futuremc:pufferfish.name=河豚
+entity.futuremc:salmon.name=鲑鱼
+entity.futuremc:tropical_fish.name=热带鱼
+
+# Enchantment
+enchantment.loyalty=忠诚
+enchantment.futuremc.loyalty.desc=三叉戟被扔后返回,较高的级别可以减少返回时间
+enchantment.channeling=引雷
+enchantment.futuremc.channeling.desc=三叉戟向被击中的实体引导闪电,仅在雷暴天气以及目标不受不透明块的阻碍时才起作用
+enchantment.riptide=激流
+enchantment.futuremc.riptide.desc=三叉戟被抛出时玩家飞得更高更远,仅在水或雨中起作用
+enchantment.impaling=穿刺
+enchantment.futuremc.impaling.desc=对自然海洋中的生物造成额外的伤害
+enchantment.quick_charge=快速填装
+enchantment.futuremc.quick_charge.desc=减少十字弩的填装时间
+
+# Creative Tab
+itemGroup.futuremc=Future MC
+
+# JEI
+container.jei.futuremc.campfire.name=营火
+container.jei.futuremc.blast_furnace.name=爆破
+container.jei.futuremc.smoker.name=吸烟
+container.jei.futuremc.stonecutter.name=切石
+container.jei.futuremc.smithing.name=史密斯
+container.jei.futuremc.composter.name=堆肥
+container.jei.futuremc.campfire.duration=持续时间
+container.jei.futuremc.composter.chance=机会
+
+# Config
+future mc.config.blueice=蓝冰
+
+# Vanilla Override
+tile.sandStone.smooth.name=切割砂岩
+tile.red SandStone.smooth.name=切割红砂岩
+
+# Subtitles
+futuremc.subtitles.barrel_close=桶关闭
+futuremc.subtitle.barrel_open=桶打开
+futuremc.subtitle.trident_throw=三叉戟铿锵声
+futuremc.subtitle.trident_pierce=三叉戟刺击
+futuremc.subtitle.trident_ground_impact=三叉戟振动
+futuremc.subtitle.trident_channeling=三叉戟雷霆裂缝
+futuremc.subtitle.trident_loyalty=三叉戟回归
+futuremc.subtitle.riptide_trident=三叉戟变焦
+futuremc.subtitle.crossbow_charge=十字弓充能
+futuremc.subtitle.crossbow_shoot=十字弓射击
+futuremc.subtitle.grindstone_use=使用的磨石
+futuremc.subtitles.panda_aggressive_ambient=熊猫怒气冲冲
+futuremc.subtitles.panda_ambient=熊猫裤
+futuremc.subtitles.panda_bite=熊猫咬伤
+futuremc.subtitles.panda_cannot_breed=熊猫叫声
+futuremc.subtitles.panda_death=熊猫死了
+futuremc.subtitles.panda_eat=熊猫吃东西
+futuremc.subtitles.panda_hurt=熊猫受伤了
+futuremc.subtitles.panda_pre_sneeze=熊猫的鼻子痒痒的
+futuremc.subtitles.panda_sneeze=熊猫打喷嚏
+futuremc.subtitles.panda_step=熊猫脚步
+futuremc.subtitles.panda_worried_ambient=熊猫呜咽声
+futuremc.subtitles.campfire_crackle=篝火爆裂声
+futuremc.subtitles.bell_ring=铃声响起
+futuremc.subtitles.bell_resonate=贝尔共鸣
+futuremc.subtitles.bee_enter_hive=蜜蜂进入蜂巢
+futuremc.subtitles.bee_exit_hive=蜜蜂离开蜂巢
+futuremc.subtitles.bee_sting=蜜蜂蜇伤
+futuremc.subtitles.bee_death=蜜蜂死了
+futuremc.subtitles.bee_hurt=蜜蜂受伤了
+futuremc.subtitles.bee_pollinate=蜜蜂快乐地嗡嗡作响
+futuremc.subtitles.bee_work=蜜蜂工作
+futuremc.subtitles.bee_aggressive=蜜蜂愤怒地嗡嗡作响
+futuremc.subtitles.bee_passive=蜜蜂嗡嗡声
+futuremc.subtitles.honey_bottle_drink=喝蜂蜜
+futuremc.subtitles.shear_hive=剪刀刮伤
+futuremc.subtitles.honey_block_slide=沿着蜂蜜块滑下
+futuremc.subtitles.equip_netherite=下界合金盔甲叮当声
+futuremc.subtitles.smithing_table_use=使用的锻造台
+futuremc.subtitles.cod_swim=鳕鱼游泳
+futuremc.subtitles.cod_hurt=鳕鱼很痛
+futuremc.subtitles.cod_death=鳕鱼死了
+futuremc.subtitles.cod_flop=鳕鱼失败
+futuremc.subtitles.salmon_swim=鲑鱼游泳
+futuremc.subtitles.salmon_hurt=鲑鱼受伤了
+futuremc.subtitles.salmon_death=鲑鱼死了
+futuremc.subtitles.salmon_flop=鲑鱼触发器
+futuremc.subtitles.pufferfish_swim=河豚游泳
+futuremc.subtitles.pufferfish_hurt=河豚鱼受伤了
+futuremc.subtitles.pufferfish_death=河豚死了
+futuremc.subtitles.pufferfish_flop=河豚失败
+futuremc.subtitles.tropical_fish_swim=热带鱼游泳
+futuremc.subtitles.tropical_fish_hurt=热带鱼很痛
+futuremc.subtitles.tropical_fish_death=热带鱼死亡
+futuremc.subtitles.tropical_fish_flop=热带鱼翻牌
+futuremc.subtitles.iron_golem_repair=铁傀儡已修复
+futuremc.subtitles.pufferfish_inflate=河豚膨胀
+futuremc.subtitles.pufferfish_deflate=河豚放气
+futuremc.subtitles.pufferfish_sting=河豚蜇伤
