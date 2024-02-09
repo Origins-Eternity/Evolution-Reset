@@ -38,17 +38,6 @@ var compacting_bin_recipes = [
 <pyrotech:generated_pile_slag_osmium>,
 <pyrotech:generated_pile_slag_lead>,
 <pyrotech:generated_pile_slag_tungsten>,
-<pyrotech:generated_pile_slag_iridium>,
-<pyrotech:generated_pile_slag_dilithium>,
-<pyrotech:generated_pile_slag_abyssum>,
-<pyrotech:generated_pile_slag_eezo>,
-<pyrotech:generated_pile_slag_osram>,
-<pyrotech:generated_pile_slag_palladium>,
-<pyrotech:generated_pile_slag_prometheum>,
-<pyrotech:generated_pile_slag_valyrium>,
-<pyrotech:generated_pile_slag_uru>,
-<pyrotech:generated_pile_slag_tiberium>,
-<pyrotech:generated_pile_slag_vibranium>,
 <minecraft:quartz_block>,
 <minecraft:grass>
 ] as IItemStack[];
@@ -126,9 +115,7 @@ var worktable_recipes = [
 "minecraft:iron_ingot_from_nuggets", 
 "minecraft:gold_ingot_from_nuggets", 
 "immersiveengineering:metal_storage/copper_ingot", 
-"mekanism:ingot_5_alt", 
-"mekanism:ingot_6_alt", 
-"mekanism:basicblock_12", 
+"ercore:tin_ingot", 
 "minecraft:stonebrick", 
 "minecraft:polished_granite", 
 "crafttweaker:tooltables",
@@ -307,13 +294,10 @@ pyrWorktableCreate("artisans", "_driver_flint", <artisanworktables:artisans_driv
 BrickKiln.addRecipe("searedbrick_from_unfired", <tconstruct:materials>, <ercore:searedbrick_unfired>, 8000, 0.5, [<pyrotech:material:7>*6]);
 BrickKiln.addRecipe("netherbrick_from_netherrack", <minecraft:netherbrick>, <minecraft:netherrack>, 6000, 0.3, [<pyrotech:rock_netherrack>*4]);
 BrickOven.addRecipe("blaze_powder_from_blaze_rod", <minecraft:blaze_powder>, <minecraft:blaze_rod>);
-BrickOven.addRecipe("cooked_dough_from_dough", <xlfoodmod:cooked_dough>, <xlfoodmod:dough>);
 
 SoakingPot.addRecipe("basalt_block_from_basalt", <ercore:basalt_coaltar>, <liquid:coal_tar>, <advancedrocketry:basalt>, true, 10 * 60 * 20);
-SoakingPot.addRecipe("sugar_from_sugarcane", <minecraft:sugar>, <liquid:sugarcane>, <pyrotech:material:8>, true, 5 * 60 * 20);
 
 StoneCrucible.addRecipe("liquid_dirt_from_dirt", <liquid:dirt> * 500, <ore:dirt>, 3 * 60 * 20, true);
-StoneCrucible.addRecipe("liquid_sugarcane_from_sugarcane", <liquid:sugarcane> * 500, <ore:sugarcane>, 2 * 60 * 20, true);
 
 StoneSawmill.addRecipe("flour_from_cropWheat", <ercore:flour>, <ore:cropWheat>, 200, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 StoneSawmill.addRecipe("treated_stick_from_tarred_board", <immersiveengineering:material>, <pyrotech:material:23>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
@@ -328,12 +312,7 @@ PitKiln.removeRecipes(<minecraft:netherbrick>);
 
 BrickCrucible.addRecipe("lime_slurry_from_slaked_lime", <liquid:slaked_lime> * 1000, <ercore:slakedlime_block>, 5 * 60 * 20);
 
-IroncladAnvil.addRecipe("nugget_from_ingot_manasteel", <botania:manaresource:17> * 9, <ore:ingotManasteel>, 20, "hammer");
-IroncladAnvil.addRecipe("nugget_from_ingot_terrasteel", <botania:manaresource:18> * 9, <ore:ingotTerrasteel>, 20, "hammer");
-IroncladAnvil.addRecipe("nugget_from_ingot_elvenelementium", <botania:manaresource:19> * 9, <ore:ingotElvenElementium>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_tungsten", <ercore:tungsten_nugget> * 9, <ercore:tungsten_ingot>, 20, "hammer");
-IroncladAnvil.addRecipe("nugget_from_ingot_draconium", <draconicevolution:nugget> * 9, <ore:ingotDraconium>, 20, "hammer");
-IroncladAnvil.addRecipe("nugget_from_ingot_draconiumawakened", <draconicevolution:nugget:1> * 9, <ore:ingotDraconiumAwakened>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_aluminum", <immersiveengineering:metal:21> * 9, <ore:ingotAluminum>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_lead", <immersiveengineering:metal:22> * 9, <ore:ingotLead>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_silver", <immersiveengineering:metal:24> * 9, <ore:ingotSilver>, 20, "hammer");
@@ -341,9 +320,6 @@ IroncladAnvil.addRecipe("nugget_from_ingot_nickel", <immersiveengineering:metal:
 IroncladAnvil.addRecipe("nugget_from_ingot_uranium", <immersiveengineering:metal:25> * 9, <ore:ingotUranium>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_constantan", <immersiveengineering:metal:26> * 9, <ore:ingotConstantan>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_electrum", <immersiveengineering:metal:27> * 9, <ore:ingotElectrum>, 20, "hammer");
-IroncladAnvil.addRecipe("nugget_from_ingot_refinedobsidian", <mekanism:nugget> * 9, <ore:ingotRefinedObsidian>, 20, "hammer");
-IroncladAnvil.addRecipe("nugget_from_ingot_osmium", <mekanism:nugget:1> * 9, <ore:ingotOsmium>, 20, "hammer");
-IroncladAnvil.addRecipe("nugget_from_ingot_refinedglowstone", <mekanism:nugget:3> * 9, <ore:ingotRefinedGlowstone>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_cobalt", <tconstruct:nuggets> * 9, <ore:ingotCobalt>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_ardite", <tconstruct:nuggets:1> * 9, <ore:ingotArdite>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_manyullyn", <tconstruct:nuggets:2> * 9, <ore:ingotManyullyn>, 20, "hammer");
@@ -352,9 +328,8 @@ IroncladAnvil.addRecipe("nugget_from_ingot_alubrass", <tconstruct:nuggets:5> * 9
 IroncladAnvil.addRecipe("obsidian_from_basalt", <minecraft:obsidian>, <ercore:basalt_coaltar>, 50, "hammer");
 
 GraniteAnvil.addRecipe("nugget_from_ingot_gold", <minecraft:gold_nugget> * 9, <ore:ingotGold>, 10, "hammer", true);
-GraniteAnvil.addRecipe("nugget_from_ingot_copper", <mekanism:nugget:5> * 9, <ore:ingotCopper>, 10, "hammer", true);
-GraniteAnvil.addRecipe("nugget_from_ingot_tin", <mekanism:nugget:6> * 9, <ore:ingotTin>, 10, "hammer", true);
-GraniteAnvil.addRecipe("nugget_from_ingot_bronze", <mekanism:nugget:2> * 9, <ore:ingotBronze>, 10, "hammer", true);
+GraniteAnvil.addRecipe("nugget_from_ingot_copper", <immersiveengineering:meta:20> * 9, <ore:ingotCopper>, 10, "hammer", true);
+GraniteAnvil.addRecipe("nugget_from_ingot_tin", <ercore:tin_nugget> * 9, <ore:ingotTin>, 10, "hammer", true);
 GraniteAnvil.addRecipe("copper_plate_from_block", <immersiveengineering:metal:30> * 3, <ore:blockCopper>, 27, "hammer", true);
 GraniteAnvil.addRecipe("gold_plate_from_block", <immersiveengineering:metal:40> * 3, <ore:blockGold>, 27, "hammer", true);
 GraniteAnvil.addRecipe("flint_from_limestone", <minecraft:flint> * 3, <ore:stoneLimestone>, 15, "pickaxe", true);
@@ -369,7 +344,7 @@ MechanicalCompactor.addRecipe("slakedlime_block_from_slakedlime", <ercore:slaked
 MechanicalCompactor.addRecipe("slakedlime_block_from_cement_powder", <tconstruct:soil>, <ercore:cement_powder>, 9);
 MechanicalCompactor.addRecipe("steel_block_from_ingot", <immersiveengineering:storage:8>, <ore:ingotSteel>, 9);
 MechanicalCompactor.addRecipe("quartz_block_from_ingot", <minecraft:quartz_block>, <ore:gemQuartz>, 9);
-MechanicalCompactor.addRecipe("copper_block_from_ingot", <mekanism:basicblock:12>, <ore:ingotCopper>, 9);
+MechanicalCompactor.addRecipe("copper_block_from_ingot", <galacticraftcore:basic_block_core:9>, <ore:ingotCopper>, 9);
 MechanicalCompactor.addRecipe("cobalt_block_from_ingot", <tconstruct:metal>, <ore:ingotCobalt>,9);
 MechanicalCompactor.addRecipe("ardite_block_from_ingot", <tconstruct:metal:1>, <ore:blockArdite>,9);
 MechanicalCompactor.addRecipe("manyullyn_block_from_ingot", <tconstruct:metal:2>, <ore:blockManyullyn>,9);
@@ -379,22 +354,11 @@ MechanicalCompactor.addRecipe("knightmetal_block_from_ingot", <twilightforest:kn
 MechanicalCompactor.addRecipe("fiery_block_from_ingot", <twilightforest:block_storage:1>, <ore:ingotFiery>,9);
 MechanicalCompactor.addRecipe("ironwood_block_from_ingot", <twilightforest:block_storage>, <ore:ingotIronwood>,9);
 MechanicalCompactor.addRecipe("quartz_enriched_iron_block_from_ingot", <refinedstorage:quartz_enriched_iron_block>, <refinedstorage:quartz_enriched_iron>,9);
-MechanicalCompactor.addRecipe("draconium_block_from_ingot", <draconicevolution:draconium_block>, <ore:blockDraconium>,9);
-MechanicalCompactor.addRecipe("draconic_block_from_ingot", <draconicevolution:draconic_block>, <ore:ingotDraconiumAwakened>,9);
 MechanicalCompactor.addRecipe("Electrum_block_from_ingot", <immersiveengineering:storage:7>, <ore:ingotElectrum>,9);
 MechanicalCompactor.addRecipe("constantan_block_from_ingot", <immersiveengineering:storage:6>, <ore:blockConstantan>,9);
 MechanicalCompactor.addRecipe("nickel_block_from_ingot", <immersiveengineering:storage:4>, <ore:blockNickel>,9);
 MechanicalCompactor.addRecipe("silver_block_from_ingot", <immersiveengineering:storage:3>, <ore:blockSilver>,9);
 MechanicalCompactor.addRecipe("uranium_block_from_ingot", <immersiveengineering:storage:5>, <ore:blockUranium>,9);
-MechanicalCompactor.addRecipe("osmium_block_from_ingot", <mekanism:basicblock>, <ore:ingotOsmium>,9);
-MechanicalCompactor.addRecipe("bronze_block_from_ingot", <mekanism:basicblock:1>, <ore:ingotBronze>,9);
-MechanicalCompactor.addRecipe("refinedobsidian_block_from_ingot", <mekanism:basicblock:2>, <ore:ingotRefinedObsidian>,9);
-MechanicalCompactor.addRecipe("coal_block_from_ingot", <mekanism:basicblock:3>, <ore:charcoal>,9);
-MechanicalCompactor.addRecipe("refinedglowstone_block_from_ingot", <mekanism:basicblock:4>, <ore:ingotRefinedGlowstone>,9);
-MechanicalCompactor.addRecipe("salt_block_from_ingot", <mekanism:saltblock>, <ore:dustSalt>,9);
-MechanicalCompactor.addRecipe("mobius_fuel_block_from_ingot", <projecte:fuel_block:1>, <projecte:item.pe_fuel:1>,9);
-MechanicalCompactor.addRecipe("aeternalis_fuel_block_from_ingot", <projecte:fuel_block:2>, <projecte:item.pe_fuel:2>,9);
-MechanicalCompactor.addRecipe("achemical_coal_fuel_block_from_ingot", <projecte:fuel_block>, <projecte:item.pe_fuel>,9);
 MechanicalCompactor.addRecipe("steeleaf_block_from_ingot", <twilightforest:block_storage:2>, <ore:ingotSteeleaf>,9);
 MechanicalCompactor.addRecipe("carminite_block_from_ingot", <twilightforest:block_storage:4>, <ore:carminite>,9);
 MechanicalCompactor.addRecipe("lead_block_from_ingot", <immersiveengineering:storage:2>, <ore:ingotLead>,9);

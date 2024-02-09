@@ -45,7 +45,7 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:5>,
 
 recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 8,
 [[<minecraft:iron_block>, <immersiveengineering:connector:13>, <minecraft:iron_block>],
-[<immersiveengineering:connector:13>, <mekanism:basicblock:12>, <immersiveengineering:connector:13>],
+[<immersiveengineering:connector:13>, <ore:blockCopper>, <immersiveengineering:connector:13>],
 [<minecraft:iron_block>, <immersiveengineering:connector:13>, <minecraft:iron_block>]]);
 
 recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 4,
@@ -100,12 +100,10 @@ var slags as IItemStack[] = [
 <pyrotech:generated_pile_slag_iron>,
 <pyrotech:generated_pile_slag_lead>,
 <pyrotech:generated_pile_slag_nickel>,
-<pyrotech:generated_pile_slag_osmium>,
 <pyrotech:generated_pile_slag_silver>,
 <pyrotech:generated_pile_slag_tin>,
 <pyrotech:generated_pile_slag_uranium>,
 <pyrotech:generated_pile_slag_tungsten>,
-<pyrotech:generated_pile_slag_iridium>,
 <twilightforest:ironwood_raw>,
 <twilightforest:armor_shard_cluster>
 ];
@@ -119,9 +117,8 @@ var ingots as IItemStack[] = [
 <minecraft:iron_ingot>,
 <immersiveengineering:metal:2>,
 <immersiveengineering:metal:4>,
-<mekanism:ingot:1>,
 <immersiveengineering:metal:3>,
-<mekanism:ingot:6>,
+<galacticraftcore:basic_item:4>,
 <immersiveengineering:metal:5>,
 <ercore:tungsten_ingot>,
 <twilightforest:ironwood_ingot>,
@@ -132,3 +129,5 @@ for i, slag in slags {
 	var ingot = ingots[i];
 	mods.immersiveengineering.ArcFurnace.addRecipe(ingot * 3, slag, null, 160, 1024);
 }
+
+mods.immersivepetroleum.Distillation.addRecipe([<liquid:lava> * 5, <liquid:gasoline> * 5], [<minecraft:diamond>, <minecraft:leather> * 2], <liquid:water>, 5, 5, [1, 1]);

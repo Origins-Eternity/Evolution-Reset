@@ -3,7 +3,6 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.Copy;
 import crafttweaker.oredict.IOreDictEntry;
-import mods.artisanintegrations.requirement.GameStages;
 
 RecipeBuilder.get("basic")
 .setShaped([
@@ -137,7 +136,7 @@ RecipeBuilder.get("chef")
 .setFluid(<liquid:milk> * 1000)		
 .addTool(<ore:artisansSifter>, 10)
 .addTool(<ercore:dough_blueprint>, 2)
-.addOutput(<xlfoodmod:dough>)  
+.addOutput(<pyrotech:dough>)  
 .create();
   
 RecipeBuilder.get("basic")
@@ -204,7 +203,6 @@ RecipeBuilder.get("engineer")
 .setExtraOutputOne(<minecraft:bone> * 3, 0.3)	 
 .setExtraOutputTwo(<minecraft:netherbrick> * 5, 0.4)	
 .setExtraOutputThree(<immersiveengineering:metal:28> * 7, 0.3)	
-.addRequirement(GameStages.allOf(["one", "two", "three"]))
 .addOutput(<pyrotech:wither_forge>)
 .create(); 
   
@@ -229,7 +227,6 @@ RecipeBuilder.get("potter")
     [null, <ercore:cement_powder>, null, null, null]])
 .setFluid(<liquid:water> * 500)
 .setLevelRequired(10)
-.addRequirement(GameStages.allOf(["one"]))
 .setConsumeExperience(false)
 .addTool(<ore:artisansDriver>, 40)
 .addTool(<ore:artisansSpanner>, 40)
@@ -617,26 +614,6 @@ RecipeBuilder.get("engineer")
 .create();
 
 RecipeBuilder.get("chemist")
-.setShaped([
-    [<ore:livingrock>, <minecraft:brewing_stand>, <minecraft:brewing_stand>, <minecraft:brewing_stand>, <ore:livingrock>],
-    [<ore:livingrock>, <ore:runeManaB>, <ore:runeManaB>, <ore:runeManaB>, <ore:livingrock>],
-    [<ore:livingrock>, <minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>, <ore:livingrock>],
-    [<ore:livingrock>, <botania:storage>, <botania:storage>, <botania:storage>, <ore:livingrock>],
-    [<ore:livingrock>, <botania:storage>, <botania:storage>, <botania:storage>, <ore:livingrock>]])
-.setName("brewery")
-.setLevelRequired(15)
-.setConsumeExperience(false)
-.setMaximumTier(2)
-.addTool(<ore:artisansChisel>, 15)
-.addTool(<ercore:plant_brewing_stand_blueprint>, 2)
-.addTool(<ore:artisansHammer>, 40)
-.setExtraOutputOne(<minecraft:blaze_powder> * 2, 0.2)	 
-.setExtraOutputTwo(<botania:manaresource>, 0.6)	
-.setExtraOutputThree(<minecraft:iron_nugget> * 6, 0.2)
-.addOutput(<botania:brewery>)
-.create();
-
-RecipeBuilder.get("chemist")
  .setShaped([
     [<immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:25>],
     [<immersiveengineering:material:25>, <immersiveengineering:material:24>, <minecraft:coal:1>, <immersiveengineering:material:24>, <immersiveengineering:material:25>],
@@ -948,7 +925,6 @@ RecipeBuilder.get("engineer")
 .setName("jeweler_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)
-.addRequirement(GameStages.allOf(["one", "two", "three", "four"]))
 .setFluid(<liquid:lava> * 8000)
 .addTool(<ore:artisansHammer>, 30)
 .addTool(<ercore:jeweler_workstation_blueprint>, 2)
@@ -1027,90 +1003,6 @@ RecipeBuilder.get("chef")
 .addTool(<ore:artisansBurner>, 20) 
 .create();
 }
-
-RecipeBuilder.get("chef")
-.setShaped([
-    [<xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>],
-    [<xlfoodmod:cooked_dough>, null, <xlfoodmod:cooked_dough>],
-    [null, null, null]])
-.setMaximumTier(2)
-.setLevelRequired(10)
-.setConsumeExperience(false)	
-.addTool(<ore:artisansSifter>, 5)
-.addTool(<ore:artisansPan>, 10)
-.addTool(<ore:artisansBurner>, 20)
-.addOutput(<xlfoodmod:top_bun>)
-.create();
-  
-RecipeBuilder.get("chef")
-.setShaped([
-    [null, null, null],
-    [<xlfoodmod:cooked_dough>, null, <xlfoodmod:cooked_dough>],
-    [<xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>]])
-.setMaximumTier(2)
-.setLevelRequired(10)
-.setConsumeExperience(false)	
-.addTool(<ore:artisansSifter>, 5)
-.addTool(<ore:artisansPan>, 10)
-.addTool(<ore:artisansBurner>, 20)
-.addOutput(<xlfoodmod:bottom_bun>)
-.create();
-  
-RecipeBuilder.get("chef")
-.setShaped([
-    [<xlfoodmod:cooked_dough>, null, null],
-    [null, <xlfoodmod:cooked_dough>, null],
-    [null, null, <xlfoodmod:cooked_dough>]])
-.setMaximumTier(2)
-.setLevelRequired(10)
-.setConsumeExperience(false)	
-.addTool(<ore:artisansSifter>, 5)
-.addTool(<ore:artisansPan>, 10)
-.addTool(<ore:artisansBurner>, 20)
-.addOutput(<xlfoodmod:baguette>)
-.create();
-  
-RecipeBuilder.get("chef")
-.setShaped([
-    [null, null, null],
-    [<xlfoodmod:cooked_dough>, <minecraft:baked_potato>, <xlfoodmod:cooked_dough>],
-    [null, null, null]])
-.setMaximumTier(2)
-.setLevelRequired(10)
-.setConsumeExperience(false)	
-.addTool(<ore:artisansSifter>, 5)
-.addTool(<ore:artisansPan>, 10)
-.addTool(<ore:artisansBurner>, 20)
-.addOutput(<xlfoodmod:potato_bread>)
-.create();
-  
-RecipeBuilder.get("chef")
-.setShaped([
-    [<xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>, <xlfoodmod:cooked_dough>],
-    [<xlfoodmod:cooked_dough>, null, <xlfoodmod:cooked_dough>],
-    [null, null, null]])
-.setMaximumTier(2)
-.setLevelRequired(10)
-.setConsumeExperience(false)	
-.addTool(<ore:artisansSifter>, 5)
-.addTool(<ore:artisansPan>, 10)
-.addTool(<ore:artisansBurner>, 20)
-.addOutput(<xlfoodmod:top_bun>)
-.create();
-  
-RecipeBuilder.get("chef")
-.setShaped([
-    [null, null, null],
-    [<xlfoodmod:cooked_dough>, <xlfoodmod:rice>, <xlfoodmod:cooked_dough>],
-    [null, null, null]])
-.setMaximumTier(2)
-.setLevelRequired(10)
-.setConsumeExperience(false)	
-.addTool(<ore:artisansSifter>, 5)
-.addTool(<ore:artisansPan>, 10)
-.addTool(<ore:artisansBurner>, 20)
-.addOutput(<xlfoodmod:rice_bread>)
-.create();
 
 for recipe4 in recipes.all {
     if (recipe4.resourceDomain == "comforts") {

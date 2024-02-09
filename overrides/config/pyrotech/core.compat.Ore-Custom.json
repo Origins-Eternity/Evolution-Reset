@@ -76,12 +76,10 @@
       "langKey": [
         "ercore:tile.ercore.copper_ore",
         "earthenbounty:tile.copper_ore",
-        "immersiveengineering:tile.immersiveengineering.ore.copper",
-        "mekanism:tile.OreBlock.CopperOre"
+        "immersiveengineering:tile.immersiveengineering.ore.copper"
       ],
       "output": [
-        "immersiveengineering:metal:20",
-        "mekanism:nugget:5"
+        "immersiveengineering:metal:20"
       ],
       "bloomYieldMinMax": [
         12,
@@ -161,23 +159,6 @@
         15
       ]
     },
-    "oreOsmium": {
-      "slagColor": "9babc4",
-      "langKey": [
-        "mekanism:tile.OreBlock.OsmiumOre"
-      ],
-      "output": [
-        "mekanism:nugget:1"
-      ],
-      "bloomYieldMinMax": [
-        12,
-        15
-      ],
-      "slagBloomYieldMinMax": [
-        12,
-        15
-      ]
-    },
     "oreSilver": {
       "slagColor": "e8f6fd",
       "langKey": [
@@ -199,11 +180,10 @@
       "slagColor": "c3e9ff",
       "langKey": [
         "ercore:tile.ercore.tin_ore",
-        "earthenbounty:tile.tin_ore",
-        "mekanism:tile.OreBlock.TinOre"
+        "earthenbounty:tile.tin_ore"
       ],
       "output": [
-        "mekanism:nugget:6"
+        "ercore:tin_nugget"
       ],
       "bloomYieldMinMax": [
         12,

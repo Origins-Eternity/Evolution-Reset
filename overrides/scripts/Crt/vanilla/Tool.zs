@@ -13,16 +13,7 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
         event.player.dropItem(true);
     }
     if (!isNull(current) && current.name == "item.dyePowder.white") {
-        event.cancel();
-    }
-    for item in <ore:banitems>.items {
-        var toolname = item.definition.id;
-	    for i in 0 to 41 {
-            var ban = event.player.getInventoryStack(i);
-	        if(!isNull(ban) && ban.definition.id == toolname) {
-		        event.cancel();
-		    }
-        }
+        event.player.dropItem(true);
     }
  });
 

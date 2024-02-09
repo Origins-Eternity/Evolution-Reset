@@ -15,7 +15,6 @@ import crafttweaker.item.IItemStack;
 <ore:blockSlakedlime>.add(<ercore:slakedlime_block>);
 <ore:tnt>.add(<minecraft:tnt>);
 <ore:steel>.add(<immersiveengineering:metal:8>);
-<ore:steel>.add(<mekanism:ingot:4>);
 <ore:whitesand>.add(<minecraft:sand>);
 <ore:whitesand>.add(<biomesoplenty:white_sand>);
 <ore:gravel>.add(<biomesoplenty:dried_sand>);
@@ -377,20 +376,7 @@ var tool = [
 <minecraft:chainmail_boots>,
 <minecraft:furnace>,
 <minecraft:sugar>,
-<mekanism:cardboardbox>,
-<mekanism:anchorupgrade>,
-<draconicevolution:grinder>,
-<draconicevolution:celestial_manipulator>,
-<draconicevolution:draconium_capacitor:2>,
-<draconicevolution:ender_energy_manipulator>,
-<draconicevolution:creative_exchanger>,
-<draconicevolution:info_tablet>,
-<doggytalents:creative_collar>,
-<doggytalents:creative_radar>,
-<draconicevolution:creative_rf_source>,
 <conarm:gauntlet_mat_reach>,
-<botania:terrapick>,
-<refinedstorage:silicon>,
 <twilightforest:fiery_sword>,
 <twilightforest:fiery_pickaxe>,
 <twilightforest:steeleaf_sword>,
@@ -404,8 +390,6 @@ var tool = [
 <twilightforest:knightmetal_shield>,
 <twilightforest:uncrafting_table>,
 <tconstruct:stone_stick>,
-<betternether:cincinnasite_forge>,
-<betternether:cincinnasite_forge>,
 <toughasnails:campfire>,
 <minecraft:bow>,
 <minecraft:wooden_sword>

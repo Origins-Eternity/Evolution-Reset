@@ -175,27 +175,16 @@ var dropores = [
 <pyrotech:generated_slag_tin>,
 <pyrotech:generated_slag_gold>,
 <pyrotech:generated_slag_aluminum>,
-<pyrotech:generated_slag_osmium>,
 <pyrotech:generated_slag_silver>,
 <pyrotech:generated_slag_uranium>,
 <pyrotech:generated_slag_lead>,
 <pyrotech:generated_slag_ardite>,
 <pyrotech:generated_slag_cobalt>,
 <pyrotech:generated_slag_tungsten>,
-<pyrotech:generated_slag_dilithium>,
-<pyrotech:generated_slag_abyssum>,
-<pyrotech:generated_slag_eezo>,
-<pyrotech:generated_slag_osram>,
-<pyrotech:generated_slag_palladium>,
-<pyrotech:generated_slag_uru>,
-<pyrotech:generated_slag_tiberium>,
-<pyrotech:generated_slag_vibranium>,
 <pyrotech:generated_slag_nickel>,
 <pyrotech:generated_slag_meteorite>,
-<pyrotech:generated_slag_obsidiorit>,
 <pyrotech:material:8>,
 <pyrotech:material:18>,
-<pyrotech:generated_slag_iridium>,
 <pyrotech:generated_slag_titanium>
 ] as IItemStack[];
 
@@ -205,27 +194,16 @@ val ores = [
 <ore:oreTin>,
 <ore:oreGold>,
 <ore:oreAluminum>,
-<ore:oreOsmium>,
 <ore:oreSilver>,
 <ore:oreUranium>,
 <ore:oreLead>,
 <ore:oreArdite>,
 <ore:oreCobalt>,
 <ore:oreTungsten>,
-<ore:oreDilithium>,
-<ore:oreAbyssum>,
-<ore:oreEezo>,
-<ore:oreOsram>,
-<ore:orePalladium>,
-<ore:oreUru>,
-<ore:oreTiberium>,
-<ore:oreVibranium>,
 <ore:oreNickel>,
 <ore:blockMeteorite>,
-<ore:blockObsidiorit>,
 <ore:blockSlakedlime>,
 <ore:eroreDiamond>,
-<ore:oreIridium>,
 <ore:oreTitanium>
 ] as IOreDictEntry[];
 
@@ -321,17 +299,11 @@ Dropt.list("list_banblocks")
 }
 
 var netherdropores = [
-<minecraft:quartz>,
-<pyrotech:generated_slag_prometheum>,
-<pyrotech:generated_slag_valyrium>,
-<ercore:sulphur>
+<minecraft:quartz>
 ] as IItemStack[];
 
 val netherores = [
-<ore:oreQuartz>,
-<ore:orePrometheum>,
-<ore:oreValyrium>,
-<ore:oreSulfur>
+<ore:oreQuartz>
 ] as IOreDictEntry[];
 
 for i, netherore in netherores {

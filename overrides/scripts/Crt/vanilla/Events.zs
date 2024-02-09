@@ -8,13 +8,13 @@ import crafttweaker.data.IData;
 import crafttweaker.command.ICommandManager;
 import crafttweaker.text.ITextComponent;
 import crafttweaker.event.PlayerSleepInBedEvent;
-import crafttweaker.event.BreakSpeedEvent;
+import crafttweaker.event.BlockBreakEvent;
 import crafttweaker.block.IBlockDefinition;
 import crafttweaker.block.IBlock;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.world.IWorld;
 import crafttweaker.event.PlayerInteractBlockEvent;
-import crafttweaker.event.BlockBreakEvent;
+import crafttweaker.event.PlayerBreakSpeedEvent;
 
 var names as string[] = [
 "crafting_table",
@@ -67,14 +67,14 @@ events.onCommand(function(event as CommandEvent) {
 });
 }
 
-events.onBreakSpeed(function(event as BreakSpeedEvent) {
+events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
 val player as IPlayer = event.player;
 val block as IBlock = event.block;
+val name = event.player.currentItem.definition.id;
     if((block.definition.hardness >= 0.6) && (event.isPlayer != false)) {
         if(isNull(player.currentItem)) {
             event.cancel();
         } else {
-            val name = player.currentItem.definition.id;
             if(name.contains("axe")) return;
             if(name.contains("shovel")) return;
             if(name.contains("hoe")) return;
@@ -85,6 +85,13 @@ val block as IBlock = event.block;
 });
 
 events.onBlockBreak(function(event as BlockBreakEvent) {
+val name = event.player.currentItem.definition.id;
+    for item in <ore:banitems>.items {
+        var toolname = item.definition.id;
+        if(name == toolname) {
+            event.cancel();
+        }
+    }
     if(!event.world.remote) {
         val block as IBlock = event.block;
         if(block.definition.id.contains("ore")) {
