@@ -12,7 +12,8 @@ var modrecipes = [
 <tconstruct:smeltery_io>,
 <tconstruct:seared_tank>,
 <tconstruct:faucet>,
-<tconstruct:tooltables:4>
+<tconstruct:tooltables:4>,
+<tconstruct:tooltables>
 ] as IItemStack[];
 
 for items in modrecipes{

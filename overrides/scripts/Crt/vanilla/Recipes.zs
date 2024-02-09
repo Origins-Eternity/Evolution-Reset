@@ -175,11 +175,6 @@ recipes.addShaped(<artisanworktables:workshop:3>,
 [<ore:blockIron>, <artisanworktables:workstation:3>, <ore:blockIron>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
-recipes.addShaped(<artisanworktables:workshop:11>,
-[[<ore:ingotIron>, <ore:slabWood>, <ore:ingotIron>],
-[<ercore:basalt>, <artisanworktables:workstation:11>, <ercore:basalt>],
-[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
-
 recipes.addShaped(<artisanworktables:workshop:6>,
 [[<pyrotech:material:16>, <ore:plateCopper>, <pyrotech:material:16>],
 [<ore:blockSteel>, <artisanworktables:workstation:6>, <ore:blockSteel>],
@@ -190,11 +185,6 @@ recipes.addShaped(<artisanworktables:workshop:14>,
 [<ore:stoneGranitePolished>, <artisanworktables:workstation:14>, <ore:stoneGranitePolished>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
-recipes.addShaped(<artisanworktables:workshop:7>,
-[[<ore:blockLapis>, <ore:plateSteel>, <ore:blockLapis>],
-[<ore:blockLapis>, <artisanworktables:workstation:7>, <ore:blockLapis>],
-[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
-
 recipes.addShaped(<artisanworktables:workshop>,
 [[<ore:ingotGold>, <ore:plateGold>, <ore:ingotGold>],
 [<ore:wool>, <artisanworktables:workstation>, <ore:wool>],
@@ -203,11 +193,6 @@ recipes.addShaped(<artisanworktables:workshop>,
 recipes.addShaped(<artisanworktables:workshop:9>,
 [[<immersiveengineering:metal:8>, <minecraft:emerald>, <immersiveengineering:metal:8>],
 [<minecraft:potion>.withTag({Potion: "minecraft:long_fire_resistance"}), <artisanworktables:workstation:9>, <minecraft:potion>.withTag({Potion: "minecraft:strong_leaping"})],
-[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
-
-recipes.addShaped(<artisanworktables:workshop:4>,
-[[<ore:blockDiamond>, <ore:plateGold>, <ore:blockDiamond>],
-[<ore:obsidian>, <artisanworktables:workstation:4>, <ore:obsidian>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
 recipes.addShaped(<artisanworktables:workshop:13>,
