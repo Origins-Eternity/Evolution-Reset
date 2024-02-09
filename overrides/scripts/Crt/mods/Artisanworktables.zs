@@ -976,9 +976,9 @@ awBlackSmithShapeless("nugget_from_ingot_ardite", <tconstruct:nuggets:1>, <ore:i
 awBlackSmithShapeless("nugget_from_ingot_manyullyn", <tconstruct:nuggets:2>, <ore:ingotManyullyn>, 9);
 awBlackSmithShapeless("nugget_from_ingot_knightslime", <tconstruct:nuggets:3>, <ore:ingotKnightslime>, 9);
 awBlackSmithShapeless("nugget_from_ingot_alubrass", <tconstruct:nuggets:5>, <ore:ingotAlubrass>, 9);
-awBlackSmithShapeless("nugget_from_ingot_gold", <minecraft:gold_nugget>, <ore:ingotGold>, 9)
-awBlackSmithShapeless("nugget_from_ingot_copper", <immersiveengineering:meta:20>, <ore:ingotCopper>, 9)
-awBlackSmithShapeless("nugget_from_ingot_tin", <ercore:tin_nugget>, <ore:ingotTin>, 9)
+awBlackSmithShapeless("nugget_from_ingot_gold", <minecraft:gold_nugget>, <ore:ingotGold>, 9);
+awBlackSmithShapeless("nugget_from_ingot_copper", <immersiveengineering:meta:20>, <ore:ingotCopper>, 9);
+awBlackSmithShapeless("nugget_from_ingot_tin", <ercore:tin_nugget>, <ore:ingotTin>, 9);
 awBlackSmithShapeless("copper_plate_from_block", <immersiveengineering:metal:30>, <ore:blockCopper>, 3);
 awBlackSmithShapeless("gold_plate_from_block", <immersiveengineering:metal:40>, <ore:blockGold>, 3);
 awBlackSmithShapeless("flint_from_limestone", <minecraft:flint>, <ore:stoneLimestone>, 3);

@@ -147,7 +147,6 @@ var handsaws = [
 <artisanworktables:artisans_handsaw_steel>,
 <artisanworktables:artisans_handsaw_silver>,
 <artisanworktables:artisans_handsaw_boron>,
-<artisanworktables:artisans_handsaw_osmium>,
 <artisanworktables:artisans_handsaw_hardcarbon>,
 <artisanworktables:artisans_handsaw_electrum>,
 <artisanworktables:artisans_handsaw_lead>,

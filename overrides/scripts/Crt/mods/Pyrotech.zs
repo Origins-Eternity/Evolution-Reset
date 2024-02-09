@@ -26,7 +26,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.pyrotech.CrudeDryingRack;
 import mods.pyrotech.DryingRack;
 import mods.pyrotech.Burn;
-import mods.pyrotech.Bloomery;
 
 var compacting_bin_recipes = [
 <pyrotech:generated_pile_slag_aluminum>,
@@ -35,7 +34,6 @@ var compacting_bin_recipes = [
 <pyrotech:generated_pile_slag_cobalt>,
 <pyrotech:generated_pile_slag_silver>,
 <pyrotech:generated_pile_slag_nickel>,
-<pyrotech:generated_pile_slag_osmium>,
 <pyrotech:generated_pile_slag_lead>,
 <pyrotech:generated_pile_slag_tungsten>,
 <minecraft:quartz_block>,
@@ -295,8 +293,6 @@ BrickKiln.addRecipe("searedbrick_from_unfired", <tconstruct:materials>, <ercore:
 BrickKiln.addRecipe("netherbrick_from_netherrack", <minecraft:netherbrick>, <minecraft:netherrack>, 6000, 0.3, [<pyrotech:rock_netherrack>*4]);
 BrickOven.addRecipe("blaze_powder_from_blaze_rod", <minecraft:blaze_powder>, <minecraft:blaze_rod>);
 
-SoakingPot.addRecipe("basalt_block_from_basalt", <ercore:basalt_coaltar>, <liquid:coal_tar>, <advancedrocketry:basalt>, true, 10 * 60 * 20);
-
 StoneCrucible.addRecipe("liquid_dirt_from_dirt", <liquid:dirt> * 500, <ore:dirt>, 3 * 60 * 20, true);
 
 StoneSawmill.addRecipe("flour_from_cropWheat", <cuisine:food:1>, <ore:cropWheat>, 200, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
@@ -327,7 +323,7 @@ IroncladAnvil.addRecipe("nugget_from_ingot_knightslime", <tconstruct:nuggets:3> 
 IroncladAnvil.addRecipe("nugget_from_ingot_alubrass", <tconstruct:nuggets:5> * 9, <ore:ingotAlubrass>, 20, "hammer");
 
 GraniteAnvil.addRecipe("nugget_from_ingot_gold", <minecraft:gold_nugget> * 9, <ore:ingotGold>, 10, "hammer", true);
-GraniteAnvil.addRecipe("nugget_from_ingot_copper", <immersiveengineering:meta:20> * 9, <ore:ingotCopper>, 10, "hammer", true);
+GraniteAnvil.addRecipe("nugget_from_ingot_copper", <immersiveengineering:metal:20> * 9, <ore:ingotCopper>, 10, "hammer", true);
 GraniteAnvil.addRecipe("nugget_from_ingot_tin", <ercore:tin_nugget> * 9, <ore:ingotTin>, 10, "hammer", true);
 GraniteAnvil.addRecipe("copper_plate_from_block", <immersiveengineering:metal:30> * 3, <ore:blockCopper>, 27, "hammer", true);
 GraniteAnvil.addRecipe("gold_plate_from_block", <immersiveengineering:metal:40> * 3, <ore:blockGold>, 27, "hammer", true);
@@ -352,7 +348,6 @@ MechanicalCompactor.addRecipe("alubrass_block_from_ingot", <tconstruct:metal:5>,
 MechanicalCompactor.addRecipe("knightmetal_block_from_ingot", <twilightforest:knightmetal_block>, <ore:ingotKnightmetal>,9);
 MechanicalCompactor.addRecipe("fiery_block_from_ingot", <twilightforest:block_storage:1>, <ore:ingotFiery>,9);
 MechanicalCompactor.addRecipe("ironwood_block_from_ingot", <twilightforest:block_storage>, <ore:ingotIronwood>,9);
-MechanicalCompactor.addRecipe("quartz_enriched_iron_block_from_ingot", <refinedstorage:quartz_enriched_iron_block>, <refinedstorage:quartz_enriched_iron>,9);
 MechanicalCompactor.addRecipe("Electrum_block_from_ingot", <immersiveengineering:storage:7>, <ore:ingotElectrum>,9);
 MechanicalCompactor.addRecipe("constantan_block_from_ingot", <immersiveengineering:storage:6>, <ore:blockConstantan>,9);
 MechanicalCompactor.addRecipe("nickel_block_from_ingot", <immersiveengineering:storage:4>, <ore:blockNickel>,9);
@@ -362,13 +357,3 @@ MechanicalCompactor.addRecipe("steeleaf_block_from_ingot", <twilightforest:block
 MechanicalCompactor.addRecipe("carminite_block_from_ingot", <twilightforest:block_storage:4>, <ore:carminite>,9);
 MechanicalCompactor.addRecipe("lead_block_from_ingot", <immersiveengineering:storage:2>, <ore:ingotLead>,9);
 MechanicalCompactor.addRecipe("furarctic_block_from_ingot", <twilightforest:block_storage:3>, <ore:furArctic>,9);
-
-Bloomery.createWitherForgeBuilder("shard_from_obsidain_magic", <ercore:obsidian_magic_shard>, <ercore:obsidian_magic>)
-.setAnvilTiers(["obsidian"])
-.setBurnTimeTicks(30000)
-.setFailureChance(0.45)
-.setBloomYield(7, 9)
-.setSlagItem(<pyrotech:slag>, 4)
-.addFailureItem(<pyrotech:slag>, 1)
-.addFailureItem(<pyrotech:rock>, 2)
-.register();

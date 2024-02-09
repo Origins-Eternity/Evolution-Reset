@@ -225,8 +225,7 @@ for fourblock in fourblocks {
 var fiveblocks = [
 <ore:oreUru>,
 <ore:oreValyrium>,
-<ore:blockObsidiorit>,
-<ore:oreOsmium>
+<ore:blockObsidiorit>
 ] as IOreDictEntry[];
 
 for fiveblock in fiveblocks {

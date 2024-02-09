@@ -182,7 +182,6 @@ var dropores = [
 <pyrotech:generated_slag_cobalt>,
 <pyrotech:generated_slag_tungsten>,
 <pyrotech:generated_slag_nickel>,
-<pyrotech:generated_slag_meteorite>,
 <pyrotech:material:8>,
 <pyrotech:material:18>,
 <pyrotech:generated_slag_titanium>
@@ -201,7 +200,6 @@ val ores = [
 <ore:oreCobalt>,
 <ore:oreTungsten>,
 <ore:oreNickel>,
-<ore:blockMeteorite>,
 <ore:blockSlakedlime>,
 <ore:eroreDiamond>,
 <ore:oreTitanium>

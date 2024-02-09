@@ -42,7 +42,7 @@ for i, materials in material {
 for i, materials in material {
     var respirators = respirator[i];
     recipes.addShaped(respirators,
-        [[<minecraft:glass_bottle>, <advancedrocketry:spacehelmet>, <minecraft:glass_bottle>],
+        [[<minecraft:glass_bottle>, <galacticraftcore:oxygen_mask>, <minecraft:glass_bottle>],
         [<ore:leather>, materials, <ore:leather>],
         [<ore:wool>, <ore:treeLeaves>, <ore:wool>]
     ]);
