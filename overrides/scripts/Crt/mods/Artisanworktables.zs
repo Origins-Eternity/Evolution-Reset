@@ -941,7 +941,7 @@ awBlackSmithShaped("diamond_block_from_diamond", <minecraft:diamond_block>, <ore
 awBlackSmithShaped("emerald_block_from_emerald", <minecraft:emerald_block>, <ore:gemEmerald>);
 awBlackSmithShaped("slime_block_from_slimeball", <minecraft:slime>, <ore:slimeball>);
 awBlackSmithShaped("slakedlime_block_from_slakedlime", <ercore:slakedlime_block>, <ore:slakedLime>);
-awBlackSmithShaped("slakedlime_block_from_cement_powder", <tconstruct:soil>, <ercore:cement_powder>);
+awBlackSmithShaped("soil_from_cement_powder", <tconstruct:soil>, <ercore:cement_powder>);
 awBlackSmithShaped("steel_block_from_ingot", <immersiveengineering:storage:8>, <ore:ingotSteel>);
 awBlackSmithShaped("quartz_block_from_ingot", <minecraft:quartz_block>, <ore:gemQuartz>);
 awBlackSmithShaped("copper_block_from_ingot", <galacticraftcore:basic_block_core:9>, <ore:ingotCopper>);
