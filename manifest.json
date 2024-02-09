@@ -12,7 +12,7 @@
   "manifestVersion": 1,
   "name": "Evolution-Reset",
   "version": "1.2.0",
-  "author": "Origins_Eternity",
+  "author": "Origins_Eternity & Lacz",
   "files": [
     {
       "projectID": 79287,
@@ -437,7 +437,7 @@
     {
       "projectID": 681509,
       "fileID": 5093270,
-      "required": true
+      "required": false
     },
     {
       "projectID": 360795,
@@ -500,13 +500,13 @@
       "required": true
     },
     {
-      "projectID": 284351,
-      "fileID": 3205284,
+      "projectID": 327056,
+      "fileID": 2922328,
       "required": true
     },
     {
-      "projectID": 327056,
-      "fileID": 2922328,
+      "projectID": 284351,
+      "fileID": 3205284,
       "required": true
     },
     {
@@ -525,13 +525,13 @@
       "required": true
     },
     {
-      "projectID": 227639,
-      "fileID": 3051450,
+      "projectID": 300639,
+      "fileID": 2980414,
       "required": true
     },
     {
-      "projectID": 300639,
-      "fileID": 2980414,
+      "projectID": 227639,
+      "fileID": 3051450,
       "required": true
     },
     {
@@ -540,13 +540,13 @@
       "required": true
     },
     {
-      "projectID": 76544,
-      "fileID": 5052837,
+      "projectID": 321792,
+      "fileID": 4496098,
       "required": true
     },
     {
-      "projectID": 321792,
-      "fileID": 4496098,
+      "projectID": 76544,
+      "fileID": 5052837,
       "required": true
     },
     {
@@ -575,13 +575,13 @@
       "required": true
     },
     {
-      "projectID": 494559,
-      "fileID": 4442257,
+      "projectID": 228525,
+      "fileID": 2836960,
       "required": true
     },
     {
-      "projectID": 228525,
-      "fileID": 2836960,
+      "projectID": 494559,
+      "fileID": 4442257,
       "required": true
     }
   ],
