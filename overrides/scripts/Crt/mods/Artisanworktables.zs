@@ -9,8 +9,8 @@ RecipeBuilder.get("basic")
     [<pyrotech:material:16>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:material:16>],
     [<ore:blockIron>, <ore:ingotIron>, <pyrotech:stash_stone>, <ore:ingotIron>, <ore:blockIron>],
     [<pyrotech:material:16>, <ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>, <pyrotech:material:16>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
 .setName("blacksmith_workstation")
 .setLevelRequired(5)
 .setConsumeExperience(false)
@@ -67,10 +67,10 @@ RecipeBuilder.get("basic")
 RecipeBuilder.get("blacksmith")
 .setShaped([
     [<pyrotech:masonry_brick_block>, <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, <pyrotech:masonry_brick_block>],
-    [<ore:stoneBasaltPolished>, <pyrotech:planks_tarred>, <pyrotech:crate_stone>, <pyrotech:planks_tarred>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:stoneBasaltPolished>]])
+    [<ercore:basalt>, <pyrotech:planks_tarred>, <pyrotech:crate_stone>, <pyrotech:planks_tarred>, <ercore:basalt>],
+    [<ercore:basalt>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <ercore:basalt>],
+    [<ercore:basalt>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ercore:basalt>],
+    [<ercore:basalt>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ercore:basalt>]])
 .setName("crafting_table")
 .setLevelRequired(30)
 .setFluid(<liquid:lava> * 2000)
@@ -79,7 +79,7 @@ RecipeBuilder.get("blacksmith")
 .setExtraOutputTwo(<pyrotech:rock:7> * 8, 0.3)	
 .setExtraOutputThree(<immersiveengineering:metal:28> * 2, 0.2)	
 .addTool(<ore:artisansTSquare>, 40)  
-.addTool(<ercore:crafting_table_blueprint>, 2)
+.addTool(<ercore:craftingtable_core_blueprint>, 2)
 .addTool(<ore:artisansCarver>, 40) 
 .setSecondaryIngredients([<immersiveengineering:metal:30> * 9])
 .addOutput(<minecraft:crafting_table>)
@@ -90,8 +90,8 @@ RecipeBuilder.get("blacksmith")
     [<ore:blockSteel>, <ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>, <ore:blockSteel>],
     [<ore:blockSteel>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <ore:blockSteel>],
     [<ore:blockSteel>, <ore:blockCopper>, <ore:blockCopper>, <ore:blockCopper>, <ore:blockSteel>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
 .setName("engineer_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)
@@ -111,8 +111,8 @@ RecipeBuilder.get("basic")
     [<pyrotech:planks_tarred>, <ore:slabWood>, <ore:slabWood>, <ore:slabWood>, <pyrotech:planks_tarred>],
     [<pyrotech:planks_tarred>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:planks_tarred>],
     [<pyrotech:planks_tarred>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <pyrotech:planks_tarred>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
 .setName("chef_workstation")
 .setLevelRequired(15)
 .setMaximumTier(2)
@@ -127,9 +127,9 @@ RecipeBuilder.get("basic")
   
 RecipeBuilder.get("chef")
 .setShaped([
-    [<ercore:flour>, <ercore:flour>, <ercore:flour>],
-    [<ercore:flour>, <ercore:flour>, <ercore:flour>],
-    [<ercore:flour>, <ercore:flour>, <ercore:flour>]])
+    [<ore:foodFlour>, <ore:foodFlour>, <ore:foodFlour>],
+    [<ore:foodFlour>, <ore:foodFlour>, <ore:foodFlour>],
+    [<ore:foodFlour>, <ore:foodFlour>, <ore:foodFlour>]])
 .setName("dough")
 .setLevelRequired(5)
 .setConsumeExperience(false)
@@ -155,9 +155,9 @@ RecipeBuilder.get("chef")
 .setShaped([
     [<pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>],
     [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>],
-    [<ore:blockSteel>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:blockSteel>],
+    [<ore:blockSteel>, <ercore:basalt>, <ercore:basalt>, <ercore:basalt>, <ore:blockSteel>],
     [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>],
-    [<ore:blockIron>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:blockIron>]])
+    [<ore:blockIron>, <ercore:basalt>, <ercore:basalt>, <ercore:basalt>, <ore:blockIron>]])
 .setName("furnace")
 .setLevelRequired(30)
 .setSecondaryIngredients([<immersiveengineering:metal:38> * 9, <minecraft:fire_charge> * 2])
@@ -308,8 +308,8 @@ RecipeBuilder.get("basic")
     [<ore:dyeYellow>, <ore:dyeLightBlue>, <ore:dyePurple>, <ore:dyeLightBlue>, <ore:dyeYellow>],
     [<ore:dyePurple>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <ore:dyePurple>],
     [<ore:dyeYellow>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:dyeYellow>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
 .setName("tailor_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)
@@ -437,8 +437,8 @@ RecipeBuilder.get("basic")
     [<ore:leather>, <ore:leather>, <ore:leather>, <ore:leather>, <ore:leather>],
     [<ore:leather>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <ore:leather>],
     [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
 .setName("tanner_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)
@@ -572,8 +572,8 @@ RecipeBuilder.get("basic")
     [<immersiveengineering:storage:8>, <immersiveengineering:storage:8>, <minecraft:emerald_block>, <immersiveengineering:storage:8>, <immersiveengineering:storage:8>],
     [<minecraft:iron_block>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <minecraft:iron_block>],
     [<minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
 .setName("apothecary_workstation")
 .setLevelRequired(30)
 .setConsumeExperience(false) 
@@ -920,8 +920,8 @@ RecipeBuilder.get("engineer")
     [<ore:obsidian>, <ore:obsidian>],
     [<ore:blockRedstone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <ore:blockRedstone>],
     [<ore:obsidian>, <ore:blockGold>, <ore:blockDiamond>, <ore:blockGold>, <ore:obsidian>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
+    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
 .setName("jeweler_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)

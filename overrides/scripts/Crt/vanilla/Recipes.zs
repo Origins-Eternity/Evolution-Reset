@@ -177,7 +177,7 @@ recipes.addShaped(<artisanworktables:workshop:3>,
 
 recipes.addShaped(<artisanworktables:workshop:11>,
 [[<ore:ingotIron>, <ore:slabWood>, <ore:ingotIron>],
-[<ore:stoneBasaltPolished>, <artisanworktables:workstation:11>, <ore:stoneBasaltPolished>],
+[<ercore:basalt>, <artisanworktables:workstation:11>, <ercore:basalt>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
 recipes.addShaped(<artisanworktables:workshop:6>,

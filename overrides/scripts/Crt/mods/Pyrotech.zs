@@ -197,7 +197,7 @@ recipes.addShaped(<pyrotech:cog_diamond>,
 Worktable.buildShaped(<artisanworktables:workstation:5>, [
 [<pyrotech:material:16>, <ore:plateCopper>, <pyrotech:material:16>],
 [<ore:blockCopper>, <pyrotech:stash_stone>, <ore:blockCopper>],
-[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]
+[<ercore:basalt>, <pyrotech:masonry_brick_block>, <ercore:basalt>]
 ]
 )
 .setName("custom_recipe_workstation5")
@@ -207,7 +207,7 @@ Worktable.buildShaped(<artisanworktables:workstation:5>, [
 Worktable.buildShaped(<artisanworktables:workstation:14>, [
 [<pyrotech:material:16>, <minecraft:brick>, <pyrotech:material:16>],
 [<minecraft:brick_block>, <pyrotech:stash_stone>, <minecraft:brick_block>],
-[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]
+[<ercore:basalt>, <pyrotech:masonry_brick_block>, <ercore:basalt>]
 ])
 .setName("custom_recipe_workstation14")
 .setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 30)
@@ -299,9 +299,9 @@ SoakingPot.addRecipe("basalt_block_from_basalt", <ercore:basalt_coaltar>, <liqui
 
 StoneCrucible.addRecipe("liquid_dirt_from_dirt", <liquid:dirt> * 500, <ore:dirt>, 3 * 60 * 20, true);
 
-StoneSawmill.addRecipe("flour_from_cropWheat", <ercore:flour>, <ore:cropWheat>, 200, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
+StoneSawmill.addRecipe("flour_from_cropWheat", <cuisine:food:1>, <ore:cropWheat>, 200, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 StoneSawmill.addRecipe("treated_stick_from_tarred_board", <immersiveengineering:material>, <pyrotech:material:23>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
-BrickSawmill.addRecipe("flour_from_cropWheat2", <ercore:flour>, <ore:cropWheat>, 200, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
+BrickSawmill.addRecipe("flour_from_cropWheat2", <cuisine:food:1>, <ore:cropWheat>, 200, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 BrickSawmill.addRecipe("cement_powder_from_soil", <ercore:cement_powder> * 9, <tconstruct:soil>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 
 Campfire.removeRecipes(<minecraft:bread>);

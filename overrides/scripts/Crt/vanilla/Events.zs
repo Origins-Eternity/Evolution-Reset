@@ -13,25 +13,35 @@ import crafttweaker.block.IBlockDefinition;
 import crafttweaker.block.IBlock;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.world.IWorld;
+import crafttweaker.world.IWorldInfo;
 import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.PlayerBreakSpeedEvent;
-
-var names as string[] = [
-"crafting_table",
-"furnace"
-];
+import crafttweaker.event.PlayerAdvancementEvent;
+import crafttweaker.event.PortalSpawnEvent;
+import crafttweaker.event.PlayerBonemealEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
-var id = event.block.definition.id;
 var player = event.player;
-for name in names {
-    if (id.contains(name)) {
+var id = event.block.definition.id;
+var name = event.player.currentItem.definition.id;
+    if (id == "minecraft:furance") {
+        if(name != "pyrotech:furance_core") {
+            if (!event.world.isRemote()) {
+                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
+            }
+            event.cancel();
+        }
+    } else if(id == "minecraft:crafting_table") {
         if (!event.world.isRemote()) {
             player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
         }
         event.cancel();
     }
-}});
+});
+
+events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
+    event.cancel();
+});
 
 events.onPlayerRespawn(function(event as PlayerRespawnEvent) {
     val player as IPlayer = event.player;
@@ -39,6 +49,12 @@ events.onPlayerRespawn(function(event as PlayerRespawnEvent) {
 	player.addPotionEffect(<potion:minecraft:night_vision>.makePotionEffect(6000, 5));
     player.addPotionEffect(<potion:minecraft:hunger>.makePotionEffect(400, 1));
 });
+
+events.onPlayerAdvancement(function(event as PlayerAdvancementEvent) {
+    val player as IPlayer = event.player;
+    player.xp += 5;
+});
+
 
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var player = event.player as IPlayer;
@@ -85,7 +101,15 @@ val name = event.player.currentItem.definition.id;
 });
 
 events.onBlockBreak(function(event as BlockBreakEvent) {
-val name = event.player.currentItem.definition.id;
+if(event.isPlayer()) {
+    val name = event.player.currentItem.definition.id;
+    val info = event.world.getWorldInfo();
+    if(info.difficultyLocked == false) {
+        event.cancel();
+        if (!event.world.isRemote()) {
+            player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
+        }
+    }
     for item in <ore:banitems>.items {
         var toolname = item.definition.id;
         if(name == toolname) {
@@ -100,4 +124,4 @@ val name = event.player.currentItem.definition.id;
             event.player.setAllowFTBUltimine(false);
         }
     }
-});
+}});

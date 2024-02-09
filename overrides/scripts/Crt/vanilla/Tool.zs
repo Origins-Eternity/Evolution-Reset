@@ -4,16 +4,16 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.command.ICommandManager;
 import crafttweaker.events.IEventManager;
 import crafttweaker.player.IPlayer;
-import crafttweaker.event.PlayerInteractEvent;
+import crafttweaker.event.PlayerInteractBlockEvent;
 
-events.onPlayerInteract(function(event as PlayerInteractEvent) {
+events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
     var ser = server.commandManager as ICommandManager;
     var current = event.player.currentItem;
     if (!isNull(current) && current.name == "item.glassBottle") {
         event.player.dropItem(true);
     }
     if (!isNull(current) && current.name == "item.dyePowder.white") {
-        event.player.dropItem(true);
+        event.cancel();
     }
  });
 
