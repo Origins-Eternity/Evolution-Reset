@@ -1,0 +1,19 @@
+{
+	x: 4.5d,
+	y: 4.5d,
+	dependencies: [
+		"d34d6e15"
+	],
+	tasks: [{
+		uid: "cb20fc0a",
+		type: "item",
+		items: [{
+			item: "pyrotech:brick_crucible"
+		}]
+	}],
+	rewards: [{
+		uid: "34f41bc7",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

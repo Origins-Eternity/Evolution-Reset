@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: -1.0d,
+	dependencies: [
+		"e68e3645"
+	],
+	tasks: [{
+		uid: "102d5a9a",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wooden_device0 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "660f6c2b",
+		type: "item",
+		item: "immersiveengineering:tool 1 1"
+	}]
+}

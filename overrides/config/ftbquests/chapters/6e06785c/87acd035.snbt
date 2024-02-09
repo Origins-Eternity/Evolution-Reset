@@ -1,0 +1,44 @@
+{
+	x: 8.0d,
+	y: -1.0d,
+	dependencies: [
+		"299ed8d3"
+	],
+	tasks: [{
+		uid: "5fb7f380",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal 1 38"
+		}],
+		count: 64L
+	},
+	{
+		uid: "1e0d4bdf",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 1 2"
+		}],
+		count: 64L
+	},
+	{
+		uid: "405e5b91",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 1 22"
+		}],
+		count: 16L
+	},
+	{
+		uid: "7f3a70aa",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 1 23"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "f875d8cd",
+		type: "xp_levels",
+		xp_levels: 5
+	}]
+}

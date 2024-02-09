@@ -37,6 +37,8 @@ import crafttweaker.item.IItemStack;
 <ore:blockSix>.add(<minecraft:beacon>);
 <ore:doorIron>.add(<minecraft:iron_door>);
 <ore:doorIron>.add(<minecraft:iron_trapdoor>);
+<ore:powderCement>.add(<ercore:cement_powder>);
+<ore:oreTitanium>.addAll(<ore:oreIlmenite>);
 
 var dirts =[
 <biomesoplenty:dirt:8>,

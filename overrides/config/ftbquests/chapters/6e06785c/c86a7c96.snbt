@@ -1,0 +1,26 @@
+{
+	x: 10.0d,
+	y: -1.0d,
+	dependencies: [
+		"87acd035"
+	],
+	tasks: [{
+		uid: "d62fc4f1",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device0 1 5"
+		}]
+	},
+	{
+		uid: "99dc3b08",
+		type: "item",
+		items: [{
+			item: "minecraft:lever"
+		}]
+	}],
+	rewards: [{
+		uid: "4625a25e",
+		type: "item",
+		item: "immersiveengineering:wooden_device0 1 1"
+	}]
+}

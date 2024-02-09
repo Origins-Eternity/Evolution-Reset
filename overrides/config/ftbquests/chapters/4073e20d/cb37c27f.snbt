@@ -1,0 +1,26 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	dependencies: [
+		"1b8c004a"
+	],
+	tasks: [{
+		uid: "00f55c04",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wooden_device0"
+		}]
+	},
+	{
+		uid: "4415354a",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wooden_device0 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "314e84f5",
+		type: "xp",
+		xp: 10
+	}]
+}

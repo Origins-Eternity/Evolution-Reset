@@ -1,0 +1,17 @@
+{
+	x: 10.5d,
+	y: -1.0d,
+	dependencies: [
+		"f9b796e3",
+		"5e4ea23b"
+	],
+	tasks: [{
+		uid: "3ac994d8",
+		type: "item",
+		items: [{
+			item: "pyrotech:straw_bed"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

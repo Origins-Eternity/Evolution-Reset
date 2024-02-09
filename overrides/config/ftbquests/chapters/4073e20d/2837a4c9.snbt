@@ -1,0 +1,19 @@
+{
+	x: 2.0d,
+	y: -1.0d,
+	dependencies: [
+		"f8639050"
+	],
+	tasks: [{
+		uid: "9e369c4d",
+		type: "item",
+		items: [{
+			item: "ercore:bronze_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "657d6d05",
+		type: "xp",
+		xp: 100
+	}]
+}

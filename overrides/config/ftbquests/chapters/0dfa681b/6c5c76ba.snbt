@@ -1,0 +1,27 @@
+{
+	x: 14.5d,
+	y: 2.5d,
+	dependencies: [
+		"b9444005"
+	],
+	tasks: [{
+		uid: "a288dd45",
+		type: "item",
+		items: [{
+			item: "pyrotech:flint_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4b2eb6dc",
+		type: "xp",
+		xp: 10
+	},
+	{
+		uid: "03cabc29",
+		type: "item",
+		item: "pyrotech:bucket_wood",
+		count: 2
+	}]
+}

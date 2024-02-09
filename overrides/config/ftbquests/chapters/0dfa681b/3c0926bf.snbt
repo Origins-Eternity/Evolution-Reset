@@ -1,0 +1,14 @@
+{
+	x: 8.5d,
+	y: 1.0d,
+	dependencies: [
+		"cc33af22"
+	],
+	tasks: [{
+		uid: "4fa91703",
+		type: "item",
+		items: [{
+			item: "pyrotech:limestone"
+		}]
+	}]
+}

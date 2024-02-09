@@ -1,0 +1,25 @@
+{
+	x: 17.5d,
+	y: -1.0d,
+	dependencies: [
+		"c550895b"
+	],
+	tasks: [{
+		uid: "583015e3",
+		type: "item",
+		items: [{
+			item: "pyrotech:bloomery"
+		}]
+	}],
+	rewards: [{
+		uid: "046f5bae",
+		type: "item",
+		item: "minecraft:coal",
+		count: 10
+	},
+	{
+		uid: "eb7443a9",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

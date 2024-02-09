@@ -1,0 +1,19 @@
+{
+	x: 7.0d,
+	y: 2.0d,
+	dependencies: [
+		"9cd08d30"
+	],
+	tasks: [{
+		uid: "18e373a2",
+		type: "item",
+		items: [{
+			item: "artisanworktables:workshop 1 13"
+		}]
+	}],
+	rewards: [{
+		uid: "123aecbe",
+		type: "xp_levels",
+		xp_levels: 2
+	}]
+}

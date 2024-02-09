@@ -23,20 +23,11 @@ import crafttweaker.event.PlayerBonemealEvent;
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var player = event.player;
 var id = event.block.definition.id;
-var name = event.player.currentItem.definition.id;
-    if (id == "minecraft:furance") {
-        if(name != "pyrotech:furance_core") {
-            if (!event.world.isRemote()) {
-                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
-            }
-            event.cancel();
-        }
-    } else if(id == "minecraft:crafting_table") {
+    if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table")) {
         if (!event.world.isRemote()) {
             player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
         }
-        event.cancel();
-    }
+    event.cancel();
 });
 
 events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
@@ -87,7 +78,7 @@ events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
 val player as IPlayer = event.player;
 val block as IBlock = event.block;
 val name = event.player.currentItem.definition.id;
-    if((block.definition.hardness >= 0.6) && (event.isPlayer != false)) {
+    if(block.definition.hardness >= 0.6) {
         if(isNull(player.currentItem)) {
             event.cancel();
         } else {
@@ -101,9 +92,8 @@ val name = event.player.currentItem.definition.id;
 });
 
 events.onBlockBreak(function(event as BlockBreakEvent) {
-if(event.isPlayer()) {
-    val name = event.player.currentItem.definition.id;
-    val info = event.world.getWorldInfo();
+val name = event.player.currentItem.definition.id;
+val info = event.world.getWorldInfo();
     if(info.difficultyLocked == false) {
         event.cancel();
         if (!event.world.isRemote()) {
@@ -124,4 +114,4 @@ if(event.isPlayer()) {
             event.player.setAllowFTBUltimine(false);
         }
     }
-}});
+});

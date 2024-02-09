@@ -1,7 +1,0 @@
-{
-	title: "{evolutionreset.chapter.bronzeage.title}",
-	icon: "immersiveengineering:stone_decoration 1 10",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

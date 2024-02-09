@@ -219,6 +219,15 @@
       "output": [
         "ercore:tungsten_nugget"
       ]
+    },
+    "oreTitanium": {
+      "slagColor": "6b503c",
+      "langKey": [
+        "galacticraftplanets:asteroids_block:4"
+      ],
+      "output": [
+        "galacticraftplanets:item_basic_asteroids:4"
+      ]
     }
   }
 }

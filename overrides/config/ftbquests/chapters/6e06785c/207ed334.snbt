@@ -1,0 +1,23 @@
+{
+	x: 11.5d,
+	y: 0.0d,
+	dependencies: [
+		"c86a7c96"
+	],
+	tasks: [{
+		uid: "4498039b",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 9"
+		}],
+		count: 34L
+	},
+	{
+		uid: "bb80727b",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wooden_decoration"
+		}],
+		count: 4L
+	}]
+}

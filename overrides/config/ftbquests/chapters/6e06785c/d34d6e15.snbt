@@ -1,0 +1,25 @@
+{
+	x: 3.0d,
+	y: 3.5d,
+	dependencies: [
+		"d70be5d7"
+	],
+	tasks: [{
+		uid: "98c19401",
+		type: "item",
+		items: [{
+			item: "pyrotech:furnace_core"
+		}]
+	}],
+	rewards: [{
+		uid: "db79b5e1",
+		type: "xp_levels",
+		xp_levels: 2
+	},
+	{
+		uid: "73849c25",
+		type: "item",
+		item: "minecraft:coal_block",
+		count: 2
+	}]
+}

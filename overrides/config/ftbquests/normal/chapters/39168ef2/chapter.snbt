@@ -1,7 +1,0 @@
-{
-	title: "{evolutionreset.chapter.electricage.title}",
-	icon: "mekanismgenerators:generator 1 6",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

@@ -2,6 +2,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
+mods.tconstruct.Alloy.removeRecipe(<liquid:obsidian>);
+
 var liquids = [
 <liquid:gold>,
 <liquid:iron>,

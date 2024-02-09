@@ -1,0 +1,39 @@
+{
+	x: 6.5d,
+	y: 2.5d,
+	dependencies: [
+		"aa9b6bb3"
+	],
+	tasks: [{
+		uid: "3788a2df",
+		type: "item",
+		items: [{
+			item: "minecraft:hay_block"
+		}],
+		count: 64L
+	},
+	{
+		uid: "72e5beb9",
+		type: "item",
+		items: [{
+			item: "minecraft:carrot"
+		}],
+		count: 16L
+	},
+	{
+		uid: "a6929523",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 1 4"
+		}],
+		count: 64L
+	},
+	{
+		uid: "9ca66c62",
+		type: "item",
+		items: [{
+			item: "minecraft:poisonous_potato"
+		}],
+		count: 16L
+	}]
+}

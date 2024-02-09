@@ -1,0 +1,24 @@
+{
+	x: 13.0d,
+	y: 1.0d,
+	dependencies: [
+		"2afaf8d1"
+	],
+	tasks: [{
+		uid: "c3ac5a07",
+		type: "item",
+		items: [{
+			item: "pyrotech:bucket_wood"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c47be914",
+		type: "xp",
+		xp: 5
+	},
+	{
+		uid: "ee82a0ba",
+		type: "custom"
+	}]
+}

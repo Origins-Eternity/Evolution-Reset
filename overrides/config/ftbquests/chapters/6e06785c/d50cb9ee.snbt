@@ -1,0 +1,19 @@
+{
+	x: 6.5d,
+	y: 0.5d,
+	dependencies: [
+		"e63d9c14"
+	],
+	tasks: [{
+		uid: "3fd2ff28",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device0 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "a354c1f5",
+		type: "xp",
+		xp: 100
+	}]
+}

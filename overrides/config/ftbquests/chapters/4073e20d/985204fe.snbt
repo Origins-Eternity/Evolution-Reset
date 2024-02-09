@@ -1,0 +1,26 @@
+{
+	x: 8.5d,
+	y: 3.0d,
+	dependencies: [
+		"f405c076"
+	],
+	tasks: [{
+		uid: "4c5e5467",
+		type: "item",
+		items: [{
+			item: "usefulbackpacks:backpack"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "35e84a94",
+		type: "xp_levels",
+		xp_levels: 1
+	},
+	{
+		uid: "3674a6a8",
+		type: "item",
+		item: "minecraft:leather",
+		count: 5
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 12.5d,
+	y: 3.0d,
+	dependencies: [
+		"611c8e2d"
+	],
+	tasks: [{
+		uid: "c3a519ac",
+		type: "item",
+		items: [{
+			item: "usefulbackpacks:backpack 1 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "81054911",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

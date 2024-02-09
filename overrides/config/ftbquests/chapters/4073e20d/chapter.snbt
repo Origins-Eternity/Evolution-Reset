@@ -1,0 +1,7 @@
+{
+	title: "{evolutionreset.chapter.bronzeage.title}",
+	icon: "ercore:bronze_ingot",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,25 @@
+{
+	x: 14.5d,
+	y: 1.0d,
+	dependencies: [
+		"e4bb89ef"
+	],
+	tasks: [{
+		uid: "1458b7e2",
+		type: "item",
+		items: [{
+			item: "pyrotech:stone_crucible"
+		}]
+	}],
+	rewards: [{
+		uid: "8c82b456",
+		type: "xp_levels",
+		xp_levels: 1
+	},
+	{
+		uid: "97fe202e",
+		type: "item",
+		item: "pyrotech:masonry_brick_block",
+		count: 3
+	}]
+}

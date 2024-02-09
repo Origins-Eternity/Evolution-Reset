@@ -941,7 +941,7 @@ awBlackSmithShaped("diamond_block_from_diamond", <minecraft:diamond_block>, <ore
 awBlackSmithShaped("emerald_block_from_emerald", <minecraft:emerald_block>, <ore:gemEmerald>);
 awBlackSmithShaped("slime_block_from_slimeball", <minecraft:slime>, <ore:slimeball>);
 awBlackSmithShaped("slakedlime_block_from_slakedlime", <ercore:slakedlime_block>, <ore:slakedLime>);
-awBlackSmithShaped("soil_from_cement_powder", <tconstruct:soil>, <ercore:cement_powder>);
+awBlackSmithShaped("soil_from_cement_powder", <tconstruct:soil>, <ore:powderCement>);
 awBlackSmithShaped("steel_block_from_ingot", <immersiveengineering:storage:8>, <ore:ingotSteel>);
 awBlackSmithShaped("quartz_block_from_ingot", <minecraft:quartz_block>, <ore:gemQuartz>);
 awBlackSmithShaped("copper_block_from_ingot", <galacticraftcore:basic_block_core:9>, <ore:ingotCopper>);
@@ -977,7 +977,7 @@ awBlackSmithShapeless("nugget_from_ingot_manyullyn", <tconstruct:nuggets:2>, <or
 awBlackSmithShapeless("nugget_from_ingot_knightslime", <tconstruct:nuggets:3>, <ore:ingotKnightslime>, 9);
 awBlackSmithShapeless("nugget_from_ingot_alubrass", <tconstruct:nuggets:5>, <ore:ingotAlubrass>, 9);
 awBlackSmithShapeless("nugget_from_ingot_gold", <minecraft:gold_nugget>, <ore:ingotGold>, 9);
-awBlackSmithShapeless("nugget_from_ingot_copper", <immersiveengineering:meta:20>, <ore:ingotCopper>, 9);
+awBlackSmithShapeless("nugget_from_ingot_copper", <immersiveengineering:metal:20>, <ore:ingotCopper>, 9);
 awBlackSmithShapeless("nugget_from_ingot_tin", <ercore:tin_nugget>, <ore:ingotTin>, 9);
 awBlackSmithShapeless("copper_plate_from_block", <immersiveengineering:metal:30>, <ore:blockCopper>, 3);
 awBlackSmithShapeless("gold_plate_from_block", <immersiveengineering:metal:40>, <ore:blockGold>, 3);
