@@ -220,10 +220,10 @@
         "ercore:tungsten_nugget"
       ]
     },
-    "oreTitanium": {
-      "slagColor": "6b503c",
+    "oreIlmenite": {
+      "slagColor": "18212f",
       "langKey": [
-        "galacticraftplanets:asteroids_block:4"
+        "tile.asteroids_block.ore_ilmenite_asteroids"
       ],
       "output": [
         "galacticraftplanets:item_basic_asteroids:4"

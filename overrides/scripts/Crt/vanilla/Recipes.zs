@@ -9,6 +9,7 @@ recipes.addShapeless(<minecraft:torch>, [<ore:carbon>, <ore:stickWood>, <pyrotec
 recipes.addShapeless(<minecraft:torch>, [<ore:carbon>, <ore:stickWood>, <pyrotech:bow_drill>.anyDamage().transformDamage(1)]);
 
 recipes.replaceAllOccurences(<minecraft:furnace>, <pyrotech:furnace_core>);
+recipes.replaceAllOccurences(<minecraft:crafting_table>, <ore:craftingTable>);
 
 var ingot = [
 <immersiveengineering:metal:7>,

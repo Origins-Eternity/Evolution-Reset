@@ -15,7 +15,6 @@ import mods.pyrotech.BrickSawmill;
 import mods.pyrotech.IroncladAnvil;
 import mods.pyrotech.GraniteAnvil;
 import mods.pyrotech.SoakingPot;
-import mods.zenutils.StringList;
 import mods.pyrotech.StoneCrucible;
 import crafttweaker.text.ITextComponent;
 import crafttweaker.recipes.ICraftingRecipe;
@@ -36,6 +35,7 @@ var compacting_bin_recipes = [
 <pyrotech:generated_pile_slag_nickel>,
 <pyrotech:generated_pile_slag_lead>,
 <pyrotech:generated_pile_slag_tungsten>,
+<pyrotech:generated_pile_slag_ilmenite>,
 <minecraft:quartz_block>,
 <minecraft:grass>
 ] as IItemStack[];

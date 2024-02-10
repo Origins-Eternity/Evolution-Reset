@@ -184,7 +184,7 @@ var dropores = [
 <pyrotech:generated_slag_nickel>,
 <pyrotech:material:8>,
 <pyrotech:material:18>,
-<pyrotech:generated_slag_titanium>
+<pyrotech:generated_slag_ilmenite>
 ] as IItemStack[];
 
 val ores = [

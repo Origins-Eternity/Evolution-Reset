@@ -4,6 +4,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.block.IBlockDefinition;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
+import crafttweaker.mods.IMod;
 
 <ore:mushroom>.add(<minecraft:red_mushroom>);
 <ore:mushroom>.add(<minecraft:brown_mushroom>);
@@ -338,9 +339,11 @@ var tool = [
 <twilightforest:knightmetal_shield>,
 <twilightforest:uncrafting_table>,
 <tconstruct:stone_stick>,
-<toughasnails:campfire>,
 <minecraft:bow>,
-<minecraft:wooden_sword>
+<minecraft:wooden_sword>,
+<mctb:silverwood_crafting_table>,
+<minecraft:crafting_table>,
+<minecraft:furnace>
 ] as IItemStack[];
 
 for items in tool {	
@@ -352,4 +355,10 @@ for ban in <ore:banitems>.items {
     recipes.remove(ban);
     mods.jei.JEI.hide(ban);
     mods.ltt.LootTable.removeGlobalItem(ban.definition.id);
+}
+
+val mod = loadedMods["mctb"];
+for table in mod.items {
+    <ore:craftingTable>.add(table);
+    recipes.remove(table);
 }

@@ -39,9 +39,9 @@ for items in modrecipes {
 recipes.addShapeless(<immersiveengineering:metal:39>, [<minecraft:iron_ingot>, <immersiveengineering:tool>.transformDamage(1)]);
 
 recipes.addShaped(<immersiveengineering:metal_decoration0:5>,
-[[<ore:blockSteel>, <immersiveengineering:material:9>, <ore:blockSteel>],
+[[<ercore:tungsten_steel_block>, <immersiveengineering:material:9>, <ercore:tungsten_steel_block>],
 [<minecraft:piston>, <pyrotech:cog_obsidian>, <minecraft:piston>],
-[<ore:blockSteel>, <immersiveengineering:material:9>, <ore:blockSteel>]]);
+[<ercore:tungsten_steel_block>, <immersiveengineering:material:9>, <ercore:tungsten_steel_block>]]);
 
 recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 8,
 [[<minecraft:iron_block>, <immersiveengineering:connector:13>, <minecraft:iron_block>],
@@ -129,5 +129,3 @@ for i, slag in slags {
 	var ingot = ingots[i];
 	mods.immersiveengineering.ArcFurnace.addRecipe(ingot * 3, slag, null, 160, 1024);
 }
-
-mods.immersivepetroleum.Distillation.addRecipe([<liquid:lava> * 5, <liquid:gasoline> * 5], [<minecraft:diamond>, <minecraft:leather> * 2], <liquid:water>, 5, 5, [1, 1]);

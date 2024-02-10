@@ -15,7 +15,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.world.IWorld;
 import crafttweaker.world.IWorldInfo;
 import crafttweaker.event.PlayerInteractBlockEvent;
-import crafttweaker.event.PlayerBreakSpeedEvent;
 import crafttweaker.event.PlayerAdvancementEvent;
 import crafttweaker.event.PortalSpawnEvent;
 import crafttweaker.event.PlayerBonemealEvent;
@@ -27,7 +26,8 @@ var id = event.block.definition.id;
         if (!event.world.isRemote()) {
             player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
         }
-    event.cancel();
+        event.cancel();
+    }
 });
 
 events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
@@ -74,44 +74,48 @@ events.onCommand(function(event as CommandEvent) {
 });
 }
 
-events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
+events.onBlockBreak(function(event as BlockBreakEvent) {
+val info = event.world.getWorldInfo();
 val player as IPlayer = event.player;
 val block as IBlock = event.block;
-val name = event.player.currentItem.definition.id;
-    if(block.definition.hardness >= 0.6) {
+    if((block.definition.hardness >= 0.6) && (event.isPlayer == true)) {
         if(isNull(player.currentItem)) {
             event.cancel();
         } else {
+            val name = event.player.currentItem.definition.id;
             if(name.contains("axe")) return;
+            if(name.contains("pickaxe")) return;
             if(name.contains("shovel")) return;
             if(name.contains("hoe")) return;
             if(name.contains("sword")) return;
             event.cancel();
         }
     }
-});
-
-events.onBlockBreak(function(event as BlockBreakEvent) {
-val name = event.player.currentItem.definition.id;
-val info = event.world.getWorldInfo();
     if(info.difficultyLocked == false) {
         event.cancel();
         if (!event.world.isRemote()) {
             player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
         }
     }
-    for item in <ore:banitems>.items {
-        var toolname = item.definition.id;
-        if(name == toolname) {
-            event.cancel();
+    if(isNull(player.currentItem)) {
+        if((!event.world.remote) && (player.isAllowFTBUltimine())) {
+            player.setAllowFTBUltimine(false);
         }
-    }
-    if(!event.world.remote) {
-        val block as IBlock = event.block;
-        if(block.definition.id.contains("ore")) {
-            event.player.setAllowFTBUltimine(true);
-        } else {
-            event.player.setAllowFTBUltimine(false);
+    } else {
+        val name = player.currentItem.definition.id;
+        for item in <ore:banitems>.items {
+            var toolname = item.definition.id;
+            if(name == toolname) {
+                event.cancel();
+            }
+        }
+        if(!event.world.remote) {
+            val block as IBlock = event.block;
+            if(block.definition.id.contains("ore")) {
+                if((name.contains("pickaxe")) && (!player.isAllowFTBUltimine())) {
+                    player.setAllowFTBUltimine(true);
+                }
+            }
         }
     }
 });
