@@ -47,50 +47,12 @@ for fuel in fuels {
 
 mods.tconstruct.Melting.addRecipe(<liquid:obsidian> * 72, <pyrotech:material:33>, 1000);
 
-var nuggetliquids = [
-<liquid:tungsten>,
-<liquid:tungsten_steel>,
-<liquid:tungsten_carbide>
-] as ILiquidStack[];
-
-var nuggets = [
-<ercore:tungsten_nugget>,
-<ercore:tungsten_steel_nugget>,
-<ercore:tungsten_carbide_nugget>
-] as IItemStack[];
-
-for j, nuggetliquid in nuggetliquids {
-    var nugget = nuggets[j];
-    mods.tconstruct.Melting.addRecipe(nuggetliquid * 16, nugget, 1000);
-}
-
-var ingotliquids = [
-<liquid:tungsten>,
-<liquid:tungsten_steel>,
-<liquid:tungsten_carbide>
-] as ILiquidStack[];
-
-var ingots = [
-<ercore:tungsten_ingot>,
-<ercore:tungsten_steel_ingot>,
-<ercore:tungsten_carbide_ingot>
-] as IItemStack[];
-
-for k, ingotliquid in ingotliquids {
-    var ingot = ingots[k];
-    mods.tconstruct.Melting.addRecipe(ingotliquid * 144, ingot, 1000);
-}
-
-mods.tconstruct.Alloy.addRecipe(<liquid:tungsten_steel> * 1, [<liquid:tungsten> * 1, <liquid:steel> * 3]);
-
 var castliquids =[
-<liquid:aluminum>,
-<liquid:tungsten>
+<liquid:aluminum>
 ] as ILiquidStack[];
 
 var castingots = [
-<immersiveengineering:metal:1>,
-<ercore:tungsten_ingot>
+<immersiveengineering:metal:1>
 ] as IItemStack[];
 
 for n, castliquid in castliquids {
