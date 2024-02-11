@@ -1,6 +1,7 @@
 #
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemDefinition;
+import crafttweaker.mods.IMod;
 
 var modrecipes = [
 <galacticraftcore:rocket_workbench>,
@@ -11,11 +12,12 @@ for items in modrecipes{
     recipes.remove(items);
 }
 
-recipes.replaceAllOccurences(<minecraft:lever>, <ore:gemDiamond>, <galacticraftcore:rocket_workbench>);
+val mod = loadedMods["galacticraftcore"];
+for item in mod.items {
+    recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:ingotTungstensteel>, item);
+}
 
-recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:ingotTungstensteel>, <*>.only(function(item) {
-    return !isNull(item) & item.definition.id.contains("galacticraft")
-}));
+recipes.replaceAllOccurences(<minecraft:lever>, <ore:gemDiamond>, <galacticraftcore:rocket_workbench>);
 
 recipes.addShaped(<galacticraftcore:refinery>,
 [[<ercore:tungsten_steel_block>, <galacticraftcore:canister:1>, <ercore:tungsten_steel_block>],

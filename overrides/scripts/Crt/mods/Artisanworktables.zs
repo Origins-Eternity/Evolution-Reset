@@ -976,7 +976,7 @@ val woods = [
 <biomesoplenty:planks_0:14>,
 <biomesoplenty:planks_0:7>,
 <biomesoplenty:planks_0:9>,
-] as IItemStack;
+] as IItemStack[];
 
 val tables = [
 <mctb:mahogany_crafting_table>,
@@ -1000,7 +1000,7 @@ val tables = [
 <mctb:ebony_crafting_table>,
 <mctb:palm_crafting_table>,
 <mctb:willow_crafting_table>
-] as IItemStack;
+] as IItemStack[];
 
 for i, wood in woods {
 val table = tables[i];
