@@ -64,27 +64,6 @@ RecipeBuilder.get("basic")
 .addOutput(<artisanworktables:workshop:3>)
 .create();
   
-RecipeBuilder.get("engineer")
-.setShaped([
-    [<pyrotech:masonry_brick_block>, <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, <pyrotech:masonry_brick_block>],
-    [<ercore:basalt>, <pyrotech:planks_tarred>, <pyrotech:crate_stone>, <pyrotech:planks_tarred>, <ercore:basalt>],
-    [<ercore:basalt>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <ercore:basalt>],
-    [<ercore:basalt>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ercore:basalt>],
-    [<ercore:basalt>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ercore:basalt>]])
-.setName("crafting_table")
-.setLevelRequired(30)
-.setFluid(<liquid:lava> * 2000)
-.setMaximumTier(2)
-.setExtraOutputOne(<minecraft:iron_nugget> * 5, 0.5)
-.setExtraOutputTwo(<pyrotech:rock:7> * 8, 0.3)	
-.setExtraOutputThree(<immersiveengineering:metal:28> * 2, 0.2)	
-.addTool(<ore:artisansTSquare>, 40)  
-.addTool(<ercore:crafting_table_blueprint>, 2)
-.addTool(<ore:artisansCarver>, 40) 
-.setSecondaryIngredients([<immersiveengineering:metal:30> * 9])
-.addOutput(<minecraft:crafting_table>)
-.create();
-  
 RecipeBuilder.get("basic")
 .setShaped([
     [<ore:blockSteel>, <ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>, <ore:blockSteel>],
@@ -430,21 +409,13 @@ RecipeBuilder.get("basic")
 
 RecipeBuilder.get("tailor")
 .setShaped([
-    [<ore:string>, <ore:string>, <ore:string>, <ore:string>, <ore:string>],
-    [<ore:string>, <ore:string>, <ore:string>, <ore:string>, <ore:string>],
-    [<ore:string>, <ore:string>, <ore:string>, <ore:string>, <ore:string>],
-    [<ore:string>, <ore:string>, <ore:string>, <ore:string>, <ore:string>],
-    [<ore:string>, <ore:string>, <ore:string>, <ore:string>, <ore:string>]])
-.setMaximumTier(2)
-.setLevelRequired(3)
-.setConsumeExperience(false)
-.addTool(<ore:artisansLens>, 10)
-.addTool(<ore:artisansNeedle>, 10)
-.addTool(<ore:artisansShears>, 10)
+    [<minecraft:string>, <minecraft:string>, <minecraft:string>],
+    [<minecraft:string>, <minecraft:string>, <minecraft:string>],
+    [<minecraft:string>, <minecraft:string>, <minecraft:string>]])
+.setLevelRequired(1)
+.addTool(<ore:artisansNeedle>, 25)
+.addTool(<ore:artisansShears>, 15)
 .addOutput(<minecraft:wool>)
-.setExtraOutputOne(<minecraft:string>, 0.2)	 
-.setExtraOutputTwo(<minecraft:feather> * 2, 0.6)	
-.setExtraOutputThree(<minecraft:string> * 2, 0.2)	 
 .create();
 
 var colorfulwools = [
@@ -982,3 +953,74 @@ awBlackSmithShapeless("nugget_from_ingot_tin", <ercore:tin_nugget>, <ore:ingotTi
 awBlackSmithShapeless("copper_plate_from_block", <immersiveengineering:metal:30>, <ore:blockCopper>, 3);
 awBlackSmithShapeless("gold_plate_from_block", <immersiveengineering:metal:40>, <ore:blockGold>, 3);
 awBlackSmithShapeless("flint_from_limestone", <minecraft:flint>, <ore:stoneLimestone>, 3);
+
+val woods = [
+<biomesoplenty:planks_0:13>,
+<biomesoplenty:planks_0:8>,
+<biomesoplenty:planks_0>,
+<biomesoplenty:planks_0:10>,
+<minecraft:planks:2>,
+<biomesoplenty:planks_0:3>,
+<biomesoplenty:planks_0:2>,
+<biomesoplenty:planks_0:15>,
+<biomesoplenty:planks_0:4>,
+<biomesoplenty:planks_0:1>,
+<biomesoplenty:planks_0:5>,
+<minecraft:planks:5>,
+<biomesoplenty:planks_0:11>,
+<minecraft:planks:3>,
+<minecraft:planks:4>,
+<minecraft:planks:1>,
+<twilightforest:mangrove_planks>,
+<biomesoplenty:planks_0:12>,
+<biomesoplenty:planks_0:14>,
+<biomesoplenty:planks_0:7>,
+<biomesoplenty:planks_0:9>,
+] as IItemStack;
+
+val tables = [
+<mctb:mahogany_crafting_table>,
+<mctb:redwood_crafting_table>,
+<mctb:sacred_oak_crafting_table>,
+<mctb:pine_crafting_table>,
+<mctb:birch_crafting_table>,
+<mctb:fir_crafting_table>,
+<mctb:umbran_crafting_table>,
+<mctb:eucalyptus_crafting_table>,
+<mctb:ethereal_crafting_table>,
+<mctb:cherry_crafting_table>,
+<mctb:magic_crafting_table>,
+<mctb:dark_oak_crafting_table>,
+<mctb:hellbark_crafting_table>,
+<mctb:jungle_crafting_table>,
+<mctb:acacia_crafting_table>,
+<mctb:spruce_crafting_table>,
+<mctb:mangrove_crafting_table>,
+<mctb:jacaranda_crafting_table>,
+<mctb:ebony_crafting_table>,
+<mctb:palm_crafting_table>,
+<mctb:willow_crafting_table>
+] as IItemStack;
+
+for i, wood in woods {
+val table = tables[i];
+RecipeBuilder.get("engineer")
+.setShaped([
+    [<pyrotech:masonry_brick_block>, <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, <pyrotech:masonry_brick_block>],
+    [wood, <pyrotech:planks_tarred>, <pyrotech:crate_stone>, wood],
+    [wood, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, wood],
+    [wood, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, wood],
+    [wood, <ercore:basalt>, <ercore:basalt>, <ercore:basalt>, wood]])
+.setLevelRequired(30)
+.setFluid(<liquid:lava> * 2000)
+.setMaximumTier(2)
+.setExtraOutputOne(<minecraft:iron_nugget> * 5, 0.5)
+.setExtraOutputTwo(<pyrotech:rock:7> * 8, 0.3)	
+.setExtraOutputThree(<immersiveengineering:metal:28> * 2, 0.2)	
+.addTool(<ore:artisansTSquare>, 40)  
+.addTool(<ercore:crafting_table_blueprint>, 2)
+.addTool(<ore:artisansCarver>, 40) 
+.setSecondaryIngredients([<immersiveengineering:metal:30> * 9])
+.addOutput(table)
+.create();
+}

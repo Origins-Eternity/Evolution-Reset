@@ -32,7 +32,8 @@ val banlist = [
 <minecraft:chainmail_helmet>,
 <minecraft:chainmail_chestplate>,
 <minecraft:chainmail_leggings>,
-<minecraft:chainmail_boots>
+<minecraft:chainmail_boots>,
+<planetprogression:research_paper_0>
 ] as IItemStack[];
 
 for items in banlist {

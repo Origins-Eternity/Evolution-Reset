@@ -343,7 +343,12 @@ var tool = [
 <minecraft:wooden_sword>,
 <mctb:silverwood_crafting_table>,
 <minecraft:crafting_table>,
-<minecraft:furnace>
+<minecraft:furnace>,
+<galacticraftcore:steel_sword>,
+<galacticraftcore:steel_axe>,
+<galacticraftcore:steel_pickaxe>,
+<galacticraftcore:steel_shovel>,
+<galacticraftcore:steel_hoe>
 ] as IItemStack[];
 
 for items in tool {	
