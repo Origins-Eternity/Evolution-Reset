@@ -350,15 +350,9 @@ MechanicalCompactor.addRecipe("ardite_block_from_ingot", <tconstruct:metal:1>, <
 MechanicalCompactor.addRecipe("manyullyn_block_from_ingot", <tconstruct:metal:2>, <ore:blockManyullyn>,9);
 MechanicalCompactor.addRecipe("knightslime_block_from_ingot", <tconstruct:metal:3>, <ore:blockKnightslime>,9);
 MechanicalCompactor.addRecipe("alubrass_block_from_ingot", <tconstruct:metal:5>, <ore:blockAlubrass>,9);
-MechanicalCompactor.addRecipe("knightmetal_block_from_ingot", <twilightforest:knightmetal_block>, <ore:ingotKnightmetal>,9);
-MechanicalCompactor.addRecipe("fiery_block_from_ingot", <twilightforest:block_storage:1>, <ore:ingotFiery>,9);
-MechanicalCompactor.addRecipe("ironwood_block_from_ingot", <twilightforest:block_storage>, <ore:ingotIronwood>,9);
 MechanicalCompactor.addRecipe("Electrum_block_from_ingot", <immersiveengineering:storage:7>, <ore:ingotElectrum>,9);
 MechanicalCompactor.addRecipe("constantan_block_from_ingot", <immersiveengineering:storage:6>, <ore:blockConstantan>,9);
 MechanicalCompactor.addRecipe("nickel_block_from_ingot", <immersiveengineering:storage:4>, <ore:blockNickel>,9);
 MechanicalCompactor.addRecipe("silver_block_from_ingot", <immersiveengineering:storage:3>, <ore:blockSilver>,9);
 MechanicalCompactor.addRecipe("uranium_block_from_ingot", <immersiveengineering:storage:5>, <ore:blockUranium>,9);
-MechanicalCompactor.addRecipe("steeleaf_block_from_ingot", <twilightforest:block_storage:2>, <ore:ingotSteeleaf>,9);
-MechanicalCompactor.addRecipe("carminite_block_from_ingot", <twilightforest:block_storage:4>, <ore:carminite>,9);
 MechanicalCompactor.addRecipe("lead_block_from_ingot", <immersiveengineering:storage:2>, <ore:ingotLead>,9);
-MechanicalCompactor.addRecipe("furarctic_block_from_ingot", <twilightforest:block_storage:3>, <ore:furArctic>,9);

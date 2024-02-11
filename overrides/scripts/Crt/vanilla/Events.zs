@@ -102,15 +102,7 @@ if(player.creative == false) {
         if((!event.world.remote) && (player.isAllowFTBUltimine())) {
             player.setAllowFTBUltimine(false);
         }
-    } else {
-        val name = player.currentItem.definition.id;
-        for item in <ore:banitems>.items {
-            var toolname = item.definition.id;
-            if(name == toolname) {
-                event.cancel();
-            }
-        }
-        if(!event.world.remote) {
+    } else if(!event.world.remote) {
             val block as IBlock = event.block;
             if(block.definition.id.contains("ore")) {
                 if((name.contains("pickaxe")) && (!player.isAllowFTBUltimine())) {
@@ -119,4 +111,4 @@ if(player.creative == false) {
             }
         }
     }
-}});
+});

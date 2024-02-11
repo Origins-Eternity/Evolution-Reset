@@ -921,18 +921,12 @@ awBlackSmithShaped("ardite_block_from_ingot", <tconstruct:metal:1>, <ore:blockAr
 awBlackSmithShaped("manyullyn_block_from_ingot", <tconstruct:metal:2>, <ore:blockManyullyn>);
 awBlackSmithShaped("knightslime_block_from_ingot", <tconstruct:metal:3>, <ore:blockKnightslime>);
 awBlackSmithShaped("alubrass_block_from_ingot", <tconstruct:metal:5>, <ore:blockAlubrass>);
-awBlackSmithShaped("knightmetal_block_from_ingot", <twilightforest:knightmetal_block>, <ore:ingotKnightmetal>);
-awBlackSmithShaped("fiery_block_from_ingot", <twilightforest:block_storage:1>, <ore:ingotFiery>);
-awBlackSmithShaped("ironwood_block_from_ingot", <twilightforest:block_storage>, <ore:ingotIronwood>);
 awBlackSmithShaped("Electrum_block_from_ingot", <immersiveengineering:storage:7>, <ore:ingotElectrum>);
 awBlackSmithShaped("constantan_block_from_ingot", <immersiveengineering:storage:6>, <ore:blockConstantan>);
 awBlackSmithShaped("nickel_block_from_ingot", <immersiveengineering:storage:4>, <ore:blockNickel>);
 awBlackSmithShaped("silver_block_from_ingot", <immersiveengineering:storage:3>, <ore:blockSilver>);
 awBlackSmithShaped("uranium_block_from_ingot", <immersiveengineering:storage:5>, <ore:blockUranium>);
-awBlackSmithShaped("steeleaf_block_from_ingot", <twilightforest:block_storage:2>, <ore:ingotSteeleaf>);
-awBlackSmithShaped("carminite_block_from_ingot", <twilightforest:block_storage:4>, <ore:carminite>);
 awBlackSmithShaped("lead_block_from_ingot", <immersiveengineering:storage:2>, <ore:ingotLead>);
-awBlackSmithShaped("furarctic_block_from_ingot", <twilightforest:block_storage:3>, <ore:furArctic>);
 
 awBlackSmithShapeless("nugget_from_ingot_tungsten", <ercore:tungsten_nugget>, <ore:ingotTungsten>, 9);
 awBlackSmithShapeless("nugget_from_ingot_aluminum", <immersiveengineering:metal:21>, <ore:ingotAluminum>, 9);
@@ -971,7 +965,6 @@ val woods = [
 <minecraft:planks:3>,
 <minecraft:planks:4>,
 <minecraft:planks:1>,
-<twilightforest:mangrove_planks>,
 <biomesoplenty:planks_0:12>,
 <biomesoplenty:planks_0:14>,
 <biomesoplenty:planks_0:7>,
@@ -995,7 +988,6 @@ val tables = [
 <mctb:jungle_crafting_table>,
 <mctb:acacia_crafting_table>,
 <mctb:spruce_crafting_table>,
-<mctb:mangrove_crafting_table>,
 <mctb:jacaranda_crafting_table>,
 <mctb:ebony_crafting_table>,
 <mctb:palm_crafting_table>,

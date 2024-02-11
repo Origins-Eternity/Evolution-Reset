@@ -202,7 +202,7 @@ val ores = [
 <ore:oreNickel>,
 <ore:blockSlakedlime>,
 <ore:eroreDiamond>,
-<ore:oreTitanium>
+<ore:oreIlmenite>
 ] as IOreDictEntry[];
 
 for i, ore in ores {

@@ -26,9 +26,7 @@ var ingot = [
 <tconstruct:ingots:2>,
 <tconstruct:ingots:3>,
 <tconstruct:ingots:4>,
-<tconstruct:ingots:5>,
-<twilightforest:ironwood_ingot>,
-<twilightforest:knightmetal_ingot>
+<tconstruct:ingots:5>
 ] as IItemStack[];
 
 for items in ingot {

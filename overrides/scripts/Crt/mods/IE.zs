@@ -103,9 +103,7 @@ var slags as IItemStack[] = [
 <pyrotech:generated_pile_slag_silver>,
 <pyrotech:generated_pile_slag_tin>,
 <pyrotech:generated_pile_slag_uranium>,
-<pyrotech:generated_pile_slag_tungsten>,
-<twilightforest:ironwood_raw>,
-<twilightforest:armor_shard_cluster>
+<pyrotech:generated_pile_slag_tungsten>
 ];
 
 var ingots as IItemStack[] = [
@@ -120,9 +118,7 @@ var ingots as IItemStack[] = [
 <immersiveengineering:metal:3>,
 <galacticraftcore:basic_item:4>,
 <immersiveengineering:metal:5>,
-<ercore:tungsten_ingot>,
-<twilightforest:ironwood_ingot>,
-<twilightforest:knightmetal_ingot>
+<ercore:tungsten_ingot>
 ];
 
 for i, slag in slags {

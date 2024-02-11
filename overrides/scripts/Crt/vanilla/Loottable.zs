@@ -20,7 +20,10 @@ val banlist = [
 <minecraft:lava_bucket>,
 <minecraft:diamond>,
 <minecraft:iron_ore>,
+<minecraft:carrot>,
 <minecraft:bread>,
+<minecraft:potato>,
+<minecraft:apple>,
 <minecraft:fire_charge>,
 <minecraft:beetroot>,
 <minecraft:cooked_chicken>,
@@ -29,10 +32,6 @@ val banlist = [
 <minecraft:cooked_porkchop>,
 <minecraft:cooked_mutton>,
 <minecraft:golden_apple:1>,
-<minecraft:chainmail_helmet>,
-<minecraft:chainmail_chestplate>,
-<minecraft:chainmail_leggings>,
-<minecraft:chainmail_boots>,
 <planetprogression:research_paper_0>
 ] as IItemStack[];
 

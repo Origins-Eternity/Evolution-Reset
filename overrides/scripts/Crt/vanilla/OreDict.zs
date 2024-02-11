@@ -24,8 +24,6 @@ import crafttweaker.mods.IMod;
 <ore:ergravel>.addAll(<ore:gravel>);
 <ore:ergravel>.add(<minecraft:flint>);
 <ore:blockSeven>.addAll(<ore:oreSulfur>);
-<ore:fiery>.add(<twilightforest:fiery_blood>);
-<ore:fiery>.add(<twilightforest:fiery_tears>);
 <ore:sandpile>.add(<pyrotech:rock:5>);
 <ore:sandpile>.add(<pyrotech:rock:9>);
 <ore:ballClay>.add(<minecraft:clay_ball>);
@@ -39,7 +37,7 @@ import crafttweaker.mods.IMod;
 <ore:doorIron>.add(<minecraft:iron_door>);
 <ore:doorIron>.add(<minecraft:iron_trapdoor>);
 <ore:powderCement>.add(<ercore:cement_powder>);
-<ore:oreTitanium>.addAll(<ore:oreIlmenite>);
+<ore:oreIlmenite>.add(<galacticraftplanets:asteroids_block:4>);
 
 var dirts =[
 <biomesoplenty:dirt:8>,
@@ -56,16 +54,7 @@ for d in dirts {
 
 var doors =[
 <minecraft:wooden_door>,
-<minecraft:trapdoor>,
-<twilightforest:twilight_oak_door>,
-<twilightforest:canopy_door>,
-<twilightforest:mangrove_door>,
-<twilightforest:dark_door>,
-<twilightforest:time_door>,
-<twilightforest:time_door>,
-<twilightforest:trans_door>,
-<twilightforest:mine_door>,
-<twilightforest:sort_door>
+<minecraft:trapdoor>
 ] as IItemStack[];
 
 for door in doors {
@@ -326,18 +315,6 @@ var tool = [
 <minecraft:chainmail_boots>,
 <minecraft:furnace>,
 <conarm:gauntlet_mat_reach>,
-<twilightforest:fiery_sword>,
-<twilightforest:fiery_pickaxe>,
-<twilightforest:steeleaf_sword>,
-<twilightforest:steeleaf_shovel>,
-<twilightforest:steeleaf_pickaxe>,
-<twilightforest:steeleaf_axe>,
-<twilightforest:steeleaf_hoe>,
-<twilightforest:knightmetal_sword>,
-<twilightforest:knightmetal_pickaxe>,
-<twilightforest:knightmetal_axe>,
-<twilightforest:knightmetal_shield>,
-<twilightforest:uncrafting_table>,
 <tconstruct:stone_stick>,
 <minecraft:bow>,
 <minecraft:wooden_sword>,
@@ -348,14 +325,18 @@ var tool = [
 <galacticraftcore:steel_axe>,
 <galacticraftcore:steel_pickaxe>,
 <galacticraftcore:steel_shovel>,
-<galacticraftcore:steel_hoe>
+<galacticraftcore:steel_hoe>,
+<minecraft:chainmail_helmet>,
+<minecraft:chainmail_chestplate>,
+<minecraft:chainmail_leggings>,
+<minecraft:chainmail_boots>
 ] as IItemStack[];
 
 for items in tool {	
-    <ore:banitems>.add(items);
+    <ore:banItems>.add(items);
 }
 
-for ban in <ore:banitems>.items {
+for ban in <ore:banItems>.items {
     ban.maxDamage = 1;
     recipes.remove(ban);
     mods.jei.JEI.hide(ban);
