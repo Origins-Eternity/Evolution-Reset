@@ -98,15 +98,18 @@ if(player.creative == false) {
             player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
         }
     }
-    if(isNull(player.currentItem)) {
-        if((!event.world.remote) && (player.isAllowFTBUltimine())) {
-            player.setAllowFTBUltimine(false);
-        }
-    } else if(!event.world.remote) {
-            val block as IBlock = event.block;
-            if(block.definition.id.contains("ore")) {
-                if((name.contains("pickaxe")) && (!player.isAllowFTBUltimine())) {
-                    player.setAllowFTBUltimine(true);
+    if(!event.world.remote) {
+        val block as IBlock = event.block;
+        if(!isNull(player.currentItem)) {
+            val name = event.player.currentItem.definition.id;
+                if(block.definition.id.contains("ore")) {
+                    if((name.contains("pickaxe")) && (!player.isAllowFTBUltimine())) {
+                        player.setAllowFTBUltimine(true);
+                    } else if(player.isAllowFTBUltimine()) {
+                       player.setAllowFTBUltimine(false);
+                    }
+                } else if(player.isAllowFTBUltimine()) {
+                    player.setAllowFTBUltimine(false);
                 }
             }
         }
