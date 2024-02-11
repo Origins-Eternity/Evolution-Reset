@@ -19,5 +19,11 @@
 		type: "xp",
 		team_reward: true,
 		xp: 10
+	},
+	{
+		uid: "2fe005ed",
+		type: "item",
+		team_reward: true,
+		item: "tconstruct:book"
 	}]
 }

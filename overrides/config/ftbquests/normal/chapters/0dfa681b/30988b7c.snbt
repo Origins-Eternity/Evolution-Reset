@@ -28,5 +28,11 @@
 		type: "xp",
 		team_reward: true,
 		xp: 10
+	},
+	{
+		uid: "e766cdd9",
+		type: "item",
+		team_reward: true,
+		item: "ftbquests:book"
 	}]
 }
