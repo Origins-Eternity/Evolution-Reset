@@ -16,6 +16,7 @@
 	rewards: [{
 		uid: "0858a295",
 		type: "item",
+		team_reward: true,
 		item: "immersiveengineering:metal 1 8",
 		count: 4
 	}]

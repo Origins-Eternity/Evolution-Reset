@@ -15,12 +15,14 @@
 	rewards: [{
 		uid: "e438c330",
 		type: "item",
+		team_reward: true,
 		item: "immersiveengineering:material 1 6",
 		count: 4
 	},
 	{
 		uid: "362b7732",
 		type: "item",
+		team_reward: true,
 		item: "pyrotech:bucket_clay"
 	}]
 }

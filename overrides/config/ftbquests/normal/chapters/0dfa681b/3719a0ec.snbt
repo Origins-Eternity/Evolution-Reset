@@ -16,11 +16,13 @@
 	rewards: [{
 		uid: "3f0a32ee",
 		type: "xp",
+		team_reward: true,
 		xp: 10
 	},
 	{
 		uid: "f4f90fd6",
 		type: "item",
+		team_reward: true,
 		item: "pyrotech:rock",
 		count: 10
 	}]

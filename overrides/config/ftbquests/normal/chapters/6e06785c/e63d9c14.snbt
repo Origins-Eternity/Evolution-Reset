@@ -31,12 +31,14 @@
 	rewards: [{
 		uid: "a6244d70",
 		type: "item",
+		team_reward: true,
 		item: "immersiveengineering:connector 1 5",
 		count: 4
 	},
 	{
 		uid: "c492a36e",
 		type: "item",
+		team_reward: true,
 		item: "immersiveengineering:connector 1 4",
 		count: 2
 	}]

@@ -15,11 +15,13 @@
 	rewards: [{
 		uid: "35e84a94",
 		type: "xp_levels",
+		team_reward: true,
 		xp_levels: 1
 	},
 	{
 		uid: "3674a6a8",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:leather",
 		count: 5
 	}]

@@ -1,0 +1,30 @@
+{
+	x: 4.5d,
+	y: 3.0d,
+	dependencies: [
+		"b511cf08"
+	],
+	tasks: [{
+		uid: "97ff562b",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:oxygen_gear"
+		}]
+	},
+	{
+		uid: "6770952a",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:oxygen_tank_light_full"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3737dbad",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:oxygen_mask"
+		}]
+	}]
+}

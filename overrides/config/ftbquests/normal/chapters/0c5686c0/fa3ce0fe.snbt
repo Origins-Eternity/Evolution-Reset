@@ -1,0 +1,15 @@
+{
+	x: 6.5d,
+	y: -1.0d,
+	dependencies: [
+		"11fa4114"
+	],
+	tasks: [{
+		uid: "21f34a56",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:rocket_t1"
+		}],
+		ignore_nbt: 1b
+	}]
+}

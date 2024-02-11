@@ -16,6 +16,7 @@
 	rewards: [{
 		uid: "d203ec37",
 		type: "xp_levels",
+		team_reward: true,
 		xp_levels: 2
 	}]
 }

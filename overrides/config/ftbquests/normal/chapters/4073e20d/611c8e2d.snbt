@@ -15,11 +15,13 @@
 	rewards: [{
 		uid: "130b2d15",
 		type: "xp",
+		team_reward: true,
 		xp: 10
 	},
 	{
 		uid: "de85aa3e",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:string",
 		count: 5
 	}]

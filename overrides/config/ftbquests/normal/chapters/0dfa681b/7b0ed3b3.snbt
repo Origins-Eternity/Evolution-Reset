@@ -14,17 +14,20 @@
 	rewards: [{
 		uid: "2d60c6d2",
 		type: "item",
+		team_reward: true,
 		item: "pyrotech:material 1 10",
 		count: 2
 	},
 	{
 		uid: "104b3224",
 		type: "item",
+		team_reward: true,
 		item: "pyrotech:thatch"
 	},
 	{
 		uid: "5c0976aa",
 		type: "xp",
+		team_reward: true,
 		xp: 10
 	}]
 }

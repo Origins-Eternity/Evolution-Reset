@@ -1,0 +1,20 @@
+{
+	x: -5.5d,
+	y: 1.0d,
+	dependencies: [
+		"ebf8a6db"
+	],
+	tasks: [{
+		uid: "e39c0423",
+		type: "item",
+		items: [{
+			item: "ercore:tungsten_steel_ingot"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "8486de97",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

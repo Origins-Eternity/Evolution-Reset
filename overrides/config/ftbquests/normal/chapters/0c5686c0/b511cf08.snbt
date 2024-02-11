@@ -1,0 +1,15 @@
+{
+	x: 2.5d,
+	y: 3.0d,
+	dependencies: [
+		"304c80d5"
+	],
+	tasks: [{
+		uid: "3871701b",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:landing_pad"
+		}],
+		count: 9L
+	}]
+}

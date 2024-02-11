@@ -14,11 +14,13 @@
 	rewards: [{
 		uid: "db79b5e1",
 		type: "xp_levels",
+		team_reward: true,
 		xp_levels: 2
 	},
 	{
 		uid: "73849c25",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:coal_block",
 		count: 2
 	}]

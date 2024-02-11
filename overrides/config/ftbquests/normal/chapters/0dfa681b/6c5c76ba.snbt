@@ -16,11 +16,13 @@
 	rewards: [{
 		uid: "4b2eb6dc",
 		type: "xp",
+		team_reward: true,
 		xp: 10
 	},
 	{
 		uid: "03cabc29",
 		type: "item",
+		team_reward: true,
 		item: "pyrotech:bucket_wood",
 		count: 2
 	}]

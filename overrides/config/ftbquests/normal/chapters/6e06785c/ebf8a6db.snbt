@@ -1,0 +1,27 @@
+{
+	x: 10.5d,
+	y: 4.5d,
+	dependencies: [
+		"c73b0a1f"
+	],
+	tasks: [{
+		uid: "eaaecc13",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	},
+	{
+		uid: "f6039ce0",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_io"
+		}]
+	}],
+	rewards: [{
+		uid: "f44c7b32",
+		type: "xp_levels",
+		team_reward: true,
+		xp_levels: 1
+	}]
+}

@@ -14,23 +14,27 @@
 	rewards: [{
 		uid: "21e0ca9b",
 		type: "xp",
+		team_reward: true,
 		xp: 10
 	},
 	{
 		uid: "99f55bce",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:paper",
 		count: 2
 	},
 	{
 		uid: "66db12b2",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:cooked_chicken",
 		count: 3
 	},
 	{
 		uid: "e11aac5a",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:cooked_porkchop",
 		count: 3
 	}]

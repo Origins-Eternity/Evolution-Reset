@@ -14,6 +14,7 @@
 	rewards: [{
 		uid: "660f6c2b",
 		type: "item",
+		team_reward: true,
 		item: "immersiveengineering:tool 1 1"
 	}]
 }

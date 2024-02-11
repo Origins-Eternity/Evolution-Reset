@@ -14,11 +14,13 @@
 	rewards: [{
 		uid: "ed6444b0",
 		type: "xp_levels",
+		team_reward: true,
 		xp_levels: 2
 	},
 	{
 		uid: "1cc9e5f1",
 		type: "item",
+		team_reward: true,
 		item: "pyrotech:cog_stone"
 	}]
 }

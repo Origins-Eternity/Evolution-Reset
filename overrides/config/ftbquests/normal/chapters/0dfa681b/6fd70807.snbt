@@ -14,11 +14,13 @@
 	rewards: [{
 		uid: "8c82b456",
 		type: "xp_levels",
+		team_reward: true,
 		xp_levels: 1
 	},
 	{
 		uid: "97fe202e",
 		type: "item",
+		team_reward: true,
 		item: "pyrotech:masonry_brick_block",
 		count: 3
 	}]

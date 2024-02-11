@@ -1,0 +1,14 @@
+{
+	x: 0.5d,
+	y: 1.0d,
+	dependencies: [
+		"682c2750"
+	],
+	tasks: [{
+		uid: "b5e3dbdd",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:refinery"
+		}]
+	}]
+}

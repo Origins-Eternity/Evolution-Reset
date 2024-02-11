@@ -35,5 +35,11 @@
 			item: "minecraft:poisonous_potato"
 		}],
 		count: 16L
+	}],
+	rewards: [{
+		uid: "bc47f514",
+		type: "xp_levels",
+		team_reward: true,
+		xp_levels: 10
 	}]
 }

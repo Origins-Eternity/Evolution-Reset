@@ -15,6 +15,7 @@
 	rewards: [{
 		uid: "bd785a74",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:wool",
 		count: 5,
 		random_bonus: 2
@@ -22,6 +23,7 @@
 	{
 		uid: "e6da7b04",
 		type: "xp_levels",
+		team_reward: true,
 		xp_levels: 1
 	}]
 }

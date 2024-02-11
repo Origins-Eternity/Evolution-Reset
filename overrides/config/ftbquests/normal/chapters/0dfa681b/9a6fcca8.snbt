@@ -23,6 +23,7 @@
 	rewards: [{
 		uid: "83bd9bac",
 		type: "item",
+		team_reward: true,
 		item: "pyrotech:mulch",
 		count: 4
 	}]

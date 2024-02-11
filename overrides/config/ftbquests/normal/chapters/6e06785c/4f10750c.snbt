@@ -47,18 +47,21 @@
 	rewards: [{
 		uid: "723508c1",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:reeds",
 		count: 64
 	},
 	{
 		uid: "e2a0c62e",
 		type: "item",
+		team_reward: true,
 		item: "immersiveengineering:seed",
 		count: 64
 	},
 	{
 		uid: "aacd7ab0",
 		type: "item",
+		team_reward: true,
 		item: {
 			id: "ftbquests:screen",
 			tag: {

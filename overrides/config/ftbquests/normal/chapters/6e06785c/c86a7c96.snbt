@@ -21,6 +21,7 @@
 	rewards: [{
 		uid: "4625a25e",
 		type: "item",
+		team_reward: true,
 		item: "immersiveengineering:wooden_device0 1 1"
 	}]
 }

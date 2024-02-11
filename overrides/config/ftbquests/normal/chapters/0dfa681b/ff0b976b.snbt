@@ -15,11 +15,13 @@
 	rewards: [{
 		uid: "28650054",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:potato"
 	},
 	{
 		uid: "354deb97",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:carrot"
 	}]
 }

@@ -18,10 +18,5 @@
 			item: "immersiveengineering:tool"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "a819070a",
-		type: "item",
-		item: "immersiveengineering:tool 1 3"
 	}]
 }

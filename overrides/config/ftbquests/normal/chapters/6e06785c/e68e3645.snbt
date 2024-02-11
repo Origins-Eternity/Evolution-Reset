@@ -22,12 +22,14 @@
 	rewards: [{
 		uid: "4a0b1593",
 		type: "item",
+		team_reward: true,
 		item: "minecraft:packed_ice",
 		count: 4
 	},
 	{
 		uid: "f3273371",
 		type: "item",
+		team_reward: true,
 		item: "immersiveengineering:metal_device1 1 3"
 	}]
 }
