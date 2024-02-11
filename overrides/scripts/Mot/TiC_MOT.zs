@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 mods.tconstruct.Alloy.removeRecipe(<liquid:obsidian>);
+mods.tconstruct.Melting.removeRecipe(<liquid:obsidian>, <minecraft:obsidian>);
 
 var liquids = [
 <liquid:gold>,

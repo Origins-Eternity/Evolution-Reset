@@ -1007,7 +1007,7 @@ val table = tables[i];
 RecipeBuilder.get("engineer")
 .setShaped([
     [<pyrotech:masonry_brick_block>, <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, <pyrotech:masonry_brick_block>],
-    [wood, <pyrotech:planks_tarred>, <pyrotech:crate_stone>, wood],
+    [wood, <pyrotech:planks_tarred>, <pyrotech:crate_stone>, <pyrotech:planks_tarred>, wood],
     [wood, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, wood],
     [wood, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, wood],
     [wood, <ercore:basalt>, <ercore:basalt>, <ercore:basalt>, wood]])

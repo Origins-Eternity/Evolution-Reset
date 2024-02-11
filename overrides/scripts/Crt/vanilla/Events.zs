@@ -78,6 +78,7 @@ events.onBlockBreak(function(event as BlockBreakEvent) {
 val info = event.world.getWorldInfo();
 val player as IPlayer = event.player;
 val block as IBlock = event.block;
+if(player.creative == false) {
     if((block.definition.hardness >= 0.6) && (event.isPlayer == true)) {
         if(isNull(player.currentItem)) {
             event.cancel();
@@ -118,4 +119,4 @@ val block as IBlock = event.block;
             }
         }
     }
-});
+}});
