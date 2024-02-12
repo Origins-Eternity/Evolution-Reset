@@ -12,7 +12,7 @@ for items in modrecipes{
     recipes.remove(items);
 }
 
-val mod = loadedMods["galacticraftcore"];
+val mod = loadedMods["galacticraftplanets"];
 for item in mod.items {
     recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:ingotTungstensteel>, item);
 }

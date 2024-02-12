@@ -85,8 +85,8 @@ if(!event.player.creative) {
             event.cancel();
         } else {
         for item in <ore:banitems>.items {
-            var toolname = item.definition.id;
-	        if(player.currentItem.definition.id.contains(toolname)) {
+            var toolname = item.definition.name;
+	        if(player.currentItem.definition.name == toolname) {
 		        event.cancel();
 		    }
         }
