@@ -35,7 +35,6 @@ var compacting_bin_recipes = [
 <pyrotech:generated_pile_slag_nickel>,
 <pyrotech:generated_pile_slag_lead>,
 <pyrotech:generated_pile_slag_tungsten>,
-<pyrotech:generated_pile_slag_ilmenite>,
 <minecraft:quartz_block>,
 <minecraft:grass>
 ] as IItemStack[];

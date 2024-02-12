@@ -219,15 +219,6 @@
       "output": [
         "ercore:tungsten_nugget"
       ]
-    },
-    "oreIlmenite": {
-      "slagColor": "18212f",
-      "langKey": [
-        "tile.asteroids_block.ore_ilmenite_asteroids"
-      ],
-      "output": [
-        "galacticraftplanets:item_basic_asteroids:4"
-      ]
     }
   }
 }

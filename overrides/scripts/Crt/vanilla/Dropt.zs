@@ -183,8 +183,7 @@ var dropores = [
 <pyrotech:generated_slag_tungsten>,
 <pyrotech:generated_slag_nickel>,
 <pyrotech:material:8>,
-<pyrotech:material:18>,
-<pyrotech:generated_slag_ilmenite>
+<pyrotech:material:18>
 ] as IItemStack[];
 
 val ores = [
@@ -201,8 +200,7 @@ val ores = [
 <ore:oreTungsten>,
 <ore:oreNickel>,
 <ore:blockSlakedlime>,
-<ore:eroreDiamond>,
-<ore:oreIlmenite>
+<ore:eroreDiamond>
 ] as IOreDictEntry[];
 
 for i, ore in ores {

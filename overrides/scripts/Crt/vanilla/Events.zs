@@ -75,43 +75,25 @@ events.onCommand(function(event as CommandEvent) {
 }
 
 events.onBlockBreak(function(event as BlockBreakEvent) {
-val info = event.world.getWorldInfo();
-val player as IPlayer = event.player;
-val block as IBlock = event.block;
-if(player.creative == false) {
-    if((block.definition.hardness >= 0.6) && (event.isPlayer == true)) {
+if((event.world.remote) || (!event.isPlayer)) return;
+if(!event.player.creative) {
+	val player as IPlayer = event.player;
+    val block as IBlock = event.block;
+    val info = event.world.getWorldInfo();
+    if(block.definition.hardness >= 0.6) {
         if(isNull(player.currentItem)) {
             event.cancel();
         } else {
-            val name = event.player.currentItem.definition.id;
-            if(name.contains("axe")) return;
-            if(name.contains("pickaxe")) return;
-            if(name.contains("shovel")) return;
-            if(name.contains("hoe")) return;
-            if(name.contains("sword")) return;
+        if(player.currentItem.definition.name.contains("axe")) return;
+        if(player.currentItem.definition.name.contains("pickaxe")) return;
+        if(player.currentItem.definition.name.contains("shovel")) return;
+        if(player.currentItem.definition.name.contains("sword")) return;
+        if(player.currentItem.definition.name.contains("hoe")) return;
             event.cancel();
         }
     }
-    if(info.difficultyLocked == false) {
+    if(!info.difficultyLocked) {
         event.cancel();
-        if (!event.world.isRemote()) {
-            player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
-        }
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
     }
-    if(!event.world.remote) {
-        val block as IBlock = event.block;
-        if(!isNull(player.currentItem)) {
-            val name = event.player.currentItem.definition.id;
-                if(block.definition.id.contains("ore")) {
-                    if((name.contains("pickaxe")) && (!player.isAllowFTBUltimine())) {
-                        player.setAllowFTBUltimine(true);
-                    } else if(player.isAllowFTBUltimine()) {
-                       player.setAllowFTBUltimine(false);
-                    }
-                } else if(player.isAllowFTBUltimine()) {
-                    player.setAllowFTBUltimine(false);
-                }
-            }
-        }
-    }
-});
+}});

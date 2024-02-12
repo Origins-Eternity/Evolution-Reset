@@ -37,7 +37,6 @@ import crafttweaker.mods.IMod;
 <ore:doorIron>.add(<minecraft:iron_door>);
 <ore:doorIron>.add(<minecraft:iron_trapdoor>);
 <ore:powderCement>.add(<ercore:cement_powder>);
-<ore:oreIlmenite>.add(<galacticraftplanets:asteroids_block:4>);
 
 var dirts =[
 <biomesoplenty:dirt:8>,
