@@ -23,5 +23,10 @@
 		type: "item",
 		team_reward: true,
 		item: "minecraft:carrot"
+	},
+	{
+		uid: "ea34abaf",
+		type: "item",
+		item: "cuisine:manual"
 	}]
 }

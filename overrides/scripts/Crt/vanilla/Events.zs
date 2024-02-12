@@ -84,6 +84,12 @@ if(!event.player.creative) {
         if(isNull(player.currentItem)) {
             event.cancel();
         } else {
+        for item in <ore:banitems>.items {
+            var toolname = item.definition.id;
+	        if(player.currentItem.definition.id == toolname) {
+		        event.cancel();
+		    }
+        }
         if(player.currentItem.definition.name.contains("axe")) return;
         if(player.currentItem.definition.name.contains("pickaxe")) return;
         if(player.currentItem.definition.name.contains("shovel")) return;
