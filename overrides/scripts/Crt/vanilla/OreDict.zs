@@ -323,7 +323,16 @@ var tool = [
 <minecraft:chainmail_helmet>,
 <minecraft:chainmail_chestplate>,
 <minecraft:chainmail_leggings>,
-<minecraft:chainmail_boots>
+<minecraft:chainmail_boots>,
+<minecraft:stone_axe>,
+<minecraft:stone_pickaxe>,
+<minecraft:stone_hoe>,
+<minecraft:stone_shovel>,
+<minecraft:stone_sword>,
+<minecraft:wooden_axe>,
+<minecraft:wooden_hoe>,
+<minecraft:wooden_pickaxe>,
+<minecraft:wooden_shovel>
 ] as IItemStack[];
 
 for items in tool {	
