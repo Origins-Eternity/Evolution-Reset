@@ -14,7 +14,7 @@ for items in modrecipes{
 
 val mod = loadedMods["galacticraftcore"];
 for item in mod.items {
-    recipes.replaceAllOccurences(<ore:ingotIron>, <ore:ingotTungstensteel>, item);
+    recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:ingotTungstensteel>, item);
 }
 
 recipes.replaceAllOccurences(<minecraft:lever>, <ore:gemDiamond>, <galacticraftcore:rocket_workbench>);
