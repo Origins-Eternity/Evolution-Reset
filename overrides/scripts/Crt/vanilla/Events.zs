@@ -18,6 +18,10 @@ import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.PlayerAdvancementEvent;
 import crafttweaker.event.PortalSpawnEvent;
 import crafttweaker.event.PlayerBonemealEvent;
+import crafttweaker.event.EntityJoinWorldEvent;
+import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.event.EntityLivingDeathDropsEvent;
+import crafttweaker.entity.IEntityItem;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var player = event.player;
@@ -34,6 +38,18 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
     event.cancel();
 });
 
+events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
+    if(event.entity instanceof IPlayer) return;
+    for drop in event.drops {
+        var itemdrop = drop.item.definition.name;
+        for item in <ore:banitems>.items {
+	        if(itemdrop == item.definition.name) {
+		        event.cancel();
+		    }
+        }
+    }
+});
+
 events.onPlayerRespawn(function(event as PlayerRespawnEvent) {
     val player as IPlayer = event.player;
     player.addPotionEffect(<potion:minecraft:invisibility>.makePotionEffect(12000, 5));
@@ -46,10 +62,81 @@ events.onPlayerAdvancement(function(event as PlayerAdvancementEvent) {
     player.xp += 5;
 });
 
+var mobsone = [
+<entity:minecraft:witch>,
+<entity:minecraft:zombie>,
+<entity:minecraft:zombie_villager>,
+<entity:minecraft:husk>,
+<entity:minecraft:slime>,
+<entity:minecraft:zombie_horse>,
+<entity:minecraft:skeleton_horse>,
+<entity:tconstruct:blueslime>,
+<entity:pyrotech:pyrotech.mud>,
+<entity:minecraft:magma_cube>,
+<entity:minecraft:zombie_pigman>,
+<entity:minecraft:wither_skeleton>,
+<entity:minecraft:spider>,
+<entity:minecraft:skeleton>,
+<entity:minecraft:stray>,
+<entity:mekanism:babyskeleton>,
+<entity:minecraft:creeper>,
+<entity:minecraft:enderman>,
+<entity:minecraft:cave_spider>,
+<entity:minecraft:ghast>
+] as IEntityDefinition[];
+
+
+var mobstwo = [
+<entity:mutantbeasts:body_part>,
+<entity:mutantbeasts:chemical_x>,
+<entity:mutantbeasts:creeper_minion>,
+<entity:mutantbeasts:creeper_minion_egg>,
+<entity:mutantbeasts:endersoul_clone>,
+<entity:mutantbeasts:endersoul_fragment>,
+<entity:mutantbeasts:mutant_arrow>,
+<entity:mutantbeasts:mutant_creeper>,
+<entity:mutantbeasts:mutant_enderman>,
+<entity:mutantbeasts:mutant_skeleton>,
+<entity:mutantbeasts:mutant_snow_golem>,
+<entity:mutantbeasts:mutant_zombie>,
+<entity:mutantbeasts:skull_spirit>,
+<entity:mutantbeasts:spider_pig>,
+<entity:mutantbeasts:throwable_block>
+] as IEntityDefinition[];
+
+events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
+    val entity = event.entity;
+    val time = event.world.getWorldInfo().getWorldTotalTime();
+    for mobone in mobsone {
+        if(entity.definition.id == mobone.id) {
+            if(time < 552000) {
+                event.cancel();
+            }
+        }
+    }
+    for mobtwo in mobstwo {
+        if(entity.definition.id == mobtwo.id) {
+            if(time < 768000) {
+                event.cancel();
+            }
+        }
+    }
+});
 
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var player = event.player as IPlayer;
     var ser = server.commandManager as ICommandManager;
+    val time = player.world.getWorldInfo().getWorldTotalTime();
+    if((time < 552000) && (isNull(player.data.wasGivenTip1))) {
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip1"));
+        player.update({wasGivenTip1: true});
+    } else if((time < 768000) && (isNull(player.data.wasGivenTip2))) {
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip2"));
+        player.update({wasGivenTip2: true});
+    } else if(isNull(player.data.wasGivenTip3)) {
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip3"));
+        player.update({wasGivenTip3: true});
+    }
     if (forcegamemode == true) {
         ser.executeCommand(server, "gamemode survival " + player.name);
     }
