@@ -190,4 +190,13 @@ if(!event.player.creative) {
         if(player.currentItem.definition.name.contains("axe")) return;
         if(player.currentItem.definition.name.contains("pickaxe")) return;
         if(player.currentItem.definition.name.contains("shovel")) return;
-        if(player.currentItem.definition.name.contains("swo
+        if(player.currentItem.definition.name.contains("sword")) return;
+        if(player.currentItem.definition.name.contains("hoe")) return;
+            event.cancel();
+        }
+    }
+    if(!info.difficultyLocked) {
+        event.cancel();
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
+    }
+}});
