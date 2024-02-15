@@ -22,6 +22,8 @@ import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.event.EntityLivingDeathDropsEvent;
 import crafttweaker.entity.IEntityItem;
+import crafttweaker.entity.IEntityMob;
+import crafttweaker.event.PlayerInteractEntityEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var player = event.player;
@@ -36,6 +38,12 @@ var id = event.block.definition.id;
 
 events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
     event.cancel();
+});
+
+events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent) {
+    if(event.target.nbt.asString().contains("minecraft:smith")) {
+        event.cancel();
+    }
 });
 
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
@@ -63,59 +71,59 @@ events.onPlayerAdvancement(function(event as PlayerAdvancementEvent) {
 });
 
 var mobsone = [
-<entity:minecraft:witch>,
-<entity:minecraft:zombie>,
-<entity:minecraft:zombie_villager>,
-<entity:minecraft:husk>,
-<entity:minecraft:slime>,
-<entity:minecraft:zombie_horse>,
-<entity:minecraft:skeleton_horse>,
-<entity:tconstruct:blueslime>,
-<entity:pyrotech:pyrotech.mud>,
-<entity:minecraft:magma_cube>,
-<entity:minecraft:zombie_pigman>,
-<entity:minecraft:wither_skeleton>,
-<entity:minecraft:spider>,
-<entity:minecraft:skeleton>,
-<entity:minecraft:stray>,
-<entity:mekanism:babyskeleton>,
-<entity:minecraft:creeper>,
-<entity:minecraft:enderman>,
-<entity:minecraft:cave_spider>,
-<entity:minecraft:ghast>
-] as IEntityDefinition[];
+"Witch",
+"Zombie",
+"ZombieVillager",
+"Husk",
+"Slime",
+"ZombieHorse",
+"SkeletonHorse",
+"tconstruct.blueslime",
+"pyrotech.mud",
+"LavaSlime",
+"PigZombie",
+"WitherSkeleton",
+"Spider",
+"Skeleton",
+"Stray",
+"Creeper",
+"Enderman",
+"CaveSpider",
+"Ghast"
+] as string[];
 
 
 var mobstwo = [
-<entity:mutantbeasts:body_part>,
-<entity:mutantbeasts:chemical_x>,
-<entity:mutantbeasts:creeper_minion>,
-<entity:mutantbeasts:creeper_minion_egg>,
-<entity:mutantbeasts:endersoul_clone>,
-<entity:mutantbeasts:endersoul_fragment>,
-<entity:mutantbeasts:mutant_arrow>,
-<entity:mutantbeasts:mutant_creeper>,
-<entity:mutantbeasts:mutant_enderman>,
-<entity:mutantbeasts:mutant_skeleton>,
-<entity:mutantbeasts:mutant_snow_golem>,
-<entity:mutantbeasts:mutant_zombie>,
-<entity:mutantbeasts:skull_spirit>,
-<entity:mutantbeasts:spider_pig>,
-<entity:mutantbeasts:throwable_block>
-] as IEntityDefinition[];
+"mutantbeasts.body_part",
+"mutantbeasts.chemical_x",
+"mutantbeasts.creeper_minion",
+"mutantbeasts.creeper_minion_egg",
+"mutantbeasts.endersoul_clone",
+"mutantbeasts.endersoul_fragment",
+"mutantbeasts.mutant_arrow",
+"mutantbeasts.mutant_creeper",
+"mutantbeasts.mutant_enderman",
+"mutantbeasts.mutant_skeleton",
+"mutantbeasts.mutant_snow_golem",
+"mutantbeasts.mutant_zombie",
+"mutantbeasts.skull_spirit",
+"mutantbeasts.spider_pig",
+"mutantbeasts.throwable_block"
+] as string[];
 
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     val entity = event.entity;
     val time = event.world.getWorldInfo().getWorldTotalTime();
+    if(!entity instanceof IEntityMob) return;
     for mobone in mobsone {
-        if(entity.definition.id == mobone.id) {
+        if(entity.definition.name == mobone) {
             if(time < 552000) {
                 event.cancel();
             }
         }
     }
     for mobtwo in mobstwo {
-        if(entity.definition.id == mobtwo.id) {
+        if(entity.definition.id == mobtwo) {
             if(time < 768000) {
                 event.cancel();
             }
@@ -127,10 +135,12 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var player = event.player as IPlayer;
     var ser = server.commandManager as ICommandManager;
     val time = player.world.getWorldInfo().getWorldTotalTime();
-    if((time < 552000) && (isNull(player.data.wasGivenTip1))) {
+    if(time < 552000) {
+        if(!isNull(player.data.wasGivenTip1)) return;
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip1"));
         player.update({wasGivenTip1: true});
-    } else if((time < 768000) && (isNull(player.data.wasGivenTip2))) {
+    } else if(time < 768000) {
+        if(!isNull(player.data.wasGivenTip2)) return;
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip2"));
         player.update({wasGivenTip2: true});
     } else if(isNull(player.data.wasGivenTip3)) {
@@ -180,13 +190,4 @@ if(!event.player.creative) {
         if(player.currentItem.definition.name.contains("axe")) return;
         if(player.currentItem.definition.name.contains("pickaxe")) return;
         if(player.currentItem.definition.name.contains("shovel")) return;
-        if(player.currentItem.definition.name.contains("sword")) return;
-        if(player.currentItem.definition.name.contains("hoe")) return;
-            event.cancel();
-        }
-    }
-    if(!info.difficultyLocked) {
-        event.cancel();
-        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
-    }
-}});
+        if(player.currentItem.definition.name.contains("swo
