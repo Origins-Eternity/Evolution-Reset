@@ -5,11 +5,11 @@
         "Recipes": [
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:blacksmith_workstation_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -17,11 +17,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:engineer_workstation_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -29,11 +29,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:tanner_workstation_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -41,11 +41,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:tailor_workstation_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -53,11 +53,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:chest_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -65,11 +65,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:ladder_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -77,11 +77,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:tool_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -89,11 +89,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:quarry_bag_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -101,11 +101,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:small_backpack_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -113,11 +113,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:bed_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -125,11 +125,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:bucket_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
                 },
@@ -137,11 +137,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:blacksmith_workshop_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 20
                 },
@@ -149,11 +149,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:engineer_workshop_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 20
                 },
@@ -161,11 +161,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:tanner_workshop_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 20
                 },
@@ -173,11 +173,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:tailor_workshop_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 20
                 },
@@ -185,11 +185,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:potter_workshop_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 20
                 },
@@ -197,11 +197,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:basic_workshop_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 20
                 },
@@ -209,11 +209,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:durable_quarry_bag_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 20
                 },
@@ -221,11 +221,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:medium_backpack_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 20
                 },
@@ -233,11 +233,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:brewing_stand_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 20
                 },
@@ -245,11 +245,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:crafting_table_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
@@ -257,11 +257,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:furnace_core_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
@@ -269,11 +269,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:wither_forge_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
@@ -281,11 +281,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:vacuum_bag_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
@@ -293,11 +293,11 @@
             },
             {
                 "action": "add",
-                "sell": {
-                    "id": "ercore:explosive_blueprint",
+                "buy": {
+                    "id": "ercore:gunpowder_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
@@ -305,11 +305,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:large_backpack_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
@@ -317,11 +317,11 @@
             },
             {
                 "action": "add",
-                "sell": {
+                "buy": {
                     "id": "ercore:toxic_mask_blueprint",
                     "Count": 1
                 },
-                "buy": {
+                "sell": {
                     "id": "minecraft:emerald",
                     "Count": 30
                 },

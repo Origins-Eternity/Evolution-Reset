@@ -189,11 +189,6 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     }
 });
 
-events.onPlayerSleepInBed(function(event as PlayerSleepInBedEvent) {
-    val player as IPlayer = event.player;
-	player.addPotionEffect(<potion:minecraft:hunger>.makePotionEffect(200, 2));
-});
-
 if (disablecommand == true) {
 events.onCommand(function(event as CommandEvent) {
    val command = event.command;
