@@ -37,6 +37,8 @@ import crafttweaker.mods.IMod;
 <ore:doorIron>.add(<minecraft:iron_door>);
 <ore:doorIron>.add(<minecraft:iron_trapdoor>);
 <ore:powderCement>.add(<ercore:cement_powder>);
+<ore:craftTable>.add(<minecraft:crafting_table>);
+<ore:furnace>.add(<minecraft:furnace>);
 
 var dirts =[
 <biomesoplenty:dirt:8>,
@@ -332,7 +334,12 @@ var tool = [
 <minecraft:wooden_axe>,
 <minecraft:wooden_hoe>,
 <minecraft:wooden_pickaxe>,
-<minecraft:wooden_shovel>
+<minecraft:wooden_shovel>,
+<pyrotech:obsidian_axe>,
+<pyrotech:obsidian_hoe>,
+<pyrotech:obsidian_pickaxe>,
+<pyrotech:obsidian_shovel>,
+<pyrotech:obsidian_sword>
 ] as IItemStack[];
 
 for items in tool {	

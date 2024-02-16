@@ -24,11 +24,13 @@ import crafttweaker.event.EntityLivingDeathDropsEvent;
 import crafttweaker.entity.IEntityItem;
 import crafttweaker.entity.IEntityMob;
 import crafttweaker.event.PlayerInteractEntityEvent;
+import crafttweaker.event.PlayerAttackEntityEvent;
+import crafttweaker.event.BlockHarvestDropsEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var player = event.player;
 var id = event.block.definition.id;
-    if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table")) {
+    if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table") || (id == "minecraft:lit_furnace")) {
         if (!event.world.isRemote()) {
             player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
         }
@@ -40,9 +42,44 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
     event.cancel();
 });
 
+events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
+if (!event.world.remote) {
+    if(event.silkTouch) return;
+    var id = event.block.definition.id;
+    if(id == "minecraft:bed") {
+        event.drops = [<item:minecraft:string> * 3 % 100];
+    } else if((id == "minecraft:chest") || (id == "minecraft:trapped_chest")) {
+        if((!event.isPlayer) || (isNull(event.player.currentItem))) {
+            event.drops = [<item:pyrotech:rock:7> * 3 % 100];
+        } else if(event.player.currentItem.isEnchanted) {
+            var name as string = "";
+            for enchantment in event.player.currentItem.enchantments {
+                name += enchantment.definition.name;
+            }
+            if(name.contains("untouching")) return;
+            event.drops = [<item:pyrotech:rock:7> * 4 % 100];
+        } else {
+            event.drops = [<item:pyrotech:rock:7> * 4 % 100];
+        }
+    }
+}});
+
+events.onPlayerAttackEntity(function(event as PlayerAttackEntityEvent) {
+    if(isNull(event.player.currentItem)) return;
+    for item in <ore:banitems>.items {
+        var toolname = item.definition.name;
+	    if(event.player.currentItem.definition.name == toolname) {
+		    event.cancel();
+		}
+    }
+});
+
 events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent) {
     if(event.target.nbt.asString().contains("minecraft:smith")) {
         event.cancel();
+        if(!event.player.world.remote) {
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.null"));
+        }
     }
 });
 
@@ -67,7 +104,7 @@ events.onPlayerRespawn(function(event as PlayerRespawnEvent) {
 
 events.onPlayerAdvancement(function(event as PlayerAdvancementEvent) {
     val player as IPlayer = event.player;
-    player.xp += 5;
+    player.xp += 3;
 });
 
 var mobsone = [

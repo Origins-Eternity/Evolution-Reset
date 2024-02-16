@@ -251,7 +251,9 @@ var bandrops = [
 <pyrotech:rock:5>,
 <pyrotech:rock:9>,
 <pyrotech:rock:7>,
-<pyrotech:material:19>
+<pyrotech:material:19>,
+<pyrotech:rock:7>,
+<pyrotech:rock>
 ] as IItemStack[];
 
 val banblocks = [
@@ -268,7 +270,9 @@ val banblocks = [
 <ore:whitesand>,
 <ore:radsand>,
 <ore:doorWood>,
-<ore:doorIron>
+<ore:doorIron>,
+<ore:craftTable>,
+<ore:furnace>
 ] as IOreDictEntry[];
 
 for i, banblock in banblocks {

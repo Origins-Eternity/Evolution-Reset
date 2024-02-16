@@ -64,12 +64,7 @@ var items = [
 <pyrotech:furnace_core>,
 <pyrotech:worktable_stone>,
 <pyrotech:flint_hammer>,
-<pyrotech:cog_diamond>,
-<pyrotech:obsidian_axe>,
-<pyrotech:obsidian_hoe>,
-<pyrotech:obsidian_pickaxe>,
-<pyrotech:obsidian_shovel>,
-<pyrotech:obsidian_sword>
+<pyrotech:cog_diamond>
 ] as IItemStack[];
 
 for item in items {
@@ -296,21 +291,21 @@ pyrWorktableCreate("artisans", "_driver_flint", <artisanworktables:artisans_driv
 BrickKiln.addRecipe("searedbrick_from_unfired", <tconstruct:materials>, <ercore:searedbrick_unfired>, 8000, 0.5, [<pyrotech:material:7>*6]);
 BrickKiln.addRecipe("netherbrick_from_netherrack", <minecraft:netherbrick>, <minecraft:netherrack>, 6000, 0.3, [<pyrotech:rock_netherrack>*4]);
 BrickOven.addRecipe("blaze_powder_from_blaze_rod", <minecraft:blaze_powder>, <minecraft:blaze_rod>);
-
 StoneCrucible.addRecipe("liquid_dirt_from_dirt", <liquid:dirt> * 500, <ore:dirt>, 3 * 60 * 20, true);
-
+StoneCrucible.addRecipe("liquid_sugarcane_from_sugarcane", <liquid:sugarcane> * 500, <ore:sugarcane>, 2 * 60 * 20, true);
+BrickCrucible.addRecipe("lime_slurry_from_slaked_lime", <liquid:slaked_lime> * 1000, <ercore:slakedlime_block>, 5 * 60 * 20);
 StoneSawmill.addRecipe("flour_from_cropWheat", <cuisine:food:1>, <ore:cropWheat>, 200, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 StoneSawmill.addRecipe("treated_stick_from_tarred_board", <immersiveengineering:material>, <pyrotech:material:23>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 BrickSawmill.addRecipe("flour_from_cropWheat2", <cuisine:food:1>, <ore:cropWheat>, 200, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 BrickSawmill.addRecipe("cement_powder_from_soil", <ercore:cement_powder> * 9, <tconstruct:soil>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
+
+SoakingPot.addRecipe("sugar_from_sugarcane", <minecraft:sugar>, <liquid:sugarcane>, <pyrotech:material:8>, true, 5 * 60 * 20);
 
 Campfire.removeRecipes(<minecraft:bread>);
 Campfire.removeRecipes(<minecraft:blaze_powder>);
 
 StoneKiln.removeRecipes(<minecraft:netherbrick>);
 PitKiln.removeRecipes(<minecraft:netherbrick>);
-
-BrickCrucible.addRecipe("lime_slurry_from_slaked_lime", <liquid:slaked_lime> * 1000, <ercore:slakedlime_block>, 5 * 60 * 20);
 
 IroncladAnvil.addRecipe("nugget_from_ingot_tungsten", <ercore:tungsten_nugget> * 9, <ercore:tungsten_ingot>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_aluminum", <immersiveengineering:metal:21> * 9, <ore:ingotAluminum>, 20, "hammer");
