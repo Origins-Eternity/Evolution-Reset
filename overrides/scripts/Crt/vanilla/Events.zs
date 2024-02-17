@@ -75,7 +75,13 @@ events.onPlayerAttackEntity(function(event as PlayerAttackEntityEvent) {
 });
 
 events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent) {
-    if(event.target.nbt.asString().contains("minecraft:smith")) {
+    val nbt = event.target.nbt.asString();
+    if(nbt.contains("minecraft:smith")) {
+        event.cancel();
+        if(!event.player.world.remote) {
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.null"));
+        }
+    } else if((nbt.contains("minecraft:smith")) && (nbt.contains("Career: 4"))) {
         event.cancel();
         if(!event.player.world.remote) {
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.null"));

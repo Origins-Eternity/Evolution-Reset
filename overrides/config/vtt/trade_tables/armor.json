@@ -1,0 +1,11 @@
+{
+    "Profession": "minecraft:smith",
+    "Career": "armor",
+    "Offers": {
+        "Recipes": [
+            {
+            "action" : "clear"
+            }
+        ]
+    }
+}
