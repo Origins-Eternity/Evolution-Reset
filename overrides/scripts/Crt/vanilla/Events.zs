@@ -192,14 +192,14 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     if(!entity instanceof IEntityMob) return;
     for mobone in mobsone {
         if(entity.definition.name == mobone) {
-            if(time < 552000) {
+            if(time < 301260) {
                 event.cancel();
             }
         }
     }
     for mobtwo in mobstwo {
         if(entity.definition.id == mobtwo) {
-            if(time < 768000) {
+            if(time < 603012) {
                 event.cancel();
             }
         }
