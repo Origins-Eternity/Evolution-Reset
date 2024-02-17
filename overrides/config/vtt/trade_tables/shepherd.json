@@ -1,15 +1,12 @@
 {
-    "Profession": "minecraft:smith",
-    "Career": "tool",
+    "Profession": "minecraft:farmer",
+    "Career": "shepherd",
     "Offers": {
         "Recipes": [
             {
-                "action" : "clear"
-            },
-            {
                 "action": "add",
                 "sell": {
-                    "id": "ercore:tool_blueprint",
+                    "id": "ercore:bed_blueprint",
                     "Count": 1
                 },
                 "buy": {

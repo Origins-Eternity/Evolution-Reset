@@ -452,7 +452,6 @@ var color = [
 <ore:dyeGreen>,
 <ore:dyeRed>,
 <ore:dyeBlack>
-
 ] as IOreDictEntry[];
 
 for i, colors in color {
@@ -501,7 +500,6 @@ var colorfulbeds = [
 <minecraft:bed:13>,
 <minecraft:bed:14>,
 <minecraft:bed:15>
-
 ] as IItemStack[];
 
 for i, colors in color {

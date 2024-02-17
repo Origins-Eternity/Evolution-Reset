@@ -41,7 +41,7 @@ tic2Dying(<tconstruct:edible:10>, <minecraft:rotten_flesh>, 150 * 20);
 recipes.addShaped(<tconstruct:smeltery_controller>, 
 [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
 [<tconstruct:materials>, <pyrotech:furnace_core>, <tconstruct:materials>], 
-[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
+[<tconstruct:materials>, <minecraft:chest>, <tconstruct:materials>]]);
 
 recipes.addShaped("tooltables", <tconstruct:tooltables:3>,
 [[<ore:slabWood>, <tconstruct:pattern>, <ore:slabWood>],

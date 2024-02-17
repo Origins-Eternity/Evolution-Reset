@@ -24,8 +24,9 @@ import crafttweaker.event.EntityLivingDeathDropsEvent;
 import crafttweaker.entity.IEntityItem;
 import crafttweaker.entity.IEntityMob;
 import crafttweaker.event.PlayerInteractEntityEvent;
-import crafttweaker.event.PlayerAttackEntityEvent;
 import crafttweaker.event.BlockHarvestDropsEvent;
+import crafttweaker.event.ItemTossEvent;
+import crafttweaker.event.PlayerInteractEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var player = event.player;
@@ -38,8 +39,34 @@ var id = event.block.definition.id;
     }
 });
 
+events.onItemToss(function(event as ItemTossEvent) {
+    var itemdrop = event.item.item;
+    if((itemdrop.name.contains("item.bed")) && (itemdrop.tag.asString().contains("wasThinker: 1"))) {
+        event.cancel();
+    }
+    var oredicts as string = "";
+    for ore in itemdrop.ores {
+        oredicts += ore.name;
+    }
+    if(oredicts.contains("banItem")) {
+        event.cancel();
+    }
+});
+
 events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
     event.cancel();
+});
+
+events.onPlayerInteract(function(event as PlayerInteractEvent) {
+    if(isNull(player.currentItem)) return;
+    var oredicts as string = "";
+    for ore in player.currentItem.ores {
+        oredicts += ore.name;
+    }
+    if(oredicts.contains("banItem")) {
+        event.cancel();
+        player.dropItem(true);
+    }
 });
 
 events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
@@ -64,40 +91,45 @@ if (!event.world.remote) {
     }
 }});
 
-events.onPlayerAttackEntity(function(event as PlayerAttackEntityEvent) {
-    if(isNull(event.player.currentItem)) return;
-    for item in <ore:banitems>.items {
-        var toolname = item.definition.name;
-	    if(event.player.currentItem.definition.name == toolname) {
-		    event.cancel();
-		}
-    }
-});
-
 events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent) {
     val nbt = event.target.nbt.asString();
-    if(nbt.contains("minecraft:smith")) {
-        event.cancel();
-        if(!event.player.world.remote) {
-            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.null"));
-        }
-    } else if((nbt.contains("minecraft:smith")) && (nbt.contains("Career: 4"))) {
-        event.cancel();
-        if(!event.player.world.remote) {
-            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.null"));
+    val player = event.player;
+    if((nbt.contains("vtt:thinker")) && (!nbt.contains("wasSleepy: 0"))) {
+        if(isNull(player.currentItem)) {
+            event.cancel();
+            if(!player.world.remote) {
+                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.sleepy"));
+            }
+        } else if(!player.currentItem.name.contains("item.bed")) {
+            event.cancel();
+            if(!player.world.remote) {
+                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.sleepy"));
+            }
+        } else if(!player.currentItem.tag.asString().contains("wasThinker: 1")) {
+            event.cancel();
+            if(!player.world.remote) {
+                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.mistake"));
+            }
+        } else {
+            player.dropItem(false);
+            event.target.nbt += {wasSleepy: 0};
+            if(!player.world.remote) {
+                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.thanks"));
+            }
         }
     }
 });
 
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
     if(event.entity instanceof IPlayer) return;
+    var oredicts as string = "";
     for drop in event.drops {
-        var itemdrop = drop.item.definition.name;
-        for item in <ore:banitems>.items {
-	        if(itemdrop == item.definition.name) {
-		        event.cancel();
-		    }
+        for ore in drop.item.ores {
+            oredicts += ore.name;
         }
+    }
+    if(oredicts.contains("banItem")) {
+        event.cancel();
     }
 });
 
@@ -219,12 +251,6 @@ if(!event.player.creative) {
         if(isNull(player.currentItem)) {
             event.cancel();
         } else {
-        for item in <ore:banitems>.items {
-            var toolname = item.definition.name;
-	        if(player.currentItem.definition.name == toolname) {
-		        event.cancel();
-		    }
-        }
         if(player.currentItem.definition.name.contains("axe")) return;
         if(player.currentItem.definition.name.contains("pickaxe")) return;
         if(player.currentItem.definition.name.contains("shovel")) return;

@@ -1,0 +1,152 @@
+{
+    "Profession": "immersiveengineering:engineer",
+    "Career": "engineer",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:blacksmith_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:engineer_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:tanner_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:tailor_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:potter_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:basic_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:blacksmith_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:engineer_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:tanner_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:tailor_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:potter_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:basic_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            }
+        ]
+    }
+}
