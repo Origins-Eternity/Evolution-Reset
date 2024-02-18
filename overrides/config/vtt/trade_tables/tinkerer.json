@@ -6,7 +6,7 @@
             {
                 "action": "add",
                 "buy": {
-                    "id": "minecraft:bed:*",
+                    "id": "minecraft:bed",
                     "Count": 1
                 },
                 "sell": {
