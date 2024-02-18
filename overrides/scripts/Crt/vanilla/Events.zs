@@ -62,7 +62,6 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
         oredicts += ore.name;
     }
     if(oredicts.contains("banItem")) {
-        event.cancel();
         player.dropItem(true);
     }
 });
