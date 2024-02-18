@@ -5,6 +5,18 @@
         "Recipes": [
             {
                 "action": "add",
+                "buy": {
+                    "id": "minecraft:bed:*",
+                    "Count": 1
+                },
+                "sell": {
+                    "id": "minecraft:red_flower",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
                 "sell": {
                     "id": "ercore:crafting_table_blueprint",
                     "Count": 1
@@ -13,7 +25,7 @@
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
-                "CareerLevel": 1
+                "CareerLevel": 2
             },
             {
                 "action": "add",
@@ -25,7 +37,7 @@
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
-                "CareerLevel": 1
+                "CareerLevel": 2
             },
             {
                 "action": "add",
@@ -37,7 +49,7 @@
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
-                "CareerLevel": 1
+                "CareerLevel": 2
             },
             {
                 "action": "add",
@@ -49,7 +61,7 @@
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
-                "CareerLevel": 1
+                "CareerLevel": 2
             },
             {
                 "action": "add",
@@ -61,7 +73,7 @@
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
-                "CareerLevel": 1
+                "CareerLevel": 2
             },
             {
                 "action": "add",
@@ -73,7 +85,7 @@
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
-                "CareerLevel": 1
+                "CareerLevel": 2
             },
             {
                 "action": "add",
@@ -85,7 +97,7 @@
                     "id": "minecraft:emerald",
                     "Count": 30
                 },
-                "CareerLevel": 1
+                "CareerLevel": 2
             }
         ]
     }

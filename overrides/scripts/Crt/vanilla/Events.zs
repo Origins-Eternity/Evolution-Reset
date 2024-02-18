@@ -41,9 +41,6 @@ var id = event.block.definition.id;
 
 events.onItemToss(function(event as ItemTossEvent) {
     var itemdrop = event.item.item;
-    if((itemdrop.name.contains("item.bed")) && (itemdrop.tag.asString().contains("wasThinker: 1"))) {
-        event.cancel();
-    }
     var oredicts as string = "";
     for ore in itemdrop.ores {
         oredicts += ore.name;
@@ -90,35 +87,6 @@ if (!event.world.remote) {
         }
     }
 }});
-
-events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent) {
-    val nbt = event.target.nbt.asString();
-    val player = event.player;
-    if((nbt.contains("vtt:thinker")) && (!nbt.contains("wasSleepy: 0"))) {
-        if(isNull(player.currentItem)) {
-            event.cancel();
-            if(!player.world.remote) {
-                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.sleepy"));
-            }
-        } else if(!player.currentItem.name.contains("item.bed")) {
-            event.cancel();
-            if(!player.world.remote) {
-                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.sleepy"));
-            }
-        } else if(!player.currentItem.tag.asString().contains("wasThinker: 1")) {
-            event.cancel();
-            if(!player.world.remote) {
-                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.mistake"));
-            }
-        } else {
-            player.dropItem(false);
-            event.target.nbt += {wasSleepy: 0};
-            if(!player.world.remote) {
-                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.thanks"));
-            }
-        }
-    }
-});
 
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
     if(event.entity instanceof IPlayer) return;
