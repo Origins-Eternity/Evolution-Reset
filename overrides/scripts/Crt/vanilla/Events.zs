@@ -68,11 +68,8 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
 
 events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
 if (!event.world.remote) {
-    if(event.silkTouch) return;
     var id = event.block.definition.id;
-    if(id == "minecraft:bed") {
-        event.drops = [<item:minecraft:string> * 3 % 100];
-    } else if((id == "minecraft:chest") || (id == "minecraft:trapped_chest")) {
+    if((id == "minecraft:chest") || (id == "minecraft:trapped_chest") || (id == "minecraft:bed")) {
         if((!event.isPlayer) || (isNull(event.player.currentItem))) {
             event.drops = [<item:pyrotech:rock:7> * 3 % 100];
         } else if(event.player.currentItem.isEnchanted) {
