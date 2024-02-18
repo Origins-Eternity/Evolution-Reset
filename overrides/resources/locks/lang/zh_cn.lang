@@ -1,0 +1,60 @@
+# Creative tabs
+itemGroup.locks=锁
+
+# Items
+item.locks.spring.name=弹簧
+item.locks.wood_lock_mechanism.name=木锁装置
+item.locks.iron_lock_mechanism.name=铁锁装置
+item.locks.steel_lock_mechanism.name=钢锁装置
+item.locks.wood_lock.name=木锁
+item.locks.iron_lock.name=铁锁
+item.locks.steel_lock.name=钢锁
+item.locks.gold_lock.name=金锁
+item.locks.diamond_lock.name=钻石锁
+item.locks.wood_lock_pick.name=木质撬锁器
+item.locks.iron_lock_pick.name=铁质撬锁器
+item.locks.steel_lock_pick.name=钢质撬锁器
+item.locks.gold_lock_pick.name=金质撬锁器
+item.locks.diamond_lock_pick.name=钻石撬锁器
+item.locks.key.name=钥匙
+item.locks.master_key.name=万能钥匙
+item.locks.key_blank.name=空白钥匙
+item.locks.key_ring.name=钥匙圈
+
+# Enchantments
+enchantment.locks.shocking=令人震惊
+enchantment.locks.shocking.desc=电击开锁失败的小偷
+enchantment.locks.sturdy=坚固
+enchantment.locks.sturdy.desc=降低撬锁强度
+enchantment.locks.complexity=复杂性
+enchantment.locks.complexity.desc=使锁变得过于复杂，无法用较低层的锁撬撬开
+
+# Death Mesages
+Death.attack.locks.shock=%1$s 在撬开魔法锁失败后触电身亡
+Death.attack.locks.shock.player=%1$s 被一把魔法锁电死，同时撬开它并与 %2$s 战斗
+
+
+# GUIs
+locks.gui.lockpicking.title=开锁
+locks.gui.lockpicking.open=按 `ESC` 打开
+
+# Subtitles
+locks.subtitle.key_ring=钥匙叮当声
+locks.subtitle.lock.close=锁定点击
+locks.subtitle.lock.open=钥匙上锁
+locks.subtitle.lock.rattle=锁响声
+locks.subtitle.pin.fail=Pin 发出低沉的咔嗒声
+locks.subtitle.pin.match=Pin 轻轻点击
+locks.subtitle.shock=突然的电击
+
+# Tooltips
+locks.tooltip.id=ID：%s
+locks.tooltip.length=长度：%s
+locks.tooltip.resistance.weak=爆炸抗性：弱
+locks.tooltip.resistance.strong=爆炸抗性：强
+locks.tooltip.resistance.supreme=爆炸抗性：最高
+locks.tooltip.strength=力量：%s
+
+# Status messages
+locks.status.locked=该方块已被锁定
+locks.status.too_complex=这把锁对于这个开锁器来说太复杂了

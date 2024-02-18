@@ -55,6 +55,7 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
 });
 
 events.onPlayerInteract(function(event as PlayerInteractEvent) {
+    val player = event.player;
     if(isNull(player.currentItem)) return;
     var oredicts as string = "";
     for ore in player.currentItem.ores {
