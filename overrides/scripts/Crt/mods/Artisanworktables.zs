@@ -464,26 +464,6 @@ RecipeBuilder.get("tailor")
 .create();
 }
 
-RecipeBuilder.get("tailor")
-.setShaped([
-    [<pyrotech:planks_tarred>, <pyrotech:wool_tarred>, <immersiveengineering:metal:38>, <pyrotech:wool_tarred>, <pyrotech:planks_tarred>],
-    [<ore:ingotSteel>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <ore:ingotSteel>],
-    [<immersiveengineering:metal:38>, <pyrotech:wool_tarred>, <pyrotech:straw_bed>, <pyrotech:wool_tarred>, <immersiveengineering:metal:38>],
-    [<ore:ingotSteel>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <ore:ingotSteel>],
-    [<pyrotech:planks_tarred>, <pyrotech:wool_tarred>, <immersiveengineering:metal:38>, <pyrotech:wool_tarred>, <pyrotech:planks_tarred>]])
-.setName("bed")
-.setLevelRequired(25)
-.setSecondaryIngredients([<ore:string>])
-.setMaximumTier(2)
-.addTool(<ore:artisansCutters>, 15)
-.addTool(<ercore:bed_blueprint>, 2)
-.addTool(<ore:artisansNeedle>, 15)
-.setExtraOutputOne(<minecraft:string>, 0.5)	 
-.setExtraOutputTwo(<minecraft:feather> * 4, 0.2)	
-.setExtraOutputThree(<pyrotech:material:23> * 2, 0.3)	 
-.addOutput(<minecraft:bed>)
-.create();
-
 var colorfulbeds = [
 <minecraft:bed:1>,
 <minecraft:bed:2>,
@@ -509,6 +489,28 @@ RecipeBuilder.get("tailor")
 .setLevelRequired(3)
 .setConsumeExperience(false)
 .addOutput(colorfulbeds)  
+.create();
+}
+
+for n, wool in colorfulwools {
+var bed = colorfulbeds[n];
+RecipeBuilder.get("tailor")
+.setShaped([
+    [<pyrotech:planks_tarred>, wool, <immersiveengineering:metal:38>, wool, <pyrotech:planks_tarred>],
+    [<ore:ingotSteel>, wool, wool, wool, <ore:ingotSteel>],
+    [<immersiveengineering:metal:38>, wool, <pyrotech:straw_bed>, wool, <immersiveengineering:metal:38>],
+    [<ore:ingotSteel>, wool, wool, wool, <ore:ingotSteel>],
+    [<pyrotech:planks_tarred>, wool, <immersiveengineering:metal:38>, wool, <pyrotech:planks_tarred>]])
+.setLevelRequired(25)
+.setSecondaryIngredients([<ore:string>])
+.setMaximumTier(2)
+.addTool(<ore:artisansCutters>, 15)
+.addTool(<ercore:bed_blueprint>, 2)
+.addTool(<ore:artisansNeedle>, 15)
+.setExtraOutputOne(<minecraft:string>, 0.5)	 
+.setExtraOutputTwo(<minecraft:feather> * 4, 0.2)	
+.setExtraOutputThree(<pyrotech:material:23> * 2, 0.3)	 
+.addOutput(bed)
 .create();
 }
 

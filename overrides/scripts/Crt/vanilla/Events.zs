@@ -100,9 +100,9 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
 
 events.onPlayerRespawn(function(event as PlayerRespawnEvent) {
     val player as IPlayer = event.player;
-    player.addPotionEffect(<potion:minecraft:invisibility>.makePotionEffect(12000, 5));
-	player.addPotionEffect(<potion:minecraft:night_vision>.makePotionEffect(6000, 5));
-    player.addPotionEffect(<potion:minecraft:hunger>.makePotionEffect(400, 1));
+    player.addPotionEffect(<potion:minecraft:hunger>.makePotionEffect(312, 1));
+    player.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(312, 1));
+    player.xp = 0;
 });
 
 events.onPlayerAdvancement(function(event as PlayerAdvancementEvent) {
@@ -112,28 +112,54 @@ events.onPlayerAdvancement(function(event as PlayerAdvancementEvent) {
 
 var mobsone = [
 "Witch",
-"Zombie",
-"ZombieVillager",
-"Husk",
 "Slime",
-"ZombieHorse",
-"SkeletonHorse",
 "tconstruct.blueslime",
 "pyrotech.mud",
 "LavaSlime",
 "PigZombie",
 "WitherSkeleton",
 "Spider",
-"Skeleton",
 "Stray",
 "Creeper",
 "Enderman",
 "CaveSpider",
-"Ghast"
+"Ghast",
+"babyblaze",
+"babycreeper",
+"babydragon",
+"babyenderman",
+"babyghast",
+"babyguardian",
+"babyirongolem",
+"babyocelot",
+"babypigzombie",
+"babyshulker",
+"babyshulkerbullet",
+"babysnowman",
+"babyspider",
+"babysquid",
+"babywitch",
+"babywither",
+"blazeflamethrower",
+"cavespidervenom",
+"creeperexplosion",
+"snowmansnowball",
+"squidink",
+"witherexplosion",
+"witherskeletonsmoke",
+"witherwitherskull"
 ] as string[];
 
 
 var mobstwo = [
+"Skeleton",
+"Zombie",
+"Husk",
+"ZombieVillager",
+"ZombieHorse",
+"SkeletonHorse",
+"zombiechicken",
+"zombiepig",
 "mutantbeasts.body_part",
 "mutantbeasts.chemical_x",
 "mutantbeasts.creeper_minion",
@@ -149,6 +175,9 @@ var mobstwo = [
 "mutantbeasts.skull_spirit",
 "mutantbeasts.spider_pig",
 "mutantbeasts.throwable_block"
+"babyskeleton",
+"babywitherskeleton",
+"babyzombie"
 ] as string[];
 
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
@@ -157,14 +186,14 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     if(!entity instanceof IEntityMob) return;
     for mobone in mobsone {
         if(entity.definition.name == mobone) {
-            if(time < 301260) {
+            if(time < 438312) {
                 event.cancel();
             }
         }
     }
     for mobtwo in mobstwo {
-        if(entity.definition.id == mobtwo) {
-            if(time < 603012) {
+        if(entity.definition.name == mobtwo) {
+            if(time < 961260) {
                 event.cancel();
             }
         }
@@ -175,11 +204,11 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var player = event.player as IPlayer;
     var ser = server.commandManager as ICommandManager;
     val time = player.world.getWorldInfo().getWorldTotalTime();
-    if(time < 552000) {
+    if(time < 438312) {
         if(!isNull(player.data.wasGivenTip1)) return;
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip1"));
         player.update({wasGivenTip1: true});
-    } else if(time < 768000) {
+    } else if(time < 961260) {
         if(!isNull(player.data.wasGivenTip2)) return;
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip2"));
         player.update({wasGivenTip2: true});
@@ -212,9 +241,11 @@ if(!event.player.creative) {
 	val player as IPlayer = event.player;
     val block as IBlock = event.block;
     val info = event.world.getWorldInfo();
-    if(block.definition.hardness >= 0.6) {
+    if(block.definition.hardness > 0.6) {
         if(isNull(player.currentItem)) {
             event.cancel();
+            player.addPotionEffect(<potion:tconstruct:dot>.makePotionEffect(20, 1));
+            player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(200, 1));
         } else {
         if(player.currentItem.definition.name.contains("axe")) return;
         if(player.currentItem.definition.name.contains("pickaxe")) return;

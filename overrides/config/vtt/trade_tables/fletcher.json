@@ -4,7 +4,19 @@
     "Offers": {
         "Recipes": [
             {
-            "action" : "clear"
+                "action" : "remove", "CareerLevel": 2,
+                "buy": {
+					"id": "minecraft:emerald"
+				},
+				"sell":{
+					"id": "minecraft:bow"
+				}
+            },
+            {
+                "action" : "remove", "CareerLevel": 4
+            },
+            {
+                "action" : "remove", "CareerLevel": 5
             }
         ]
     }

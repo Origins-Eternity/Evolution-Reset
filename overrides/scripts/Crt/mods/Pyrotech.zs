@@ -125,7 +125,8 @@ var worktable_recipes = [
 "minecraft:piston",
 "locks:wood_lock_pick",
 "locks:gold_lock_pick",
-"locks:iron_lock_pick"
+"locks:iron_lock_pick",
+"galacticraftcore:basic_block_core_9"
 ] as string[];
 
 for items in worktable_recipes {
@@ -138,7 +139,7 @@ Worktable.buildShaped(<pyrotech:flint_axe>, [
 [null, <pyrotech:material:27>, null]
 ])
 .setName("flintaxe")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 10)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 Worktable.buildShaped(<pyrotech:flint_pickaxe>, [
@@ -147,7 +148,7 @@ Worktable.buildShaped(<pyrotech:flint_pickaxe>, [
 [null, <pyrotech:material:27>, null]
 ])
 .setName("flintpickaxe")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 10)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 Worktable.buildShaped(<pyrotech:flint_hoe>, [
@@ -156,7 +157,7 @@ Worktable.buildShaped(<pyrotech:flint_hoe>, [
 [null, <pyrotech:material:27>, null]
 ])
 .setName("flinthoe")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 10)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 Worktable.buildShaped(<pyrotech:flint_sword>, [
@@ -165,7 +166,7 @@ Worktable.buildShaped(<pyrotech:flint_sword>, [
 [null, <pyrotech:material:27>, null]
 ])
 .setName("flintsword")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 10)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 Worktable.buildShaped(<pyrotech:flint_shovel>, [
@@ -174,7 +175,7 @@ Worktable.buildShaped(<pyrotech:flint_shovel>, [
 [null, <pyrotech:material:27>, null]
 ])
 .setName("flintshovel")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 10)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 Worktable.buildShaped(<pyrotech:flint_hammer>, [
@@ -183,7 +184,7 @@ Worktable.buildShaped(<pyrotech:flint_hammer>, [
 [<pyrotech:material:27>, null, null]
 ])
 .setName("flinthammer")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 10)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 recipes.addShaped(<pyrotech:cog_diamond>,
@@ -216,7 +217,7 @@ Worktable.buildShaped(<pyrotech:drying_rack:1>, [
 [<ore:stickWood>, <ore:twine>, <ore:stickWood>]
 ])
 .setName("custom_recipe_drying_rack1")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 10)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 Worktable.buildShaped(<pyrotech:straw_bed>, [
@@ -225,7 +226,7 @@ Worktable.buildShaped(<pyrotech:straw_bed>, [
 [<pyrotech:material:2>, <pyrotech:material:2>, <pyrotech:material:2>]
 ])
 .setName("custom_recipe_straw_bed")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 10)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 Worktable.buildShaped(<pyrotech:compost_bin>, [
@@ -234,7 +235,7 @@ Worktable.buildShaped(<pyrotech:compost_bin>, [
 [<ore:twine>, <pyrotech:material:23>, <ore:twine>]
 ])
 .setName("custom_recipe_compost_bin")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 10)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 Worktable.buildShaped(<pyrotech:worktable_stone>, [
@@ -243,7 +244,7 @@ Worktable.buildShaped(<pyrotech:worktable_stone>, [
 [<pyrotech:material:16>, <pyrotech:masonry_brick_block>, <pyrotech:material:16>]
 ])
 .setName("custom_recipe_stoneworktable")
-.setTool(<pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 3)
+.setTool(<pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
 val ietool as IItemStack = <immersiveengineering:tool>.transformDamage(1);
