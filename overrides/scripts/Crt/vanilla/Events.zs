@@ -115,20 +115,15 @@ var mobsone = [
 "Slime",
 "tconstruct.blueslime",
 "pyrotech.mud",
-"LavaSlime",
 "PigZombie",
-"WitherSkeleton",
 "Spider",
 "Stray",
 "Creeper",
 "Enderman",
 "CaveSpider",
-"Ghast",
-"babyblaze",
 "babycreeper",
 "babydragon",
 "babyenderman",
-"babyghast",
 "babyguardian",
 "babyirongolem",
 "babyocelot",
@@ -139,15 +134,7 @@ var mobsone = [
 "babyspider",
 "babysquid",
 "babywitch",
-"babywither",
-"blazeflamethrower",
-"cavespidervenom",
-"creeperexplosion",
-"snowmansnowball",
-"squidink",
-"witherexplosion",
-"witherskeletonsmoke",
-"witherwitherskull"
+"babywither"
 ] as string[];
 
 
@@ -174,9 +161,8 @@ var mobstwo = [
 "mutantbeasts.mutant_zombie",
 "mutantbeasts.skull_spirit",
 "mutantbeasts.spider_pig",
-"mutantbeasts.throwable_block"
+"mutantbeasts.throwable_block",
 "babyskeleton",
-"babywitherskeleton",
 "babyzombie"
 ] as string[];
 

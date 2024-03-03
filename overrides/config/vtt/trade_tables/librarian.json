@@ -4,30 +4,21 @@
     "Offers": {
         "Recipes": [
             {
-                "action" : "remove", "CareerLevel": 1,
-                "buy": {
-					"id": "minecraft:book"
-				},
-                "buyB": {
-					"id": "minecraft:emerald"
-				},
-				"sell":{
-					"id": "minecraft:enchanted_book"
-				}
+                "action" : "clear"
             },
             {
-                "action" : "remove", "CareerLevel": 2,
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
                 "buy": {
-					"id": "minecraft:book"
-				},
-                "buyB": {
-					"id": "minecraft:emerald"
-				},
-				"sell":{
-					"id": "minecraft:enchanted_book"
-				}
+                    "id": "minecraft:paper",
+                    "Count": 24
+                },
+                "CareerLevel": 1
             },
-			{
+            {
                 "action": "add",
                 "sell": {
                     "id": "futuremc:lantern",
@@ -37,31 +28,71 @@
                     "id": "minecraft:emerald",
                     "Count": 1
                 },
-                "CareerLevel": 1
+                "CareerLevel": 2
             },
             {
-                "action" : "remove", "CareerLevel": 3,
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
                 "buy": {
-					"id": "minecraft:book"
-				},
-                "buyB": {
-					"id": "minecraft:emerald"
-				},
-				"sell":{
-					"id": "minecraft:enchanted_book"
-				}
+                    "id": "minecraft:dye",
+                    "Count": 5
+                },
+                "CareerLevel": 3
             },
             {
-                "action" : "remove", "CareerLevel": 4,
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
                 "buy": {
-					"id": "minecraft:book"
-				},
+                    "id": "minecraft:writable_book",
+                    "Count": 1
+                },
                 "buyB": {
-					"id": "minecraft:emerald"
-				},
-				"sell":{
-					"id": "minecraft:enchanted_book"
-				}
+                    "id": "minecraft:writable_book",
+                    "Count": 1
+                },
+                "CareerLevel": 4
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:clock",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 5
+                },
+                "CareerLevel": 4
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:compass",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 4
+                },
+                "CareerLevel": 4
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:name_tag",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 5
             }
         ]
     }

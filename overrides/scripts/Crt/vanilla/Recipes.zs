@@ -9,6 +9,33 @@ recipes.addShapeless(<minecraft:torch>, [<ore:carbon>, <ore:stickWood>, <pyrotec
 recipes.replaceAllOccurences(<minecraft:furnace>, <pyrotech:furnace_core>);
 recipes.replaceAllOccurences(<minecraft:crafting_table>, <ore:craftingTable>);
 
+var block = [
+<minecraft:iron_block>,
+<minecraft:gold_block>,
+<minecraft:diamond_block>,
+<minecraft:emerald_block>,
+<minecraft:slime>,
+<ercore:slakedlime_block>,
+<tconstruct:soil>,
+<immersiveengineering:storage:8>,
+<minecraft:quartz_block>,
+<tconstruct:metal>,
+<tconstruct:metal:1>,
+<tconstruct:metal:2>,
+<tconstruct:metal:3>,
+<tconstruct:metal:5>,
+<immersiveengineering:storage:7>,
+<immersiveengineering:storage:6>,
+<immersiveengineering:storage:4>,
+<immersiveengineering:storage:3>,
+<immersiveengineering:storage:5>,
+<immersiveengineering:storage:2>
+] as IItemStack[];
+
+for items in block {
+    recipes.remove(items);
+}
+
 var ingot = [
 <immersiveengineering:metal:7>,
 <immersiveengineering:metal:8>,
@@ -190,3 +217,8 @@ recipes.addShaped(<artisanworktables:workshop:13>,
 [[<minecraft:leather>, <minecraft:leather>, <minecraft:leather>],
 [<pyrotech:planks_tarred>, <artisanworktables:workstation:13>, <pyrotech:planks_tarred>],
 [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>]]);
+
+recipes.addShaped("copper_ingot", <galacticraftcore:basic_item:3>,
+[[<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>],
+[<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>],
+[<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>]]);
