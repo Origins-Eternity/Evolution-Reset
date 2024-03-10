@@ -3,8 +3,6 @@
 import crafttweaker.item.IItemStack;
 
 val banlist = [
-<minecraft:lava_bucket>,
-<minecraft:water_bucket>,
 <minecraft:flint_and_steel>,
 <minecraft:iron_ingot>,
 <minecraft:gold_ingot>,
@@ -13,7 +11,6 @@ val banlist = [
 <minecraft:emerald>,
 <minecraft:redstone>,
 <immersiveengineering:metal>,
-<minecraft:sand>,
 <firstaid:morphine>,
 <minecraft:bucket>,
 <minecraft:water_bucket>,
@@ -32,7 +29,8 @@ val banlist = [
 <minecraft:cooked_porkchop>,
 <minecraft:cooked_mutton>,
 <minecraft:golden_apple:1>,
-<planetprogression:research_paper_0>
+<planetprogression:research_paper_0>,
+<minecraft:enchanted_book>
 ] as IItemStack[];
 
 for items in banlist {
