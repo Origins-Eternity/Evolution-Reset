@@ -1,6 +1,5 @@
 #
 import crafttweaker.events.IEventManager;
-import crafttweaker.event.CommandEvent;
 import crafttweaker.player.IPlayer;
 import crafttweaker.event.PlayerRespawnEvent;
 import crafttweaker.event.PlayerLoggedInEvent;
@@ -206,20 +205,6 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         ser.executeCommand(server, "gamemode survival " + player.name);
     }
 });
-
-if (disablecommand == true) {
-events.onCommand(function(event as CommandEvent) {
-   val command = event.command;
-   if((command.name == "backup") || (command.name == "ct") || (command.name == "crafttweaker") || (command.name == "team")) {
-       return;
-   }
-   else if (event.commandSender instanceof IPlayer) {
-   val player as IPlayer = event.commandSender;
-   player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.command.tip"));
-   event.cancel(); 
-   }
-});
-}
 
 events.onBlockBreak(function(event as BlockBreakEvent) {
 if((event.world.remote) || (!event.isPlayer)) return;
