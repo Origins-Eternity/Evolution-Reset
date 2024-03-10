@@ -4,6 +4,8 @@ import crafttweaker.events.IEventManager;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.command.ICommandManager;
 import crafttweaker.event.PlayerLoggedInEvent;
+import crafttweaker.player.IPlayer;
+import crafttweaker.text.ITextComponent;
 # You can use it by changing true or false. After making changes, you need to restart the game.
 
 # If false, you can use any commands in game. 

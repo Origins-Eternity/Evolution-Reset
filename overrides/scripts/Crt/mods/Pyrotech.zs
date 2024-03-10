@@ -247,7 +247,7 @@ Worktable.buildShaped(<pyrotech:worktable_stone>, [
 .setTool(<pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
-Worktable.buildShaped(<galacticraftcore:basic_block_core_9>, [
+Worktable.buildShaped(<galacticraftcore:basic_block_core:9>, [
 [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
 [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
 [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>]
