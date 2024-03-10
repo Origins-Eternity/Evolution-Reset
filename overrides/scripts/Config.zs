@@ -32,6 +32,6 @@ if (disablecommand == true) {
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var ser = server.commandManager as ICommandManager;
     if (forcegamemode == true) {
-        ser.executeCommand(server, "gamemode survival " + player.name);
+        ser.executeCommand(server, "gamemode survival " + event.player.name);
     }
 });
