@@ -1,0 +1,46 @@
+{
+    "Profession": "minecraft:nitwit",
+    "Career": "nitwit",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add", "rewardExp": false,
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 10
+                },
+                "buy": {
+                    "id": "pyrotech:rock",
+                    "Count": 64
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add", "rewardExp": false,
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 10
+                },
+                "buy": {
+                    "id": "pyrotech:rock",
+                    "Damage": 4,
+                    "Count": 64
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add", "rewardExp": false,
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 10
+                },
+                "buy": {
+                    "id": "pyrotech:rock",
+                    "Damage": 5,
+                    "Count": 64
+                },
+                "CareerLevel": 1
+            }
+        ]
+    }
+}
