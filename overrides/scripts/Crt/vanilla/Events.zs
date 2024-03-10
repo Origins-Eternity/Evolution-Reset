@@ -201,9 +201,6 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip3"));
         player.update({wasGivenTip3: true});
     }
-    if (forcegamemode == true) {
-        ser.executeCommand(server, "gamemode survival " + player.name);
-    }
 });
 
 events.onBlockBreak(function(event as BlockBreakEvent) {
