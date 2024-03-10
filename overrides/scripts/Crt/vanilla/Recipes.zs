@@ -217,8 +217,3 @@ recipes.addShaped(<artisanworktables:workshop:13>,
 [[<minecraft:leather>, <minecraft:leather>, <minecraft:leather>],
 [<pyrotech:planks_tarred>, <artisanworktables:workstation:13>, <pyrotech:planks_tarred>],
 [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>]]);
-
-recipes.addShaped("copper_ingot", <galacticraftcore:basic_item:3>,
-[[<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>],
-[<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>],
-[<ore:nuggetCopper>, <ore:nuggetCopper>, <ore:nuggetCopper>]]);
