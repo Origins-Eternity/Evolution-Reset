@@ -18,6 +18,12 @@ for item in mod.items {
     recipes.replaceAllOccurences(<galacticraftcore:basic_item:3>, <ore:ingotCopper>, item);
 }
 
+val mod = loadedMods["galacticraftcore"];
+for item in mod.items {
+    recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:ingotTungstensteel>, item);
+    recipes.replaceAllOccurences(<galacticraftcore:basic_item:3>, <ore:ingotCopper>, item);
+}
+
 recipes.replaceAllOccurences(<minecraft:lever>, <ore:gemDiamond>, <galacticraftcore:rocket_workbench>);
 
 recipes.addShaped(<galacticraftcore:refinery>,
