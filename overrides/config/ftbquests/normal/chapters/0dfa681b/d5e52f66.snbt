@@ -15,7 +15,21 @@
 		uid: "2cd71572",
 		type: "item",
 		team_reward: true,
-		item: "minecraft:cooked_rabbit",
+		item: {
+			ForgeCaps: {
+				"foodfunk:rot": {
+					start: 0L,
+					time: 0L
+				}
+			},
+			id: "minecraft:cooked_rabbit",
+			tag: {
+				Rot: {
+					start: 0L,
+					time: 0L
+				}
+			}
+		},
 		count: 6
 	},
 	{

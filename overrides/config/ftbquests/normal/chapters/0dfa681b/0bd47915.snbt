@@ -28,14 +28,42 @@
 		uid: "66db12b2",
 		type: "item",
 		team_reward: true,
-		item: "minecraft:cooked_chicken",
+		item: {
+			ForgeCaps: {
+				"foodfunk:rot": {
+					start: 0L,
+					time: 0L
+				}
+			},
+			id: "minecraft:cooked_chicken",
+			tag: {
+				Rot: {
+					start: 0L,
+					time: 0L
+				}
+			}
+		},
 		count: 3
 	},
 	{
 		uid: "e11aac5a",
 		type: "item",
 		team_reward: true,
-		item: "minecraft:cooked_porkchop",
+		item: {
+			ForgeCaps: {
+				"foodfunk:rot": {
+					start: 0L,
+					time: 0L
+				}
+			},
+			id: "minecraft:cooked_porkchop",
+			tag: {
+				Rot: {
+					start: 0L,
+					time: 0L
+				}
+			}
+		},
 		count: 3
 	}]
 }

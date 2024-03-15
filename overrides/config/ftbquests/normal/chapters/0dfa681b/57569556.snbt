@@ -28,6 +28,20 @@
 		uid: "2551d890",
 		type: "item",
 		team_reward: true,
-		item: "minecraft:rabbit_stew"
+		item: {
+			ForgeCaps: {
+				"foodfunk:rot": {
+					start: 0L,
+					time: 0L
+				}
+			},
+			id: "minecraft:rabbit_stew",
+			tag: {
+				Rot: {
+					start: 0L,
+					time: 0L
+				}
+			}
+		}
 	}]
 }

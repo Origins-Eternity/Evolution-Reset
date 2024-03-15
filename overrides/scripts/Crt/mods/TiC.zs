@@ -20,6 +20,8 @@ for items in modrecipes{
     recipes.remove(items);
 }
 
+furnace.remove(<tconstruct:materials>);
+
 function tic2Dying(output as IItemStack, input as IIngredient, time as int){
     mods.tconstruct.Drying.removeRecipe(output);
     mods.tconstruct.Drying.addRecipe(output, input, time);

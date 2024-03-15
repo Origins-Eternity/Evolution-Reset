@@ -189,7 +189,7 @@ for i, handsaw in handsaws {
 }
 
 recipes.addShaped(<artisanworktables:workshop:5>,
-[[<ore:ingotSteel>, <ore:plateCopper>, <ore:ingotSteel>],
+[[<ore:ingotCopper>, <ore:plateCopper>, <ore:ingotCopper>],
 [<ore:blockCopper>, <artisanworktables:workstation:5>, <ore:blockCopper>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
@@ -199,7 +199,7 @@ recipes.addShaped(<artisanworktables:workshop:3>,
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
 recipes.addShaped(<artisanworktables:workshop:6>,
-[[<pyrotech:material:16>, <ore:plateCopper>, <pyrotech:material:16>],
+[[<ore:ingotSteel>, <ore:plateCopper>, <ore:ingotSteel>],
 [<ore:blockSteel>, <artisanworktables:workstation:6>, <ore:blockSteel>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 

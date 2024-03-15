@@ -16,12 +16,40 @@
 		uid: "28650054",
 		type: "item",
 		team_reward: true,
-		item: "minecraft:potato"
+		item: {
+			ForgeCaps: {
+				"foodfunk:rot": {
+					start: 0L,
+					time: 0L
+				}
+			},
+			id: "minecraft:potato",
+			tag: {
+				Rot: {
+					start: 0L,
+					time: 0L
+				}
+			}
+		}
 	},
 	{
 		uid: "354deb97",
 		type: "item",
 		team_reward: true,
-		item: "minecraft:carrot"
+		item: {
+			ForgeCaps: {
+				"foodfunk:rot": {
+					start: 0L,
+					time: 0L
+				}
+			},
+			id: "minecraft:carrot",
+			tag: {
+				Rot: {
+					start: 0L,
+					time: 0L
+				}
+			}
+		}
 	}]
 }

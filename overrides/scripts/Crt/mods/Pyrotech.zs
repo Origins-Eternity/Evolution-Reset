@@ -112,12 +112,12 @@ var worktable_recipes = [
 "minecraft:iron_ingot_from_nuggets", 
 "minecraft:gold_ingot_from_nuggets", 
 "immersiveengineering:metal_storage/copper_ingot", 
-"ercore:tin_ingot", 
 "minecraft:stonebrick", 
 "minecraft:polished_granite", 
 "crafttweaker:tooltables", 
 "crafttweaker:copper_ingot", 
 "crafttweaker:ie_hammer", 
+"crafttweaker:tin_ingot", 
 "tconstruct:tools/pattern", 
 "tconstruct:tools/table/stencil_table", 
 "tconstruct:tools/table/part_builder",
@@ -126,7 +126,8 @@ var worktable_recipes = [
 "minecraft:piston",
 "locks:wood_lock_pick",
 "locks:gold_lock_pick",
-"locks:iron_lock_pick"
+"locks:iron_lock_pick", 
+"galacticraftcore:basic_block_core_9"
 ] as string[];
 
 for items in worktable_recipes {
@@ -247,15 +248,6 @@ Worktable.buildShaped(<pyrotech:worktable_stone>, [
 .setTool(<pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
-Worktable.buildShaped(<galacticraftcore:basic_block_core:9>, [
-[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
-[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
-[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>]
-])
-.setName("custom_recipe_copperblock")
-.setTool(<pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
-.register();
-
 val ietool as IItemStack = <immersiveengineering:tool>.transformDamage(1);
 function pyrWorktableCreate(modid as string, name as string, output as IItemStack, inputs1 as IIngredient[], inputs2 as IIngredient[], inputs3 as IIngredient[], damage as int){
     Worktable.buildShaped(output, [inputs1, inputs2, inputs3])
@@ -307,6 +299,7 @@ StoneSawmill.addRecipe("treated_stick_from_tarred_board", <immersiveengineering:
 BrickSawmill.addRecipe("cement_powder_from_soil", <ercore:cement_powder> * 9, <tconstruct:soil>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 
 SoakingPot.addRecipe("sugar_from_sugarcane", <minecraft:sugar>, <liquid:water>, <ore:sugarcane>, true, 5 * 60 * 20);
+SoakingPot.addRecipe("sugar_from_sugarcane", <immersiveengineering:treated_wood>, <liquid:water>, <liquid:creosote>, true, 10 * 60 * 20);
 
 Campfire.removeRecipes(<minecraft:bread>);
 Campfire.removeRecipes(<minecraft:blaze_powder>);
@@ -327,6 +320,7 @@ IroncladAnvil.addRecipe("nugget_from_ingot_ardite", <tconstruct:nuggets:1> * 9, 
 IroncladAnvil.addRecipe("nugget_from_ingot_manyullyn", <tconstruct:nuggets:2> * 9, <ore:ingotManyullyn>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_knightslime", <tconstruct:nuggets:3> * 9, <ore:ingotKnightslime>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_alubrass", <tconstruct:nuggets:5> * 9, <ore:ingotAlubrass>, 20, "hammer");
+IroncladAnvil.addRecipe("steel_plate_from_block", <immersiveengineering:metal:38> * 3, <ore:blockSteel>, 20, "hammer");
 
 GraniteAnvil.addRecipe("nugget_from_ingot_gold", <minecraft:gold_nugget> * 9, <ore:ingotGold>, 10, "hammer", true);
 GraniteAnvil.addRecipe("nugget_from_ingot_copper", <immersiveengineering:metal:20> * 9, <ore:ingotCopper>, 10, "hammer", true);
@@ -335,7 +329,7 @@ GraniteAnvil.addRecipe("copper_plate_from_block", <immersiveengineering:metal:30
 GraniteAnvil.addRecipe("gold_plate_from_block", <immersiveengineering:metal:40> * 3, <ore:blockGold>, 27, "hammer", true);
 GraniteAnvil.addRecipe("flint_from_limestone", <minecraft:flint> * 3, <ore:stoneLimestone>, 15, "pickaxe", true);
 
-CompactingBin.addRecipe("coal_block_from_coal", <minecraft:coal_block>, <ore:coal>, 9);
+CompactingBin.addRecipe("coal_block_from_coal", <minecraft:coal_block>, <ore:itemCoal>, 9);
 MechanicalCompactor.removeRecipes(<minecraft:grass>);
 MechanicalCompactor.addRecipe("iron_block_from_ingot", <minecraft:iron_block>, <ore:ingotIron>, 9);
 MechanicalCompactor.addRecipe("gold_block_from_ingot", <minecraft:gold_block>, <ore:ingotGold>, 9);

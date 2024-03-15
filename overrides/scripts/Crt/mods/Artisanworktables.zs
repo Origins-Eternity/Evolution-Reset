@@ -23,6 +23,22 @@ RecipeBuilder.get("basic")
 .setMaximumTier(2)
 .addOutput(<artisanworktables:workstation:3>)
 .create();
+
+RecipeBuilder.get("basic")
+.setShaped([
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]])
+.setName("treated_wood")
+.setLevelRequired(5)
+.setConsumeExperience(false)
+.addTool(<ore:artisansHandsaw>, 5)
+.addTool(<ore:artisansCarver>, 5)
+.setExtraOutputOne(<pyrotech:rock:7> * 7, 0.2)
+.setExtraOutputTwo(<pyrotech:rock:7> * 5, 0.8)
+.setFluid(<liquid:creosote> * 200)
+.addOutput(<immersiveengineering:treated_wood>)
+.create();
   
 RecipeBuilder.get("basic")
 .setCopy(
@@ -94,7 +110,7 @@ RecipeBuilder.get("engineer")
     [<ore:blockIron>, <ercore:basalt>, <ercore:basalt>, <ercore:basalt>, <ore:blockIron>]])
 .setName("furnace")
 .setLevelRequired(30)
-.setSecondaryIngredients([<immersiveengineering:metal:38> * 9, <minecraft:fire_charge> * 2])
+.setSecondaryIngredients([<immersiveengineering:metal:38> * 9])
 .addTool(<ercore:furnace_core_blueprint>, 2)
 .setFluid(<liquid:lava> * 5000)
 .addTool(<ore:artisansCarver>, 30)  
