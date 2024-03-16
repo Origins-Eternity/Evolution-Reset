@@ -1,5 +1,5 @@
 {
-	title: "{evolutionreset.chapter.electricage.title}",
+	title: "{evolutionreset.chapter.interstellarage.title}",
 	icon: "galacticraftplanets:rocket_t3",
 	always_invisible: false,
 	group: 0,

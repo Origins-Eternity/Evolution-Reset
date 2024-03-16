@@ -182,6 +182,8 @@ var twoblocks = [
 <ore:oreIron>,
 <ore:oreSilver>,
 <ore:oreUranium>,
+<ore:oreCobalt>,
+<ore:oreArdite>
 ] as IOreDictEntry[];
 
 for twoblock in twoblocks {

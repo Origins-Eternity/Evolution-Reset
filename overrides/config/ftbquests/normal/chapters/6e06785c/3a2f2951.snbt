@@ -1,14 +1,14 @@
 {
-	x: 10.5d,
+	x: 8.5d,
 	y: 4.5d,
 	dependencies: [
-		"3a2f2951"
+		"6494a2b6"
 	],
 	tasks: [{
-		uid: "b54e974b",
+		uid: "f5de177f",
 		type: "item",
 		items: [{
-			item: "ercore:searedbrick_unfired"
+			item: "tconstruct:soil"
 		}]
 	}]
 }

@@ -112,6 +112,26 @@ var worktable_recipes = [
 "minecraft:iron_ingot_from_nuggets", 
 "minecraft:gold_ingot_from_nuggets", 
 "immersiveengineering:metal_storage/copper_ingot", 
+"immersiveengineering:treated_wood/treated_wood_stairs0", 
+"immersiveengineering:treated_wood/treated_wood_stairs1", 
+"immersiveengineering:treated_wood/treated_wood_stairs2", 
+"immersiveengineering:treated_wood/treated_wood_stairs_cycle0", 
+"immersiveengineering:treated_wood/treated_wood_stairs_cycle1", 
+"immersiveengineering:treated_wood/treated_wood_stairs_cycle2", 
+"immersiveengineering:treated_wood/treated_wood_slab0", 
+"immersiveengineering:treated_wood/treated_wood_slab1", 
+"immersiveengineering:treated_wood/treated_wood_slab2", 
+"immersiveengineering:treated_wood/treated_wood_slab_cycle0", 
+"immersiveengineering:treated_wood/treated_wood_slab_cycle1", 
+"immersiveengineering:treated_wood/treated_wood_slab_cycle2", 
+"immersiveengineering:treated_wood/treated_wood_slab_back0", 
+"immersiveengineering:treated_wood/treated_wood_slab_back1", 
+"immersiveengineering:treated_wood/treated_wood_slab_back2", 
+"immersiveengineering:treated_wood/treated_wood_scaffolding", 
+"immersiveengineering:treated_wood/treated_wood_fence", 
+"immersiveengineering:treated_wood/treated_wood_cycle0", 
+"immersiveengineering:treated_wood/treated_wood_cycle1", 
+"immersiveengineering:treated_wood/treated_wood_cycle2", 
 "minecraft:stonebrick", 
 "minecraft:polished_granite", 
 "crafttweaker:tooltables", 
@@ -126,8 +146,7 @@ var worktable_recipes = [
 "minecraft:piston",
 "locks:wood_lock_pick",
 "locks:gold_lock_pick",
-"locks:iron_lock_pick", 
-"galacticraftcore:basic_block_core_9"
+"locks:iron_lock_pick"
 ] as string[];
 
 for items in worktable_recipes {
@@ -245,6 +264,15 @@ Worktable.buildShaped(<pyrotech:worktable_stone>, [
 [<pyrotech:material:16>, <pyrotech:masonry_brick_block>, <pyrotech:material:16>]
 ])
 .setName("custom_recipe_stoneworktable")
+.setTool(<pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
+.register();
+
+Worktable.buildShaped(<galacticraftcore:basic_block_core:9>, [
+[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
+[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
+[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>]
+])
+.setName("custom_recipe_copperblock")
 .setTool(<pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 

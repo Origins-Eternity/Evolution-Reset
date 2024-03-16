@@ -13,6 +13,22 @@
 				PartType: "tconstruct:pick_head"
 			}
 		}]
+	},
+	{
+		uid: "8322b484",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 2s
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "987e73be",

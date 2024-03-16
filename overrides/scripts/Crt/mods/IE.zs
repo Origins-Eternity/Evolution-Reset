@@ -29,7 +29,8 @@ var modrecipes = [
 <immersiveengineering:stone_decoration>,
 <immersiveengineering:stone_decoration:10>,
 <immersiveengineering:tool>,
-<immersiveengineering:storage>
+<immersiveengineering:storage>,
+<immersiveengineering:treated_wood>
 ] as IItemStack[];
 
 for items in modrecipes {
@@ -65,7 +66,7 @@ recipes.addShaped("ie_hammer", <immersiveengineering:tool>,
 
 recipes.addShaped(<immersiveengineering:wooden_device0>,
 [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
-[<ore:plankTreatedWood>, <ore:chest>, <ore:plankTreatedWood>],
+[<ore:plankTreatedWood>, <minecraft:chest>, <ore:plankTreatedWood>],
 [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]]);
 
 var blastnuggets = [

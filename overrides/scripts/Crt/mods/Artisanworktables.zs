@@ -79,6 +79,30 @@ RecipeBuilder.get("basic")
 .setFluid(<liquid:lava> * 1000)
 .addOutput(<artisanworktables:workshop:3>)
 .create();
+
+RecipeBuilder.get("basic")
+.setCopy(
+        Copy.byOutput([<immersiveengineering:wooden_device0>]).runAfter())
+.setName("wooden_storage")
+.setLevelRequired(15)
+.setExtraOutputOne(<pyrotech:rock:7> * 2, 0.6)
+.setExtraOutputTwo(<pyrotech:rock:7> * 5, 0.4)	
+.addTool(<ore:artisansHandsaw>, 15)
+.addTool(<ore:artisansCarver>, 10) 
+.addOutput(<immersiveengineering:wooden_device0>)
+.create();
+
+RecipeBuilder.get("basic")
+.setCopy(
+        Copy.byOutput([<immersiveengineering:wooden_device0:1>]).runAfter())
+.setName("wooden_barrel")
+.setLevelRequired(15)
+.setExtraOutputOne(<pyrotech:rock:7> * 2, 0.5)
+.setExtraOutputTwo(<pyrotech:rock:7> * 3, 0.5)	
+.addTool(<ore:artisansHandsaw>, 10)
+.addTool(<ore:artisansCarver>, 10) 
+.addOutput(<immersiveengineering:wooden_device0:1>)
+.create();
   
 RecipeBuilder.get("basic")
 .setShaped([
@@ -435,6 +459,7 @@ RecipeBuilder.get("tailor")
 .create();
 
 var colorfulwools = [
+<minecraft:wool>,
 <minecraft:wool:1>,
 <minecraft:wool:2>,
 <minecraft:wool:3>,
@@ -453,6 +478,7 @@ var colorfulwools = [
 ] as IItemStack[];
 
 var color = [
+<ore:dyeWhite>,
 <ore:dyeOrange>,
 <ore:dyeMagenta>,
 <ore:dyeLightBlue>,
@@ -480,7 +506,19 @@ RecipeBuilder.get("tailor")
 .create();
 }
 
+for dye in color {
+    for item in dye.items {
+    RecipeBuilder.get("tailor")
+    .setCopy(
+            Copy.byOutput([item]).runAfter())
+    .setLevelRequired(5)
+    .addOutput(item)
+    .create();
+    }
+}
+
 var colorfulbeds = [
+<minecraft:bed>,
 <minecraft:bed:1>,
 <minecraft:bed:2>,
 <minecraft:bed:3>,
@@ -499,26 +537,24 @@ var colorfulbeds = [
 ] as IItemStack[];
 
 for i, colors in color {
-var colorfulbeds = colorfulbeds[i];
+var colorfulbed = colorfulbeds[i];
 RecipeBuilder.get("tailor")
 .setShapeless([<minecraft:bed>, colors])
 .setLevelRequired(3)
 .setConsumeExperience(false)
-.addOutput(colorfulbeds)  
+.addOutput(colorfulbed)  
 .create();
 }
 
-for n, wool in colorfulwools {
-var bed = colorfulbeds[n];
 RecipeBuilder.get("tailor")
 .setShaped([
-    [<pyrotech:planks_tarred>, wool, <immersiveengineering:metal:38>, wool, <pyrotech:planks_tarred>],
-    [<ore:ingotSteel>, wool, wool, wool, <ore:ingotSteel>],
-    [<immersiveengineering:metal:38>, wool, <pyrotech:straw_bed>, wool, <immersiveengineering:metal:38>],
-    [<ore:ingotSteel>, wool, wool, wool, <ore:ingotSteel>],
-    [<pyrotech:planks_tarred>, wool, <immersiveengineering:metal:38>, wool, <pyrotech:planks_tarred>]])
+    [<pyrotech:planks_tarred>, <minecraft:wool>, <immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:planks_tarred>],
+    [<ore:ingotSteel>, <minecraft:wool>, <minecraft:wool>, <minecraft:wool>, <ore:ingotSteel>],
+    [<immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:straw_bed>, <minecraft:wool>, <immersiveengineering:metal:38>],
+    [<ore:ingotSteel>, <minecraft:wool>, <minecraft:wool>, <minecraft:wool>, <ore:ingotSteel>],
+    [<pyrotech:planks_tarred>, <minecraft:wool>, <immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:planks_tarred>]])
 .setLevelRequired(25)
-.setSecondaryIngredients([<ore:string>])
+.setSecondaryIngredients([<ore:string> * 6])
 .setMaximumTier(2)
 .addTool(<ore:artisansCutters>, 15)
 .addTool(<ercore:bed_blueprint>, 2)
@@ -526,9 +562,8 @@ RecipeBuilder.get("tailor")
 .setExtraOutputOne(<minecraft:string>, 0.5)	 
 .setExtraOutputTwo(<minecraft:feather> * 4, 0.2)	
 .setExtraOutputThree(<pyrotech:material:23> * 2, 0.3)	 
-.addOutput(bed)
+.addOutput(<minecraft:bed>)
 .create();
-}
 
 RecipeBuilder.get("blacksmith")
 .setShaped([
@@ -586,12 +621,12 @@ var colorfulsmallbags = [
 ] as IItemStack[];
 
 for i, colors in color {
-var colorfulsmallbags = colorfulsmallbags[i];
+var colorfulsmallbag = colorfulsmallbags[i];
 RecipeBuilder.get("tanner")
 .setShapeless([<usefulbackpacks:backpack>, colors])
 .setLevelRequired(5)
 .setConsumeExperience(false)
-.addOutput(colorfulsmallbags)
+.addOutput(colorfulsmallbag)
 .create();
 }
 
@@ -615,12 +650,12 @@ var colorfulmidbags = [
 ] as IItemStack[];
 
 for i, colors in color {
-var colorfulmidbags = colorfulmidbags[i];
+var colorfulmidbag = colorfulmidbags[i];
 RecipeBuilder.get("tanner")
 .setShapeless([<usefulbackpacks:backpack:1>, colors])
 .setLevelRequired(10)
 .setConsumeExperience(false)
-.addOutput(colorfulmidbags)
+.addOutput(colorfulmidbag)
 .create();
 }
 
@@ -644,12 +679,12 @@ var colorfullargebags = [
 ] as IItemStack[];
 
 for i, colors in color {
-var colorfullargebags = colorfullargebags[i];
+var colorfullargebag = colorfullargebags[i];
 RecipeBuilder.get("tanner")
 .setShapeless([<usefulbackpacks:backpack:2>, colors])
 .setLevelRequired(15)
 .setConsumeExperience(false)
-.addOutput(colorfullargebags)
+.addOutput(colorfullargebag)
 .create();
 }
 
