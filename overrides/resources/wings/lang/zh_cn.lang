@@ -1,0 +1,83 @@
+itemGroup.wings=翅膀
+
+key.categories.wings=翅膀
+key.wings.fly=飞行
+
+tile.wings.fairyDustOre.name=仙灵之尘矿石
+tile.wings.amethystOre.name=紫水晶矿石
+
+item.wings.angelWings.name=天使之翼
+item.wings.slimeWings.name=史莱姆翅膀
+item.wings.blueButterflyWings.name=蓝蝴蝶翅膀
+item.wings.monarchButterflyWings.name=君王蝶翅膀
+item.wings.fireWings.name=火之羽翼
+item.wings.batWings.name=蝙蝠翅膀
+item.wings.fairyWings.name=仙灵之翼
+item.wings.evilWings.name=恶魔之翼
+item.wings.dragonWings.name=龙翼
+item.wings.fairyDust.name=仙灵之尘
+item.wings.amethyst.name=紫水晶
+item.wings.batBlood.name=蝙蝠血
+
+wings.dreamcatcher.jiu=JiU's Wings
+wings.dreamcatcher.sua=SuA's Wings
+wings.dreamcatcher.siyeon=Siyeon's Wings
+wings.dreamcatcher.handong=Handong's Wings
+wings.dreamcatcher.yoohyeon=Yoohyeon's Wings
+wings.dreamcatcher.dami=Dami's Wings
+wings.dreamcatcher.gahyeon=Gahyeon's Wings
+
+subtitles.wings.item.armor.equip_wings=翅膀沙沙作响
+
+wings/ores.tooltip=自定义翅膀矿石
+
+config.wings.ores.entry.fairy_dust=仙尘矿石生成
+config.wings.ores.entry.amethyst=紫水晶矿石生成
+config.wings.ores.entry.fairy_dust.tooltip=自定义矿脉分布和形状
+config.wings.ores.entry.amethyst.tooltip=自定义矿脉分布和形状
+
+config.wings.ores.settings.size=大小
+config.wings.ores.settings.count=数量
+config.wings.ores.settings.minHeight=最小高度
+config.wings.ores.settings.maxHeight=最大高度
+config.wings.ores.settings.size.tooltip=矿脉大小（以块为单位）按 8 缩放
+config.wings.ores.settings.count.tooltip=矿脉生成尝试次数
+config.wings.ores.settings.minHeight.tooltip=从最低 Y 高度开始的矿脉生成
+config.wings.ores.settings.maxHeight.tooltip=生成矿脉的最高 Y 高度
+
+wings/items.tooltip=自定义翅膀物品
+
+config.wings.items.entry.angel=天使之翼属性
+config.wings.items.entry.slime=史莱姆翅膀属性
+config.wings.items.entry.blue_butterfly=蓝蝴蝶翅膀属性
+config.wings.items.entry.monarch_butterfly=君王蝶翅膀属性
+config.wings.items.entry.fire=火之羽翼属性
+config.wings.items.entry.bat=蝙蝠翅膀属性
+config.wings.items.entry.fairy=仙灵之翼属性
+config.wings.items.entry.evil=恶魔之翼属性
+config.wings.items.entry.dragon=龙翼属性
+config.wings.items.entry.angel.tooltip=自定义物品属性
+config.wings.items.entry.slime.tooltip=自定义物品属性
+config.wings.items.entry.blue_butterfly.tooltip=自定义物品属性
+config.wings.items.entry.monarch_butterfly.tooltip=自定义物品属性
+config.wings.items.entry.fire.tooltip=自定义物品属性
+config.wings.items.entry.bat.tooltip=自定义物品属性
+config.wings.items.entry.fairy.tooltip=自定义物品属性
+config.wings.items.entry.evil.tooltip=自定义物品属性
+config.wings.items.entry.dragon.tooltip=自定义物品属性
+
+config.wings.items.settings.requiredFlightSatiation=飞行所需饱食度
+config.wings.items.settings.flyingExertion=飞行消耗
+config.wings.items.settings.requiredLandSatiation=着陆所需饱食度
+config.wings.items.settings.landingExertion=着陆消耗
+config.wings.items.settings.requiredFlightSatiation.tooltip=要开始飞行所需的最低饱食度
+config.wings.items.settings.flyingExertion.tooltip=飞行耐久消耗
+config.wings.items.settings.requiredLandSatiation.tooltip=要从飞行状态着陆所需的饱食度
+config.wings.items.settings.landingExertion.tooltip=着陆耐久消耗
+config.wings.items.settings.durability=物品耐久
+config.wings.items.settings.durability.tooltip=设置为0以获得无限耐久
+
+wings.tooltip=常规设置
+
+config.wings.wearObstructions=穿戴阻力
+config.wings.wearObstructions.tooltip=自定义哪件物品装备在胸部时将阻碍wings装备。
