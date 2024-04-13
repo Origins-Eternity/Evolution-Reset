@@ -22,7 +22,6 @@ import crafttweaker.mods.IMod;
 <ore:radsand>.add(<minecraft:sand:1>);
 <ore:skull>.add(<minecraft:skull:*>);
 <ore:ergravel>.addAll(<ore:gravel>);
-<ore:ergravel>.add(<minecraft:flint>);
 <ore:blockSeven>.addAll(<ore:oreSulfur>);
 <ore:sandpile>.add(<pyrotech:rock:5>);
 <ore:sandpile>.add(<pyrotech:rock:9>);
@@ -192,10 +191,8 @@ for twoblock in twoblocks {
 
 var threeblocks = [
 <ore:stoneAndesite>,
-<ore:stone>,
 <ore:stoneGranite>,
-<ore:stoneDiorite>,
-<ore:oreCoal>
+<ore:stoneDiorite>
 ] as IOreDictEntry[];
 
 for threeblock in threeblocks {

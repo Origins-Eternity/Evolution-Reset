@@ -64,7 +64,8 @@ var items = [
 <pyrotech:furnace_core>,
 <pyrotech:worktable_stone>,
 <pyrotech:flint_hammer>,
-<pyrotech:cog_diamond>
+<pyrotech:cog_diamond>,
+<pyrotech:bow_drill>
 ] as IItemStack[];
 
 for item in items {
@@ -138,6 +139,7 @@ var worktable_recipes = [
 "crafttweaker:copper_ingot", 
 "crafttweaker:ie_hammer", 
 "crafttweaker:tin_ingot", 
+"crafttweaker:bow_drill", 
 "tconstruct:tools/pattern", 
 "tconstruct:tools/table/stencil_table", 
 "tconstruct:tools/table/part_builder",

@@ -10,8 +10,8 @@
                     "Count": 10
                 },
                 "buy": {
-                    "id": "pyrotech:rock",
-                    "Count": 64
+                    "id": "minecraft:dirt",
+                    "Count": 16
                 },
                 "CareerLevel": 1
             },
@@ -22,9 +22,8 @@
                     "Count": 10
                 },
                 "buy": {
-                    "id": "pyrotech:rock",
-                    "Damage": 4,
-                    "Count": 64
+                    "id": "pyrotech:stone",
+                    "Count": 16
                 },
                 "CareerLevel": 1
             },
@@ -35,9 +34,8 @@
                     "Count": 10
                 },
                 "buy": {
-                    "id": "pyrotech:rock",
-                    "Damage": 5,
-                    "Count": 64
+                    "id": "pyrotech:sand",
+                    "Count": 16
                 },
                 "CareerLevel": 1
             }

@@ -217,3 +217,8 @@ recipes.addShaped(<artisanworktables:workshop:13>,
 [[<minecraft:leather>, <minecraft:leather>, <minecraft:leather>],
 [<pyrotech:planks_tarred>, <artisanworktables:workstation:13>, <pyrotech:planks_tarred>],
 [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>]]);
+
+recipes.addShaped("bow_drill", <pyrotech:bow_drill>,
+[[<ore:stickWood>, null, <ore:stickWood>],
+[null, <ore:twine>, <ore:stickWood>],
+[<ore:stickWood>, <ore:stickWood>, null]]);

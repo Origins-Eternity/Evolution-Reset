@@ -17,20 +17,18 @@ val banlist = [
 <minecraft:lava_bucket>,
 <minecraft:diamond>,
 <minecraft:iron_ore>,
-<minecraft:carrot>,
-<minecraft:bread>,
-<minecraft:potato>,
-<minecraft:apple>,
 <minecraft:fire_charge>,
 <minecraft:beetroot>,
-<minecraft:cooked_chicken>,
-<minecraft:cooked_beef>,
-<minecraft:cooked_rabbit>,
-<minecraft:cooked_porkchop>,
-<minecraft:cooked_mutton>,
 <minecraft:golden_apple:1>,
 <planetprogression:research_paper_0>,
-<minecraft:enchanted_book>
+<minecraft:enchanted_book>,
+<ercore:crafting_table_blueprint>,
+<ercore:furnace_core_blueprint>,
+<ercore:wither_forge_blueprint>,
+<ercore:vacuum_bag_blueprint>,
+<ercore:gunpowder_blueprint>,
+<ercore:large_backpack_blueprint>,
+<ercore:toxic_mask_blueprint>
 ] as IItemStack[];
 
 for items in banlist {

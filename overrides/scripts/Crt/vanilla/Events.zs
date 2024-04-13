@@ -106,7 +106,9 @@ events.onPlayerRespawn(function(event as PlayerRespawnEvent) {
 
 events.onPlayerAdvancement(function(event as PlayerAdvancementEvent) {
     val player as IPlayer = event.player;
-    player.xp += 3;
+    if (!player.world.remote) {
+        player.xp += 3;
+    }
 });
 
 var mobsone = [
