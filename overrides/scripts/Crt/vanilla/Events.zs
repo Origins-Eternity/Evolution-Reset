@@ -26,6 +26,7 @@ import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.ItemTossEvent;
 import crafttweaker.event.PlayerInteractEvent;
+import crafttweaker.event.PlayerBreakSpeedEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var player = event.player;
@@ -230,3 +231,20 @@ if(!event.player.creative) {
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
     }
 }});
+
+events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
+if(event.world.remote) return;
+if(!event.player.creative) {
+	val player as IPlayer = event.player;
+    val block as IBlock = event.block;
+    val info = event.world.getWorldInfo();
+    if(block.definition.id.contains("wood")) {
+        if(isNull(player.currentItem)) {
+            event.cancel();
+        } else {
+        if(player.currentItem.definition.name.contains("axe")) return;
+            event.cancel();
+        }
+    }
+}});
+

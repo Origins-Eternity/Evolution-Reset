@@ -2,9 +2,12 @@
 #priority 99999
 import crafttweaker.item.IItemStack;
 
-recipes.addShapeless(<minecraft:torch>, [<ore:carbon>, <ore:stickWood>, <minecraft:flint_and_steel>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<minecraft:torch>, [<ore:carbon>, <ore:stickWood>, <pyrotech:flint_and_tinder>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<minecraft:torch>, [<ore:carbon>, <ore:stickWood>, <pyrotech:bow_drill>.anyDamage().transformDamage(1)]);
+recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <minecraft:flint_and_steel>.anyDamage().transformDamage(2)]);
+recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <pyrotech:flint_and_tinder>.anyDamage().transformDamage(2)]);
+recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <pyrotech:bow_drill>.anyDamage().transformDamage(2)]);
+recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <minecraft:flint_and_steel>.anyDamage().transformDamage(1)]);
+recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <pyrotech:flint_and_tinder>.anyDamage().transformDamage(1)]);
+recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <pyrotech:bow_drill>.anyDamage().transformDamage(1)]);
 
 recipes.replaceAllOccurences(<minecraft:furnace>, <pyrotech:furnace_core>);
 recipes.replaceAllOccurences(<minecraft:crafting_table>, <ore:craftingTable>);
