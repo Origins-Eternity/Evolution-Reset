@@ -50,6 +50,42 @@
                     "Count": 20
                 },
                 "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:large_backpack_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 30
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:vacuum_bag_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 30
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:toxic_mask_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 30
+                },
+                "CareerLevel": 2
             }
         ]
     }

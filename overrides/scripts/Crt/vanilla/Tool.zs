@@ -1,21 +1,8 @@
 #
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
-import crafttweaker.command.ICommandManager;
 import crafttweaker.events.IEventManager;
 import crafttweaker.player.IPlayer;
-import crafttweaker.event.PlayerInteractBlockEvent;
-
-events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
-    var ser = server.commandManager as ICommandManager;
-    var current = event.player.currentItem;
-    if (!isNull(current) && current.name == "item.glassBottle") {
-        event.player.dropItem(true);
-    }
-    if (!isNull(current) && current.name == "item.dyePowder.white") {
-        event.cancel();
-    }
- });
 
 <toughasnails:wool_helmet>.maxDamage = 500;
 <toughasnails:wool_chestplate>.maxDamage = 800;

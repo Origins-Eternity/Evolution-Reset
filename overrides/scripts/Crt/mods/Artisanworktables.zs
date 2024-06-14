@@ -9,8 +9,8 @@ RecipeBuilder.get("basic")
     [<pyrotech:material:16>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:material:16>],
     [<ore:blockIron>, <ore:ingotIron>, <pyrotech:stash_stone>, <ore:ingotIron>, <ore:blockIron>],
     [<pyrotech:material:16>, <ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>, <pyrotech:material:16>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
 .setName("blacksmith_workstation")
 .setLevelRequired(5)
 .setConsumeExperience(false)
@@ -109,8 +109,8 @@ RecipeBuilder.get("basic")
     [<ore:blockSteel>, <ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>, <ore:blockSteel>],
     [<ore:blockSteel>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <ore:blockSteel>],
     [<ore:blockSteel>, <ore:blockCopper>, <ore:blockCopper>, <ore:blockCopper>, <ore:blockSteel>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
 .setName("engineer_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)
@@ -129,9 +129,9 @@ RecipeBuilder.get("engineer")
 .setShaped([
     [<pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>],
     [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>],
-    [<ore:blockSteel>, <ercore:basalt>, <ercore:basalt>, <ercore:basalt>, <ore:blockSteel>],
+    [<ore:blockSteel>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:blockSteel>],
     [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>],
-    [<ore:blockIron>, <ercore:basalt>, <ercore:basalt>, <ercore:basalt>, <ore:blockIron>]])
+    [<ore:blockIron>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:blockIron>]])
 .setName("furnace")
 .setLevelRequired(30)
 .setSecondaryIngredients([<immersiveengineering:metal:38> * 9])
@@ -197,8 +197,8 @@ RecipeBuilder.get("basic")
     [<pyrotech:masonry_brick_block>, <minecraft:brick_block>, <pyrotech:material:42>, <minecraft:brick_block>, <pyrotech:masonry_brick_block>],
     [<pyrotech:masonry_brick_block>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:masonry_brick_block>],
     [<pyrotech:masonry_brick_block>, <minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>, <pyrotech:masonry_brick_block>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
 .setName("potter_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)
@@ -303,8 +303,8 @@ RecipeBuilder.get("basic")
     [<ore:dyeYellow>, <ore:dyeLightBlue>, <ore:dyePurple>, <ore:dyeLightBlue>, <ore:dyeYellow>],
     [<ore:dyePurple>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <ore:dyePurple>],
     [<ore:dyeYellow>, <ore:blockGold>, <ore:blockGold>, <ore:blockGold>, <ore:dyeYellow>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
 .setName("tailor_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)
@@ -432,8 +432,8 @@ RecipeBuilder.get("basic")
     [<pyrotech:material:42>, <pyrotech:material:42>, <pyrotech:material:42>, <pyrotech:material:42>, <pyrotech:material:42>],
     [<pyrotech:material:42>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:material:42>],
     [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>],
-    [<ercore:basalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ercore:basalt>]])
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
 .setName("tanner_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)
@@ -518,28 +518,28 @@ for dye in color {
 }
 
 var colorfulbeds = [
-<minecraft:bed>,
-<minecraft:bed:1>,
-<minecraft:bed:2>,
-<minecraft:bed:3>,
-<minecraft:bed:4>,
-<minecraft:bed:5>,
-<minecraft:bed:6>,
-<minecraft:bed:7>,
-<minecraft:bed:8>,
-<minecraft:bed:9>,
-<minecraft:bed:10>,
-<minecraft:bed:11>,
-<minecraft:bed:12>,
-<minecraft:bed:13>,
-<minecraft:bed:14>,
-<minecraft:bed:15>
+<comforts:sleeping_bag>,
+<comforts:sleeping_bag:1>,
+<comforts:sleeping_bag:2>,
+<comforts:sleeping_bag:3>,
+<comforts:sleeping_bag:4>,
+<comforts:sleeping_bag:5>,
+<comforts:sleeping_bag:6>,
+<comforts:sleeping_bag:7>,
+<comforts:sleeping_bag:8>,
+<comforts:sleeping_bag:9>,
+<comforts:sleeping_bag:10>,
+<comforts:sleeping_bag:11>,
+<comforts:sleeping_bag:12>,
+<comforts:sleeping_bag:13>,
+<comforts:sleeping_bag:14>,
+<comforts:sleeping_bag:15>
 ] as IItemStack[];
 
 for i, colors in color {
 var colorfulbed = colorfulbeds[i];
 RecipeBuilder.get("tailor")
-.setShapeless([<minecraft:bed>, colors])
+.setShapeless([<comforts:sleeping_bag>, colors])
 .setLevelRequired(3)
 .setConsumeExperience(false)
 .addOutput(colorfulbed)  
@@ -548,21 +548,21 @@ RecipeBuilder.get("tailor")
 
 RecipeBuilder.get("tailor")
 .setShaped([
-    [<pyrotech:planks_tarred>, <minecraft:wool>, <immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:planks_tarred>],
+    [<pyrotech:material:43>, <minecraft:wool>, <immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:material:43>],
     [<ore:ingotSteel>, <minecraft:wool>, <minecraft:wool>, <minecraft:wool>, <ore:ingotSteel>],
     [<immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:straw_bed>, <minecraft:wool>, <immersiveengineering:metal:38>],
     [<ore:ingotSteel>, <minecraft:wool>, <minecraft:wool>, <minecraft:wool>, <ore:ingotSteel>],
-    [<pyrotech:planks_tarred>, <minecraft:wool>, <immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:planks_tarred>]])
+    [<pyrotech:material:43>, <minecraft:wool>, <immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:material:43>]])
 .setLevelRequired(25)
 .setSecondaryIngredients([<ore:string> * 6])
 .setMaximumTier(2)
 .addTool(<ore:artisansCutters>, 15)
-.addTool(<ercore:bed_blueprint>, 2)
+.addTool(<ercore:sleeping_bag_blueprint>, 2)
 .addTool(<ore:artisansNeedle>, 15)
 .setExtraOutputOne(<minecraft:string>, 0.5)	 
 .setExtraOutputTwo(<minecraft:feather> * 4, 0.2)	
 .setExtraOutputThree(<pyrotech:material:23> * 2, 0.3)	 
-.addOutput(<minecraft:bed>)
+.addOutput(<comforts:sleeping_bag>)
 .create();
 
 RecipeBuilder.get("blacksmith")
@@ -690,9 +690,9 @@ RecipeBuilder.get("tanner")
 
 RecipeBuilder.get("tanner")
 .setShaped([
-    [<ore:wool>, <ore:leather>, <ore:wool>],
-    [<ore:leather>, <pyrotech:crate_stone>, <ore:leather>],
-    [<ore:wool>, <ore:leather>, <ore:wool>]])
+    [<ore:wool>, <pyrotech:material:43>, <ore:wool>],
+    [<pyrotech:material:43>, <pyrotech:material:42>, <pyrotech:material:43>],
+    [<ore:wool>, <pyrotech:material:43>, <ore:wool>]])
 .setName("smallbag")
 .setLevelRequired(5)
 .setConsumeExperience(false)
@@ -917,10 +917,10 @@ RecipeBuilder.get("blacksmith")
 .setExtraOutputOne(<minecraft:iron_nugget> * 5, 0.4)
 .setExtraOutputTwo(<pyrotech:rock:7> * 8, 0.5)	
 .setExtraOutputThree(<pyrotech:material:23> * 2, 0.1)	
-.addTool(<ercore:chest_blueprint>, 2)  
+.addTool(<ercore:iron_storage_crate_blueprint>, 2)  
 .addTool(<ore:artisansHammer>, 30)
 .addTool(<ore:artisansCarver>, 40) 
-.addOutput(<minecraft:chest>)
+.addOutput(<quantumstorage:chest_iron>)
 .create();
 
 for recipe4 in recipes.all {
@@ -1053,7 +1053,7 @@ RecipeBuilder.get("engineer")
     [wood, <pyrotech:planks_tarred>, <pyrotech:crate_stone>, <pyrotech:planks_tarred>, wood],
     [wood, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, wood],
     [wood, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, wood],
-    [wood, <ercore:basalt>, <ercore:basalt>, <ercore:basalt>, wood]])
+    [wood, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, wood]])
 .setLevelRequired(30)
 .setFluid(<liquid:lava> * 2000)
 .setMaximumTier(2)

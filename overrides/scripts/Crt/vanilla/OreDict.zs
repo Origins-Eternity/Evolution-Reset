@@ -338,7 +338,11 @@ var tool = [
 <pyrotech:obsidian_hoe>,
 <pyrotech:obsidian_pickaxe>,
 <pyrotech:obsidian_shovel>,
-<pyrotech:obsidian_sword>
+<pyrotech:obsidian_sword>,
+<quantumstorage:upgrade:2>,
+<quantumstorage:upgrade:3>,
+<quantumstorage:chest_quantum>,
+<quantumstorage:quantum_bag:*>
 ] as IItemStack[];
 
 for items in tool {	

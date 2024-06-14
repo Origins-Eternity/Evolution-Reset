@@ -5,19 +5,6 @@
         "Recipes": [
             {
                 "action": "add",
-                "buy": {
-                    "id": "minecraft:bed",
-                    "Damage": 11,
-                    "Count": 1
-                },
-                "sell": {
-                    "id": "minecraft:red_flower",
-                    "Count":{"min": 1,"max": 3}
-                },
-                "CareerLevel": 1
-            },
-            {
-                "action": "add",
                 "sell": {
                     "id": "ercore:crafting_table_blueprint",
                     "Count": 1

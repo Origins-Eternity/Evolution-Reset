@@ -41,6 +41,42 @@
                     "Count": 10
                 },
                 "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:crafting_table_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 30
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:furnace_core_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 30
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:wither_forge_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 30
+                },
+                "CareerLevel": 2
             }
         ]
     }
