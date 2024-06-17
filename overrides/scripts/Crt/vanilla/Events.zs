@@ -59,6 +59,8 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
     if(isNull(player.currentItem)) return;
     if(player.currentItem in <ore:banItems>) {
         player.dropItem(true);
+    } else if(player.currentItem.name == "item.glassBottle") {
+        event.player.dropItem(true);
     }
 });
 
@@ -82,12 +84,62 @@ events.onPlayerRespawn(function(event as PlayerRespawnEvent) {
     player.xp = 0;
 });
 
+var mobs = [
+"Witch",
+"Slime",
+"tconstruct.blueslime",
+"pyrotech.mud",
+"Spider",
+"Stray",
+"Creeper",
+"Enderman",
+"CaveSpider",
+"babycreeper",
+"babyenderman",
+"babyguardian",
+"babyirongolem",
+"babyocelot",
+"babyshulker",
+"babyshulkerbullet",
+"babysnowman",
+"babyspider",
+"babysquid",
+"babywitch",
+"babywither",
+"Skeleton",
+"Zombie",
+"Husk",
+"ZombieVillager",
+"ZombieHorse",
+"SkeletonHorse",
+"zombiechicken",
+"zombiepig",
+"mutantbeasts.body_part",
+"mutantbeasts.chemical_x",
+"mutantbeasts.creeper_minion",
+"mutantbeasts.creeper_minion_egg",
+"mutantbeasts.endersoul_clone",
+"mutantbeasts.endersoul_fragment",
+"mutantbeasts.mutant_arrow",
+"mutantbeasts.mutant_creeper",
+"mutantbeasts.mutant_enderman",
+"mutantbeasts.mutant_skeleton",
+"mutantbeasts.mutant_snow_golem",
+"mutantbeasts.mutant_zombie",
+"mutantbeasts.skull_spirit",
+"mutantbeasts.spider_pig",
+"mutantbeasts.throwable_block",
+"babyskeleton",
+"babyzombie"
+] as string[];
+
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     val entity = event.entity;
     val time = event.world.getWorldInfo().getWorldTotalTime();
-    if(!entity instanceof IEntityMob) return;
     if(time < 603021) {
-        event.cancel();
+        if(entity.definition.name in mobs) {
+           event.cancel();
+        }
     }
 });
 
@@ -125,21 +177,5 @@ if(!event.player.creative) {
     if(!info.difficultyLocked) {
         event.cancel();
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
-    }
-}});
-
-events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
-if(event.world.remote) return;
-if(!event.player.creative) {
-	val player as IPlayer = event.player;
-    val block as IBlock = event.block;
-    val info = event.world.getWorldInfo();
-    if(block.definition.id.contains("wood")) {
-        if(isNull(player.currentItem)) {
-            event.cancel();
-        } else {
-        if(player.currentItem.definition.name.contains("axe")) return;
-            event.cancel();
-        }
     }
 }});

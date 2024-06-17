@@ -904,25 +904,6 @@ RecipeBuilder.get("engineer")
 .create();
 }
 
-RecipeBuilder.get("blacksmith")
-.setShaped([
-    [<pyrotech:planks_tarred>, <ore:plateSteel>, <pyrotech:planks_tarred>, <ore:plateSteel>, <pyrotech:planks_tarred>],
-    [<ore:plateSteel>, <pyrotech:crate_stone>, <pyrotech:crate_stone>, <pyrotech:crate_stone>, <ore:plateSteel>],
-    [<pyrotech:planks_tarred>, <ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>, <pyrotech:planks_tarred>],
-    [<ore:plateSteel>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <ore:plateSteel>],
-    [<pyrotech:planks_tarred>, <ore:plateSteel>, <pyrotech:planks_tarred>, <ore:plateSteel>, <pyrotech:planks_tarred>]])
-.setName("chest")
-.setLevelRequired(10)
-.setMaximumTier(2)
-.setExtraOutputOne(<minecraft:iron_nugget> * 5, 0.4)
-.setExtraOutputTwo(<pyrotech:rock:7> * 8, 0.5)	
-.setExtraOutputThree(<pyrotech:material:23> * 2, 0.1)	
-.addTool(<ercore:iron_storage_crate_blueprint>, 2)  
-.addTool(<ore:artisansHammer>, 30)
-.addTool(<ore:artisansCarver>, 40) 
-.addOutput(<quantumstorage:chest_iron>)
-.create();
-
 for recipe4 in recipes.all {
     if (recipe4.resourceDomain == "comforts") {
         RecipeBuilder.get("tailor")

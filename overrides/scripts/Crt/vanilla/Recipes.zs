@@ -11,6 +11,7 @@ recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smol
 
 recipes.replaceAllOccurences(<minecraft:furnace>, <pyrotech:furnace_core>);
 recipes.replaceAllOccurences(<minecraft:crafting_table>, <ore:craftingTable>);
+recipes.replaceAllOccurences(<ore:chest>, <pyrotech:crate_stone>);
 
 var block = [
 <minecraft:iron_block>,
@@ -223,3 +224,5 @@ recipes.addShaped("bow_drill", <pyrotech:bow_drill>,
 [[<ore:stickWood>, null, <ore:stickWood>],
 [null, <ore:twine>, <ore:stickWood>],
 [<ore:stickWood>, <ore:stickWood>, null]]);
+
+brewing.addBrew(<minecraft:potion>, <minecraft:chorus_fruit>, <minecraft:dragon_breath>);
