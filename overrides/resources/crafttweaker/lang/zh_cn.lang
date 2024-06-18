@@ -2,4 +2,6 @@ crafttweaker.message.command.tip=§6好像什么也没发生……§r
 crafttweaker.message.broken=§6它好像坏掉了……§r
 crafttweaker.message.difficulty=§4请锁定游戏难度以继续……§r
 crafttweaker.message.login.tip1=§5这里看起来很安全……§r
-crafttweaker.message.login.tip2=§5它们来了……§r
+crafttweaker.message.login.tip2=§4它们来了……§r
+crafttweaker.message.locked=§5它被锁上了！§r
+crafttweaker.message.failed=§6好像不太管用……试试万能钥匙？§r

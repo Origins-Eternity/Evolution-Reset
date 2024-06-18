@@ -2,4 +2,6 @@ crafttweaker.message.command.tip=§6Nothing seems to have happened...§r
 crafttweaker.message.broken=§6It seems to be broken...§r
 crafttweaker.message.difficulty=§4Please lock the game difficulty to continue!§r
 crafttweaker.message.login.tip1=§5It looks safe here...§r
-crafttweaker.message.login.tip2=§5They are coming...§r
+crafttweaker.message.login.tip2=§4They are coming...§r
+crafttweaker.message.locked=§5It was locked!§r
+crafttweaker.message.failed=§6It doesn't seem to work... Try the Master Key?§r

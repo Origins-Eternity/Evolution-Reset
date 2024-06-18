@@ -27,21 +27,33 @@ import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.ItemTossEvent;
 import crafttweaker.event.PlayerInteractEvent;
 import crafttweaker.event.PlayerBreakSpeedEvent;
+import crafttweaker.event.BlockPlaceEvent;
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
-var player = event.player;
 var id = event.block.definition.id;
+if (!event.player.world.isRemote()) {
     if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table") || (id == "minecraft:lit_furnace")) {
-        if (!player.world.isRemote()) {
-            player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
-        }
+        if(!isNull(player.data.wasGivenTip1)) return;
+        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
+        event.player.update({wasGivenTip1: true});
         event.cancel();
     } else if(id == "immersiveengineering:wooden_device0") {
         var current = event.player.currentItem;
-        if (!isNull(current) && current.definition.id == "locks:steel_lock_pick") return;
-        event.cancel();
+        if (isNull(current)) {
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.locked"));
+            event.cancel();
+        } else if(!current.definition.id.contains("key")) {
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.locked"));
+            event.cancel();
+        } else if(current.definition.id != "locks:master_key") {
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.failed"));
+            event.cancel();
+        }
     }
-});
+}});
 
 events.onItemToss(function(event as ItemTossEvent) {
     var itemdrop = event.item.item;
@@ -66,14 +78,10 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
 
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
     if(event.entity instanceof IPlayer) return;
-    var oredicts as string = "";
     for drop in event.drops {
-        for ore in drop.item.ores {
-            oredicts += ore.name;
+        if(drop in <ore:banItems>.itemArray) {
+            event.cancel();
         }
-    }
-    if(oredicts.contains("banItem")) {
-        event.cancel();
     }
 });
 
@@ -135,6 +143,7 @@ var mobs = [
 
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     val entity = event.entity;
+    if(!entity instanceof IEntityMob) return;
     val time = event.world.getWorldInfo().getWorldTotalTime();
     if(time < 603021) {
         if(entity.definition.name in mobs) {
@@ -151,6 +160,10 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         if(!isNull(player.data.wasGivenTip1)) return;
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip1"));
         player.update({wasGivenTip1: true});
+    } else {
+        if(!isNull(player.data.wasGivenTip2)) return;
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip2"));
+        player.update({wasGivenTip2: true});
     }
 });
 
@@ -177,5 +190,18 @@ if(!event.player.creative) {
     if(!info.difficultyLocked) {
         event.cancel();
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
+    }
+}});
+
+events.onBlockPlace(function(event as BlockPlaceEvent) {
+var id = event.block.definition.id;
+var player = event.player;
+for name in names {
+    if (id.contains("hopper")) {
+        var down = event.world.getBlockState(event.position.getOffset(IFacing.down(), 1)).block;
+        var up = event.world.getBlockState(event.position.getOffset(IFacing.up(), 1)).block;
+        if(down.definition.id.contains("furnace") || up.definition.id.contains("furnace")) {
+            event.cancel();
+        }
     }
 }});
