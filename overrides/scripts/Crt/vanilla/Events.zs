@@ -78,12 +78,17 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
 events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
     if(event.player.world.isRemote()) return;
     if(event.output.definition.id == "pyrotech:crude_axe") {
-        if(!isNull(event.player.data.wasGivenTip4)) return;
-        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip4"));
-        event.player.update({wasGivenTip4: true});
+        if(!isNull(event.player.data.wasGivenTip2)) return;
+        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
+        event.player.update({wasGivenTip2: true});
     } else if(event.output.definition.id == "tconstruct:smeltery_controller") {
-        if(!isNull(event.player.world.getCustomWorldData().reachingStage)) return;
-        event.player.world.updateCustomWorldData({reachingStage: true});
+        if(isNull(event.player.world.getCustomWorldData().reachingStage)) {
+            event.player.world.updateCustomWorldData({reachingStage: true});
+        }
+        if(isNull(player.data.wasGivenTip2)) {
+            player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip2"));
+            player.update({wasGivenTip2: true});
+        }
     }
 });
 
@@ -96,10 +101,10 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
     } else if(player.currentItem.name == "item.glassBottle") {
         player.dropItem(true);
     }
-    if(!isNull(player.data.wasGivenTip3)) return;
+    if(!isNull(player.data.wasGivenTip2)) return;
     if(isNull(player.data.wasGivenTip1)) return;
-    player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + "> ") + ITextComponent.fromTranslation("crafttweaker.message.tip3"));
-    player.update({wasGivenTip3: true});
+    player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + "> ") + ITextComponent.fromTranslation("crafttweaker.message.tip2"));
+    player.update({wasGivenTip2: true});
 });
 
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
@@ -141,6 +146,7 @@ var mobs = [
 "babyshulkerbullet",
 "babysnowman",
 "babyspider",
+"babycavespider",
 "babysquid",
 "babywitch",
 "babywither",
@@ -201,10 +207,6 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         player.give(<ftbquests:book>);
         player.update({wasGivenTip1: true});
     }
-    if(isNull(event.player.world.getCustomWorldData().reachingStage)) return;
-    if(!isNull(player.data.wasGivenTip2)) return;
-    player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip2"));
-    player.update({wasGivenTip2: true});
 });
 
 events.onBlockBreak(function(event as BlockBreakEvent) {

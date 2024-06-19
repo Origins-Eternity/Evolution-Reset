@@ -1,7 +1,7 @@
 entity.babyspider.name=蜘蛛宝宝
 entity.babysculpture.name=骷髅宝宝
 entity.babycreeper.name=爬行者宝宝
-entity.babywithersculpture.name=凋灵骷髅宝宝
+entity.babywitherskeleton.name=凋灵骷髅宝宝
 entity.babyenderman.name=末影人宝宝
 entity.babyblaze.name=烈焰人宝宝
 entity.babywitch.name=女巫宝宝
@@ -26,7 +26,7 @@ entity.creeperexplosion.name=爆炸
 item.babyspider.name=蜘蛛宝宝刷怪蛋
 item.babyskeleton.name=骷髅宝宝刷怪蛋
 item.babycreeper.name=爬行者宝宝刷怪蛋
-item.babywithersculpture.name=凋灵骷髅宝宝刷怪蛋
+item.babywitherskeleton.name=凋灵骷髅宝宝刷怪蛋
 item.babyenderman.name=末影人宝宝刷怪蛋
 item.babyblaze.name=烈焰人宝宝刷怪蛋
 item.babywitch.name=女巫宝宝刷怪蛋
