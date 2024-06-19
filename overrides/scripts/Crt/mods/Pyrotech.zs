@@ -217,7 +217,7 @@ recipes.addShaped(<pyrotech:cog_diamond>,
 Worktable.buildShaped(<artisanworktables:workstation:5>, [
 [<pyrotech:material:16>, <ore:plateCopper>, <pyrotech:material:16>],
 [<ore:blockCopper>, <pyrotech:stash_stone>, <ore:blockCopper>],
-[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]
+[<chisel:basalt>, <pyrotech:masonry_brick_block>, <chisel:basalt>]
 ]
 )
 .setName("custom_recipe_workstation5")
@@ -227,7 +227,7 @@ Worktable.buildShaped(<artisanworktables:workstation:5>, [
 Worktable.buildShaped(<artisanworktables:workstation:14>, [
 [<pyrotech:material:16>, <minecraft:brick>, <pyrotech:material:16>],
 [<minecraft:brick_block>, <pyrotech:stash_stone>, <minecraft:brick_block>],
-[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]
+[<chisel:basalt>, <pyrotech:masonry_brick_block>, <chisel:basalt>]
 ])
 .setName("custom_recipe_workstation14")
 .setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 30)
