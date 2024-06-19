@@ -76,29 +76,29 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
 });
 
 events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
+    if(event.player.world.isRemote()) return;
     if(event.output.definition.id == "pyrotech:crude_axe") {
         if(!isNull(event.player.data.wasGivenTip4)) return;
-        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip4"));
-        player.update({wasGivenTip4: true});
-    }
-    if(event.output.definition.id == "tconstruct:smeltery_controller") {
+        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip4"));
+        event.player.update({wasGivenTip4: true});
+    } else if(event.output.definition.id == "tconstruct:smeltery_controller") {
         if(!isNull(event.player.world.getCustomWorldData().reachingStage)) return;
         event.player.world.updateCustomWorldData({reachingStage: true});
     }
 });
 
 events.onPlayerInteract(function(event as PlayerInteractEvent) {
+    if(event.player.world.isRemote()) return;
     val player = event.player;
     if(isNull(player.currentItem)) return;
     if(player.currentItem in <ore:banItems>) {
         player.dropItem(true);
     } else if(player.currentItem.name == "item.glassBottle") {
-        event.player.dropItem(true);
+        player.dropItem(true);
     }
-    if(event.world.isRemote) return;
     if(!isNull(player.data.wasGivenTip3)) return;
     if(isNull(player.data.wasGivenTip1)) return;
-    player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + ">") + ITextComponent.fromTranslation("crafttweaker.message.tip2"));
+    player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + "> ") + ITextComponent.fromTranslation("crafttweaker.message.tip3"));
     player.update({wasGivenTip3: true});
 });
 
@@ -175,7 +175,7 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     val entity = event.entity;
     if(!entity instanceof IEntityMob) return;
     if(event.world.dimension != 0) return;
-    if(event.world.isRemote) return;
+    if(event.world.isRemote()) return;
     if(isNull(event.world.getCustomWorldData().reachingStage)) {
         for mob in mobs {
             if(entity.definition.name == mob) {
@@ -189,7 +189,7 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var player = event.player as IPlayer;
     var ser = server.commandManager as ICommandManager;
-    if(event.player.world.isRemote) return;
+    if(event.player.world.isRemote()) return;
     val info = event.player.world.getWorldInfo();
     if(!info.difficultyLocked) {
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
@@ -197,7 +197,8 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     } else if(isNull(player.data.wasGivenTip1)) {
         ser.executeCommand(server, "gamemode survival " + event.player.name);
         player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
-        player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + ">") + ITextComponent.fromTranslation("crafttweaker.message.tip1"));
+        player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + "> ") + ITextComponent.fromTranslation("crafttweaker.message.tip1"));
+        player.give(<ftbquests:book>);
         player.update({wasGivenTip1: true});
     }
     if(isNull(event.player.world.getCustomWorldData().reachingStage)) return;
