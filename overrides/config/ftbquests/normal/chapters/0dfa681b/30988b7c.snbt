@@ -30,9 +30,8 @@
 		xp: 10
 	},
 	{
-		uid: "e766cdd9",
+		uid: "9d8613a6",
 		type: "item",
-		team_reward: true,
-		item: "ftbquests:book"
+		item: "solcarrot:food_book"
 	}]
 }

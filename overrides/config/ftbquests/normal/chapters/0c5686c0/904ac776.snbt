@@ -5,10 +5,11 @@
 		"304c80d5"
 	],
 	tasks: [{
-		uid: "0ed9eb7a",
+		uid: "b5231953",
 		type: "item",
 		items: [{
-			item: "planetprogression:satellite_builder"
-		}]
+			item: "galacticresearch:satellite_rocket"
+		}],
+		ignore_nbt: 1b
 	}]
 }

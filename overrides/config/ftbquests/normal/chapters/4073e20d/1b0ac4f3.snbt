@@ -1,0 +1,30 @@
+{
+	x: 12.5d,
+	y: 1.0d,
+	dependencies: [
+		"e418f683"
+	],
+	tasks: [{
+		uid: "38912d88",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "drawerBasic",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any drawerBasic"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "9d3dc635",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

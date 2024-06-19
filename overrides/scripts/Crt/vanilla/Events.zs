@@ -21,7 +21,6 @@ import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.event.EntityLivingDeathDropsEvent;
 import crafttweaker.entity.IEntityItem;
-import crafttweaker.entity.IEntityMob;
 import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.ItemTossEvent;
@@ -31,12 +30,15 @@ import crafttweaker.event.BlockPlaceEvent;
 import crafttweaker.world.IBlockAccess;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IFacing;
+import crafttweaker.event.PlayerCraftedEvent;
+import crafttweaker.entity.IEntityMob;
+import crafttweaker.event.PlayerChangedDimensionEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
 if (!event.player.world.isRemote()) {
     if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table") || (id == "minecraft:lit_furnace")) {
-        if(!isNull(player.data.wasGivenTip1)) return;
+        if(!isNull(event.player.data.wasGivenTip1)) return;
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
         event.player.update({wasGivenTip1: true});
         event.cancel();
@@ -66,6 +68,25 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
     event.cancel();
 });
 
+events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
+    var ser = server.commandManager as ICommandManager;
+    if(event.toWorld.dimension == 1) {
+        ser.executeCommand(server, "gameruled set keepInventory true");
+    }
+});
+
+events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
+    if(event.output.definition.id == "pyrotech:crude_axe") {
+        if(!isNull(event.player.data.wasGivenTip4)) return;
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip4"));
+        player.update({wasGivenTip4: true});
+    }
+    if(event.output.definition.id == "tconstruct:smeltery_controller") {
+        if(!isNull(event.player.world.getCustomWorldData().reachingStage)) return;
+        event.player.world.updateCustomWorldData({reachingStage: true});
+    }
+});
+
 events.onPlayerInteract(function(event as PlayerInteractEvent) {
     val player = event.player;
     if(isNull(player.currentItem)) return;
@@ -74,14 +95,23 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
     } else if(player.currentItem.name == "item.glassBottle") {
         event.player.dropItem(true);
     }
+    if(event.world.isRemote) return;
+    if(!isNull(player.data.wasGivenTip3)) return;
+    if(isNull(player.data.wasGivenTip1)) return;
+    player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + ">") + ITextComponent.fromTranslation("crafttweaker.message.tip2"));
+    player.update({wasGivenTip3: true});
 });
 
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
     if(event.entity instanceof IPlayer) return;
+    var oredicts as string = "";
     for drop in event.drops {
-        if(drop in <ore:banItems>.itemArray) {
-            event.cancel();
+        for ore in drop.item.ores {
+            oredicts += ore.name;
         }
+    }
+    if(oredicts.contains("banItem")) {
+        event.cancel();
     }
 });
 
@@ -144,10 +174,14 @@ var mobs = [
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     val entity = event.entity;
     if(!entity instanceof IEntityMob) return;
-    val time = event.world.getWorldInfo().getWorldTotalTime();
-    if(time < 603021) {
-        if(entity.definition.name in mobs) {
-           event.cancel();
+    if(event.world.dimension != 0) return;
+    if(event.world.isRemote) return;
+    if(isNull(event.world.getCustomWorldData().reachingStage)) {
+        for mob in mobs {
+            if(entity.definition.name == mob) {
+                event.cancel();
+                break;
+            }
         }
     }
 });
@@ -155,16 +189,21 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var player = event.player as IPlayer;
     var ser = server.commandManager as ICommandManager;
-    val time = player.world.getWorldInfo().getWorldTotalTime();
-    if(time < 603021) {
-        if(!isNull(player.data.wasGivenTip1)) return;
-        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip1"));
+    if(event.player.world.isRemote) return;
+    val info = event.player.world.getWorldInfo();
+    if(!info.difficultyLocked) {
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
+        ser.executeCommand(server, "gamemode adventure " + event.player.name);
+    } else if(isNull(player.data.wasGivenTip1)) {
+        ser.executeCommand(server, "gamemode survival " + event.player.name);
+        player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
+        player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + ">") + ITextComponent.fromTranslation("crafttweaker.message.tip1"));
         player.update({wasGivenTip1: true});
-    } else {
-        if(!isNull(player.data.wasGivenTip2)) return;
-        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.login.tip2"));
-        player.update({wasGivenTip2: true});
     }
+    if(isNull(event.player.world.getCustomWorldData().reachingStage)) return;
+    if(!isNull(player.data.wasGivenTip2)) return;
+    player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip2"));
+    player.update({wasGivenTip2: true});
 });
 
 events.onBlockBreak(function(event as BlockBreakEvent) {
@@ -172,12 +211,11 @@ if((event.world.remote) || (!event.isPlayer)) return;
 if(!event.player.creative) {
 	val player as IPlayer = event.player;
     val block as IBlock = event.block;
-    val info = event.world.getWorldInfo();
     if(block.definition.hardness > 0.6) {
         if(isNull(player.currentItem)) {
             event.cancel();
             player.addPotionEffect(<potion:tconstruct:dot>.makePotionEffect(20, 1));
-            player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(200, 1));
+            player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(100, 1));
         } else {
         if(player.currentItem.definition.name.contains("axe")) return;
         if(player.currentItem.definition.name.contains("pickaxe")) return;
@@ -187,21 +225,16 @@ if(!event.player.creative) {
             event.cancel();
         }
     }
-    if(!info.difficultyLocked) {
-        event.cancel();
-        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
-    }
 }});
 
 events.onBlockPlace(function(event as BlockPlaceEvent) {
 var id = event.block.definition.id;
 var player = event.player;
-for name in names {
     if (id.contains("hopper")) {
-        var down = event.world.getBlockState(event.position.getOffset(IFacing.down(), 1)).block;
-        var up = event.world.getBlockState(event.position.getOffset(IFacing.up(), 1)).block;
-        if(down.definition.id.contains("furnace") || up.definition.id.contains("furnace")) {
-            event.cancel();
+        var pos as IBlockPos = event.position.getOffset(IFacing.down(), 1);
+        var down = event.world.getBlockState(pos).block;
+        if ((down.definition.id == "minecraft:furnace") || (id == "minecraft:lit_furnace"))  {
+            event.world.destroyBlock(pos, false);
         }
     }
-}});
+});

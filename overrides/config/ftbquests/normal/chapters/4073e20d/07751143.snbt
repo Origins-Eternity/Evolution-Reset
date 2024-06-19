@@ -5,13 +5,6 @@
 		"583015e3"
 	],
 	tasks: [{
-		uid: "14e595d7",
-		type: "item",
-		items: [{
-			item: "tconstruct:punji"
-		}]
-	},
-	{
 		uid: "48a9db2c",
 		type: "item",
 		items: [{

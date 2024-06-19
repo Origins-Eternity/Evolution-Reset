@@ -1,0 +1,14 @@
+{
+	x: 4.5d,
+	y: 1.0d,
+	dependencies: [
+		"904ac776"
+	],
+	tasks: [{
+		uid: "1b7db64a",
+		type: "item",
+		items: [{
+			item: "galacticresearch:telescope"
+		}]
+	}]
+}

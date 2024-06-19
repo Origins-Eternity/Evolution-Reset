@@ -1,0 +1,14 @@
+{
+	x: 4.5d,
+	y: 4.0d,
+	dependencies: [
+		"48ade423"
+	],
+	tasks: [{
+		uid: "a6e8ba42",
+		type: "item",
+		items: [{
+			item: "galaxyspace:modification_table"
+		}]
+	}]
+}

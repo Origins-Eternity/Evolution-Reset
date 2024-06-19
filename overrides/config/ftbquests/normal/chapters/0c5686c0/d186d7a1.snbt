@@ -1,0 +1,14 @@
+{
+	x: 6.5d,
+	y: 4.0d,
+	dependencies: [
+		"2eeb450c"
+	],
+	tasks: [{
+		uid: "3fe3755f",
+		type: "item",
+		items: [{
+			item: "galaxyspace:rocket_modules 1 6"
+		}]
+	}]
+}

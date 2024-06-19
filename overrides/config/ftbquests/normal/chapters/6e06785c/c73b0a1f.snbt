@@ -10,5 +10,15 @@
 		items: [{
 			item: "ercore:searedbrick_unfired"
 		}]
+	}],
+	rewards: [{
+		uid: "68baebc7",
+		type: "item",
+		item: "conarm:book"
+	},
+	{
+		uid: "ab503abf",
+		type: "item",
+		item: "tconstruct:book"
 	}]
 }

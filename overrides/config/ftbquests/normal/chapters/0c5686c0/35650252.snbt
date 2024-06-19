@@ -1,14 +1,14 @@
 {
-	x: 1.5d,
+	x: 4.0d,
 	y: 2.5d,
 	dependencies: [
-		"304c80d5"
+		"b511cf08"
 	],
 	tasks: [{
-		uid: "3871701b",
+		uid: "88dccaf2",
 		type: "item",
 		items: [{
-			item: "galacticraftcore:landing_pad"
+			item: "galaxyspace:advanced_landing_pad"
 		}],
 		count: 9L
 	}]

@@ -5,12 +5,11 @@
 		"bc86aed8"
 	],
 	tasks: [{
-		uid: "4b7848b8",
+		uid: "44b14cc3",
 		type: "item",
 		items: [{
-			item: "minecraft:bed"
-		}],
-		ignore_nbt: 1b
+			item: "comforts:sleeping_bag"
+		}]
 	}],
 	rewards: [{
 		uid: "bd785a74",

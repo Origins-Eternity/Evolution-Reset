@@ -20,7 +20,6 @@ val banlist = [
 <minecraft:fire_charge>,
 <minecraft:beetroot>,
 <minecraft:golden_apple:1>,
-<planetprogression:research_paper_0>,
 <minecraft:enchanted_book>,
 <ercore:crafting_table_blueprint>,
 <ercore:furnace_core_blueprint>,

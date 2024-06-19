@@ -1,14 +1,14 @@
 {
-	x: 3.5d,
+	x: 7.5d,
 	y: -1.0d,
 	dependencies: [
-		"293f82fd"
+		"fb2124d2"
 	],
 	tasks: [{
-		uid: "21f34a56",
+		uid: "6b7f9604",
 		type: "item",
 		items: [{
-			item: "galacticraftcore:rocket_t1"
+			item: "galacticraftplanets:rocket_t3"
 		}],
 		ignore_nbt: 1b
 	}]
