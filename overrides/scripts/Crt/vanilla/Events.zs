@@ -85,10 +85,6 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
         if(isNull(event.player.world.getCustomWorldData().reachingStage)) {
             event.player.world.updateCustomWorldData({reachingStage: true});
         }
-        if(isNull(player.data.wasGivenTip2)) {
-            player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip2"));
-            player.update({wasGivenTip2: true});
-        }
     }
 });
 
