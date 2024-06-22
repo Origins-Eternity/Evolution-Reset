@@ -78,9 +78,9 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
 events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
     if(event.player.world.isRemote()) return;
     if(event.output.definition.id == "pyrotech:crude_axe") {
-        if(!isNull(event.player.data.wasGivenTip2)) return;
+        if(!isNull(event.player.data.wasGivenTip3)) return;
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
-        event.player.update({wasGivenTip2: true});
+        event.player.update({wasGivenTip3: true});
     } else if(event.output.definition.id == "tconstruct:smeltery_controller") {
         if(isNull(event.player.world.getCustomWorldData().reachingStage)) {
             event.player.world.updateCustomWorldData({reachingStage: true});
