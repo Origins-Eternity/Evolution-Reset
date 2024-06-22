@@ -1,4 +1,5 @@
 #
+#sideonly server
 import crafttweaker.events.IEventManager;
 import crafttweaker.player.IPlayer;
 import crafttweaker.event.PlayerRespawnEvent;
@@ -192,11 +193,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var player = event.player as IPlayer;
     var ser = server.commandManager as ICommandManager;
     if(event.player.world.isRemote()) return;
-    val info = event.player.world.getWorldInfo();
-    if(!info.difficultyLocked) {
-        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
-        ser.executeCommand(server, "gamemode adventure " + event.player.name);
-    } else if(isNull(player.data.wasGivenTip1)) {
+    if(isNull(player.data.wasGivenTip1)) {
         ser.executeCommand(server, "gamemode survival " + event.player.name);
         player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
         player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + "> ") + ITextComponent.fromTranslation("crafttweaker.message.tip1"));
