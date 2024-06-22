@@ -12,7 +12,7 @@
   "manifestVersion": 1,
   "name": "Evolution-Reset",
   "version": "1.2.0",
-  "author": "Origins_Eternity & Lacz",
+  "author": "Origins_Eternity",
   "files": [
     {
       "projectID": 303657,
@@ -555,13 +555,13 @@
       "required": true
     },
     {
-      "projectID": 271966,
-      "fileID": 2670253,
+      "projectID": 277616,
+      "fileID": 2959847,
       "required": true
     },
     {
-      "projectID": 277616,
-      "fileID": 2959847,
+      "projectID": 271966,
+      "fileID": 2670253,
       "required": true
     },
     {
@@ -590,13 +590,13 @@
       "required": true
     },
     {
-      "projectID": 220954,
-      "fileID": 3840577,
+      "projectID": 319194,
+      "fileID": 2698826,
       "required": true
     },
     {
-      "projectID": 319194,
-      "fileID": 2698826,
+      "projectID": 220954,
+      "fileID": 3840577,
       "required": true
     },
     {
@@ -650,13 +650,13 @@
       "required": true
     },
     {
-      "projectID": 309674,
-      "fileID": 3003364,
+      "projectID": 226406,
+      "fileID": 2857869,
       "required": true
     },
     {
-      "projectID": 226406,
-      "fileID": 2857869,
+      "projectID": 309674,
+      "fileID": 3003364,
       "required": true
     },
     {
@@ -665,13 +665,13 @@
       "required": true
     },
     {
-      "projectID": 637359,
-      "fileID": 3984393,
+      "projectID": 564236,
+      "fileID": 4671122,
       "required": true
     },
     {
-      "projectID": 564236,
-      "fileID": 4671122,
+      "projectID": 637359,
+      "fileID": 3984393,
       "required": true
     },
     {
@@ -700,13 +700,13 @@
       "required": true
     },
     {
-      "projectID": 259230,
-      "fileID": 5272452,
+      "projectID": 485654,
+      "fileID": 4564413,
       "required": true
     },
     {
-      "projectID": 485654,
-      "fileID": 4564413,
+      "projectID": 259230,
+      "fileID": 5272452,
       "required": true
     },
     {
