@@ -36,7 +36,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         if(event.player.world.isRemote()) return;
         val info = event.player.world.getWorldInfo();
         if(!info.difficultyLocked) {
-            if(!isNull(event.world.getCustomWorldData().reachingStage)) return;
+            if(!isNull(event.player.world.getCustomWorldData().reachingStage)) return;
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
             ser.executeCommand(server, "gamemode adventure " + event.player.name);
         }
