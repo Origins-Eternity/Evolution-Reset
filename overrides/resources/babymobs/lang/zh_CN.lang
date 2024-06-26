@@ -1,5 +1,5 @@
 entity.babyspider.name=蜘蛛宝宝
-entity.babysculpture.name=骷髅宝宝
+entity.babyskeleton.name=骷髅宝宝
 entity.babycreeper.name=爬行者宝宝
 entity.babywitherskeleton.name=凋灵骷髅宝宝
 entity.babyenderman.name=末影人宝宝
@@ -47,7 +47,7 @@ item.golden_bread.name=金面包
 
 tile.disappearingWeb.name=消失的蜘蛛网
 
-itemGroup.tabBabyMobs=Baby Mobs
+itemGroup.tabBabyMobs=Baby生物
 
 effect.volatile_levitation=不稳定悬浮
 

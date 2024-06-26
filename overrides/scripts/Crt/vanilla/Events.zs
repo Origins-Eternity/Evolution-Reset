@@ -1,5 +1,5 @@
 #
-#sideonly server
+#sideonly client
 import crafttweaker.events.IEventManager;
 import crafttweaker.player.IPlayer;
 import crafttweaker.event.PlayerRespawnEvent;
@@ -190,11 +190,10 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
 });
 
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
-    var player = event.player as IPlayer;
     var ser = server.commandManager as ICommandManager;
     if(event.player.world.isRemote()) return;
+    var player = event.player as IPlayer;
     if(isNull(player.data.wasGivenTip1)) {
-        ser.executeCommand(server, "gamemode survival " + event.player.name);
         player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
         player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + "> ") + ITextComponent.fromTranslation("crafttweaker.message.tip1"));
         player.give(<ftbquests:book>);

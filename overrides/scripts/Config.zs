@@ -16,6 +16,10 @@ val disablecommand as bool = true;
 # Default: true 
 val forcegamemode as bool = true;
 
+# If false, You can play game in without locking difficulty. 
+# Default: true 
+val lockdifficulty as bool = true;
+
 events.onCommand(function(event as CommandEvent) {
 if (disablecommand == true) {
    val command = event.command;
@@ -33,5 +37,13 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var ser = server.commandManager as ICommandManager;
     if (forcegamemode == true) {
         ser.executeCommand(server, "gamemode survival " + event.player.name);
+    }
+    if (lockdifficulty == true) {
+        if(event.player.world.isRemote()) return;
+        val info = event.player.world.getWorldInfo();
+        if(!info.difficultyLocked) {
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
+            ser.executeCommand(server, "gamemode adventure " + event.player.name);
+        }
     }
 });
