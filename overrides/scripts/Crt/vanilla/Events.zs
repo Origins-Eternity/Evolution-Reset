@@ -39,10 +39,10 @@ events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
 if (!event.player.world.isRemote()) {
     if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table") || (id == "minecraft:lit_furnace")) {
+        event.cancel();
         if(!isNull(event.player.data.wasGivenTip1)) return;
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
         event.player.update({wasGivenTip1: true});
-        event.cancel();
     } else if(id == "immersiveengineering:wooden_device0") {
         var current = event.player.currentItem;
         if (isNull(current)) {
