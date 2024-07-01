@@ -1,5 +1,4 @@
 #
-#sideonly client
 import crafttweaker.events.IEventManager;
 import crafttweaker.player.IPlayer;
 import crafttweaker.event.PlayerRespawnEvent;
