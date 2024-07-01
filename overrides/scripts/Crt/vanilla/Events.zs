@@ -34,6 +34,7 @@ import crafttweaker.world.IFacing;
 import crafttweaker.event.PlayerCraftedEvent;
 import crafttweaker.entity.IEntityMob;
 import crafttweaker.event.PlayerChangedDimensionEvent;
+import crafttweaker.event.PlayerCloneEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
@@ -58,11 +59,22 @@ if (!event.player.world.isRemote()) {
     }
 }});
 
-events.onItemToss(function(event as ItemTossEvent) {
-    var itemdrop = event.item.item;
-    if(itemdrop in <ore:banItems>) {
-        event.cancel();
+events.onPlayerClone(function(event as PlayerCloneEvent) {
+    if(!event.player.world.isRemote()) {
+        if(!isNull(event.originalPlayer.data.wasGivenTip1)) {
+            event.player.update({wasGivenTip1: true});
+        }
+        if(!isNull(event.originalPlayer.data.wasGivenTip2)) {
+            event.player.update({wasGivenTip2: true});
+        }
+        if(!isNull(event.originalPlayer.data.wasGivenTip3)) {
+            event.player.update({wasGivenTip3: true});
+        }
     }
+});
+
+events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
+    event.cancel();
 });
 
 events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
@@ -176,7 +188,7 @@ var mobs = [
 
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     val entity = event.entity;
-    if(!entity instanceof IEntityMob) return;
+    if(isNull(entity.definition)) return;
     if(event.world.dimension != 0) return;
     if(event.world.isRemote()) return;
     if(isNull(event.world.getCustomWorldData().reachingStage)) {
