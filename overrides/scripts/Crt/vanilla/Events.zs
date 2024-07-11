@@ -223,11 +223,15 @@ if(!event.player.creative) {
             player.addPotionEffect(<potion:tconstruct:dot>.makePotionEffect(20, 1));
             player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(100, 1));
         } else {
-        if(player.currentItem.definition.name.contains("axe")) return;
-        if(player.currentItem.definition.name.contains("pickaxe")) return;
-        if(player.currentItem.definition.name.contains("shovel")) return;
-        if(player.currentItem.definition.name.contains("sword")) return;
-        if(player.currentItem.definition.name.contains("hoe")) return;
+            if(player.currentItem.definition.name.contains("axe")) return;
+            if(player.currentItem.definition.name.contains("shovel")) return;
+            if(player.currentItem.definition.name.contains("hoe")) return;
+            if(player.currentItem.definition.name.contains("hammer")) return;
+            if(player.currentItem.definition.name.contains("kama")) return;
+            if(player.currentItem.definition.name.contains("scythe")) return;
+            if(player.currentItem.definition.name.contains("excavator")) return;
+            if(player.currentItem.definition.name.contains("pan")) return;
+            if(player.currentItem.definition.name.contains("sign")) return;
             event.cancel();
         }
     }
