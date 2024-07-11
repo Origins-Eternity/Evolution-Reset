@@ -13,10 +13,10 @@
 				}
             },
             {
-                "action" : "remove", "CareerLevel": 4
+                "action" : "clear", "CareerLevel": 4
             },
             {
-                "action" : "remove", "CareerLevel": 5
+                "action" : "clear", "CareerLevel": 5
             }
         ]
     }

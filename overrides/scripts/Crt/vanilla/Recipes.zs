@@ -112,51 +112,6 @@ for items in game_recipes {
     recipes.remove(items);
 }
 
-var myLogs = [<minecraft:log:0>,<minecraft:log:1>,<minecraft:log:2>,<minecraft:log:3>,<minecraft:log2>,<minecraft:log2:1>] as IItemStack[];
-var myPlanks = [<minecraft:planks:0>,<minecraft:planks:1>,<minecraft:planks:2>,<minecraft:planks:3>,<minecraft:planks:4>,<minecraft:planks:5>] as IItemStack[];
-var mySlabs = [<minecraft:wooden_slab>,<minecraft:wooden_slab:1>,<minecraft:wooden_slab:2>,<minecraft:wooden_slab:3>,<minecraft:wooden_slab:4>,<minecraft:wooden_slab:5>] as IItemStack[];
-
-var diamond = <artisanworktables:artisans_handsaw_diamond>.anyDamage().transformDamage(5);
-
-for i, log in myLogs {
-    var plank = myPlanks[i];
-    recipes.addShapeless(plank * 4, [log, diamond]);
-}
-
-for j, plank in myPlanks {
-    var slab = mySlabs[j];
-    recipes.addShapeless(slab * 3, [plank, diamond]);
-}
-
-var sticks = [
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>,
-<minecraft:stick>
-] as IItemStack[];
-
 var handsaws = [
 <artisanworktables:artisans_handsaw_wood>,
 <artisanworktables:artisans_handsaw_stone>,
@@ -185,9 +140,22 @@ var handsaws = [
 <artisanworktables:artisans_handsaw_invar>
 ] as IItemStack[];
 
-for i, handsaw in handsaws {
-    var sticks = sticks[i];
-    recipes.addShapeless(sticks * 2, [<ore:plankWood>, handsaw.anyDamage().transformDamage(5)]);
+for handsaw in handsaws {
+recipes.addShapeless(<minecraft:stick>, [<ore:slabWood>, handsaw.anyDamage().transformDamage(3)]);
+
+var myLogs = [<minecraft:log:0>,<minecraft:log:1>,<minecraft:log:2>,<minecraft:log:3>,<minecraft:log2>,<minecraft:log2:1>] as IItemStack[];
+var myPlanks = [<minecraft:planks:0>,<minecraft:planks:1>,<minecraft:planks:2>,<minecraft:planks:3>,<minecraft:planks:4>,<minecraft:planks:5>] as IItemStack[];
+var mySlabs = [<minecraft:wooden_slab>,<minecraft:wooden_slab:1>,<minecraft:wooden_slab:2>,<minecraft:wooden_slab:3>,<minecraft:wooden_slab:4>,<minecraft:wooden_slab:5>] as IItemStack[];
+
+for i, log in myLogs {
+    var plank = myPlanks[i];
+    recipes.addShapeless(plank * 4, [log, handsaw.anyDamage().transformDamage(5)]);
+}
+
+for j, plank in myPlanks {
+    var slab = mySlabs[j];
+    recipes.addShapeless(slab * 2, [plank, handsaw.anyDamage().transformDamage(4)]);
+}
 }
 
 recipes.addShaped(<artisanworktables:workshop:5>,
