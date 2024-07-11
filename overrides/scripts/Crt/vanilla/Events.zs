@@ -230,8 +230,8 @@ if(!event.player.creative) {
             if(player.currentItem.definition.name.contains("kama")) return;
             if(player.currentItem.definition.name.contains("scythe")) return;
             if(player.currentItem.definition.name.contains("excavator")) return;
-            if(player.currentItem.definition.name.contains("pan")) return;
-            if(player.currentItem.definition.name.contains("sign")) return;
+            if(player.currentItem.definition.name.contains("hatchet")) return;
+            if(player.currentItem.definition.name.contains("mattock")) return;
             event.cancel();
         }
     }
