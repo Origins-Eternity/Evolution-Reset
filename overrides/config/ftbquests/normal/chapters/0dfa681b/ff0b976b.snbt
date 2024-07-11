@@ -17,12 +17,6 @@
 		type: "item",
 		team_reward: true,
 		item: {
-			ForgeCaps: {
-				"foodfunk:rot": {
-					start: 0L,
-					time: 0L
-				}
-			},
 			id: "minecraft:potato",
 			tag: {
 				Rot: {
@@ -37,12 +31,6 @@
 		type: "item",
 		team_reward: true,
 		item: {
-			ForgeCaps: {
-				"foodfunk:rot": {
-					start: 0L,
-					time: 0L
-				}
-			},
 			id: "minecraft:carrot",
 			tag: {
 				Rot: {

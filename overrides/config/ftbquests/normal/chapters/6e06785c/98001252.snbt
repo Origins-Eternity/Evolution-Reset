@@ -16,12 +16,6 @@
 		uid: "72e5beb9",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"foodfunk:rot": {
-					start: 0L,
-					time: 0L
-				}
-			},
 			id: "minecraft:carrot",
 			tag: {
 				Rot: {
@@ -44,12 +38,6 @@
 		uid: "9ca66c62",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"foodfunk:rot": {
-					start: 0L,
-					time: 0L
-				}
-			},
 			id: "minecraft:poisonous_potato",
 			tag: {
 				Rot: {
