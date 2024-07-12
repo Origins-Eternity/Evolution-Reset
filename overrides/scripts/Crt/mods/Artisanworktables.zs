@@ -66,6 +66,26 @@ RecipeBuilder.get("blacksmith")
 .setExtraOutputTwo(<minecraft:iron_nugget> * 3, 0.1)
 .addOutput(<minecraft:bucket>)
 .create();
+
+RecipeBuilder.get("blacksmith")
+.setShaped([
+    [null, <ore:stickSteel>, <ore:stickSteel>],
+    [null, <ore:stickSteel>, null],
+    [null, <ore:stickSteel>, <ore:stickSteel>],
+    [<ore:stickSteel>, null, <ore:stickSteel>],
+    [<ore:stickSteel>, <ore:stickSteel>, null]])
+.setName("master_key")
+.setLevelRequired(10)
+.setConsumeExperience(false)
+.setFluid(<liquid:gold> * 1000)
+.addTool(<ore:artisansCutters>, 15)
+.addTool(<ore:artisansHammer>, 10)
+.addTool(<ercore:tool_blueprint>, 2)
+.setExtraOutputOne(<immersiveengineering:metal:28> * 4, 0.7)
+.setExtraOutputTwo(<immersiveengineering:metal:17> * 1, 0.1)
+.setExtraOutputThree(<minecraft:gold_nugget> * 6, 0.2)
+.addOutput(<locks:master_key>)
+.create();
   
 RecipeBuilder.get("basic")
 .setCopy(

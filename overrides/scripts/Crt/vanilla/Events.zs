@@ -37,13 +37,14 @@ import crafttweaker.event.PlayerCloneEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
+var meta = event.block.meta;
 if (!event.player.world.isRemote()) {
     if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table") || (id == "minecraft:lit_furnace")) {
         event.cancel();
         if(!isNull(event.player.data.wasGivenTip1)) return;
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
         event.player.update({wasGivenTip1: true});
-    } else if(id == "immersiveengineering:wooden_device0") {
+    } else if((id == "immersiveengineering:wooden_device0") && (meta == 0)) {
         var current = event.player.currentItem;
         if (isNull(current)) {
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.locked"));
