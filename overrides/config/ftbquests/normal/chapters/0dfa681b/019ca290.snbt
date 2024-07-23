@@ -1,0 +1,14 @@
+{
+	x: 17.5d,
+	y: 3.0d,
+	dependencies: [
+		"2eae0faa"
+	],
+	tasks: [{
+		uid: "9030e294",
+		type: "item",
+		items: [{
+			item: "pyrotech:bucket_refractory"
+		}]
+	}]
+}

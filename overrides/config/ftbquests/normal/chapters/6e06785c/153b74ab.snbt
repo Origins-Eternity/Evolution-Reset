@@ -1,8 +1,8 @@
 {
 	x: -3.0d,
-	y: 1.5d,
+	y: 2.5d,
 	dependencies: [
-		"ee41ac60"
+		"abf2e939"
 	],
 	tasks: [{
 		uid: "3ddd95b9",
@@ -21,7 +21,7 @@
 				}
 			}
 		}],
-		count: 64L,
+		count: 32L,
 		consume_items: false
 	}]
 }

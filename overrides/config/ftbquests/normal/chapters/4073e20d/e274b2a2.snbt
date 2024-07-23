@@ -1,8 +1,8 @@
 {
-	x: -1.0d,
-	y: 1.0d,
+	x: -1.5d,
+	y: 3.0d,
 	dependencies: [
-		"cbad279f"
+		"020e9006"
 	],
 	tasks: [{
 		uid: "79545df9",
@@ -18,11 +18,5 @@
 		team_reward: true,
 		item: "immersiveengineering:material 1 6",
 		count: 4
-	},
-	{
-		uid: "362b7732",
-		type: "item",
-		team_reward: true,
-		item: "pyrotech:bucket_clay"
 	}]
 }

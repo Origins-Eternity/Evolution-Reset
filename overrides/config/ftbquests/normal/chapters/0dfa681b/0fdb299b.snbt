@@ -1,0 +1,28 @@
+{
+	x: 20.5d,
+	y: 1.0d,
+	dependencies: [
+		"0ebb499a"
+	],
+	tasks: [{
+		uid: "d9784ee4",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		}]
+	},
+	{
+		uid: "148f6fe7",
+		type: "item",
+		items: [{
+			item: "pyrotech:faucet_brick"
+		}]
+	},
+	{
+		uid: "8b96a2d8",
+		type: "item",
+		items: [{
+			item: "tconstruct:cast_custom"
+		}]
+	}]
+}

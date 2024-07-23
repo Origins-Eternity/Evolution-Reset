@@ -1,20 +1,19 @@
 {
-	x: 2.5d,
+	x: 5.5d,
 	y: 2.0d,
 	dependencies: [
-		"9cd08d30"
+		"e95afe2a"
 	],
 	tasks: [{
-		uid: "18e373a2",
+		uid: "a6746600",
 		type: "item",
 		items: [{
-			item: "artisanworktables:workshop 1 13"
+			item: "futuremc:barrel"
 		}]
 	}],
 	rewards: [{
-		uid: "123aecbe",
+		uid: "5f42459b",
 		type: "xp_levels",
-		team_reward: true,
 		xp_levels: 2
 	}]
 }

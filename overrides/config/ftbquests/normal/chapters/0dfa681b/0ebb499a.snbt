@@ -1,0 +1,28 @@
+{
+	x: 19.0d,
+	y: 1.0d,
+	dependencies: [
+		"6f650bca"
+	],
+	tasks: [{
+		uid: "4fd480d1",
+		type: "item",
+		items: [{
+			item: "pyrotech:brick_kiln"
+		}]
+	},
+	{
+		uid: "d93a025c",
+		type: "item",
+		items: [{
+			item: "ercore:searedbrick_unfired"
+		}]
+	},
+	{
+		uid: "ade2c3a1",
+		type: "item",
+		items: [{
+			item: "pyrotech:brick_sawmill"
+		}]
+	}]
+}

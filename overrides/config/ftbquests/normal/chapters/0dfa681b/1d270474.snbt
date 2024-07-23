@@ -1,27 +1,27 @@
 {
-	x: 14.5d,
+	x: 16.0d,
 	y: 1.0d,
 	dependencies: [
-		"e4bb89ef"
+		"8c1fcd6c"
 	],
 	tasks: [{
-		uid: "1458b7e2",
+		uid: "46345df8",
 		type: "item",
 		items: [{
-			item: "pyrotech:stone_crucible"
+			item: "artisanworktables:workstation 1 14"
 		}]
 	}],
 	rewards: [{
-		uid: "8c82b456",
+		uid: "af00a5d6",
 		type: "xp_levels",
 		team_reward: true,
 		xp_levels: 1
 	},
 	{
-		uid: "97fe202e",
+		uid: "64d1dce7",
 		type: "item",
 		team_reward: true,
-		item: "pyrotech:masonry_brick_block",
-		count: 3
+		item: "minecraft:clay_ball",
+		random_bonus: 5
 	}]
 }

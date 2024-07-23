@@ -1,30 +1,25 @@
 {
-	x: 12.5d,
-	y: 1.0d,
+	x: -3.0d,
+	y: 2.5d,
 	dependencies: [
-		"e418f683"
+		"8ef1c336"
 	],
 	tasks: [{
-		uid: "38912d88",
+		uid: "47f25498",
 		type: "item",
 		items: [{
 			ForgeCaps: {
 				Parent: {
-					data: "drawerBasic",
+					data: "ingotIron",
 					id: "ore"
 				}
 			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
-					Name: "Any drawerBasic"
+					Name: "Any ingotIron"
 				}
 			}
 		}]
-	}],
-	rewards: [{
-		uid: "9d3dc635",
-		type: "xp_levels",
-		xp_levels: 1
 	}]
 }

@@ -1,0 +1,21 @@
+{
+	x: 16.0d,
+	y: 3.0d,
+	dependencies: [
+		"6c5c76ba"
+	],
+	tasks: [{
+		uid: "bb99e4ff",
+		type: "item",
+		items: [{
+			item: "pyrotech:generated_pile_slag_copper"
+		}]
+	},
+	{
+		uid: "6f3c240f",
+		type: "item",
+		items: [{
+			item: "pyrotech:generated_pile_slag_tin"
+		}]
+	}]
+}
