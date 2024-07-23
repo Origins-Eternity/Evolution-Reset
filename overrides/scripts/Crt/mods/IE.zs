@@ -45,14 +45,14 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:5>,
 [<ercore:tungsten_steel_block>, <immersiveengineering:material:9>, <ercore:tungsten_steel_block>]]);
 
 recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 8,
-[[<minecraft:iron_block>, <immersiveengineering:connector:13>, <minecraft:iron_block>],
+[[<ore:blockSteel>, <immersiveengineering:connector:13>, <ore:blockSteel>],
 [<immersiveengineering:connector:13>, <ore:blockCopper>, <immersiveengineering:connector:13>],
-[<minecraft:iron_block>, <immersiveengineering:connector:13>, <minecraft:iron_block>]]);
+[<ore:blockSteel>, <immersiveengineering:connector:13>, <ore:blockSteel>]]);
 
 recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 4,
-[[<minecraft:iron_block>, <immersiveengineering:material:8>, <minecraft:iron_block>],
+[[<ore:blockSteel>, <immersiveengineering:material:8>, <ore:blockSteel>],
 [<ore:blockCopper>, <ore:blockCopper>, <ore:blockCopper>],
-[<minecraft:iron_block>, <immersiveengineering:material:8>, <minecraft:iron_block>]]);
+[<ore:blockSteel>, <immersiveengineering:material:8>, <ore:blockSteel>]]);
 
 recipes.addShaped(<immersiveengineering:stone_decoration:8> * 2,
 [[null, <ore:blockGlass>, null],
@@ -87,7 +87,7 @@ for k, blastnugget in blastnuggets {
 }
 
 mods.immersiveengineering.MetalPress.addRecipe(<minecraft:light_weighted_pressure_plate>, <minecraft:gold_block>, <immersiveengineering:mold>, 1000);
-mods.immersiveengineering.MetalPress.addRecipe(<minecraft:heavy_weighted_pressure_plate>, <minecraft:iron_block>, <immersiveengineering:mold>, 2000);
+mods.immersiveengineering.MetalPress.addRecipe(<minecraft:heavy_weighted_pressure_plate>, <ore:blockSteel>, <immersiveengineering:mold>, 2000);
 mods.immersiveengineering.AlloySmelter.addRecipe(<pyrotech:material:16> * 10, <minecraft:gunpowder>, <minecraft:stonebrick> * 2, 1600);
 mods.immersiveengineering.AlloySmelter.addRecipe(<pyrotech:material:5> * 5, <pyrotech:material:4>, <pyrotech:material:4>, 1600);
 mods.immersiveengineering.ArcFurnace.addRecipe(<ercore:tungsten_carbide_ingot>, <ore:ingotTungsten>, <pyrotech:generated_pile_slag_tungsten>, 160, 1024, [<ore:dustCoke>], "Alloying");

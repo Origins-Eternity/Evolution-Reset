@@ -77,8 +77,11 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
     event.cancel();
 });
 
-events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
-    event.cancel();
+events.onItemToss(function(event as ItemTossEvent) {
+    var itemdrop = event.item.item;
+    if(itemdrop in <ore:banItems>) {
+        event.cancel();
+    }
 });
 
 events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
@@ -183,7 +186,8 @@ var mobs = [
 "mutantbeasts.spider_pig",
 "mutantbeasts.throwable_block",
 "babyskeleton",
-"babyzombie"
+"babyzombie",
+"WitherSkeleton"
 ] as string[];
 
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
@@ -196,6 +200,11 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
             if(entity.definition.name == mob) {
                 event.cancel();
                 break;
+            }
+        }
+        if(entity.definition.name == "Chicken") {
+            if(entity.nbt.asString().contains("IsChickenJockey: 1")) {
+                event.cancel();
             }
         }
     }

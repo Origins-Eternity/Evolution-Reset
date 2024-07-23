@@ -217,8 +217,8 @@ RecipeBuilder.get("basic")
     [<pyrotech:masonry_brick_block>, <minecraft:brick_block>, <pyrotech:material:42>, <minecraft:brick_block>, <pyrotech:masonry_brick_block>],
     [<pyrotech:masonry_brick_block>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:masonry_brick_block>],
     [<pyrotech:masonry_brick_block>, <minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>, <pyrotech:masonry_brick_block>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
-    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
+    [<ore:stoneBasalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasalt>],
+    [<ore:stoneBasalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasalt>]])
 .setName("potter_workstation")
 .setLevelRequired(10)
 .setConsumeExperience(false)
@@ -924,20 +924,6 @@ RecipeBuilder.get("engineer")
 .create();
 }
 
-for recipe4 in recipes.all {
-    if (recipe4.resourceDomain == "comforts") {
-        RecipeBuilder.get("tailor")
-        .setCopy(Copy.byRecipe(recipe4))
-        .setLevelRequired(10)
-        .addTool(<ore:artisansNeedle>, 15)
-        .addTool(<ercore:tool_blueprint>, 2)
-        .setExtraOutputOne(<minecraft:string> * 2, 0.5)	 
-        .setExtraOutputTwo(<minecraft:feather> * 1, 0.5)
-        .setSecondaryIngredients([<ore:string> * 9])
-        .create();
-    }
-}
-
 function awBlackSmithShaped(name as string, output as IItemStack, input as IOreDictEntry){
 RecipeBuilder.get("blacksmith")
  .setShaped([
@@ -1067,4 +1053,62 @@ RecipeBuilder.get("engineer")
 .setSecondaryIngredients([<immersiveengineering:metal:30> * 9])
 .addOutput(table)
 .create();
+}
+
+var bricks = [
+<minecraft:stone_slab:4>,
+<pyrotech:refractory_brick_block>,
+<pyrotech:masonry_brick_block>,
+<pyrotech:masonry_brick_stairs>,
+<pyrotech:refractory_brick_stairs>,
+<pyrotech:refractory_brick_slab>,
+<pyrotech:masonry_brick_wall>,
+<pyrotech:refractory_brick_wall>,
+<minecraft:brick_block>,
+<minecraft:stone_slab:5>,
+<minecraft:stone_slab:3>,
+<minecraft:stone_slab:6>,
+<minecraft:stone_slab:7>,
+<minecraft:brick_block>,
+<minecraft:stone_stairs>,
+<minecraft:stonebrick>,
+<minecraft:stonebrick:3>,
+<minecraft:brick_stairs>,
+<minecraft:stone_brick_stairs>,
+<minecraft:nether_brick_stairs>,
+<minecraft:nether_brick>,
+<minecraft:quartz_stairs>,
+<minecraft:quartz_block:2>,
+<minecraft:quartz_block:1>,
+<minecraft:end_bricks>,
+<minecraft:purpur_block>,
+<minecraft:purpur_pillar>,
+<minecraft:purpur_stairs>,
+<minecraft:purpur_slab>,
+<minecraft:red_nether_brick>,
+<futuremc:brick_wall>,
+<futuremc:granite_wall>,
+<futuremc:andesite_wall>,
+<futuremc:diorite_wall>,
+<futuremc:sandstone_wall>,
+<futuremc:red_sandstone_wall>,
+<futuremc:stone_brick_wall>,
+<futuremc:mossy_stone_brick_wall>,
+<futuremc:nether_brick_wall>,
+<futuremc:red_nether_brick_wall>,
+<futuremc:end_stone_brick_wall>,
+<futuremc:prismarine_wall>,
+<minecraft:mossy_cobblestone>,
+<minecraft:stonebrick:1>,
+] as IItemStack[];
+
+for brick in bricks {
+    RecipeBuilder.get("potter")
+    .setCopy(
+            Copy.byOutput([brick]))
+    .setLevelRequired(5)
+    .addTool(<ore:artisansSpanner>, 3)
+    .addTool(<ore:artisansChisel>, 5)
+    .addOutput(brick)
+    .create();
 }

@@ -175,7 +175,7 @@ recipes.addShaped(<artisanworktables:workshop:6>,
 
 recipes.addShaped(<artisanworktables:workshop:14>,
 [[<pyrotech:material:16>, <minecraft:stone_slab:4>, <pyrotech:material:16>],
-[<ore:stoneGranitePolished>, <artisanworktables:workstation:14>, <ore:stoneGranitePolished>],
+[<ore:stoneGranite>, <artisanworktables:workstation:14>, <ore:stoneGranite>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
 recipes.addShaped(<artisanworktables:workshop>,
