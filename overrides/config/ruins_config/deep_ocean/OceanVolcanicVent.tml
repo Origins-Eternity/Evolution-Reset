@@ -12,7 +12,7 @@ preserve_plants=0
 uniqueMinDistance=1500
 
 rule1=0,100,preserveBlock
-rule2=0,100,stone,stone,stone,lava,stone,stone,stone,lava,lava,lava,lava,gravel,diamond_ore,magma,magma
+rule2=0,100,stone,stone,stone,lava,stone,stone,stone,lava,lava,lava,lava,gravel,stone,magma,magma
 rule3=0,100,flowing_lava,magma,magma
 rule4=0,75,stone,stone,stone,stone,lava,stone,stone,stone,stone,lava,gravel
 rule5=1,70,stone,stone,stone,magma,lava,stone,stone,stone,magma,lava,gravel

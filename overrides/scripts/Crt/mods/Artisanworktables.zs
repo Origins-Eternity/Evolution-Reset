@@ -166,7 +166,7 @@ RecipeBuilder.get("engineer")
 .addOutput(<pyrotech:furnace_core>)
 .create(); 
   
-RecipeBuilder.get("engineer")
+RecipeBuilder.get("basic")
 .setCopy(
         Copy.byOutput([<artisanworktables:workshop:6>]).runAfter())
 .setName("engineer_workshop")

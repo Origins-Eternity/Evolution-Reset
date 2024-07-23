@@ -16,7 +16,7 @@ spawnMaxDistance=0
 
 rule1=0,100,preserveBlock
 rule2=0,100,minecraft:monster_egg-4,monster_egg-2,monster_egg-2,monster_egg-2,monster_egg-3,stonebrick-2,stonebrick-1,stonebrick-0,stonebrick-2,stonebrick-1,stonebrick-0
-rule3=0,100,chisel:blocksteel-4
+rule3=0,100,chisel:tyrian-4
 rule4=0,100,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-0
 rule5=0,100,minecraft:iron_bars-0
 rule6=0,100,minecraft:water-0,chisel:limestone2-7

@@ -21,12 +21,12 @@ adjoining_template=templateparser/BlockHenge1;9;100;-15
 adjoining_template=templateparser/BlockHenge1;15;100;-3
 
 rule1=1,90,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-0,iron_bars-0,iron_bars-0,iron_bars-0,iron_bars-0
-rule2=1,20,iron_block
-rule3=1,20,iron_block
+rule2=1,20,quartz_block
+rule3=1,20,quartz_block
 rule4=2,80,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-0,iron_bars-0,iron_bars-0,iron_bars-0,iron_bars-0
 rule5=0,100,air
 rule6=1,80,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-0,iron_bars-0,iron_bars-0,iron_bars-0,iron_bars-0
-rule7=2,20,iron_block
+rule7=2,20,quartz_block
 
 layer
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1

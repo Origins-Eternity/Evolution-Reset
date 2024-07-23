@@ -79,7 +79,11 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
 
 events.onItemToss(function(event as ItemTossEvent) {
     var itemdrop = event.item.item;
-    if(itemdrop in <ore:banItems>) {
+    var oredicts as string = "";
+    for ore in itemdrop.ores {
+        oredicts += ore.name;
+    }
+    if(oredicts.contains("banItem")) {
         event.cancel();
     }
 });
@@ -93,6 +97,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
 
 events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
     if(event.player.world.isRemote()) return;
+    if(isNull(event.output.definition)) return;
     if(event.output.definition.id == "pyrotech:crude_axe") {
         if(!isNull(event.player.data.wasGivenTip3)) return;
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
@@ -108,7 +113,11 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
     if(event.player.world.isRemote()) return;
     val player = event.player;
     if(isNull(player.currentItem)) return;
-    if(player.currentItem in <ore:banItems>) {
+    var oredicts as string = "";
+    for ore in player.currentItem.ores {
+        oredicts += ore.name;
+    }
+    if(oredicts.contains("banItem")) {
         player.dropItem(true);
     } else if(player.currentItem.name == "item.glassBottle") {
         player.dropItem(true);

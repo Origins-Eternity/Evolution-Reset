@@ -16,7 +16,7 @@ spawnMaxDistance=0
 
 rule1=0,100,preserveBlock
 rule2=0,100,chisel:factory-12
-rule3=0,100,chisel:diamond-2
+rule3=0,100,chisel:factory1-2
 rule4=0,100,chisel:laboratory-7,chisel:laboratory-7,chisel:laboratory-7,chisel:laboratory-7,chisel:laboratory-7,chisel:laboratory-8
 rule5=0,100,chisel:factory-15
 rule6=0,100,chisel:factory-6
@@ -36,7 +36,7 @@ rule19=0,100,minecraft:vine-8
 rule20=0,100,chisel:glassdyedgray-3
 rule21=0,100,minecraft:iron_door-2
 rule22=0,100,minecraft:iron_door-3
-rule23=0,100,chisel:blockcopper-6,chisel:blockgold-6,chisel:blockiron-6,chisel:blocklead-6,chisel:blocknickel-6,chisel:blocksilver-6,chisel:blocksteel-6,chisel:blockplatinum-4,chisel:blockuranium-4,chisel:blockaluminum-1,chisel:blockcopper-1,chisel:blockiron-1,chisel:blocknickel-1,chisel:blocksilver-1
+rule23=0,100,chisel:blockcopper-6,chisel:blockgold-6,chisel:factory-6,chisel:blocklead-6,chisel:blocknickel-6,chisel:blocksilver-6,chisel:tyrian-6,chisel:blockplatinum-4,chisel:blockuranium-4,chisel:blockaluminum-1,chisel:blockcopper-1,chisel:factory-1,chisel:blocknickel-1,chisel:blocksilver-1
 rule24=0,100,chisel:glasspanedyedgray-4
 rule25=0,100,minecraft:iron_door-9
 rule26=0,100,minecraft:vine-13

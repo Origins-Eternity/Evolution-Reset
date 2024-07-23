@@ -32,7 +32,7 @@ rule15=0,100,chisel:brownstone-1,chisel:brownstone-1,chisel:brownstone-0
 rule16=0,100,minecraft:quartz_stairs-1
 rule17=0,70,minecraft:stone_slab-7
 rule18=0,100,chisel:laboratory-12
-rule19=0,100,chisel:iron-5
+rule19=0,100,chisel:factory-5
 rule20=0,100,minecraft:iron_bars-0
 rule21=0,100,minecraft:stone_brick_stairs-7
 rule22=0,100,minecraft:stone_brick_stairs-6
@@ -66,7 +66,7 @@ rule49=0,100,minecraft:vine-12
 rule50=0,100,minecraft:vine-2
 rule51=0,100,minecraft:vine-6
 rule52=0,100,minecraft:vine-5
-rule53=0,100,chisel:diamond-2
+rule53=0,100,chisel:factory1-2
 rule54=0,100,minecraft:stained_glass_pane-14
 
 layer
