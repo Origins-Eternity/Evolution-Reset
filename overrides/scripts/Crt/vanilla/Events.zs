@@ -97,7 +97,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
 
 events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
     if(event.player.world.isRemote()) return;
-    if(isNull(event.output.definition)) return;
+    if(isNull(event.output)) return;
     if(event.output.definition.id == "pyrotech:crude_axe") {
         if(!isNull(event.player.data.wasGivenTip3)) return;
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
@@ -110,18 +110,18 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 });
 
 events.onPlayerInteract(function(event as PlayerInteractEvent) {
-    if(event.player.world.isRemote()) return;
-    val player = event.player;
-    if(isNull(player.currentItem)) return;
+    if(isNull(event.player.currentItem)) return;
     var oredicts as string = "";
-    for ore in player.currentItem.ores {
+    for ore in event.player.currentItem.ores {
         oredicts += ore.name;
     }
     if(oredicts.contains("banItem")) {
-        player.dropItem(true);
-    } else if(player.currentItem.name == "item.glassBottle") {
-        player.dropItem(true);
+        event.player.dropItem(true);
+    } else if(event.player.currentItem.name == "item.glassBottle") {
+        event.player.dropItem(true);
     }
+    if(event.player.world.isRemote()) return;
+    val player = event.player;
     if(!isNull(player.data.wasGivenTip2)) return;
     if(isNull(player.data.wasGivenTip1)) return;
     player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + "> ") + ITextComponent.fromTranslation("crafttweaker.message.tip2"));
