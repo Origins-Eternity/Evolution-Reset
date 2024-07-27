@@ -49,7 +49,6 @@ RecipeBuilder.get("basic")
 .addTool(<ore:artisansCarver>, 10)
 .setExtraOutputOne(<pyrotech:material:23> * 2, 0.9)
 .setExtraOutputTwo(<pyrotech:material:23> * 3, 0.1)
-.addOutput(<artisanworktables:workshop:5>)
 .create();
   
 RecipeBuilder.get("blacksmith")
@@ -97,7 +96,6 @@ RecipeBuilder.get("basic")
 .addTool(<ercore:blacksmith_workshop_blueprint>, 2)
 .addTool(<ore:artisansCarver>, 30) 
 .setFluid(<liquid:lava> * 1000)
-.addOutput(<artisanworktables:workshop:3>)
 .create();
 
 RecipeBuilder.get("basic")
@@ -109,7 +107,6 @@ RecipeBuilder.get("basic")
 .setExtraOutputTwo(<pyrotech:rock:7> * 5, 0.4)	
 .addTool(<ore:artisansHandsaw>, 15)
 .addTool(<ore:artisansCarver>, 10) 
-.addOutput(<immersiveengineering:wooden_device0>)
 .create();
 
 RecipeBuilder.get("basic")
@@ -121,7 +118,6 @@ RecipeBuilder.get("basic")
 .setExtraOutputTwo(<pyrotech:rock:7> * 3, 0.5)	
 .addTool(<ore:artisansHandsaw>, 10)
 .addTool(<ore:artisansCarver>, 10) 
-.addOutput(<immersiveengineering:wooden_device0:1>)
 .create();
   
 RecipeBuilder.get("basic")
@@ -176,7 +172,6 @@ RecipeBuilder.get("basic")
 .addTool(<ercore:engineer_workshop_blueprint>, 2)
 .setExtraOutputOne(<immersiveengineering:metal:20> * 3, 0.8)	
 .setExtraOutputTwo(<immersiveengineering:metal:28> * 7, 0.2)	
-.addOutput(<artisanworktables:workshop:6>)
 .create();
 
 RecipeBuilder.get("engineer")
@@ -209,7 +204,6 @@ RecipeBuilder.get("basic")
 .setExtraOutputTwo(<pyrotech:material:23> * 3, 0.5)	
 .addTool(<ore:artisansTrowel>, 15)
 .addTool(<ercore:potter_workshop_blueprint>, 2)
-.addOutput(<artisanworktables:workshop:14>)
 .create();
 
 RecipeBuilder.get("basic")
@@ -404,7 +398,6 @@ RecipeBuilder.get("basic")
 .addTool(<ore:artisansHammer>, 25)
 .setExtraOutputOne(<minecraft:string>, 0.4)	 
 .setExtraOutputTwo(<minecraft:gold_nugget> * 2, 0.6)	
-.addOutput(<artisanworktables:workshop>)
 .create();
   
 RecipeBuilder.get("tailor")
@@ -532,7 +525,6 @@ for dye in color {
     .setCopy(
             Copy.byOutput([item]).runAfter())
     .setLevelRequired(5)
-    .addOutput(item)
     .create();
     }
 }
@@ -789,7 +781,6 @@ RecipeBuilder.get("basic")
 .setExtraOutputThree(<minecraft:leather> * 6, 0.5)  
 .addTool(<ercore:tanner_workshop_blueprint>, 2)
 .addTool(<ore:artisansPunch>, 15)  
-.addOutput(<artisanworktables:workshop:13>)
 .create();
   
 RecipeBuilder.get("tanner")
@@ -1109,6 +1100,5 @@ for brick in bricks {
     .setLevelRequired(5)
     .addTool(<ore:artisansSpanner>, 3)
     .addTool(<ore:artisansChisel>, 5)
-    .addOutput(brick)
     .create();
 }

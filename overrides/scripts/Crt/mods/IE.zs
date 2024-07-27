@@ -66,7 +66,7 @@ recipes.addShaped("ie_hammer", <immersiveengineering:tool>,
 
 recipes.addShaped(<immersiveengineering:wooden_device0>,
 [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
-[<ore:plankTreatedWood>, <minecraft:chest>, <ore:plankTreatedWood>],
+[<ore:plankTreatedWood>, <pyrotech:crate_stone>, <ore:plankTreatedWood>],
 [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]]);
 
 var blastnuggets = [

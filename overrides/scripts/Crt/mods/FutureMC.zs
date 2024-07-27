@@ -15,6 +15,6 @@ SmithingTable.addRecipe(<galacticraftcore:steel_boots>, <futuremc:netherite_ingo
 
 recipes.remove(<futuremc:barrel>);
 recipes.addShaped(<futuremc:barrel>,
-[[<pyrotech:material:23>, <pyrotech:material:23>, <pyrotech:material:23>],
-[<pyrotech:material:23>, <pyrotech:crate_stone>, <pyrotech:material:23>],
-[<pyrotech:material:23>, <pyrotech:material:23>, <pyrotech:material:23>]]);
+[[<pyrotech:material:20>, <pyrotech:material:20>, <pyrotech:material:20>],
+[<pyrotech:material:20>, <pyrotech:crate_stone>, <pyrotech:material:20>],
+[<pyrotech:material:20>, <pyrotech:material:20>, <pyrotech:material:20>]]);

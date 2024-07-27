@@ -193,22 +193,22 @@ recipes.addShaped("bow_drill", <pyrotech:bow_drill>,
 [null, <ore:twine>, <ore:stickWood>],
 [<ore:stickWood>, <ore:stickWood>, null]]);
 
-recipes.addShaped("birck_kiln", <pyrotech:brick_kiln>,
+recipes.addShaped("brick_kiln", <pyrotech:brick_kiln>,
 [[<pyrotech:refractory_brick_block>, <pyrotech:material:5>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:stone_kiln>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>]]);
 
-recipes.addShaped("birck_oven", <pyrotech:brick_oven>,
+recipes.addShaped("brick_oven", <pyrotech:brick_oven>,
 [[<pyrotech:refractory_brick_block>, <pyrotech:material:5>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:stone_oven>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>]]);
 
-recipes.addShaped("birck_sawmill", <pyrotech:brick_sawmill>,
+recipes.addShaped("brick_sawmill", <pyrotech:brick_sawmill>,
 [[<pyrotech:refractory_brick_block>, <pyrotech:material:5>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:stone_sawmill>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>]]);
 
-recipes.addShaped("birck_crucible", <pyrotech:brick_crucible>,
+recipes.addShaped("brick_crucible", <pyrotech:brick_crucible>,
 [[<pyrotech:refractory_brick_block>, <pyrotech:material:5>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:stone_crucible>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>]]);

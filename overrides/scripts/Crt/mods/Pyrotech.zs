@@ -44,7 +44,7 @@ for items in compacting_bin_recipes {
 }
 
 for recipe in recipes.all {
-    if (recipe.fullResourceDomain.contains("pyrotech")) {
+    if (recipe.fullResourceDomain.contains("pyrotech") || recipe.fullResourceDomain.contains("waystones")) {
         var recipelocation = recipe.fullResourceDomain;
         Worktable.whitelistVanillaRecipes([recipelocation]);
     }
@@ -328,19 +328,21 @@ pyrWorktableCreate("artisans", "_driver_flint", <artisanworktables:artisans_driv
 BrickKiln.addRecipe("searedbrick_from_unfired", <tconstruct:materials>, <ercore:searedbrick_unfired>, 8000, 0.5, [<pyrotech:material:7>*6]);
 BrickKiln.addRecipe("netherbrick_from_netherrack", <minecraft:netherbrick>, <minecraft:netherrack>, 6000, 0.3, [<pyrotech:rock_netherrack>*4]);
 BrickOven.addRecipe("blaze_powder_from_blaze_rod", <minecraft:blaze_powder>, <minecraft:blaze_rod>);
-StoneCrucible.addRecipe("liquid_dirt_from_dirt", <liquid:dirt> * 500, <ore:dirt>, 3 * 60 * 20, true);
-StoneCrucible.addRecipe("liquid_sugarcane_from_sugarcane", <liquid:sugarcane> * 125, <ore:sugarcane>, 3 * 60 * 20, true);
-StoneCrucible.addRecipe("liquid_copper_from_copper_nugget", <liquid:copper> * 16, <ore:nuggetCopper>, 5 * 60 * 20, true);
-StoneCrucible.addRecipe("liquid_tin_from_tin_nugget", <liquid:tin> * 16, <ore:nuggetTin>, 5 * 60 * 20, true);
-StoneCrucible.addRecipe("liquid_bronze_from_bronze_nugget", <liquid:bronze> * 16, <ore:nuggetBronze>, 4 * 60 * 20, true);
+StoneCrucible.addRecipe("liquid_dirt_from_dirt", <liquid:dirt> * 500, <ore:dirt>, 2 * 60 * 20, true);
+StoneCrucible.addRecipe("liquid_sugarcane_from_sugarcane", <liquid:sugarcane> * 125, <ore:sugarcane>, 2 * 60 * 20, true);
+StoneCrucible.addRecipe("liquid_copper_from_copper_nugget", <liquid:copper> * 16, <ore:nuggetCopper>, 4 * 60 * 20, true);
+StoneCrucible.addRecipe("liquid_tin_from_tin_nugget", <liquid:tin> * 16, <ore:nuggetTin>, 4 * 60 * 20, true);
+StoneCrucible.addRecipe("liquid_bronze_from_bronze_nugget", <liquid:bronze> * 16, <ore:nuggetBronze>, 3 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_copper_from_copper_ingot", <liquid:copper> * 144, <ore:ingotCopper>, 5 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_tin_from_tin_ingot", <liquid:tin> * 144, <ore:ingotTin>, 5 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_silver_from_silver_ingot", <liquid:silver> * 144, <ore:ingotSilver>, 4 * 60 * 20, true);
-StoneCrucible.addRecipe("liquid_silver_from_silver_nugget", <liquid:silver> * 16, <ore:nuggetSilver>, 4 * 60 * 20, true);
+StoneCrucible.addRecipe("liquid_silver_from_silver_nugget", <liquid:silver> * 16, <ore:nuggetSilver>, 3 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_gold_from_gold_ingot", <liquid:gold> * 144, <ore:ingotGold>, 4 * 60 * 20, true);
-StoneCrucible.addRecipe("liquid_gold_from_gold_nugget", <liquid:gold> * 16, <ore:nuggetGold>, 4 * 60 * 20, true);
-BrickCrucible.addRecipe("lime_slurry_from_slaked_lime", <liquid:slaked_lime> * 1000, <ercore:slakedlime_block>, 5 * 60 * 20);
-BrickCrucible.addRecipe("liquid_iron_from_iron_nugget", <liquid:iron> * 16, <ore:nuggetIron>, 5 * 60 * 20);
+StoneCrucible.addRecipe("liquid_gold_from_gold_nugget", <liquid:gold> * 16, <ore:nuggetGold>, 3 * 60 * 20, true);
+StoneCrucible.addRecipe("liquid_gold_from_gold_shard", <liquid:gold> * 16, <pyrotech:material:34>, 3 * 60 * 20, true);
+BrickCrucible.addRecipe("lime_slurry_from_slaked_lime", <liquid:slaked_lime> * 1000, <ercore:slakedlime_block>, 3 * 60 * 20);
+BrickCrucible.addRecipe("liquid_iron_from_iron_nugget", <liquid:iron> * 16, <ore:nuggetIron>, 4 * 60 * 20);
+BrickCrucible.addRecipe("liquid_iron_from_iron_shard", <liquid:iron> * 16, <pyrotech:material:19>, 4 * 60 * 20);
 BrickCrucible.addRecipe("liquid_iron_from_iron_ingot", <liquid:iron> * 144, <ore:ingotIron>, 5 * 60 * 20);
 StoneSawmill.addRecipe("treated_stick_from_tarred_board", <immersiveengineering:material>, <pyrotech:material:23>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0, true);
 BrickSawmill.addRecipe("cement_powder_from_soil", <ercore:cement_powder> * 9, <tconstruct:soil>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
