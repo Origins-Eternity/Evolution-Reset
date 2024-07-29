@@ -79,11 +79,7 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
 
 events.onItemToss(function(event as ItemTossEvent) {
     var itemdrop = event.item.item;
-    var oredicts as string = "";
-    for ore in itemdrop.ores {
-        oredicts += ore.name;
-    }
-    if(oredicts.contains("banItem")) {
+    if(itemdrop in <ore:banItem>) {
         event.cancel();
     }
 });
@@ -95,7 +91,8 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
     if(isNull(event.player.currentItem)) {
         ser.executeCommand(server, "tpd " + event.player.name + " 0");
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
-    } else if(event.player.currentItem.definition.name != "botania:rune1") {
+    } else {
+        if(event.player.currentItem in <ore:runeFireB>) return;
         ser.executeCommand(server, "tpd " + event.player.name + " 0");
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
     }
@@ -117,11 +114,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 
 events.onPlayerInteract(function(event as PlayerInteractEvent) {
     if(isNull(event.player.currentItem)) return;
-    var oredicts as string = "";
-    for ore in event.player.currentItem.ores {
-        oredicts += ore.name;
-    }
-    if(oredicts.contains("banItem")) {
+    if(event.player.currentItem in <ore:banItem>) {
         event.player.dropItem(true);
     } else if(event.player.currentItem.name == "item.glassBottle") {
         event.player.dropItem(true);
@@ -136,14 +129,10 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
 
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
     if(event.entity instanceof IPlayer) return;
-    var oredicts as string = "";
     for drop in event.drops {
-        for ore in drop.item.ores {
-            oredicts += ore.name;
+        if(drop.item in <ore:banItem>) {
+            event.cancel();
         }
-    }
-    if(oredicts.contains("banItem")) {
-        event.cancel();
     }
 });
 
