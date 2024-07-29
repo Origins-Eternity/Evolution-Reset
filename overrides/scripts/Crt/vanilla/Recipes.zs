@@ -194,6 +194,11 @@ recipes.addShaped(<artisanworktables:workshop:13>,
 [<pyrotech:planks_tarred>, <artisanworktables:workstation:13>, <pyrotech:planks_tarred>],
 [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>]]);
 
+recipes.addShaped(<artisanworktables:workshop:7>,
+[[<ore:blockLapis>, <ore:plateSteel>, <ore:blockLapis>],
+[<ore:blockLapis>, <artisanworktables:workstation:7>, <ore:blockLapis>],
+[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
+
 recipes.addShaped("bow_drill", <pyrotech:bow_drill>,
 [[<ore:stickWood>, null, <ore:stickWood>],
 [null, <ore:twine>, <ore:stickWood>],
