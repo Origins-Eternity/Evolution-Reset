@@ -50,6 +50,9 @@ var ingot = [
 <immersiveengineering:metal:2>,
 <immersiveengineering:metal:4>,
 <immersiveengineering:metal:5>,
+<botania:manaresource>,
+<botania:manaresource:4>,
+<botania:manaresource:7>,
 <tconstruct:ingots>,
 <tconstruct:ingots:1>,
 <tconstruct:ingots:2>,
@@ -75,6 +78,9 @@ var nugget = [
 <immersiveengineering:metal:27>,
 <immersiveengineering:metal:28>,
 <immersiveengineering:metal:29>,
+<botania:manaresource:17>,
+<botania:manaresource:18>,
+<botania:manaresource:19>,
 <tconstruct:nuggets>,
 <tconstruct:nuggets:1>,
 <tconstruct:nuggets:2>,
@@ -158,7 +164,7 @@ for j, plank in myPlanks {
 }
 }
 
-recipes.addShaped(<artisanworktables:workshop:5>,
+recipes.addShaped("basic_workshop", <artisanworktables:workshop:5>,
 [[<ore:ingotCopper>, <ore:plateCopper>, <ore:ingotCopper>],
 [<ore:blockCopper>, <artisanworktables:workstation:5>, <ore:blockCopper>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
@@ -173,7 +179,7 @@ recipes.addShaped(<artisanworktables:workshop:6>,
 [<ore:blockSteel>, <artisanworktables:workstation:6>, <ore:blockSteel>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
-recipes.addShaped(<artisanworktables:workshop:14>,
+recipes.addShaped("potter_workshop", <artisanworktables:workshop:14>,
 [[<pyrotech:material:16>, <minecraft:stone_slab:4>, <pyrotech:material:16>],
 [<ore:stoneGranite>, <artisanworktables:workstation:14>, <ore:stoneGranite>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);

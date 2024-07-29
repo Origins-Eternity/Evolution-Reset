@@ -44,7 +44,7 @@ if (!event.player.world.isRemote()) {
         if(!isNull(event.player.data.wasGivenTip1)) return;
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
         event.player.update({wasGivenTip1: true});
-    } else if((id == "immersiveengineering:wooden_device0") && (meta == 0)) {
+    } else if(((id == "immersiveengineering:wooden_device0") && (meta == 0)) || (id == "minecraft:dispenser")) {
         var current = event.player.currentItem;
         if (isNull(current)) {
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.locked"));

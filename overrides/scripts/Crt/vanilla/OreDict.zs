@@ -335,7 +335,8 @@ var tool = [
 <pyrotech:obsidian_hoe:*>,
 <pyrotech:obsidian_pickaxe:*>,
 <pyrotech:obsidian_shovel:*>,
-<pyrotech:obsidian_sword:*>
+<pyrotech:obsidian_sword:*>,
+<botania:terrapick>
 ] as IItemStack[];
 
 for items in tool {	

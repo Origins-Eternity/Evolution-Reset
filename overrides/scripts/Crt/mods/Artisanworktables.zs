@@ -1102,3 +1102,87 @@ for brick in bricks {
     .addTool(<ore:artisansChisel>, 5)
     .create();
 }
+
+RecipeBuilder.get("mage")
+.setShaped([
+    [null, null, null],
+    [<botania:livingrock>, <botania:manabottle>, <botania:livingrock>],
+    [<botania:livingrock>, <botania:livingrock>, <botania:livingrock>]])
+.setName("pool")
+.setLevelRequired(5)
+.setExtraOutputOne(<minecraft:dye:4> * 3, 0.4)	 
+.setExtraOutputTwo(<pyrotech:rock:7> * 2, 0.5)	
+.addTool(<ercore:magic_pool_blueprint>, 2)
+.addTool(<ore:artisansGrimoire>, 15)
+.addOutput(<botania:pool>)
+.create();
+
+RecipeBuilder.get("mage")
+.setShaped([
+    [<ore:cobblestone>, <botania:petal:*>, <botania:mushroom:*>, <botania:petal:*>, <ore:cobblestone>],
+    [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>],
+    [null, <ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>, null],
+    [null, <ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>, null],
+    [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]])
+.setName("petal_apothecary")
+.setLevelRequired(10)
+.setMaximumTier(2)
+.setExtraOutputOne(<minecraft:dye:4> * 4, 0.2)	 
+.setExtraOutputTwo(<pyrotech:rock> * 3, 0.2)	
+.setExtraOutputThree(<minecraft:stone_slab:3> * 1, 0.6)	 
+.addTool(<ore:artisansGrimoire>, 20)
+.addTool(<ore:artisansAthame>, 15)
+.addTool(<ercore:petal_apothecary_blueprint>, 2)
+.addOutput(<botania:altar>)
+.create();
+
+RecipeBuilder.get("mage")
+.setShaped([
+    [<ore:livingrock>, <minecraft:brewing_stand>, <minecraft:brewing_stand>, <minecraft:brewing_stand>, <ore:livingrock>],
+    [<ore:livingrock>, <ore:runeManaB>, <ore:runeManaB>, <ore:runeManaB>, <ore:livingrock>],
+    [<ore:livingrock>, <minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>, <ore:livingrock>],
+    [<ore:livingrock>, <botania:storage>, <botania:storage>, <botania:storage>, <ore:livingrock>],
+    [<ore:livingrock>, <botania:storage>, <botania:storage>, <botania:storage>, <ore:livingrock>]])
+.setName("brewery")
+.setLevelRequired(15)
+.setConsumeExperience(false)
+.setMaximumTier(2)
+.addTool(<ore:artisansChisel>, 15)
+.addTool(<ercore:plant_brewing_stand_blueprint>, 2)
+.addTool(<ore:artisansHammer>, 40)
+.setExtraOutputOne(<minecraft:blaze_powder> * 2, 0.2)	 
+.setExtraOutputTwo(<botania:manaresource>, 0.6)	
+.setExtraOutputThree(<minecraft:iron_nugget> * 6, 0.2)
+.addOutput(<botania:brewery>)
+.create();
+
+RecipeBuilder.get("basic")
+.setShaped([
+    [<ore:blockLapis>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockLapis>],
+    [<ore:blockLapis>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <ore:blockLapis>],
+    [<ore:blockLapis>, <ore:blockLapis>, <ore:blockLapis>, <ore:blockLapis>, <ore:blockLapis>],
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
+    [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])
+.setName("mage_workstation")
+.setMaximumTier(2)
+.setExtraOutputOne(<immersiveengineering:metal:28> * 5, 0.5)	 
+.setExtraOutputTwo(<pyrotech:material:16> * 2, 0.2)	
+.setExtraOutputThree(<minecraft:dye:4> * 6, 0.3)	 
+.addTool(<ore:artisansCarver>, 15)
+.addTool(<ercore:mage_workstation_blueprint>, 2)
+.addTool(<ore:artisansHammer>, 30)
+.addOutput(<artisanworktables:workstation:7>)
+.create();
+
+RecipeBuilder.get("basic")
+ .setCopy(
+        Copy.byOutput([<artisanworktables:workshop:7>]).runAfter())
+.setName("mage_workshop")
+.setLevelRequired(15)
+.setMaximumTier(2)
+.setExtraOutputOne(<minecraft:dye:4> * 5, 0.8)	 
+.setExtraOutputTwo(<pyrotech:material:23> * 6, 0.2)	
+.addTool(<ore:artisansAthame>, 17)
+.addTool(<ercore:mage_workshop_blueprint>, 2)
+.addOutput(<artisanworktables:workshop:7>)
+.create();

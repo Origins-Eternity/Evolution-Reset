@@ -122,6 +122,30 @@
                     "Count": 20
                 },
                 "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:mage_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:mage_workshop_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 20
+                },
+                "CareerLevel": 2
             }
         ]
     }

@@ -38,6 +38,42 @@
                     "Count": 30
                 },
                 "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:plant_brewing_stand_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 30
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:petal_apothecary_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 30
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "ercore:magic_pool_blueprint",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 30
+                },
+                "CareerLevel": 2
             }
         ]
     }

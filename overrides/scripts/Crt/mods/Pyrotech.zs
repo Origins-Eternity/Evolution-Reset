@@ -153,7 +153,9 @@ var worktable_recipes = [
 "crafttweaker:brick_kiln",
 "crafttweaker:brick_oven",
 "crafttweaker:brick_sawmill",
-"crafttweaker:brick_crucible"
+"crafttweaker:brick_crucible",
+"crafttweaker:potter_workshop",
+"crafttweaker:basic_workshop"
 ] as string[];
 
 for items in worktable_recipes {
@@ -226,7 +228,7 @@ Worktable.buildShaped(<artisanworktables:workstation:5>, [
 ]
 )
 .setName("custom_recipe_workstation5")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 20)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 20)
 .register();
 
 Worktable.buildShaped(<artisanworktables:workstation:14>, [
@@ -235,7 +237,7 @@ Worktable.buildShaped(<artisanworktables:workstation:14>, [
 [<ore:stoneBasalt>, <pyrotech:masonry_brick_block>, <ore:stoneBasalt>]
 ])
 .setName("custom_recipe_workstation14")
-.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, 30)
+.setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 30)
 .register();
 
 Worktable.buildShaped(<pyrotech:drying_rack:1>, [
@@ -271,15 +273,6 @@ Worktable.buildShaped(<pyrotech:worktable_stone>, [
 [<pyrotech:material:16>, <pyrotech:masonry_brick_block>, <pyrotech:material:16>]
 ])
 .setName("custom_recipe_stoneworktable")
-.setTool(<pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
-.register();
-
-Worktable.buildShaped(<galacticraftcore:basic_block_core:9>, [
-[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
-[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
-[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>]
-])
-.setName("custom_recipe_copperblock")
 .setTool(<pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, 10)
 .register();
 
@@ -370,6 +363,9 @@ IroncladAnvil.addRecipe("nugget_from_ingot_manyullyn", <tconstruct:nuggets:2> * 
 IroncladAnvil.addRecipe("nugget_from_ingot_knightslime", <tconstruct:nuggets:3> * 9, <ore:ingotKnightslime>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_alubrass", <tconstruct:nuggets:5> * 9, <ore:ingotAlubrass>, 20, "hammer");
 IroncladAnvil.addRecipe("steel_plate_from_block", <immersiveengineering:metal:38> * 3, <ore:blockSteel>, 20, "hammer");
+IroncladAnvil.addRecipe("nugget_from_ingot_manasteel", <botania:manaresource:17> * 9, <ore:ingotManasteel>, 20, "hammer");
+IroncladAnvil.addRecipe("nugget_from_ingot_terrasteel", <botania:manaresource:18> * 9, <ore:ingotTerrasteel>, 20, "hammer");
+IroncladAnvil.addRecipe("nugget_from_ingot_elvenelementium", <botania:manaresource:19> * 9, <ore:ingotElvenElementium>, 20, "hammer");
 
 GraniteAnvil.addRecipe("nugget_from_ingot_gold", <minecraft:gold_nugget> * 9, <ore:ingotGold>, 10, "hammer", true);
 GraniteAnvil.addRecipe("nugget_from_ingot_copper", <immersiveengineering:metal:20> * 9, <ore:ingotCopper>, 10, "hammer", true);
