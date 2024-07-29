@@ -29,7 +29,8 @@ val banlist = [
 <ercore:large_backpack_blueprint>,
 <ercore:toxic_mask_blueprint>,
 <botania:manabottle>,
-<minecraft:tnt>
+<minecraft:tnt>,
+<botania:overgrowthseed>
 ] as IItemStack[];
 
 for items in banlist {

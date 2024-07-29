@@ -89,9 +89,15 @@ events.onItemToss(function(event as ItemTossEvent) {
 });
 
 events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
+    if(event.player.world.isRemote()) return;
+    if(event.toWorld.dimension != -1) return;
     var ser = server.commandManager as ICommandManager;
-    if(event.toWorld.dimension == 1) {
-        ser.executeCommand(server, "gameruled set keepInventory true");
+    if(isNull(player.currentItem)) {
+        ser.executeCommand(server, "tpd " + event.player.name + " 0");
+        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
+    } else if(event.player.currentItem.definition.name != "botania:rune1") {
+        ser.executeCommand(server, "tpd " + event.player.name + " 0");
+        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
     }
 });
 

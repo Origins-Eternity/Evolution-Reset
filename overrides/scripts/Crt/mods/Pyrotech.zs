@@ -142,6 +142,7 @@ var worktable_recipes = [
 "tconstruct:tools/table/stencil_table", 
 "tconstruct:tools/table/part_builder",
 "tconstruct:smeltery/casting_table",
+"tconstruct:smeltery/casting_basin",
 "tconstruct:smeltery/channel",
 "antiqueatlas:atlas_blank",
 "minecraft:compass",
