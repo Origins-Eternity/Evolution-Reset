@@ -92,7 +92,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
     if(event.player.world.isRemote()) return;
     if(event.toWorld.dimension != -1) return;
     var ser = server.commandManager as ICommandManager;
-    if(isNull(player.currentItem)) {
+    if(isNull(event.player.currentItem)) {
         ser.executeCommand(server, "tpd " + event.player.name + " 0");
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
     } else if(event.player.currentItem.definition.name != "botania:rune1") {

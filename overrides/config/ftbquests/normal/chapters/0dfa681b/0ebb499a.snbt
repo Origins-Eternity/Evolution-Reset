@@ -24,5 +24,17 @@
 		items: [{
 			item: "pyrotech:brick_sawmill"
 		}]
+	},
+	{
+		uid: "29df9503",
+		type: "item",
+		items: [{
+			item: "pyrotech:brick_tank"
+		}]
+	}],
+	rewards: [{
+		uid: "29b5a908",
+		type: "xp_levels",
+		xp_levels: 1
 	}]
 }

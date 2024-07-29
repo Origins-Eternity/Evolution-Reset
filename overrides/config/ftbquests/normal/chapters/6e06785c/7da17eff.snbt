@@ -1,0 +1,19 @@
+{
+	x: 2.5d,
+	y: 5.0d,
+	dependencies: [
+		"b408c9fd"
+	],
+	tasks: [{
+		uid: "c1fda03b",
+		type: "item",
+		items: [{
+			item: "botania:altar"
+		}]
+	}],
+	rewards: [{
+		uid: "c3856570",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

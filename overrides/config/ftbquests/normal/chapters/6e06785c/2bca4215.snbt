@@ -1,0 +1,19 @@
+{
+	x: 5.5d,
+	y: 7.0d,
+	dependencies: [
+		"daa6360c"
+	],
+	tasks: [{
+		uid: "e2734731",
+		type: "item",
+		items: [{
+			id: "botania:twigwand",
+			tag: {
+				color1: 0,
+				color2: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -24,5 +24,17 @@
 		items: [{
 			item: "tconstruct:cast_custom"
 		}]
+	},
+	{
+		uid: "780277c8",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "04834f26",
+		type: "xp_levels",
+		xp_levels: 1
 	}]
 }

@@ -1,0 +1,28 @@
+{
+	x: 9.0d,
+	y: 6.0d,
+	dependencies: [
+		"623a4ee0"
+	],
+	tasks: [{
+		uid: "0b2ecc0d",
+		type: "item",
+		items: [{
+			item: "botania:manabottle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "75050af8",
+		type: "item",
+		items: [{
+			item: "botania:pool"
+		}]
+	}],
+	rewards: [{
+		uid: "96ff287d",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

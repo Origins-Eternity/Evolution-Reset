@@ -1,0 +1,21 @@
+{
+	x: 5.5d,
+	y: 5.0d,
+	dependencies: [
+		"daa6360c"
+	],
+	tasks: [{
+		uid: "fb867977",
+		type: "item",
+		items: [{
+			item: "botania:livingrock"
+		}]
+	},
+	{
+		uid: "f5248760",
+		type: "item",
+		items: [{
+			item: "botania:spreader"
+		}]
+	}]
+}
