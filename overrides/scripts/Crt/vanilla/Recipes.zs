@@ -225,3 +225,17 @@ recipes.addShaped("brick_crucible", <pyrotech:brick_crucible>,
 [<pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>]]);
 
 brewing.addBrew(<minecraft:potion>, <minecraft:chorus_fruit>, <minecraft:dragon_breath>);
+
+var books = [
+<ftbquests:book>,
+<spiceoflife:bookfoodjournal>,
+<botania:lexicon>,
+<pyrotech:book>,
+<tconstruct:book>,
+<immersiveengineering:tool:3>,
+<conarm:book>
+] as IItemStack[];
+
+for book in books {
+    addShapeless(book * 2, [book, <minecraft:writable_book>]);
+}

@@ -147,6 +147,7 @@ var worktable_recipes = [
 "antiqueatlas:atlas_blank",
 "minecraft:compass",
 "minecraft:piston",
+"minecraft:writable_book",
 "locks:wood_lock_pick",
 "locks:gold_lock_pick",
 "locks:iron_lock_pick",
