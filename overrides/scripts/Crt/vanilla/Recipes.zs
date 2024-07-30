@@ -237,5 +237,5 @@ var books = [
 ] as IItemStack[];
 
 for book in books {
-    addShapeless(book * 2, [book, <minecraft:writable_book>]);
+    recipes.addShapeless(book * 2, [book, <minecraft:writable_book>]);
 }
