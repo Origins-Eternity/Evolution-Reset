@@ -36,5 +36,10 @@
 		uid: "04834f26",
 		type: "xp_levels",
 		xp_levels: 1
+	},
+	{
+		uid: "4c00ed88",
+		type: "item",
+		item: "tconstruct:book"
 	}]
 }

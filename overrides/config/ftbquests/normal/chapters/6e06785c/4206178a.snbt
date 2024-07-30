@@ -17,11 +17,6 @@
 		items: [{
 			item: "botania:rune 1 1"
 		}]
-	},
-	{
-		uid: "f91f38b9",
-		type: "dimension",
-		dim: -1
 	}],
 	rewards: [{
 		uid: "3eea6d90",

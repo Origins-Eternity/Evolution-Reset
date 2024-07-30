@@ -39,5 +39,10 @@
 				}
 			}
 		}
+	},
+	{
+		uid: "676e854b",
+		type: "item",
+		item: "spiceoflife:bookfoodjournal"
 	}]
 }

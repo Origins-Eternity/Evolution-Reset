@@ -15,5 +15,13 @@
 		uid: "c3856570",
 		type: "xp_levels",
 		xp_levels: 1
+	},
+	{
+		uid: "3a96f3a0",
+		type: "item",
+		item: {
+			id: "botania:lexicon",
+			tag: {}
+		}
 	}]
 }

@@ -23,5 +23,10 @@
 		type: "xp_levels",
 		team_reward: true,
 		xp_levels: 1
+	},
+	{
+		uid: "2648fed9",
+		type: "item",
+		item: "conarm:book"
 	}]
 }
