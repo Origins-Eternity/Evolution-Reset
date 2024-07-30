@@ -377,14 +377,14 @@ GraniteAnvil.addRecipe("gold_plate_from_block", <immersiveengineering:metal:40> 
 GraniteAnvil.addRecipe("flint_from_limestone", <minecraft:flint> * 3, <ore:stoneLimestone>, 15, "pickaxe", true);
 
 CompactingBin.addRecipe("coal_block_from_coal", <minecraft:coal_block>, <ore:itemCoal>, 9);
+CompactingBin.addRecipe("slakedlime_block_from_slakedlime", <ercore:slakedlime_block>, <pyrotech:material:8>, 9);
 MechanicalCompactor.removeRecipes(<minecraft:grass>);
 MechanicalCompactor.addRecipe("iron_block_from_ingot", <minecraft:iron_block>, <ore:ingotIron>, 9);
 MechanicalCompactor.addRecipe("gold_block_from_ingot", <minecraft:gold_block>, <ore:ingotGold>, 9);
 MechanicalCompactor.addRecipe("diamond_block_from_diamond", <minecraft:diamond_block>, <ore:gemDiamond>, 9);
 MechanicalCompactor.addRecipe("emerald_block_from_emerald", <minecraft:emerald_block>, <ore:gemEmerald>, 9);
 MechanicalCompactor.addRecipe("slime_block_from_slimeball", <minecraft:slime>, <ore:slimeball>, 9);
-MechanicalCompactor.addRecipe("slakedlime_block_from_slakedlime", <ercore:slakedlime_block>, <pyrotech:material:8>, 9);
-MechanicalCompactor.addRecipe("slakedlime_block_from_cement_powder", <tconstruct:soil>, <ercore:cement_powder>, 9);
+MechanicalCompactor.addRecipe("soil_block_from_cement_powder", <tconstruct:soil>, <ercore:cement_powder>, 9);
 MechanicalCompactor.addRecipe("steel_block_from_ingot", <immersiveengineering:storage:8>, <ore:ingotSteel>, 9);
 MechanicalCompactor.addRecipe("quartz_block_from_ingot", <minecraft:quartz_block>, <ore:gemQuartz>, 9);
 MechanicalCompactor.addRecipe("copper_block_from_ingot", <galacticraftcore:basic_block_core:9>, <ore:ingotCopper>, 9);
