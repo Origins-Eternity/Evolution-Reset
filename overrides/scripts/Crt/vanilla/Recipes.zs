@@ -239,3 +239,5 @@ var books = [
 for book in books {
     recipes.addShapeless(book * 2, [book, <minecraft:writable_book>]);
 }
+
+recipes.addShapeless(<ercore:herbs>, [<minecraft:bowl>, <pyrotech:strange_tuber>, <pyrotech:material:12>, <botania:petal:*>]);
