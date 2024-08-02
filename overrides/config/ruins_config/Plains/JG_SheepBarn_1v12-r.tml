@@ -58,7 +58,7 @@ rule11=0,0,minecraft:hay_block-0
 rule12=0,0,minecraft:spruce_stairs-5
 
 # Treasure Chest
-rule13=0,100,IInventory;minecraft:trapped_chest;minecraft:wheat#10#0#0+minecraft:bone#1#0#1+minecraft:hay_block#7#0#2+minecraft:iron_ingot#3#0#3+minecraft:web#5#0#4+minecraft:grass#4#0#5+minecraft:acacia_fence#3#0#6+minecraft:log#2#0#7+minecraft:mossy_cobblestone#6#0#8-2
+rule13=0,100,IInventory;minecraft:trapped_chest;minecraft:wheat#10#0#0+minecraft:bone#1#0#1+minecraft:hay_block#7#0#2+minecraft:brick#3#0#3+minecraft:web#5#0#4+minecraft:grass#4#0#5+minecraft:acacia_fence#3#0#6+minecraft:log#2#0#7+minecraft:mossy_cobblestone#6#0#8-2
 rule14=0,100,minecraft:tnt-1
 rule15=0,100,ChestGenHook:stronghold_crossing:3
 

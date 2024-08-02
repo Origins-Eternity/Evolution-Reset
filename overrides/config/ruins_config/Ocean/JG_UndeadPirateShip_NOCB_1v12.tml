@@ -88,7 +88,7 @@ rule49=0,100,minecraft:stained_glass-4
 
 rule50=0,100,IInventory;minecraft:chest;minecraft:map#2#0#0+minecraft:compass#1#0#1+minecraft:paper#32#0#2+minecraft:gold_ingot#4#0#3+minecraft:bone#2#0#4+minecraft:clock#1#0#5+minecraft:skull#1#0#6-5
 
-rule51=0,100,IInventory;minecraft:chest;minecraft:experience_bottle#9#0#0-5,IInventory;minecraft:chest;minecraft:emerald#2#0#0-5,IInventory;minecraft:chest;minecraft:iron_ingot#4#0#6-5
+rule51=0,100,IInventory;minecraft:chest;minecraft:experience_bottle#9#0#0-5,IInventory;minecraft:chest;minecraft:emerald#2#0#0-5,IInventory;minecraft:chest;minecraft:brick#4#0#6-5
 
 
 rule52=0,100,minecraft:web

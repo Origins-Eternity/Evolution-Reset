@@ -50,7 +50,7 @@ rule17=0,100,MobSpawner:Skeleton,MobSpawner:Spider,MobSpawner:Zombie
 # Stone Brick (above ground)
 rule18=0,100,minecraft:stonebrick-0,minecraft:stonebrick-0,minecraft:stonebrick-0,minecraft:stonebrick-1,minecraft:stonebrick-2
 
-rule19=0,100,IInventory;minecraft:trapped_chest;minecraft:mossy_cobblestone#4#0#3+minecraft:clay#6#0#5+minecraft:iron_ingot#1#0#9+minecraft:sand#6#0#11+minecraft:sapling#4#1#16+minecraft:coal#4#0#22-4
+rule19=0,100,IInventory;minecraft:trapped_chest;minecraft:mossy_cobblestone#4#0#3+minecraft:clay#6#0#5+minecraft:brick#1#0#9+minecraft:sand#6#0#11+minecraft:sapling#4#1#16+minecraft:coal#4#0#22-4
 
 rule20=0,100,minecraft:stone_slab-8
 
