@@ -191,7 +191,9 @@ var mobs = [
 "mutantbeasts.throwable_block",
 "babyskeleton",
 "babyzombie",
-"WitherSkeleton"
+"WitherSkeleton",
+"Blaze",
+"oe.drowned"
 ] as string[];
 
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
