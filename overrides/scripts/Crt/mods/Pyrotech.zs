@@ -328,7 +328,7 @@ StoneCrucible.addRecipe("liquid_dirt_from_dirt", <liquid:dirt> * 500, <ore:dirt>
 StoneCrucible.addRecipe("liquid_sugarcane_from_sugarcane", <liquid:sugarcane> * 125, <ore:sugarcane>, 2 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_copper_from_copper_nugget", <liquid:copper> * 16, <ore:nuggetCopper>, 4 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_tin_from_tin_nugget", <liquid:tin> * 16, <ore:nuggetTin>, 4 * 60 * 20, true);
-StoneCrucible.addRecipe("liquid_bronze_from_bronze_nugget", <liquid:bronze> * 16, <ore:nuggetBronze>, 3 * 60 * 20, true);
+StoneCrucible.addRecipe("liquid_bronze_from_bronze_ingot", <liquid:bronze> * 144, <ore:ingotBronze>, 3 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_copper_from_copper_ingot", <liquid:copper> * 144, <ore:ingotCopper>, 5 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_tin_from_tin_ingot", <liquid:tin> * 144, <ore:ingotTin>, 5 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_silver_from_silver_ingot", <liquid:silver> * 144, <ore:ingotSilver>, 4 * 60 * 20, true);
