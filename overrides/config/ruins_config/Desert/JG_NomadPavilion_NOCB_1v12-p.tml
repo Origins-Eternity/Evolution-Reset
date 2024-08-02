@@ -1,0 +1,116 @@
+
+# Nomad_Pavilion_1-p (intact) (NO CB)
+# 13 Mar 2014; updated to 1.7.10, 13 Oct 2014
+# Created by Ruins mod version 12.3 Ingame Parser
+# authoring Player: Jordan_Greywolf
+# updated with "desert raider" foes -- 4 Jan 2015
+
+# Updated to MC 1.8: 23 Mar 2016
+# Updated to MC 1.9: 26 Apr 2016
+# Verified for MC 1.11: 11 Jan 2017
+# Updated to MC 1.12: 23 Jun 2017
+# Updated to MC 1.12.1: 12 Sep 2017
+
+biomesToSpawnIn=desert,oasis,desert oasis,lush desert,desert m,desert oil field,rwg_hotdesert,rwg_oasis,mutated_desert,desert_hills
+
+weight=4
+embed_into_distance=2
+
+unacceptable_target_blocks=water,flowing_water,lava,flowing_lava,Natura:Cloud,slime_congealed,slime_dirt,slime_grass,command_block
+
+dimensions=7,7,5
+allowable_overhang=0
+max_cut_in=0
+cut_in_buffer=0
+max_leveling=2
+leveling_buffer=-1
+preserve_water=0
+preserve_lava=0
+preserve_plants=1
+
+rule1=0,100,minecraft:sandstone-0
+rule2=0,100,MobSpawner:Skeleton
+rule3=0,100,minecraft:wool-0
+rule4=0,100,minecraft:wool-14
+
+rule5=0,100,minecraft:sandstone
+
+rule6=0,100,minecraft:fence-0
+rule7=0,100,minecraft:sandstone
+
+rule8=0,100,ChestGenHook:chests/bonus_spawn_chest:2-2
+rule9=0,100,minecraft:bed-3
+rule10=0,100,minecraft:bed-11
+
+
+layer
+1,1,1,1,1
+1,1,1,1,1
+1,1,1,1,1
+1,7,5,1,1
+1,1,1,1,1
+1,1,1,1,1
+1,1,1,1,1
+endlayer
+
+
+layer
+1,1,1,1,1
+1,1,1,1,1
+1,1,1,1,1
+1,2,1,1,1
+1,1,1,1,1
+1,1,1,1,1
+1,1,1,1,1
+endlayer
+
+layer
+3,4,3,4,3
+4,0,0,0,4
+3,0,6,0,3
+4,8,0,0,4
+3,9,6,0,3
+4,10,0,0,4
+3,4,0,4,3
+endlayer
+
+layer
+3,4,3,4,3
+4,0,0,0,4
+3,0,6,0,3
+4,0,0,0,4
+3,0,6,0,3
+4,0,0,0,4
+3,4,0,4,3
+endlayer
+
+layer
+3,4,3,4,3
+4,0,0,0,4
+3,6,6,6,3
+4,0,6,0,4
+3,6,6,6,3
+4,0,0,0,4
+3,4,3,4,3
+endlayer
+
+layer
+0,0,0,0,0
+0,4,4,4,0
+0,3,3,3,0
+0,4,4,4,0
+0,3,3,3,0
+0,4,4,4,0
+0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0
+0,0,0,0,0
+0,0,3,0,0
+0,0,0,0,0
+0,0,3,0,0
+0,0,0,0,0
+0,0,0,0,0
+endlayer
+
