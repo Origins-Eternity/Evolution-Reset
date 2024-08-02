@@ -142,11 +142,11 @@ rule58=0,100,IInventory;minecraft:trapped_chest;minecraft:bone#8#0#0+minecraft:r
 rule59=0,100,IInventory;minecraft:trapped_chest;minecraft:slime#1#0#5+minecraft:flower_pot#1#0#10-3
 
 rule60=0,100,minecraft:lever-14
-rule61=0,100,minecraft:crafting_table-0
+rule61=0,100,minecraft:planks-0
 rule62=2,100,minecraft:piston_head-10
 rule63=0,100,minecraft:sticky_piston-10
 rule64=0,100,minecraft:cauldron-3
-rule65=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-4
+rule65=0,100,IInventory;minecraft:stone;minecraft:coal#2#1#1-4
 rule66=0,100,minecraft:redstone_lamp-0
 rule67=1,100,minecraft:redstone_torch-5
 

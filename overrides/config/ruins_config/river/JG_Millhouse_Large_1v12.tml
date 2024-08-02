@@ -60,7 +60,7 @@ rule22=0,100,minecraft:spruce_stairs-4
 # Other Spawner
 rule23=0,100,MobSpawner:Skeleton,MobSpawner:Zombie
 
-rule24=0,100,minecraft:crafting_table-0
+rule24=0,100,minecraft:planks-0
 rule25=0,100,minecraft:wooden_door-0
 
 # Redstone Lamp (used for windows)
@@ -74,7 +74,7 @@ rule32=0,100,minecraft:stone_stairs-3
 rule33=0,100,minecraft:spruce_stairs-3
 rule34=0,100,minecraft:spruce_stairs-2
 rule35=0,100,minecraft:stone_stairs-4
-rule36=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#8#1#1-2
+rule36=0,100,IInventory;minecraft:stone;minecraft:coal#8#1#1-2
 rule37=0,100,minecraft:netherrack-0
 rule38=0,100,minecraft:stone_stairs-5
 rule39=0,100,minecraft:spruce_stairs-0

@@ -35,7 +35,7 @@ rule7=1,100,minecraft:tallgrass-1,minecraft:tallgrass-2
 rule8=2,90,minecraft:log-5
 rule9=2,90,minecraft:log-9
 rule10=1,90,minecraft:log-1
-rule11=1,90,minecraft:crafting_table-0,minecraft:wooden_slab
+rule11=1,90,minecraft:planks-0,minecraft:wooden_slab
 rule12=1,100,minecraft:bed-0
 rule13=1,100,minecraft:bed-8
 rule14=1,90,minecraft:iron_bars-0
@@ -43,7 +43,7 @@ rule15=1,100,minecraft:fire-15
 rule16=1,90,minecraft:fence-0
 rule17=2,100,minecraft:log-8
 rule18=1,100,minecraft:log-8
-rule19=2,90,minecraft:furnace-4
+rule19=2,90,minecraft:stone-4
 rule20=2,90,minecraft:stone_stairs-4
 rule21=2,90,minecraft:cobblestone-0
 

@@ -38,7 +38,7 @@ rule03=1,75,minecraft:planks-1
 rule04=1,75,minecraft:fence
 
 # Crafting Table (Workbench)
-rule05=1,75,minecraft:crafting_table
+rule05=1,75,minecraft:planks
 
 # flower_pot (random content)
 rule06=0,100,teBlock;minecraft:flower_pot;{Item:"minecraft:red_mushroom",x:0,y:0,z:0,Data:0,id:"flower_pot"}-0,teBlock;minecraft:flower_pot;{Item:"minecraft:tallgrass",x:0,y:0,z:0,Data:0,id:"flower_pot"}-0,teBlock;minecraft:flower_pot;{Item:"minecraft:brown_mushroom",x:0,y:0,z:0,Data:0,id:"flower_pot"}-0,teBlock;minecraft:flower_pot;{Item:"minecraft:cactus",x:0,y:0,z:0,Data:0,id:"flower_pot"}-0

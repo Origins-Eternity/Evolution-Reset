@@ -32,7 +32,7 @@ rule2=0,100,minecraft:wool-13
 rule3=0,100,minecraft:sand-0
 rule4=0,100,minecraft:tnt-1
 rule5=0,100,minecraft:sponge-1
-rule6=0,100,IInventory;minecraft:trapped_chest;minecraft:fish#8#0-4,IInventory;minecraft:trapped_chest;minecraft:tnt#12#0-4,IInventory;minecraft:trapped_chest;minecraft:glass#16#0-4,IInventory;minecraft:trapped_chest;minecraft:iron_bars#16#0-4,IInventory;minecraft:trapped_chest;minecraft:stick#8#0-4,IInventory;minecraft:trapped_chest;minecraft:prismarine_shard#16#0-4
+rule6=0,100,IInventory;minecraft:trapped_chest;minecraft:fish#8#0-4,IInventory;minecraft:trapped_chest;minecraft:gunpowder#12#0-4,IInventory;minecraft:trapped_chest;minecraft:glass#16#0-4,IInventory;minecraft:trapped_chest;minecraft:iron_bars#16#0-4,IInventory;minecraft:trapped_chest;minecraft:stick#8#0-4,IInventory;minecraft:trapped_chest;minecraft:prismarine_shard#16#0-4
 
 layer
 1,1,1,1,1,1,1,1,1,1,1,1

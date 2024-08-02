@@ -96,14 +96,14 @@ rule24=0,100,minecraft:dark_oak_door-8
 rule25=0,100,minecraft:nether_brick_stairs-2
 rule26=0,100,minecraft:nether_brick_stairs-3
 
-# Furnace
-rule27=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-5
+# stone
+rule27=0,100,IInventory;minecraft:stone;minecraft:coal#2#1#1-5
 
 # Cauldron (DV 3 = fully filled)
 rule28=0,100,minecraft:cauldron-3
 
 # Crafting Table
-rule29=0,100,minecraft:crafting_table-0
+rule29=0,100,minecraft:planks-0
 
 # Dungeon Chest
 rule30=0,100,ChestGenHook:chests/simple_dungeon:3-3

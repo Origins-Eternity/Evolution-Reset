@@ -31,7 +31,7 @@ rule2=0,100,minecraft:log-0
 rule3=2,100,minecraft:ladder-2
 rule4=0,100,minecraft:planks-0
 rule5=0,100,minecraft:wooden_slab-8
-rule6=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-3
+rule6=0,100,IInventory;minecraft:stone;minecraft:coal#2#1#1-3
 
 # Command Block Disabled
 #rule7=0,100,CommandBlock:RUINSTRIGGER /summon Villager ~0 ~0 ~0 {Profession:3,Career:1,CareerLevel:6,CustomName:Salvager,Offers:{Recipes:[{buy:{id:torch,Count:32},sell:{id:coal,Damage:1,Count:24}},{buy:{id:flint,Count:64},sell:{id:emerald,Count:1}},{buy:{id:stick,Count:32},sell:{id:planks,Count:12}},{buy:{id:chest,Count:4},sell:{id:planks,Count:24}},{buy:{id:trapped_chest,Count:4},sell:{id:planks,Count:24}},{buy:{id:oak_stairs,Count:16},sell:{id:planks,Count:16}},{buy:{id:wooden_pressure_plate,Count:8},sell:{id:planks,Count:12}},{buy:{id:stone_slab,Count:32},sell:{id:stone,Count:12}},{buy:{id:cobblestone,Count:64},sell:{id:mossy_cobblestone,Count:48}},{buy:{id:bowl,Count:16},sell:{id:planks,Count:8}},{buy:{id:boat,Count:1},sell:{id:planks,Count:4}},{buy:{id:planks,Count:64},sell:{id:planks,Damage:1,Count:48}},{buy:{id:planks,Count:64},sell:{id:planks,Damage:2,Count:48}},{buy:{id:planks,Count:64},sell:{id:planks,Damage:3,Count:48}},{buy:{id:planks,Count:64},sell:{id:planks,Damage:4,Count:48}},{buy:{id:planks,Count:64},sell:{id:planks,Damage:5,Count:48}}]}}:@
@@ -39,7 +39,7 @@ rule6=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-3
 rule7=0,100,minecraft:air
 
 rule8=0,100,minecraft:fence-0
-rule9=0,100,minecraft:crafting_table-0
+rule9=0,100,minecraft:planks-0
 rule10=2,100,minecraft:trapdoor-8
 rule11=0,100,minecraft:fence_gate-1
 rule12=0,100,minecraft:cobblestone_wall-0

@@ -45,7 +45,7 @@ rule14=1,100,minecraft:redstone_torch-5
 rule15=0,100,minecraft:grass-0
 rule16=0,90,minecraft:tallgrass-1,minecraft:tallgrass-2,minecraft:red_flower,minecraft:yellow_flower
 rule17=0,100,minecraft:dirt-0
-rule18=1,100,minecraft:crafting_table-0,minecraft:tnt-1,minecraft:torch-5,minecraft:redstone_torch-5,IInventory;minecraft:lit_furnace;minecraft:coal#4#1#1
+rule18=1,100,minecraft:planks-0,minecraft:tnt-1,minecraft:torch-5,minecraft:redstone_torch-5,IInventory;minecraft:stone;minecraft:coal#4#1#1
 
 layer
 1,1,1,1,1,1,1,1,1,1,1,1

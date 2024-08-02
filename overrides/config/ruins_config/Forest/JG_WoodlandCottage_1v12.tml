@@ -77,7 +77,7 @@ rule15=1,100,minecraft:birch_door-2
 rule16=0,100,minecraft:stone_slab-6
 
 # Crafting Table
-rule17=0,100,minecraft:crafting_table
+rule17=0,100,minecraft:planks
 
 # Cauldron
 rule18=0,100,minecraft:cauldron-3
@@ -97,8 +97,8 @@ rule22=1,100,minecraft:birch_door-8
 # Spruce Planks
 rule23=0,100,minecraft:planks-1
 
-# Lit Furnace
-rule24=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-4
+# Lit stone
+rule24=0,100,IInventory;minecraft:stone;minecraft:coal#2#1#1-4
 
 # Chimney Top
 rule25=0,100,minecraft:double_stone_slab

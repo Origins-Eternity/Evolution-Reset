@@ -143,8 +143,8 @@ rule44=0,100,minecraft:trapped_chest-2
 rule45=0,100,minecraft:red_flower-0,minecraft:red_flower-1,minecraft:red_flower-2
 
 rule46=0,100,minecraft:fence_gate-2
-rule47=0,100,minecraft:crafting_table-0
-rule48=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-4
+rule47=0,100,minecraft:planks-0
+rule48=0,100,IInventory;minecraft:stone;minecraft:coal#2#1#1-4
 rule49=0,100,minecraft:jungle_door-2
 
 # Randomized Fruit (melon, pumpkin)
@@ -156,7 +156,7 @@ rule53=0,100,minecraft:dispenser-3
 
 # Iron Block (body of iron golem that is made upon
 # structure spawn)
-rule54=0,100,minecraft:iron_block-0
+rule54=0,100,minecraft:stone-0
 
 
 rule55=0,100,minecraft:stone_slab-7

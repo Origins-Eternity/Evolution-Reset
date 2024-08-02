@@ -50,9 +50,9 @@ rule19=0,100,minecraft:bed-10
 rule20=0,100,minecraft:bed-2
 rule21=0,100,minecraft:wooden_slab-4
 rule22=0,100,minecraft:acacia_stairs-0
-rule23=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#4#1#1-2
+rule23=0,100,IInventory;minecraft:stone;minecraft:coal#4#1#1-2
 rule24=0,100,ChestGenHook:chests/spawn_bonus_chest:2
-rule25=0,100,minecraft:crafting_table-0
+rule25=0,100,minecraft:planks-0
 
 rule26=0,100,ChestGenHook:chests/simple_dungeon:4,ChestGenHook:chests/spawn_bonus_chest:8,ChestGenHook:chests/village_blacksmith:5
 

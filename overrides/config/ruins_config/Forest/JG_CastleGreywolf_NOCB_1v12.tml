@@ -91,7 +91,7 @@ rule50=0,100,minecraft:red_flower-0,minecraft:red_flower-1,minecraft:red_flower-
 rule51=0,100,IInventory;minecraft:chest;minecraft:stone#32#0#0+minecraft:stone#32#0#13-3,ChestGenHook:chests/spawn_bonus_chest:5-3
 
 rule52=0,100,minecraft:oak_stairs-0
-rule53=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#32#0#1-2
+rule53=0,100,IInventory;minecraft:stone;minecraft:coal#32#0#1-2
 rule54=0,100,minecraft:glass-0
 
 rule55=0,100,minecraft:sapling-1
@@ -99,7 +99,7 @@ rule55=0,100,minecraft:sapling-1
 rule56=0,100,IInventory;minecraft:chest;minecraft:stone#16#0#0+minecraft:stone#16#0#13-3,ChestGenHook:chests/spawn_bonus_chest:5-3
 
 rule57=0,100,minecraft:wooden_door-8
-rule58=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#32#1#1-2
+rule58=0,100,IInventory;minecraft:stone;minecraft:coal#32#1#1-2
 rule59=0,100,minecraft:wooden_slab-8
 rule60=0,100,minecraft:wooden_slab-10
 rule61=0,100,minecraft:stone_slab-9

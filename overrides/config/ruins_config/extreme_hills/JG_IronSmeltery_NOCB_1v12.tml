@@ -35,9 +35,9 @@ rule5=0,100,minecraft:lava-0
 
 rule6=0,100,IInventory;minecraft:trapped_chest;minecraft:flint_and_steel#1#0#0+minecraft:torch#5#0#1+minecraft:coal#5#1#2-5
 
-rule7=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#1#1#1-5
+rule7=0,100,IInventory;minecraft:stone;minecraft:coal#1#1#1-5
 rule8=0,100,minecraft:fire-15
-rule9=0,100,minecraft:crafting_table-0
+rule9=0,100,minecraft:planks-0
 
 rule10=0,100,minecraft:skull
 

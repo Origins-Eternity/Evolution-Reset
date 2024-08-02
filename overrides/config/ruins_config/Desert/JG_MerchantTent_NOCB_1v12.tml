@@ -36,9 +36,9 @@ rule7=0,100,minecraft:bookshelf-0
 rule8=0,100,minecraft:oak_stairs-1
 rule9=0,100,minecraft:fence-0
 rule10=2,100,minecraft:torch-1
-rule11=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-4
+rule11=0,100,IInventory;minecraft:stone;minecraft:coal#2#1#1-4
 rule12=0,100,minecraft:fence_gate-3
-rule13=0,100,minecraft:crafting_table-0
+rule13=0,100,minecraft:planks-0
 
 layer
 1,1,1,2,2,2,1,1,1

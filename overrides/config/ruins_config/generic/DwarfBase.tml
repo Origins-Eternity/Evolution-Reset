@@ -28,7 +28,7 @@ rule11=0,100,lava
 rule12=0,100,stone_brick_stairs-1
 rule13=0,100,HardMobSpawn,air
 rule14=0,100,iron_bars
-rule15=0,100,furnace-2
+rule15=0,100,stone-2
 rule16=0,100,stonebrick-3
 rule17=0,0,wool-5
 
