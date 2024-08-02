@@ -51,7 +51,7 @@ rule21=1,100,minecraft:fence_gate-0
 
 rule22=0,100,minecraft:melon,minecraft:pumpkin-4,minecraft:tnt-0,minecraft:tnt-1,minecraft:cake,minecraft:hay_block
 
-rule23=0,100,IInventory;minecraft:trapped_chest;minecraft:carrot#18#0+minecraft:melon_block#1#0+minecraft:stone_pickaxe#1#0+minecraft:stick#3#0+minecraft:pumpkin#1#0+minecraft:wool#6#0+minecraft:torch#19#0-3
+rule23=0,100,IInventory;minecraft:trapped_chest;minecraft:carrot#18#0+minecraft:melon_block#1#0+minecraft:egg#1#0+minecraft:stick#3#0+minecraft:pumpkin#1#0+minecraft:wool#6#0+minecraft:torch#19#0-3
 rule24=0,100,minecraft:wool-0
 rule25=1,100,minecraft:redstone_torch-5
 
