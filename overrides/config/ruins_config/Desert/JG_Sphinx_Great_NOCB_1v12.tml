@@ -49,7 +49,7 @@ rule13=1,100,minecraft:torch-5
 rule14=0,100,minecraft:sandstone_stairs-7
 rule15=0,100,minecraft:sandstone_stairs-5
 
-rule16=0,100,IInventory;minecraft:trapped_chest;minecraft:skull#1#0#0+minecraft:bone#8#0#2+minecraft:rotten_flesh#4#0#4+minecraft:golden_chestplate#1#0#5+minecraft:diamond_hoe#1#0#7+minecraft:lapis_block#1#0#9-3
+rule16=0,100,IInventory;minecraft:trapped_chest;minecraft:skull#1#0#0+minecraft:bone#8#0#2+minecraft:rotten_flesh#4#0#4+minecraft:golden_chestplate#1#0#5+minecraft:bread#1#0#7+minecraft:lapis_block#1#0#9-3
 
 rule17=0,100,minecraft:stone_slab-1
 rule18=0,100,minecraft:sandstone_stairs-2
