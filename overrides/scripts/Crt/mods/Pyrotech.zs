@@ -321,8 +321,8 @@ pyrWorktableCreate("artisans", "_driver_stone", <artisanworktables:artisans_driv
 pyrWorktableCreate("artisans", "_driver_bone", <artisanworktables:artisans_driver_bone>, [null, null, <minecraft:bone>], [null, <minecraft:bone>, null], [<minecraft:stick>, <minecraft:string>.or(<pyrotech:material:14>), null], 3);
 pyrWorktableCreate("artisans", "_driver_flint", <artisanworktables:artisans_driver_flint>, [null, null, <minecraft:flint>], [null, <minecraft:flint>, null], [<minecraft:stick>, <minecraft:string>.or(<pyrotech:material:14>), null], 3);
 
-BrickKiln.addRecipe("searedbrick_from_unfired", <tconstruct:materials>, <ercore:searedbrick_unfired>, 8000, 0.5, [<pyrotech:material:7>*6]);
-BrickKiln.addRecipe("netherbrick_from_netherrack", <minecraft:netherbrick>, <minecraft:netherrack>, 6000, 0.3, [<pyrotech:rock_netherrack>*4]);
+BrickKiln.addRecipe("searedbrick_from_unfired", <tconstruct:materials>, <ercore:searedbrick_unfired>, 8000, 0.2, [<pyrotech:material:7> * 6]);
+BrickKiln.addRecipe("netherbrick_from_netherrack", <minecraft:netherbrick>, <minecraft:netherrack>, 6000, 0.3, [<pyrotech:rock_netherrack> * 4]);
 BrickOven.addRecipe("blaze_powder_from_blaze_rod", <minecraft:blaze_powder>, <minecraft:blaze_rod>);
 StoneCrucible.addRecipe("liquid_dirt_from_dirt", <liquid:dirt> * 500, <ore:dirt>, 2 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_sugarcane_from_sugarcane", <liquid:sugarcane> * 125, <ore:sugarcane>, 2 * 60 * 20, true);

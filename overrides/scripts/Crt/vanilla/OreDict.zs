@@ -38,6 +38,7 @@ import crafttweaker.mods.IMod;
 <ore:powderCement>.add(<ercore:cement_powder>);
 <ore:craftTable>.add(<minecraft:crafting_table>);
 <ore:furnace>.add(<minecraft:furnace>);
+<ore:oreTitanium>.addAll(<ore:oreIlmenite>);
 
 var dirts =[
 <biomesoplenty:dirt:8>,
@@ -182,7 +183,8 @@ var twoblocks = [
 <ore:oreSilver>,
 <ore:oreUranium>,
 <ore:oreCobalt>,
-<ore:oreArdite>
+<ore:oreArdite>,
+<ore:oreEmerald>
 ] as IOreDictEntry[];
 
 for twoblock in twoblocks {
@@ -231,11 +233,20 @@ for stone in stones {
 
 var diamondores = [
 <ore:oreDiamond>,
-<ore:diamond>
+<ore:gemDiamond>
 ] as IOreDictEntry[];
 
 for diamondore in diamondores {
     <ore:eroreDiamond>.addAll(diamondore);
+}
+
+var emeraldores = [
+<ore:oreEmerald>,
+<ore:gemEmerald>
+] as IOreDictEntry[];
+
+for emeraldore in emeraldores {
+    <ore:eroreEmerald>.addAll(emeraldore);
 }
 
 var cobblestones = [

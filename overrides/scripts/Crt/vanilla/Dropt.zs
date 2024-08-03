@@ -164,8 +164,7 @@ var dropores = [
 <pyrotech:generated_slag_cobalt>,
 <pyrotech:generated_slag_tungsten>,
 <pyrotech:generated_slag_nickel>,
-<pyrotech:material:8>,
-<pyrotech:material:18>
+<pyrotech:material:8>
 ] as IItemStack[];
 
 val ores = [
@@ -181,8 +180,7 @@ val ores = [
 <ore:oreCobalt>,
 <ore:oreTungsten>,
 <ore:oreNickel>,
-<ore:blockSlakedlime>,
-<ore:eroreDiamond>
+<ore:blockSlakedlime>
 ] as IOreDictEntry[];
 
 for i, ore in ores {
@@ -343,4 +341,28 @@ for print in <ore:blueprint>.items {
 		    .items([print], Dropt.range(1))  
 	   )
 	);
+}
+
+val ores = [
+<ore:eroreDiamond>,
+<ore:eroreEmerald>
+] as IOreDictEntry[];
+
+for i, ore in ores {
+var dropore = dropores[i];
+Dropt.list("list_treasure")
+  	.add(Dropt.rule()
+     .matchDrops([ore])
+  	   .matchHarvester(Dropt.harvester()
+         .type("EXPLOSION")
+      )
+      .addDrop(Dropt.drop()
+	     .selector(Dropt.weight(75))
+	     .items([<pyrotech:rock>], Dropt.range(3))  
+	   )
+	   .addDrop(Dropt.drop()
+         .selector(Dropt.weight(25))
+		 .items([<pyrotech:rock>], Dropt.range(4))  
+	   )
+	)
 }
