@@ -343,16 +343,15 @@ for print in <ore:blueprint>.items {
 	);
 }
 
-val ores = [
+val treasures = [
 <ore:eroreDiamond>,
 <ore:eroreEmerald>
 ] as IOreDictEntry[];
 
-for i, ore in ores {
-var dropore = dropores[i];
+for treasure in treasures {
 Dropt.list("list_treasure")
   	.add(Dropt.rule()
-     .matchDrops([ore])
+     .matchDrops([treasure])
   	   .matchHarvester(Dropt.harvester()
          .type("EXPLOSION")
       )
@@ -364,5 +363,5 @@ Dropt.list("list_treasure")
          .selector(Dropt.weight(25))
 		 .items([<pyrotech:rock>], Dropt.range(4))  
 	   )
-	)
+	);
 }
