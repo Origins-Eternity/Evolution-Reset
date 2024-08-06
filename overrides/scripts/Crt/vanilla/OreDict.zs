@@ -14,7 +14,6 @@ import crafttweaker.mods.IMod;
 <ore:chest>.add(<immersiveengineering:wooden_device0>);
 <ore:grout>.add(<tconstruct:soil>);
 <ore:blockSlakedlime>.add(<ercore:slakedlime_block>);
-<ore:tnt>.add(<minecraft:tnt>);
 <ore:steel>.add(<immersiveengineering:metal:8>);
 <ore:whitesand>.add(<minecraft:sand>);
 <ore:whitesand>.add(<biomesoplenty:white_sand>);

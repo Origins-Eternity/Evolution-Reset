@@ -219,7 +219,6 @@ Dropt.list("list_ore")
 
 var bandrops = [
 <pyrotech:rock:7>,
-<minecraft:gunpowder>,
 <pyrotech:rock_netherrack>,
 <pyrotech:rock:6>,
 <pyrotech:rock:3>,
@@ -240,7 +239,6 @@ var bandrops = [
 
 val banblocks = [
 <ore:torch>,
-<ore:tnt>,
 <ore:netherrack>,
 <ore:sandstone>,
 <ore:erstoneAndesite>,
