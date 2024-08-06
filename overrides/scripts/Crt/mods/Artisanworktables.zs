@@ -68,13 +68,14 @@ RecipeBuilder.get("blacksmith")
 
 RecipeBuilder.get("blacksmith")
 .setShaped([
-    [null, <ore:stickSteel>, <ore:stickSteel>],
-    [null, <ore:stickSteel>, null],
-    [null, <ore:stickSteel>, <ore:stickSteel>],
-    [<ore:stickSteel>, null, <ore:stickSteel>],
-    [<ore:stickSteel>, <ore:stickSteel>, null]])
+    [null, null, <ore:stickSteel>, null, null],
+    [null, <ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>, null],
+    [null, null, <ore:stickSteel>, null, null],
+    [<ore:stickSteel>, <ore:stickSteel>, null, <ore:stickSteel>, <ore:stickSteel>],
+    [null, null, <ore:stickSteel>, null, null]])
 .setName("master_key")
 .setLevelRequired(10)
+.setMaximumTier(2)
 .setConsumeExperience(false)
 .setFluid(<liquid:gold> * 1000)
 .addTool(<ore:artisansCutters>, 15)
@@ -84,6 +85,69 @@ RecipeBuilder.get("blacksmith")
 .setExtraOutputTwo(<immersiveengineering:metal:17> * 1, 0.1)
 .setExtraOutputThree(<minecraft:gold_nugget> * 6, 0.2)
 .addOutput(<locks:master_key>)
+.create();
+
+RecipeBuilder.get("blacksmith")
+.setShaped([
+    [<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>],
+    [<ore:plateIron>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:plateIron>],
+    [<ore:ingotIron>, <ore:paneGlassColorless>, null, <ore:paneGlassColorless>, <ore:ingotIron>],
+    [<ore:plateIron>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:plateIron>],
+    [<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>]])
+.setName("iron_filter")
+.setLevelRequired(15)
+.setMaximumTier(2)
+.setConsumeExperience(false)
+.setFluid(<liquid:lava> * 1500)
+.addTool(<ore:artisansCutters>, 15)
+.addTool(<ore:artisansHammer>, 15)
+.addTool(<ercore:filter_blueprint>, 2)
+.setExtraOutputOne(<immersiveengineering:metal:18> * 4, 0.3)
+.setExtraOutputTwo(<pyrotech:material:32> * 5, 0.5)
+.setExtraOutputThree(<minecraft:iron_nugget> * 6, 0.2)
+.addOutput(<adpother:iron_filter>)
+.create();
+
+RecipeBuilder.get("blacksmith")
+.setShaped([
+    [<ore:ingotGold>, <ore:plateGold>, <ore:ingotGold>, <ore:plateGold>, <ore:ingotGold>],
+    [<ore:plateGold>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:plateGold>],
+    [<ore:ingotGold>, <ore:paneGlassColorless>, null, <ore:paneGlassColorless>, <ore:ingotGold>],
+    [<ore:plateGold>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:plateGold>],
+    [<ore:ingotGold>, <ore:plateGold>, <ore:ingotGold>, <ore:plateGold>, <ore:ingotGold>]])
+.setName("gold_filter")
+.setLevelRequired(10)
+.setMaximumTier(2)
+.setConsumeExperience(false)
+.setFluid(<liquid:lava> * 1000)
+.addTool(<ore:artisansCutters>, 10)
+.addTool(<ore:artisansHammer>, 10)
+.addTool(<ercore:filter_blueprint>, 2)
+.setExtraOutputOne(<immersiveengineering:metal:19> * 4, 0.3)
+.setExtraOutputTwo(<pyrotech:material:32> * 5, 0.5)
+.setExtraOutputThree(<minecraft:gold_nugget> * 6, 0.2)
+.addOutput(<adpother:gold_filter>)
+.create();
+
+RecipeBuilder.get("blacksmith")
+.setShaped([
+    [<ore:gemDiamond>, <ore:plateSteel>, <ore:gemDiamond>, <ore:plateSteel>, <ore:gemDiamond>],
+    [<ore:plateSteel>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:plateSteel>],
+    [<ore:gemDiamond>, <ore:paneGlassColorless>, null, <ore:paneGlassColorless>, <ore:gemDiamond>],
+    [<ore:plateSteel>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:plateSteel>],
+    [<ore:gemDiamond>, <ore:plateSteel>, <ore:gemDiamond>, <ore:plateSteel>, <ore:gemDiamond>]])
+.setName("diamond_filter")
+.setLevelRequired(20)
+.setMaximumTier(2)
+.setConsumeExperience(false)
+.setFluid(<liquid:lava> * 2000)
+.addTool(<ore:artisansCutters>, 20)
+.addTool(<ore:artisansHammer>, 20)
+.addTool(<ercore:filter_blueprint>, 2)
+.setExtraOutputOne(<immersiveengineering:metal:17> * 2, 0.3)
+.setExtraOutputTwo(<pyrotech:material:32> * 9, 0.5)
+.setExtraOutputThree(<pyrotech:material:18> * 3, 0.2)
+.addOutput(<adpother:diamond_filter>)
 .create();
   
 RecipeBuilder.get("basic")

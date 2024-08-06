@@ -79,7 +79,7 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
 
 events.onItemToss(function(event as ItemTossEvent) {
     var itemdrop = event.item.item;
-    if(itemdrop in <ore:banItem>) {
+    if(<ore:banItems> has itemdrop) {
         event.cancel();
     }
 });
@@ -114,7 +114,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
 
 events.onPlayerInteract(function(event as PlayerInteractEvent) {
     if(isNull(event.player.currentItem)) return;
-    if(event.player.currentItem in <ore:banItem>) {
+    if(<ore:banItems> has event.player.currentItem) {
         event.player.dropItem(true);
     } else if(event.player.currentItem.name == "item.glassBottle") {
         event.player.dropItem(true);
@@ -130,7 +130,7 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
     if(event.entity instanceof IPlayer) return;
     for drop in event.drops {
-        if(drop.item in <ore:banItem>) {
+        if(<ore:banItems> has drop.item) {
             event.cancel();
         }
     }
