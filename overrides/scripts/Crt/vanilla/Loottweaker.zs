@@ -60,3 +60,7 @@ box_extra10.addItemEntry(item,1);
 box_extra11.addItemEntry(item,1);
 box_extra12.addItemEntry(item,1);
 }
+
+var creeper = LootTweaker.getTable("minecraft:entities/creeper");
+var creeper_extra = creeper.addPool("creeper_extra", 1, 2, 0, 0);
+creeper_extra.addItemEntry(<immersiveengineering:material:25>, 1);

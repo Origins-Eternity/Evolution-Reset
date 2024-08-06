@@ -5,7 +5,10 @@ import crafttweaker.item.IItemStack;
 var mod_recipes = [
 <adpother:diamond_vacuum_bag>,
 <adpother:iron_vacuum_bag>,
-<adpother:gold_vacuum_bag>
+<adpother:gold_vacuum_bag>,
+<adpother:iron_filter>,
+<adpother:gold_filter>,
+<adpother:diamond_filter>
 ] as IItemStack[];
 
 for items in mod_recipes {

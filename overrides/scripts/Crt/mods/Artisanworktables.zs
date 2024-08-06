@@ -802,28 +802,6 @@ RecipeBuilder.get("tanner")
 .setSecondaryIngredients([<pyrotech:material:26> * 6])
 .addOutput(<pyrotech:bag_durable>)
 .create();
-  
-RecipeBuilder.get("engineer")
-.setShaped([
-    [<ore:sandpile>, <ore:gunpowder>, <ore:powderBlaze>, <ore:gunpowder>, <ore:sandpile>],
-    [<ore:gunpowder>, <ore:powderBlaze>, <ore:sandpile>, <ore:powderBlaze>, <ore:gunpowder>],
-    [<ore:powderBlaze>, <ore:sandpile>, <pyrotech:material:30>, <ore:sandpile>, <ore:powderBlaze>],
-    [<ore:gunpowder>, <ore:powderBlaze>, <ore:sandpile>, <ore:powderBlaze>, <ore:gunpowder>],
-    [<ore:sandpile>, <ore:gunpowder>, <ore:powderBlaze>, <ore:gunpowder>, <ore:sandpile>]])
-.setFluid(<liquid:coal_tar> * 2000)
-.setName("tnt")
-.setLevelRequired(30)
-.setConsumeExperience(false)
-.setMaximumTier(2)
-.setSecondaryIngredients([<minecraft:fire_charge>])  
-.addTool(<ore:artisansSifter>, 15)
-.addTool(<ore:artisansLens>, 20)
-.addTool(<ercore:gunpowder_blueprint>, 2)
-.setExtraOutputOne(<minecraft:blaze_powder>, 0.1)	 
-.setExtraOutputTwo(<minecraft:gunpowder> * 2, 0.4)	
-.setExtraOutputThree(<pyrotech:material:21> * 3, 0.5)
-.addOutput(<minecraft:tnt>)
-.create();
  
 for i, colors in color {
 var colorfulwools = colorfulwools[i];

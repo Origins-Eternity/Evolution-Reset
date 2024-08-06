@@ -36,7 +36,7 @@ rule5=0,100,minecraft:stone_stairs-1
 
 rule6=0,100,IInventory;minecraft:dispenser;minecraft:spawn_egg#{EntityTag:{id:"Creeper"}}#50#0+minecraft:spawn_egg#{EntityTag:{id:creeper}}#50#1+minecraft:spawn_egg#{EntityTag:{id:creeper}}#50#2+minecraft:spawn_egg#{EntityTag:{id:zombie_villager}}#54#7+minecraft:spawn_egg#{EntityTag:{id:silverfish}}#60#8-5
 
-rule7=0,100,IInventory;minecraft:trapped_chest;minecraft:monster_egg#2#1+minecraft:monster_egg#1#0+minecraft:stone#16#0+minecraft:web#7#0+minecraft:gunpowder#1#0+minecraft:glowstone#1#0-5
+rule7=0,100,IInventory;minecraft:trapped_chest;minecraft:monster_egg#2#1+minecraft:monster_egg#1#0+minecraft:stone#16#0+minecraft:web#7#0+minecraft:bread#1#0+minecraft:glowstone#1#0-5
 
 rule8=0,100,minecraft:stone_pressure_plate-0,minecraft:wooden_pressure_plate-0
 

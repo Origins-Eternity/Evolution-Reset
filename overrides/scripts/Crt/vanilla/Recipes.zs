@@ -98,7 +98,6 @@ var game_recipes = [
 <minecraft:torch>,
 <minecraft:bread>,
 <minecraft:ladder>,
-<minecraft:tnt>,
 <minecraft:blaze_powder>,
 <minecraft:crafting_table>,
 <minecraft:bucket>,
