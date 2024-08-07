@@ -336,6 +336,7 @@ StoneCrucible.addRecipe("liquid_silver_from_silver_nugget", <liquid:silver> * 16
 StoneCrucible.addRecipe("liquid_gold_from_gold_ingot", <liquid:gold> * 144, <ore:ingotGold>, 4 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_gold_from_gold_nugget", <liquid:gold> * 16, <ore:nuggetGold>, 3 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_gold_from_gold_shard", <liquid:gold> * 16, <pyrotech:material:34>, 3 * 60 * 20, true);
+BrickCrucible.addRecipe("liquid_glass_from_glass", <liquid:glass> * 1000, <ore:blockGlass>, 5 * 60 * 20);
 BrickCrucible.addRecipe("lime_slurry_from_slaked_lime", <liquid:slaked_lime> * 1000, <ercore:slakedlime_block>, 3 * 60 * 20);
 BrickCrucible.addRecipe("liquid_iron_from_iron_nugget", <liquid:iron> * 16, <ore:nuggetIron>, 4 * 60 * 20);
 BrickCrucible.addRecipe("liquid_iron_from_iron_shard", <liquid:iron> * 16, <pyrotech:material:19>, 4 * 60 * 20);
@@ -350,6 +351,7 @@ Campfire.removeRecipes(<minecraft:bread>);
 Campfire.removeRecipes(<minecraft:blaze_powder>);
 
 StoneKiln.removeRecipes(<minecraft:netherbrick>);
+StoneKiln.removeRecipes(<minecraft:glass>);
 PitKiln.removeRecipes(<minecraft:netherbrick>);
 
 IroncladAnvil.addRecipe("nugget_from_ingot_tungsten", <ercore:tungsten_nugget> * 9, <ercore:tungsten_ingot>, 20, "hammer");
