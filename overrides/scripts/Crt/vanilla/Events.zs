@@ -227,6 +227,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         player.give(<ftbquests:book>);
         player.update({wasGivenTip1: true});
     }
+    player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip"));
 });
 
 events.onBlockBreak(function(event as BlockBreakEvent) {
