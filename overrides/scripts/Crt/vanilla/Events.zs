@@ -34,19 +34,20 @@ import crafttweaker.event.PlayerCraftedEvent;
 import crafttweaker.entity.IEntityMob;
 import crafttweaker.event.PlayerChangedDimensionEvent;
 import crafttweaker.event.PlayerCloneEvent;
+import crafttweaker.event.PlayerFillBucketEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
 var meta = event.block.meta;
 if (!event.player.world.isRemote()) {
+    var current = event.player.currentItem;
     if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table") || (id == "minecraft:lit_furnace")) {
         event.cancel();
         if(!isNull(event.player.data.wasGivenTip1)) return;
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
         event.player.update({wasGivenTip1: true});
     } else if(((id == "immersiveengineering:wooden_device0") && (meta == 0)) || (id == "minecraft:dispenser")) {
-        var current = event.player.currentItem;
-        if (isNull(current)) {
+        if(isNull(current)) {
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.locked"));
             event.cancel();
         } else if(!current.definition.id.contains("key")) {
@@ -262,5 +263,12 @@ var player = event.player;
         if ((down.definition.id == "minecraft:furnace") || (id == "minecraft:lit_furnace"))  {
             event.world.destroyBlock(pos, false);
         }
+    }
+});
+
+events.onPlayerFillBucket(function(event as PlayerFillBucketEvent) {
+    var id = event.block.definition.id;
+    if((id == "minecraft:ice") && (event.player.currentItem.definition.id != "minecraft:bucket")) {
+        event.cancel();
     }
 });

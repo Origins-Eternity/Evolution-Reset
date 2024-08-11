@@ -37,8 +37,6 @@ for items in modrecipes {
 	recipes.remove(items);
 }
 
-recipes.addShapeless(<immersiveengineering:metal:39>, [<minecraft:iron_ingot>, <immersiveengineering:tool>.transformDamage(1)]);
-
 recipes.addShaped(<immersiveengineering:metal_decoration0:5>,
 [[<ercore:tungsten_steel_block>, <immersiveengineering:material:9>, <ercore:tungsten_steel_block>],
 [<minecraft:piston>, <pyrotech:cog_obsidian>, <minecraft:piston>],

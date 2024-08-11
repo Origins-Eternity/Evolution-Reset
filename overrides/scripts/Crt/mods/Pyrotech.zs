@@ -286,7 +286,6 @@ function pyrWorktableCreate(modid as string, name as string, output as IItemStac
     .setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, damage)
     .register();
 }
-pyrWorktableCreate("IE", "_plateiron", <immersiveengineering:metal:39>, [null, <minecraft:iron_ingot>, null], [null, ietool, null], [null, null, null], 2);
 pyrWorktableCreate("tconstruct", "_sharp bamboo nails", <tconstruct:punji> * 5, [<minecraft:reeds>, null, <minecraft:reeds>], [null, <minecraft:reeds>, null], [<minecraft:reeds>, null, <minecraft:reeds>], 5);
 pyrWorktableCreate("artisans", "_tsquare_wood", <artisanworktables:artisans_tsquare_wood>, [<minecraft:stick>, <minecraft:stick>, <minecraft:stick>], [null, <minecraft:planks:*>, null], [null, <minecraft:planks:*>, null], 3);
 pyrWorktableCreate("artisans", "_tsquare_stone", <artisanworktables:artisans_tsquare_stone>, [<minecraft:stick>, <minecraft:stick>, <minecraft:stick>], [null, <minecraft:stone>, null], [null, <minecraft:stone>, null], 3);
@@ -368,6 +367,7 @@ IroncladAnvil.addRecipe("nugget_from_ingot_manyullyn", <tconstruct:nuggets:2> * 
 IroncladAnvil.addRecipe("nugget_from_ingot_knightslime", <tconstruct:nuggets:3> * 9, <ore:ingotKnightslime>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_alubrass", <tconstruct:nuggets:5> * 9, <ore:ingotAlubrass>, 20, "hammer");
 IroncladAnvil.addRecipe("steel_plate_from_block", <immersiveengineering:metal:38> * 3, <ore:blockSteel>, 20, "hammer");
+IroncladAnvil.addRecipe("iron_plate_from_block", <immersiveengineering:metal:39> * 3, <ore:blockIron>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_manasteel", <botania:manaresource:17> * 9, <ore:ingotManasteel>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_terrasteel", <botania:manaresource:18> * 9, <ore:ingotTerrasteel>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_elvenelementium", <botania:manaresource:19> * 9, <ore:ingotElvenElementium>, 20, "hammer");
@@ -375,8 +375,8 @@ IroncladAnvil.addRecipe("nugget_from_ingot_elvenelementium", <botania:manaresour
 GraniteAnvil.addRecipe("nugget_from_ingot_gold", <minecraft:gold_nugget> * 9, <ore:ingotGold>, 10, "hammer", true);
 GraniteAnvil.addRecipe("nugget_from_ingot_copper", <immersiveengineering:metal:20> * 9, <ore:ingotCopper>, 10, "hammer", true);
 GraniteAnvil.addRecipe("nugget_from_ingot_tin", <ercore:tin_nugget> * 9, <ore:ingotTin>, 10, "hammer", true);
-GraniteAnvil.addRecipe("copper_plate_from_block", <immersiveengineering:metal:30> * 3, <ore:blockCopper>, 27, "hammer", true);
-GraniteAnvil.addRecipe("gold_plate_from_block", <immersiveengineering:metal:40> * 3, <ore:blockGold>, 27, "hammer", true);
+GraniteAnvil.addRecipe("copper_plate_from_block", <immersiveengineering:metal:30> * 3, <ore:blockCopper>, 15, "hammer", true);
+GraniteAnvil.addRecipe("gold_plate_from_block", <immersiveengineering:metal:40> * 3, <ore:blockGold>, 15, "hammer", true);
 GraniteAnvil.addRecipe("flint_from_limestone", <minecraft:flint> * 3, <ore:stoneLimestone>, 15, "pickaxe", true);
 
 CompactingBin.addRecipe("coal_block_from_coal", <minecraft:coal_block>, <ore:itemCoal>, 9);
