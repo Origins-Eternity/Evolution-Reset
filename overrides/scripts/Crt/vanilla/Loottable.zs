@@ -37,3 +37,17 @@ val banlist = [
 for items in banlist {
 mods.ltt.LootTable.removeGlobalItem(items.definition.id);
 }
+
+var tables = [
+"botania:inject/abandoned_mineshaft",
+"botania:inject/jungle_temple",
+"botania:inject/village_blacksmith",
+"botania:inject/simple_dungeon",
+"botania:inject/stronghold_corridor",
+"botania:inject/desert_pyramid",
+"botania:inject/spawn_bonus_chest"
+] as string[];
+
+for table in tables {
+    mods.ltt.LootTable.removeItem(table, "main", <botania:manaresource>.definition.id);
+}
