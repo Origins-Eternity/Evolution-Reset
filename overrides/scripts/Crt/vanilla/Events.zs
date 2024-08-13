@@ -230,11 +230,6 @@ if(!event.player.creative) {
             player.addPotionEffect(<potion:tconstruct:dot>.makePotionEffect(20, 1));
             player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(100, 1));
         } else {
-            if(player.currentItem.definition.id == "pyrotech:crude_axe") {
-                if(!isNull(player.data.wasGivenTip3)) return;
-                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
-                player.update({wasGivenTip3: true});
-            }
             if(player.currentItem.definition.name.contains("axe")) return;
             if(player.currentItem.definition.name.contains("shovel")) return;
             if(player.currentItem.definition.name.contains("hoe")) return;
@@ -258,10 +253,6 @@ var player = event.player;
         if ((down.definition.id == "minecraft:furnace") || (id == "minecraft:lit_furnace"))  {
             event.world.destroyBlock(pos, false);
         }
-    } else if (id == "tconstruct:smeltery_controller") {
-        if(isNull(event.world.getCustomWorldData().reachingStage)) {
-            event.world.updateCustomWorldData({reachingStage: true});
-        }
     }
 });
 
@@ -269,5 +260,19 @@ events.onPlayerFillBucket(function(event as PlayerFillBucketEvent) {
     var id = event.block.definition.id;
     if((id == "minecraft:ice") && (event.player.currentItem.definition.id != "minecraft:bucket")) {
         event.cancel();
+    }
+});
+
+events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
+    if(event.player.world.isRemote()) return;
+    if(isNull(event.output)) return;
+    if(event.output.definition.id == "pyrotech:crude_axe") {
+        if(!isNull(event.player.data.wasGivenTip3)) return;
+        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
+        event.player.update({wasGivenTip3: true});
+    } else if(event.output.definition.id == "tconstruct:smeltery_controller") {
+        if(isNull(event.player.world.getCustomWorldData().reachingStage)) {
+            event.player.world.updateCustomWorldData({reachingStage: true});
+        }
     }
 });
