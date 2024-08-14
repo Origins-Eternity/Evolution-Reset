@@ -253,6 +253,10 @@ var player = event.player;
         if ((down.definition.id == "minecraft:furnace") || (id == "minecraft:lit_furnace"))  {
             event.world.destroyBlock(pos, false);
         }
+    } else if (id == "tconstruct:smeltery_controller") {
+        if (isNull(event.player.world.getCustomWorldData().reachingStage)) {
+            event.player.world.updateCustomWorldData({reachingStage: true});
+        }
     }
 });
 
@@ -270,9 +274,5 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
         if(!isNull(event.player.data.wasGivenTip3)) return;
         event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
         event.player.update({wasGivenTip3: true});
-    } else if(event.output.definition.id == "tconstruct:smeltery_controller") {
-        if(isNull(event.player.world.getCustomWorldData().reachingStage)) {
-            event.player.world.updateCustomWorldData({reachingStage: true});
-        }
     }
 });
