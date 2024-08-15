@@ -46,6 +46,7 @@ var ingot = [
 <immersiveengineering:metal:7>,
 <immersiveengineering:metal:8>,
 <ercore:tungsten_steel_ingot>,
+<ercore:tungsten_ingot>,
 <immersiveengineering:material:19>,
 <immersiveengineering:metal:1>,
 <immersiveengineering:metal:3>,
@@ -70,6 +71,9 @@ for items in ingot {
 var nugget = [
 <minecraft:gold_nugget>,
 <minecraft:iron_nugget>,
+<ercore:tungsten_steel_nugget>,
+<ercore:tungsten_nugget>,
+<ercore:tin_nugget>,
 <immersiveengineering:metal:20>,
 <immersiveengineering:metal:21>,
 <immersiveengineering:metal:22>,
