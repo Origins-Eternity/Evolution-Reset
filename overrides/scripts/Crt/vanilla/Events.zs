@@ -35,6 +35,7 @@ import crafttweaker.entity.IEntityMob;
 import crafttweaker.event.PlayerChangedDimensionEvent;
 import crafttweaker.event.PlayerCloneEvent;
 import crafttweaker.event.PlayerFillBucketEvent;
+import mods.zenutils.DataUpdateOperation.APPEND;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
@@ -90,15 +91,17 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
     if(!isNull(event.fromWorld.getCustomWorldData().reachingStage)) {
         event.toWorld.updateCustomWorldData({reachingStage: true});
     }
-    if(event.toWorld.dimension != -1) return;
     var ser = server.commandManager as ICommandManager;
-    if(isNull(event.player.currentItem)) {
-        ser.executeCommand(server, "tpd " + event.player.name + " 0");
-        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
-    } else {
-        if(event.player.currentItem in <ore:runeFireB>) return;
-        ser.executeCommand(server, "tpd " + event.player.name + " 0");
-        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
+    if(event.toWorld.dimension == -1) {
+        if((isNull(event.player.currentItem)) || (!(event.player.currentItem in <ore:runeFireB>))) {
+            ser.executeCommand(server, "tpd " + event.player.name + " 0");
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
+        }
+    } else if(event.toWorld.dimension == 1) {
+        if((isNull(event.player.currentItem)) || (!(event.player.currentItem in <ore:runeLustB>))) {
+            ser.executeCommand(server, "tpd " + event.player.name + " 0");
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.end"));
+        }
     }
 });
 

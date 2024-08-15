@@ -207,14 +207,13 @@ RecipeBuilder.get("basic")
   
 RecipeBuilder.get("engineer")
 .setShaped([
-    [<pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>],
-    [<ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>],
-    [<ore:blockSteel>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:blockSteel>],
     [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>],
-    [<ore:blockIron>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:blockIron>]])
-.setName("furnace")
+    [<ore:blockIron>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockSteel>, <ore:blockIron>],
+    [<ore:blockIron>, <ore:plateSteel>, <pyrotech:igniter:1>, <ore:plateSteel>, <ore:blockIron>],
+    [<ore:blockIron>, <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, <ore:blockIron>],
+    [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>, <ore:blockIron>]])
+.setName("furnace_core")
 .setLevelRequired(30)
-.setSecondaryIngredients([<immersiveengineering:metal:38> * 9])
 .addTool(<ercore:furnace_core_blueprint>, 2)
 .setFluid(<liquid:lava> * 5000)
 .addTool(<ore:artisansCarver>, 30)  
@@ -782,11 +781,11 @@ RecipeBuilder.get("tanner")
 
 RecipeBuilder.get("tanner")
 .setShaped([
-    [<ore:leather>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <ore:leather>],
-    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <ore:leather>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
-    [<pyrotech:wool_tarred>, <ore:leather>, <usefulbackpacks:backpack>, <ore:leather>, <pyrotech:wool_tarred>],
-    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <ore:leather>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
-    [<ore:leather>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <ore:leather>]])
+    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>],
+    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
+    [<pyrotech:wool_tarred>, <pyrotech:material:42>, <usefulbackpacks:backpack>, <pyrotech:material:42>, <pyrotech:wool_tarred>],
+    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
+    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>]])
 .setName("midbag")
 .setLevelRequired(10)
 .setConsumeExperience(false)
@@ -802,15 +801,15 @@ RecipeBuilder.get("tanner")
 
 RecipeBuilder.get("tanner")
 .setShaped([
-    [<minecraft:leather>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <minecraft:leather>],
-    [<pyrotech:wool_tarred>, <minecraft:leather>, <pyrotech:wool_tarred>, <minecraft:leather>, <pyrotech:wool_tarred>],
+    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>],
+    [<pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>],
     [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <usefulbackpacks:backpack:1>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
-    [<pyrotech:wool_tarred>, <minecraft:leather>, <pyrotech:wool_tarred>, <minecraft:leather>, <pyrotech:wool_tarred>],
-    [<minecraft:leather>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <minecraft:leather>]])
+    [<pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>],
+    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>]])
 .setName("largebag")
 .setLevelRequired(15)
 .setConsumeExperience(false)
-.setSecondaryIngredients([<ore:string> * 8, <pyrotech:material:44> * 4, <pyrotech:material:43> * 2])  
+.setSecondaryIngredients([<ore:string> * 8, <pyrotech:material:44> * 8])  
 .setExtraOutputOne(<minecraft:leather> * 2, 0.3)	 
 .setExtraOutputTwo(<minecraft:string> * 4, 0.5)
 .setExtraOutputThree(<minecraft:feather> * 6, 0.2)  
@@ -842,7 +841,7 @@ RecipeBuilder.get("basic")
 .setName("tanner_workshop")
 .setLevelRequired(15)
 .setExtraOutputTwo(<minecraft:string> * 3, 0.5)
-.setExtraOutputThree(<minecraft:leather> * 6, 0.5)  
+.setExtraOutputThree(<minecraft:leather> * 2, 0.5)  
 .addTool(<ercore:tanner_workshop_blueprint>, 2)
 .addTool(<ore:artisansPunch>, 15)  
 .create();

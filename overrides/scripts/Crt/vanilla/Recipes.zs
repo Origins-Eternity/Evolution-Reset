@@ -113,7 +113,8 @@ var game_recipes = [
 <minecraft:sugar>,
 <minecraft:gunpowder>,
 <tconstruct:materials>,
-<minecraft:glass_pane>
+<minecraft:glass_pane>,
+<minecraft:leather>
 ] as IItemStack[];
 
 for items in game_recipes {
@@ -192,7 +193,7 @@ recipes.addShaped(<artisanworktables:workshop>,
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
 recipes.addShaped(<artisanworktables:workshop:13>,
-[[<minecraft:leather>, <minecraft:leather>, <minecraft:leather>],
+[[<pyrotech:material:42>, <pyrotech:material:42>, <pyrotech:material:42>],
 [<pyrotech:planks_tarred>, <artisanworktables:workstation:13>, <pyrotech:planks_tarred>],
 [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>]]);
 

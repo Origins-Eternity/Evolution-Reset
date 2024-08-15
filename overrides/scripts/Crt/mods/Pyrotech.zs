@@ -350,7 +350,6 @@ Campfire.removeRecipes(<minecraft:bread>);
 Campfire.removeRecipes(<minecraft:blaze_powder>);
 
 StoneKiln.removeRecipes(<minecraft:netherbrick>);
-StoneKiln.removeRecipes(<minecraft:glass>);
 PitKiln.removeRecipes(<minecraft:netherbrick>);
 
 IroncladAnvil.addRecipe("nugget_from_ingot_tungsten", <ercore:tungsten_nugget> * 9, <ercore:tungsten_ingot>, 20, "hammer");
