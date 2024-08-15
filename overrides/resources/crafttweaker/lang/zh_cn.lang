@@ -7,4 +7,5 @@ crafttweaker.message.tip2=§3不管了，生存下去才是目前最重要的事
 crafttweaker.message.tip3=§2距今约250万年前，人类开始使用打制石器，步入石器时代。§r
 crafttweaker.message.locked=§5它被锁上了！§r
 crafttweaker.message.failed=§6好像不太管用……试试万能钥匙？§r
-crafttweaker.message.nether=§4你未被邀请！§r
+crafttweaker.message.nether=§4手上没有火之符文前往下界是一件非常冒险的事……§r
+crafttweaker.message.end=§5手上没有欲望符文前往末地是一件非常冒险的事……§r

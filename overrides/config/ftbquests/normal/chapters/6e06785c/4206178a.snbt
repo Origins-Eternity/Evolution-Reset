@@ -17,6 +17,13 @@
 		items: [{
 			item: "botania:rune 1 1"
 		}]
+	},
+	{
+		uid: "9109df42",
+		type: "item",
+		items: [{
+			item: "botania:rune 1 9"
+		}]
 	}],
 	rewards: [{
 		uid: "3eea6d90",

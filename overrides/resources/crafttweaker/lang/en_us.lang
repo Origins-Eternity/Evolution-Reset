@@ -9,3 +9,5 @@ crafttweaker.message.tip3=§2About 2.5 million years ago, humans began using chi
 crafttweaker.message.locked=§5It was locked!§r
 crafttweaker.message.failed=§6It doesn't seem to work... Try the Master Key?§r
 crafttweaker.message.nether=§4You weren't invited!§r
+crafttweaker.message.nether=§4Without Rune of Fire in hand, it's really a risk to enter the nether...§r
+crafttweaker.message.end=§5Without Rune of Lust in hand, it's really a risk to enter the end...§r
