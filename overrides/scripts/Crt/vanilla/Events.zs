@@ -35,7 +35,6 @@ import crafttweaker.entity.IEntityMob;
 import crafttweaker.event.PlayerChangedDimensionEvent;
 import crafttweaker.event.PlayerCloneEvent;
 import crafttweaker.event.PlayerFillBucketEvent;
-import mods.zenutils.DataUpdateOperation.APPEND;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
@@ -94,13 +93,21 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
     var ser = server.commandManager as ICommandManager;
     if(event.toWorld.dimension == -1) {
         if((isNull(event.player.currentItem)) || (!(event.player.currentItem in <ore:runeFireB>))) {
-            ser.executeCommand(server, "tpd " + event.player.name + " 0");
+            if(isNull(event.player.bedLocation)) {
+                ser.executeCommand(server, "tpd " + event.player.name + " 0 0 0");
+            } else {
+                ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
+            }
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
         }
     } else if(event.toWorld.dimension == 1) {
         if((isNull(event.player.currentItem)) || (!(event.player.currentItem in <ore:runeLustB>))) {
-            ser.executeCommand(server, "tpd " + event.player.name + " 0");
-            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.end"));
+            if(isNull(event.player.bedLocation)) {
+                ser.executeCommand(server, "tpd " + event.player.name + " 0 0 0");
+            } else {
+                ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
+            }
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
         }
     }
 });

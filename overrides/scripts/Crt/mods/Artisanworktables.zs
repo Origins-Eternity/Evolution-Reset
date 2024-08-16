@@ -628,6 +628,7 @@ RecipeBuilder.get("tailor")
     [<immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:straw_bed>, <minecraft:wool>, <immersiveengineering:metal:38>],
     [<ore:ingotSteel>, <minecraft:wool>, <minecraft:wool>, <minecraft:wool>, <ore:ingotSteel>],
     [<pyrotech:material:43>, <minecraft:wool>, <immersiveengineering:metal:38>, <minecraft:wool>, <pyrotech:material:43>]])
+.setName("sleeping_bag")
 .setLevelRequired(25)
 .setSecondaryIngredients([<ore:string> * 6])
 .setMaximumTier(2)
