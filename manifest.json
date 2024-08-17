@@ -96,7 +96,7 @@
     },
     {
       "projectID": 306676,
-      "fileID": 5351359,
+      "fileID": 5635213,
       "required": true
     },
     {
@@ -607,11 +607,6 @@
     {
       "projectID": 822103,
       "fileID": 5369512,
-      "required": true
-    },
-    {
-      "projectID": 288907,
-      "fileID": 2723159,
       "required": true
     },
     {

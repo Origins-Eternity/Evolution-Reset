@@ -14,6 +14,7 @@ recipes.replaceAllOccurences(<minecraft:stone_pickaxe>, <minecraft:stone>);
 recipes.replaceAllOccurences(<minecraft:golden_pickaxe>, <ore:blockGold>);
 recipes.replaceAllOccurences(<minecraft:crafting_table>, <ore:craftingTable>);
 recipes.replaceAllOccurences(<ore:chest>, <pyrotech:crate_stone>);
+recipes.replaceAllOccurences(<minecraft:bow>, <pyrotech:bow_drill_durable>);
 
 var block = [
 <minecraft:iron_block>,
