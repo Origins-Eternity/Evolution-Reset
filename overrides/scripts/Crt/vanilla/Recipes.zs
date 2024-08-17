@@ -36,7 +36,8 @@ var block = [
 <immersiveengineering:storage:4>,
 <immersiveengineering:storage:3>,
 <immersiveengineering:storage:5>,
-<immersiveengineering:storage:2>
+<immersiveengineering:storage:2>,
+<ercore:tungsten_steel_block>
 ] as IItemStack[];
 
 for items in block {
@@ -47,6 +48,7 @@ var ingot = [
 <immersiveengineering:metal:7>,
 <immersiveengineering:metal:8>,
 <ercore:tungsten_steel_ingot>,
+<ercore:tungsten_carbide_ingot>,
 <ercore:tungsten_ingot>,
 <immersiveengineering:material:19>,
 <immersiveengineering:metal:1>,
@@ -73,6 +75,7 @@ var nugget = [
 <minecraft:gold_nugget>,
 <minecraft:iron_nugget>,
 <ercore:tungsten_steel_nugget>,
+<ercore:tungsten_carbide_nugget>,
 <ercore:tungsten_nugget>,
 <ercore:tin_nugget>,
 <immersiveengineering:metal:20>,

@@ -1001,8 +1001,11 @@ awBlackSmithShaped("nickel_block_from_ingot", <immersiveengineering:storage:4>, 
 awBlackSmithShaped("silver_block_from_ingot", <immersiveengineering:storage:3>, <ore:blockSilver>);
 awBlackSmithShaped("uranium_block_from_ingot", <immersiveengineering:storage:5>, <ore:blockUranium>);
 awBlackSmithShaped("lead_block_from_ingot", <immersiveengineering:storage:2>, <ore:ingotLead>);
+awBlackSmithShaped("tungsten_steel_block_from_ingot", <ercore:tungsten_steel_block>, <ercore:tungsten_steel_ingot>);
 
 awBlackSmithShapeless("nugget_from_ingot_tungsten", <ercore:tungsten_nugget>, <ore:ingotTungsten>, 9);
+awBlackSmithShapeless("nugget_from_ingot_tungsten_steel", <ercore:tungsten_steel_nugget>, <ercore:tungsten_steel_ingot>, 9);
+awBlackSmithShapeless("nugget_from_ingot_tungsten_carbide", <ercore:tungsten_carbide_nugget>, <ercore:tungsten_carbide_ingot>, 9);
 awBlackSmithShapeless("nugget_from_ingot_aluminum", <immersiveengineering:metal:21>, <ore:ingotAluminum>, 9);
 awBlackSmithShapeless("nugget_from_ingot_lead", <immersiveengineering:metal:22>, <ore:ingotLead>, 9);
 awBlackSmithShapeless("nugget_from_ingot_silver", <immersiveengineering:metal:24>, <ore:ingotSilver>, 9);
