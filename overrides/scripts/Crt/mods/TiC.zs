@@ -12,7 +12,6 @@ var modrecipes = [
 <tconstruct:smeltery_io>,
 <tconstruct:seared_tank>,
 <tconstruct:faucet>,
-<tconstruct:tooltables:4>,
 <tconstruct:tooltables>
 ] as IItemStack[];
 
@@ -64,8 +63,3 @@ recipes.addShaped(<tconstruct:faucet>,
 [[null, null, null],
 [<tconstruct:materials>, <pyrotech:faucet_brick>, <tconstruct:materials>], 
 [null, <tconstruct:materials>, null]]);
-
-recipes.addShaped(<tconstruct:tooltables:4>,
-[[<pyrotech:material:20>, <pyrotech:material:20>, <pyrotech:material:20>],
-[<pyrotech:material:20>, <pyrotech:crate_stone>, <pyrotech:material:20>],
-[<pyrotech:material:20>, <pyrotech:material:20>, <pyrotech:material:20>]]);
