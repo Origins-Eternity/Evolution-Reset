@@ -14,7 +14,7 @@ SmithingTable.addRecipe(<galacticraftcore:steel_leggings>, <futuremc:netherite_i
 SmithingTable.addRecipe(<galacticraftcore:steel_boots>, <futuremc:netherite_ingot>, <futuremc:netherite_boots>);
 
 recipes.remove(<futuremc:barrel>);
-recipes.addShaped(<futuremc:barrel>,
+recipes.addShaped("barrel", <futuremc:barrel>,
 [[<pyrotech:material:20>, <pyrotech:material:20>, <pyrotech:material:20>],
 [<pyrotech:material:20>, <pyrotech:crate_stone>, <pyrotech:material:20>],
 [<pyrotech:material:20>, <pyrotech:material:20>, <pyrotech:material:20>]]);

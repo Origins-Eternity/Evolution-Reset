@@ -158,7 +158,8 @@ var worktable_recipes = [
 "crafttweaker:brick_sawmill",
 "crafttweaker:brick_crucible",
 "crafttweaker:potter_workshop",
-"crafttweaker:basic_workshop"
+"crafttweaker:basic_workshop",
+"crafttweaker:barrel"
 ] as string[];
 
 for items in worktable_recipes {
