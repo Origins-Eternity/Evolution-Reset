@@ -30,8 +30,3 @@ recipes.addShaped(<galacticraftcore:refinery>,
 [[<ercore:tungsten_steel_block>, <galacticraftcore:canister:1>, <ercore:tungsten_steel_block>],
 [<ore:stone>, <galacticraftcore:canister:1>, <ore:stone>],
 [<ore:compressedSteel>, <pyrotech:furnace_core>, <ore:compressedSteel>]]);
-
-recipes.addShaped("tin_ingot", <galacticraftcore:basic_item:4>,
-[[<ore:nuggetTin>, <ore:nuggetTin>, <ore:nuggetTin>],
-[<ore:nuggetTin>, <ore:nuggetTin>, <ore:nuggetTin>],
-[<ore:nuggetTin>, <ore:nuggetTin>, <ore:nuggetTin>]]);
