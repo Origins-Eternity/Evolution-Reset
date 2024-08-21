@@ -345,7 +345,10 @@ StoneSawmill.addRecipe("treated_stick_from_tarred_board", <immersiveengineering:
 BrickSawmill.addRecipe("cement_powder_from_soil", <ercore:cement_powder> * 9, <tconstruct:soil>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 
 SoakingPot.addRecipe("sugar_from_sugarcane", <minecraft:sugar> * 8, <liquid:sugarcane> * 1000, <pyrotech:material:22>, true, 5 * 60 * 20);
-SoakingPot.addRecipe("treated_wood_from_creosote", <immersiveengineering:treated_wood> * 8, <liquid:creosote> * 1000, <ore:plankWood> * 8, true, 10 * 60 * 20);
+
+for plank in <ore:plankWood>.items {
+SoakingPot.addRecipe("treated_wood_from_" + plank.definition.name, <immersiveengineering:treated_wood>, <liquid:creosote> * 125, plank, true, 10 * 60 * 20);
+}
 
 Campfire.removeRecipes(<minecraft:bread>);
 Campfire.removeRecipes(<minecraft:blaze_powder>);
