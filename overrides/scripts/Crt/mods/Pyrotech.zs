@@ -284,7 +284,7 @@ val ietool as IItemStack = <immersiveengineering:tool>.transformDamage(1);
 function pyrWorktableCreate(modid as string, name as string, output as IItemStack, inputs1 as IIngredient[], inputs2 as IIngredient[], inputs3 as IIngredient[], damage as int){
     Worktable.buildShaped(output, [inputs1, inputs2, inputs3])
     .setName(modid ~ name)
-    .setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer>, damage)
+    .setTool(<pyrotech:bone_hammer> | <pyrotech:flint_hammer> | <pyrotech:diamond_hammer> | <pyrotech:iron_hammer> | <pyrotech:gold_hammer> | <pyrotech:obsidian_hammer> | <pyrotech:bone_hammer_durable> | <pyrotech:flint_hammer_durable>, damage)
     .register();
 }
 pyrWorktableCreate("tconstruct", "_sharp bamboo nails", <tconstruct:punji> * 5, [<minecraft:reeds>, null, <minecraft:reeds>], [null, <minecraft:reeds>, null], [<minecraft:reeds>, null, <minecraft:reeds>], 5);

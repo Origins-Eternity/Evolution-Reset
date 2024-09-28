@@ -167,6 +167,7 @@ for botflower in botflowers {
 
 var oneblocks = [
 <ore:oreCopper>,
+<ore:oreGold>,
 <ore:oreTin>,
 <ore:oreAluminium>,
 <ore:oreLead>,
@@ -177,7 +178,6 @@ for oneblock in oneblocks {
 }
 
 var twoblocks = [
-<ore:oreGold>,
 <ore:oreIron>,
 <ore:oreSilver>,
 <ore:oreUranium>,
