@@ -1,10 +1,145 @@
 #
-#priority 99999
-import crafttweaker.oredict.IOreDictEntry;
+#priority 99998
 import crafttweaker.block.IBlockDefinition;
+import crafttweaker.data.IData;
+import crafttweaker.game.IGame;
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.mods.IMod;
+import crafttweaker.oredict.IOreDictEntry;
+
+import scripts.Crt.core.oredict as OredictUtil;
+
+var oredictMap as IIngredient[][IOreDictEntry] = {
+    <ore:dirt> : [
+        <biomesoplenty:dirt:8>,
+        <biomesoplenty:dirt>,
+        <biomesoplenty:dirt:9>,
+        <biomesoplenty:dirt:1>,
+        <biomesoplenty:dirt:10>,
+        <biomesoplenty:dirt:2>
+        ],
+    <ore:doorWood> : [
+        <minecraft:trapdoor>,
+        <minecraft:wooden_door>
+    ],
+    <ore:shears> : [
+        <pyrotech:clay_shears>,
+        <pyrotech:stone_shears>,
+        <pyrotech:bone_shears>,
+        <pyrotech:flint_shears>,
+        <pyrotech:gold_shears>,
+        <pyrotech:diamond_shears>,
+        <pyrotech:obsidian_shears>,
+        <minecraft:shears>
+    ],
+    <ore:flower> : [
+        <minecraft:red_flower:*>,
+        <minecraft:yellow_flower>,
+        <minecraft:double_plant:*>
+    ],
+    <ore:artisansTool> : [
+        <ore:artisansBeaker>,
+        <ore:artisansCarver>,
+        <ore:artisansChisel>,
+        <ore:artisansCutters>,
+        <ore:artisansDriver>,
+        <ore:artisansGroover>,
+        <ore:artisansHammer>,
+        <ore:artisansHandsaw>,
+        <ore:artisansLens>,
+        <ore:artisansNeedle>,
+        <ore:artisansPunch>,
+        <ore:artisansmortar>,
+        <ore:artisansShears>,
+        <ore:artisansSifter>,
+        <ore:artisansSpanner>,
+        <ore:artisansTrowel>,
+        <ore:artisansTSquare>,
+        <ore:constructionWand>
+    ],
+    <ore:artisansToolslow> : [
+        <ore:artisansHammer>,
+<ore:artisansTSquare>,
+<ore:artisansCarver>,
+<ore:constructionWand>
+    ],
+    <ore:vacuumbag> : [
+        <adpother:diamond_vacuum_bag>,
+<adpother:iron_vacuum_bag>,
+<adpother:gold_vacuum_bag>
+    ],
+    <ore:flower> : [
+        <ore:mysticFlowerWhite>,
+<ore:mysticFlowerLightGray>,
+<ore:mysticFlowerOrange>,
+<ore:mysticFlowerCyan>,
+<ore:mysticFlowerMagenta>,
+<ore:mysticFlowerPurple>,
+<ore:mysticFlowerLightBlue>,
+<ore:mysticFlowerBlue>,
+<ore:mysticFlowerYellow>,
+<ore:mysticFlowerBrown>,
+<ore:mysticFlowerLime>,
+<ore:mysticFlowerGreen>,
+<ore:mysticFlowerPink>,
+<ore:mysticFlowerRed>,
+<ore:mysticFlowerGray>,
+<ore:mysticFlowerBlack>
+    ],
+    <ore:blockOne> : [
+        <ore:oreCopper>,
+<ore:oreGold>,
+<ore:oreTin>,
+<ore:oreAluminium>,
+<ore:oreLead>,
+    ],
+    <ore:blockTwo> : [
+        <ore:oreIron>,
+<ore:oreSilver>,
+<ore:oreUranium>,
+<ore:oreCobalt>,
+<ore:oreArdite>,
+<ore:oreEmerald>
+    ],
+    <ore:blockThree> : [
+        <ore:stoneAndesite>,
+<ore:stoneGranite>,
+<ore:stoneDiorite>
+    ],
+    <ore:blockFour> : [
+        <ore:oreTitanium>,
+<ore:blockIron>,
+<ore:oreTungsten>
+    ],
+    <ore:blockFive> : [
+        <ore:oreDiamond>,
+<ore:blockDiamond>
+    ],
+    <ore:erstone> : [
+        <ore:stone>,
+<ore:cobblestone>,
+<ore:blockMossy>
+    ],
+    <ore:eroreDiamond> : [
+        <ore:oreDiamond>,
+<ore:gemDiamond>
+    ],
+    <ore:eroreEmerald> : [
+        <ore:oreEmerald>,
+<ore:gemEmerald>
+    ]
+
+
+
+
+};
+
+for oredict in oredictMap {
+    var ingredients as IIngredient[] = oredictMap[oredict];
+    OredictUtil.addOredictIngredients(oredict, ingredients);
+}
 
 <ore:mushroom>.add(<minecraft:red_mushroom>);
 <ore:mushroom>.add(<minecraft:brown_mushroom>);
@@ -39,214 +174,18 @@ import crafttweaker.mods.IMod;
 <ore:furnace>.add(<minecraft:furnace>);
 <ore:oreTitanium>.addAll(<ore:oreIlmenite>);
 
-var dirts =[
-<biomesoplenty:dirt:8>,
-<biomesoplenty:dirt>,
-<biomesoplenty:dirt:9>,
-<biomesoplenty:dirt:1>,
-<biomesoplenty:dirt:10>,
-<biomesoplenty:dirt:2>
-] as IItemStack[];
 
-for d in dirts {
-    <ore:dirt>.add(d);
-}
 
-var doors =[
-<minecraft:wooden_door>,
-<minecraft:trapdoor>
-] as IItemStack[];
 
-for door in doors {
-    <ore:doorWood>.add(door);
-}
 
-var shears =[
-<pyrotech:clay_shears>,
-<pyrotech:stone_shears>,
-<pyrotech:bone_shears>,
-<pyrotech:flint_shears>,
-<pyrotech:gold_shears>,
-<pyrotech:diamond_shears>,
-<pyrotech:obsidian_shears>,
-<minecraft:shears>
-] as IItemStack[];
 
-for i in shears {
-    <ore:shears>.add(i);
-}
 
-var flowers =[
-<minecraft:red_flower:*>,
-<minecraft:yellow_flower>,
-<minecraft:double_plant:*>
-] as IItemStack[];
 
-for i in flowers {
-    <ore:flower>.add(i);
-}
 
-var tools = [
-<ore:artisansBeaker>,
-<ore:artisansCarver>,
-<ore:artisansChisel>,
-<ore:artisansCutters>,
-<ore:artisansDriver>,
-<ore:artisansGroover>,
-<ore:artisansHammer>,
-<ore:artisansHandsaw>,
-<ore:artisansLens>,
-<ore:artisansNeedle>,
-<ore:artisansPunch>,
-<ore:artisansmortar>,
-<ore:artisansShears>,
-<ore:artisansSifter>,
-<ore:artisansSpanner>,
-<ore:artisansTrowel>,
-<ore:artisansTSquare>,
-<ore:constructionWand>
-] as IOreDictEntry[];
 
-for tool in tools {
-    <ore:artisansTool>.addAll(tool);
-}
 
-var toolslows = [
-<ore:artisansHammer>,
-<ore:artisansTSquare>,
-<ore:artisansCarver>,
-<ore:constructionWand>
-] as IOreDictEntry[];
-
-for toolslow in toolslows {
-    <ore:artisansToolslow>.addAll(toolslow);
-}
-
-var vacuumbags = [
-<adpother:diamond_vacuum_bag>,
-<adpother:iron_vacuum_bag>,
-<adpother:gold_vacuum_bag>
-] as IItemStack[];
-
-for bag in vacuumbags {
-    <ore:vacuumbag>.add(bag);
-}
-
-var respirators = [
-<adpother:diamond_respirator>,
-<adpother:iron_respirator>,
-<adpother:gold_respirator>
-] as IItemStack[];
-
-for r in respirators {
-    <ore:respirator>.add(r);
-}
-
-var botflowers = [
-<ore:mysticFlowerWhite>,
-<ore:mysticFlowerLightGray>,
-<ore:mysticFlowerOrange>,
-<ore:mysticFlowerCyan>,
-<ore:mysticFlowerMagenta>,
-<ore:mysticFlowerPurple>,
-<ore:mysticFlowerLightBlue>,
-<ore:mysticFlowerBlue>,
-<ore:mysticFlowerYellow>,
-<ore:mysticFlowerBrown>,
-<ore:mysticFlowerLime>,
-<ore:mysticFlowerGreen>,
-<ore:mysticFlowerPink>,
-<ore:mysticFlowerRed>,
-<ore:mysticFlowerGray>,
-<ore:mysticFlowerBlack>
-] as IOreDictEntry[];
-
-for botflower in botflowers {
-    <ore:flower>.addAll(botflower);
-}
-
-var oneblocks = [
-<ore:oreCopper>,
-<ore:oreGold>,
-<ore:oreTin>,
-<ore:oreAluminium>,
-<ore:oreLead>,
-] as IOreDictEntry[];
-
-for oneblock in oneblocks {
-    <ore:blockOne>.addAll(oneblock);
-}
-
-var twoblocks = [
-<ore:oreIron>,
-<ore:oreSilver>,
-<ore:oreUranium>,
-<ore:oreCobalt>,
-<ore:oreArdite>,
-<ore:oreEmerald>
-] as IOreDictEntry[];
-
-for twoblock in twoblocks {
-    <ore:blockTwo>.addAll(twoblock);
-}
-
-var threeblocks = [
-<ore:stoneAndesite>,
-<ore:stoneGranite>,
-<ore:stoneDiorite>
-] as IOreDictEntry[];
-
-for threeblock in threeblocks {
-    <ore:blockThree>.addAll(threeblock);
-}
 <ore:blockThree>.remove(<minecraft:stone>);
 
-var fourblocks = [
-<ore:oreTitanium>,
-<ore:blockIron>,
-<ore:oreTungsten>
-] as IOreDictEntry[];
-
-for fourblock in fourblocks {
-    <ore:blockFour>.addAll(fourblock);
-}
-
-var fiveblocks = [
-<ore:oreDiamond>,
-<ore:blockDiamond>
-] as IOreDictEntry[];
-
-for fiveblock in fiveblocks {
-    <ore:blockFive>.addAll(fiveblock);
-}
-
-var stones = [
-<ore:stone>,
-<ore:cobblestone>,
-<ore:blockMossy>
-] as IOreDictEntry[];
-
-for stone in stones {
-    <ore:erstone>.addAll(stone);
-}
-
-var diamondores = [
-<ore:oreDiamond>,
-<ore:gemDiamond>
-] as IOreDictEntry[];
-
-for diamondore in diamondores {
-    <ore:eroreDiamond>.addAll(diamondore);
-}
-
-var emeraldores = [
-<ore:oreEmerald>,
-<ore:gemEmerald>
-] as IOreDictEntry[];
-
-for emeraldore in emeraldores {
-    <ore:eroreEmerald>.addAll(emeraldore);
-}
 
 var cobblestones = [
 <ore:cobblestoneGranite>,
