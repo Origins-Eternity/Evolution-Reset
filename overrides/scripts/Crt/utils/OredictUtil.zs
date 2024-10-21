@@ -26,3 +26,4 @@ function removeOredictIngredients(oredict as IOreDictEntry, ingredients as IIngr
     for ingredient in ingredients {
         oredict.removeItems(ingredient.items);
     }
+}

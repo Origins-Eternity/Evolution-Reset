@@ -9,7 +9,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.mods.IMod;
 import crafttweaker.oredict.IOreDictEntry;
 
-import scripts.Crt.core.oredict as OredictUtil;
+import scripts.Crt.utils.OredictUtil;
 
 var oredictMap as IIngredient[][IOreDictEntry] = {
     <ore:dirt> : [
