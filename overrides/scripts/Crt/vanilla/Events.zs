@@ -238,6 +238,7 @@ if(!event.player.creative) {
             if(player.currentItem.definition.name.contains("excavator")) return;
             if(player.currentItem.definition.name.contains("hatchet")) return;
             if(player.currentItem.definition.name.contains("mattock")) return;
+            if(player.currentItem.definition.name.contains("shears")) return;
             event.cancel();
         }
     }

@@ -24,16 +24,6 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
         <minecraft:trapdoor>,
         <minecraft:wooden_door>
     ],
-    <ore:shears> : [
-        <pyrotech:clay_shears>,
-        <pyrotech:stone_shears>,
-        <pyrotech:bone_shears>,
-        <pyrotech:flint_shears>,
-        <pyrotech:gold_shears>,
-        <pyrotech:diamond_shears>,
-        <pyrotech:obsidian_shears>,
-        <minecraft:shears>
-    ],
     <ore:flower> : [
         <minecraft:red_flower:*>,
         <minecraft:yellow_flower>,
