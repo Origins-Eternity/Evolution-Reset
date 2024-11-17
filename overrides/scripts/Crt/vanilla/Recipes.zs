@@ -236,8 +236,6 @@ recipes.addShaped("brick_crucible", <pyrotech:brick_crucible>,
 [<pyrotech:refractory_brick_block>, <pyrotech:stone_crucible>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>]]);
 
-brewing.addBrew(<minecraft:potion>, <minecraft:chorus_fruit>, <minecraft:dragon_breath>);
-
 var books = [
 <ftbquests:book>,
 <spiceoflife:bookfoodjournal>,

@@ -105,8 +105,6 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
     if(isNull(event.player.currentItem)) return;
     if(<ore:banItems> has event.player.currentItem) {
         event.player.dropItem(true);
-    } else if(event.player.currentItem.name == "item.glassBottle") {
-        event.player.dropItem(true);
     }
     if(event.player.world.isRemote()) return;
     val player = event.player;
