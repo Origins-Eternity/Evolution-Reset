@@ -189,15 +189,15 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     if(event.world.dimension != 0) return;
     if(event.world.isRemote()) return;
     if(isNull(event.world.getCustomWorldData().reachingStage)) {
+        if(entity.definition.name == "Chicken") {
+            if(entity.nbt.asString().contains("IsChickenJockey: 1")) {
+                event.cancel();
+            }
+        }
         for mob in mobs {
             if(entity.definition.name == mob) {
                 event.cancel();
                 break;
-            }
-        }
-        if(entity.definition.name == "Chicken") {
-            if(entity.nbt.asString().contains("IsChickenJockey: 1")) {
-                event.cancel();
             }
         }
     }
