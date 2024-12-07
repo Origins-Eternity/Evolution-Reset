@@ -675,7 +675,77 @@ RecipeBuilder.get("engineer")
 .addOutput(<minecraft:gunpowder>)
 .create();
 
-recipes.remove(<usefulbackpacks:backpack:*>);
+RecipeBuilder.get("tanner")
+.setShaped([
+    [<ore:wool>, <pyrotech:material:43>, <ore:wool>],
+    [<pyrotech:material:43>, <pyrotech:material:42>, <pyrotech:material:43>],
+    [<ore:wool>, <pyrotech:material:43>, <ore:wool>]])
+.setName("smallbag")
+.setLevelRequired(5)
+.setConsumeExperience(false)
+.setSecondaryIngredients([<ore:string> * 4, <pyrotech:material:44> * 2])  
+.setExtraOutputOne(<minecraft:leather>, 0.1)	 
+.setExtraOutputTwo(<minecraft:string> * 2, 0.9)	
+.addTool(<ercore:small_backpack_blueprint>, 2)
+.addTool(<ore:artisansPunch>, 10)
+.addOutput(<usefulbackpacks:backpack>)
+.create();
+
+RecipeBuilder.get("tanner")
+.setShaped([
+    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>],
+    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
+    [<pyrotech:wool_tarred>, <pyrotech:material:42>, <usefulbackpacks:backpack>, <pyrotech:material:42>, <pyrotech:wool_tarred>],
+    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
+    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>]])
+.setName("midbag")
+.setLevelRequired(10)
+.setConsumeExperience(false)
+.setSecondaryIngredients([<ore:string> * 6, <pyrotech:material:44> * 4])  
+.setExtraOutputOne(<minecraft:leather> * 4, 0.2)	 
+.setExtraOutputTwo(<minecraft:string> * 3, 0.4)
+.setExtraOutputThree(<minecraft:feather> * 2, 0.4)  
+.addTool(<ore:artisansGroover>, 15)
+.addTool(<ercore:medium_backpack_blueprint>, 2)
+.addTool(<ore:artisansShears>, 20)
+.addOutput(<usefulbackpacks:backpack:1>)
+.create();
+
+RecipeBuilder.get("tanner")
+.setShaped([
+    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>],
+    [<pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>],
+    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <usefulbackpacks:backpack:1>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
+    [<pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>],
+    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>]])
+.setName("largebag")
+.setLevelRequired(15)
+.setConsumeExperience(false)
+.setSecondaryIngredients([<ore:string> * 8, <pyrotech:material:44> * 8])  
+.setExtraOutputOne(<minecraft:leather> * 2, 0.3)	 
+.setExtraOutputTwo(<minecraft:string> * 4, 0.5)
+.setExtraOutputThree(<minecraft:feather> * 6, 0.2)  
+.addTool(<ercore:large_backpack_blueprint>, 2)
+.addTool(<ore:artisansNeedle>, 25)
+.addTool(<ore:artisansPunch>, 30)  
+.addOutput(<usefulbackpacks:backpack:2>)
+.create();
+  
+RecipeBuilder.get("tanner")
+.setShaped([
+    [<pyrotech:wool_tarred>, <minecraft:leather>, <pyrotech:wool_tarred>],
+    [<minecraft:leather>, <pyrotech:crate>, <minecraft:leather>],
+    [<pyrotech:wool_tarred>, <minecraft:leather>, <pyrotech:wool_tarred>]])
+.setName("simplebag")
+.setLevelRequired(3)
+.setConsumeExperience(false)
+.setSecondaryIngredients([<ore:string> * 4])  
+.setExtraOutputTwo(<minecraft:string> * 2, 0.8)
+.setExtraOutputThree(<minecraft:leather>, 0.2)  
+.addTool(<ore:artisansNeedle>, 15)
+.addTool(<ercore:quarry_bag_blueprint>, 2)  
+.addOutput(<pyrotech:bag_simple>)
+.create();
 
 var colorfulsmallbags = [
 <usefulbackpacks:backpack>.withTag({display: {color: 16383998}}),
@@ -763,78 +833,6 @@ RecipeBuilder.get("tanner")
 .addOutput(colorfullargebag)
 .create();
 }
-
-RecipeBuilder.get("tanner")
-.setShaped([
-    [<ore:wool>, <pyrotech:material:43>, <ore:wool>],
-    [<pyrotech:material:43>, <pyrotech:material:42>, <pyrotech:material:43>],
-    [<ore:wool>, <pyrotech:material:43>, <ore:wool>]])
-.setName("smallbag")
-.setLevelRequired(5)
-.setConsumeExperience(false)
-.setSecondaryIngredients([<ore:string> * 4, <pyrotech:material:44> * 2])  
-.setExtraOutputOne(<minecraft:leather>, 0.1)	 
-.setExtraOutputTwo(<minecraft:string> * 2, 0.9)	
-.addTool(<ercore:small_backpack_blueprint>, 2)
-.addTool(<ore:artisansPunch>, 10)
-.addOutput(<usefulbackpacks:backpack>)
-.create();
-
-RecipeBuilder.get("tanner")
-.setShaped([
-    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>],
-    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
-    [<pyrotech:wool_tarred>, <pyrotech:material:42>, <usefulbackpacks:backpack>, <pyrotech:material:42>, <pyrotech:wool_tarred>],
-    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
-    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>]])
-.setName("midbag")
-.setLevelRequired(10)
-.setConsumeExperience(false)
-.setSecondaryIngredients([<ore:string> * 6, <pyrotech:material:44> * 4])  
-.setExtraOutputOne(<minecraft:leather> * 4, 0.2)	 
-.setExtraOutputTwo(<minecraft:string> * 3, 0.4)
-.setExtraOutputThree(<minecraft:feather> * 2, 0.4)  
-.addTool(<ore:artisansGroover>, 15)
-.addTool(<ercore:medium_backpack_blueprint>, 2)
-.addTool(<ore:artisansShears>, 20)
-.addOutput(<usefulbackpacks:backpack:1>)
-.create();
-
-RecipeBuilder.get("tanner")
-.setShaped([
-    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>],
-    [<pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>],
-    [<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <usefulbackpacks:backpack:1>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>],
-    [<pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>, <pyrotech:material:42>, <pyrotech:wool_tarred>],
-    [<pyrotech:material:43>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:material:43>]])
-.setName("largebag")
-.setLevelRequired(15)
-.setConsumeExperience(false)
-.setSecondaryIngredients([<ore:string> * 8, <pyrotech:material:44> * 8])  
-.setExtraOutputOne(<minecraft:leather> * 2, 0.3)	 
-.setExtraOutputTwo(<minecraft:string> * 4, 0.5)
-.setExtraOutputThree(<minecraft:feather> * 6, 0.2)  
-.addTool(<ercore:large_backpack_blueprint>, 2)
-.addTool(<ore:artisansNeedle>, 25)
-.addTool(<ore:artisansPunch>, 30)  
-.addOutput(<usefulbackpacks:backpack:2>)
-.create();
-  
-RecipeBuilder.get("tanner")
-.setShaped([
-    [<pyrotech:wool_tarred>, <minecraft:leather>, <pyrotech:wool_tarred>],
-    [<minecraft:leather>, <pyrotech:crate>, <minecraft:leather>],
-    [<pyrotech:wool_tarred>, <minecraft:leather>, <pyrotech:wool_tarred>]])
-.setName("simplebag")
-.setLevelRequired(3)
-.setConsumeExperience(false)
-.setSecondaryIngredients([<ore:string> * 4])  
-.setExtraOutputTwo(<minecraft:string> * 2, 0.8)
-.setExtraOutputThree(<minecraft:leather>, 0.2)  
-.addTool(<ore:artisansNeedle>, 15)
-.addTool(<ercore:quarry_bag_blueprint>, 2)  
-.addOutput(<pyrotech:bag_simple>)
-.create();
   
 RecipeBuilder.get("basic")
 .setCopy(

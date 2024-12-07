@@ -123,7 +123,8 @@ var game_recipes = [
 <minecraft:gunpowder>,
 <tconstruct:materials>,
 <minecraft:glass_pane>,
-<minecraft:leather>
+<minecraft:leather>,
+<usefulbackpacks:backpack:*>
 ] as IItemStack[];
 
 for items in game_recipes {
