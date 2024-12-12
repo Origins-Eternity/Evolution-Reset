@@ -218,6 +218,9 @@ Dropt.list("list_ore")
 }
 
 var bandrops = [
+<pyrotech:rock:3>,
+<pyrotech:rock:1>,
+<pyrotech:rock:2>
 <pyrotech:rock:7>,
 <pyrotech:rock_netherrack>,
 <pyrotech:rock:6>,
@@ -235,6 +238,9 @@ var bandrops = [
 ] as IItemStack[];
 
 val banblocks = [
+<ore:erstoneAndesite>,
+<ore:erstoneGranite>,
+<ore:erstoneDiorite>,
 <ore:torch>,
 <ore:netherrack>,
 <ore:sandstone>,
@@ -356,48 +362,4 @@ Dropt.list("list_treasure")
 		 .items([<pyrotech:rock>], Dropt.range(4))  
 	   )
 	);
-}
-
-var stonedrops = [
-<pyrotech:rock:3>,
-<pyrotech:rock:1>,
-<pyrotech:rock:2>
-] as IItemStack[];
-
-val stoneblocks = [
-<ore:erstoneAndesite>,
-<ore:erstoneGranite>,
-<ore:erstoneDiorite>
-] as IOreDictEntry[];
-
-for i, stoneblock in stoneblocks {
-var stonedrop = stonedrops[i];
-Dropt.list("list_stoneblocks")
- .add(Dropt.rule()
-    .matchDrops([stoneblock])
-  	  .matchHarvester(Dropt.harvester()
-         .type("NON_PLAYER")
-      )
-      .addDrop(Dropt.drop())
-	)
-	.add(Dropt.rule()
-    .matchDrops([stoneblock])
-      .matchHarvester(Dropt.harvester()
-          .type("PLAYER")
-          .mainHand("BLACKLIST", [], "pickaxe;1;-1")
-      )
-	   .addDrop(Dropt.drop()
-	  )
-	)
-	.add(Dropt.rule()
-	    .matchDrops([stoneblock])
-    .addDrop(Dropt.drop()
-	     .selector(Dropt.weight(75))
-	     .items([stonedrop], Dropt.range(3))
-	   )
-	  .addDrop(Dropt.drop()
-        .selector(Dropt.weight(25))
-		  .items([stonedrop], Dropt.range(4))  
-	   )
-   );
 }

@@ -80,12 +80,12 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
     ],
     <ore:blockOne> : [
         <ore:oreCopper>,
-        <ore:oreGold>,
         <ore:oreTin>,
         <ore:oreAluminium>,
         <ore:oreLead>,
     ],
     <ore:blockTwo> : [
+        <ore:oreGold>,
         <ore:oreIron>,
         <ore:oreSilver>,
         <ore:oreUranium>,
