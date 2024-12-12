@@ -51,79 +51,70 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
     ],
     <ore:artisansToolslow> : [
         <ore:artisansHammer>,
-<ore:artisansTSquare>,
-<ore:artisansCarver>,
-<ore:constructionWand>
+        <ore:artisansTSquare>,
+        <ore:artisansCarver>,
+        <ore:constructionWand>
     ],
     <ore:vacuumbag> : [
         <adpother:diamond_vacuum_bag>,
-<adpother:iron_vacuum_bag>,
-<adpother:gold_vacuum_bag>
+        <adpother:iron_vacuum_bag>,
+        <adpother:gold_vacuum_bag>
     ],
     <ore:flower> : [
         <ore:mysticFlowerWhite>,
-<ore:mysticFlowerLightGray>,
-<ore:mysticFlowerOrange>,
-<ore:mysticFlowerCyan>,
-<ore:mysticFlowerMagenta>,
-<ore:mysticFlowerPurple>,
-<ore:mysticFlowerLightBlue>,
-<ore:mysticFlowerBlue>,
-<ore:mysticFlowerYellow>,
-<ore:mysticFlowerBrown>,
-<ore:mysticFlowerLime>,
-<ore:mysticFlowerGreen>,
-<ore:mysticFlowerPink>,
-<ore:mysticFlowerRed>,
-<ore:mysticFlowerGray>,
-<ore:mysticFlowerBlack>
+        <ore:mysticFlowerLightGray>,
+        <ore:mysticFlowerOrange>,
+        <ore:mysticFlowerCyan>,
+        <ore:mysticFlowerMagenta>,
+        <ore:mysticFlowerPurple>,
+        <ore:mysticFlowerLightBlue>,
+        <ore:mysticFlowerBlue>,
+        <ore:mysticFlowerYellow>,
+        <ore:mysticFlowerBrown>,
+        <ore:mysticFlowerLime>,
+        <ore:mysticFlowerGreen>,
+        <ore:mysticFlowerPink>,
+        <ore:mysticFlowerRed>,
+        <ore:mysticFlowerGray>,
+        <ore:mysticFlowerBlack>
     ],
     <ore:blockOne> : [
         <ore:oreCopper>,
-<ore:oreGold>,
-<ore:oreTin>,
-<ore:oreAluminium>,
-<ore:oreLead>,
+        <ore:oreGold>,
+        <ore:oreTin>,
+        <ore:oreAluminium>,
+        <ore:oreLead>,
     ],
     <ore:blockTwo> : [
         <ore:oreIron>,
-<ore:oreSilver>,
-<ore:oreUranium>,
-<ore:oreCobalt>,
-<ore:oreArdite>,
-<ore:oreEmerald>
+        <ore:oreSilver>,
+        <ore:oreUranium>,
+        <ore:oreCobalt>,
+        <ore:oreArdite>,
+        <ore:oreEmerald>
     ],
     <ore:blockThree> : [
-        <ore:stoneAndesite>,
-<ore:stoneGranite>,
-<ore:stoneDiorite>
+        <ore:oreTitanium>,
+        <ore:blockIron>,
+        <ore:oreTungsten>
     ],
     <ore:blockFour> : [
-        <ore:oreTitanium>,
-<ore:blockIron>,
-<ore:oreTungsten>
-    ],
-    <ore:blockFive> : [
         <ore:oreDiamond>,
-<ore:blockDiamond>
+        <ore:blockDiamond>
     ],
     <ore:erstone> : [
         <ore:stone>,
-<ore:cobblestone>,
-<ore:blockMossy>
+        <ore:cobblestone>,
+        <ore:blockMossy>
     ],
     <ore:eroreDiamond> : [
         <ore:oreDiamond>,
-<ore:gemDiamond>
+        <ore:gemDiamond>
     ],
     <ore:eroreEmerald> : [
         <ore:oreEmerald>,
-<ore:gemEmerald>
+        <ore:gemEmerald>
     ]
-
-
-
-
 };
 
 for oredict in oredictMap {
@@ -153,7 +144,7 @@ for oredict in oredictMap {
 <ore:oreTungsten>.add(<ercore:tungsten_ore>);
 <ore:oreCopper>.add(<ercore:copper_ore>);
 <ore:oreTin>.add(<ercore:tin_ore>);
-<ore:blockFour>.add(<biomesoplenty:hard_ice>);
+<ore:blockThree>.add(<biomesoplenty:hard_ice>);
 <ore:erstone>.add(<biomesoplenty:grass>);
 <ore:erstone>.add(<biomesoplenty:grass:1>);
 <ore:blockSix>.add(<minecraft:beacon>);
@@ -162,20 +153,7 @@ for oredict in oredictMap {
 <ore:powderCement>.add(<ercore:cement_powder>);
 <ore:craftTable>.add(<minecraft:crafting_table>);
 <ore:furnace>.add(<minecraft:furnace>);
-<ore:oreTitanium>.addAll(<ore:oreIlmenite>);
-
-
-
-
-
-
-
-
-
-
-
-<ore:blockThree>.remove(<minecraft:stone>);
-
+<ore:oreTitanium>.addAll(<ore:oreIlmenite>)
 
 var cobblestones = [
 <ore:cobblestoneGranite>,
