@@ -220,7 +220,7 @@ Dropt.list("list_ore")
 var bandrops = [
 <pyrotech:rock:3>,
 <pyrotech:rock:1>,
-<pyrotech:rock:2>
+<pyrotech:rock:2>,
 <pyrotech:rock:7>,
 <pyrotech:rock_netherrack>,
 <pyrotech:rock:6>,

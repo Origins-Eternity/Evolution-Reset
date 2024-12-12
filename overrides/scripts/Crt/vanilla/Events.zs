@@ -90,7 +90,6 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
         } else if (isNull(event.fromWorld.getCustomWorldData().reachingStage)) {
                 event.fromWorld.updateCustomWorldData({reachingStage: true});
             }
-        }
     } else if(event.toWorld.dimension == 1) {
         if((isNull(event.player.currentItem)) || (!(event.player.currentItem in <ore:runeLustB>))) {
             if(isNull(event.player.bedLocation)) {

@@ -153,7 +153,7 @@ for oredict in oredictMap {
 <ore:powderCement>.add(<ercore:cement_powder>);
 <ore:craftTable>.add(<minecraft:crafting_table>);
 <ore:furnace>.add(<minecraft:furnace>);
-<ore:oreTitanium>.addAll(<ore:oreIlmenite>)
+<ore:oreTitanium>.addAll(<ore:oreIlmenite>);
 
 var cobblestones = [
 <ore:cobblestoneGranite>,
