@@ -38,7 +38,6 @@ import crafttweaker.event.PlayerFillBucketEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
-var meta = event.block.meta;
 if (!event.player.world.isRemote()) {
     var current = event.player.currentItem;
     if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table") || (id == "minecraft:lit_furnace")) {
@@ -88,6 +87,9 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
                 ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
             }
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
+        } else if (isNull(event.fromWorld.getCustomWorldData().reachingStage)) {
+                event.fromWorld.updateCustomWorldData({reachingStage: true});
+            }
         }
     } else if(event.toWorld.dimension == 1) {
         if((isNull(event.player.currentItem)) || (!(event.player.currentItem in <ore:runeLustB>))) {
@@ -250,10 +252,6 @@ var player = event.player;
         var down = event.world.getBlockState(pos).block;
         if ((down.definition.id == "minecraft:furnace") || (id == "minecraft:lit_furnace"))  {
             event.world.destroyBlock(pos, false);
-        }
-    } else if (id == "tconstruct:smeltery_controller") {
-        if (isNull(event.player.world.getCustomWorldData().reachingStage)) {
-            event.player.world.updateCustomWorldData({reachingStage: true});
         }
     }
 });

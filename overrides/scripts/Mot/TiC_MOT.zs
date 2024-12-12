@@ -1,6 +1,7 @@
 #
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.item.IIngredient;
 
 mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
 mods.tconstruct.Alloy.removeRecipe(<liquid:obsidian>);
@@ -50,14 +51,24 @@ for fuel in fuels {
 mods.tconstruct.Melting.addRecipe(<liquid:obsidian> * 72, <pyrotech:material:33>, 1000);
 
 var castliquids =[
-<liquid:aluminum>
+<liquid:aluminum>,
+<liquid:copper>,
+<liquid:tin>
 ] as ILiquidStack[];
 
 var castingots = [
-<immersiveengineering:metal:1>
+<immersiveengineering:metal:1>,
+<immersiveengineering:metal:20>,
+<galacticraftcore:basic_item:4>
 ] as IItemStack[];
+
+var casts = [
+null,
+<ercore:ingot_clay_cast>,
+<ercore:ingot_clay_cast>
+] as IIngredient[];
 
 for n, castliquid in castliquids {
     var castingot = castingots[n];
-    mods.tconstruct.Casting.addTableRecipe(castingot, null, castliquid, 144, false, 200);
+    mods.tconstruct.Casting.addTableRecipe(castingot, null, castliquid, 144, false);
 }
