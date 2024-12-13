@@ -83,14 +83,14 @@ events.onEntityLivingFall(function(event as EntityLivingFallEvent) {
 events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
     if(!event.player.world.isRemote()) {
         if(event.item in <ore:runeFireB>) {
-            if(!isNull(event.player.data.wasInvited)) {
+            if(isNull(event.player.data.wasInvited)) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
                 event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
                 event.player.update({wasInvited: true});
             }
         } else if(event.item in <ore:runeLustB>) {
-            if(!isNull(event.player.data.wasInvited1)) {
+            if(isNull(event.player.data.wasInvited1)) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
                 event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
