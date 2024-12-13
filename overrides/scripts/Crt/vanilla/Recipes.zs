@@ -124,7 +124,9 @@ var game_recipes = [
 <tconstruct:materials>,
 <minecraft:glass_pane>,
 <minecraft:leather>,
-<usefulbackpacks:backpack:*>
+<usefulbackpacks:backpack:*>,
+<biomesoplenty:boat_sacred_oak>,
+<minecraft:golden_apple>
 ] as IItemStack[];
 
 for items in game_recipes {
@@ -236,6 +238,10 @@ recipes.addShaped("brick_crucible", <pyrotech:brick_crucible>,
 [[<pyrotech:refractory_brick_block>, <pyrotech:material:5>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:stone_crucible>, <pyrotech:refractory_brick_block>],
 [<pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>, <pyrotech:refractory_brick_block>]]);
+
+recipes.addShaped("boat_sacred_oak", <biomesoplenty:boat_sacred_oak>,
+[[<biomesoplenty:planks_0>, null, <biomesoplenty:planks_0>],
+[<pyrotech:planks_tarred>, <pyrotech:material:23>, <pyrotech:planks_tarred>]]);
 
 var books = [
 <ftbquests:book>,

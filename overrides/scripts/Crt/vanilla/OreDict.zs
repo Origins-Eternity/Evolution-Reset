@@ -137,7 +137,6 @@ for oredict in oredictMap {
 <ore:radsand>.add(<minecraft:sand:1>);
 <ore:skull>.add(<minecraft:skull:*>);
 <ore:ergravel>.addAll(<ore:gravel>);
-<ore:blockSeven>.addAll(<ore:oreSulfur>);
 <ore:sandpile>.add(<pyrotech:rock:5>);
 <ore:sandpile>.add(<pyrotech:rock:9>);
 <ore:ballClay>.add(<minecraft:clay_ball>);
@@ -147,7 +146,8 @@ for oredict in oredictMap {
 <ore:blockThree>.add(<biomesoplenty:hard_ice>);
 <ore:erstone>.add(<biomesoplenty:grass>);
 <ore:erstone>.add(<biomesoplenty:grass:1>);
-<ore:blockSix>.add(<minecraft:beacon>);
+<ore:blockFour>.add(<minecraft:beacon>);
+<ore:blockOne>.add(<minecraft:stonebrick:*>);
 <ore:doorIron>.add(<minecraft:iron_door>);
 <ore:doorIron>.add(<minecraft:iron_trapdoor>);
 <ore:powderCement>.add(<ercore:cement_powder>);

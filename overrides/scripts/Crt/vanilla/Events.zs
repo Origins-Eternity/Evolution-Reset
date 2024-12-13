@@ -7,7 +7,6 @@ import crafttweaker.data.IData;
 import crafttweaker.command.ICommandManager;
 import crafttweaker.text.ITextComponent;
 import crafttweaker.event.PlayerSleepInBedEvent;
-import crafttweaker.event.BlockBreakEvent;
 import crafttweaker.block.IBlockDefinition;
 import crafttweaker.block.IBlock;
 import crafttweaker.oredict.IOreDictEntry;
@@ -35,6 +34,8 @@ import crafttweaker.entity.IEntityMob;
 import crafttweaker.event.PlayerChangedDimensionEvent;
 import crafttweaker.event.PlayerCloneEvent;
 import crafttweaker.event.PlayerFillBucketEvent;
+import crafttweaker.event.EntityLivingFallEvent;
+import crafttweaker.event.PlayerRightClickItemEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
@@ -66,6 +67,39 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
     event.cancel();
 });
 
+events.onEntityLivingFall(function(event as EntityLivingFallEvent) {
+    if(event.entityLivingBase instanceof IPlayer && !event.entityLivingBase.world.isRemote()) {
+        var player as IPlayer = event.entityLivinaygBase;
+        if((!isNull(player.data.wasInvited)) && (isNull(player.data.wasFall))) {
+            event.cancel();
+            player.update({wasFall: true});
+        } else if((!isNull(player.data.wasInvited1)) && (isNull(player.data.wasFall1))) {
+            event.cancel();
+            player.update({wasFall1: true});
+        }
+    }
+});
+
+events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
+    if(!event.player.world.isRemote()) {
+        if(event.item in <ore:runeFireB>) {
+            if(!isNull(event.player.data.wasInvited)) {
+                event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
+                event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
+                event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
+                event.player.update({wasInvited: true});
+            }
+        } else if(event.item in <ore:runeLustB>) {
+            if(!isNull(event.player.data.wasInvited1)) {
+                event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
+                event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
+                event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
+                event.player.update({wasInvited1: true});
+            }
+        }
+    }
+});
+
 events.onItemToss(function(event as ItemTossEvent) {
     var itemdrop = event.item.item;
     if(<ore:banItems> has itemdrop) {
@@ -75,25 +109,23 @@ events.onItemToss(function(event as ItemTossEvent) {
 
 events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
     if(event.player.world.isRemote()) return;
-    if(!isNull(event.fromWorld.getCustomWorldData().reachingStage)) {
-        event.toWorld.updateCustomWorldData({reachingStage: true});
-    }
     var ser = server.commandManager as ICommandManager;
+    var info as IWorldInfo = event.fromWorld.getWorldInfo();
     if(event.toWorld.dimension == -1) {
-        if((isNull(event.player.currentItem)) || (!(event.player.currentItem in <ore:runeFireB>))) {
+        if(!isNull(event.player.data.wasInvited)) {
             if(isNull(event.player.bedLocation)) {
-                ser.executeCommand(server, "tpd " + event.player.name + " 0 0 0");
+                ser.executeCommand(server, "tpd " + event.player.name + " " + info.spawnX + " " + info.spawnY + " " + info.spawnZ);
             } else {
                 ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
             }
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
         } else if (isNull(event.fromWorld.getCustomWorldData().reachingStage)) {
-                event.fromWorld.updateCustomWorldData({reachingStage: true});
-            }
+            event.fromWorld.updateCustomWorldData({reachingStage: true});
+        }
     } else if(event.toWorld.dimension == 1) {
-        if((isNull(event.player.currentItem)) || (!(event.player.currentItem in <ore:runeLustB>))) {
+        if(!isNull(event.player.data.wasInvited1)) {
             if(isNull(event.player.bedLocation)) {
-                ser.executeCommand(server, "tpd " + event.player.name + " 0 0 0");
+                ser.executeCommand(server, "tpd " + event.player.name + " " + info.spawnX + " " + info.spawnY + " " + info.spawnZ);
             } else {
                 ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
             }
@@ -120,6 +152,14 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
     for drop in event.drops {
         if(<ore:banItems> has drop.item) {
             event.cancel();
+        }
+    }
+});
+
+events.onPlayerAdvancement(function(event as PlayerAdvancementEvent) {
+    if(!event.player.world.isRemote()) {
+        if(!event.id.contains("recipes")) {
+            event.player.xp += 1;
         }
     }
 });
@@ -217,29 +257,17 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip"));
 });
 
-events.onBlockBreak(function(event as BlockBreakEvent) {
-if((event.world.remote) || (!event.isPlayer)) return;
+events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
+if(event.world.remote) return;
 if(!event.player.creative) {
 	val player as IPlayer = event.player;
-    val block as IBlock = event.block;
-    if(block.definition.hardness > 0.6) {
-        if(isNull(player.currentItem)) {
-            event.cancel();
-            player.addPotionEffect(<potion:tconstruct:dot>.makePotionEffect(20, 1));
-            player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(100, 1));
-        } else {
-            if(player.currentItem.definition.name.contains("axe")) return;
-            if(player.currentItem.definition.name.contains("shovel")) return;
-            if(player.currentItem.definition.name.contains("hoe")) return;
-            if(player.currentItem.definition.name.contains("hammer")) return;
-            if(player.currentItem.definition.name.contains("kama")) return;
-            if(player.currentItem.definition.name.contains("scythe")) return;
-            if(player.currentItem.definition.name.contains("excavator")) return;
-            if(player.currentItem.definition.name.contains("hatchet")) return;
-            if(player.currentItem.definition.name.contains("mattock")) return;
-            if(player.currentItem.definition.name.contains("shears")) return;
-            event.cancel();
-        }
+    if(isNull(player.currentItem)) {
+        event.cancel();
+        player.addPotionEffect(<potion:tconstruct:dot>.makePotionEffect(20, 1));
+        player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(100, 1));
+    } else if(!player.currentItem.canHarvestBlock(event.blockState)) {
+        event.cancel();
+
     }
 }});
 

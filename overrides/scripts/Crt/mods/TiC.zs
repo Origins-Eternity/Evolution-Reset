@@ -63,3 +63,22 @@ recipes.addShaped(<tconstruct:faucet>,
 [[null, null, null],
 [<tconstruct:materials>, <pyrotech:faucet_brick>, <tconstruct:materials>], 
 [null, <tconstruct:materials>, null]]);
+
+var slimes = [
+<tconstruct:edible:1>,
+<tconstruct:edible:2>,
+<tconstruct:edible:4>,
+<tconstruct:edible:5>
+] as IItemStack[];
+
+var materials = [
+<ore:dyeBlue>,
+<ore:dyePurple>,
+<minecraft:fire_charge>,
+<ore:dyePink>
+] as IIngredient[];
+
+for i, material in materials {
+    var slime = slimes[i];
+    recipes.addShapeless(slime, [<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>, material]);
+}

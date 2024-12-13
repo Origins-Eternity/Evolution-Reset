@@ -51,12 +51,14 @@ for fuel in fuels {
 mods.tconstruct.Melting.addRecipe(<liquid:obsidian> * 72, <pyrotech:material:33>, 1000);
 
 var castliquids =[
+<liquid:gold>,
 <liquid:aluminum>,
 <liquid:copper>,
 <liquid:tin>
 ] as ILiquidStack[];
 
-var castingots = [
+var castitems = [
+<minecraft:golden_apple>,
 <immersiveengineering:metal:1>,
 <immersiveengineering:metal:20>,
 <galacticraftcore:basic_item:4>
@@ -64,11 +66,21 @@ var castingots = [
 
 var casts = [
 null,
+null,
 <ercore:ingot_clay_cast>,
 <ercore:ingot_clay_cast>
 ] as IIngredient[];
 
+var consumes = [
+1152,
+144,
+144,
+144
+] as int[];
+
 for n, castliquid in castliquids {
-    var castingot = castingots[n];
-    mods.tconstruct.Casting.addTableRecipe(castingot, null, castliquid, 144, false);
+    var castitem = castitems[n];
+    var cast = casts[n];
+    var consume = consumes[n];
+    mods.tconstruct.Casting.addTableRecipe(castitem, cast, castliquid, consume, false);
 }
