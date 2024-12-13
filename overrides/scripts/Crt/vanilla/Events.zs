@@ -258,7 +258,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
 });
 
 events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
-if(event.world.remote) return;
+if(event.player.world.remote) return;
 if(!event.player.creative) {
 	val player as IPlayer = event.player;
     if(isNull(player.currentItem)) {
