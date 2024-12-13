@@ -1,0 +1,22 @@
+{
+	x: 14.5d,
+	y: -2.5d,
+	dependencies: [
+		"f47c19e0"
+	],
+	tasks: [{
+		uid: "c07b04ca",
+		type: "item",
+		items: [{
+			item: "ercore:herbs"
+		}]
+	}],
+	rewards: [{
+		uid: "8b048bb7",
+		type: "item",
+		item: {
+			id: "xpbook:xp_tome",
+			tag: {}
+		}
+	}]
+}

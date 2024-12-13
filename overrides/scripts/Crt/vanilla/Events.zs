@@ -69,7 +69,7 @@ events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
 
 events.onEntityLivingFall(function(event as EntityLivingFallEvent) {
     if(event.entityLivingBase instanceof IPlayer && !event.entityLivingBase.world.isRemote()) {
-        var player as IPlayer = event.entityLivinaygBase;
+        var player as IPlayer = event.entityLivingBase;
         if((!isNull(player.data.wasInvited)) && (isNull(player.data.wasFall))) {
             event.cancel();
             player.update({wasFall: true});

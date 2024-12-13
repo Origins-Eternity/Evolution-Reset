@@ -19,17 +19,17 @@
 		}]
 	},
 	{
-		uid: "8b96a2d8",
-		type: "item",
-		items: [{
-			item: "tconstruct:cast_custom"
-		}]
-	},
-	{
 		uid: "780277c8",
 		type: "item",
 		items: [{
 			item: "tconstruct:casting 1 1"
+		}]
+	},
+	{
+		uid: "fbed60c0",
+		type: "item",
+		items: [{
+			item: "ercore:ingot_clay_cast"
 		}]
 	}],
 	rewards: [{
