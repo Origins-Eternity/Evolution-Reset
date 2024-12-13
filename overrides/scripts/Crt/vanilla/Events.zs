@@ -112,7 +112,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
     var ser = server.commandManager as ICommandManager;
     var info as IWorldInfo = event.fromWorld.getWorldInfo();
     if(event.toWorld.dimension == -1) {
-        if(!isNull(event.player.data.wasInvited)) {
+        if(isNull(event.player.data.wasInvited)) {
             if(isNull(event.player.bedLocation)) {
                 ser.executeCommand(server, "tpd " + event.player.name + " " + info.spawnX + " " + info.spawnY + " " + info.spawnZ);
             } else {
@@ -123,7 +123,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
             event.fromWorld.updateCustomWorldData({reachingStage: true});
         }
     } else if(event.toWorld.dimension == 1) {
-        if(!isNull(event.player.data.wasInvited1)) {
+        if(isNull(event.player.data.wasInvited1)) {
             if(isNull(event.player.bedLocation)) {
                 ser.executeCommand(server, "tpd " + event.player.name + " " + info.spawnX + " " + info.spawnY + " " + info.spawnZ);
             } else {
