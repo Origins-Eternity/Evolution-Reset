@@ -144,6 +144,7 @@ for oredict in oredictMap {
 <ore:oreCopper>.add(<ercore:copper_ore>);
 <ore:oreTin>.add(<ercore:tin_ore>);
 <ore:blockThree>.add(<biomesoplenty:hard_ice>);
+<ore:blockThree>.add(<minecraft:obsidian>);
 <ore:erstone>.add(<biomesoplenty:grass>);
 <ore:erstone>.add(<biomesoplenty:grass:1>);
 <ore:blockFour>.add(<minecraft:beacon>);

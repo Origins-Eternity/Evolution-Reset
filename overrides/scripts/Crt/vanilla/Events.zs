@@ -267,13 +267,14 @@ events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
 if(event.player.world.remote) return;
 if(!event.player.creative) {
 	val player as IPlayer = event.player;
-    if(isNull(player.currentItem)) {
-        event.cancel();
-        player.addPotionEffect(<potion:tconstruct:dot>.makePotionEffect(20, 1));
-        player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(100, 1));
-    } else if(!player.currentItem.canHarvestBlock(event.blockState)) {
-        event.cancel();
-
+    if(event.block.definition.hardness > 0.6) {
+        if(isNull(player.currentItem)) {
+            event.cancel();
+            player.addPotionEffect(<potion:tconstruct:dot>.makePotionEffect(20, 1));
+            player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(100, 1));
+        } else if(!player.currentItem.canHarvestBlock(event.blockState)) {
+            event.cancel();
+        }
     }
 }});
 
