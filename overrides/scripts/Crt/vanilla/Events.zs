@@ -60,6 +60,12 @@ events.onPlayerClone(function(event as PlayerCloneEvent) {
         if(!isNull(event.originalPlayer.data.wasGivenTip3)) {
             event.player.update({wasGivenTip3: true});
         }
+        if(!isNull(event.originalPlayer.data.wasInvited)) {
+            event.player.update({wasInvited: true});
+        }
+        if(!isNull(event.originalPlayer.data.wasInvited1)) {
+            event.player.update({wasInvited1: true});
+        }
     }
 });
 
@@ -114,7 +120,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
     if(event.toWorld.dimension == -1) {
         if(isNull(event.player.data.wasInvited)) {
             if(isNull(event.player.bedLocation)) {
-                ser.executeCommand(server, "tpd " + event.player.name + " " + info.spawnX + " " + info.spawnY + " " + info.spawnZ);
+                ser.executeCommand(server, "tpd " + event.player.name + " 0 " + info.spawnX + " " + info.spawnZ);
             } else {
                 ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
             }
@@ -125,7 +131,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
     } else if(event.toWorld.dimension == 1) {
         if(isNull(event.player.data.wasInvited1)) {
             if(isNull(event.player.bedLocation)) {
-                ser.executeCommand(server, "tpd " + event.player.name + " " + info.spawnX + " " + info.spawnY + " " + info.spawnZ);
+                ser.executeCommand(server, "tpd " + event.player.name + " 0 " + info.spawnX + " " + info.spawnZ);
             } else {
                 ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
             }
