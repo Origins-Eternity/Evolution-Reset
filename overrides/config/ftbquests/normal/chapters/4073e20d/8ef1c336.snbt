@@ -5,24 +5,6 @@
 		"d9784ee4"
 	],
 	tasks: [{
-		uid: "69114912",
-		type: "item",
-		items: [{
-			ForgeCaps: {
-				Parent: {
-					data: "ingotCopper",
-					id: "ore"
-				}
-			},
-			id: "itemfilters:filter",
-			tag: {
-				display: {
-					Name: "Any ingotCopper"
-				}
-			}
-		}]
-	},
-	{
 		uid: "791396eb",
 		type: "item",
 		items: [{
@@ -38,6 +20,13 @@
 					Name: "Any ingotTin"
 				}
 			}
+		}]
+	},
+	{
+		uid: "4c9be9a0",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal"
 		}]
 	}]
 }
