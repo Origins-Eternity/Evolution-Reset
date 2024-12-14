@@ -406,3 +406,57 @@ MechanicalCompactor.addRecipe("silver_block_from_ingot", <immersiveengineering:s
 MechanicalCompactor.addRecipe("uranium_block_from_ingot", <immersiveengineering:storage:5>, <ore:blockUranium>, 9);
 MechanicalCompactor.addRecipe("lead_block_from_ingot", <immersiveengineering:storage:2>, <ore:ingotLead>, 9);
 MechanicalCompactor.addRecipe("tungsten_steel_block_from_ingot", <ercore:tungsten_steel_block>, <ercore:tungsten_steel_ingot>, 9);
+
+val materials = [
+<pyrotech:refractory_brick_stairs>,
+<pyrotech:tar_collector:1>,
+<pyrotech:material:4>,
+<pyrotech:material:5>,
+<pyrotech:material:9>,
+<pyrotech:material:35>,
+<pyrotech:bucket_refractory>,
+<pyrotech:faucet_brick>,
+<pyrotech:refractory_brick_block>,
+<pyrotech:bucket_refractory_unfired>,
+<pyrotech:refractory_brick_slab>,
+<pyrotech:refractory_brick_wall>,
+<pyrotech:refractory_door>
+] as IItemStack[];
+
+val outputs = [
+432,
+504,
+144,
+72,
+72,
+36,
+216,
+288,
+288,
+216,
+144,
+288,
+432
+] as int[];
+
+val names = [
+"liquid_clay_from_refractory_brick_stairs",
+"liquid_clay_from_tar_collector_1",
+"liquid_clay_from_material_4",
+"liquid_clay_from_material_5",
+"liquid_clay_from_material_9",
+"liquid_clay_from_material_35",
+"liquid_clay_from_bucket_refractory",
+"liquid_clay_from_faucet_brick",
+"liquid_clay_from_refractory_brick_block",
+"liquid_clay_from_bucket_refractory_unfired",
+"liquid_clay_from_refractory_brick_slab",
+"liquid_clay_from_refractory_brick_wall",
+"liquid_clay_from_refractory_door"
+] as string[];
+
+for m, material in materials {
+    var name = names[m];
+    var output = outputs[m];
+    BrickCrucible.addRecipe(name, <liquid:clay> * output, material, 1 * 60 * 20);
+}

@@ -5,6 +5,7 @@ import crafttweaker.item.IIngredient;
 
 mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
 mods.tconstruct.Alloy.removeRecipe(<liquid:obsidian>);
+mods.tconstruct.Melting.removeRecipe(<liquid:clay>);
 mods.tconstruct.Melting.removeRecipe(<liquid:obsidian>, <minecraft:obsidian>);
 
 var liquids = [
@@ -37,7 +38,7 @@ var slags = [
 
 for i, liquid in liquids {
     var slag = slags[i];
-    mods.tconstruct.Melting.addRecipe(liquid * 144, slag, 1000);
+    mods.tconstruct.Melting.addRecipe(liquid * 144, slag);
 }
 
 var fuels = [
@@ -48,7 +49,7 @@ for fuel in fuels {
     mods.tconstruct.Fuel.registerFuel(fuel * 2, 200);
 }
 
-mods.tconstruct.Melting.addRecipe(<liquid:obsidian> * 72, <pyrotech:material:33>, 1000);
+mods.tconstruct.Melting.addRecipe(<liquid:obsidian> * 72, <pyrotech:material:33>);
 
 var castliquids =[
 <liquid:gold>,
@@ -79,4 +80,41 @@ for n, castliquid in castliquids {
     var cast = casts[n];
     var consume = consumes[n];
     mods.tconstruct.Casting.addTableRecipe(castitem, cast, castliquid, consume, true);
+}
+
+val materials = [
+<pyrotech:refractory_brick_stairs>,
+<pyrotech:tar_collector:1>,
+<pyrotech:material:4>,
+<pyrotech:material:5>,
+<pyrotech:material:9>,
+<pyrotech:material:35>,
+<pyrotech:bucket_refractory>,
+<pyrotech:faucet_brick>,
+<pyrotech:refractory_brick_block>,
+<pyrotech:bucket_refractory_unfired>,
+<pyrotech:refractory_brick_slab>,
+<pyrotech:refractory_brick_wall>,
+<pyrotech:refractory_door>
+] as IItemStack[];
+
+val outputs = [
+432,
+504,
+144,
+72,
+72,
+36,
+216,
+288,
+288,
+216,
+144,
+288,
+432
+] as int[];
+
+for m, material in materials {
+    var output = outputs[m];
+    mods.tconstruct.Melting.addRecipe(<liquid:clay> * output, material);
 }
