@@ -70,7 +70,11 @@ events.onPlayerClone(function(event as PlayerCloneEvent) {
 });
 
 events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
-    event.cancel();
+    if(!event.world.isRemote()) {
+        if(event.player.currentItem.name == "item.dyePowder.white") {
+            event.cancel();
+        }
+    }
 });
 
 events.onEntityLivingFall(function(event as EntityLivingFallEvent) {

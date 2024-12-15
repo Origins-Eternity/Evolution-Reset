@@ -1,6 +1,9 @@
 #ignoreBracketErrors
 import crafttweaker.item.IItemStack;
 
+recipes.removeByRecipeName("botania:fertilizer_dye");
+recipes.replaceAllOccurences(<minecraft:dye:15>, <pyrotech:mulch>, <botania:fertilizer>);
+
 var botbanlist = [
 <botania:pool>,
 <botania:pylon:*>,
