@@ -70,13 +70,15 @@ recipes.addShaped(<immersiveengineering:wooden_device0>,
 var blastnuggets = [
 <minecraft:iron_nugget>,
 <minecraft:gold_nugget>,
-<immersiveengineering:metal:20>
+<immersiveengineering:metal:20>,
+<ercore:tin_nugget>
 ] as IItemStack[];
 
 var blastslags = [
 <pyrotech:generated_pile_slag_iron>,
 <pyrotech:generated_pile_slag_gold>,
-<pyrotech:generated_pile_slag_copper>
+<pyrotech:generated_pile_slag_copper>,
+<pyrotech:generated_pile_slag_tin>
 ] as IItemStack[];
 
 for k, blastnugget in blastnuggets {

@@ -1,4 +1,4 @@
-#ignoreBracketErrors
+#
 import crafttweaker.item.IItemStack;
 
 recipes.removeByRecipeName("botania:fertilizer_dye");
@@ -27,7 +27,7 @@ for j in Apothecary{
 
 recipes.addShaped(<botania:pylon:1>, 
 [[null, <botania:manaresource:18>, null],
-[<botania:manaresource:18>, <draconicevolution:energy_crystal>, <botania:manaresource:18>],
+[<botania:manaresource:18>, <minecraft:nether_star>, <botania:manaresource:18>],
 [null, <minecraft:ender_eye>, null]]);
 
 recipes.addShaped(<botania:pylon:2>, 

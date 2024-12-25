@@ -258,3 +258,10 @@ for book in books {
 }
 
 recipes.addShapeless(<ercore:herbs>, [<minecraft:bowl>, <pyrotech:strange_tuber>, <pyrotech:material:12>, <botania:petal:*>]);
+
+for recipe in recipes.all {
+    if (recipe.fullResourceDomain.contains("biomesoplenty") && recipe.fullResourceDomain.contains("planks")) {
+        var recipelocation = recipe.fullResourceDomain;
+        recipes.removeByRecipeName(recipelocation);
+    }
+}

@@ -272,10 +272,8 @@ if(event.player.world.remote) return;
 if(!event.player.creative) {
 	val player as IPlayer = event.player;
     if(event.block.definition.hardness > 0.6) {
-        if(isNull(player.currentItem)) {
+        if(isNull(player.currentItem) || !player.currentItem.canHarvestBlock(event.blockState)) {
             event.cancel();
-            player.addPotionEffect(<potion:tconstruct:dot>.makePotionEffect(20, 1));
-            player.addPotionEffect(<potion:minecraft:mining_fatigue>.makePotionEffect(100, 1));
         } else if(!player.currentItem.canHarvestBlock(event.blockState)) {
             event.cancel();
         }
@@ -295,9 +293,11 @@ var player = event.player;
 });
 
 events.onPlayerFillBucket(function(event as PlayerFillBucketEvent) {
-    var id = event.block.definition.id;
-    if((id == "minecraft:ice") && (event.player.currentItem.definition.id != "minecraft:bucket")) {
-        event.cancel();
+    if(!isNull(event.block.definition)) {
+        var id = event.block.definition.id;
+        if((id == "minecraft:ice") && (event.player.currentItem.definition.id != "minecraft:bucket")) {
+            event.cancel();
+        }
     }
 });
 

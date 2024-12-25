@@ -4,6 +4,12 @@
     "Offers": {
         "Recipes": [
             {
+                "action" : "clear", "CareerLevel": 2
+            },
+            {
+                "action" : "clear", "CareerLevel": 3
+            },
+            {
                 "action": "add",
                 "sell": {
                     "id": "ercore:bucket_blueprint",
@@ -26,6 +32,19 @@
                     "Count": 20
                 },
                 "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:dye",
+                    "Damage": 4,
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 2
             },
             {
                 "action": "add",
@@ -110,6 +129,18 @@
                     "Count": 30
                 },
                 "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "buy": {
+                    "id": "minecraft:rabbit_foot",
+                    "Count": 2
+                },
+                "CareerLevel": 3
             }
         ]
     }
