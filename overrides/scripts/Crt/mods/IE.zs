@@ -71,14 +71,30 @@ var blastnuggets = [
 <minecraft:iron_nugget>,
 <minecraft:gold_nugget>,
 <immersiveengineering:metal:20>,
-<ercore:tin_nugget>
+<ercore:tin_nugget>,
+<immersiveengineering:metal:21>,
+<tconstruct:nuggets:1>,
+<tconstruct:nuggets>,
+<immersiveengineering:metal:22>,
+<immersiveengineering:metal:24>,
+<immersiveengineering:metal:23>,
+<immersiveengineering:metal:25>,
+<ercore:tungsten_nugget>
 ] as IItemStack[];
 
 var blastslags = [
 <pyrotech:generated_pile_slag_iron>,
 <pyrotech:generated_pile_slag_gold>,
 <pyrotech:generated_pile_slag_copper>,
-<pyrotech:generated_pile_slag_tin>
+<pyrotech:generated_pile_slag_tin>,
+<pyrotech:generated_pile_slag_aluminum>,
+<pyrotech:generated_pile_slag_ardite>,
+<pyrotech:generated_pile_slag_cobalt>,
+<pyrotech:generated_pile_slag_lead>,
+<pyrotech:generated_pile_slag_nickel>,
+<pyrotech:generated_pile_slag_silver>,
+<pyrotech:generated_pile_slag_uranium>,
+<pyrotech:generated_pile_slag_tungsten>
 ] as IItemStack[];
 
 for k, blastnugget in blastnuggets {

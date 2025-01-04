@@ -35,7 +35,7 @@ import crafttweaker.event.PlayerChangedDimensionEvent;
 import crafttweaker.event.PlayerCloneEvent;
 import crafttweaker.event.PlayerFillBucketEvent;
 import crafttweaker.event.EntityLivingFallEvent;
-import crafttweaker.event.PlayerRightClickItemEvent;
+import crafttweaker.event.PlayerPickupItemEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
@@ -90,16 +90,16 @@ events.onEntityLivingFall(function(event as EntityLivingFallEvent) {
     }
 });
 
-events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
+events.onPlayerPickupItem(function(event as PlayerPickupItemEvent) {
     if(!event.player.world.isRemote()) {
-        if(event.item in <ore:runeFireB>) {
+        if(<ore:runeFireB> has event.item.item) {
             if(isNull(event.player.data.wasInvited)) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
                 event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
                 event.player.update({wasInvited: true});
             }
-        } else if(event.item in <ore:runeLustB>) {
+        } else if(<ore:runeLustB> has event.item.item) {
             if(isNull(event.player.data.wasInvited1)) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
@@ -238,7 +238,6 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     val entity = event.entity;
     if(isNull(entity.definition)) return;
     if(event.world.dimension != 0) return;
-    if(event.world.isRemote()) return;
     if(isNull(event.world.getCustomWorldData().reachingStage)) {
         if(entity.definition.name == "Chicken") {
             if(entity.nbt.asString().contains("IsChickenJockey: 1")) {
@@ -268,13 +267,22 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
 });
 
 events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
-if(event.player.world.remote) return;
 if(!event.player.creative) {
-	val player as IPlayer = event.player;
     if(event.block.definition.hardness > 0.6) {
-        if(isNull(player.currentItem) || !player.currentItem.canHarvestBlock(event.blockState)) {
+        val player as IPlayer = event.player;
+        if(isNull(player.currentItem)) {
             event.cancel();
-        } else if(!player.currentItem.canHarvestBlock(event.blockState)) {
+        } else {
+            if(player.currentItem.definition.name.contains("axe")) return;
+            if(player.currentItem.definition.name.contains("shovel")) return;
+            if(player.currentItem.definition.name.contains("hoe")) return;
+            if(player.currentItem.definition.name.contains("hammer")) return;
+            if(player.currentItem.definition.name.contains("kama")) return;
+            if(player.currentItem.definition.name.contains("scythe")) return;
+            if(player.currentItem.definition.name.contains("excavator")) return;
+            if(player.currentItem.definition.name.contains("hatchet")) return;
+            if(player.currentItem.definition.name.contains("mattock")) return;
+            if(player.currentItem.definition.name.contains("shears")) return;
             event.cancel();
         }
     }

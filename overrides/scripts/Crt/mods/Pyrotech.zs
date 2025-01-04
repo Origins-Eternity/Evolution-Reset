@@ -26,6 +26,8 @@ import mods.pyrotech.CrudeDryingRack;
 import mods.pyrotech.DryingRack;
 import mods.pyrotech.Burn;
 
+recipes.removeByRecipeName("pyrotech:clay");
+
 var compacting_bin_recipes = [
 <pyrotech:generated_pile_slag_aluminum>,
 <pyrotech:generated_pile_slag_ardite>,

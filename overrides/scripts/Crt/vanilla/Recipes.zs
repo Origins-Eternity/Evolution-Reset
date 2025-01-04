@@ -105,7 +105,6 @@ for items in nugget {
 }
 
 var game_recipes = [
-<minecraft:wool>,
 <minecraft:torch>,
 <minecraft:bread>,
 <minecraft:ladder>,
@@ -117,7 +116,7 @@ var game_recipes = [
 <minecraft:stone_pickaxe>,
 <minecraft:heavy_weighted_pressure_plate>,
 <minecraft:flint>,
-<minecraft:wool:*>,
+<minecraft:wool>,
 <minecraft:brewing_stand>,
 <minecraft:sugar>,
 <minecraft:gunpowder>,
