@@ -67,7 +67,7 @@ rule32=2,80,minecraft:spruce_stairs-2
 rule33=1,75,minecraft:jungle_door-2
 rule34=1,75,minecraft:glass_pane-0
 
-rule35=1,100,MobSpawner:Spider,MobSpawner:Cave_Spider,MobSpawner:Skeleton,MobSpawner:Zombie
+rule35=1,100,air,air,air,air
 
 rule36=1,50,minecraft:stone_pressure_plate-0
 rule37=1,100,minecraft:jungle_door-9

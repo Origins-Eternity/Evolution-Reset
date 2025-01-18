@@ -45,7 +45,7 @@ rule6=0,100,minecraft:double_stone_slab-0,minecraft:stone_slab-0
 rule7=0,80,minecraft:flowing_water
 
 # Mob Spawners
-rule8=0,100,MobSpawner:Cave_Spider,MobSpawner:Spider
+rule8=0,100,air,air
 
 rule9=0,0,minecraft:spruce_stairs-3
 
@@ -65,7 +65,7 @@ rule15=0,100,ChestGenHook:stronghold_crossing:3
 rule16=0,0,minecraft:spruce_stairs-0
 
 # Monster Spawner
-rule17=0,100,MobSpawner:Skeleton,MobSpawner:Zombie,MobSpawner:Spider
+rule17=0,100,air,air,air
 
 # Spruce Planks (flooring)
 rule18=0,90,minecraft:planks-1

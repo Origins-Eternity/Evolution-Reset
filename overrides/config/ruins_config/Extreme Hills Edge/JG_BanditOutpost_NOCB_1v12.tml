@@ -29,12 +29,12 @@ preserve_plants=1
 rule1=0,100,minecraft:double_stone_slab-0
 rule2=0,100,minecraft:stonebrick-1,minecraft:stonebrick-1,minecraft:stonebrick,minecraft:stonebrick-2
 rule3=0,100,minecraft:mossy_cobblestone-0
-rule4=0,100,MobSpawner:Zombie,MobSpawner:Skeleton
+rule4=0,100,air,air
 rule5=0,100,minecraft:skull,minecraft:skull-1,minecraft:skull-2,minecraft:skull-3,minecraft:skull-4
 rule6=0,100,minecraft:flower_pot-0
 
 
-rule7=0,100,MobSpawner:Zombie
+rule7=0,100,air
 
 rule8=0,100,minecraft:stone_brick_stairs-2
 rule9=0,100,minecraft:iron_door-2

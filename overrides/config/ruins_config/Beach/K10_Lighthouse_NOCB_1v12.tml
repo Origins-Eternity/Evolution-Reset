@@ -90,7 +90,7 @@ rule52=0,100,minecraft:stone_slab-5
 # Placeholder
 rule53=0,100,minecraft:tallgrass
 
-rule54=0,100,MobSpawner:Skeleton
+rule54=0,100,air
 
 rule55=0,100,minecraft:trapdoor-3
 

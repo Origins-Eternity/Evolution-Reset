@@ -84,7 +84,7 @@ rule18=0,100,minecraft:double_stone_slab
 rule19=0,100,minecraft:fence
 
 #Trap
-rule20=0,100,minecraft:tnt,MobSpawner:Creeper
+rule20=0,100,minecraft:tnt,air
 
 
 # Foundation (-7)

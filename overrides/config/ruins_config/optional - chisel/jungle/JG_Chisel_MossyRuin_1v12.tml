@@ -47,7 +47,7 @@ rule7=0,100,chisel:energizedvoidstone-4
 rule8=0,100,minecraft:lapis_block-0
 
 # Mob Spawner
-rule9=0,100,MobSpawner:Spider,MobSpawner:Skeleton
+rule9=0,100,air,air
 
 rule10=0,100,minecraft:vine-6
 rule11=0,100,minecraft:vine-2

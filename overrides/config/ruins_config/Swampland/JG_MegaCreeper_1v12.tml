@@ -36,7 +36,7 @@ rule3=0,100,preserveBlock
 rule4=0,100,minecraft:concrete-13
 
 # Creeper Spawner
-rule5=0,100,MobSpawner:Creeper
+rule5=0,100,air
 
 # Treasure!  (if it's not blown up first)
 rule6=0,100,ChestGenHook:chests/simple_dungeon:5-2

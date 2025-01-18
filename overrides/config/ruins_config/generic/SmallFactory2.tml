@@ -17,9 +17,9 @@ spawnMaxDistance=0
 rule1=0,100,preserveBlock
 rule2=0,100,minecraft:stone-6
 rule3=0,100,minecraft:stone-6,stone-6,stone-6,stone-6,stone-6,preserveBlock
-rule4=0,100,MobSpawner:Zombie,MobSpawner:Silverfish
-rule5=0,100,MobSpawner:Zombie,MobSpawner:Silverfish
-rule6=0,100,MobSpawner:Zombie,MobSpawner:Silverfish
+rule4=0,100,air,air
+rule5=0,100,air,air
+rule6=0,100,air,air
 rule7=0,100,minecraft:iron_door-2
 rule8=0,100,ChestGenHook:chests/woodland_mansion:1-5
 rule9=0,100,minecraft:cobblestone_wall-0
@@ -64,7 +64,7 @@ rule47=0,100,minecraft:vine-6
 rule48=0,100,chisel:brownstone-0
 rule49=0,100,minecraft:vine-9
 rule50=0,100,minecraft:vine-12
-rule51=0,100,minecraft:hopper-0
+rule51=0,100,minecraft:stone-0
 rule52=0,100,chisel:technical-15
 
 

@@ -29,7 +29,7 @@ preserve_lava=0
 preserve_plants=1
 
 rule1=0,100,minecraft:sandstone-0
-rule2=0,100,MobSpawner:Skeleton
+rule2=0,100,air
 rule3=0,100,minecraft:wool-0
 rule4=0,100,minecraft:wool-14
 

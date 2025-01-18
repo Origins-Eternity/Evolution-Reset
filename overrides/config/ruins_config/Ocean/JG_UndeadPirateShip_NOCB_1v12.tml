@@ -54,7 +54,7 @@ rule20=0,100,minecraft:vine-4
 rule21=0,100,ChestGenHook:chests/simple_dungeon:2-5
 
 
-rule22=0,100,MobSpawner:Skeleton
+rule22=0,100,air
 
 rule23=0,100,minecraft:dark_oak_stairs-5
 rule24=0,100,minecraft:vine-2

@@ -40,7 +40,7 @@ rule9=0,100,minecraft:log-15
 rule10=0,100,minecraft:vine-6
 
 # Monsters!
-rule11=0,100,MobSpawner:Cave_Spider,MobSpawner:Creeper,MobSpawner:Skeleton
+rule11=0,100,air,air,air
 
 rule12=0,100,minecraft:leaves-7
 rule13=0,100,minecraft:vine-0

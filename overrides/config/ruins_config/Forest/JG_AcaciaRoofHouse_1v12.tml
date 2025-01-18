@@ -63,7 +63,7 @@ rule23=0,100,minecraft:stone_brick_stairs-2
 rule24=0,100,minecraft:stone_brick_stairs-3
 rule25=0,100,minecraft:planks-0
 
-rule26=0,100,MobSpawner:Skeleton,MobSpawner:Zombie,MobSpawner:Spider
+rule26=0,100,air,air,air
 
 rule27=0,100,minecraft:wooden_door-8
 rule28=0,100,minecraft:fence-0

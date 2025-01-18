@@ -30,7 +30,7 @@ rule4=0,100,minecraft:stonebrick-3
 rule5=0,100,IInventory;minecraft:chest;minecraft:arrow#16#0#2+minecraft:arrow#16#0#14+minecraft:arrow#16#0#21+minecraft:arrow#16#0#25-5
 rule6=0,100,minecraft:stone_brick_stairs-0
 
-rule7=0,100,MobSpawner:Zombie,MobSpawner:Skeleton,MobSpawner:Spider
+rule7=0,100,air,air,air
 
 rule8=0,100,IInventory;minecraft:chest;minecraft:grass#16#0#6+minecraft:grass#16#0#12+minecraft:grass#16#0#19+minecraft:grass#16#0#24-4
 rule9=0,100,IInventory;minecraft:chest;minecraft:clay#16#0#7+minecraft:clay#16#0#12+minecraft:clay#16#0#19+minecraft:clay#16#0#24-4

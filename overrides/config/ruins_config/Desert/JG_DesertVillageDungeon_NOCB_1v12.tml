@@ -58,7 +58,7 @@ rule9=0,100,minecraft:sandstone
 rule10=0,100,minecraft:sandstone
 
 # Monster Spawner (Sand Spirit)
-rule11=0,100,MobSpawner:Skeleton
+rule11=0,100,air
 
 
 # Standing Torch

@@ -44,7 +44,7 @@ rule11=0,100,teBlock;minecraft:wall_banner;{x:0,y:0,z:0,id:"minecraft:banner",Ba
 #rule12=0,100,CommandBlock:RUINSTRIGGER /setblock ~ ~-1 ~ mob_spawner 0 replace {SpawnCount:6,MaxNearbyEntities:12,RequiredPlayerRange:50,SpawnData:{id:"minecraft:zombie",Silent:1,HandItems:[{id:"minecraft:wool",Damage:6,Count:4},{id:"minecraft:concrete_powder",Damage:6,Count:4}],HandDropChances:[0.5F,0.5F],ArmorItems:[{},{},{},{id:"minecraft:stained_glass",Damage:6,Count:4}],ArmorDropChances:[0F,0F,0F,2F]}}:@
 
 
-rule12=0,100,MobSpawner:Skeleton
+rule12=0,100,air
 
 rule13=0,100,biomesoplenty:mahogany_door_block-8
 rule14=0,100,chisel:valentines-2

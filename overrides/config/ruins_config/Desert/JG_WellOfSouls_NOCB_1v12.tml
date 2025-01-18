@@ -24,7 +24,7 @@ preserve_lava=0
 preserve_plants=1
 
 rule1=0,100,minecraft:sandstone-2
-rule2=0,100,MobSpawner:Skeleton,MobSpawner:Husk
+rule2=0,100,air,air
 rule3=0,100,minecraft:sandstone_stairs-1
 rule4=0,100,minecraft:sandstone_stairs-3
 rule5=0,100,minecraft:sandstone_stairs-0

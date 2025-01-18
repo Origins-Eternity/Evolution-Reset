@@ -30,7 +30,7 @@ preserve_plants=1
 
 rule1=0,100,preserveBlock
 rule2=0,100,minecraft:stone-0,preserveBlock,minecraft:monster_egg-0,minecraft:grass-0
-rule3=0,100,minecraft:tnt-1,minecraft:tnt-0,MobSpawner:Creeper
+rule3=0,100,minecraft:tnt-1,minecraft:tnt-0,air
 rule4=0,100,minecraft:cobblestone-0,minecraft:mossy_cobblestone-0,minecraft:monster_egg-1,minecraft:cobblestone-0
 rule5=2,75,minecraft:stone_stairs-1
 

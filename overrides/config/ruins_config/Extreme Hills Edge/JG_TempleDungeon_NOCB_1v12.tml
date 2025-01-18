@@ -31,18 +31,18 @@ rule2=0,100,minecraft:stonebrick-3
 rule3=0,100,minecraft:double_stone_slab-0
 rule4=0,100,minecraft:nether_brick-0
 
-rule5=0,100,MobSpawner:Cave_Spider,MobSpawner:Skeleton
+rule5=0,100,air,air
 
 
 rule6=0,100,minecraft:tnt,minecraft:tnt-1
 rule7=0,100,minecraft:water-0
 
-rule8=0,100,MobSpawner:Skeleton
+rule8=0,100,air
 
 rule9=0,100,minecraft:water-9
 
 
-rule10=0,100,MobSpawner:Zombie
+rule10=0,100,air
 
 rule11=0,100,minecraft:cobblestone_wall-0
 rule12=0,100,minecraft:dark_oak_stairs-7

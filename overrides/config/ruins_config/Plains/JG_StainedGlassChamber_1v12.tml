@@ -32,7 +32,7 @@ rule2=0,100,minecraft:stonebrick,minecraft:stonebrick,minecraft:stonebrick-1,min
 rule3=0,100,minecraft:stone-4
 rule4=0,100,minecraft:stone-6
 
-rule5=0,100,MobSpawner:Skeleton,MobSpawner:Zombie,MobSpawner:Spider
+rule5=0,100,air,air,air
 
 rule6=0,100,minecraft:dark_oak_door-2
 rule7=0,100,IInventory;minecraft:chest;minecraft:stone#16#0#6+minecraft:stone#24#4#10+minecraft:stained_glass#8#3#17+minecraft:stone#24#6#24-5

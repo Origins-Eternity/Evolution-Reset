@@ -68,7 +68,7 @@ rule36=0,100,minecraft:stone_brick_stairs-3
 rule37=0,100,minecraft:wooden_slab-2
 rule38=0,100,minecraft:stone_slab-5
 
-rule39=0,100,MobSpawner:Skeleton
+rule39=0,100,air
 
 layer
 1,1,1,1,1,1,1,1,1

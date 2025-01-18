@@ -29,7 +29,7 @@ rule2=2,100,WallSign:DANGER!:Turn:Back:Now!-5,WallSign:***:Certain:DOOM!:***-5,W
 rule3=1,100,minecraft:redstone_torch-5
 rule4=0,100,Skull:0:4-1
 rule5=0,100,preserveBlock
-rule6=0,100,MobSpawner:Zombie
+rule6=0,100,air
 rule7=0,100,minecraft:grass
 
 layer

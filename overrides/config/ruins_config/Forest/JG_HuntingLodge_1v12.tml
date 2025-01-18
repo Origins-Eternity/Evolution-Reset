@@ -41,7 +41,7 @@ rule5=0,100,minecraft:planks-2
 rule6=0,100,minecraft:planks-1
 rule7=0,100,minecraft:netherrack-0
 
-rule8=0,100,MobSpawner:Cave_Spider,MobSpawner:Spider
+rule8=0,100,air,air
 
 rule9=0,100,minecraft:spruce_stairs-7
 rule10=0,100,minecraft:wooden_slab-9

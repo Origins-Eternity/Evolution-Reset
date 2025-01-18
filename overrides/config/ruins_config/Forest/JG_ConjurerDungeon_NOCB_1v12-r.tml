@@ -40,7 +40,7 @@ rule3=0,100,minecraft:sandstone-2
 rule4=0,100,minecraft:double_stone_slab-0
 
 # Hidden Mob Spawner
-rule5=0,100,MobSpawner:Creeper,MobSpawner:Silverfish
+rule5=0,100,air,air
 
 # Trap
 rule6=0,100,minecraft:tnt

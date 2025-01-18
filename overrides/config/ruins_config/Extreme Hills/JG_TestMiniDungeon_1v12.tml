@@ -29,7 +29,7 @@ rule2=0,100,minecraft:stained_hardened_clay-14
 rule3=0,100,minecraft:stained_hardened_clay-15
 
 # Hidden monster spawner
-rule4=0,100,MobSpawner:Creeper
+rule4=0,100,air
 
 # Random chance of regular or "unstable" TNT trap
 rule5=0,100,minecraft:tnt-1,minecraft:tnt-0

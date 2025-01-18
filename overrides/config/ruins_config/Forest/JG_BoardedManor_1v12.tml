@@ -45,7 +45,7 @@ rule14=0,100,minecraft:stone_brick_stairs-2
 rule15=0,100,minecraft:stone_brick_stairs-0
 rule16=0,100,minecraft:stone_brick_stairs-3
 
-rule17=0,100,MobSpawner:Skeleton,MobSpawner:Spider,MobSpawner:Zombie
+rule17=0,100,air,air,air
 
 # Stone Brick (above ground)
 rule18=0,100,minecraft:stonebrick-0,minecraft:stonebrick-0,minecraft:stonebrick-0,minecraft:stonebrick-1,minecraft:stonebrick-2

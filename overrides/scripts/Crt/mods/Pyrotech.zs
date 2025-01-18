@@ -46,7 +46,7 @@ for items in compacting_bin_recipes {
 }
 
 for recipe in recipes.all {
-    if (recipe.fullResourceDomain.contains("pyrotech") || recipe.fullResourceDomain.contains("waystones")) {
+    if (recipe.fullResourceDomain.contains("minecraft") || recipe.fullResourceDomain.contains("pyrotech") || recipe.fullResourceDomain.contains("waystones")) {
         var recipelocation = recipe.fullResourceDomain;
         Worktable.whitelistVanillaRecipes([recipelocation]);
     }
@@ -134,8 +134,6 @@ var worktable_recipes = [
 "immersiveengineering:treated_wood/treated_wood_cycle0", 
 "immersiveengineering:treated_wood/treated_wood_cycle1", 
 "immersiveengineering:treated_wood/treated_wood_cycle2", 
-"minecraft:stonebrick", 
-"minecraft:polished_granite", 
 "crafttweaker:tooltables", 
 "crafttweaker:ie_hammer", 
 "crafttweaker:bow_drill", 
@@ -147,10 +145,6 @@ var worktable_recipes = [
 "tconstruct:smeltery/casting_basin",
 "tconstruct:smeltery/channel",
 "antiqueatlas:atlas_blank",
-"minecraft:compass",
-"minecraft:piston",
-"minecraft:bowl",
-"minecraft:writable_book",
 "locks:wood_lock_pick",
 "locks:gold_lock_pick",
 "locks:iron_lock_pick",

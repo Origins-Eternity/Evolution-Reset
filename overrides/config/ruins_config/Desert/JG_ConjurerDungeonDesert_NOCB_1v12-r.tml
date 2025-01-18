@@ -39,7 +39,7 @@ rule3=0,100,minecraft:stained_hardened_clay-11
 rule4=0,100,minecraft:sandstone-1
 
 # Hidden Mob Spawner
-rule5=0,100,MobSpawner:Creeper,MobSpawner:Silverfish
+rule5=0,100,air,air
 
 # TNT Trap
 rule6=0,100,minecraft:tnt

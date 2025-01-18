@@ -35,7 +35,7 @@ rule7=0,100,minecraft:tallgrass-1
 rule8=0,100,minecraft:log-3
 rule9=0,100,minecraft:log-15
 rule10=0,100,minecraft:leaves-7
-rule11=0,100,MobSpawner:Husk
+rule11=0,100,air
 rule12=0,100,ChestGenHook:chests/desert_pyramid:3
 
 layer

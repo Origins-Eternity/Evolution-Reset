@@ -39,7 +39,7 @@ rule13=2,100,minecraft:piston_head-11
 rule14=0,100,IInventory;minecraft:trapped_chest;minecraft:gold_ingot#1#0#1+minecraft:skull#1#0#2+minecraft:redstone#1#0#4+minecraft:potato#4#0#5+minecraft:glass#8#0#8+minecraft:glass#8#0#9+minecraft:potato#4#0#10+minecraft:glass#8#0#11+minecraft:gold_ingot#1#0#12+minecraft:rotten_flesh#4#0#13+minecraft:gold_ingot#1#0#15+minecraft:potato#4#0#17+minecraft:rotten_flesh#4#0#19+minecraft:redstone#1#0#20+minecraft:glass#8#0#21+minecraft:gold_ingot#1#0#23+minecraft:skull#1#0#24+minecraft:potato#4#0#25-4
 
 rule15=0,100,ChestGenHook:chests/simple_dungeon:5-4
-rule16=0,100,MobSpawner:Skeleton
+rule16=0,100,air
 
 rule17=0,100,preserveBlock
 

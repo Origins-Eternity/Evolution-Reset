@@ -14,7 +14,6 @@ import crafttweaker.world.IWorld;
 import crafttweaker.world.IWorldInfo;
 import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.PlayerAdvancementEvent;
-import crafttweaker.event.PortalSpawnEvent;
 import crafttweaker.event.PlayerBonemealEvent;
 import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.entity.IEntityDefinition;
@@ -128,7 +127,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
             } else {
                 ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
             }
-            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.dimension"));
         } else if (isNull(event.fromWorld.getCustomWorldData().reachingStage)) {
             event.fromWorld.updateCustomWorldData({reachingStage: true});
         }
@@ -139,7 +138,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
             } else {
                 ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
             }
-            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.nether"));
+            event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.dimension"));
         }
     }
 });

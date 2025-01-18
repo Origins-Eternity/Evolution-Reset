@@ -35,7 +35,7 @@ rule2=0,100,minecraft:mossy_cobblestone-0,minecraft:cobblestone-0
 rule3=0,100,minecraft:flowing_water
 
 # Mob Spawner - Basement Creepers!
-rule4=0,100,MobSpawner:Creeper
+rule4=0,100,air
 
 # Loot!
 rule5=0,100,ChestGenHook:chests/simple_dungeon:5-3
@@ -44,7 +44,7 @@ rule5=0,100,ChestGenHook:chests/simple_dungeon:5-3
 rule6=0,100,minecraft:planks-1
 
 # Random Mob Spawner
-rule7=0,100,MobSpawner:Skeleton,MobSpawner:Spider,MobSpawner:Zombie
+rule7=0,100,air,air,air
 
 rule8=0,100,minecraft:ladder-4
 rule9=0,100,minecraft:web-0

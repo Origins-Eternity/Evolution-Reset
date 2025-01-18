@@ -29,7 +29,7 @@ rule1=0,100,minecraft:stonebrick-0
 rule2=0,100,minecraft:stone-6
 rule3=0,100,minecraft:sandstone-2
 
-rule4=0,100,MobSpawner:Slime,MobSpawner:Skeleton,MobSpawner:Zombie,MobSpawner:Creeper,MobSpawner:Silverfish,MobSpawner:Spider
+rule4=0,100,air,air,air,air,air,air
 
 rule5=0,100,minecraft:water-0
 rule6=0,100,minecraft:sandstone_stairs-3

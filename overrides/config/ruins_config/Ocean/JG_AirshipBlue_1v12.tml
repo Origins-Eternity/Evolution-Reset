@@ -65,7 +65,7 @@ rule30=0,100,IInventory;minecraft:stone;minecraft:coal#10#1#1-3
 rule31=0,100,minecraft:torch-5
 rule32=0,100,minecraft:wool-11
 rule33=0,100,minecraft:wool-3
-rule34=0,100,MobSpawner:Creeper
+rule34=0,100,air
 
 
 # 1

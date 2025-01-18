@@ -34,7 +34,7 @@ rule11=0,100,minecraft:dispenser-2
 rule12=0,100,chisel:marblepillar-14
 rule13=0,100,minecraft:dispenser-4
 
-rule14=0,100,MobSpawner:Skeleton
+rule14=0,100,air
 
 rule15=0,100,minecraft:dispenser-5
 rule16=0,100,preserveBlock

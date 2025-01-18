@@ -6,6 +6,8 @@ val banlist = [
 <minecraft:flint_and_steel>,
 <minecraft:iron_ingot>,
 <minecraft:gold_ingot>,
+<minecraft:iron_nugget>,
+<minecraft:gold_nugget>,
 <minecraft:obsidian>,
 <immersiveengineering:material>,
 <immersiveengineering:pickaxe_steel>,

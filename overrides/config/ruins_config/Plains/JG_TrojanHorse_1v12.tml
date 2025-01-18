@@ -41,7 +41,7 @@ rule14=0,100,minecraft:oak_stairs-5
 rule15=0,100,minecraft:wooden_slab-0
 rule16=0,100,minecraft:bookshelf-0
 
-rule17=0,100,MobSpawner:Skeleton,MobSpawner:Zombie,MobSpawner:Spider
+rule17=0,100,air,air,air
 
 rule18=0,100,minecraft:ladder-3
 rule19=0,100,minecraft:wooden_door-3

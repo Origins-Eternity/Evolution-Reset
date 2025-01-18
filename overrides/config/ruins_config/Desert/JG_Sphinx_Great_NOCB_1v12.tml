@@ -34,7 +34,7 @@ rule2=0,100,minecraft:sandstone-0
 rule3=0,100,minecraft:water-1
 rule4=0,100,minecraft:water-9
 
-rule5=0,100,MobSpawner:Zombie,MobSpawner:Skeleton
+rule5=0,100,air,air
 
 rule6=0,100,minecraft:sandstone-1
 rule7=0,100,minecraft:stained_hardened_clay-11
@@ -57,7 +57,7 @@ rule19=0,100,minecraft:sandstone_stairs-6
 rule20=0,100,minecraft:netherrack-0
 rule21=0,100,minecraft:water-0
 rule22=0,100,minecraft:sandstone_stairs-1
-rule23=0,100,MobSpawner:Cave_Spider
+rule23=0,100,air
 rule24=0,100,minecraft:sandstone_stairs-0
 
 rule25=0,100,IInventory;minecraft:trapped_chest;minecraft:emerald#1#0#1+minecraft:gold_ingot#1#0#3+minecraft:brick#1#0#6+minecraft:torch#12#0#9+minecraft:stick#9#0#11+minecraft:bone#1#0#12+minecraft:flower_pot#1#0#13-2

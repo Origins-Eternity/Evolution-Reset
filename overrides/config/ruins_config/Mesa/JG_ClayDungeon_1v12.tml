@@ -29,7 +29,7 @@ rule2=0,100,minecraft:stained_hardened_clay-11
 rule3=0,100,minecraft:stained_hardened_clay-1,minecraft:stained_hardened_clay-2,minecraft:stained_hardened_clay-3,minecraft:stained_hardened_clay-4,minecraft:stained_hardened_clay-5,minecraft:stained_hardened_clay-6,minecraft:stained_hardened_clay-9,minecraft:stained_hardened_clay-10,minecraft:stained_hardened_clay-13,minecraft:stained_hardened_clay-14,minecraft:stained_hardened_clay-15
 
 rule4=0,100,minecraft:netherrack-0
-rule5=0,100,MobSpawner:Skeleton,MobSpawner:Zombie,MobSpawner:Spider
+rule5=0,100,air,air,air
 rule6=0,100,minecraft:stained_hardened_clay-0
 rule7=0,100,minecraft:fire-15
 rule8=0,100,ChestGenHook:chests/simple_dungeon:3-2

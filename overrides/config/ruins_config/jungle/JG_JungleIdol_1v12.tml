@@ -47,7 +47,7 @@ rule5=0,100,flowing_water
 rule6=0,100,flowing_water
 
 # Spawner
-rule7=0,100,MobSpawner:Slime,MobSpawner:Zombie
+rule7=0,100,air,air
 
 # Stone Brick Stairs
 rule8=0,100,stone_brick_stairs-1

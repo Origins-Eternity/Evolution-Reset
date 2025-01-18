@@ -42,7 +42,7 @@ rule8=0,100,minecraft:dirt-0
 rule9=0,100,minecraft:web-0
 
 # Spider Spawner
-rule10=0,100,MobSpawner:Cave_Spider,MobSpawner:Spider
+rule10=0,100,air,air
 
 rule11=0,100,ChestGenHook:chests/simple_dungeon:4-4
 rule12=0,100,minecraft:planks-0
@@ -58,7 +58,7 @@ rule21=0,100,minecraft:fence-0
 rule22=0,100,minecraft:spruce_stairs-4
 
 # Other Spawner
-rule23=0,100,MobSpawner:Skeleton,MobSpawner:Zombie
+rule23=0,100,air,air
 
 rule24=0,100,minecraft:planks-0
 rule25=0,100,minecraft:wooden_door-0

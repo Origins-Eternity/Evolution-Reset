@@ -44,7 +44,7 @@ rule9=0,100,minecraft:snow_layer-4
 
 rule10=0,100,ChestGenHook:chests/simple_dungeon:5-3
 
-rule11=0,100,MobSpawner:Stray
+rule11=0,100,air
 
 # Scribed Ice Pillar Cap
 rule12=0,100,chisel:icepillar-5

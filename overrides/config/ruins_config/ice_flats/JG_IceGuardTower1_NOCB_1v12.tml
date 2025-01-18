@@ -31,7 +31,7 @@ preserve_plants=1
 rule1=0,100,minecraft:snow-0
 rule2=0,100,minecraft:packed_ice-0
 
-rule3=0,100,MobSpawner:Skeleton
+rule3=0,100,air
 
 rule4=0,100,minecraft:ice-0
 

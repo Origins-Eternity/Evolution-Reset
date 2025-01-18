@@ -59,7 +59,7 @@ rule9=0,100,minecraft:oak_stairs-3
 rule10=0,100,minecraft:oak_stairs-2
 
 # Monster Spawner
-rule11=0,100,MobSpawner:Cave_Spider,MobSpawner:Skeleton
+rule11=0,100,air,air
 
 # Stone Slab (Upper)
 rule12=0,100,minecraft:stone_slab-8
@@ -119,7 +119,7 @@ rule33=0,100,minecraft:nether_brick_stairs-1
 rule34=0,100,minecraft:cake-0
 
 # Hopper
-rule35=0,100,minecraft:hopper-0
+rule35=0,100,minecraft:stone-0
 
 # Nether Brick Fence
 rule36=0,100,minecraft:nether_brick_fence-0

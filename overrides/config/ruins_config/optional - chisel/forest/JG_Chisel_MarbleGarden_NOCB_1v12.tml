@@ -23,7 +23,7 @@ preserve_lava=0
 rule1=0,100,chisel:marble-7
 rule2=0,100,chisel:marble-4
 
-rule3=0,100,MobSpawner:Skeleton
+rule3=0,100,air
 
 # Randomized Marble Bricks (Bricks, Cracked Bricks, Weathered Bricks)
 rule4=0,100,chisel:marble2-0,chisel:marble-1,chisel:marble-2
