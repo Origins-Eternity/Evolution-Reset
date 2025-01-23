@@ -17,24 +17,27 @@ val disablecommand as bool = true;
 val lockdifficulty as bool = true;
 
 events.onCommand(function(event as CommandEvent) {
-if (disablecommand == true) {
-   val command = event.command;
-   if((command.name == "backup") || (command.name == "ct") || (command.name == "crafttweaker") || (command.name == "team")) {
-       return;
-   }
-   else if (event.commandSender instanceof IPlayer) {
-   val player as IPlayer = event.commandSender;
-   player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.command.tip"));
-   event.cancel(); 
-   }
+    if(disablecommand == true && event.commandSender instanceof IPlayer) {
+        if(event.command.name == "backup") return;
+        if(event.command.name == "ct") return;
+        if(event.command.name == "crafttweaker") return;
+        if(event.command.name == "team") return;
+        if(event.command.name == "register") return;
+        if(event.command.name == "login") return;
+        if(event.command.name == "sl_changepassword") return;
+        if(event.command.name == "chunk_claim") return;
+        if(event.command.name == "chunkclaim") return;
+        if(event.command.name == "cclaim") return;
+        var player as IPlayer = event.commandSender;
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.command.tip"));
+        event.cancel();
 }});
 
 events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var ser = server.commandManager as ICommandManager;
     ser.executeCommand(server, "gamemode survival " + event.player.name);
-    if (lockdifficulty == true) {
-        if(event.player.world.isRemote()) return;
-        val info = event.player.world.getWorldInfo();
+    if (lockdifficulty == true && !event.player.world.isRemote()) {
+        var info = event.player.world.getWorldInfo();
         if(!info.difficultyLocked) {
             if(isNull(event.player.world.getCustomWorldData().reachingStage)) return;
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.difficulty"));
