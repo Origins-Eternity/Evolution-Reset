@@ -9,13 +9,20 @@
 		type: "item",
 		items: [{
 			item: "pyrotech:generated_pile_slag_copper"
-		}]
+		}],
+		count: 10L
 	},
 	{
 		uid: "6f3c240f",
 		type: "item",
 		items: [{
 			item: "pyrotech:generated_pile_slag_tin"
-		}]
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "0b1733dc",
+		type: "item",
+		item: "pyrotech:flint_hammer"
 	}]
 }

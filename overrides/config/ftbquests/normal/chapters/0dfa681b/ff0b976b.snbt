@@ -10,7 +10,7 @@
 		items: [{
 			item: "minecraft:wheat"
 		}],
-		count: 64L
+		count: 32L
 	}],
 	rewards: [{
 		uid: "28650054",

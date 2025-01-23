@@ -12,6 +12,16 @@
 		}],
 		count: 5L,
 		consume_items: false
+	},
+	{
+		uid: "6b85b8d6",
+		type: "item",
+		items: [{
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "obsidian"
+			}
+		}]
 	}],
 	rewards: [{
 		uid: "f2942d6a",

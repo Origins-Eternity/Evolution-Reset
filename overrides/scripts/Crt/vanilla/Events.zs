@@ -34,7 +34,7 @@ import crafttweaker.event.PlayerChangedDimensionEvent;
 import crafttweaker.event.PlayerCloneEvent;
 import crafttweaker.event.PlayerFillBucketEvent;
 import crafttweaker.event.EntityLivingFallEvent;
-import crafttweaker.event.PlayerPickupItemEvent;
+import crafttweaker.event.PlayerRightClickItemEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
@@ -50,21 +50,7 @@ if (!event.player.world.isRemote()) {
 
 events.onPlayerClone(function(event as PlayerCloneEvent) {
     if(!event.player.world.isRemote()) {
-        if(!isNull(event.originalPlayer.data.wasGivenTip1)) {
-            event.player.update({wasGivenTip1: true});
-        }
-        if(!isNull(event.originalPlayer.data.wasGivenTip2)) {
-            event.player.update({wasGivenTip2: true});
-        }
-        if(!isNull(event.originalPlayer.data.wasGivenTip3)) {
-            event.player.update({wasGivenTip3: true});
-        }
-        if(!isNull(event.originalPlayer.data.wasInvited)) {
-            event.player.update({wasInvited: true});
-        }
-        if(!isNull(event.originalPlayer.data.wasInvited1)) {
-            event.player.update({wasInvited1: true});
-        }
+        event.player.update(event.originalPlayer.data);
     }
 });
 
@@ -89,16 +75,16 @@ events.onEntityLivingFall(function(event as EntityLivingFallEvent) {
     }
 });
 
-events.onPlayerPickupItem(function(event as PlayerPickupItemEvent) {
-    if(!event.player.world.isRemote()) {
-        if(<ore:runeFireB> has event.item.item) {
+events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
+    if(!event.world.isRemote()) {
+        if(<ore:runeFireB> has event.item) {
             if(isNull(event.player.data.wasInvited)) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
                 event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
                 event.player.update({wasInvited: true});
             }
-        } else if(<ore:runeLustB> has event.item.item) {
+        } else if(<ore:runeLustB> has event.item) {
             if(isNull(event.player.data.wasInvited1)) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));

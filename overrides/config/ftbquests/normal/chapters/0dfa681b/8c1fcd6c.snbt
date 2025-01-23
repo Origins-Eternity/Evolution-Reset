@@ -1,8 +1,8 @@
 {
-	x: 14.5d,
+	x: 13.5d,
 	y: 1.0d,
 	dependencies: [
-		"e4bb89ef"
+		"2afaf8d1"
 	],
 	tasks: [{
 		uid: "7b3368fb",
@@ -10,5 +10,10 @@
 		items: [{
 			item: "pyrotech:brick_crucible"
 		}]
+	}],
+	rewards: [{
+		uid: "d2f21421",
+		type: "item",
+		item: "pyrotech:bucket_wood"
 	}]
 }

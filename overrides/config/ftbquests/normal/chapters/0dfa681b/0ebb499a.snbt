@@ -1,5 +1,5 @@
 {
-	x: 19.0d,
+	x: 18.0d,
 	y: 1.0d,
 	dependencies: [
 		"6f650bca"
@@ -36,5 +36,10 @@
 		uid: "29b5a908",
 		type: "xp_levels",
 		xp_levels: 1
+	},
+	{
+		uid: "234abe9d",
+		type: "item",
+		item: "pyrotech:bucket_refractory"
 	}]
 }

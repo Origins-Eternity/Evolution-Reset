@@ -1,201 +1,221 @@
 {
-    "images": {
-      "title": {
-        "image": "mainmenu:textures/others/title.png",
-        "posX": 0,
-        "posY": 0,
-        "imageWidth": 1920,
-        "imageHeight": 640,
-        "width": 300,
-        "height": 100,
-        "alignment": "topleft"
-        },
-         
-        "black":
-        {
-        "image" : "mainmenu:textures/others/buttons_background.png",
-        "posX" : -30,
-        "posY" : -40,
-        "width" : 90,
-        "height" : 40,
-        "imageWidth": 310,
-        "imageHeight": 160,
-        "alignment" : "bottom_center"
-        }
-    },
-     
-    "buttons":
-    {
-        "singleplayer":
-        {
-           "text" : "",
-           "texture" : "mainmenu:textures/buttons/single.png",
-           "posX" : -85,
-           "posY" : 35,
-           "width" : 50,
-           "height" : 50,
-           "imageWidth" : 640,
-           "imageHeight" : 640,
-           "alignment" : "top_right",
-           "action" : 
-            {
-               "type" : "openGui",
-               "gui" : "singleplayer"
-            }
-        },
-         
-        "multiplayer":
-        {
-           "text" : "",
-           "texture" : "mainmenu:textures/buttons/multi.png",
-           "posX" : -105,
-           "posY" : 85,
-           "width" : 50,
-           "height" : 50,
-           "imageWidth" : 640,
-           "imageHeight" : 640,
-           "alignment" : "top_right",
-           "action" : 
-            {
-               "type" : "openGui",
-               "gui" : "multiplayer"
-            }
-        },
-
-        "options":
-        {
-           "text" : "",
-           "texture" : "mainmenu:textures/buttons/settings.png",
-           "posX" : -85,
-           "posY" : 135,
-           "width" : 50,
-           "height" : 50,
-           "imageWidth" : 640,
-           "imageHeight" : 640,
-           "alignment" : "top_right",
-           "action" : 
+   "images": {
+     "title": {
+       "image": "mainmenu:textures/others/title.png",
+       "posX": 0,
+       "posY": 0,
+       "imageWidth": 1920,
+       "imageHeight": 640,
+       "width": 300,
+       "height": 100,
+       "alignment": "topleft"
+       },
+        
+       "black":
+       {
+       "image" : "mainmenu:textures/others/buttons_background.png",
+       "posX" : -55,
+       "posY" : -40,
+       "width" : 110,
+       "height" : 40,
+       "imageWidth": 440,
+       "imageHeight": 160,
+       "alignment" : "bottom_center"
+       }
+   },
+    
+   "buttons":
+   {
+       "singleplayer":
+       {
+          "text" : "",
+          "texture" : "mainmenu:textures/buttons/single.png",
+          "posX" : -85,
+          "posY" : 35,
+          "width" : 50,
+          "height" : 50,
+          "imageWidth" : 640,
+          "imageHeight" : 640,
+          "alignment" : "top_right",
+          "action" : 
            {
-               "type" : "openGui",
-               "gui" : "options"
+              "type" : "openGui",
+              "gui" : "singleplayer"
            }
-        },
- 
-        "mods":
-        {
-           "text" : "",
-           "texture" : "mainmenu:textures/buttons/mods.png",
-           "posX" : 35,
-           "posY" : -185,
-           "width" : 50,
-           "height" : 50,
-           "imageWidth" : 640,
-           "imageHeight" : 640,
-           "alignment" : "bottom_left",
-           "action" : 
-            {
-               "type" : "openGui",
-               "gui" : "mods"
-            }
-        },
-         
-        "language":
-        {
-           "text" : "",
-           "texture" : "mainmenu:textures/buttons/lang.png",
-           "posX" : 50,
-           "posY" : -135,
-           "width" : 50,
-           "height" : 50,
-           "imageWidth" : 640,
-           "imageHeight" : 640,
-           "alignment" : "bottom_left",
-           "action" : 
-            {
-               "type" : "openGui",
-               "gui" : "languages"
-            }
-        },
+       },
+        
+       "multiplayer":
+       {
+          "text" : "",
+          "texture" : "mainmenu:textures/buttons/multi.png",
+          "posX" : -105,
+          "posY" : 85,
+          "width" : 50,
+          "height" : 50,
+          "imageWidth" : 640,
+          "imageHeight" : 640,
+          "alignment" : "top_right",
+          "action" : 
+           {
+              "type" : "openGui",
+              "gui" : "multiplayer"
+           }
+       },
 
-        "quit":
-        {
-           "text" : "",
-           "texture" : "mainmenu:textures/buttons/quit.png",
-           "posX" : 35,
-           "posY" : -85,
-           "width" : 50,
-           "height" : 50,
-           "imageWidth" : 640,
-           "imageHeight" : 640,
-           "alignment" : "bottom_left",
-           "action" : 
-            {
-               "type" : "quit"
-            }
-        },
-         
-        "Github":
-        {
-           "text" : "",
-           "texture" : "mainmenu:textures/buttons/github.png",
-           "hoverText" : "",
-           "posX" : -20,
-           "posY" : -35,
-           "width" :30,
-           "height" : 30,
-           "imageWidth" : 150,
-           "imageHeight" : 150,
-           "alignment" : "bottom_center",
-           "action" :
-            {
-               "type" : "openLink",
-               "link" : "https://github.com/Origins-Eternity/Evolution-Reset"
-            }
-        },
-        "Curse":
-        {
-           "text" : "",
-           "texture" : "mainmenu:textures/buttons/curse.png",
-           "hoverText" : "",
-           "posX" : 20,
-           "posY" : -35,
-           "width" : 30,
-           "height" : 30,
-           "imageWidth" : 150,
-           "imageHeight" : 150,
-           "alignment" : "bottom_center",
-           "action" :
-            {
-               "type" : "openLink",
-               "link" : "https://www.curseforge.com/minecraft/modpacks/evolution-reset"
-            }
-        }
-    },
+       "options":
+       {
+          "text" : "",
+          "texture" : "mainmenu:textures/buttons/settings.png",
+          "posX" : -85,
+          "posY" : 135,
+          "width" : 50,
+          "height" : 50,
+          "imageWidth" : 640,
+          "imageHeight" : 640,
+          "alignment" : "top_right",
+          "action" : 
+          {
+              "type" : "openGui",
+              "gui" : "options"
+          }
+       },
+
+       "mods":
+       {
+          "text" : "",
+          "texture" : "mainmenu:textures/buttons/mods.png",
+          "posX" : 35,
+          "posY" : -185,
+          "width" : 50,
+          "height" : 50,
+          "imageWidth" : 640,
+          "imageHeight" : 640,
+          "alignment" : "bottom_left",
+          "action" : 
+           {
+              "type" : "openGui",
+              "gui" : "mods"
+           }
+       },
+        
+       "language":
+       {
+          "text" : "",
+          "texture" : "mainmenu:textures/buttons/lang.png",
+          "posX" : 50,
+          "posY" : -135,
+          "width" : 50,
+          "height" : 50,
+          "imageWidth" : 640,
+          "imageHeight" : 640,
+          "alignment" : "bottom_left",
+          "action" : 
+           {
+              "type" : "openGui",
+              "gui" : "languages"
+           }
+       },
+
+       "quit":
+       {
+          "text" : "",
+          "texture" : "mainmenu:textures/buttons/quit.png",
+          "posX" : 35,
+          "posY" : -85,
+          "width" : 50,
+          "height" : 50,
+          "imageWidth" : 640,
+          "imageHeight" : 640,
+          "alignment" : "bottom_left",
+          "action" : 
+           {
+              "type" : "quit"
+           }
+       },
      
-    "labels":
-    {
-        "author":
-        {
-           "text" : "Author: Origins_Eternity & Lacz Version: 1.2.0",
-           "posX" : 3,
-           "posY" : 2,
-           "color" : -250,
-           "alignment" : "top_left"
-        }
-    },
-     
-    "other":
-    {
-         
-        "background": {
-        "image": "",
-        "slideshow": {
-           "images": [
-              "mainmenu:textures/others/bg1.png",
-              "mainmenu:textures/others/bg2.png"
-             ],
-           "displayDuration": 300,
-           "fadeDuration": 40
-        }
-        }
-    }
+       "Curse":
+       {
+          "text" : "",
+          "texture" : "mainmenu:textures/buttons/curse.png",
+          "hoverText" : "",
+          "posX" : -50,
+          "posY" : -35,
+          "width" : 30,
+          "height" : 30,
+          "imageWidth" : 300,
+          "imageHeight" : 300,
+          "alignment" : "bottom_center",
+          "action" :
+           {
+              "type" : "openLink",
+              "link" : "https://www.curseforge.com/minecraft/modpacks/evolution-reset"
+           }
+       },
+
+       "Discord":
+       {
+          "text" : "",
+          "texture" : "mainmenu:textures/buttons/discord.png",
+          "hoverText" : "",
+          "posX" : -15,
+          "posY" : -35,
+          "width" : 30,
+          "height" : 30,
+          "imageWidth" : 300,
+          "imageHeight" : 300,
+          "alignment" : "bottom_center",
+          "action" :
+           {
+              "type" : "openLink",
+              "link" : "https://discord.gg/JdrzWQvT3v"
+           }
+       },
+
+       "Github":
+       {
+          "text" : "",
+          "texture" : "mainmenu:textures/buttons/github.png",
+          "hoverText" : "",
+          "posX" : 20,
+          "posY" : -35,
+          "width" :30,
+          "height" : 30,
+          "imageWidth" : 300,
+          "imageHeight" : 300,
+          "alignment" : "bottom_center",
+          "action" :
+           {
+              "type" : "openLink",
+              "link" : "https://github.com/Origins-Eternity/Evolution-Reset"
+           }
+       }
+   },
+    
+   "labels":
+   {
+       "author":
+       {
+          "text" : "Author: Origins_Eternity & Lacz Version: 1.2.0",
+          "posX" : 3,
+          "posY" : 2,
+          "color" : -250,
+          "alignment" : "top_left"
+       }
+   },
+    
+   "other":
+   {
+        
+       "background": {
+       "image": "",
+       "slideshow": {
+          "images": [
+             "mainmenu:textures/others/bg1.png",
+             "mainmenu:textures/others/bg2.png"
+            ],
+          "displayDuration": 300,
+          "fadeDuration": 40
+       }
+       }
+   }
 }
