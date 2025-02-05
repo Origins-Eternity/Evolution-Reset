@@ -21,6 +21,7 @@ val banlist = [
 <minecraft:bucket>,
 <minecraft:water_bucket>,
 <minecraft:lava_bucket>,
+<minecraft:milk_bucket>,
 <minecraft:diamond>,
 <minecraft:iron_ore>,
 <minecraft:fire_charge>,

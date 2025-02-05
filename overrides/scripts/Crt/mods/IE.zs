@@ -37,17 +37,17 @@ for items in modrecipes {
 	recipes.remove(items);
 }
 
-recipes.addShaped(<immersiveengineering:metal_decoration0:5> * 2,
-[[<ercore:tungsten_steel_block>, <immersiveengineering:material:9>, <ercore:tungsten_steel_block>],
+recipes.addShaped(<immersiveengineering:metal_decoration0:5>,
+[[<ore:ingotTungsten>, <immersiveengineering:material:9>, <ore:ingotTungsten>],
 [<immersiveengineering:material:9>, <immersiveengineering:metal:7>, <immersiveengineering:material:9>],
-[<ercore:tungsten_steel_block>, <immersiveengineering:material:9>, <ercore:tungsten_steel_block>]]);
+[<ore:ingotTungsten>, <immersiveengineering:material:9>, <ore:ingotTungsten>]]);
 
-recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 4,
+recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 3,
 [[<ore:blockSheetmetalSteel>, <immersiveengineering:connector:13>, <ore:blockSheetmetalSteel>],
 [<immersiveengineering:connector:13>, <ore:blockCopper>, <immersiveengineering:connector:13>],
 [<ore:blockSheetmetalSteel>, <immersiveengineering:connector:13>, <ore:blockSheetmetalSteel>]]);
 
-recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 6,
+recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 5,
 [[<ore:blockSteel>, <immersiveengineering:material:8>, <ore:blockSteel>],
 [<ore:blockCopper>, <ore:blockCopper>, <ore:blockCopper>],
 [<ore:blockSteel>, <immersiveengineering:material:8>, <ore:blockSteel>]]);

@@ -220,6 +220,7 @@ var mobs = [
 ] as string[];
 
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
+    if(event.world.isRemote()) return;
     val entity = event.entity;
     if(isNull(entity.definition)) return;
     if(event.world.dimension != 0) return;
@@ -286,7 +287,7 @@ var player = event.player;
 });
 
 events.onPlayerFillBucket(function(event as PlayerFillBucketEvent) {
-    if(!isNull(event.block.definition)) {
+    if(event.rayTraceResult.isBlock) {
         var id = event.block.definition.id;
         if((id == "minecraft:ice") && (event.player.currentItem.definition.id != "minecraft:bucket")) {
             event.cancel();

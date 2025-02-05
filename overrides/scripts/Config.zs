@@ -28,6 +28,9 @@ events.onCommand(function(event as CommandEvent) {
         if(event.command.name == "chunk_claim") return;
         if(event.command.name == "chunkclaim") return;
         if(event.command.name == "cclaim") return;
+        if(event.command.name == "tpa") return;
+        if(event.command.name == "tpahere") return;
+        if(event.command.name == "tpaccept") return;
         var player as IPlayer = event.commandSender;
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.command.tip"));
         event.cancel();

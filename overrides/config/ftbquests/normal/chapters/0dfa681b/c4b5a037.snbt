@@ -1,0 +1,19 @@
+{
+	x: 10.0d,
+	y: 1.0d,
+	dependencies: [
+		"47a68832"
+	],
+	tasks: [{
+		uid: "a02f4e7e",
+		type: "item",
+		items: [{
+			item: "minecraft:flint"
+		}]
+	}],
+	rewards: [{
+		uid: "8926cb64",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

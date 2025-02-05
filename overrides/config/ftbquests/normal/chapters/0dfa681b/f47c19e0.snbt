@@ -1,14 +1,14 @@
 {
-	x: 13.0d,
-	y: -2.0d,
+	x: 10.0d,
+	y: -1.0d,
 	dependencies: [
-		"ff0b976b"
+		"7b0ed3b3"
 	],
 	tasks: [{
-		uid: "4b7c6826",
+		uid: "f8d7d0fe",
 		type: "item",
 		items: [{
-			item: "pyrotech:clay_shears"
+			item: "sanity:garland"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
@@ -18,12 +18,5 @@
 		type: "xp",
 		team_reward: true,
 		xp: 10
-	},
-	{
-		uid: "055dcc16",
-		type: "item",
-		team_reward: true,
-		item: "minecraft:wool",
-		count: 6
 	}]
 }

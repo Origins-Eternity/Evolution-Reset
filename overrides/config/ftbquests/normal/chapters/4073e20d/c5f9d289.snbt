@@ -1,22 +1,22 @@
 {
-	x: 5.5d,
-	y: -2.0d,
+	x: 3.0d,
+	y: 2.0d,
 	dependencies: [
-		"f9b796e3"
+		"9cd08d30"
 	],
 	tasks: [{
-		uid: "c6a3a7bf",
+		uid: "5d42e20a",
 		type: "item",
 		items: [{
-			item: "sanity:garland"
+			item: "sanity:umbrella"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "2e1fcd30",
+		uid: "98244a35",
 		type: "item",
-		item: "minecraft:bread",
-		count: 3
+		item: "minecraft:leather",
+		count: 5
 	}]
 }

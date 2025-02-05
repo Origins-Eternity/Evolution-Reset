@@ -2,13 +2,20 @@
 	x: 11.5d,
 	y: 1.0d,
 	dependencies: [
-		"47a68832"
+		"c4b5a037"
 	],
 	tasks: [{
-		uid: "035c87f2",
+		uid: "15ccddfd",
 		type: "item",
 		items: [{
-			item: "minecraft:flint"
-		}]
+			item: "pyrotech:material 1 16"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "a58091f8",
+		type: "item",
+		item: "pyrotech:material 1 10",
+		count: 3
 	}]
 }

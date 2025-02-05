@@ -1,14 +1,14 @@
 {
 	x: 1.5d,
-	y: 2.5d,
+	y: -0.5d,
 	dependencies: [
 		"304c80d5"
 	],
 	tasks: [{
-		uid: "6f02618c",
+		uid: "c3862cab",
 		type: "item",
 		items: [{
-			item: "galacticraftcore:rocket_workbench"
+			item: "galacticraftcore:machine2 1 4"
 		}]
 	}]
 }

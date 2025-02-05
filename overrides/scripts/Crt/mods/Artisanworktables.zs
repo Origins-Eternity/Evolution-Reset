@@ -68,27 +68,6 @@ RecipeBuilder.get("blacksmith")
 
 RecipeBuilder.get("blacksmith")
 .setShaped([
-    [null, null, <ore:stickSteel>, null, null],
-    [null, <ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>, null],
-    [null, null, <ore:stickSteel>, null, null],
-    [<ore:stickSteel>, <ore:stickSteel>, null, <ore:stickSteel>, <ore:stickSteel>],
-    [null, null, <ore:stickSteel>, null, null]])
-.setName("master_key")
-.setLevelRequired(10)
-.setMaximumTier(2)
-.setConsumeExperience(false)
-.setFluid(<liquid:gold> * 1000)
-.addTool(<ore:artisansCutters>, 15)
-.addTool(<ore:artisansHammer>, 10)
-.addTool(<ercore:tool_blueprint>, 2)
-.setExtraOutputOne(<immersiveengineering:metal:28> * 4, 0.7)
-.setExtraOutputTwo(<immersiveengineering:metal:17> * 1, 0.1)
-.setExtraOutputThree(<minecraft:gold_nugget> * 6, 0.2)
-.addOutput(<locks:master_key>)
-.create();
-
-RecipeBuilder.get("blacksmith")
-.setShaped([
     [<ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>, <ore:plateIron>, <ore:ingotIron>],
     [<ore:plateIron>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:paneGlassColorless>, <ore:plateIron>],
     [<ore:ingotIron>, <ore:paneGlassColorless>, null, <ore:paneGlassColorless>, <ore:ingotIron>],
@@ -569,6 +548,18 @@ RecipeBuilder.get("engineer")
 .create();
 
 RecipeBuilder.get("tanner")
+.setCopy(
+        Copy.byOutput([<sanity:umbrella>]).runAfter())
+.setName("umbrella")
+.setLevelRequired(5)
+.setConsumeExperience(false)
+.addTool(<ore:artisansPunch>, 10)
+.addTool(<ore:artisansShears>, 15)
+.setExtraOutputOne(<minecraft:leather>, 0.2)	 
+.setExtraOutputTwo(<pyrotech:rock:7> * 5, 0.8)	
+.create();
+
+RecipeBuilder.get("tanner")
 .setShaped([
     [<ore:wool>, <pyrotech:material:43>, <ore:wool>],
     [<pyrotech:material:43>, <pyrotech:material:42>, <pyrotech:material:43>],
@@ -708,27 +699,6 @@ RecipeBuilder.get("basic")
 .setExtraOutputTwo(<pyrotech:rock:7> * 2, 0.2)	
 .create();	
 }
-	
-RecipeBuilder.get("engineer")
-.setShaped([
-    [<ore:stickTreatedWood>, null, null, null, <ore:stickTreatedWood>],
-    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
-    [<ore:stickTreatedWood>, null, null, null, <ore:stickTreatedWood>],
-    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
-    [<ore:stickTreatedWood>, null, null, null, <ore:stickTreatedWood>]])
-.setName("ladder")
-.setLevelRequired(10)
-.setConsumeExperience(false)
-.setMaximumTier(2)
-.setSecondaryIngredients([<ore:string> * 4])  
-.addTool(<ore:artisansTSquare>, 15)
-.addTool(<ore:artisansCarver>, 20)
-.addTool(<ercore:ladder_blueprint>, 2)
-.setExtraOutputOne(<pyrotech:rock:7> * 4, 0.4)	 
-.setExtraOutputTwo(<pyrotech:rock:7> * 2, 0.3)	
-.setExtraOutputThree(<pyrotech:rock:7> * 3, 0.3)  
-.addOutput(<minecraft:ladder>)
-.create();
 
 for recipe2 in recipes.getRecipesFor(<ore:vacuumbag>) {
 RecipeBuilder.get("engineer")

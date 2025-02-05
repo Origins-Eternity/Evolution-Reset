@@ -41,7 +41,7 @@ rule9=0,100,minecraft:obsidian-0
 
 rule10=0,100,air,air,air
 
-rule11=0,100,IInventory;minecraft:trapped_chest;minecraft:web#1#0+minecraft:tallgrass#5#1+minecraft:wool#1#0+minecraft:wool#3#7+minecraft:flint_and_steel#1#0+minecraft:flower_pot#6#0+minecraft:bucket#2#0+minecraft:bone#8#0+minecraft:rotten_flesh#2#0+minecraft:skull#1#0+minecraft:dye#4#4+minecraft:gold_ingot#1#0+minecraft:melon_seeds#6#0-5
+rule11=0,100,IInventory;minecraft:trapped_chest;minecraft:web#1#0+minecraft:tallgrass#5#1+minecraft:wool#1#0+minecraft:wool#3#7+minecraft:flint_and_steel#1#0+minecraft:flower_pot#6#0+minecraft:wheat#2#0+minecraft:bone#8#0+minecraft:rotten_flesh#2#0+minecraft:skull#1#0+minecraft:dye#4#4+minecraft:gold_ingot#1#0+minecraft:melon_seeds#6#0-5
 
 rule12=0,100,minecraft:trapped_chest-5
 rule13=0,100,minecraft:sandstone-1

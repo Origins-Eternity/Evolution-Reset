@@ -33,18 +33,6 @@
             {
                 "action": "add",
                 "sell": {
-                    "id": "ercore:ladder_blueprint",
-                    "Count": 1
-                },
-                "buy": {
-                    "id": "minecraft:emerald",
-                    "Count": 10
-                },
-                "CareerLevel": 1
-            },
-            {
-                "action": "add",
-                "sell": {
                     "id": "ercore:crafting_table_blueprint",
                     "Count": 1
                 },

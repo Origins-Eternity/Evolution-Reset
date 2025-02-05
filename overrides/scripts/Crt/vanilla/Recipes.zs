@@ -125,7 +125,8 @@ var game_recipes = [
 <minecraft:leather>,
 <usefulbackpacks:backpack:*>,
 <biomesoplenty:boat_sacred_oak>,
-<minecraft:golden_apple>
+<minecraft:golden_apple>,
+<sanity:umbrella>
 ] as IItemStack[];
 
 for items in game_recipes {
@@ -177,6 +178,16 @@ for j, plank in myPlanks {
     recipes.addShapeless(slab * 2, [plank, handsaw.anyDamage().transformDamage(4)]);
 }
 }
+
+recipes.addShaped("ladder", <minecraft:ladder>,
+[[<ore:stickTreatedWood>, <ore:twine>, <ore:stickTreatedWood>],
+[<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
+[<ore:stickTreatedWood>, <ore:twine>, <ore:stickTreatedWood>]]);
+
+recipes.addShaped("umbrella", <sanity:umbrella>,
+[[<pyrotech:material:23>, <pyrotech:material:42>, <pyrotech:material:23>],
+[<pyrotech:material:42>, <ore:stickTreatedWood>, <pyrotech:material:42>],
+[<pyrotech:material:43>, <ore:stickTreatedWood>, <pyrotech:material:43>]]);
 
 recipes.addShaped("basic_workshop", <artisanworktables:workshop:5>,
 [[<ore:ingotCopper>, <ore:plateCopper>, <ore:ingotCopper>],

@@ -1,0 +1,35 @@
+{
+	"modify":
+	[
+		{
+			"folder": "mods",
+			"fileName": "BSL_v8.4.01.2.zip",
+			"delete": true
+		},
+		{
+			"folder": "mods",
+			"fileName": "ComplementaryUnbound_r5.3.zip",
+			"delete": true
+		},
+		{
+			"folder": "mods",
+			"fileName": "Sildur's Vibrant Shaders v1.52 Extreme-VL.zip",
+			"delete": true
+		},
+		{
+			"folder": "mods",
+			"fileName": "Evolution-Reset-Resource-Pack-1.2.0.zip",
+			"newFolder": "resourcepacks"
+		},
+		{
+			"folder": "mods",
+			"fileName": "ModernityAdjunct-f3-1.5.zip",
+			"newFolder": "resourcepacks"
+		},
+        {
+			"folder": "mods",
+			"fileName": "Modernity-f3-3.10.2.zip",
+			"newFolder": "resourcepacks"
+		}
+	]
+}

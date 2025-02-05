@@ -1,0 +1,14 @@
+{
+	x: 5.5d,
+	y: -2.0d,
+	dependencies: [
+		"f9b796e3"
+	],
+	tasks: [{
+		uid: "246f256e",
+		type: "item",
+		items: [{
+			item: "pyrotech:tanning_rack"
+		}]
+	}]
+}

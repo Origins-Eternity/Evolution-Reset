@@ -3,15 +3,20 @@
 	y: -1.0d,
 	dependencies: [
 		"f9b796e3",
-		"5e4ea23b"
+		"2a92145e"
 	],
 	tasks: [{
-		uid: "3ac994d8",
+		uid: "b4a46d61",
 		type: "item",
 		items: [{
-			item: "pyrotech:straw_bed"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+			item: "firstaid:plaster"
+		}]
+	},
+	{
+		uid: "5519bdaa",
+		type: "item",
+		items: [{
+			item: "firstaid:bandage"
+		}]
 	}]
 }
