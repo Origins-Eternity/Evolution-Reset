@@ -287,7 +287,7 @@ var player = event.player;
 });
 
 events.onPlayerFillBucket(function(event as PlayerFillBucketEvent) {
-    if(event.rayTraceResult.isBlock) {
+    if(!isNull(event.rayTraceResult) && event.rayTraceResult.isBlock) {
         var id = event.block.definition.id;
         if((id == "minecraft:ice") && (event.player.currentItem.definition.id != "minecraft:bucket")) {
             event.cancel();
