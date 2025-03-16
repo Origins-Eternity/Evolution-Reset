@@ -1,17 +1,22 @@
 #
-#priority 99999
+#priority 3
 import crafttweaker.item.IItemStack;
 
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <minecraft:flint_and_steel>.anyDamage().transformDamage(2)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <pyrotech:flint_and_tinder>.anyDamage().transformDamage(2)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <pyrotech:bow_drill>.anyDamage().transformDamage(2)]);
+recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <realistictorches:torch_lit>.anyDamage().transformDamage(0)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <minecraft:flint_and_steel>.anyDamage().transformDamage(1)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <pyrotech:flint_and_tinder>.anyDamage().transformDamage(1)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <pyrotech:bow_drill>.anyDamage().transformDamage(1)]);
+recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <realistictorches:torch_lit>.anyDamage().transformDamage(0)]);
+
+recipes.addShapeless(<ercore:cement_powder> * 4, [<ercore:clinker> * 3, <pyrotech:material:22>]);
 
 recipes.replaceAllOccurences(<minecraft:furnace>, <pyrotech:furnace_core>);
 recipes.replaceAllOccurences(<minecraft:stone_pickaxe>, <minecraft:stone>);
 recipes.replaceAllOccurences(<minecraft:golden_pickaxe>, <ore:blockGold>);
+recipes.replaceAllOccurences(<minecraft:iron_helmet>, <futuremc:netherite_helmet>);
 recipes.replaceAllOccurences(<minecraft:crafting_table>, <ore:craftingTable>);
 recipes.replaceAllOccurences(<ore:chest>, <pyrotech:crate_stone>);
 recipes.replaceAllOccurences(<ore:chestWood>, <pyrotech:crate_stone>);
@@ -23,7 +28,6 @@ var block = [
 <minecraft:diamond_block>,
 <minecraft:emerald_block>,
 <minecraft:slime>,
-<ercore:slakedlime_block>,
 <tconstruct:soil>,
 <immersiveengineering:storage:8>,
 <minecraft:quartz_block>,

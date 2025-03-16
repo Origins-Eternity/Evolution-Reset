@@ -54,7 +54,7 @@ rule15=1,100,StandingSign:WARNING::Do not tamper!:DANGER!:You are warned!-8
 
 rule16=0,100,IInventory;minecraft:trapped_chest;minecraft:grass#8#0#0+minecraft:mycelium#8#0#1+minecraft:dirt#8#2#2-2
 
-rule17=0,100,IInventory;minecraft:trapped_chest;minecraft:wheat#8#0#0+minecraft:blaze_powder#2#0#1-4
+rule17=0,100,IInventory;minecraft:trapped_chest;minecraft:wheat#8#0#0+minecraft:wheat#2#0#1-4
 
 rule18=0,100,minecraft:fence-0
 rule19=0,100,minecraft:stone_stairs-2

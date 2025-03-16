@@ -178,9 +178,9 @@ RecipeBuilder.get("basic")
 .setExtraOutputOne(<minecraft:iron_nugget> * 5, 0.6)
 .setExtraOutputTwo(<pyrotech:rock:7> * 8, 0.2)	
 .setExtraOutputThree(<immersiveengineering:metal:20> * 3, 0.2)	
-.addTool(<ore:artisansTSquare>, 50)  
+.addTool(<ore:artisansTSquare>, 35)  
 .addTool(<ercore:engineer_workstation_blueprint>, 2)
-.addTool(<ore:artisansCarver>, 50)
+.addTool(<ore:artisansCarver>, 30)
 .addOutput(<artisanworktables:workstation:6>)
 .create();
   
@@ -196,7 +196,7 @@ RecipeBuilder.get("engineer")
 .addTool(<ercore:furnace_core_blueprint>, 2)
 .setFluid(<liquid:lava> * 5000)
 .addTool(<ore:artisansCarver>, 30)  
-.addTool(<ore:artisansTSquare>, 50)   
+.addTool(<ore:artisansTSquare>, 35)   
 .setMaximumTier(2)
 .setExtraOutputOne(<minecraft:iron_nugget> * 4, 0.4)
 .setExtraOutputTwo(<pyrotech:material:16> * 6, 0.4)	
@@ -228,8 +228,8 @@ RecipeBuilder.get("engineer")
 .setSecondaryIngredients([<minecraft:fire_charge> * 4])
 .setFluid(<liquid:lava> * 4000)	
 .addTool(<ercore:wither_forge_blueprint>, 2)
-.addTool(<ore:artisansSpanner>, 50)
-.addTool(<ore:artisansChisel>, 50)
+.addTool(<ore:artisansSpanner>, 30)
+.addTool(<ore:artisansChisel>, 35)
 .setMaximumTier(2)
 .setExtraOutputOne(<minecraft:bone> * 3, 0.3)	 
 .setExtraOutputTwo(<minecraft:netherbrick> * 5, 0.4)	
@@ -247,45 +247,23 @@ RecipeBuilder.get("basic")
 .addTool(<ore:artisansTrowel>, 15)
 .addTool(<ercore:potter_workshop_blueprint>, 2)
 .create();
-
-RecipeBuilder.get("basic")
-.setShaped([
-    [<pyrotech:masonry_brick_block>, <minecraft:brick_block>, <pyrotech:material:42>, <minecraft:brick_block>, <pyrotech:masonry_brick_block>],
-    [<pyrotech:masonry_brick_block>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:masonry_brick_block>],
-    [<pyrotech:masonry_brick_block>, <minecraft:brick_block>, <minecraft:brick_block>, <minecraft:brick_block>, <pyrotech:masonry_brick_block>],
-    [<ore:stoneBasalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasalt>],
-    [<ore:stoneBasalt>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasalt>]])
-.setName("potter_workstation")
-.setLevelRequired(10)
-.setConsumeExperience(false)
-.setFluid(<liquid:lava> * 4000)
-.setMaximumTier(2)
-.setExtraOutputOne(<minecraft:iron_nugget> * 5, 0.6)
-.setExtraOutputTwo(<pyrotech:rock:7> * 8, 0.2)	
-.setExtraOutputThree(<immersiveengineering:metal:20> * 3, 0.2)	
-.addTool(<ore:artisansTSquare>, 50)  
-.addTool(<ercore:engineer_workstation_blueprint>, 2)
-.addTool(<ore:artisansCarver>, 50)
-.addOutput(<artisanworktables:workstation:14>)
-.create();
   
 RecipeBuilder.get("potter")
 .setShaped([
     [null, null, null, <ercore:cement_powder>, null],
     [null, <ercore:cement_powder>, <ercore:cement_powder>, <ercore:cement_powder>, null],
     [null, <ercore:cement_powder>, <ercore:cement_powder>, <ercore:cement_powder>, null],
-    [null, <ercore:cement_powder>, <ercore:cement_powder>, <ercore:cement_powder>, null],
     [null, <ercore:cement_powder>, null, null, null]])
 .setFluid(<liquid:water> * 500)
-.setLevelRequired(10)
+.setLevelRequired(5)
 .setConsumeExperience(false)
-.addTool(<ore:artisansDriver>, 40)
-.addTool(<ore:artisansSpanner>, 40)
-.addTool(<ore:artisansChisel>, 40)
+.addTool(<ore:artisansDriver>, 10)
+.addTool(<ore:artisansTrowel>, 10)
+.addTool(<ore:artisansChisel>, 15)
 .setMaximumTier(2)
-.setExtraOutputOne(<minecraft:clay_ball> * 5, 0.3)	 
-.setExtraOutputTwo(<ercore:cement_powder> * 2, 0.4)	
-.setExtraOutputThree(<pyrotech:material:8> * 1, 0.3)	
+.setExtraOutputOne(<pyrotech:material:17> * 6, 0.3)	 
+.setExtraOutputTwo(<pyrotech:material:22> * 2, 0.4)	
+.setExtraOutputThree(<pyrotech:material:35> * 3, 0.3)	
 .addOutput(<ercore:searedbrick_unfired>)
 .create();
   
@@ -299,16 +277,16 @@ RecipeBuilder.get("potter")
 .setName("stone_decoration10")  
 .setLevelRequired(10)
 .setConsumeExperience(false)
-.setSecondaryIngredients([<minecraft:clay_ball>])
+.setSecondaryIngredients([<minecraft:clay_ball> * 6])
 .setFluid(<liquid:water> * 500)
-.addTool(<ore:artisansDriver>, 20)
-.addTool(<ore:artisansSpanner>, 20)
-.addTool(<ore:artisansChisel>, 20)
+.addTool(<ore:artisansDriver>, 10)
+.addTool(<ore:artisansTrowel>, 20)
+.addTool(<ore:artisansChisel>, 25)
 .setMaximumTier(2)
-.setExtraOutputOne(<minecraft:clay_ball> * 5, 0.4)
-.setExtraOutputTwo(<minecraft:brick> * 3, 0.5)	
+.setExtraOutputOne(<pyrotech:material:17> * 5, 0.4)
+.setExtraOutputTwo(<pyrotech:material:7> * 3, 0.5)	
 .setExtraOutputThree(<pyrotech:rock:5> * 6, 0.1)	
-.addOutput(<immersiveengineering:stone_decoration:10>)
+.addOutput(<immersiveengineering:stone_decoration:10> * 3)
 .create();
   
 RecipeBuilder.get("potter")
@@ -318,18 +296,18 @@ RecipeBuilder.get("potter")
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>],
     [<pyrotech:material:5>, <pyrotech:material:5>, <pyrotech:material:5>, <pyrotech:material:5>, <pyrotech:material:5>],
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>]])
-.setSecondaryIngredients([<minecraft:clay_ball>])
+.setSecondaryIngredients([<minecraft:clay_ball> * 6])
 .setFluid(<liquid:coal_tar> * 1000)	
 .setLevelRequired(10)
 .setConsumeExperience(false)
-.addTool(<ore:artisansDriver>, 30)
-.addTool(<ore:artisansSpanner>, 30)
-.addTool(<ore:artisansChisel>, 30)
+.addTool(<ore:artisansDriver>, 15)
+.addTool(<ore:artisansTrowel>, 20)
+.addTool(<ore:artisansChisel>, 25)
 .setMaximumTier(2)
-.setExtraOutputOne(<minecraft:clay_ball> * 6, 0.3)	 
-.setExtraOutputTwo(<minecraft:brick> * 2, 0.6)	
+.setExtraOutputOne(<pyrotech:material:17> * 6, 0.3)	 
+.setExtraOutputTwo(<pyrotech:material:7> * 2, 0.6)	
 .setExtraOutputThree(<pyrotech:rock:5> * 5, 0.1)
-.addOutput(<immersiveengineering:stone_decoration:1>)
+.addOutput(<immersiveengineering:stone_decoration:1> * 3)
 .create();
 
 RecipeBuilder.get("potter")
@@ -342,16 +320,16 @@ RecipeBuilder.get("potter")
 .setName("stone_decoration")
 .setLevelRequired(10)
 .setConsumeExperience(false)
-.setSecondaryIngredients([<minecraft:clay_ball>])
+.setSecondaryIngredients([<minecraft:clay_ball> * 6])
 .setFluid(<liquid:coal_tar> * 500)	
 .addTool(<ore:artisansDriver>, 30)
-.addTool(<ore:artisansSpanner>, 30)
+.addTool(<ore:artisansTrowel>, 30)
 .addTool(<ore:artisansChisel>, 30)
 .setMaximumTier(2)
-.setExtraOutputOne(<minecraft:clay_ball> * 4, 0.2)	 
-.setExtraOutputTwo(<pyrotech:material:16> * 2, 0.5)	
+.setExtraOutputOne(<pyrotech:material:17> * 4, 0.2)	 
+.setExtraOutputTwo(<pyrotech:material:7> * 2, 0.5)	
 .setExtraOutputThree(<pyrotech:material:4> * 4, 0.3)	
-.addOutput(<immersiveengineering:stone_decoration>)
+.addOutput(<immersiveengineering:stone_decoration> * 3)
 .create();
 
 RecipeBuilder.get("basic")
@@ -749,7 +727,6 @@ awBlackSmithShaped("gold_block_from_ingot", <minecraft:gold_block>, <ore:ingotGo
 awBlackSmithShaped("diamond_block_from_diamond", <minecraft:diamond_block>, <ore:gemDiamond>);
 awBlackSmithShaped("emerald_block_from_emerald", <minecraft:emerald_block>, <ore:gemEmerald>);
 awBlackSmithShaped("slime_block_from_slimeball", <minecraft:slime>, <ore:slimeball>);
-awBlackSmithShaped("slakedlime_block_from_slakedlime", <ercore:slakedlime_block>, <ore:slakedLime>);
 awBlackSmithShaped("soil_from_cement_powder", <tconstruct:soil>, <ore:powderCement>);
 awBlackSmithShaped("steel_block_from_ingot", <immersiveengineering:storage:8>, <ore:ingotSteel>);
 awBlackSmithShaped("quartz_block_from_ingot", <minecraft:quartz_block>, <ore:gemQuartz>);
@@ -850,9 +827,9 @@ RecipeBuilder.get("engineer")
 .setExtraOutputOne(<minecraft:iron_nugget> * 5, 0.5)
 .setExtraOutputTwo(<pyrotech:rock:7> * 8, 0.3)	
 .setExtraOutputThree(<immersiveengineering:metal:28> * 2, 0.2)	
-.addTool(<ore:artisansTSquare>, 40)  
+.addTool(<ore:artisansTSquare>, 35)  
 .addTool(<ercore:crafting_table_blueprint>, 2)
-.addTool(<ore:artisansCarver>, 40) 
+.addTool(<ore:artisansCarver>, 30) 
 .setSecondaryIngredients([<immersiveengineering:metal:30> * 9])
 .addOutput(table)
 .create();
@@ -902,13 +879,13 @@ var bricks = [
 <futuremc:end_stone_brick_wall>,
 <futuremc:prismarine_wall>,
 <minecraft:mossy_cobblestone>,
-<minecraft:stonebrick:1>,
+<minecraft:stonebrick:1>
 ] as IItemStack[];
 
 for brick in bricks {
     RecipeBuilder.get("potter")
     .setCopy(
-            Copy.byOutput([brick]))
+            Copy.byOutput([brick]).runAfter())
     .setLevelRequired(5)
     .addTool(<ore:artisansSpanner>, 3)
     .addTool(<ore:artisansChisel>, 5)
@@ -961,7 +938,7 @@ RecipeBuilder.get("mage")
 .setMaximumTier(2)
 .addTool(<ore:artisansChisel>, 15)
 .addTool(<ercore:plant_brewing_stand_blueprint>, 2)
-.addTool(<ore:artisansHammer>, 40)
+.addTool(<ore:artisansHammer>, 30)
 .setExtraOutputOne(<minecraft:blaze_powder> * 2, 0.2)	 
 .setExtraOutputTwo(<botania:manaresource>, 0.6)	
 .setExtraOutputThree(<minecraft:iron_nugget> * 6, 0.2)

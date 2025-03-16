@@ -1,7 +1,6 @@
 #
 import crafttweaker.item.IItemStack;
 
-mods.inworldcrafting.FluidToItem.transform(<tconstruct:soil>, <liquid:slaked_lime>, [<minecraft:clay_ball>, <pyrotech:material:3>], true);
 mods.inworldcrafting.FluidToItem.transform(<minecraft:clay_ball>, <liquid:water>, [<minecraft:dirt> * 2], true);
 
 var seeds as IItemStack[] = [

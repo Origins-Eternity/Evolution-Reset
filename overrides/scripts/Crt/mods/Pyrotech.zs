@@ -1,5 +1,4 @@
 #
-#priority 0
 import crafttweaker.item.IItemStack;
 import mods.pyrotech.Worktable;
 import mods.pyrotech.CompactingBin;
@@ -304,12 +303,16 @@ StoneCrucible.addRecipe("liquid_gold_from_gold_ingot", <liquid:gold> * 144, <ore
 StoneCrucible.addRecipe("liquid_gold_from_gold_nugget", <liquid:gold> * 16, <ore:nuggetGold>, 3 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_gold_from_gold_shard", <liquid:gold> * 16, <pyrotech:material:34>, 3 * 60 * 20, true);
 BrickCrucible.addRecipe("liquid_glass_from_glass", <liquid:glass> * 1000, <ore:blockGlass>, 5 * 60 * 20);
-BrickCrucible.addRecipe("lime_slurry_from_slaked_lime", <liquid:slaked_lime> * 1000, <ercore:slakedlime_block>, 3 * 60 * 20);
 BrickCrucible.addRecipe("liquid_iron_from_iron_nugget", <liquid:iron> * 16, <ore:nuggetIron>, 4 * 60 * 20);
 BrickCrucible.addRecipe("liquid_iron_from_iron_shard", <liquid:iron> * 16, <pyrotech:material:19>, 4 * 60 * 20);
 BrickCrucible.addRecipe("liquid_iron_from_iron_ingot", <liquid:iron> * 144, <ore:ingotIron>, 5 * 60 * 20);
+
 StoneSawmill.addRecipe("treated_stick_from_tarred_board", <immersiveengineering:material>, <pyrotech:material:23>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0, true);
-BrickSawmill.addRecipe("cement_powder_from_soil", <ercore:cement_powder> * 9, <tconstruct:soil>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
+
+BrickSawmill.addRecipe("clinker_powder_from_refractory_brick", <ercore:clinker> * 4, <pyrotech:material:5>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
+BrickSawmill.addRecipe("clinker_powder_from_brick", <ercore:clinker> * 3, <minecraft:brick>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
+BrickSawmill.addRecipe("clinker_powder_from_pottery_shard", <ercore:clinker> * 2, <pyrotech:material:7>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
+BrickSawmill.addRecipe("clinker_powder_from_slag", <ercore:clinker>, <pyrotech:slag>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 
 SoakingPot.addRecipe("sugar_from_sugarcane", <minecraft:sugar> * 8, <liquid:sugarcane> * 1000, <pyrotech:material:22>, true, 5 * 60 * 20);
 SoakingPot.addRecipe("treated_wood_from_plank", <immersiveengineering:treated_wood>, <liquid:creosote> * 125, <ore:plankWood>, true, 5 * 60 * 20);
@@ -348,7 +351,7 @@ GraniteAnvil.addRecipe("copper_plate_from_block", <immersiveengineering:metal:30
 GraniteAnvil.addRecipe("gold_plate_from_block", <immersiveengineering:metal:40> * 3, <ore:blockGold>, 15, "hammer", true);
 
 CompactingBin.addRecipe("coal_block_from_coal", <minecraft:coal_block>, <ore:itemCoal>, 9);
-CompactingBin.addRecipe("slakedlime_block_from_slakedlime", <ercore:slakedlime_block>, <pyrotech:material:8>, 9);
+
 MechanicalCompactor.removeRecipes(<minecraft:grass>);
 MechanicalCompactor.addRecipe("iron_block_from_ingot", <minecraft:iron_block>, <ore:ingotIron>, 9);
 MechanicalCompactor.addRecipe("gold_block_from_ingot", <minecraft:gold_block>, <ore:ingotGold>, 9);

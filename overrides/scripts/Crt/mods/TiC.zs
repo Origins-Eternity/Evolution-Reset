@@ -1,5 +1,5 @@
 #
-#priority 1000
+#priority 1
 import mods.tconstruct.Drying;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;

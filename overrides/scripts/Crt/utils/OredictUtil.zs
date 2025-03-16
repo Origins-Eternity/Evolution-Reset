@@ -1,11 +1,7 @@
-#priority 99999
-
-
+#
+#priority 3
 import crafttweaker.item.IItemStack;
-import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
-
-import crafttweaker.game.IGame;
 import crafttweaker.oredict.IOreDictEntry;
 
 function addOredictIngredient(oredict as IOreDictEntry, ingredient as IIngredient) {

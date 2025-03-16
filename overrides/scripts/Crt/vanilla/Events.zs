@@ -38,13 +38,10 @@ import crafttweaker.event.PlayerRightClickItemEvent;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
-if (!event.player.world.isRemote()) {
-    var current = event.player.currentItem;
+if (!event.world.isRemote()) {
     if ((id == "minecraft:furnace") || (id == "minecraft:crafting_table") || (id == "minecraft:lit_furnace")) {
         event.cancel();
-        if(!isNull(event.player.data.wasGivenTip1)) return;
-        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.broken"));
-        event.player.update({wasGivenTip1: true});
+        event.world.destroyBlock(event.position, false);
     }
 }});
 
@@ -132,7 +129,7 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
 events.onPlayerInteract(function(event as PlayerInteractEvent) {
     if(isNull(event.player.currentItem)) return;
     if(<ore:banItems> has event.player.currentItem) {
-        event.player.dropItem(true);
+       event.damageItem(event.player.currentItem.maxDamage + 1);
     }
     if(event.player.world.isRemote()) return;
     val player = event.player;

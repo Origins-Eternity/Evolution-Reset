@@ -1,5 +1,5 @@
 #
-#priority 99998
+#priority 2
 import crafttweaker.block.IBlockDefinition;
 import crafttweaker.data.IData;
 import crafttweaker.game.IGame;
@@ -133,7 +133,6 @@ for oredict in oredictMap {
 <ore:carbon>.addAll(<ore:charcoal>);
 <ore:chest>.add(<immersiveengineering:wooden_device0>);
 <ore:grout>.add(<tconstruct:soil>);
-<ore:blockSlakedlime>.add(<ercore:slakedlime_block>);
 <ore:steel>.add(<immersiveengineering:metal:8>);
 <ore:whitesand>.add(<minecraft:sand>);
 <ore:whitesand>.add(<biomesoplenty:white_sand>);

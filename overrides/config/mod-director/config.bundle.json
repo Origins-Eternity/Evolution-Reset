@@ -4,17 +4,17 @@
 		{
 			"folder": "mods",
 			"fileName": "BSL_v8.4.01.2.zip",
-			"delete": true
+			"newFolder": "shaderpacks"
 		},
 		{
 			"folder": "mods",
 			"fileName": "ComplementaryUnbound_r5.3.zip",
-			"delete": true
+			"newFolder": "shaderpacks"
 		},
 		{
 			"folder": "mods",
 			"fileName": "Sildur's Vibrant Shaders v1.52 Extreme-VL.zip",
-			"delete": true
+			"newFolder": "shaderpacks"
 		},
 		{
 			"folder": "mods",

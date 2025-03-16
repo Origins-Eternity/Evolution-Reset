@@ -1,5 +1,4 @@
 #sideonly client
-#priority 10000
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.command.ICommandManager;
