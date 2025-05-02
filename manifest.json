@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Evolution-Reset",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Origins_Eternity & Lacz",
   "files": [
     {
@@ -76,7 +76,7 @@
     },
     {
       "projectID": 564236,
-      "fileID": 4671122,
+      "fileID": 6364107,
       "required": true
     },
     {
@@ -86,7 +86,7 @@
     },
     {
       "projectID": 306676,
-      "fileID": 5822040,
+      "fileID": 6253355,
       "required": true
     },
     {
@@ -95,8 +95,8 @@
       "required": true
     },
     {
-      "projectID": 315037,
-      "fileID": 2851881,
+      "projectID": 227873,
+      "fileID": 2721268,
       "required": true
     },
     {
@@ -106,7 +106,12 @@
     },
     {
       "projectID": 1134090,
-      "fileID": 6163492,
+      "fileID": 6487067,
+      "required": true
+    },
+    {
+      "projectID": 715086,
+      "fileID": 4476120,
       "required": true
     },
     {
@@ -175,6 +180,11 @@
       "required": true
     },
     {
+      "projectID": 361276,
+      "fileID": 4756301,
+      "required": true
+    },
+    {
       "projectID": 289412,
       "fileID": 3156637,
       "required": true
@@ -197,11 +207,6 @@
     {
       "projectID": 238222,
       "fileID": 5846804,
-      "required": true
-    },
-    {
-      "projectID": 521590,
-      "fileID": 4698918,
       "required": true
     },
     {
@@ -266,7 +271,7 @@
     },
     {
       "projectID": 417365,
-      "fileID": 4734546,
+      "fileID": 6330250,
       "required": true
     },
     {
@@ -276,7 +281,7 @@
     },
     {
       "projectID": 1088911,
-      "fileID": 5873255,
+      "fileID": 6400214,
       "required": true
     },
     {
@@ -310,6 +315,11 @@
       "required": true
     },
     {
+      "projectID": 1062347,
+      "fileID": 5573583,
+      "required": true
+    },
+    {
       "projectID": 648514,
       "fileID": 4696300,
       "required": true
@@ -321,7 +331,7 @@
     },
     {
       "projectID": 840576,
-      "fileID": 6074450,
+      "fileID": 6383148,
       "required": true
     },
     {
@@ -351,7 +361,7 @@
     },
     {
       "projectID": 650242,
-      "fileID": 5272359,
+      "fileID": 6436962,
       "required": true
     },
     {
@@ -366,12 +376,12 @@
     },
     {
       "projectID": 419286,
-      "fileID": 6156863,
+      "fileID": 6344449,
       "required": true
     },
     {
       "projectID": 239197,
-      "fileID": 6061762,
+      "fileID": 6186559,
       "required": true
     },
     {
@@ -380,8 +390,8 @@
       "required": true
     },
     {
-      "projectID": 235279,
-      "fileID": 2915375,
+      "projectID": 289240,
+      "fileID": 2816556,
       "required": true
     },
     {
@@ -391,7 +401,7 @@
     },
     {
       "projectID": 322506,
-      "fileID": 6018643,
+      "fileID": 6251106,
       "required": true
     },
     {
@@ -521,7 +531,7 @@
     },
     {
       "projectID": 705000,
-      "fileID": 6123916,
+      "fileID": 6463940,
       "required": true
     },
     {
@@ -541,12 +551,12 @@
     },
     {
       "projectID": 702132,
-      "fileID": 6163494,
+      "fileID": 6487049,
       "required": true
     },
     {
       "projectID": 273744,
-      "fileID": 6050157,
+      "fileID": 6392364,
       "required": true
     },
     {
@@ -572,11 +582,6 @@
     {
       "projectID": 235729,
       "fileID": 3152820,
-      "required": true
-    },
-    {
-      "projectID": 509490,
-      "fileID": 4867287,
       "required": true
     },
     {
@@ -636,7 +641,7 @@
     },
     {
       "projectID": 681509,
-      "fileID": 6116215,
+      "fileID": 6487502,
       "required": true
     },
     {
@@ -646,7 +651,7 @@
     },
     {
       "projectID": 401178,
-      "fileID": 6091806,
+      "fileID": 6482213,
       "required": true
     },
     {
