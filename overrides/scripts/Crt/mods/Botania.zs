@@ -8,7 +8,8 @@ var botbanlist = [
 <botania:pool>,
 <botania:pylon:*>,
 <botania:altar>,
-<botania:brewery>
+<botania:brewery>,
+<botania:runealtar>
 ] as IItemStack[];
 
 for i in botbanlist{
@@ -34,3 +35,8 @@ recipes.addShaped(<botania:pylon:2>,
 [[null, <botania:manaresource:8>, null],
 [<botania:manaresource:7>, <minecraft:nether_star>, <botania:manaresource:7>],
 [null, <botania:manaresource:8>, null]]);
+
+recipes.addShaped(<botania:runealtar>, 
+[[null, null, null],
+[<ore:livingrock>, <ore:livingrock>, <ore:livingrock>],
+[<ore:livingrock>, <botania:storage>, <ore:livingrock>]]);

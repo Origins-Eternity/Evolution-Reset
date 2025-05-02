@@ -99,10 +99,12 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
     ],
     <ore:blockThree> : [
         <ore:oreTitanium>,
-        <ore:blockIron>,
-        <ore:oreTungsten>
+        <ore:blockIron>
     ],
     <ore:blockFour> : [
+        <ore:oreTungsten>
+    ],
+    <ore:blockFive> : [
         <ore:oreDiamond>,
         <ore:blockDiamond>
     ],
@@ -149,7 +151,7 @@ for oredict in oredictMap {
 <ore:blockThree>.add(<minecraft:obsidian>);
 <ore:erstone>.add(<biomesoplenty:grass>);
 <ore:erstone>.add(<biomesoplenty:grass:1>);
-<ore:blockFour>.add(<minecraft:beacon>);
+<ore:blockFive>.add(<minecraft:beacon>);
 <ore:blockOne>.add(<minecraft:stonebrick:*>);
 <ore:blockTwo>.add(<minecraft:piston>);
 <ore:blockTwo>.add(<minecraft:sticky_piston>);

@@ -18,3 +18,7 @@ for threeblock in <ore:blockThree>.items {
 for fourblock in <ore:blockFour>.items {	
 	fourblock.asBlock().definition.setHarvestLevel("pickaxe", 5);
 }
+
+for fiveblock in <ore:blockFive>.items {	
+	fiveblock.asBlock().definition.setHarvestLevel("pickaxe", 6);
+}
