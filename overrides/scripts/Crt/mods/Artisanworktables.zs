@@ -522,7 +522,7 @@ RecipeBuilder.get("engineer")
 .setExtraOutputOne(<pyrotech:material:21> * 3, 0.8)	 
 .setExtraOutputTwo(<immersiveengineering:material:25>, 0.1)	
 .setExtraOutputThree(<immersiveengineering:material:24>, 0.1)
-.addOutput(<minecraft:gunpowder>)
+.addOutput(<minecraft:gunpowder> * 16)
 .create();
 
 RecipeBuilder.get("tanner")
