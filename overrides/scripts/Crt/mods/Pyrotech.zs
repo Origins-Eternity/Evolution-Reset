@@ -91,6 +91,7 @@ pyrKilns("pyrotech_mcbrick", <minecraft:brick>, <pyrotech:material:24>, <pyrotec
 pyrKilns("pyrotech_charcoal_piece", <pyrotech:material:15>, <pyrotech:rock:7>, <pyrotech:material>, 120 * 20);
 pyrKilns("pyrotech_mcstone_slab", <minecraft:stone_slab>, <minecraft:stone_slab:3>, <pyrotech:material>, 120 * 20);
 pyrKilns("pyrotech_mcstone", <minecraft:stone>, <minecraft:cobblestone>, <pyrotech:material>, 120 * 20);
+pyrKilns("pyrotech_smoothstone", <futuremc:smooth_stone>, <minecraft:stone>, <pyrotech:material>, 120 * 20);
 pyrKilns("pyrotech_mcandesite", <minecraft:stone:5>, <pyrotech:cobblestone>, <pyrotech:material>, 120 * 20);
 pyrKilns("pyrotech_mcgranite", <minecraft:stone:1>, <pyrotech:cobblestone:2>, <pyrotech:material>, 120 * 20);
 pyrKilns("pyrotech_mcdiarite", <minecraft:stone:3>, <pyrotech:cobblestone:1>, <pyrotech:material>, 120 * 20);
