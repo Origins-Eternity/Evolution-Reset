@@ -764,7 +764,6 @@ awBlackSmithShapeless("nugget_from_ingot_copper", <immersiveengineering:metal:20
 awBlackSmithShapeless("nugget_from_ingot_tin", <ercore:tin_nugget>, <ore:ingotTin>, 9);
 awBlackSmithShapeless("copper_plate_from_block", <immersiveengineering:metal:30>, <ore:blockCopper>, 3);
 awBlackSmithShapeless("gold_plate_from_block", <immersiveengineering:metal:40>, <ore:blockGold>, 3);
-awBlackSmithShapeless("flint_from_limestone", <minecraft:flint>, <ore:stoneLimestone>, 3);
 
 val woods = [
 <biomesoplenty:planks_0:13>,

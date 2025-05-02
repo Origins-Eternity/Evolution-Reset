@@ -139,7 +139,6 @@ for oredict in oredictMap {
 <ore:gravel>.add(<biomesoplenty:dried_sand>);
 <ore:radsand>.add(<minecraft:sand:1>);
 <ore:skull>.add(<minecraft:skull:*>);
-<ore:ergravel>.addAll(<ore:gravel>);
 <ore:sandpile>.add(<pyrotech:rock:5>);
 <ore:sandpile>.add(<pyrotech:rock:9>);
 <ore:ballClay>.add(<minecraft:clay_ball>);
