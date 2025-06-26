@@ -291,6 +291,7 @@ pyrWorktableCreate("artisans", "_driver_flint", <artisanworktables:artisans_driv
 BrickKiln.addRecipe("searedbrick_from_unfired", <tconstruct:materials>, <ercore:searedbrick_unfired>, 8000, 0.2, [<pyrotech:material:7> * 6]);
 BrickKiln.addRecipe("netherbrick_from_netherrack", <minecraft:netherbrick>, <minecraft:netherrack>, 6000, 0.3, [<pyrotech:rock_netherrack> * 4]);
 BrickOven.addRecipe("blaze_powder_from_blaze_rod", <minecraft:blaze_powder>, <minecraft:blaze_rod>);
+BrickOven.addRecipe("sulfur_powder_from_slag", <immersiveengineering:material:25>, <pyrotech:pile_slag>);
 StoneCrucible.addRecipe("liquid_dirt_from_dirt", <liquid:dirt> * 500, <ore:dirt>, 2 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_sugarcane_from_sugarcane", <liquid:sugarcane> * 125, <ore:sugarcane>, 2 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_copper_from_copper_nugget", <liquid:copper> * 16, <ore:nuggetCopper>, 4 * 60 * 20, true);
@@ -319,10 +320,6 @@ SoakingPot.addRecipe("sugar_from_sugarcane", <minecraft:sugar> * 8, <liquid:suga
 SoakingPot.addRecipe("treated_wood_from_plank", <immersiveengineering:treated_wood>, <liquid:creosote> * 125, <ore:plankWood>, true, 5 * 60 * 20);
 
 Campfire.removeRecipes(<minecraft:bread>);
-Campfire.removeRecipes(<minecraft:blaze_powder>);
-
-StoneKiln.removeRecipes(<minecraft:netherbrick>);
-PitKiln.removeRecipes(<minecraft:netherbrick>);
 
 IroncladAnvil.addRecipe("nugget_from_ingot_tungsten", <ercore:tungsten_nugget> * 9, <ercore:tungsten_ingot>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_tungsten_steel", <ercore:tungsten_steel_nugget> * 9, <ercore:tungsten_steel_ingot>, 20, "hammer");
