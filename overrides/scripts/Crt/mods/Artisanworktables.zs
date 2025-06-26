@@ -507,11 +507,11 @@ RecipeBuilder.get("blacksmith")
 
 RecipeBuilder.get("engineer")
  .setShaped([
-    [<immersiveengineering:material:24>, <immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:24>],
+    [<immersiveengineering:material:24>, <immersiveengineering:material:25>, <immersiveengineering:material:24>, <immersiveengineering:material:25>, <immersiveengineering:material:24>],
     [<immersiveengineering:material:25>, <immersiveengineering:material:24>, <minecraft:coal:1>, <immersiveengineering:material:24>, <immersiveengineering:material:25>],
-    [<immersiveengineering:material:25>, <minecraft:coal:1>, <immersiveengineering:material:24>, <minecraft:coal:1>, <immersiveengineering:material:25>],
+    [<immersiveengineering:material:24>, <minecraft:coal:1>, <immersiveengineering:material:24>, <minecraft:coal:1>, <immersiveengineering:material:24>],
     [<immersiveengineering:material:25>, <immersiveengineering:material:24>, <minecraft:coal:1>, <immersiveengineering:material:24>, <immersiveengineering:material:25>],
-    [<immersiveengineering:material:24>, <immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:25>, <immersiveengineering:material:24>]])
+    [<immersiveengineering:material:24>, <immersiveengineering:material:25>, <immersiveengineering:material:24>, <immersiveengineering:material:25>, <immersiveengineering:material:24>]])
 .setName("gunpowder")
 .setLevelRequired(15)
 .setConsumeExperience(false)
