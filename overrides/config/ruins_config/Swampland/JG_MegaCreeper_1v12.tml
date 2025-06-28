@@ -36,7 +36,7 @@ rule3=0,100,preserveBlock
 rule4=0,100,minecraft:concrete-13
 
 # Creeper Spawner
-rule5=0,100,air
+rule5=0,100,MobSpawner:Creeper
 
 # Treasure!  (if it's not blown up first)
 rule6=0,100,ChestGenHook:chests/simple_dungeon:5-2
@@ -49,7 +49,7 @@ rule8=0,100,minecraft:cyan_glazed_terracotta-1
 rule9=0,100,minecraft:concrete-7
 
 # More Treasure!  (if it's not blown up first)
-rule10=0,100,IInventory;minecraft:chest;minecraft:concrete_powder#4#15#1+minecraft:bread#12#0#4+minecraft:spawn_egg#{EntityTag:{id:\"minecraft:creeper\"}}#0#9+minecraft:bread#16#0#15+minecraft:bread#16#0#20+minecraft:concrete_powder#4#13#22+minecraft:concrete_powder#4#7#26-3
+rule10=0,100,IInventory;minecraft:chest;minecraft:concrete_powder#4#15#1+minecraft:gunpowder#12#0#4+minecraft:spawn_egg#{EntityTag:{id:\"minecraft:creeper\"}}#0#9+minecraft:tnt#16#0#15+minecraft:tnt#16#0#20+minecraft:concrete_powder#4#13#22+minecraft:concrete_powder#4#7#26-3
 
 layer
 2,1,1,1,3,3,3,3,2,1,1,1

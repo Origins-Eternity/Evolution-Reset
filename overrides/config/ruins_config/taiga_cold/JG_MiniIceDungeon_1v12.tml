@@ -29,7 +29,7 @@ preserve_plants=1
 rule1=0,100,preserveBlock
 rule2=0,100,minecraft:packed_ice-0
 rule3=0,100,minecraft:ice-0
-rule4=0,100,air,air
+rule4=0,100,MobSpawner:Skeleton,MobSpawner:Zombie
 rule5=0,100,ChestGenHook:chests/simple_dungeon:5-4
 
 # Preserve Layer (bedrock buffer)

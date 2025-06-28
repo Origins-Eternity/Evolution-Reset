@@ -47,7 +47,7 @@ rule7=0,100,chisel:energizedvoidstone-4
 rule8=0,100,minecraft:lapis_block-0
 
 # Mob Spawner
-rule9=0,100,air,air
+rule9=0,100,MobSpawner:Spider,MobSpawner:Skeleton
 
 rule10=0,100,minecraft:vine-6
 rule11=0,100,minecraft:vine-2
@@ -58,7 +58,7 @@ rule15=0,100,chisel:lavastone-11
 rule16=0,100,minecraft:vine-7
 
 # Trapped Treasure Chest
-rule17=0,100,IInventory;minecraft:trapped_chest;chisel:waterstone#8#11#0+chisel:waterstone#0#2+minecraft:vine#9#0#4+minecraft:egg#1#0#6+chisel:voidstone#2#0#8+chisel:voidstone#2#0#10+minecraft:hay_block#1#0#12+chisel:voidstone#2#0#14+minecraft:golden_horse_armor#1#0#18+chisel:voidstone#2#0#20+chisel:lavastone#5#11#25-3
+rule17=0,100,IInventory;minecraft:trapped_chest;chisel:waterstone#8#11#0+chisel:chisel_diamond#{chiseldata:{}}#0#2+minecraft:vine#9#0#4+minecraft:diamond_hoe#1#0#6+chisel:voidstone#2#0#8+chisel:voidstone#2#0#10+minecraft:hay_block#1#0#12+chisel:voidstone#2#0#14+minecraft:golden_horse_armor#1#0#18+chisel:voidstone#2#0#20+chisel:lavastone#5#11#25-3
 
 rule18=0,100,minecraft:vine-9
 

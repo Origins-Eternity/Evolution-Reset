@@ -47,7 +47,7 @@ rule3=0,100,minecraft:planks-2
 rule4=0,100,minecraft:melon_block-0,minecraft:pumpkin-0,minecraft:noteblock,IInventory;minecraft:chest;minecraft:fish#8#0,IInventory;minecraft:trapped_chest;minecraft:sponge#2#0,minecraft:tnt-0
 
 # Monster Spawners
-rule5=0,100,air,air
+rule5=0,100,MobSpawner:Zombie,MobSpawner:Skeleton
 
 # Wall Signs -- blank
 rule6=2,100,WallSign:null:null:null:null-4

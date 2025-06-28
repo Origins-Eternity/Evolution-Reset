@@ -58,8 +58,8 @@ rule23=0,100,minecraft:stone_stairs-1
 rule24=0,100,minecraft:log-0
 rule25=1,90,minecraft:planks-0
 rule26=1,75,minecraft:flower_pot-0
-rule27=1,80,minecraft:planks-0
-rule28=1,75,minecraft:stone
+rule27=1,80,minecraft:crafting_table-0
+rule28=1,75,minecraft:furnace
 rule29=2,50,minecraft:trapdoor-3
 rule30=2,80,minecraft:ladder-2
 rule31=2,80,minecraft:spruce_stairs-3
@@ -67,7 +67,7 @@ rule32=2,80,minecraft:spruce_stairs-2
 rule33=1,75,minecraft:jungle_door-2
 rule34=1,75,minecraft:glass_pane-0
 
-rule35=1,100,air,air,air,air
+rule35=1,100,MobSpawner:Spider,MobSpawner:Cave_Spider,MobSpawner:Skeleton,MobSpawner:Zombie
 
 rule36=1,50,minecraft:stone_pressure_plate-0
 rule37=1,100,minecraft:jungle_door-9

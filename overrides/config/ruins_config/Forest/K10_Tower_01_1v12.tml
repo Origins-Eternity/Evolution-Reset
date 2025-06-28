@@ -57,7 +57,7 @@ rule23=0,100,minecraft:planks-0
 rule24=2,100,minecraft:redstone_torch-1
 rule25=2,100,minecraft:redstone_torch-2
 
-rule26=0,100,air,air,air
+rule26=0,100,MobSpawner:Zombie,MobSpawner:Skeleton,MobSpawner:Spider
 
 rule27=0,100,minecraft:stone_slab-5
 

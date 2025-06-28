@@ -42,7 +42,7 @@ rule4=0,100,minecraft:double_wooden_slab-0
 rule5=0,100,minecraft:double_wooden_slab-0
 
 # Monster
-rule6=0,100,air,air,air
+rule6=0,100,MobSpawner:Zombie,MobSpawner:Skeleton,MobSpawner:Silverfish
 
 # Planks (Spruce)
 rule7=0,100,minecraft:planks-1

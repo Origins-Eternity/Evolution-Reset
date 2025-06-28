@@ -45,7 +45,7 @@ rule9=0,100,minecraft:tnt-1,minecraft:tnt
 rule10=0,100,minecraft:tallgrass-1,minecraft:tallgrass-1,minecraft:tallgrass-2,minecraft:red_flower,minecraft:red_flower-3,minecraft:tallgrass-1
 rule11=0,100,minecraft:double_plant-2
 
-rule12=0,100,IInventory;minecraft:trapped_chest;minecraft:wheat#8#0#0+minecraft:packed_ice#8#0#1+minecraft:ice#8#0#2-5
+rule12=0,100,IInventory;minecraft:trapped_chest;minecraft:water_bucket#8#0#0+minecraft:packed_ice#8#0#1+minecraft:ice#8#0#2-5
 
 rule13=0,100,minecraft:ladder-3
 rule14=0,100,IInventory;minecraft:trapped_chest;minecraft:item_frame#8#0#0+minecraft:clock#1#0#1+minecraft:web#8#0#2-3
@@ -54,7 +54,7 @@ rule15=1,100,StandingSign:WARNING::Do not tamper!:DANGER!:You are warned!-8
 
 rule16=0,100,IInventory;minecraft:trapped_chest;minecraft:grass#8#0#0+minecraft:mycelium#8#0#1+minecraft:dirt#8#2#2-2
 
-rule17=0,100,IInventory;minecraft:trapped_chest;minecraft:wheat#8#0#0+minecraft:wheat#2#0#1-4
+rule17=0,100,IInventory;minecraft:trapped_chest;minecraft:lava_bucket#8#0#0+minecraft:blaze_powder#2#0#1-4
 
 rule18=0,100,minecraft:fence-0
 rule19=0,100,minecraft:stone_stairs-2
@@ -99,7 +99,7 @@ rule57=0,100,minecraft:stained_glass_pane-0
 rule58=2,100,minecraft:ladder-5
 rule59=0,100,ChestGenHook:chests/spawn_bonus_chest:2-2
 rule60=1,100,minecraft:wooden_door-3
-rule61=0,100,IInventory;minecraft:stone;minecraft:coal#1#1#1-3
+rule61=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#1#1#1-3
 rule62=2,100,minecraft:ladder-4
 rule63=0,100,minecraft:bookshelf-0
 rule64=0,100,minecraft:dark_oak_stairs-4

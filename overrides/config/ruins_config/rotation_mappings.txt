@@ -98,8 +98,8 @@ WEST-5-6
 WEST-6-4
 WEST-7-5
 
-# pistons, ladders, wall signs, stones, chests, dispensers, droppers, stones
-BlockID=sticky_piston;piston;ladder;wall_sign;stone;stone;chest;dispenser;dropper;stone;trapped_chest
+# pistons, ladders, wall signs, furnaces, chests, dispensers, droppers, hoppers
+BlockID=sticky_piston;piston;ladder;wall_sign;lit_furnace;furnace;chest;dispenser;dropper;hopper;trapped_chest
 # DUNESW: 0 1 2 5 3 4
 # DUNESW: 8 9 10 13 11 12 (Extended Pistons, is lower value + 8)
 

@@ -67,10 +67,10 @@ rule29=0,100,minecraft:planks-0
 
 rule30=0,100,minecraft:skull
 
-rule31=0,100,minecraft:planks-0
+rule31=0,100,minecraft:crafting_table-0
 rule32=0,100,minecraft:spruce_stairs-6
 rule33=0,100,minecraft:jungle_fence_gate-3
-rule34=0,100,IInventory;minecraft:stone;minecraft:coal#4#1#1-4
+rule34=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#4#1#1-4
 rule35=0,100,minecraft:double_plant-10
 rule36=2,100,minecraft:trapdoor-3
 rule37=0,100,minecraft:double_plant-8

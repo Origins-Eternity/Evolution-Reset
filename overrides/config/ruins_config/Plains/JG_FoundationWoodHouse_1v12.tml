@@ -54,7 +54,7 @@ rule08=0,100,minecraft:planks-1,minecraft:wooden_slab-1,minecraft:grass
 rule09=0,100,minecraft:netherrack
 
 #Buried Treasure/Trouble
-rule10=0,100,air,minecraft:emerald_ore,minecraft:tnt-1,minecraft:bookshelf,minecraft:iron_ore,ChestGenHook:chests/spawn_bonus_chest:6-5
+rule10=0,100,MobSpawner:Creeper,minecraft:emerald_ore,minecraft:tnt-1,minecraft:bookshelf,minecraft:iron_ore,ChestGenHook:chests/spawn_bonus_chest:6-5
 
 #Ruined Cobble (mossy/cobblestone)
 rule11=1,75,minecraft:cobblestone,minecraft:mossy_cobblestone

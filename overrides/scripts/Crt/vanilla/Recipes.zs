@@ -11,7 +11,7 @@ recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smol
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <pyrotech:bow_drill>.anyDamage().transformDamage(1)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <realistictorches:torch_lit>.anyDamage().transformDamage(0)]);
 
-recipes.addShapeless(<ercore:cement_powder> * 4, [<ercore:clinker> * 3, <pyrotech:material:22>]);
+recipes.addShapeless(<ercore:cement_powder> * 4, [<ercore:clinker>, <ercore:clinker>, <ercore:clinker>, <pyrotech:material:22>]);
 
 recipes.replaceAllOccurences(<minecraft:furnace>, <pyrotech:furnace_core>);
 recipes.replaceAllOccurences(<minecraft:stone_pickaxe>, <minecraft:stone>);

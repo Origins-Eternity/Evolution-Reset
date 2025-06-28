@@ -38,11 +38,11 @@ rule5=0,100,minecraft:tallgrass-1
 
 rule6=0,100,minecraft:air
 
-rule7=0,100,minecraft:planks-0
+rule7=0,100,minecraft:crafting_table-0
 rule8=0,100,minecraft:carpet-0
 rule9=0,100,minecraft:acacia_fence_gate-2
 rule10=0,100,minecraft:acacia_door-1
-rule11=0,100,IInventory;minecraft:stone;minecraft:coal#1#0#1-2
+rule11=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#1#0#1-2
 
 # Disabled Command Block
 #rule12=0,100,CommandBlock:RUINSTRIGGER /summon villager ~0 ~0 ~0 {Profession:0,Career:1,CustomName:Shepherd,Offers:{Recipes:[{buy:{id:wheat,Count:22},sell:{id:emerald,Count:1}},{buy:{id:shears,Count:1},sell:{id:emerald,Count:1}},{buy:{id:wool,Count:4},sell:{id:string,Count:12}},{buy:{id:emerald,Count:1},sell:{id:wool,Count:8}},{buy:{id:bed,Count:1},sell:{id:wool,Count:3}},{buy:{id:dye,Count:32},sell:{id:emerald,Count:1}},{buy:{id:emerald,Count:12},sell:{id:shears,Count:1,tag:{display:{Name:"Shears of Silk"},ench:[{id:33,lvl:1}]}}},{buy:{id:emerald,Count:40},sell:{id:shears,Count:1,tag:{display:{Name:"Shears of Fortune"},ench:[{id:33,lvl:1},{id:34,lvl:5},{id:35,lvl:5}]}}}]}}:@

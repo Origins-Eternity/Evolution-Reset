@@ -34,7 +34,7 @@ rule4=0,100,minecraft:cobblestone-0
 rule5=0,100,minecraft:mossy_cobblestone-0
 
 # Monster spawner & treasure
-rule6=0,100,air
+rule6=0,100,MobSpawner:Cave_Spider
 rule7=0,100,ChestGenHook:chests/simple_dungeon:3-3
 
 rule8=0,100,minecraft:web-0

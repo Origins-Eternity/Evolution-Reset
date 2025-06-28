@@ -46,7 +46,7 @@ rule19=0,100,minecraft:wooden_slab-13
 rule20=0,100,minecraft:dark_oak_stairs-0
 rule21=0,100,minecraft:carpet-14
 
-rule22=0,100,air
+rule22=0,100,MobSpawner:Zombie
 
 rule23=0,100,ChestGenHook:chests/simple_dungeon:3-2
 

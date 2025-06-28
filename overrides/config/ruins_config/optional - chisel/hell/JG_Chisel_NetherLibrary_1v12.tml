@@ -27,7 +27,7 @@ rule6=0,100,chisel:bookshelf_spruce-1,chisel:bookshelf_spruce-2,chisel:bookshelf
 
 rule7=0,100,ChestGenHook:chests/simple_dungeon:3-5
 
-rule8=0,100,air
+rule8=0,100,MobSpawner:Wither_Skeleton
 
 rule9=0,100,minecraft:dark_oak_door-3
 

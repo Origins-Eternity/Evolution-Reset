@@ -50,7 +50,7 @@ rule9=0,100,minecraft:water-9
 rule10=0,100,minecraft:stone_brick_stairs-2
 
 # Monster Spawner
-rule11=0,100,air,air,air,air
+rule11=0,100,MobSpawner:Creeper,MobSpawner:Slime,MobSpawner:Skeleton,MobSpawner:Zombie
 
 rule12=0,100,minecraft:stone_brick_stairs-0
 rule13=0,100,minecraft:cobblestone_wall-0
@@ -59,7 +59,7 @@ rule13=0,100,minecraft:cobblestone_wall-0
 rule14=0,100,minecraft:double_plant-3
 
 # Treasure (preset contents)
-rule15=0,100,IInventory;minecraft:chest;minecraft:stone#17#2#1+minecraft:sapling#1#0#2+minecraft:stonebrick#2#0#3+minecraft:arrow#2#0#4+minecraft:grass#8#0#6+minecraft:leather#2#0#9+minecraft:double_plant#9#3#12+minecraft:flint_and_steel#1#0#14+minecraft:stonebrick#1#2#16+minecraft:bone#3#0#17+minecraft:log#2#0#19+minecraft:stone#18#0#20+minecraft:planks#2#0#22+minecraft:wheat#1#0#24+minecraft:brick#2#0#25-4
+rule15=0,100,IInventory;minecraft:chest;minecraft:stone#17#2#1+minecraft:sapling#1#0#2+minecraft:stonebrick#2#0#3+minecraft:arrow#2#0#4+minecraft:grass#8#0#6+minecraft:leather#2#0#9+minecraft:double_plant#9#3#12+minecraft:flint_and_steel#1#0#14+minecraft:stonebrick#1#2#16+minecraft:bone#3#0#17+minecraft:log#2#0#19+minecraft:stone#18#0#20+minecraft:planks#2#0#22+minecraft:water_bucket#1#0#24+minecraft:iron_ingot#2#0#25-4
 
 # Large Fern (top)
 rule16=0,100,minecraft:double_plant-10

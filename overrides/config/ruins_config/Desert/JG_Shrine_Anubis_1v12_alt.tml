@@ -37,7 +37,7 @@ rule7=0,100,minecraft:sandstone-2
 rule8=0,100,minecraft:sandstone_stairs-1
 rule9=0,100,minecraft:obsidian-0
 
-rule10=0,100,air,air
+rule10=0,100,MobSpawner:Skeleton,MobSpawner:Husk
 
 rule11=0,100,ChestGenHook:chests/simple_dungeon:2
 rule12=0,100,ChestGenHook:chests/desert_pyramid:2

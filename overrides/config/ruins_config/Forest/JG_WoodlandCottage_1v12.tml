@@ -56,7 +56,7 @@ rule8=0,100,minecraft:iron_bars
 rule9=0,100,minecraft:web
 
 # Monster Spawner
-rule10=0,100,air
+rule10=0,100,MobSpawner:Spider
 
 # Terrain Preserve
 rule11=0,100,preserveBlock
@@ -77,7 +77,7 @@ rule15=1,100,minecraft:birch_door-2
 rule16=0,100,minecraft:stone_slab-6
 
 # Crafting Table
-rule17=0,100,minecraft:planks
+rule17=0,100,minecraft:crafting_table
 
 # Cauldron
 rule18=0,100,minecraft:cauldron-3
@@ -86,7 +86,7 @@ rule18=0,100,minecraft:cauldron-3
 rule19=0,100,ChestGenHook:chests/simple_dungeon:3
 
 # Upper Spawner
-rule20=1,100,air
+rule20=1,100,MobSpawner:Zombie
 
 # spruce_fence
 rule21=0,100,minecraft:spruce_fence
@@ -97,8 +97,8 @@ rule22=1,100,minecraft:birch_door-8
 # Spruce Planks
 rule23=0,100,minecraft:planks-1
 
-# Lit stone
-rule24=0,100,IInventory;minecraft:stone;minecraft:coal#2#1#1-4
+# Lit Furnace
+rule24=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-4
 
 # Chimney Top
 rule25=0,100,minecraft:double_stone_slab

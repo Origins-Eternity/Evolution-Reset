@@ -32,7 +32,7 @@ rule5=0,100,ChestGenHook:chests/simple_dungeon:3-2
 rule6=0,100,ChestGenHook:chests/simple_dungeon:3-4
 rule7=0,100,minecraft:stone_brick_stairs-3
 
-rule8=0,100,air,air,air
+rule8=0,100,MobSpawner:Skeleton,MobSpawner:Zombie,MobSpawner:Spider
 
 rule9=0,100,minecraft:web-0
 rule10=2,100,minecraft:redstone_torch-3

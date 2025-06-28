@@ -34,7 +34,7 @@ rule5=0,100,minecraft:water-4
 rule6=0,100,minecraft:water-3
 
 # Monster Spawners
-rule7=0,100,air,air,air
+rule7=0,100,MobSpawner:Skeleton,MobSpawner:Cave_Spider,MobSpawner:Zombie
 
 rule8=0,100,minecraft:water-1
 rule9=0,100,minecraft:water-2

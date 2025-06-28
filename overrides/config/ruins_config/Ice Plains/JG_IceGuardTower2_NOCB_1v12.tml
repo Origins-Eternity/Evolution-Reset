@@ -32,7 +32,7 @@ preserve_plants=1
 rule1=0,100,minecraft:snow-0
 rule2=0,100,minecraft:packed_ice-0
 
-rule3=0,100,air
+rule3=0,100,MobSpawner:Skeleton
 
 rule4=0,100,minecraft:ice-0
 rule5=0,100,IInventory;minecraft:trapped_chest;minecraft:ice#16#0#0+minecraft:packed_ice#16#0#1+minecraft:lit_pumpkin#4#0#2+minecraft:painting#1#0#3-5

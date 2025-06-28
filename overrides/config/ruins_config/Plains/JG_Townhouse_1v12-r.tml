@@ -30,13 +30,13 @@ preserve_plants=1
 
 rule1=0,100,preserveBlock
 rule2=0,100,minecraft:stone-0,preserveBlock,minecraft:monster_egg-0,minecraft:grass-0
-rule3=0,100,minecraft:tnt-1,minecraft:tnt-0,air
+rule3=0,100,minecraft:tnt-1,minecraft:tnt-0,MobSpawner:Creeper
 rule4=0,100,minecraft:cobblestone-0,minecraft:mossy_cobblestone-0,minecraft:monster_egg-1,minecraft:cobblestone-0
 rule5=2,75,minecraft:stone_stairs-1
 
 rule6=0,100,IInventory;minecraft:dispenser;minecraft:spawn_egg#{EntityTag:{id:"Creeper"}}#50#0+minecraft:spawn_egg#{EntityTag:{id:creeper}}#50#1+minecraft:spawn_egg#{EntityTag:{id:creeper}}#50#2+minecraft:spawn_egg#{EntityTag:{id:zombie_villager}}#54#7+minecraft:spawn_egg#{EntityTag:{id:silverfish}}#60#8-5
 
-rule7=0,100,IInventory;minecraft:trapped_chest;minecraft:monster_egg#2#1+minecraft:monster_egg#1#0+minecraft:stone#3#0+minecraft:web#7#0+minecraft:bread#1#0+minecraft:glowstone#1#0-5
+rule7=0,100,IInventory;minecraft:trapped_chest;minecraft:monster_egg#2#1+minecraft:monster_egg#1#0+minecraft:stone#3#0+minecraft:web#7#0+minecraft:tnt#1#0+minecraft:glowstone#1#0-5
 rule8=0,100,minecraft:stone_pressure_plate-0
 rule9=0,100,IInventory;minecraft:trapped_chest;minecraft:porkchop#1#0+minecraft:pumpkin#1#0+minecraft:wheat_seeds#2#0+minecraft:chicken#1#0+minecraft:egg#1#0+minecraft:melon_block#1#0+minecraft:stone_pickaxe#1#0+minecraft:carrot#1#0+minecraft:grass#3#0-3
 rule10=0,100,minecraft:monster_egg-1
@@ -51,8 +51,8 @@ rule18=2,75,minecraft:planks-2
 rule19=2,75,minecraft:oak_stairs-1
 rule20=1,75,minecraft:spruce_stairs-3
 rule21=1,75,minecraft:wooden_door-3
-rule22=1,75,minecraft:planks-0
-rule23=0,100,IInventory;minecraft:stone;minecraft:coal#1#1#1-4
+rule22=1,75,minecraft:crafting_table-0
+rule23=0,100,IInventory;minecraft:furnace;minecraft:coal#1#1#1-4
 rule24=2,75,minecraft:oak_stairs-2
 rule25=0,100,minecraft:log-0
 rule26=1,75,minecraft:redstone_torch-5

@@ -60,7 +60,7 @@ rule19=0,100,minecraft:spruce_stairs-3
 rule20=0,100,minecraft:cobblestone_wall-1
 
 rule21=0,100,minecraft:web-0
-rule22=0,100,air
+rule22=0,100,MobSpawner:Spider
 rule23=0,100,ChestGenHook:chests/simple_dungeon:3-5
 rule24=0,100,minecraft:ladder-5
 

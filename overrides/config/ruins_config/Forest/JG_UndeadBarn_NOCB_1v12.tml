@@ -38,26 +38,26 @@ rule6=0,100,minecraft:monster_egg-1
 rule7=0,100,minecraft:double_stone_slab-0
 rule8=0,100,minecraft:water-0
 
-rule9=0,100,air
+rule9=0,100,MobSpawner:Spider
 
 rule10=0,100,minecraft:web-0
 rule11=1,90,minecraft:hay_block-0
-rule12=0,100,IInventory;minecraft:trapped_chest;minecraft:saddle#1#0#0+minecraft:leather#4#0#1+minecraft:hay_block#8#0#2+minecraft:bone#4#0#3+minecraft:string#9#0#4+minecraft:grass#6#0#5+minecraft:brick#1#0#6-2
+rule12=0,100,IInventory;minecraft:trapped_chest;minecraft:saddle#1#0#0+minecraft:leather#4#0#1+minecraft:hay_block#8#0#2+minecraft:bone#4#0#3+minecraft:string#9#0#4+minecraft:grass#6#0#5+minecraft:iron_ingot#1#0#6-2
 rule13=0,100,IInventory;minecraft:trapped_chest;minecraft:leather#6#0#5-2
 rule14=0,100,minecraft:spruce_stairs-4
 rule15=0,100,minecraft:spruce_stairs-3
 rule16=0,100,minecraft:fence-0
 rule17=0,100,minecraft:spruce_stairs-1
-rule18=0,100,air
+rule18=0,100,MobSpawner:Skeleton
 rule19=1,100,minecraft:redstone_torch-5
 rule20=0,100,minecraft:grass-0
 rule21=0,100,minecraft:planks-1
 
 # Unnatural Horse
-rule22=0,100,air
+rule22=0,100,MobSpawner:Skeleton
 
 # Unnatural Horse
-rule23=0,100,air
+rule23=0,100,MobSpawner:Skeleton
 
 rule24=0,100,minecraft:planks-0
 rule25=0,100,minecraft:oak_stairs-0

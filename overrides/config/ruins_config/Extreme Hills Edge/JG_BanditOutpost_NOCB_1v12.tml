@@ -29,12 +29,12 @@ preserve_plants=1
 rule1=0,100,minecraft:double_stone_slab-0
 rule2=0,100,minecraft:stonebrick-1,minecraft:stonebrick-1,minecraft:stonebrick,minecraft:stonebrick-2
 rule3=0,100,minecraft:mossy_cobblestone-0
-rule4=0,100,air,air
+rule4=0,100,MobSpawner:Zombie,MobSpawner:Skeleton
 rule5=0,100,minecraft:skull,minecraft:skull-1,minecraft:skull-2,minecraft:skull-3,minecraft:skull-4
 rule6=0,100,minecraft:flower_pot-0
 
 
-rule7=0,100,air
+rule7=0,100,MobSpawner:Zombie
 
 rule8=0,100,minecraft:stone_brick_stairs-2
 rule9=0,100,minecraft:iron_door-2
@@ -84,11 +84,11 @@ rule43=0,100,minecraft:log-0
 rule44=0,100,minecraft:stained_hardened_clay-8
 rule45=0,100,minecraft:spruce_fence-0
 rule46=0,100,minecraft:spruce_stairs-2
-rule47=0,100,minecraft:planks-0
+rule47=0,100,minecraft:crafting_table-0
 rule48=0,100,minecraft:spruce_stairs-0
 rule49=0,100,minecraft:trapdoor-2
 rule50=0,100,ChestGenHook:chests/simple_dungeon:3-4
-rule51=0,100,IInventory;minecraft:stone;minecraft:coal#3#1#1-4
+rule51=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#3#1#1-4
 rule52=0,100,minecraft:double_plant-8
 rule53=0,100,minecraft:stone_pressure_plate-0
 rule54=0,100,minecraft:stone_stairs-3

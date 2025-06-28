@@ -40,9 +40,9 @@ rule9=0,100,minecraft:log-4
 rule10=0,100,minecraft:planks-0
 rule11=1,100,minecraft:wooden_door-1
 rule12=1,100,minecraft:wooden_slab-1
-rule13=0,100,minecraft:planks-0
+rule13=0,100,minecraft:crafting_table-0
 rule14=0,100,minecraft:fence_gate-1
-rule15=0,100,IInventory;minecraft:stone;minecraft:coal#2#1#1-5
+rule15=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-5
 
 # Command Block disabled
 #rule16=0,100,CommandBlock:RUINSTRIGGER /summon Villager ~0 ~0 ~0 {Profession:4,Career:1,CareerLevel:6,CustomName:Fisherman,Offers:{Recipes:[{buy:{id:fish,Count:32},sell:{id:emerald,Count:1}},{buy:{id:emerald,Count:1},sell:{id:fish,Count:6}},{buy:{id:emerald,Count:1},sell:{id:cooked_fish,Count:6}},{buy:{id:dye,Count:64},sell:{id:emerald,Count:1}},{buy:{id:emerald,Count:25},buyB:{id:fishing_rod,Count:1},sell:{id:fishing_rod,Count:1,tag:{ench:[{id:16,lvl:5},{id:19,lvl:5},{id:34,lvl:10},{id:35,lvl:3}],display:{Name:"Rod of the Sea Serpent"}}}},{buy:{id:emerald,Count:64},buyB:{id:fishing_rod,Count:1},sell:{id:fishing_rod,Count:1,tag:{ench:[{id:61,lvl:5},{id:62,lvl:5},{id:34,lvl:10},{id:19,lvl:5}],display:{Name:"Mighty Fishing Rod"}}}},{buy:{id:string,Count:20},sell:{id:emerald,Count:1}}]}}:@

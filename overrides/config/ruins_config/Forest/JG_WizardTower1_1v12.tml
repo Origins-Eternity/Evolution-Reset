@@ -59,7 +59,7 @@ rule9=0,100,minecraft:oak_stairs-3
 rule10=0,100,minecraft:oak_stairs-2
 
 # Monster Spawner
-rule11=0,100,air,air
+rule11=0,100,MobSpawner:Cave_Spider,MobSpawner:Skeleton
 
 # Stone Slab (Upper)
 rule12=0,100,minecraft:stone_slab-8
@@ -96,14 +96,14 @@ rule24=0,100,minecraft:dark_oak_door-8
 rule25=0,100,minecraft:nether_brick_stairs-2
 rule26=0,100,minecraft:nether_brick_stairs-3
 
-# stone
-rule27=0,100,IInventory;minecraft:stone;minecraft:coal#2#1#1-5
+# Furnace
+rule27=0,100,IInventory;minecraft:lit_furnace;minecraft:coal#2#1#1-5
 
 # Cauldron (DV 3 = fully filled)
 rule28=0,100,minecraft:cauldron-3
 
 # Crafting Table
-rule29=0,100,minecraft:planks-0
+rule29=0,100,minecraft:crafting_table-0
 
 # Dungeon Chest
 rule30=0,100,ChestGenHook:chests/simple_dungeon:3-3
@@ -119,7 +119,7 @@ rule33=0,100,minecraft:nether_brick_stairs-1
 rule34=0,100,minecraft:cake-0
 
 # Hopper
-rule35=0,100,minecraft:stone-0
+rule35=0,100,minecraft:hopper-0
 
 # Nether Brick Fence
 rule36=0,100,minecraft:nether_brick_fence-0

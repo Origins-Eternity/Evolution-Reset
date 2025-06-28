@@ -34,7 +34,7 @@ preserve_lava=0
 preserve_plants=1
 
 # Iron Block (body)
-rule1=0,100,minecraft:stone
+rule1=0,100,minecraft:iron_block
 
 # Lit Pumpkin / Jack-o-Lantern (head)
 rule2=1,100,minecraft:pumpkin

@@ -31,7 +31,7 @@ rule6=0,95,minecraft:dark_oak_stairs-1
 rule7=0,95,minecraft:dark_oak_stairs-7
 rule8=0,100,minecraft:planks-5
 
-rule9=0,100,air,air,air,air
+rule9=0,100,MobSpawner:Spider,MobSpawner:Skeleton,MobSpawner:Zombie,MobSpawner:Slime
 
 rule10=0,100,IInventory;minecraft:chest;minecraft:log2#16#1#0+minecraft:planks#1#5#2+minecraft:mossy_cobblestone#13#0#4+minecraft:ladder#1#0#6+minecraft:dirt#1#0#8+minecraft:planks#3#0#12+minecraft:stonebrick#12#1#15+minecraft:dark_oak_fence#1#0#18+minecraft:stonebrick#12#2#20+minecraft:log#1#0#23+minecraft:dark_oak_stairs#1#0#25-4
 

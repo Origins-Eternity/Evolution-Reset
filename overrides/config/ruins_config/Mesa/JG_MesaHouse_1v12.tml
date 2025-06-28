@@ -31,7 +31,7 @@ rule7=0,100,minecraft:stone_stairs-2
 rule8=0,100,minecraft:stone_stairs-3
 rule9=0,100,minecraft:stone_stairs-0
 
-rule10=0,100,air,air
+rule10=0,100,MobSpawner:Husk,MobSpawner:Skeleton
 
 rule11=0,100,minecraft:wooden_slab-0
 rule12=0,100,minecraft:carpet-9
