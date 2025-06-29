@@ -83,7 +83,13 @@ for i, material in materials {
     recipes.addShapeless(slime, [<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>, material]);
 }
 
-val mod = loadedMods["tcomplement"];
-for item in mod.items {
-    recipes.replaceAllOccurences(<ore:blcokGlass>, <pyrotech:refractory_glass>, item);
+val tcom = loadedMods["tcomplement"];
+for item in tcom.items {
+    recipes.replaceAllOccurences(<ore:blockGlass>, <pyrotech:refractory_glass>, item);
+    recipes.replaceAllOccurences(<pyrotech:furnace_core>, <pyrotech:igniter:1>, <tcomplement:melter:8>);
+}
+
+val tcon = loadedMods["tconstruct"];
+for item in tcon.items {
+    recipes.replaceAllOccurences(<ore:blockGlass>, <pyrotech:refractory_glass>, item);
 }

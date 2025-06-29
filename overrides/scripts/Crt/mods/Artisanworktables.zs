@@ -878,7 +878,8 @@ var bricks = [
 <futuremc:end_stone_brick_wall>,
 <futuremc:prismarine_wall>,
 <minecraft:mossy_cobblestone>,
-<minecraft:stonebrick:1>
+<minecraft:stonebrick:1>,
+<tconstruct:seared_tank>
 ] as IItemStack[];
 
 for brick in bricks {
@@ -886,6 +887,20 @@ for brick in bricks {
     .setCopy(
             Copy.byOutput([brick]).runAfter())
     .setLevelRequired(5)
+    .setConsumeExperience(false)
+    .addTool(<ore:artisansSpanner>, 3)
+    .addTool(<ore:artisansChisel>, 5)
+    .create();
+}
+
+val tcom = loadedMods["tcomplement"];
+
+for item in tcom.items {
+    RecipeBuilder.get("potter")
+    .setCopy(
+            Copy.byOutput([item]).runAfter())
+    .setLevelRequired(10)
+    .setConsumeExperience(false)
     .addTool(<ore:artisansSpanner>, 3)
     .addTool(<ore:artisansChisel>, 5)
     .create();
