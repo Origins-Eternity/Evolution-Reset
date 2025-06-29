@@ -42,7 +42,8 @@ var block = [
 <immersiveengineering:storage:3>,
 <immersiveengineering:storage:5>,
 <immersiveengineering:storage:2>,
-<ercore:tungsten_steel_block>
+<ercore:tungsten_steel_block>,
+<firstaid:plaster>
 ] as IItemStack[];
 
 for items in block {

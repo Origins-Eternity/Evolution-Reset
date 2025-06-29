@@ -82,3 +82,8 @@ for i, material in materials {
     var slime = slimes[i];
     recipes.addShapeless(slime, [<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>, material]);
 }
+
+val mod = loadedMods["tcomplement"];
+for item in mod.items {
+    recipes.replaceAllOccurences(<ore:blcokGlass>, <pyrotech:refractory_glass>, item);
+}
