@@ -50,21 +50,6 @@ RecipeBuilder.get("basic")
 .setExtraOutputOne(<pyrotech:material:23> * 2, 0.9)
 .setExtraOutputTwo(<pyrotech:material:23> * 3, 0.1)
 .create();
-  
-RecipeBuilder.get("blacksmith")
-.setShaped([
-    [<ore:ingotSteel>, null, <ore:ingotSteel>],
-    [<ore:ingotSteel>, null, <ore:ingotSteel>],
-    [null, <ore:plateSteel>, null]])
-.setName("bucket")
-.setLevelRequired(10)
-.setConsumeExperience(false)
-.addTool(<ercore:bucket_blueprint>, 2)
-.addTool(<ore:artisansCutters>, 20)
-.setExtraOutputOne(<minecraft:iron_nugget> * 2, 0.9)
-.setExtraOutputTwo(<minecraft:iron_nugget> * 3, 0.1)
-.addOutput(<minecraft:bucket>)
-.create();
 
 RecipeBuilder.get("blacksmith")
 .setShaped([

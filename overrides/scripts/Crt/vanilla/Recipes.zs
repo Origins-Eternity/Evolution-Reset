@@ -5,11 +5,11 @@ import crafttweaker.item.IItemStack;
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <minecraft:flint_and_steel>.anyDamage().transformDamage(2)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <pyrotech:flint_and_tinder>.anyDamage().transformDamage(2)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <pyrotech:bow_drill>.anyDamage().transformDamage(2)]);
-recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <realistictorches:torch_lit>.anyDamage().transformDamage(0)]);
+recipes.addShapeless(<realistictorches:torch_lit> * 2, [<realistictorches:torch_unlit>, <realistictorches:torch_lit>]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <minecraft:flint_and_steel>.anyDamage().transformDamage(1)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <pyrotech:flint_and_tinder>.anyDamage().transformDamage(1)]);
 recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <pyrotech:bow_drill>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <realistictorches:torch_lit>.anyDamage().transformDamage(0)]);
+recipes.addShapeless(<realistictorches:torch_lit> * 2, [<realistictorches:torch_smoldering>, <realistictorches:torch_lit>]);
 
 recipes.addShapeless(<ercore:cement_powder> * 4, [<ercore:clinker>, <ercore:clinker>, <ercore:clinker>, <pyrotech:material:22>]);
 
@@ -131,7 +131,11 @@ var game_recipes = [
 <usefulbackpacks:backpack:*>,
 <biomesoplenty:boat_sacred_oak>,
 <minecraft:golden_apple>,
-<sanity:umbrella>
+<sanity:umbrella>,
+<wolfarmor:chainmail_wolf_armor:*>,
+<wolfarmor:iron_wolf_armor:*>,
+<wolfarmor:gold_wolf_armor:*>,
+<wolfarmor:diamond_wolf_armor:*>
 ] as IItemStack[];
 
 for items in game_recipes {

@@ -156,7 +156,8 @@ var worktable_recipes = [
 "crafttweaker:boat_sacred_oak",
 "sanity:garland",
 "sanity:garland_futuremc",
-"naturescompass:natures_compass"
+"naturescompass:natures_compass",
+"wolfarmor:leather_wolf_armor"
 ] as string[];
 
 for items in worktable_recipes {

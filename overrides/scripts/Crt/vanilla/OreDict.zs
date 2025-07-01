@@ -261,7 +261,19 @@ var tool = [
 <pyrotech:obsidian_shovel:*>,
 <pyrotech:obsidian_sword:*>,
 <botania:terrapick>,
-<minecraft:torch>
+<minecraft:torch>,
+<tcomplement:manyullyn_helmet:*>,
+<tcomplement:manyullyn_chestplate:*>,
+<tcomplement:manyullyn_leggings:*>,
+<tcomplement:manyullyn_boots:*>,
+<tcomplement:steel_helmet:*>,
+<tcomplement:steel_chestplate:*>,
+<tcomplement:steel_leggings:*>,
+<tcomplement:steel_boots:*>,
+<tcomplement:knightslime_helmet:*>,
+<tcomplement:knightslime_chestplate:*>,
+<tcomplement:knightslime_leggings:*>,
+<tcomplement:knightslime_boots:*>
 ] as IItemStack[];
 
 for items in tool {	

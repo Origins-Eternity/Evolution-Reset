@@ -12,18 +12,6 @@
             {
                 "action": "add",
                 "sell": {
-                    "id": "ercore:bucket_blueprint",
-                    "Count": 1
-                },
-                "buy": {
-                    "id": "minecraft:emerald",
-                    "Count": 10
-                },
-                "CareerLevel": 1
-            },
-            {
-                "action": "add",
-                "sell": {
                     "id": "ercore:brewing_stand_blueprint",
                     "Count": 1
                 },
