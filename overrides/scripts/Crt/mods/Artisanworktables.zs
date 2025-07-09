@@ -252,10 +252,10 @@ RecipeBuilder.get("potter")
 .addOutput(<ercore:searedbrick_unfired>)
 .create();
   
+RecipeBuilder.get("potter")
 .setShaped([
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>],
-    [<pyrotech:material:5>, <
-RecipeBuilder.get("potter")ore:sandpile>, <pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>],
+    [<pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>],
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>, <ore:ingotBrick>],
     [<pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>],
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>]])
