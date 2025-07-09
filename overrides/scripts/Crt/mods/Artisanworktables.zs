@@ -246,16 +246,16 @@ RecipeBuilder.get("potter")
 .addTool(<ore:artisansTrowel>, 10)
 .addTool(<ore:artisansChisel>, 15)
 .setMaximumTier(2)
-.setExtraOutputOne(<pyrotech:material:17> * 6, 0.3)	 
-.setExtraOutputTwo(<pyrotech:material:22> * 2, 0.4)	
-.setExtraOutputThree(<pyrotech:material:35> * 3, 0.3)	
+.setExtraOutputOne(<pyrotech:material:17> * 3, 0.7)	 
+.setExtraOutputTwo(<pyrotech:material:22> * 1, 0.2)	
+.setExtraOutputThree(<pyrotech:material:35> * 2, 0.1)	
 .addOutput(<ercore:searedbrick_unfired>)
 .create();
   
-RecipeBuilder.get("potter")
 .setShaped([
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>],
-    [<pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>],
+    [<pyrotech:material:5>, <
+RecipeBuilder.get("potter")ore:sandpile>, <pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>],
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>, <ore:ingotBrick>],
     [<pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>, <ore:sandpile>, <pyrotech:material:5>],
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>]])
