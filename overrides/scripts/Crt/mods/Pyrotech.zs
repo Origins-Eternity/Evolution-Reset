@@ -156,8 +156,9 @@ var worktable_recipes = [
 "crafttweaker:boat_sacred_oak",
 "sanity:garland",
 "sanity:garland_futuremc",
-"naturescompass:natures_compass",
-"wolfarmor:leather_wolf_armor"
+"wolfarmor:leather_wolf_armor",
+"netherex:smooth_basalt",
+"netherex:smooth_basalt_1"
 ] as string[];
 
 for items in worktable_recipes {
@@ -220,7 +221,7 @@ recipes.addShaped(<pyrotech:cog_diamond>,
 Worktable.buildShaped(<artisanworktables:workstation:5>, [
 [<pyrotech:material:16>, <ore:plateCopper>, <pyrotech:material:16>],
 [<ore:blockCopper>, <pyrotech:stash_stone>, <ore:blockCopper>],
-[<ore:stoneBasalt>, <pyrotech:masonry_brick_block>, <ore:stoneBasalt>]
+[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]
 ]
 )
 .setName("custom_recipe_workstation5")
@@ -229,7 +230,7 @@ Worktable.buildShaped(<artisanworktables:workstation:5>, [
 Worktable.buildShaped(<artisanworktables:workstation:14>, [
 [<pyrotech:material:16>, <minecraft:brick>, <pyrotech:material:16>],
 [<minecraft:brick_block>, <pyrotech:stash_stone>, <minecraft:brick_block>],
-[<ore:stoneBasalt>, <pyrotech:masonry_brick_block>, <ore:stoneBasalt>]
+[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]
 ])
 .setName("custom_recipe_workstation14")
 .register();

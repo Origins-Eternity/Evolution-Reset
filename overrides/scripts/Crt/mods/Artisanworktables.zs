@@ -873,7 +873,7 @@ for brick in bricks {
             Copy.byOutput([brick]).runAfter())
     .setLevelRequired(5)
     .setConsumeExperience(false)
-    .addTool(<ore:artisansSpanner>, 3)
+    .addTool(<ore:artisansTrowel>, 3)
     .addTool(<ore:artisansChisel>, 5)
     .create();
 }
@@ -886,7 +886,7 @@ for item in tcom.items {
             Copy.byOutput([item]).runAfter())
     .setLevelRequired(10)
     .setConsumeExperience(false)
-    .addTool(<ore:artisansSpanner>, 3)
+    .addTool(<ore:artisansTrowel>, 3)
     .addTool(<ore:artisansChisel>, 5)
     .create();
 }

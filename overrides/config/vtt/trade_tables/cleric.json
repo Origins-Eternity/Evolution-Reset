@@ -129,6 +129,18 @@
                     "Count": 2
                 },
                 "CareerLevel": 3
+            },
+                        {
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:quartz",
+                    "Count": 3
+                },
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 12
+                },
+                "CareerLevel": 4
             }
         ]
     }

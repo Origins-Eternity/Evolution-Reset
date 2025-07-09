@@ -56,7 +56,7 @@ recipes.addShaped("smeltery_io", <tconstruct:smeltery_io>,
 
 recipes.addShaped(<tconstruct:seared_tank>, 
 [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
-[<tconstruct:materials>, <pyrotech:brick_tank>, <tconstruct:materials>], 
+[<tconstruct:materials>, <pyrotech:refractory_glass>, <tconstruct:materials>], 
 [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
 
 recipes.addShaped(<tconstruct:faucet>, 
@@ -86,7 +86,6 @@ for i, material in materials {
 val tcom = loadedMods["tcomplement"];
 for item in tcom.items {
     recipes.replaceAllOccurences(<ore:blockGlass>, <pyrotech:refractory_glass>, item);
-    recipes.replaceAllOccurences(<pyrotech:furnace_core>, <pyrotech:igniter:1>, <tcomplement:melter:8>);
 }
 
 val tcon = loadedMods["tconstruct"];

@@ -16,15 +16,9 @@
 		uid: "72e5beb9",
 		type: "item",
 		items: [{
-			id: "minecraft:carrot",
-			tag: {
-				Rot: {
-					start: 0L,
-					time: 0L
-				}
-			}
+			item: "minecraft:carrot"
 		}],
-		count: 16L
+		count: 32L
 	},
 	{
 		uid: "a6929523",
@@ -38,15 +32,9 @@
 		uid: "9ca66c62",
 		type: "item",
 		items: [{
-			id: "minecraft:poisonous_potato",
-			tag: {
-				Rot: {
-					start: 0L,
-					time: 0L
-				}
-			}
+			item: "minecraft:poisonous_potato"
 		}],
-		count: 16L
+		count: 32L
 	}],
 	rewards: [{
 		uid: "bc47f514",

@@ -273,7 +273,8 @@ var tool = [
 <tcomplement:knightslime_helmet:*>,
 <tcomplement:knightslime_chestplate:*>,
 <tcomplement:knightslime_leggings:*>,
-<tcomplement:knightslime_boots:*>
+<tcomplement:knightslime_boots:*>,
+<tcomplement:melter:8>
 ] as IItemStack[];
 
 for items in tool {	
