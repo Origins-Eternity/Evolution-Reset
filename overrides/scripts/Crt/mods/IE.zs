@@ -106,7 +106,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:light_weighted_pressur
 mods.immersiveengineering.MetalPress.addRecipe(<minecraft:heavy_weighted_pressure_plate>, <ore:blockSteel>, <immersiveengineering:mold>, 2000);
 mods.immersiveengineering.AlloySmelter.addRecipe(<pyrotech:material:16> * 10, <minecraft:gunpowder>, <minecraft:stonebrick> * 2, 1600);
 mods.immersiveengineering.AlloySmelter.addRecipe(<pyrotech:material:5> * 5, <pyrotech:material:4>, <pyrotech:material:4>, 1600);
-mods.immersiveengineering.ArcFurnace.addRecipe(<ercore:tungsten_carbide_ingot>, <ore:ingotTungsten>, 160, 1024, [<ore:dustCoke>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<ercore:tungsten_carbide_ingot>, <ore:ingotTungsten>, <immersiveengineering:material:7>, 160, 1024, [<ore:dustCoke>], "Alloying");
 
 var slags as IItemStack[] = [
 <pyrotech:generated_pile_slag_aluminum>,

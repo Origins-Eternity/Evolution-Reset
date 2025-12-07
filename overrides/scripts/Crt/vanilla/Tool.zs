@@ -29,3 +29,5 @@ import crafttweaker.player.IPlayer;
 <pyrotech:diamond_hunters_knife>.definition.setHarvestLevel("knife", 5);
 <pyrotech:stone_hunters_knife>.definition.setHarvestLevel("knife", 1);
 <pyrotech:flint_hunters_knife>.definition.setHarvestLevel("knife", 2);
+
+<realistictorches:torch_lit>.addTooltip(game.localize("crafttweaker.torch.tooltip"));

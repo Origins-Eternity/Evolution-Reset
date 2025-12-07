@@ -4,7 +4,7 @@
     "Offers": {
         "Recipes": [
             {
-                "action": "add", "rewardExp": false,
+                "action": "add", "maxUses":6, "rewardExp": false,
                 "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
@@ -16,7 +16,7 @@
                 "CareerLevel": 1
             },
             {
-                "action": "add", "rewardExp": false,
+                "action": "add", "maxUses":6, "rewardExp": false,
                 "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10
@@ -28,7 +28,7 @@
                 "CareerLevel": 1
             },
             {
-                "action": "add", "rewardExp": false,
+                "action": "add", "maxUses":6, "rewardExp": false,
                 "sell": {
                     "id": "minecraft:emerald",
                     "Count": 10

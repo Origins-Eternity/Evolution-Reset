@@ -225,8 +225,8 @@ recipes.addShaped(<artisanworktables:workshop>,
 
 recipes.addShaped(<artisanworktables:workshop:13>,
 [[<pyrotech:material:42>, <pyrotech:material:42>, <pyrotech:material:42>],
-[<pyrotech:planks_tarred>, <artisanworktables:workstation:13>, <pyrotech:planks_tarred>],
-[<pyrotech:wool_tarred>, <pyrotech:wool_tarred>, <pyrotech:wool_tarred>]]);
+[<pyrotech:material:43>, <artisanworktables:workstation:13>, <pyrotech:material:43>],
+[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
 recipes.addShaped(<artisanworktables:workshop:7>,
 [[<ore:blockLapis>, <ore:plateSteel>, <ore:blockLapis>],

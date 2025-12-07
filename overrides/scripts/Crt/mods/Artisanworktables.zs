@@ -36,8 +36,8 @@ RecipeBuilder.get("basic")
 .addTool(<ore:artisansCarver>, 5)
 .setExtraOutputOne(<pyrotech:rock:7> * 7, 0.2)
 .setExtraOutputTwo(<pyrotech:rock:7> * 5, 0.8)
-.setFluid(<liquid:creosote> * 200)
-.addOutput(<immersiveengineering:treated_wood>)
+.setFluid(<liquid:creosote> * 1000)
+.addOutput(<immersiveengineering:treated_wood> * 9)
 .create();
   
 RecipeBuilder.get("basic")
@@ -281,13 +281,13 @@ RecipeBuilder.get("potter")
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>],
     [<pyrotech:material:5>, <pyrotech:material:5>, <pyrotech:material:5>, <pyrotech:material:5>, <pyrotech:material:5>],
     [<ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>, <pyrotech:material:5>, <ore:ingotBrick>]])
-.setSecondaryIngredients([<minecraft:clay_ball> * 6])
+.setSecondaryIngredients([<minecraft:clay_ball> * 9])
 .setFluid(<liquid:coal_tar> * 1000)	
 .setLevelRequired(10)
 .setConsumeExperience(false)
-.addTool(<ore:artisansDriver>, 15)
-.addTool(<ore:artisansTrowel>, 20)
-.addTool(<ore:artisansChisel>, 25)
+.addTool(<ore:artisansDriver>, 20)
+.addTool(<ore:artisansTrowel>, 25)
+.addTool(<ore:artisansChisel>, 30)
 .setMaximumTier(2)
 .setExtraOutputOne(<pyrotech:material:17> * 6, 0.3)	 
 .setExtraOutputTwo(<pyrotech:material:7> * 2, 0.6)	
@@ -307,9 +307,9 @@ RecipeBuilder.get("potter")
 .setConsumeExperience(false)
 .setSecondaryIngredients([<minecraft:clay_ball> * 6])
 .setFluid(<liquid:coal_tar> * 500)	
-.addTool(<ore:artisansDriver>, 30)
-.addTool(<ore:artisansTrowel>, 30)
-.addTool(<ore:artisansChisel>, 30)
+.addTool(<ore:artisansDriver>, 15)
+.addTool(<ore:artisansTrowel>, 20)
+.addTool(<ore:artisansChisel>, 25)
 .setMaximumTier(2)
 .setExtraOutputOne(<pyrotech:material:17> * 4, 0.2)	 
 .setExtraOutputTwo(<pyrotech:material:7> * 2, 0.5)	
@@ -448,7 +448,7 @@ RecipeBuilder.get("tailor")
 RecipeBuilder.get("basic")
 .setShaped([
     [<pyrotech:material:42>, <pyrotech:material:42>, <pyrotech:material:42>, <pyrotech:material:42>, <pyrotech:material:42>],
-    [<pyrotech:material:42>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:material:42>],
+    [<pyrotech:material:43>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:stash_stone>, <pyrotech:material:43>],
     [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
     [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>],
     [<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]])

@@ -79,6 +79,7 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
                 event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
+                event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip4"));
                 event.player.update({wasInvited: true});
             }
         } else if(<ore:runeLustB> has event.item) {
@@ -86,6 +87,7 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
                 event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
+                event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip5"));
                 event.player.update({wasInvited1: true});
             }
         }
@@ -100,7 +102,6 @@ events.onItemToss(function(event as ItemTossEvent) {
 });
 
 events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
-    if(event.player.world.isRemote()) return;
     var ser = server.commandManager as ICommandManager;
     var info as IWorldInfo = event.fromWorld.getWorldInfo();
     if(event.toWorld.dimension == -1) {

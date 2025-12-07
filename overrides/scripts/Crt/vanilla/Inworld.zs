@@ -1,7 +1,7 @@
 #
 import crafttweaker.item.IItemStack;
 
-mods.inworldcrafting.FluidToItem.transform(<minecraft:clay_ball>, <liquid:water>, [<minecraft:dirt> * 2], true);
+mods.inworldcrafting.FluidToItem.transform(<minecraft:clay_ball> * 4, <liquid:water>, [<ore:dirt>, <ore:sand>], true);
 
 var seeds as IItemStack[] = [
 	<botania:grassseeds>,

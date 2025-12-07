@@ -12,7 +12,8 @@ var modrecipes = [
 <tconstruct:smeltery_io>,
 <tconstruct:seared_tank>,
 <tconstruct:faucet>,
-<tconstruct:tooltables>
+<tconstruct:tooltables>,
+<tcomplement:melter>
 ] as IItemStack[];
 
 for items in modrecipes{
@@ -58,6 +59,11 @@ recipes.addShaped(<tconstruct:seared_tank>,
 [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
 [<tconstruct:materials>, <pyrotech:refractory_glass>, <tconstruct:materials>], 
 [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);
+
+recipes.addShaped(<tcomplement:melter>, 
+[[null, <tconstruct:materials>, null],
+[<tconstruct:materials>, <tconstruct:seared_tank>, <tconstruct:materials>], 
+[<tconstruct:materials>, <ore:ingotBronze>, <tconstruct:materials>]]);
 
 recipes.addShaped(<tconstruct:faucet>, 
 [[null, null, null],
