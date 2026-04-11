@@ -75,6 +75,8 @@
     "twilightforest:twilight_log:1": "twilightforest:canopy_planks:0",
     "twilightforest:twilight_log:2": "twilightforest:mangrove_planks:0",
     "twilightforest:twilight_log:3": "twilightforest:dark_planks:0",
-    "twilightforest:twilight_oak_planks:0": "twilightforest:twilight_oak_slab:0"
+    "twilightforest:twilight_oak_planks:0": "twilightforest:twilight_oak_slab:0",
+    "oe:palm_log": "oe:palm_planks",
+    "oe:palm_wood": "oe:palm_planks"
   }
 }

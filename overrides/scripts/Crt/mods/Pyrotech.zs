@@ -156,9 +156,7 @@ var worktable_recipes = [
 "crafttweaker:boat_sacred_oak",
 "sanity:garland",
 "sanity:garland_futuremc",
-"wolfarmor:leather_wolf_armor",
-"netherex:smooth_basalt",
-"netherex:smooth_basalt_1"
+"wolfarmor:leather_wolf_armor"
 ] as string[];
 
 for items in worktable_recipes {
@@ -323,6 +321,7 @@ SoakingPot.addRecipe("sugar_from_sugarcane", <minecraft:sugar> * 8, <liquid:suga
 SoakingPot.addRecipe("treated_wood_from_plank", <immersiveengineering:treated_wood>, <liquid:creosote> * 125, <ore:plankWood>, true, 5 * 60 * 20);
 
 Campfire.removeRecipes(<minecraft:bread>);
+Campfire.addRecipe("water_bucket_from_ice_bucket", <minecraft:water_bucket>, <galaxyspace:gs_basic:17>);
 
 IroncladAnvil.addRecipe("nugget_from_ingot_tungsten", <ercore:tungsten_nugget> * 9, <ercore:tungsten_ingot>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_tungsten_steel", <ercore:tungsten_steel_nugget> * 9, <ercore:tungsten_steel_ingot>, 20, "hammer");
