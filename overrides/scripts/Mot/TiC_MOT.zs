@@ -2,11 +2,34 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IIngredient;
+import mods.tconstruct.Alloy;
+import mods.tconstruct.Casting;
+import mods.tconstruct.Drying;
+import mods.tconstruct.Fuel;
+import mods.tconstruct.Melting;
 
-mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
-mods.tconstruct.Alloy.removeRecipe(<liquid:obsidian>);
-mods.tconstruct.Melting.removeRecipe(<liquid:clay>);
-mods.tconstruct.Melting.removeRecipe(<liquid:obsidian>, <minecraft:obsidian>);
+Drying.removeRecipe(<minecraft:leather>);
+Alloy.removeRecipe(<liquid:obsidian>);
+Melting.removeRecipe(<liquid:clay>);
+Melting.removeRecipe(<liquid:obsidian>, <minecraft:obsidian>);
+
+function tic2Dying(output as IItemStack, input as IIngredient, time as int){
+    Drying.removeRecipe(output);
+    Drying.addRecipe(output, input, time);
+}
+
+tic2Dying(<tconstruct:dried_clay>, <minecraft:clay>, 180 * 20);
+tic2Dying(<tconstruct:materials:2>, <minecraft:clay_ball>, 60 * 20);
+tic2Dying(<tconstruct:edible:23>, <minecraft:fish:3>, 120 * 20);
+tic2Dying(<tconstruct:edible:22>, <minecraft:fish:2>, 120 * 20);
+tic2Dying(<tconstruct:edible:21>, <minecraft:fish:1>, 120 * 20);
+tic2Dying(<tconstruct:edible:20>, <minecraft:fish>, 120 * 20);
+tic2Dying(<tconstruct:edible:15>, <minecraft:rabbit>, 120 * 20);
+tic2Dying(<tconstruct:edible:14>, <minecraft:mutton>, 120 * 20);
+tic2Dying(<tconstruct:edible:13>, <minecraft:porkchop>, 120 * 20);
+tic2Dying(<tconstruct:edible:12>, <minecraft:chicken>, 120 * 20);
+tic2Dying(<tconstruct:edible:11>, <minecraft:beef>, 120 * 20);
+tic2Dying(<tconstruct:edible:10>, <minecraft:rotten_flesh>, 150 * 20);
 
 var liquids = [
 <liquid:gold>,
@@ -38,7 +61,7 @@ var slags = [
 
 for i, liquid in liquids {
     var slag = slags[i];
-    mods.tconstruct.Melting.addRecipe(liquid * 144, slag);
+    Melting.addRecipe(liquid * 144, slag);
 }
 
 var fuels = [
@@ -46,10 +69,10 @@ var fuels = [
 ] as ILiquidStack[];
 
 for fuel in fuels {
-    mods.tconstruct.Fuel.registerFuel(fuel * 2, 200);
+    Fuel.registerFuel(fuel * 2, 200);
 }
 
-mods.tconstruct.Melting.addRecipe(<liquid:obsidian> * 72, <pyrotech:material:33>);
+Melting.addRecipe(<liquid:obsidian> * 72, <pyrotech:material:33>);
 
 var castliquids =[
 <liquid:gold>,
@@ -79,7 +102,7 @@ for n, castliquid in castliquids {
     var castitem = castitems[n];
     var cast = casts[n];
     var consume = consumes[n];
-    mods.tconstruct.Casting.addTableRecipe(castitem, cast, castliquid, consume, true);
+    Casting.addTableRecipe(castitem, cast, castliquid, consume, true);
 }
 
 val materials = [
@@ -116,5 +139,5 @@ val outputs = [
 
 for m, material in materials {
     var output = outputs[m];
-    mods.tconstruct.Melting.addRecipe(<liquid:clay> * output, material);
+    Melting.addRecipe(<liquid:clay> * output, material);
 }

@@ -156,6 +156,8 @@ var worktable_recipes = [
 "crafttweaker:boat_sacred_oak",
 "sanity:garland",
 "sanity:garland_futuremc",
+"netherex:smooth_basalt",
+"netherex:smooth_basalt_1",
 "wolfarmor:leather_wolf_armor"
 ] as string[];
 

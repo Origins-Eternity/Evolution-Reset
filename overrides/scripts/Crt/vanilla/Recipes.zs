@@ -285,6 +285,6 @@ for recipe in recipes.all {
     }
 }
 
-recipes.removeByRecipeName("netherex:smooth_basalt");
+recipes.removeByRecipeName("netherex:basalt");
 recipes.removeByRecipeName("oe:palm_planks");
 recipes.removeByRecipeName("oe:palm_planks_from_stripped_log");

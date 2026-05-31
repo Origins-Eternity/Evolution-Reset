@@ -1,6 +1,5 @@
 #
 #priority 1
-import mods.tconstruct.Drying;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
@@ -21,24 +20,6 @@ for items in modrecipes{
 }
 
 furnace.remove(<tconstruct:materials>);
-
-function tic2Dying(output as IItemStack, input as IIngredient, time as int){
-    mods.tconstruct.Drying.removeRecipe(output);
-    mods.tconstruct.Drying.addRecipe(output, input, time);
-}
-
-tic2Dying(<tconstruct:dried_clay>, <minecraft:clay>, 180 * 20);
-tic2Dying(<tconstruct:materials:2>, <minecraft:clay_ball>, 60 * 20);
-tic2Dying(<tconstruct:edible:23>, <minecraft:fish:3>, 120 * 20);
-tic2Dying(<tconstruct:edible:22>, <minecraft:fish:2>, 120 * 20);
-tic2Dying(<tconstruct:edible:21>, <minecraft:fish:1>, 120 * 20);
-tic2Dying(<tconstruct:edible:20>, <minecraft:fish>, 120 * 20);
-tic2Dying(<tconstruct:edible:15>, <minecraft:rabbit>, 120 * 20);
-tic2Dying(<tconstruct:edible:14>, <minecraft:mutton>, 120 * 20);
-tic2Dying(<tconstruct:edible:13>, <minecraft:porkchop>, 120 * 20);
-tic2Dying(<tconstruct:edible:12>, <minecraft:chicken>, 120 * 20);
-tic2Dying(<tconstruct:edible:11>, <minecraft:beef>, 120 * 20);
-tic2Dying(<tconstruct:edible:10>, <minecraft:rotten_flesh>, 150 * 20);
 
 recipes.addShaped(<tconstruct:smeltery_controller>, 
 [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
