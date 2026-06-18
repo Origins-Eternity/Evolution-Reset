@@ -5,6 +5,7 @@ import mods.immersiveengineering.AlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.Excavator;
 import mods.immersiveengineering.MetalPress;
+import mods.immersiveengineering.Refinery;
 
 var blastnuggets = [
 <minecraft:iron_nugget>,
@@ -76,9 +77,11 @@ for i, slag in slags {
 	ArcFurnace.addRecipe(ingot * 3, slag, null, 160, 1024);
 }
 
+Refinery.removeRecipe(<liquid:biodiesel>);
+Refinery.addRecipe(<liquid:biodiesel> * 20, <liquid:plantoil> * 16, <liquid:ethanol> * 8, 100);
 AlloySmelter.addRecipe(<pyrotech:material:16> * 10, <minecraft:gunpowder>, <minecraft:stonebrick> * 2, 1600);
 AlloySmelter.addRecipe(<pyrotech:material:5> * 5, <pyrotech:material:4>, <pyrotech:material:4>, 1600);
 ArcFurnace.addRecipe(<ercore:tungsten_carbide_ingot>, <ore:ingotTungsten>, <immersiveengineering:material:7>, 160, 1024, [<ore:dustCoke>], "Alloying");
 MetalPress.addRecipe(<minecraft:light_weighted_pressure_plate>, <minecraft:gold_block>, <immersiveengineering:mold>, 1000);
 MetalPress.addRecipe(<minecraft:heavy_weighted_pressure_plate>, <ore:blockSteel>, <immersiveengineering:mold>, 2000);
-Excavator.addMineral("Thungsten Ore", 5, 0.15, ["oreTungsten", "oreIron", "oreTin"], [0.54, 0.23, 0.23], [0]);
+Excavator.addMineral("Wolframite", 5, 0.15, ["oreTungsten", "oreIron", "oreTin"], [0.54, 0.23, 0.23], [0]);

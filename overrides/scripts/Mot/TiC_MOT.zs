@@ -7,9 +7,12 @@ import mods.tconstruct.Casting;
 import mods.tconstruct.Drying;
 import mods.tconstruct.Fuel;
 import mods.tconstruct.Melting;
+import mods.tcomplement.highoven.HighOven;
 
 Drying.removeRecipe(<minecraft:leather>);
 Alloy.removeRecipe(<liquid:obsidian>);
+Alloy.removeRecipe(<liquid:pigiron>);
+HighOven.removeMixRecipe(<liquid:pigiron>);
 Melting.removeRecipe(<liquid:clay>);
 Melting.removeRecipe(<liquid:obsidian>, <minecraft:obsidian>);
 

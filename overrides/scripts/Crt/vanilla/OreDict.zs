@@ -275,7 +275,8 @@ var tool = [
 <tcomplement:knightslime_chestplate:*>,
 <tcomplement:knightslime_leggings:*>,
 <tcomplement:knightslime_boots:*>,
-<tcomplement:melter:8>
+<tcomplement:melter:8>,
+<galacticraftcore:refinery>
 ] as IItemStack[];
 
 for items in tool {	
