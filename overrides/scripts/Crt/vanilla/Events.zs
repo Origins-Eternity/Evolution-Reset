@@ -1,6 +1,8 @@
 #
 import crafttweaker.events.IEventManager;
 import crafttweaker.player.IPlayer;
+import crafttweaker.entity.IEntityMob;
+import crafttweaker.entity.IEntityLiving;
 import crafttweaker.event.PlayerRespawnEvent;
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.data.IData;
@@ -29,7 +31,6 @@ import crafttweaker.world.IBlockAccess;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IFacing;
 import crafttweaker.event.PlayerCraftedEvent;
-import crafttweaker.entity.IEntityMob;
 import crafttweaker.event.PlayerChangedDimensionEvent;
 import crafttweaker.event.PlayerCloneEvent;
 import crafttweaker.event.PlayerFillBucketEvent;
@@ -123,6 +124,8 @@ events.onPlayerChangedDimension(function(event as PlayerChangedDimensionEvent) {
                 ser.executeCommand(server, "tpd " + event.player.name + " 0 " + event.player.bedLocation.x + " " + event.player.bedLocation.z);
             }
             event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.dimension"));
+        } else if (isNull(event.fromWorld.getCustomWorldData().reachingStage1)) {
+            event.fromWorld.updateCustomWorldData({reachingStage1: true});
         }
     }
 });
@@ -165,15 +168,16 @@ events.onPlayerRespawn(function(event as PlayerRespawnEvent) {
 });
 
 var mobs = [
-"Witch",
 "Slime",
 "tconstruct.blueslime",
 "pyrotech.mud",
-"Spider",
-"Stray",
-"Creeper",
-"Enderman",
-"CaveSpider",
+"ZombieHorse",
+"SkeletonHorse",
+"zombiechicken",
+"zombiepig"
+] as string[];
+
+var babymobs = [
 "babycreeper",
 "babyenderman",
 "babyguardian",
@@ -187,14 +191,11 @@ var mobs = [
 "babysquid",
 "babywitch",
 "babywither",
-"Skeleton",
-"Zombie",
-"Husk",
-"ZombieVillager",
-"ZombieHorse",
-"SkeletonHorse",
-"zombiechicken",
-"zombiepig",
+"babyskeleton",
+"babyzombie"
+] as string[];
+
+var mutantmobs = [
 "mutantbeasts.body_part",
 "mutantbeasts.chemical_x",
 "mutantbeasts.creeper_minion",
@@ -209,29 +210,37 @@ var mobs = [
 "mutantbeasts.mutant_zombie",
 "mutantbeasts.skull_spirit",
 "mutantbeasts.spider_pig",
-"mutantbeasts.throwable_block",
-"babyskeleton",
-"babyzombie",
-"WitherSkeleton",
-"Blaze",
-"oe.drowned"
+"mutantbeasts.throwable_block"
 ] as string[];
 
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
-    if(event.world.isRemote()) return;
+    if (event.world.isRemote()) return;
     val entity = event.entity;
-    if(isNull(entity.definition)) return;
-    if(event.world.dimension != 0) return;
-    if(isNull(event.world.getCustomWorldData().reachingStage)) {
-        if(entity.definition.name == "Chicken") {
-            if(entity.nbt.asString().contains("IsChickenJockey: 1")) {
+    if (event.world.dimension != 0 && entity instanceof IEntityLiving) {
+        if (isNull(event.world.getCustomWorldData().reachingStage)) {
+            if (entity instanceof IEntityMob) {
                 event.cancel();
+            } else {
+                for mob in mobs {
+                    if (entity.definition.name == mob) {
+                        event.cancel();
+                        break;
+                    }
+                }
             }
-        }
-        for mob in mobs {
-            if(entity.definition.name == mob) {
-                event.cancel();
-                break;
+        } else if (isNull(event.world.getCustomWorldData().reachingStage1)) {
+            for mob in babymobs {
+                if (entity.definition.name == mob) {
+                    event.cancel();
+                    break;
+                }
+            }
+        } else if (isNull(event.world.getCustomWorldData().reachingStage2)) {
+            for mob in mutantmobs {
+                if (entity.definition.name == mob) {
+                    event.cancel();
+                    break;
+                }
             }
         }
     }
@@ -281,6 +290,10 @@ var player = event.player;
         if ((down.definition.id == "minecraft:furnace") || (id == "minecraft:lit_furnace"))  {
             event.world.destroyBlock(pos, false);
         }
+    } else if (id == "galacticraftcore:rocket_workbench") {
+        if (isNull(event.world.getCustomWorldData().reachingStage2)) {
+            event.world.updateCustomWorldData({reachingStage2: true});
+        }
     }
 });
 
@@ -294,11 +307,12 @@ events.onPlayerFillBucket(function(event as PlayerFillBucketEvent) {
 });
 
 events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
-    if(event.player.world.isRemote()) return;
+    var player as IPlayer = event.player;
+    if(player.world.isRemote()) return;
     if(isNull(event.output)) return;
     if(event.output.definition.id == "pyrotech:crude_axe") {
-        if(!isNull(event.player.data.wasGivenTip3)) return;
-        event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
-        event.player.update({wasGivenTip3: true});
+        if(!isNull(player.data.wasGivenTip3)) return;
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
+        player.update({wasGivenTip3: true});
     }
 });
