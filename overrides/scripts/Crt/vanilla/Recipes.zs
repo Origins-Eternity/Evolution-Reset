@@ -99,6 +99,7 @@ var game_recipes = [
 <minecraft:bread>,
 <minecraft:ladder>,
 <minecraft:blaze_powder>,
+<minecraft:brewing_stand>,
 <minecraft:crafting_table>,
 <minecraft:bucket>,
 <minecraft:furnace>,
