@@ -1,6 +1,9 @@
 {
-	x: -3.0d,
-	y: 2.5d,
+	x: 1.5d,
+	y: 1.0d,
+	dependencies: [
+		"e274b2a2"
+	],
 	tasks: [{
 		uid: "3ddd95b9",
 		type: "item",
@@ -20,5 +23,10 @@
 		}],
 		count: 32L,
 		consume_items: false
+	}],
+	rewards: [{
+		uid: "a7e58a56",
+		type: "xp_levels",
+		xp_levels: 1
 	}]
 }

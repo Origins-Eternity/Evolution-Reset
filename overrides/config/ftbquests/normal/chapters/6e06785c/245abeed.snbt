@@ -1,6 +1,6 @@
 {
-	x: 8.5d,
-	y: 3.5d,
+	x: 9.0d,
+	y: 2.0d,
 	dependencies: [
 		"ebf8a6db"
 	],
@@ -10,5 +10,11 @@
 		items: [{
 			item: "pyrotech:wither_forge"
 		}]
+	}],
+	rewards: [{
+		uid: "d6f831ab",
+		type: "item",
+		item: "minecraft:coal_block",
+		count: 16
 	}]
 }

@@ -1,0 +1,20 @@
+{
+	x: 34.5d,
+	y: -2.0d,
+	dependencies: [
+		"fb2124d2"
+	],
+	tasks: [{
+		uid: "ed5d8290",
+		type: "item",
+		items: [{
+			item: "galaxyspace:rocket_assembler"
+		}]
+	}],
+	rewards: [{
+		uid: "1f46370a",
+		type: "item",
+		item: "galacticraftplanets:item_basic_asteroids 1 5",
+		count: 6
+	}]
+}

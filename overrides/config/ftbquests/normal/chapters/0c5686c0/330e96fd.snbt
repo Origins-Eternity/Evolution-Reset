@@ -1,0 +1,24 @@
+{
+	x: 25.5d,
+	y: -2.0d,
+	dependencies: [
+		"cf94dd90"
+	],
+	tasks: [{
+		uid: "1fc3b45b",
+		type: "advancement",
+		title: "{evolutionreset.quest.excavator.title}",
+		advancement: "immersiveengineering:main/multiblock_excavator",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "885f1a62",
+		type: "xp_levels",
+		xp_levels: 1
+	},
+	{
+		uid: "f11bfc71",
+		type: "item",
+		item: "immersiveengineering:toolupgrade 1 3"
+	}]
+}

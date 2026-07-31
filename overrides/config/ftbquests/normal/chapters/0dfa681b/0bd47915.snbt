@@ -1,8 +1,8 @@
 {
-	x: 13.0d,
-	y: -0.5d,
+	x: 16.5d,
+	y: 1.0d,
 	dependencies: [
-		"2afaf8d1"
+		"390304c2"
 	],
 	tasks: [{
 		uid: "fc46b4dc",
@@ -23,35 +23,5 @@
 		team_reward: true,
 		item: "minecraft:paper",
 		count: 2
-	},
-	{
-		uid: "66db12b2",
-		type: "item",
-		team_reward: true,
-		item: {
-			id: "minecraft:cooked_chicken",
-			tag: {
-				Rot: {
-					start: 0L,
-					time: 0L
-				}
-			}
-		},
-		count: 3
-	},
-	{
-		uid: "e11aac5a",
-		type: "item",
-		team_reward: true,
-		item: {
-			id: "minecraft:cooked_porkchop",
-			tag: {
-				Rot: {
-					start: 0L,
-					time: 0L
-				}
-			}
-		},
-		count: 3
 	}]
 }

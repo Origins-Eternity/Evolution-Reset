@@ -1,0 +1,20 @@
+{
+	x: 36.0d,
+	y: -2.0d,
+	dependencies: [
+		"7dd10db0"
+	],
+	tasks: [{
+		uid: "790a90f4",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:rocket_t3"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8d44cffd",
+		type: "item",
+		item: "galacticraftplanets:basic_item_venus"
+	}]
+}

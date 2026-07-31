@@ -1,0 +1,19 @@
+{
+	x: 9.0d,
+	y: 3.0d,
+	dependencies: [
+		"020e9006"
+	],
+	tasks: [{
+		uid: "a4bf1c43",
+		type: "item",
+		items: [{
+			item: "pyrotech:mechanical_compacting_bin"
+		}]
+	}],
+	rewards: [{
+		uid: "489bb0ca",
+		type: "item",
+		item: "pyrotech:cog_stone"
+	}]
+}

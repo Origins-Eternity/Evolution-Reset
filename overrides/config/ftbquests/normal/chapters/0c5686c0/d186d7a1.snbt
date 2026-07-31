@@ -1,14 +1,27 @@
 {
-	x: 7.5d,
-	y: 2.0d,
+	x: 37.5d,
+	y: 0.0d,
 	dependencies: [
-		"2eeb450c"
+		"9b9d114c"
 	],
 	tasks: [{
-		uid: "3fe3755f",
+		uid: "9c560cb6",
+		type: "item",
+		items: [{
+			item: "galaxyspace:rocket_tier_6"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9a261b71",
 		type: "item",
 		items: [{
 			item: "galaxyspace:rocket_modules 1 6"
 		}]
+	}],
+	rewards: [{
+		uid: "eec3c6ed",
+		type: "item",
+		item: "futuremc:record_otherside"
 	}]
 }

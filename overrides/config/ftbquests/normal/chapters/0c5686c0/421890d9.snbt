@@ -1,0 +1,78 @@
+{
+	x: 30.0d,
+	y: -3.0d,
+	dependencies: [
+		"07b0e590"
+	],
+	tasks: [{
+		uid: "fda7d598",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 4L
+	},
+	{
+		uid: "d82b4752",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "8cacdac9",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "scaffoldingSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any scaffoldingSteel"
+				}
+			}
+		}],
+		count: 25L
+	},
+	{
+		uid: "fdedd05e",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 17L
+	},
+	{
+		uid: "221c4b89",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 9"
+		}],
+		count: 60L
+	},
+	{
+		uid: "20d2e376",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1_slab 1 1"
+		}],
+		count: 30L
+	},
+	{
+		uid: "2442277c",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1_slab 1 2"
+		}],
+		count: 30L
+	}],
+	rewards: [{
+		uid: "87e43694",
+		type: "item",
+		item: "immersivepetroleum:oil_can"
+	}]
+}

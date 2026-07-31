@@ -1,8 +1,8 @@
 {
-	x: 1.5d,
-	y: 2.5d,
+	x: 28.5d,
+	y: -1.0d,
 	dependencies: [
-		"682c2750"
+		"02ef2c45"
 	],
 	tasks: [{
 		uid: "6f02618c",
@@ -10,5 +10,11 @@
 		items: [{
 			item: "galacticraftcore:rocket_workbench"
 		}]
+	}],
+	rewards: [{
+		uid: "16f42092",
+		type: "item",
+		item: "galacticraftcore:basic_item 1 9",
+		count: 6
 	}]
 }

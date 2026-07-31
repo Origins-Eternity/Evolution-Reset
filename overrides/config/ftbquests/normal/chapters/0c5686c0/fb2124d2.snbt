@@ -1,6 +1,6 @@
 {
-	x: 5.0d,
-	y: 3.5d,
+	x: 33.0d,
+	y: -1.0d,
 	dependencies: [
 		"fa3ce0fe"
 	],
@@ -11,5 +11,15 @@
 			item: "galacticraftplanets:rocket_t2"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "534294f9",
+		type: "item",
+		item: "galaxyspace:machineframes"
+	},
+	{
+		uid: "ea9d37dc",
+		type: "xp_levels",
+		xp_levels: 1
 	}]
 }

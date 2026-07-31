@@ -1,8 +1,8 @@
 {
-	x: 7.0d,
-	y: 0.0d,
+	x: 6.0d,
+	y: 1.0d,
 	dependencies: [
-		"57569556"
+		"2aab8569"
 	],
 	tasks: [{
 		uid: "f5d5875b",
@@ -12,5 +12,11 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "505e7629",
+		type: "item",
+		item: "realistictorches:torch_unlit",
+		count: 2
 	}]
 }

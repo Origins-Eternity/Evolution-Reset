@@ -1,15 +1,17 @@
 {
-	x: 2.5d,
-	y: 2.0d,
+	x: 7.5d,
+	y: 3.0d,
 	dependencies: [
-		"3719a0ec"
+		"e1727c5b"
 	],
 	tasks: [{
-		uid: "f37dd867",
+		uid: "164aa9c4",
 		type: "item",
 		items: [{
-			item: "pyrotech:stash"
-		}]
+			item: "pyrotech:bow_drill_durable_spindle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "2cd71572",

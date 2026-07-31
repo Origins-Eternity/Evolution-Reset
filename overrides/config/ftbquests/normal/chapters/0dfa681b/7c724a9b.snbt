@@ -1,6 +1,6 @@
 {
-	x: 4.0d,
-	y: 0.0d,
+	x: 3.0d,
+	y: 2.0d,
 	dependencies: [
 		"911cd6ab"
 	],
@@ -16,5 +16,10 @@
 		type: "xp",
 		team_reward: true,
 		xp: 10
+	},
+	{
+		uid: "2fe316e0",
+		type: "item",
+		item: "minecraft:apple"
 	}]
 }

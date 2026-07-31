@@ -1,8 +1,8 @@
 {
-	x: 5.5d,
-	y: 2.0d,
+	x: 34.5d,
+	y: 0.0d,
 	dependencies: [
-		"48ade423"
+		"fb2124d2"
 	],
 	tasks: [{
 		uid: "a6e8ba42",
@@ -10,5 +10,10 @@
 		items: [{
 			item: "galaxyspace:modification_table"
 		}]
+	}],
+	rewards: [{
+		uid: "1ca13e49",
+		type: "item",
+		item: "galacticraftcore:basic_item 1 19"
 	}]
 }

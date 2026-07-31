@@ -1,0 +1,23 @@
+{
+	x: 12.0d,
+	y: -2.0d,
+	dependencies: [
+		"2bca4215"
+	],
+	tasks: [{
+		uid: "2e607fbc",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "endoflame"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "7bff5041",
+		type: "item",
+		item: "minecraft:coal",
+		count: 16
+	}]
+}

@@ -1,6 +1,5 @@
 {
-	"modify":
-	[
+	"modify": [
 		{
 			"folder": "mods",
 			"fileName": "BSL_v10.0.zip",
@@ -13,12 +12,12 @@
 		},
 		{
 			"folder": "mods",
-			"fileName": "Sildur's Vibrant Shaders v1.541 Extreme.zip",
+			"fileName": "Sildur's Vibrant Shaders v2.01 Extreme.zip",
 			"newFolder": "shaderpacks"
 		},
 		{
 			"folder": "mods",
-			"fileName": "Evolution-Reset-Resource-Pack-1.2.4.zip",
+			"fileName": "Evolution-Reset-Resource-Pack-1.2.7.zip",
 			"newFolder": "resourcepacks"
 		},
 		{
@@ -26,7 +25,7 @@
 			"fileName": "ModernityAdjunct-f3-1.6.zip",
 			"newFolder": "resourcepacks"
 		},
-        {
+		{
 			"folder": "mods",
 			"fileName": "Modernity-f3-3.10.2.zip",
 			"newFolder": "resourcepacks"

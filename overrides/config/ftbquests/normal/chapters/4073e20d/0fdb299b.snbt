@@ -1,0 +1,19 @@
+{
+	x: 7.5d,
+	y: -1.0d,
+	dependencies: [
+		"ad2dcc25"
+	],
+	tasks: [{
+		uid: "d9784ee4",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		}]
+	}],
+	rewards: [{
+		uid: "4c00ed88",
+		type: "item",
+		item: "tconstruct:book"
+	}]
+}

@@ -45,7 +45,7 @@ rule6=0,100,minecraft:double_stone_slab-0,minecraft:stone_slab-0
 rule7=0,80,minecraft:flowing_water
 
 # Mob Spawners
-rule8=0,100,MobSpawner:Cave_Spider,MobSpawner:Spider
+rule8=0,100,minecraft:planks-1
 
 rule9=0,0,minecraft:spruce_stairs-3
 

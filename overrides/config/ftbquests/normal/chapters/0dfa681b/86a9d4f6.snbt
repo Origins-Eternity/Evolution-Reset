@@ -1,0 +1,19 @@
+{
+	x: 21.0d,
+	y: 0.0d,
+	dependencies: [
+		"11beebf9"
+	],
+	tasks: [{
+		uid: "08b55a78",
+		type: "item",
+		items: [{
+			item: "pyrotech:hide_tanned"
+		}]
+	}],
+	rewards: [{
+		uid: "a1b06203",
+		type: "item",
+		item: "pyrotech:flint_hunters_knife"
+	}]
+}

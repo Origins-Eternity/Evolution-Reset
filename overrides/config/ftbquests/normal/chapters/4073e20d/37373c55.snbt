@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 3.0d,
+	dependencies: [
+		"2837a4c9"
+	],
+	tasks: [{
+		uid: "6ee40286",
+		type: "item",
+		items: [{
+			item: "tcomplement:melter"
+		}]
+	}],
+	rewards: [{
+		uid: "171ad1e8",
+		type: "item",
+		item: "minecraft:cobblestone",
+		count: 8
+	}]
+}

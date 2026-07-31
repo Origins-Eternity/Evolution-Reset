@@ -1,8 +1,8 @@
 {
-	x: 3.0d,
-	y: 3.5d,
+	x: 31.5d,
+	y: -1.0d,
 	dependencies: [
-		"293f82fd"
+		"29e2d5f2"
 	],
 	tasks: [{
 		uid: "21f34a56",
@@ -11,5 +11,10 @@
 			item: "galacticraftcore:rocket_t1"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "50c518d2",
+		type: "item",
+		item: "galaxyspace:rocket_modules 1 3"
 	}]
 }

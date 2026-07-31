@@ -2,17 +2,6 @@
 #priority 3
 import crafttweaker.item.IItemStack;
 
-recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <minecraft:flint_and_steel>.anyDamage().transformDamage(2)]);
-recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <pyrotech:flint_and_tinder>.anyDamage().transformDamage(2)]);
-recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, <pyrotech:bow_drill>.anyDamage().transformDamage(2)]);
-recipes.addShapeless(<realistictorches:torch_lit> * 2, [<realistictorches:torch_unlit>, <realistictorches:torch_lit>]);
-recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <minecraft:flint_and_steel>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <pyrotech:flint_and_tinder>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, <pyrotech:bow_drill>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<realistictorches:torch_lit> * 2, [<realistictorches:torch_smoldering>, <realistictorches:torch_lit>]);
-
-recipes.addShapeless(<ercore:cement_powder> * 4, [<ercore:clinker>, <ercore:clinker>, <ercore:clinker>, <pyrotech:material:22>]);
-
 recipes.replaceAllOccurences(<minecraft:furnace>, <pyrotech:furnace_core>);
 recipes.replaceAllOccurences(<minecraft:stone_pickaxe>, <minecraft:stone>);
 recipes.replaceAllOccurences(<minecraft:golden_pickaxe>, <ore:blockGold>);
@@ -42,8 +31,8 @@ var block = [
 <immersiveengineering:storage:3>,
 <immersiveengineering:storage:5>,
 <immersiveengineering:storage:2>,
-<ercore:tungsten_steel_block>,
-<firstaid:plaster>
+<firstaid:plaster>,
+<tcomplement:storage:1>
 ] as IItemStack[];
 
 for items in block {
@@ -53,8 +42,6 @@ for items in block {
 var ingot = [
 <immersiveengineering:metal:7>,
 <immersiveengineering:metal:8>,
-<ercore:tungsten_steel_ingot>,
-<ercore:tungsten_carbide_ingot>,
 <ercore:tungsten_ingot>,
 <immersiveengineering:material:19>,
 <immersiveengineering:metal:1>,
@@ -70,7 +57,8 @@ var ingot = [
 <tconstruct:ingots:2>,
 <tconstruct:ingots:3>,
 <tconstruct:ingots:4>,
-<tconstruct:ingots:5>
+<tconstruct:ingots:5>,
+<tcomplement:materials:10>
 ] as IItemStack[];
 
 for items in ingot {
@@ -80,10 +68,6 @@ for items in ingot {
 var nugget = [
 <minecraft:gold_nugget>,
 <minecraft:iron_nugget>,
-<ercore:tungsten_steel_nugget>,
-<ercore:tungsten_carbide_nugget>,
-<ercore:tungsten_nugget>,
-<ercore:tin_nugget>,
 <immersiveengineering:metal:20>,
 <immersiveengineering:metal:21>,
 <immersiveengineering:metal:22>,
@@ -102,7 +86,8 @@ var nugget = [
 <tconstruct:nuggets:2>,
 <tconstruct:nuggets:3>,
 <tconstruct:nuggets:4>,
-<tconstruct:nuggets:5>
+<tconstruct:nuggets:5>,
+<tcomplement:materials:20>
 ] as IItemStack[];
 
 for items in nugget {
@@ -122,7 +107,6 @@ var game_recipes = [
 <minecraft:heavy_weighted_pressure_plate>,
 <minecraft:flint>,
 <minecraft:wool>,
-<minecraft:brewing_stand>,
 <minecraft:sugar>,
 <minecraft:gunpowder>,
 <tconstruct:materials>,
@@ -203,35 +187,25 @@ recipes.addShaped("basic_workshop", <artisanworktables:workshop:5>,
 [<ore:blockCopper>, <artisanworktables:workstation:5>, <ore:blockCopper>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
-recipes.addShaped(<artisanworktables:workshop:3>,
-[[<ore:ingotSteel>, <ore:plateIron>, <ore:ingotSteel>],
-[<ore:blockIron>, <artisanworktables:workstation:3>, <ore:blockIron>],
-[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
+recipes.addShaped("basic_workstation", <artisanworktables:workstation:5>,
+[[<pyrotech:material:16>, <ore:plateCopper>, <pyrotech:material:16>],
+[<ore:ingotCopper>, <pyrotech:stash_stone>, <ore:ingotCopper>],
+[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]]);
 
-recipes.addShaped(<artisanworktables:workshop:6>,
+recipes.addShaped(<artisanworktables:workstation:6>,
 [[<ore:ingotSteel>, <ore:plateCopper>, <ore:ingotSteel>],
-[<ore:blockSteel>, <artisanworktables:workstation:6>, <ore:blockSteel>],
-[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
+[<ore:blockSteel>, <pyrotech:stash_stone>, <ore:blockSteel>],
+[<ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>, <ore:stoneBasaltPolished>]]);
 
 recipes.addShaped("potter_workshop", <artisanworktables:workshop:14>,
 [[<pyrotech:material:16>, <minecraft:stone_slab:4>, <pyrotech:material:16>],
 [<ore:stoneGranite>, <artisanworktables:workstation:14>, <ore:stoneGranite>],
 [<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
 
-recipes.addShaped(<artisanworktables:workshop>,
-[[<ore:ingotGold>, <ore:plateGold>, <ore:ingotGold>],
-[<ore:wool>, <artisanworktables:workstation>, <ore:wool>],
-[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
-
-recipes.addShaped(<artisanworktables:workshop:13>,
-[[<pyrotech:material:42>, <pyrotech:material:42>, <pyrotech:material:42>],
-[<pyrotech:material:43>, <artisanworktables:workstation:13>, <pyrotech:material:43>],
-[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
-
-recipes.addShaped(<artisanworktables:workshop:7>,
-[[<ore:blockLapis>, <ore:plateSteel>, <ore:blockLapis>],
-[<ore:blockLapis>, <artisanworktables:workstation:7>, <ore:blockLapis>],
-[<pyrotech:planks_tarred>, <pyrotech:planks_tarred>, <pyrotech:planks_tarred>]]);
+recipes.addShaped("potter_workstation", <artisanworktables:workstation:14>,
+[[<pyrotech:material:16>, <minecraft:brick>, <pyrotech:material:16>],
+[<minecraft:brick_block>, <pyrotech:stash_stone>, <minecraft:brick_block>],
+[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]]);
 
 recipes.addShaped("bow_drill", <pyrotech:bow_drill>,
 [[<ore:stickWood>, null, <ore:stickWood>],
@@ -276,8 +250,6 @@ for book in books {
     recipes.addShapeless(book * 2, [book, <minecraft:writable_book>]);
 }
 
-recipes.addShapeless(<ercore:herbs>, [<minecraft:bowl>, <pyrotech:strange_tuber>, <pyrotech:material:12>, <botania:petal:*>]);
-
 for recipe in recipes.all {
     if (recipe.fullResourceDomain.contains("biomesoplenty") && recipe.fullResourceDomain.contains("planks")) {
         var recipelocation = recipe.fullResourceDomain;
@@ -288,3 +260,13 @@ for recipe in recipes.all {
 recipes.removeByRecipeName("netherex:basalt");
 recipes.removeByRecipeName("oe:palm_planks");
 recipes.removeByRecipeName("oe:palm_planks_from_stripped_log");
+
+for lighter in <ore:lighter>.items {
+    recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_unlit>, lighter.anyDamage().transformDamage(2)]);
+    recipes.addShapeless(<realistictorches:torch_lit>, [<realistictorches:torch_smoldering>, lighter.anyDamage().transformDamage(1)]);
+}
+
+recipes.addShapeless(<realistictorches:torch_lit> * 2, [<realistictorches:torch_unlit>, <realistictorches:torch_lit>]);
+recipes.addShapeless(<realistictorches:torch_lit> * 2, [<realistictorches:torch_smoldering>, <realistictorches:torch_lit>]);
+recipes.addShapeless(<ercore:herbs>, [<minecraft:bowl>, <pyrotech:strange_tuber>, <pyrotech:material:12>, <botania:petal:*>]);
+recipes.addShapeless(<ercore:cement_powder> * 4, [<ercore:clinker>, <ercore:clinker>, <ercore:clinker>, <pyrotech:material:22>]);

@@ -1,0 +1,22 @@
+{
+	x: 6.0d,
+	y: 1.0d,
+	dependencies: [
+		"2837a4c9"
+	],
+	tasks: [{
+		uid: "4528ff59",
+		type: "item",
+		items: [{
+			id: "tconstruct:clay_cast",
+			tag: {
+				PartType: "tconstruct:pick_head"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "3955b1cb",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

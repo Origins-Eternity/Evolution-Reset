@@ -1,0 +1,49 @@
+{
+	x: 9.0d,
+	y: -1.0d,
+	dependencies: [
+		"0fdb299b"
+	],
+	tasks: [{
+		uid: "7f614c34",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotCopper",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotCopper"
+				}
+			}
+		}],
+		count: 3L
+	},
+	{
+		uid: "99d43747",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotTin",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotTin"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "6f44c2fe",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

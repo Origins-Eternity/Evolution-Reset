@@ -19,7 +19,7 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
         <biomesoplenty:dirt:1>,
         <biomesoplenty:dirt:10>,
         <biomesoplenty:dirt:2>
-        ],
+    ],
     <ore:doorWood> : [
         <minecraft:trapdoor>,
         <minecraft:wooden_door>
@@ -55,10 +55,25 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
         <ore:artisansCarver>,
         <ore:constructionWand>
     ],
-    <ore:vacuumbag> : [
+    <ore:bagVacuum> : [
         <adpother:diamond_vacuum_bag>,
         <adpother:iron_vacuum_bag>,
         <adpother:gold_vacuum_bag>
+    ],
+    <ore:respirator> : [
+        <adpother:diamond_respirator>,
+        <adpother:iron_respirator>,
+        <adpother:gold_respirator>
+    ],
+    <ore:filter> : [
+        <adpother:iron_filter>,
+        <adpother:gold_filter>,
+        <adpother:diamond_filter>
+    ],
+    <ore:tubeVacuum> : [
+        <adpother:iron_vacuum_tube>,
+        <adpother:gold_vacuum_tube>,
+        <adpother:diamond_vacuum_tube>
     ],
     <ore:flower> : [
         <ore:mysticFlowerWhite>,
@@ -83,36 +98,49 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
         <ore:oreTin>,
         <ore:oreAluminium>,
         <ore:oreLead>,
+        <minecraft:stonebrick:*>
     ],
     <ore:blockTwo> : [
         <ore:oreGold>,
         <ore:oreIron>,
         <ore:oreSilver>,
-        <ore:oreUranium>,
-        <ore:oreCobalt>,
-        <ore:oreArdite>,
         <ore:oreEmerald>,
         <ore:blockCopper>,
         <ore:blockTin>,
-        <ore:blockAluminium>,
         <ore:blockBronze>,
-        <ore:blockGold>
+        <ore:blockGold>,
+        <minecraft:piston>
     ],
     <ore:blockThree> : [
-        <ore:oreTitanium>,
-        <ore:blockIron>
+        <ore:oreLead>,
+        <ore:blockIron>,
+        <ore:oreNickel>,
+        <ore:oreAluminum>,
+        <ore:blockAluminium>,
+        <minecraft:obsidian>,
+        <biomesoplenty:hard_ice>,
+        <minecraft:sticky_piston>
     ],
     <ore:blockFour> : [
+        <ore:oreCobalt>,
+        <ore:oreArdite>,
+        <ore:oreUranium>,
+        <ore:oreSilicon>,
         <ore:oreTungsten>
     ],
     <ore:blockFive> : [
+        <ore:oreDesh>,
         <ore:oreDiamond>,
-        <ore:blockDiamond>
+        <ore:oreTitanium>,
+        <ore:blockDiamond>,
+        <minecraft:beacon>
     ],
     <ore:erstone> : [
         <ore:stone>,
         <ore:cobblestone>,
-        <ore:blockMossy>
+        <ore:blockMossy>,
+        <biomesoplenty:grass>,
+        <biomesoplenty:grass:1>
     ],
     <ore:eroreDiamond> : [
         <ore:oreDiamond>,
@@ -121,6 +149,42 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
     <ore:eroreEmerald> : [
         <ore:oreEmerald>,
         <ore:gemEmerald>
+    ],
+    <ore:mushroom> : [
+        <minecraft:red_mushroom>,
+        <minecraft:brown_mushroom>
+    ],
+    <ore:whitesand> : [
+        <minecraft:sand>,
+        <biomesoplenty:white_sand>
+    ],
+    <ore:sandpile> : [
+        <pyrotech:rock:5>,
+        <pyrotech:rock:9>
+    ],
+    <ore:doorIron> : [
+        <minecraft:iron_door>,
+        <minecraft:iron_trapdoor>
+    ],
+    <ore:lighter> : [
+        <pyrotech:bow_drill>,
+        <pyrotech:flint_and_tinder>,
+        <pyrotech:bow_drill_durable>,
+        <minecraft:flint_and_steel>
+    ],
+    <ore:toolAxe> : [
+        <immersiveengineering:axe_steel>,
+        <galaxyspace:cobalt_axe>,
+        <galacticraftcore:steel_axe>,
+        <galacticraftplanets:desh_axe>,
+        <galacticraftplanets:titanium_axe>,
+        <netherex:withered_amedian_axe>,
+        <netherex:blazed_amedian_axe>,
+        <netherex:frosted_amedian_axe>,
+        <pyrotech:bone_axe_durable>,
+        <pyrotech:flint_axe_durable>,
+        <tconstruct:hatchet>.anyDamage(),
+        <tconstruct:lumberaxe>.anyDamage()
     ]
 };
 
@@ -129,35 +193,13 @@ for oredict in oredictMap {
     OredictUtil.addOredictIngredients(oredict, ingredients);
 }
 
-<ore:mushroom>.add(<minecraft:red_mushroom>);
-<ore:mushroom>.add(<minecraft:brown_mushroom>);
 <ore:string>.add(<pyrotech:material:14>);
-<ore:carbon>.addAll(<ore:coal>);
-<ore:carbon>.addAll(<ore:charcoal>);
 <ore:chest>.add(<immersiveengineering:wooden_device0>);
 <ore:grout>.add(<tconstruct:soil>);
-<ore:steel>.add(<immersiveengineering:metal:8>);
-<ore:whitesand>.add(<minecraft:sand>);
-<ore:whitesand>.add(<biomesoplenty:white_sand>);
 <ore:gravel>.add(<biomesoplenty:dried_sand>);
 <ore:radsand>.add(<minecraft:sand:1>);
 <ore:skull>.add(<minecraft:skull:*>);
-<ore:sandpile>.add(<pyrotech:rock:5>);
-<ore:sandpile>.add(<pyrotech:rock:9>);
 <ore:ballClay>.add(<minecraft:clay_ball>);
-<ore:oreTungsten>.add(<ercore:tungsten_ore>);
-<ore:oreCopper>.add(<ercore:copper_ore>);
-<ore:oreTin>.add(<ercore:tin_ore>);
-<ore:blockThree>.add(<biomesoplenty:hard_ice>);
-<ore:blockThree>.add(<minecraft:obsidian>);
-<ore:erstone>.add(<biomesoplenty:grass>);
-<ore:erstone>.add(<biomesoplenty:grass:1>);
-<ore:blockFive>.add(<minecraft:beacon>);
-<ore:blockOne>.add(<minecraft:stonebrick:*>);
-<ore:blockTwo>.add(<minecraft:piston>);
-<ore:blockTwo>.add(<minecraft:sticky_piston>);
-<ore:doorIron>.add(<minecraft:iron_door>);
-<ore:doorIron>.add(<minecraft:iron_trapdoor>);
 <ore:powderCement>.add(<ercore:cement_powder>);
 <ore:craftTable>.add(<minecraft:crafting_table>);
 <ore:furnace>.add(<minecraft:furnace>);
@@ -188,14 +230,6 @@ var erstones = [
 for i, erstone in erstones {
     var cobblestone = cobblestones[i];
     erstone.addAll(cobblestone);
-}
-
-for cstone in cobblestones {
-    <ore:cstone>.addAll(cstone);
-}
-
-for item in <ore:cstone>.items {
-    <ore:erstone>.remove(item);
 }
 
 var tool = [
@@ -263,6 +297,7 @@ var tool = [
 <pyrotech:obsidian_sword:*>,
 <botania:terrapick>,
 <minecraft:torch>,
+<minecraft:ender_chest>,
 <tcomplement:manyullyn_helmet:*>,
 <tcomplement:manyullyn_chestplate:*>,
 <tcomplement:manyullyn_leggings:*>,
@@ -276,7 +311,7 @@ var tool = [
 <tcomplement:knightslime_leggings:*>,
 <tcomplement:knightslime_boots:*>,
 <tcomplement:melter:8>,
-<galacticraftcore:refinery>
+<galacticraftcore:refinery>,
 ] as IItemStack[];
 
 for items in tool {	
@@ -288,10 +323,4 @@ for ban in <ore:banItems>.items {
     recipes.remove(ban);
     mods.jei.JEI.hide(ban);
     mods.ltt.LootTable.removeGlobalItem(ban.definition.id);
-}
-
-val mod = loadedMods["mctb"];
-for table in mod.items {
-    <ore:craftingTable>.add(table);
-    recipes.remove(table);
 }

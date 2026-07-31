@@ -1,0 +1,19 @@
+{
+	x: 24.0d,
+	y: 0.0d,
+	dependencies: [
+		"f87f8153"
+	],
+	tasks: [{
+		uid: "f289dd5e",
+		type: "advancement",
+		title: "{evolutionreset.quest.arc_furnace.title}",
+		advancement: "immersiveengineering:main/multiblock_arcfurnace",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "2a189e8f",
+		type: "item",
+		item: "futuremc:blast_furnace"
+	}]
+}

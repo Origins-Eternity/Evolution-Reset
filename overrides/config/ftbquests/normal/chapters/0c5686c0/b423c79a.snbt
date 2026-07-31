@@ -1,0 +1,19 @@
+{
+	x: 33.0d,
+	y: 1.0d,
+	dependencies: [
+		"c569f8d2"
+	],
+	tasks: [{
+		uid: "d5349aa5",
+		type: "item",
+		items: [{
+			item: "galaxyspace:advanced_landing_pad"
+		}]
+	}],
+	rewards: [{
+		uid: "d3e216cb",
+		type: "xp_levels",
+		xp_levels: 3
+	}]
+}

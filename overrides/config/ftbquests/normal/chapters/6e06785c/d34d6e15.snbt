@@ -1,6 +1,6 @@
 {
-	x: 3.0d,
-	y: 2.5d,
+	x: 6.0d,
+	y: 1.0d,
 	dependencies: [
 		"d70be5d7"
 	],
@@ -16,12 +16,5 @@
 		type: "xp_levels",
 		team_reward: true,
 		xp_levels: 2
-	},
-	{
-		uid: "73849c25",
-		type: "item",
-		team_reward: true,
-		item: "minecraft:coal_block",
-		count: 2
 	}]
 }

@@ -1,0 +1,30 @@
+{
+	x: 28.5d,
+	y: 1.0d,
+	dependencies: [
+		"02ef2c45"
+	],
+	tasks: [{
+		uid: "7c9a481f",
+		type: "item",
+		items: [{
+			item: "galacticresearch:telescope"
+		}]
+	},
+	{
+		uid: "c915a0ce",
+		type: "item",
+		items: [{
+			item: "galacticresearch:mission_control_station"
+		}]
+	}],
+	rewards: [{
+		uid: "50506d2f",
+		type: "item",
+		item: {
+			id: "galacticraftcore:battery",
+			tag: {},
+			Damage: 100s
+		}
+	}]
+}

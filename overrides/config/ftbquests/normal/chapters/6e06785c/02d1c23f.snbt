@@ -1,0 +1,23 @@
+{
+	x: 3.0d,
+	y: 2.0d,
+	dependencies: [
+		"153b74ab"
+	],
+	tasks: [{
+		uid: "6d3887a2",
+		type: "item",
+		items: [{
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "steel"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "88c0ca4e",
+		type: "item",
+		item: "realistictorches:torch_lit",
+		count: 10
+	}]
+}

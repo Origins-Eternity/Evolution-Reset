@@ -1,6 +1,6 @@
 {
-	x: 5.5d,
-	y: 5.0d,
+	x: 9.0d,
+	y: 0.0d,
 	dependencies: [
 		"daa6360c"
 	],
@@ -10,12 +10,11 @@
 		items: [{
 			item: "botania:livingrock"
 		}]
-	},
-	{
-		uid: "f5248760",
+	}],
+	rewards: [{
+		uid: "05599585",
 		type: "item",
-		items: [{
-			item: "botania:spreader"
-		}]
+		item: "minecraft:stone",
+		count: 6
 	}]
 }

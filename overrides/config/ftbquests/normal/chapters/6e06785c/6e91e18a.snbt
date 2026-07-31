@@ -1,0 +1,19 @@
+{
+	x: 13.5d,
+	y: 0.0d,
+	dependencies: [
+		"4206178a"
+	],
+	tasks: [{
+		uid: "f98fc17f",
+		type: "item",
+		items: [{
+			item: "botania:rune 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "4d289cd4",
+		type: "item",
+		item: "sereneseasons:season_clock"
+	}]
+}

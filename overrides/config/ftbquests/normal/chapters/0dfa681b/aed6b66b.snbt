@@ -1,0 +1,19 @@
+{
+	x: 18.0d,
+	y: 2.0d,
+	dependencies: [
+		"0bd47915"
+	],
+	tasks: [{
+		uid: "d4048364",
+		type: "item",
+		items: [{
+			item: "pyrotech:stone_crucible"
+		}]
+	}],
+	rewards: [{
+		uid: "056b960e",
+		type: "item",
+		item: "pyrotech:bucket_stone"
+	}]
+}

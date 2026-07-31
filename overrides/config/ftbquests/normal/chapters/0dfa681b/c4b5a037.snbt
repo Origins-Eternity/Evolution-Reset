@@ -1,19 +1,34 @@
 {
-	x: 10.0d,
-	y: 1.0d,
+	x: 12.0d,
+	y: 2.0d,
 	dependencies: [
 		"47a68832"
 	],
 	tasks: [{
-		uid: "a02f4e7e",
+		uid: "a5389d96",
 		type: "item",
 		items: [{
-			item: "minecraft:flint"
-		}]
+			item: "pyrotech:material 1 10"
+		}],
+		count: 3L
+	},
+	{
+		uid: "e23e589a",
+		type: "item",
+		items: [{
+			item: "pyrotech:material 1 27"
+		}],
+		count: 2L
 	}],
 	rewards: [{
 		uid: "8926cb64",
 		type: "xp_levels",
 		xp_levels: 1
+	},
+	{
+		uid: "389a422c",
+		type: "item",
+		item: "pyrotech:torch_stone",
+		count: 2
 	}]
 }

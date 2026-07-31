@@ -5,14 +5,15 @@ import crafttweaker.item.IIngredient;
 import mods.tconstruct.Alloy;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Drying;
-import mods.tconstruct.Fuel;
 import mods.tconstruct.Melting;
 import mods.tcomplement.highoven.HighOven;
 
 Drying.removeRecipe(<minecraft:leather>);
 Alloy.removeRecipe(<liquid:obsidian>);
 Alloy.removeRecipe(<liquid:pigiron>);
+Alloy.removeRecipe(<liquid:tungsten_steel>);
 HighOven.removeMixRecipe(<liquid:pigiron>);
+HighOven.removeMixRecipe(<liquid:steel>);
 Melting.removeRecipe(<liquid:clay>);
 Melting.removeRecipe(<liquid:obsidian>, <minecraft:obsidian>);
 
@@ -33,47 +34,6 @@ tic2Dying(<tconstruct:edible:13>, <minecraft:porkchop>, 120 * 20);
 tic2Dying(<tconstruct:edible:12>, <minecraft:chicken>, 120 * 20);
 tic2Dying(<tconstruct:edible:11>, <minecraft:beef>, 120 * 20);
 tic2Dying(<tconstruct:edible:10>, <minecraft:rotten_flesh>, 150 * 20);
-
-var liquids = [
-<liquid:gold>,
-<liquid:iron>,
-<liquid:copper>,
-<liquid:tin>,
-<liquid:aluminum>,
-<liquid:silver>,
-<liquid:uranium>,
-<liquid:lead>,
-<liquid:ardite>,
-<liquid:cobalt>,
-<liquid:tungsten>
-] as ILiquidStack[];
-
-var slags = [
-<pyrotech:generated_pile_slag_gold>,
-<pyrotech:generated_pile_slag_iron>,
-<pyrotech:generated_pile_slag_copper>,
-<pyrotech:generated_pile_slag_tin>,
-<pyrotech:generated_pile_slag_aluminum>,
-<pyrotech:generated_pile_slag_silver>,
-<pyrotech:generated_pile_slag_uranium>,
-<pyrotech:generated_pile_slag_lead>,
-<pyrotech:generated_pile_slag_ardite>,
-<pyrotech:generated_pile_slag_cobalt>,
-<pyrotech:generated_pile_slag_tungsten>
-] as IItemStack[];
-
-for i, liquid in liquids {
-    var slag = slags[i];
-    Melting.addRecipe(liquid * 144, slag);
-}
-
-var fuels = [
-<liquid:tungsten_steel>    
-] as ILiquidStack[];
-
-for fuel in fuels {
-    Fuel.registerFuel(fuel * 2, 200);
-}
 
 Melting.addRecipe(<liquid:obsidian> * 72, <pyrotech:material:33>);
 

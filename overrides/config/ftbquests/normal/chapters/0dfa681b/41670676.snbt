@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: 1.0d,
+	dependencies: [
+		"7b0ed3b3"
+	],
+	tasks: [{
+		uid: "7c049038",
+		type: "item",
+		items: [{
+			item: "pyrotech:cobblestone 1 2"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "b665aab9",
+		type: "item",
+		item: "minecraft:clay_ball"
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	x: 9.0d,
+	y: -1.0d,
+	dependencies: [
+		"5f928ba7"
+	],
+	tasks: [{
+		uid: "931c43d9",
+		type: "item",
+		items: [{
+			item: "minecraft:bread"
+		}]
+	}],
+	rewards: [{
+		uid: "a1f38f33",
+		type: "item",
+		item: {
+			id: "pyrotech:marshmallow_roasted",
+			tag: {}
+		}
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	x: 19.5d,
+	y: 0.0d,
+	dependencies: [
+		"6284b669"
+	],
+	tasks: [{
+		uid: "5ba3b522",
+		type: "item",
+		items: [{
+			item: "pyrotech:barrel_lid"
+		}]
+	},
+	{
+		uid: "dbf43977",
+		type: "item",
+		items: [{
+			item: "pyrotech:barrel"
+		}]
+	}],
+	rewards: [{
+		uid: "99ec03c9",
+		type: "item",
+		item: "minecraft:leaves",
+		count: 4
+	}]
+}

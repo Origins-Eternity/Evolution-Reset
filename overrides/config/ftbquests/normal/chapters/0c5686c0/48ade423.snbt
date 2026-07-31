@@ -1,8 +1,8 @@
 {
-	x: 3.5d,
-	y: 2.0d,
+	x: 30.0d,
+	y: 3.0d,
 	dependencies: [
-		"b511cf08"
+		"188b59d6"
 	],
 	tasks: [{
 		uid: "97ff562b",
@@ -26,5 +26,10 @@
 		items: [{
 			item: "galacticraftcore:oxygen_mask"
 		}]
+	}],
+	rewards: [{
+		uid: "e6f56815",
+		type: "item",
+		item: "galacticraftcore:oxygen_tank_med_full 1 1800"
 	}]
 }

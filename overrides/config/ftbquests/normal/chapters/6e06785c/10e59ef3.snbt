@@ -1,0 +1,20 @@
+{
+	x: 13.5d,
+	y: 2.0d,
+	dependencies: [
+		"59a83152"
+	],
+	tasks: [{
+		uid: "47e38ff8",
+		type: "item",
+		items: [{
+			item: "ercore:tungsten_ingot"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "de895d6f",
+		type: "item",
+		item: "pyrotech:crafting_table_template"
+	}]
+}

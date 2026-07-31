@@ -1,8 +1,8 @@
 {
-	x: 5.5d,
-	y: 7.0d,
+	x: 10.5d,
+	y: -2.0d,
 	dependencies: [
-		"daa6360c"
+		"875d5063"
 	],
 	tasks: [{
 		uid: "e2734731",
@@ -15,5 +15,11 @@
 			}
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "51acf797",
+		type: "item",
+		item: "botania:petal 1 14",
+		count: 2
 	}]
 }

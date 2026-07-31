@@ -1,0 +1,50 @@
+{
+	x: 4.5d,
+	y: -2.0d,
+	dependencies: [
+		"80659e05"
+	],
+	tasks: [{
+		uid: "c4681ec7",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "nuggetCopper",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any nuggetCopper"
+				}
+			}
+		}],
+		count: 30L
+	},
+	{
+		uid: "8f4c6d4c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "nuggetTin",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any nuggetTin"
+				}
+			}
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "6f6bafe8",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

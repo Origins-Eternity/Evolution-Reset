@@ -1,0 +1,48 @@
+{
+	x: 16.5d,
+	y: 0.0d,
+	dependencies: [
+		"9b8dca59"
+	],
+	tasks: [{
+		uid: "8d395213",
+		type: "item",
+		items: [{
+			item: "minecraft:wheat"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "28650054",
+		type: "item",
+		team_reward: true,
+		item: {
+			id: "minecraft:potato",
+			tag: {
+				Rot: {
+					start: 0L,
+					time: 0L
+				}
+			}
+		}
+	},
+	{
+		uid: "354deb97",
+		type: "item",
+		team_reward: true,
+		item: {
+			id: "minecraft:carrot",
+			tag: {
+				Rot: {
+					start: 0L,
+					time: 0L
+				}
+			}
+		}
+	},
+	{
+		uid: "676e854b",
+		type: "item",
+		item: "spiceoflife:bookfoodjournal"
+	}]
+}

@@ -1,6 +1,6 @@
 {
 	x: 10.5d,
-	y: 3.5d,
+	y: 2.0d,
 	dependencies: [
 		"245abeed"
 	],
@@ -14,7 +14,7 @@
 		consume_items: false
 	},
 	{
-		uid: "6b85b8d6",
+		uid: "424789fe",
 		type: "item",
 		items: [{
 			id: "tconstruct:pick_head",

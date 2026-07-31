@@ -1,6 +1,6 @@
 {
-	x: 1.0d,
-	y: 2.5d,
+	x: 4.5d,
+	y: 0.0d,
 	dependencies: [
 		"937bda93"
 	],
@@ -12,9 +12,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "91d2d6e7",
-		type: "xp_levels",
-		team_reward: true,
-		xp_levels: 1
+		uid: "1772fea5",
+		type: "item",
+		item: "artisanworktables:artisans_driver_bronze"
 	}]
 }

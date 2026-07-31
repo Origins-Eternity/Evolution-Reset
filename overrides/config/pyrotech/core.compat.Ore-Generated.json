@@ -245,6 +245,23 @@
         12,
         15
       ]
+    },
+    "oreTungsten": {
+      "slagColor": "715942",
+      "langKey": [
+        "ercore:tile.ercore.tungsten_ore"
+      ],
+      "output": [
+        "ercore:tungsten_nugget"
+      ],
+      "bloomYieldMinMax": [
+        12,
+        14
+      ],
+      "slagBloomYieldMinMax": [
+        12,
+        14
+      ]
     }
   }
 }

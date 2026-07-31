@@ -1,0 +1,25 @@
+{
+	x: 16.5d,
+	y: 1.0d,
+	dependencies: [
+		"4f10750c"
+	],
+	tasks: [{
+		uid: "8145a54e",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ethanol",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d23906cd",
+		type: "item",
+		item: "pyrotech:pyroberry_cocktail"
+	}]
+}

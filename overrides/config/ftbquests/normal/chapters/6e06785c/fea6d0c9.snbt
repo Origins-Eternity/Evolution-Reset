@@ -1,0 +1,25 @@
+{
+	x: 18.0d,
+	y: 1.0d,
+	dependencies: [
+		"392da08a"
+	],
+	tasks: [{
+		uid: "8fb8731f",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "biodiesel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "49ea3d58",
+		type: "item",
+		item: "immersiveengineering:jerrycan"
+	}]
+}

@@ -6,7 +6,7 @@
             {
                 "action": "add",
                 "sell": {
-                    "id": "ercore:quarry_bag_blueprint",
+                    "id": "ercore:bag_blueprint",
                     "Count": 1
                 },
                 "buy": {
@@ -14,54 +14,6 @@
                     "Count": 10
                 },
                 "CareerLevel": 1
-            },
-            {
-                "action": "add",
-                "sell": {
-                    "id": "ercore:small_backpack_blueprint",
-                    "Count": 1
-                },
-                "buy": {
-                    "id": "minecraft:emerald",
-                    "Count": 10
-                },
-                "CareerLevel": 1
-            },
-            {
-                "action": "add",
-                "sell": {
-                    "id": "ercore:durable_quarry_bag_blueprint",
-                    "Count": 1
-                },
-                "buy": {
-                    "id": "minecraft:emerald",
-                    "Count": 20
-                },
-                "CareerLevel": 2
-            },
-            {
-                "action": "add",
-                "sell": {
-                    "id": "ercore:medium_backpack_blueprint",
-                    "Count": 1
-                },
-                "buy": {
-                    "id": "minecraft:emerald",
-                    "Count": 20
-                },
-                "CareerLevel": 2
-            },
-            {
-                "action": "add",
-                "sell": {
-                    "id": "ercore:large_backpack_blueprint",
-                    "Count": 1
-                },
-                "buy": {
-                    "id": "minecraft:emerald",
-                    "Count": 30
-                },
-                "CareerLevel": 2
             }
         ]
     }

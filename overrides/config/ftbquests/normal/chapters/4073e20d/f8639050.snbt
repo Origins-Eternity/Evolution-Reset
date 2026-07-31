@@ -1,8 +1,8 @@
 {
-	x: -1.5d,
-	y: -1.0d,
+	x: 1.5d,
+	y: 1.0d,
 	dependencies: [
-		"63d441db"
+		"6f650bca"
 	],
 	tasks: [{
 		uid: "d7cc5a25",
@@ -11,5 +11,11 @@
 			item: "immersiveengineering:stone_decoration 1 10"
 		}],
 		count: 8L
+	}],
+	rewards: [{
+		uid: "7ad430b9",
+		type: "item",
+		item: "pyrotech:material 1 5",
+		count: 8
 	}]
 }

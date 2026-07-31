@@ -1,6 +1,6 @@
 {
 	title: "{evolutionreset.chapter.interstellarage.title}",
-	icon: "galacticraftplanets:rocket_t3",
+	icon: "galacticraftcore:rocket_t1",
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: ""

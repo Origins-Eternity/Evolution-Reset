@@ -1,0 +1,25 @@
+{
+	x: 25.5d,
+	y: 0.0d,
+	dependencies: [
+		"b1b00b41"
+	],
+	tasks: [{
+		uid: "695068f9",
+		type: "item",
+		items: [{
+			item: "ercore:tungsten_steel_ingot"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "e17e5cce",
+		type: "item",
+		item: {
+			id: "tconstruct:cast",
+			tag: {
+				PartType: "tconstruct:large_plate"
+			}
+		}
+	}]
+}

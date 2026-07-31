@@ -5,11 +5,10 @@ recipes.removeByRecipeName("botania:fertilizer_dye");
 recipes.replaceAllOccurences(<minecraft:dye:15>, <pyrotech:mulch>, <botania:fertilizer>);
 
 var botbanlist = [
-<botania:pool>,
 <botania:pylon:*>,
 <botania:altar>,
-<botania:brewery>,
-<botania:runealtar>
+<botania:runealtar>,
+<botania:brewery>
 ] as IItemStack[];
 
 for i in botbanlist{
@@ -18,8 +17,7 @@ for i in botbanlist{
 
 var Apothecary as IItemStack[] = [
 <botania:specialflower>.withTag({type: "puredaisy"}),
-<botania:specialflower>.withTag({type: "endoflame"}),
-<botania:specialflower>.withTag({type: "gourmaryllis"})
+<botania:specialflower>.withTag({type: "endoflame"})
 ];
 
 for j in Apothecary{
@@ -35,8 +33,3 @@ recipes.addShaped(<botania:pylon:2>,
 [[null, <botania:manaresource:8>, null],
 [<botania:manaresource:7>, <minecraft:nether_star>, <botania:manaresource:7>],
 [null, <botania:manaresource:8>, null]]);
-
-recipes.addShaped(<botania:runealtar>, 
-[[null, null, null],
-[<ore:livingrock>, <ore:livingrock>, <ore:livingrock>],
-[<ore:livingrock>, <botania:storage>, <ore:livingrock>]]);

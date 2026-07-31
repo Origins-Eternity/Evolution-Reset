@@ -1,8 +1,8 @@
 {
-	x: 2.0d,
-	y: -2.0d,
+	x: 7.5d,
+	y: 1.0d,
 	dependencies: [
-		"2837a4c9"
+		"d176c85c"
 	],
 	tasks: [{
 		uid: "52ed8c70",
@@ -15,9 +15,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "5d8f665b",
-		type: "xp_levels",
-		team_reward: true,
-		xp_levels: 1
+		uid: "4904590b",
+		type: "item",
+		item: "tconstruct:tooltables 1 3"
 	}]
 }

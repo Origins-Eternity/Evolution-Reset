@@ -1,0 +1,26 @@
+{
+	x: 31.5d,
+	y: 3.0d,
+	dependencies: [
+		"48ade423"
+	],
+	tasks: [{
+		uid: "e584e86f",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:sealer"
+		}]
+	},
+	{
+		uid: "9e4d7e30",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:basic_item 1 20"
+		}]
+	}],
+	rewards: [{
+		uid: "85d46ab4",
+		type: "item",
+		item: "galacticraftcore:oxygen_tank_heavy_full 1 2700"
+	}]
+}

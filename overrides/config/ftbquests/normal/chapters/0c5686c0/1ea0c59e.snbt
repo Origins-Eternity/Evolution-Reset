@@ -1,0 +1,21 @@
+{
+	x: 31.5d,
+	y: -3.0d,
+	dependencies: [
+		"421890d9"
+	],
+	tasks: [{
+		uid: "9a5031c2",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:bucket_fuel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5518b2d4",
+		type: "item",
+		item: "immersivepetroleum:metal_device"
+	}]
+}

@@ -1,8 +1,8 @@
 {
-	x: 11.0d,
-	y: 6.0d,
+	x: 12.0d,
+	y: 0.0d,
 	dependencies: [
-		"dff2a473"
+		"9c8de39a"
 	],
 	tasks: [{
 		uid: "229218eb",
@@ -10,23 +10,9 @@
 		items: [{
 			item: "botania:runealtar"
 		}]
-	},
-	{
-		uid: "b19dd177",
-		type: "item",
-		items: [{
-			item: "botania:rune 1 1"
-		}]
-	},
-	{
-		uid: "9109df42",
-		type: "item",
-		items: [{
-			item: "botania:rune 1 9"
-		}]
 	}],
 	rewards: [{
-		uid: "3eea6d90",
+		uid: "545cf883",
 		type: "xp_levels",
 		xp_levels: 1
 	}]

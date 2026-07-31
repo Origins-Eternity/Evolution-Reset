@@ -1,0 +1,78 @@
+{
+	x: 24.0d,
+	y: -2.0d,
+	dependencies: [
+		"f87f8153"
+	],
+	tasks: [{
+		uid: "78ae4552",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 8"
+		}],
+		count: 15L
+	},
+	{
+		uid: "a8b3df6a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "scaffoldingSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any scaffoldingSteel"
+				}
+			}
+		}],
+		count: 26L
+	},
+	{
+		uid: "aa3c502f",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 4"
+		}],
+		count: 9L
+	},
+	{
+		uid: "95a8e5d1",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 5L
+	},
+	{
+		uid: "3e658900",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 7"
+		}],
+		count: 3L
+	},
+	{
+		uid: "4e6eb7b6",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "2bcf6776",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:storage 1 8"
+		}],
+		count: 9L
+	}],
+	rewards: [{
+		uid: "4c94c930",
+		type: "item",
+		item: "minecraft:hopper"
+	}]
+}

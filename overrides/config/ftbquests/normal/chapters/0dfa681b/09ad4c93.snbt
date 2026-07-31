@@ -1,0 +1,28 @@
+{
+	x: 19.5d,
+	y: 2.0d,
+	dependencies: [
+		"aed6b66b"
+	],
+	tasks: [{
+		uid: "efc786c0",
+		type: "item",
+		items: [{
+			item: "pyrotech:material 1 3"
+		}]
+	},
+	{
+		uid: "7c8d8285",
+		type: "item",
+		items: [{
+			item: "pyrotech:material 1 8"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "3ce9802b",
+		type: "item",
+		item: "minecraft:clay_ball",
+		count: 4
+	}]
+}

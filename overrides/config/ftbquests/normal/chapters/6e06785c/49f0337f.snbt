@@ -1,0 +1,31 @@
+{
+	x: 1.5d,
+	y: -1.0d,
+	dependencies: [
+		"e274b2a2"
+	],
+	tasks: [{
+		uid: "fb6ec642",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "plankTreatedWood",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any plankTreatedWood"
+				}
+			}
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "a6a81828",
+		type: "item",
+		item: "immersiveengineering:wooden_device0"
+	}]
+}

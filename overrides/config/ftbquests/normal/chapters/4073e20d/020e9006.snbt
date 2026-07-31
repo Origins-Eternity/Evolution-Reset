@@ -1,8 +1,8 @@
 {
-	x: -3.0d,
-	y: 2.5d,
+	x: 7.5d,
+	y: 3.0d,
 	dependencies: [
-		"8ef1c336"
+		"37373c55"
 	],
 	tasks: [{
 		uid: "47f25498",
@@ -20,6 +20,12 @@
 					Name: "Any ingotIron"
 				}
 			}
-		}]
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "a153d3bd",
+		type: "item",
+		item: "pyrotech:flint_hammer"
 	}]
 }

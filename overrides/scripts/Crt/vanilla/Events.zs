@@ -36,6 +36,8 @@ import crafttweaker.event.PlayerCloneEvent;
 import crafttweaker.event.PlayerFillBucketEvent;
 import crafttweaker.event.EntityLivingFallEvent;
 import crafttweaker.event.PlayerRightClickItemEvent;
+import crafttweaker.event.LivingExperienceDropEvent;
+import crafttweaker.entity.IEntityLivingBase;
 
 events.onPlayerInteractBlock(function(event as PlayerInteractBlockEvent) {
 var id = event.block.definition.id;
@@ -80,7 +82,7 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
                 event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
-                event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip4"));
+                event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip1"));
                 event.player.update({wasInvited: true});
             }
         } else if(<ore:runeLustB> has event.item) {
@@ -88,7 +90,7 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
                 event.player.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(300, 1));
                 event.player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
                 event.player.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(200, 1));
-                event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip5"));
+                event.player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip2"));
                 event.player.update({wasInvited1: true});
             }
         }
@@ -135,12 +137,6 @@ events.onPlayerInteract(function(event as PlayerInteractEvent) {
     if(<ore:banItems> has event.player.currentItem) {
        event.damageItem(event.player.currentItem.maxDamage + 1);
     }
-    if(event.player.world.isRemote()) return;
-    val player = event.player;
-    if(!isNull(player.data.wasGivenTip2)) return;
-    if(isNull(player.data.wasGivenTip1)) return;
-    player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + "> ") + ITextComponent.fromTranslation("crafttweaker.message.tip2"));
-    player.update({wasGivenTip2: true});
 });
 
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent) {
@@ -216,9 +212,10 @@ var mutantmobs = [
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     if (event.world.isRemote()) return;
     val entity = event.entity;
-    if (event.world.dimension != 0 && entity instanceof IEntityLiving) {
+    if (event.world.dimension == 0 && entity instanceof IEntityLiving) {
         if (isNull(event.world.getCustomWorldData().reachingStage)) {
             if (entity instanceof IEntityMob) {
+                if (entity.definition.name == "sanity.shadow_monster") return;
                 event.cancel();
             } else {
                 for mob in mobs {
@@ -250,13 +247,11 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
     var ser = server.commandManager as ICommandManager;
     if(event.player.world.isRemote()) return;
     var player = event.player as IPlayer;
-    if(isNull(player.data.wasGivenTip1)) {
-        player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 1));
-        player.sendRichTextMessage(ITextComponent.fromString("<" + event.player.name + "> ") + ITextComponent.fromTranslation("crafttweaker.message.tip1"));
+    if(isNull(player.data.wasGivenTip)) {
         player.give(<ftbquests:book>);
-        player.update({wasGivenTip1: true});
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip"));
+        player.update({wasGivenTip: true});
     }
-    player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip"));
 });
 
 events.onPlayerBreakSpeed(function(event as PlayerBreakSpeedEvent) {
@@ -306,13 +301,9 @@ events.onPlayerFillBucket(function(event as PlayerFillBucketEvent) {
     }
 });
 
-events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
-    var player as IPlayer = event.player;
-    if(player.world.isRemote()) return;
-    if(isNull(event.output)) return;
-    if(event.output.definition.id == "pyrotech:crude_axe") {
-        if(!isNull(player.data.wasGivenTip3)) return;
-        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.message.tip3"));
-        player.update({wasGivenTip3: true});
+
+events.onLivingExperienceDrop(function(event as LivingExperienceDropEvent) {
+    if (event.entityLivingBase.definition.name == "sanity.shadow_monster") {
+        event.droppedExperience = 50;
     }
 });

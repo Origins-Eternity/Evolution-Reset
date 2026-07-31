@@ -1,0 +1,19 @@
+{
+	x: 16.5d,
+	y: -1.0d,
+	dependencies: [
+		"fa689d3e"
+	],
+	tasks: [{
+		uid: "54861c26",
+		type: "item",
+		items: [{
+			item: "pyrotech:bucket_refractory"
+		}]
+	}],
+	rewards: [{
+		uid: "0e4f2b43",
+		type: "item",
+		item: "pyrotech:bucket_clay"
+	}]
+}

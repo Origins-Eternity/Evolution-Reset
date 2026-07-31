@@ -1,5 +1,5 @@
 {
-	x: 6.0d,
+	x: 4.5d,
 	y: -2.0d,
 	dependencies: [
 		"485b3100"
@@ -29,10 +29,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "8ea81073",
+		uid: "5156371e",
 		type: "item",
-		team_reward: true,
-		item: "immersiveengineering:wirecoil 1 2",
-		count: 8
+		item: {
+			id: "immersiveengineering:conveyor",
+			tag: {
+				conveyorType: "immersiveengineering:conveyor"
+			}
+		}
 	}]
 }

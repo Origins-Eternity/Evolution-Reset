@@ -3,6 +3,7 @@ import mods.dropt.Dropt;
 import mods.dropt.Harvester;
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.entity.IEntityDefinition;
 
 val woods = [
 <ore:logWood>,
@@ -329,11 +330,11 @@ for print in <ore:blueprint>.items {
          .type("PLAYER")
       )
       .addDrop(Dropt.drop()
-	       .selector(Dropt.weight(99))
+	       .selector(Dropt.weight(90))
 	       .items([<biomesoplenty:hard_ice>], Dropt.range(1))  
 	   )
 	   .addDrop(Dropt.drop()
-          .selector(Dropt.weight(1))
+          .selector(Dropt.weight(10))
 		    .items([print], Dropt.range(1))  
 	   )
 	);
@@ -361,3 +362,6 @@ Dropt.list("list_treasure")
 	   )
 	);
 }
+
+<entity:sanity:shadow_monster>.addPlayerOnlyDrop(<minecraft:ender_pearl>, 1, 3);
+<entity:minecraft:creeper>.addPlayerOnlyDrop(<immersiveengineering:material:25>, 1, 4);

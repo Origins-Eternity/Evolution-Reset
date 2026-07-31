@@ -1,0 +1,25 @@
+{
+	x: 36.0d,
+	y: 0.0d,
+	dependencies: [
+		"2eeb450c"
+	],
+	tasks: [{
+		uid: "6012bd12",
+		type: "item",
+		items: [{
+			item: "galaxyspace:rocket_tier_5"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ed5f4af7",
+		type: "xp_levels",
+		xp_levels: 5
+	},
+	{
+		uid: "cbbd8c8a",
+		type: "item",
+		item: "galaxyspace:gs_basic 1 28"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 31.5d,
+	y: 1.0d,
+	dependencies: [
+		"363919ce"
+	],
+	tasks: [{
+		uid: "b0fc1f0a",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:landing_pad"
+		}],
+		count: 9L
+	}],
+	rewards: [{
+		uid: "3359f40c",
+		type: "item",
+		item: "galacticraftcore:parachute"
+	}]
+}

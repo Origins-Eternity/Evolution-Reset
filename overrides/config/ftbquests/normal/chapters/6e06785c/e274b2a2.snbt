@@ -1,0 +1,27 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "79545df9",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration"
+		}],
+		count: 27L
+	},
+	{
+		uid: "6e15cea5",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 1"
+		}],
+		count: 27L
+	}],
+	rewards: [{
+		uid: "e438c330",
+		type: "item",
+		team_reward: true,
+		item: "immersiveengineering:material 1 6",
+		count: 4
+	}]
+}

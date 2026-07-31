@@ -1,6 +1,6 @@
 {
-	x: 8.5d,
-	y: -1.0d,
+	x: 7.5d,
+	y: 1.0d,
 	dependencies: [
 		"cc33af22"
 	],
@@ -12,13 +12,6 @@
 		}]
 	}],
 	rewards: [{
-		uid: "2d60c6d2",
-		type: "item",
-		team_reward: true,
-		item: "pyrotech:material 1 10",
-		count: 2
-	},
-	{
 		uid: "104b3224",
 		type: "item",
 		team_reward: true,

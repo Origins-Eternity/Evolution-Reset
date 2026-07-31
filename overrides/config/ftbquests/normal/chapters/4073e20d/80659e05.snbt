@@ -1,0 +1,19 @@
+{
+	x: 3.0d,
+	y: -2.0d,
+	dependencies: [
+		"257dc9ed"
+	],
+	tasks: [{
+		uid: "583015e3",
+		type: "item",
+		items: [{
+			item: "pyrotech:bloomery"
+		}]
+	}],
+	rewards: [{
+		uid: "1b5c2627",
+		type: "item",
+		item: "pyrotech:tongs_flint"
+	}]
+}

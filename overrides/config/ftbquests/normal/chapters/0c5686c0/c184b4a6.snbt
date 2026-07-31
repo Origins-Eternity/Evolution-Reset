@@ -1,0 +1,27 @@
+{
+	x: 21.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "0f3b8894",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingTable",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingTable"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "f8c09cc6",
+		type: "item",
+		item: "immersivepetroleum:schematic"
+	}]
+}

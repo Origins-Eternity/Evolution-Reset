@@ -1,0 +1,28 @@
+{
+	x: 18.0d,
+	y: 0.0d,
+	dependencies: [
+		"0bd47915"
+	],
+	tasks: [{
+		uid: "83116ca1",
+		type: "item",
+		items: [{
+			item: "pyrotech:log_pile"
+		}],
+		count: 8L
+	},
+	{
+		uid: "b9314f9b",
+		type: "item",
+		items: [{
+			item: "pyrotech:tar_collector"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "7acd1ed0",
+		type: "item",
+		item: "pyrotech:igniter"
+	}]
+}

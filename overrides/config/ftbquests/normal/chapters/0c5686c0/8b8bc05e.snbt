@@ -1,0 +1,26 @@
+{
+	x: 33.0d,
+	y: 3.0d,
+	dependencies: [
+		"7d67def0"
+	],
+	tasks: [{
+		uid: "072c85c6",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:geothermal_generator"
+		}]
+	},
+	{
+		uid: "08ad7be2",
+		type: "item",
+		items: [{
+			item: "galaxyspace:wind_generator"
+		}]
+	}],
+	rewards: [{
+		uid: "8c0ef309",
+		type: "item",
+		item: "galaxyspace:gs_basic 1 33"
+	}]
+}

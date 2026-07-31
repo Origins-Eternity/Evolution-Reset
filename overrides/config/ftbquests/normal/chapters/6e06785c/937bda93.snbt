@@ -1,9 +1,8 @@
 {
-	x: -1.0d,
-	y: 2.5d,
+	x: 3.0d,
+	y: 0.0d,
 	dependencies: [
-		"153b74ab",
-		"8ef1c336"
+		"153b74ab"
 	],
 	tasks: [{
 		uid: "4c45758c",
@@ -11,5 +10,10 @@
 		items: [{
 			item: "artisanworktables:workstation 1 6"
 		}]
+	}],
+	rewards: [{
+		uid: "643f8811",
+		type: "item",
+		item: "minecraft:bucket"
 	}]
 }

@@ -1,0 +1,21 @@
+{
+	x: 4.5d,
+	y: 0.0d,
+	dependencies: [
+		"3719a0ec"
+	],
+	tasks: [{
+		uid: "8e6ea793",
+		type: "item",
+		items: [{
+			item: "pyrotech:material 1 11"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "1ba57df9",
+		type: "item",
+		item: "minecraft:bone",
+		count: 2
+	}]
+}

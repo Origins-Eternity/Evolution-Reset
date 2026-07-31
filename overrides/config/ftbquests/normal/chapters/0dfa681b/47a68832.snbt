@@ -1,8 +1,8 @@
 {
-	x: 8.5d,
+	x: 10.5d,
 	y: 1.0d,
 	dependencies: [
-		"cc33af22"
+		"41670676"
 	],
 	tasks: [{
 		uid: "1a066f78",
@@ -10,5 +10,11 @@
 		items: [{
 			item: "pyrotech:anvil_granite"
 		}]
+	}],
+	rewards: [{
+		uid: "fe9f6376",
+		type: "item",
+		item: "minecraft:cooked_porkchop",
+		count: 3
 	}]
 }

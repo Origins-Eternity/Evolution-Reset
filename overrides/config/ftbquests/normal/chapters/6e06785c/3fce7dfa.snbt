@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 3.0d,
+	dependencies: [
+		"2a0d0529"
+	],
+	tasks: [{
+		uid: "e4f345c0",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wirecoil 1 2"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "a2f47fc4",
+		type: "item",
+		item: "immersiveengineering:metal_decoration0"
+	}]
+}

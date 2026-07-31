@@ -1,0 +1,26 @@
+{
+	x: 9.0d,
+	y: -3.0d,
+	dependencies: [
+		"1b7d797d"
+	],
+	tasks: [{
+		uid: "b8d3d9a3",
+		type: "item",
+		items: [{
+			item: "ercore:ingot_clay_cast"
+		}]
+	},
+	{
+		uid: "9c2fd36d",
+		type: "item",
+		items: [{
+			item: "pyrotech:faucet_brick"
+		}]
+	}],
+	rewards: [{
+		uid: "496d025a",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

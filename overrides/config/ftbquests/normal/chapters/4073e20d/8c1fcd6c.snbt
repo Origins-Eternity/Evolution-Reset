@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: -3.0d,
+	dependencies: [
+		"b7da4158"
+	],
+	tasks: [{
+		uid: "7b3368fb",
+		type: "item",
+		items: [{
+			item: "pyrotech:brick_crucible"
+		}]
+	}],
+	rewards: [{
+		uid: "8b5d3376",
+		type: "item",
+		item: "pyrotech:refractory_glass"
+	}]
+}

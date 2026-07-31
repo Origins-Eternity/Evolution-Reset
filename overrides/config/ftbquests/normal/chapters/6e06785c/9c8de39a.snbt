@@ -1,0 +1,19 @@
+{
+	x: 10.5d,
+	y: 0.0d,
+	dependencies: [
+		"74f32afb"
+	],
+	tasks: [{
+		uid: "ae2ebd48",
+		type: "item",
+		items: [{
+			item: "botania:pool"
+		}]
+	}],
+	rewards: [{
+		uid: "3078840c",
+		type: "item",
+		item: "minecraft:iron_block"
+	}]
+}

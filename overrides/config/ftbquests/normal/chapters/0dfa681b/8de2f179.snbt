@@ -1,0 +1,20 @@
+{
+	x: 13.5d,
+	y: 1.0d,
+	dependencies: [
+		"2afaf8d1"
+	],
+	tasks: [{
+		uid: "9fa8acc4",
+		type: "item",
+		items: [{
+			item: "pyrotech:stone_sawmill"
+		}]
+	}],
+	rewards: [{
+		uid: "943df291",
+		type: "item",
+		item: "minecraft:cooked_chicken",
+		count: 2
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: -2.0d,
+	dependencies: [
+		"daa6360c"
+	],
+	tasks: [{
+		uid: "c112364a",
+		type: "item",
+		items: [{
+			item: "botania:livingwood"
+		}]
+	}],
+	rewards: [{
+		uid: "5b1bac7c",
+		type: "item",
+		item: "botania:manaresource 1 3",
+		count: 2
+	}]
+}

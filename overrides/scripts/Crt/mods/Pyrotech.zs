@@ -53,8 +53,6 @@ for recipe in recipes.all {
 
 var items = [
 <pyrotech:wither_forge>,
-<pyrotech:bag_durable>,
-<pyrotech:bag_simple>,
 <pyrotech:drying_rack:1>,
 <pyrotech:flint_shovel>,
 <pyrotech:flint_sword>,
@@ -133,10 +131,10 @@ var worktable_recipes = [
 "immersiveengineering:treated_wood/treated_wood_cycle0", 
 "immersiveengineering:treated_wood/treated_wood_cycle1", 
 "immersiveengineering:treated_wood/treated_wood_cycle2", 
+"crafttweaker:ladder", 
 "crafttweaker:tooltables", 
 "crafttweaker:ie_hammer", 
 "crafttweaker:bow_drill", 
-"crafttweaker:smeltery_io", 
 "tconstruct:tools/pattern", 
 "tconstruct:tools/table/stencil_table", 
 "tconstruct:tools/table/part_builder",
@@ -150,9 +148,9 @@ var worktable_recipes = [
 "crafttweaker:brick_sawmill",
 "crafttweaker:brick_crucible",
 "crafttweaker:potter_workshop",
-"crafttweaker:basic_workshop",
+"crafttweaker:potter_workstation",
+"crafttweaker:basic_workstation",
 "crafttweaker:barrel",
-"crafttweaker:ladder",
 "crafttweaker:boat_sacred_oak",
 "sanity:garland",
 "sanity:garland_futuremc",
@@ -217,23 +215,6 @@ recipes.addShaped(<pyrotech:cog_diamond>,
 [[<pyrotech:material:18>, <pyrotech:material:18>, <pyrotech:material:18>],
 [<pyrotech:material:18>, <minecraft:diamond_block>, <pyrotech:material:18>],
 [<pyrotech:material:18>, <pyrotech:material:18>, <pyrotech:material:18>]]);
-
-Worktable.buildShaped(<artisanworktables:workstation:5>, [
-[<pyrotech:material:16>, <ore:plateCopper>, <pyrotech:material:16>],
-[<ore:blockCopper>, <pyrotech:stash_stone>, <ore:blockCopper>],
-[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]
-]
-)
-.setName("custom_recipe_workstation5")
-.register();
-
-Worktable.buildShaped(<artisanworktables:workstation:14>, [
-[<pyrotech:material:16>, <minecraft:brick>, <pyrotech:material:16>],
-[<minecraft:brick_block>, <pyrotech:stash_stone>, <minecraft:brick_block>],
-[<ore:stoneBasaltPolished>, <pyrotech:masonry_brick_block>, <ore:stoneBasaltPolished>]
-])
-.setName("custom_recipe_workstation14")
-.register();
 
 Worktable.buildShaped(<pyrotech:drying_rack:1>, [
 [<ore:stickWood>, <ore:twine>, <ore:stickWood>],
@@ -301,6 +282,7 @@ StoneCrucible.addRecipe("liquid_copper_from_copper_nugget", <liquid:copper> * 16
 StoneCrucible.addRecipe("liquid_tin_from_tin_nugget", <liquid:tin> * 16, <ore:nuggetTin>, 4 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_bronze_from_bronze_ingot", <liquid:bronze> * 144, <ore:ingotBronze>, 3 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_copper_from_copper_ingot", <liquid:copper> * 144, <ore:ingotCopper>, 5 * 60 * 20, true);
+StoneCrucible.addRecipe("liquid_tin_from_tin_dust", <liquid:tin> * 144, <ore:dustTin>, 5 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_tin_from_tin_ingot", <liquid:tin> * 144, <ore:ingotTin>, 5 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_silver_from_silver_ingot", <liquid:silver> * 144, <ore:ingotSilver>, 4 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_silver_from_silver_nugget", <liquid:silver> * 16, <ore:nuggetSilver>, 3 * 60 * 20, true);
@@ -308,12 +290,8 @@ StoneCrucible.addRecipe("liquid_gold_from_gold_ingot", <liquid:gold> * 144, <ore
 StoneCrucible.addRecipe("liquid_gold_from_gold_nugget", <liquid:gold> * 16, <ore:nuggetGold>, 3 * 60 * 20, true);
 StoneCrucible.addRecipe("liquid_gold_from_gold_shard", <liquid:gold> * 16, <pyrotech:material:34>, 3 * 60 * 20, true);
 BrickCrucible.addRecipe("liquid_glass_from_glass", <liquid:glass> * 1000, <ore:blockGlass>, 5 * 60 * 20);
-BrickCrucible.addRecipe("liquid_iron_from_iron_nugget", <liquid:iron> * 16, <ore:nuggetIron>, 4 * 60 * 20);
-BrickCrucible.addRecipe("liquid_iron_from_iron_shard", <liquid:iron> * 16, <pyrotech:material:19>, 4 * 60 * 20);
-BrickCrucible.addRecipe("liquid_iron_from_iron_ingot", <liquid:iron> * 144, <ore:ingotIron>, 5 * 60 * 20);
 
-StoneSawmill.addRecipe("treated_stick_from_tarred_board", <immersiveengineering:material> * 2, <pyrotech:material:23>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0, true);
-
+BrickSawmill.addRecipe("treated_stick_from_tarred_board", <immersiveengineering:material> * 2, <pyrotech:material:23>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 BrickSawmill.addRecipe("clinker_powder_from_refractory_brick", <ercore:clinker> * 4, <pyrotech:material:5>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 BrickSawmill.addRecipe("clinker_powder_from_brick", <ercore:clinker> * 3, <minecraft:brick>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
 BrickSawmill.addRecipe("clinker_powder_from_pottery_shard", <ercore:clinker> * 2, <pyrotech:material:7>, 400, <pyrotech:sawmill_blade_iron:*> | <pyrotech:sawmill_blade_stone:*> | <pyrotech:sawmill_blade_bone:*> | <pyrotech:sawmill_blade_flint:*> | <pyrotech:sawmill_blade_diamond:*> | <pyrotech:sawmill_blade_gold:*> | <pyrotech:sawmill_blade_obsidian:*>, 0);
@@ -322,12 +300,8 @@ BrickSawmill.addRecipe("clinker_powder_from_slag", <ercore:clinker>, <pyrotech:s
 SoakingPot.addRecipe("sugar_from_sugarcane", <minecraft:sugar> * 8, <liquid:sugarcane> * 1000, <pyrotech:material:22>, true, 5 * 60 * 20);
 SoakingPot.addRecipe("treated_wood_from_plank", <immersiveengineering:treated_wood>, <liquid:creosote> * 125, <ore:plankWood>, true, 5 * 60 * 20);
 
-Campfire.removeRecipes(<minecraft:bread>);
 Campfire.addRecipe("water_bucket_from_ice_bucket", <minecraft:water_bucket>, <galaxyspace:gs_basic:17>);
 
-IroncladAnvil.addRecipe("nugget_from_ingot_tungsten", <ercore:tungsten_nugget> * 9, <ercore:tungsten_ingot>, 20, "hammer");
-IroncladAnvil.addRecipe("nugget_from_ingot_tungsten_steel", <ercore:tungsten_steel_nugget> * 9, <ercore:tungsten_steel_ingot>, 20, "hammer");
-IroncladAnvil.addRecipe("nugget_from_ingot_tungsten_carbide", <ercore:tungsten_carbide_nugget> * 9, <ercore:tungsten_carbide_ingot>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_aluminum", <immersiveengineering:metal:21> * 9, <ore:ingotAluminum>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_lead", <immersiveengineering:metal:22> * 9, <ore:ingotLead>, 20, "hammer");
 IroncladAnvil.addRecipe("nugget_from_ingot_silver", <immersiveengineering:metal:24> * 9, <ore:ingotSilver>, 20, "hammer");
@@ -376,7 +350,6 @@ MechanicalCompactor.addRecipe("nickel_block_from_ingot", <immersiveengineering:s
 MechanicalCompactor.addRecipe("silver_block_from_ingot", <immersiveengineering:storage:3>, <ore:ingotSilver>, 9);
 MechanicalCompactor.addRecipe("uranium_block_from_ingot", <immersiveengineering:storage:5>, <ore:ingotUranium>, 9);
 MechanicalCompactor.addRecipe("lead_block_from_ingot", <immersiveengineering:storage:2>, <ore:ingotLead>, 9);
-MechanicalCompactor.addRecipe("tungsten_steel_block_from_ingot", <ercore:tungsten_steel_block>, <ercore:tungsten_steel_ingot>, 9);
 
 val materials = [
 <pyrotech:refractory_brick_stairs>,

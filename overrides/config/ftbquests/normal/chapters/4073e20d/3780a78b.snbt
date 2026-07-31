@@ -1,0 +1,20 @@
+{
+	x: 4.5d,
+	y: 0.0d,
+	dependencies: [
+		"0ebb499a"
+	],
+	tasks: [{
+		uid: "8df47fe5",
+		type: "item",
+		items: [{
+			item: "ercore:searedbrick_unfired"
+		}]
+	}],
+	rewards: [{
+		uid: "ccc917cf",
+		type: "item",
+		item: "pyrotech:material 1 21",
+		count: 16
+	}]
+}

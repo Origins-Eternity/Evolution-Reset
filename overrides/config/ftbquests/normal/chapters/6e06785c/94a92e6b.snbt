@@ -1,0 +1,30 @@
+{
+	x: 13.5d,
+	y: -2.0d,
+	dependencies: [
+		"bcd84e15"
+	],
+	tasks: [{
+		uid: "d5631757",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "munchdew"
+			}
+		}]
+	},
+	{
+		uid: "d6516e62",
+		type: "item",
+		items: [{
+			item: "dynamictrees:dendropotion 1 3"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f5b6c48d",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

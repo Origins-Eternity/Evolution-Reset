@@ -1,6 +1,6 @@
 {
-	x: 10.0d,
-	y: -2.0d,
+	x: 7.5d,
+	y: -3.0d,
 	dependencies: [
 		"87acd035"
 	],
@@ -9,13 +9,6 @@
 		type: "item",
 		items: [{
 			item: "immersiveengineering:metal_device0 1 5"
-		}]
-	},
-	{
-		uid: "99dc3b08",
-		type: "item",
-		items: [{
-			item: "minecraft:lever"
 		}]
 	}],
 	rewards: [{

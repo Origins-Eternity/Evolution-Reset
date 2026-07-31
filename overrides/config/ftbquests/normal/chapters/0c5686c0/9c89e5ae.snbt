@@ -1,0 +1,71 @@
+{
+	x: 22.5d,
+	y: 1.0d,
+	dependencies: [
+		"c184b4a6",
+		"fea6d0c9"
+	],
+	tasks: [{
+		uid: "f87eed18",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 6"
+		}],
+		count: 4L
+	},
+	{
+		uid: "7133ee5f",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 7"
+		}],
+		count: 9L
+	},
+	{
+		uid: "1ff5a9b5",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 13L
+	},
+	{
+		uid: "fe07d7c2",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "6c51e321",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 5L
+	},
+	{
+		uid: "e51a965b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "scaffoldingSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any scaffoldingSteel"
+				}
+			}
+		}],
+		count: 6L
+	}],
+	rewards: [{
+		uid: "458952bf",
+		type: "item",
+		item: "immersiveengineering:metal_device0 1 2"
+	}]
+}

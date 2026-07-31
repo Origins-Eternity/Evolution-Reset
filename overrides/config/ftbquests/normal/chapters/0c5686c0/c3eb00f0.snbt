@@ -1,0 +1,19 @@
+{
+	x: 24.0d,
+	y: 2.0d,
+	dependencies: [
+		"9c89e5ae"
+	],
+	tasks: [{
+		uid: "c6803161",
+		type: "advancement",
+		title: "{evolutionreset.quest.diesel_generator.title}",
+		advancement: "immersiveengineering:main/multiblock_dieselgenerator",
+		criterion: ""
+	}],
+	rewards: [{
+		uid: "c39faf7d",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

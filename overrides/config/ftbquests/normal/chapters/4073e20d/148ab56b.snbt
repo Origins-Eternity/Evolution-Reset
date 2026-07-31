@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: 1.0d,
+	dependencies: [
+		"2c3f7b43"
+	],
+	tasks: [{
+		uid: "8aa03910",
+		type: "item",
+		items: [{
+			item: "pyrotech:generated_pile_slag_iron"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "387fc6f3",
+		type: "item",
+		item: "pyrotech:flint_shovel"
+	}]
+}

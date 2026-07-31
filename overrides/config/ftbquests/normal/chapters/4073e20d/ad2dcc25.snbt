@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: -1.0d,
+	dependencies: [
+		"3780a78b"
+	],
+	tasks: [{
+		uid: "302fb51a",
+		type: "item",
+		items: [{
+			item: "pyrotech:brick_kiln"
+		}]
+	}],
+	rewards: [{
+		uid: "bd258d6c",
+		type: "item",
+		item: "minecraft:coal",
+		count: 6
+	}]
+}

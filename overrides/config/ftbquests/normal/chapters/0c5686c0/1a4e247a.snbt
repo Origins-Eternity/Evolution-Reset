@@ -1,0 +1,19 @@
+{
+	x: 27.0d,
+	y: 2.0d,
+	dependencies: [
+		"86b3441c"
+	],
+	tasks: [{
+		uid: "22cd1fca",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:oxygen_concentrator"
+		}]
+	}],
+	rewards: [{
+		uid: "3945284b",
+		type: "item",
+		item: "galacticraftcore:air_vent"
+	}]
+}

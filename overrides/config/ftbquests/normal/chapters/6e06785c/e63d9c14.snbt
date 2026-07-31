@@ -1,9 +1,8 @@
 {
-	x: 4.5d,
-	y: 0.0d,
+	x: 10.5d,
+	y: 4.0d,
 	dependencies: [
-		"1b8c004a",
-		"e68e3645"
+		"80494ec3"
 	],
 	tasks: [{
 		uid: "ad5bf55d",
@@ -12,13 +11,6 @@
 			item: "immersiveengineering:wooden_device1"
 		}],
 		count: 3L
-	},
-	{
-		uid: "41930054",
-		type: "item",
-		items: [{
-			item: "immersiveengineering:metal_device1 1 2"
-		}]
 	},
 	{
 		uid: "3837e7df",
@@ -34,12 +26,5 @@
 		team_reward: true,
 		item: "immersiveengineering:connector 1 5",
 		count: 4
-	},
-	{
-		uid: "c492a36e",
-		type: "item",
-		team_reward: true,
-		item: "immersiveengineering:connector 1 4",
-		count: 2
 	}]
 }

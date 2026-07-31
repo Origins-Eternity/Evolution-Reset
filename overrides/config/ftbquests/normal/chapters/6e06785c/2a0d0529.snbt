@@ -1,0 +1,29 @@
+{
+	x: 4.5d,
+	y: 2.0d,
+	dependencies: [
+		"02d1c23f"
+	],
+	tasks: [{
+		uid: "19d5b22a",
+		type: "item",
+		items: [{
+			item: "pyrotech:generated_pile_slag_nickel"
+		}],
+		count: 10L
+	},
+	{
+		uid: "019d21dd",
+		type: "item",
+		items: [{
+			item: "pyrotech:generated_pile_slag_aluminum"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "640fff49",
+		type: "item",
+		item: "minecraft:coal_block",
+		count: 2
+	}]
+}

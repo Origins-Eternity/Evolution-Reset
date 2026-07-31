@@ -1,0 +1,19 @@
+{
+	x: 7.5d,
+	y: -1.0d,
+	dependencies: [
+		"a3f11ce9"
+	],
+	tasks: [{
+		uid: "bb932e14",
+		type: "item",
+		items: [{
+			item: "pyrotech:apple_baked"
+		}]
+	}],
+	rewards: [{
+		uid: "5c371257",
+		type: "item",
+		item: "pyrotech:carrot_roasted"
+	}]
+}

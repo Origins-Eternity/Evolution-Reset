@@ -1,0 +1,27 @@
+{
+	x: 28.5d,
+	y: 3.0d,
+	dependencies: [
+		"1a4e247a"
+	],
+	tasks: [{
+		uid: "6134f820",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:collector"
+		}]
+	},
+	{
+		uid: "85e5819e",
+		type: "item",
+		items: [{
+			item: "galacticraftcore:oxygen_compressor"
+		}]
+	}],
+	rewards: [{
+		uid: "ba75f138",
+		type: "item",
+		item: "minecraft:glass_pane",
+		count: 6
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: -1.0d,
+	dependencies: [
+		"f9b796e3"
+	],
+	tasks: [{
+		uid: "68a69308",
+		type: "item",
+		items: [{
+			item: "pyrotech:tinder"
+		}]
+	}],
+	rewards: [{
+		uid: "46e52b91",
+		type: "item",
+		item: "pyrotech:torch_fiber",
+		count: 2
+	}]
+}

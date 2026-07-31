@@ -30,11 +30,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreArdite": {
@@ -47,11 +47,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreCobalt": {
@@ -64,11 +64,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreCopper": {
@@ -83,11 +83,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreGold": {
@@ -100,11 +100,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreIron": {
@@ -118,11 +118,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreLead": {
@@ -135,11 +135,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreNickel": {
@@ -152,11 +152,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreSilver": {
@@ -169,11 +169,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreTin": {
@@ -187,11 +187,11 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreUranium": {
@@ -204,20 +204,28 @@
       ],
       "bloomYieldMinMax": [
         12,
-        15
+        14
       ],
       "slagBloomYieldMinMax": [
         12,
-        15
+        14
       ]
     },
     "oreTungsten": {
-      "slagColor": "e1e6e8",
+      "slagColor": "715942",
       "langKey": [
         "ercore:tile.ercore.tungsten_ore"
       ],
       "output": [
         "ercore:tungsten_nugget"
+      ],
+      "bloomYieldMinMax": [
+        12,
+        14
+      ],
+      "slagBloomYieldMinMax": [
+        12,
+        14
       ]
     }
   }

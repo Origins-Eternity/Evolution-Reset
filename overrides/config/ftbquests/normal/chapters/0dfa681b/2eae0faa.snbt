@@ -1,5 +1,5 @@
 {
-	x: 16.0d,
+	x: 15.0d,
 	y: 3.0d,
 	dependencies: [
 		"6c5c76ba"
@@ -21,8 +21,8 @@
 		count: 10L
 	}],
 	rewards: [{
-		uid: "0b1733dc",
+		uid: "7ee6f7ca",
 		type: "item",
-		item: "pyrotech:flint_hammer"
+		item: "pyrotech:tongs_stone"
 	}]
 }

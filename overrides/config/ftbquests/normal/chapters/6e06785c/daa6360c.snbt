@@ -1,6 +1,6 @@
 {
-	x: 4.0d,
-	y: 6.0d,
+	x: 7.5d,
+	y: -1.0d,
 	dependencies: [
 		"7da17eff"
 	],
@@ -13,15 +13,11 @@
 				type: "puredaisy"
 			}
 		}]
-	},
-	{
-		uid: "4c7fdd15",
+	}],
+	rewards: [{
+		uid: "1aa2310e",
 		type: "item",
-		items: [{
-			id: "botania:specialflower",
-			tag: {
-				type: "endoflame"
-			}
-		}]
+		item: "botania:petal",
+		count: 4
 	}]
 }

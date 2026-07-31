@@ -31,7 +31,7 @@ recipes.addShaped("tooltables", <tconstruct:tooltables:3>,
 [<pyrotech:material:20>, <pyrotech:worktable_stone>, <pyrotech:material:20>],
 [<pyrotech:material:20>, null, <pyrotech:material:20>]]);
 
-recipes.addShaped("smeltery_io", <tconstruct:smeltery_io>, 
+recipes.addShaped(<tconstruct:smeltery_io>, 
 [[<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
 [<tconstruct:materials>, <pyrotech:tar_drain:1>, <tconstruct:materials>], 
 [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]]);

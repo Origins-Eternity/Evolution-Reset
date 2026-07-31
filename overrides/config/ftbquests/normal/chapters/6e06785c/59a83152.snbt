@@ -1,0 +1,20 @@
+{
+	x: 12.0d,
+	y: 2.0d,
+	dependencies: [
+		"45be25f9"
+	],
+	tasks: [{
+		uid: "eb5b14a4",
+		type: "item",
+		items: [{
+			item: "pyrotech:generated_pile_slag_tungsten"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "6579a58b",
+		type: "item",
+		item: "pyrotech:mechanical_compacting_bin"
+	}]
+}

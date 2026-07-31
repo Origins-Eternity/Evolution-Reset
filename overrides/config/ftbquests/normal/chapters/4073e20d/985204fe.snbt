@@ -1,8 +1,8 @@
 {
-	x: 6.0d,
-	y: 3.5d,
+	x: 16.5d,
+	y: -2.0d,
 	dependencies: [
-		"f405c076"
+		"1cf699e3"
 	],
 	tasks: [{
 		uid: "4c5e5467",
@@ -11,18 +11,27 @@
 			item: "usefulbackpacks:backpack"
 		}],
 		ignore_nbt: 1b
+	},
+	{
+		uid: "7c5d635e",
+		type: "item",
+		items: [{
+			item: "usefulbackpacks:backpack 1 1"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "66994443",
+		type: "item",
+		items: [{
+			item: "usefulbackpacks:backpack 1 2"
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "35e84a94",
 		type: "xp_levels",
 		team_reward: true,
 		xp_levels: 1
-	},
-	{
-		uid: "3674a6a8",
-		type: "item",
-		team_reward: true,
-		item: "minecraft:leather",
-		count: 5
 	}]
 }

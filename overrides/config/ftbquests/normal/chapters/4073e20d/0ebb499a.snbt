@@ -1,0 +1,19 @@
+{
+	x: 3.0d,
+	y: 0.0d,
+	dependencies: [
+		"257dc9ed"
+	],
+	tasks: [{
+		uid: "ade2c3a1",
+		type: "item",
+		items: [{
+			item: "pyrotech:brick_sawmill"
+		}]
+	}],
+	rewards: [{
+		uid: "29b5a908",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

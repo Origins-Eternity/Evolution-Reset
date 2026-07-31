@@ -1,0 +1,21 @@
+{
+	x: 7.5d,
+	y: -3.0d,
+	dependencies: [
+		"8c1fcd6c"
+	],
+	tasks: [{
+		uid: "18c6ebc8",
+		type: "item",
+		items: [{
+			item: "pyrotech:brick_tank"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "22a2694e",
+		type: "item",
+		item: "pyrotech:bucket_refractory"
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 13.5d,
+	y: 0.0d,
+	dependencies: [
+		"cbad279f"
+	],
+	tasks: [{
+		uid: "5bf87076",
+		type: "item",
+		items: [{
+			item: "pyrotech:compost_bin"
+		}]
+	}],
+	rewards: [{
+		uid: "04de2ac6",
+		type: "item",
+		item: "minecraft:sapling",
+		count: 4
+	}]
+}

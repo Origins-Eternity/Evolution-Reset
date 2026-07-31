@@ -1,8 +1,8 @@
 {
-	x: 10.0d,
-	y: -1.0d,
+	x: 6.0d,
+	y: -3.0d,
 	dependencies: [
-		"7b0ed3b3"
+		"f9b796e3"
 	],
 	tasks: [{
 		uid: "f8d7d0fe",
@@ -18,5 +18,10 @@
 		type: "xp",
 		team_reward: true,
 		xp: 10
+	},
+	{
+		uid: "e4bc08dd",
+		type: "item",
+		item: "minecraft:red_flower 1 8"
 	}]
 }

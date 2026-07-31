@@ -1,8 +1,8 @@
 {
-	x: 2.5d,
-	y: 0.0d,
+	x: 7.5d,
+	y: 3.0d,
 	dependencies: [
-		"f88f5e2a"
+		"3fce7dfa"
 	],
 	tasks: [{
 		uid: "496b379b",
@@ -11,25 +11,11 @@
 			item: "immersiveengineering:metal 1 36"
 		}],
 		count: 5L
-	},
-	{
-		uid: "ff577103",
-		type: "item",
-		items: [{
-			item: "immersiveengineering:metal_decoration0"
-		}]
 	}],
 	rewards: [{
-		uid: "4a0b1593",
+		uid: "b8d03597",
 		type: "item",
-		team_reward: true,
-		item: "minecraft:packed_ice",
-		count: 4
-	},
-	{
-		uid: "f3273371",
-		type: "item",
-		team_reward: true,
-		item: "immersiveengineering:metal_device1 1 3"
+		item: "immersiveengineering:connector 1 4",
+		count: 2
 	}]
 }

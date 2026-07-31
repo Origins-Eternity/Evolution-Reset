@@ -1,0 +1,35 @@
+{
+	x: 25.5d,
+	y: 2.0d,
+	dependencies: [
+		"c3eb00f0"
+	],
+	tasks: [{
+		uid: "f423d74d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "filter",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any filter"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "7d87e3bd",
+		type: "item",
+		item: "minecraft:wool"
+	},
+	{
+		uid: "460ae1de",
+		type: "item",
+		item: "minecraft:leaves"
+	}]
+}

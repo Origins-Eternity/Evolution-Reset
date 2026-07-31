@@ -1,0 +1,39 @@
+{
+	x: 34.5d,
+	y: 3.0d,
+	dependencies: [
+		"8b8bc05e"
+	],
+	tasks: [{
+		uid: "53d65dcf",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:mars_machine_t2 1 4"
+		}]
+	},
+	{
+		uid: "31e48253",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:mars_machine_t2"
+		}]
+	},
+	{
+		uid: "27f5a05a",
+		type: "item",
+		items: [{
+			item: "galacticraftplanets:mars_machine_t2 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "6f1aad29",
+		type: "item",
+		item: "galacticraftcore:enclosed 1 1",
+		count: 2
+	},
+	{
+		uid: "e6ac09ec",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

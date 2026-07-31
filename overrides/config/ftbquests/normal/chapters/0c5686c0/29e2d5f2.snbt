@@ -1,0 +1,20 @@
+{
+	x: 30.0d,
+	y: -1.0d,
+	dependencies: [
+		"293f82fd"
+	],
+	tasks: [{
+		uid: "89127d70",
+		type: "item",
+		items: [{
+			item: "galacticresearch:satellite_rocket"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "790e0d02",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}
