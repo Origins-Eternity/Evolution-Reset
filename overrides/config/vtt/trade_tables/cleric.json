@@ -87,12 +87,12 @@
             {
                 "action": "add",
                 "sell": {
-                    "id": "minecraft:quartz",
-                    "Count": 3
+                    "id": "minecraft:glowstone",
+                    "Count": 1
                 },
                 "buy": {
                     "id": "minecraft:emerald",
-                    "Count": 12
+                    "Count": 4
                 },
                 "CareerLevel": 4
             }

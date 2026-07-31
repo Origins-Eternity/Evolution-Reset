@@ -303,7 +303,10 @@ events.onPlayerFillBucket(function(event as PlayerFillBucketEvent) {
 
 
 events.onLivingExperienceDrop(function(event as LivingExperienceDropEvent) {
-    if (event.entityLivingBase.definition.name == "sanity.shadow_monster") {
-        event.droppedExperience = 50;
+    var entity as IEntityLivingBase = event.entityLivingBase;
+    if (entity instanceof IEntityMob) {
+        if (entity.definition.name == "sanity.shadow_monster") {
+            event.droppedExperience = 50;
+        }
     }
 });
