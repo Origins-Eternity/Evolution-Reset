@@ -108,8 +108,9 @@ for m, material in materials {
 }
 
 var wastes = [
-<minecraft:anvil>,
 <minecraft:rail>,
+<minecraft:anvil>,
+<minecraft:chest>,
 <minecraft:compass>,
 <minecraft:shield>,
 <minecraft:minecart>,
