@@ -41,7 +41,7 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
         <ore:artisansLens>,
         <ore:artisansNeedle>,
         <ore:artisansPunch>,
-        <ore:artisansmortar>,
+        <ore:artisansMortar>,
         <ore:artisansShears>,
         <ore:artisansSifter>,
         <ore:artisansSpanner>,
