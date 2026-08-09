@@ -17,6 +17,7 @@ HighOven.removeMixRecipe(<liquid:pigiron>);
 HighOven.removeMixRecipe(<liquid:steel>);
 Melting.removeRecipe(<liquid:clay>);
 Melting.removeRecipe(<liquid:obsidian>, <minecraft:obsidian>);
+Melting.removeEntityMelting(<entity:minecraft:villager>);
 
 function tic2Dying(output as IItemStack, input as IIngredient, time as int){
     Drying.removeRecipe(output);
@@ -127,5 +128,5 @@ var wastes = [
 ] as IItemStack[];
 
 for waste in wastes {
-    Blacklist.addRecipe(<liquid:iron>, waste);
+    Melting.removeRecipe(<liquid:iron>, waste);
 }
