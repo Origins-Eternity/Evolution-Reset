@@ -112,7 +112,7 @@ rule42=0,100,minecraft:log-4
 rule43=2,90,minecraft:wooden_slab-9
 
 # Dispenser (Sheep Spawn Egg)
-rule44=0,0,IInventory;minecraft:dispenser;minecraft:spawn_egg#{EntityTag:{id:sheep}}#91#0-0
+rule44=0,0,IInventory;minecraft:dispenser;minecraft:tnt#1#0-0
 
 rule45=1,0,minecraft:redstone_torch-5
 

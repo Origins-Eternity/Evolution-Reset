@@ -47,13 +47,8 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
         <ore:artisansSpanner>,
         <ore:artisansTrowel>,
         <ore:artisansTSquare>,
-        <ore:constructionWand>
-    ],
-    <ore:artisansToolslow> : [
-        <ore:artisansHammer>,
-        <ore:artisansTSquare>,
-        <ore:artisansCarver>,
-        <ore:constructionWand>
+        <ore:artisansAthame>,
+        <ore:artisansGrimoire>
     ],
     <ore:bagVacuum> : [
         <adpother:diamond_vacuum_bag>,
@@ -96,7 +91,6 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
     <ore:blockOne> : [
         <ore:oreCopper>,
         <ore:oreTin>,
-        <ore:oreAluminium>,
         <ore:oreLead>,
         <minecraft:stonebrick:*>
     ],
@@ -104,21 +98,22 @@ var oredictMap as IIngredient[][IOreDictEntry] = {
         <ore:oreGold>,
         <ore:oreIron>,
         <ore:oreSilver>,
+        <ore:oreNickel>,
         <ore:oreEmerald>,
         <ore:blockCopper>,
         <ore:blockTin>,
         <ore:blockBronze>,
         <ore:blockGold>,
-        <minecraft:piston>
+        <minecraft:piston>,
+        <minecraft:dispenser>,
+        <biomesoplenty:hard_ice>,
     ],
     <ore:blockThree> : [
         <ore:oreLead>,
         <ore:blockIron>,
-        <ore:oreNickel>,
         <ore:oreAluminum>,
         <ore:blockAluminium>,
         <minecraft:obsidian>,
-        <biomesoplenty:hard_ice>,
         <minecraft:sticky_piston>
     ],
     <ore:blockFour> : [
@@ -230,6 +225,9 @@ var erstones = [
 for i, erstone in erstones {
     var cobblestone = cobblestones[i];
     erstone.addAll(cobblestone);
+    for item in cobblestone.items {
+        <ore:erstone>.remove(item);
+    }
 }
 
 var tool = [

@@ -56,9 +56,7 @@ events.onPlayerClone(function(event as PlayerCloneEvent) {
 
 events.onPlayerBonemeal(function(event as PlayerBonemealEvent) {
     if(!event.world.isRemote()) {
-        if(event.player.currentItem.name == "item.dyePowder.white") {
-            event.cancel();
-        }
+        event.cancel();
     }
 });
 
@@ -213,13 +211,14 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     if (event.world.isRemote()) return;
     val entity = event.entity;
     if (event.world.dimension == 0 && entity instanceof IEntityLiving) {
+        var name = entity.definition.name;
         if (isNull(event.world.getCustomWorldData().reachingStage)) {
             if (entity instanceof IEntityMob) {
-                if (entity.definition.name == "sanity.shadow_monster") return;
+                if (name == "sanity.shadow_monster") return;
                 event.cancel();
             } else {
                 for mob in mobs {
-                    if (entity.definition.name == mob) {
+                    if (name == mob) {
                         event.cancel();
                         break;
                     }
@@ -227,14 +226,14 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
             }
         } else if (isNull(event.world.getCustomWorldData().reachingStage1)) {
             for mob in babymobs {
-                if (entity.definition.name == mob) {
+                if (name == mob) {
                     event.cancel();
                     break;
                 }
             }
         } else if (isNull(event.world.getCustomWorldData().reachingStage2)) {
             for mob in mutantmobs {
-                if (entity.definition.name == mob) {
+                if (name == mob) {
                     event.cancel();
                     break;
                 }
@@ -261,16 +260,18 @@ if(!event.player.creative) {
         if(isNull(player.currentItem)) {
             event.cancel();
         } else {
-            if(player.currentItem.definition.name.contains("axe")) return;
-            if(player.currentItem.definition.name.contains("shovel")) return;
-            if(player.currentItem.definition.name.contains("hoe")) return;
-            if(player.currentItem.definition.name.contains("hammer")) return;
-            if(player.currentItem.definition.name.contains("kama")) return;
-            if(player.currentItem.definition.name.contains("scythe")) return;
-            if(player.currentItem.definition.name.contains("excavator")) return;
-            if(player.currentItem.definition.name.contains("hatchet")) return;
-            if(player.currentItem.definition.name.contains("mattock")) return;
-            if(player.currentItem.definition.name.contains("shears")) return;
+            var item = player.currentItem;
+            if(item.definition.name.contains("axe")) return;
+            if(item.definition.name.contains("shovel")) return;
+            if(item.definition.name.contains("hoe")) return;
+            if(item.definition.name.contains("hammer")) return;
+            if(item.definition.name.contains("kama")) return;
+            if(item.definition.name.contains("scythe")) return;
+            if(item.definition.name.contains("excavator")) return;
+            if(item.definition.name.contains("hatchet")) return;
+            if(item.definition.name.contains("mattock")) return;
+            if(item.definition.name.contains("shears")) return;
+            if(item.definition.id == "immersiveengineering:drill") return;
             event.cancel();
         }
     }
@@ -291,16 +292,6 @@ var player = event.player;
         }
     }
 });
-
-events.onPlayerFillBucket(function(event as PlayerFillBucketEvent) {
-    if(!isNull(event.rayTraceResult) && event.rayTraceResult.isBlock) {
-        var id = event.block.definition.id;
-        if((id == "minecraft:ice") && (event.player.currentItem.definition.id != "minecraft:bucket")) {
-            event.cancel();
-        }
-    }
-});
-
 
 events.onLivingExperienceDrop(function(event as LivingExperienceDropEvent) {
     var entity as IEntityLivingBase = event.entityLivingBase;

@@ -2,12 +2,12 @@
 	"modify": [
 		{
 			"folder": "mods",
-			"fileName": "BSL_v10.0.zip",
+			"fileName": "BSL_v10.1.3.zip",
 			"newFolder": "shaderpacks"
 		},
 		{
 			"folder": "mods",
-			"fileName": "ComplementaryUnbound_r5.5.1.zip",
+			"fileName": "ComplementaryUnbound_r5.8.1.zip",
 			"newFolder": "shaderpacks"
 		},
 		{
@@ -17,7 +17,7 @@
 		},
 		{
 			"folder": "mods",
-			"fileName": "Evolution-Reset-Resource-Pack-1.2.7.zip",
+			"fileName": "Evolution-Reset-Resource-Pack-1.2.8.zip",
 			"newFolder": "resourcepacks"
 		},
 		{

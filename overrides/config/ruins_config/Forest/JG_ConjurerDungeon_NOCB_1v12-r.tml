@@ -46,10 +46,10 @@ rule5=0,100,minecraft:stonebrick-2
 rule6=0,100,minecraft:tnt
 
 # Blaze Floor Dispenser
-rule7=0,100,IInventory;minecraft:dispenser;minecraft:spawn_egg#{EntityTag:{id:creeper}}#0#0+minecraft:spawn_egg#{EntityTag:{id:zombie_pigman}}#0#1+minecraft:spawn_egg#{EntityTag:{id:skeleton}}#0#2+minecraft:spawn_egg#{EntityTag:{id:spider}}#0#3+minecraft:spawn_egg#{EntityTag:{id:zombie_villager}}#0#4+minecraft:spawn_egg#{EntityTag:{id:cave_spider}}#0#5-1
+rule7=0,100,IInventory;minecraft:dispenser;minecraft:tnt#0#0-1
 
 # Creeper Floor Dispenser
-rule8=0,100,IInventory;minecraft:dispenser;minecraft:spawn_egg#{EntityTag:{id:creeper}}#0#0+minecraft:spawn_egg#{EntityTag:{id:cave_spider}}#0#1+minecraft:spawn_egg#{EntityTag:{id:skeleton}}#0#2+minecraft:spawn_egg#{EntityTag:{id:zombie}}#0#3+minecraft:spawn_egg#{EntityTag:{id:silverfish}}#0#4+minecraft:spawn_egg#{EntityTag:{id:zombie_villager}}#0#5-1
+rule8=0,100,IInventory;minecraft:dispenser;minecraft:tnt#0#0-1
 
 # Cobblestone Wall (mossy/not)
 rule9=0,100,minecraft:cobblestone_wall-0,minecraft:cobblestone_wall-1

@@ -45,10 +45,10 @@ rule5=0,100,minecraft:sandstone-2
 rule6=0,100,minecraft:tnt
 
 # Blaze Floor Dispenser
-rule7=0,100,IInventory;minecraft:dispenser;minecraft:spawn_egg#{EntityTag:{id:"minecraft:skeleton"}}#0#0+minecraft:spawn_egg#{EntityTag:{id:"minecraft:skeleton"}}#0#1+minecraft:spawn_egg#{EntityTag:{id:"minecraft:skeleton"}}#0#2+minecraft:spawn_egg#{EntityTag:{id:"minecraft:skeleton"}}#0#3+minecraft:spawn_egg#{EntityTag:{id:"minecraft:skeleton"}}#0#4+minecraft:spawn_egg#{EntityTag:{id:"minecraft:skeleton"}}#0#5-1
+rule7=0,100,IInventory;minecraft:dispenser;minecraft:tnt#0#0-1
 
 # Creeper Floor Dispenser
-rule8=0,100,IInventory;minecraft:dispenser;minecraft:spawn_egg#{EntityTag:{id:"minecraft:creeper"}}#0#0+minecraft:spawn_egg#{EntityTag:{id:"minecraft:creeper"}}#0#1+minecraft:spawn_egg#{EntityTag:{id:"minecraft:creeper"}}#0#2+minecraft:spawn_egg#{EntityTag:{id:"minecraft:creeper"}}#0#3+minecraft:spawn_egg#{EntityTag:{id:"minecraft:creeper"}}#0#4+minecraft:spawn_egg#{EntityTag:{id:"minecraft:creeper"}}#0#5-1
+rule8=0,100,IInventory;minecraft:dispenser;minecraft:tnt#0#0-1
 
 # Chiseled Sandstone (wall supports)
 rule9=0,100,minecraft:sandstone-1

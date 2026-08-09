@@ -1,0 +1,203 @@
+{
+  "debug": false,
+  "enableCraftingSound": true,
+  "globalCraftingTimeMultiplier": 1.0,
+  "containers": [
+    {
+      "containerName": "minecraft:inventory",
+      "enabled": true,
+      "guiContainerClassName": "net.minecraft.client.gui.inventory.GuiInventory",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-4",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_inventory.png",
+      "overlayX": 134,
+      "overlayY": 29,
+      "overlayWidth": 18,
+      "overlayHeight": 15
+    },
+    {
+      "containerName": "minecraft:crafting_table",
+      "enabled": true,
+      "guiContainerClassName": "net.minecraft.client.gui.inventory.GuiCrafting",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-9",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 89,
+      "overlayY": 35,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "minecraft:crafting_table",
+      "enabled": true,
+      "guiContainerClassName": "shadows.fastbench.gui.GuiFastBench",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-9",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 89,
+      "overlayY": 35,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "cyclicmagic:block_workbench",
+      "enabled": true,
+      "guiContainerClassName": "com.lothrazar.cyclicmagic.compat.fastbench.GuiFastWorkbench",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-9",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 89,
+      "overlayY": 35,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "slabmachines:workbench_slab",
+      "enabled": true,
+      "guiContainerClassName": "com.mrbysco.slabmachines.gui.workbench.fast.GuiFastWorkbenchSlab",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-9",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 89,
+      "overlayY": 35,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "slabmachines:crafting_station_slab",
+      "enabled": true,
+      "guiContainerClassName": "com.mrbysco.slabmachines.gui.compat.tcon.GuiCraftingStationSlab",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-9",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 89,
+      "overlayY": 35,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "craftingstation:crafting_station",
+      "enabled": true,
+      "guiContainerClassName": "com.tfar.craftingstation.client.CraftingStationScreen",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-9",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 89,
+      "overlayY": 35,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "tconstruct:craftingstation",
+      "enabled": true,
+      "guiContainerClassName": "slimeknights.tconstruct.tools.common.client.GuiCraftingStation",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-9",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 89,
+      "overlayY": 35,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "tconstruct:stenciltable",
+      "enabled": true,
+      "guiContainerClassName": "slimeknights.tconstruct.tools.common.client.GuiStencilTable",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 1,
+      "ingredientSlots": "0",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 72,
+      "overlayY": 35,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "tconstruct:toolforge",
+      "enabled": true,
+      "guiContainerClassName": "slimeknights.tconstruct.tools.common.client.GuiToolForge",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 6,
+      "ingredientSlots": "0-5",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 89,
+      "overlayY": 38,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "sevendaystomine:workbench",
+      "enabled": true,
+      "guiContainerClassName": "nuparu.sevendaystomine.client.gui.inventory.GuiWorkbench",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-25",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_default.png",
+      "overlayX": 100,
+      "overlayY": 44,
+      "overlayWidth": 24,
+      "overlayHeight": 16
+    },
+    {
+      "containerName": "minecraft:inventory",
+      "enabled": true,
+      "guiContainerClassName": "baubles.client.gui.GuiPlayerExpanded",
+      "craftingTimeMultiplier": 1.0,
+      "containerMultiplier": 1.0,
+      "outputSlot": 0,
+      "ingredientSlots": "1-4",
+      "drawCraftingOverlay": true,
+      "overlayTexture": "crafttakestime:textures/gui/crafting_overlay_inventory.png",
+      "overlayX": 124,
+      "overlayY": 59,
+      "overlayWidth": 18,
+      "overlayHeight": 15
+    }
+  ],
+  "ingredientConfig": {
+    "modCraftingTimeMultipliers": {
+      "minecraft": 1.0
+    },
+    "itemCraftingTimeMultipliers": {
+      "minecraft:stick": 1.0
+    }
+  },
+  "outputConfig": {
+    "modCraftingTimeMultipliers": {
+      "minecraft": 1.0
+    },
+    "itemCraftingTimeMultipliers": {
+      "minecraft:stick": 1.0
+    }
+  }
+}

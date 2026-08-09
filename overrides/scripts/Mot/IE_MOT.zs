@@ -74,17 +74,23 @@ for i, slag in slags {
 	var ore = ores[i];
 
 	ore.add(slag);
-	Crusher.removeRecipe(dust);
+	for item in ore.items {
+		Crusher.removeRecipesForInput(item);
+	}
 	Crusher.addRecipe(dust * 3, ore, 2048);
 	BlastFurnace.addRecipe(dust * 2, ore, 1600);
 }
 
 Refinery.removeRecipe(<liquid:biodiesel>);
 Refinery.addRecipe(<liquid:biodiesel> * 20, <liquid:plantoil> * 16, <liquid:ethanol> * 8, 100);
+
 AlloySmelter.addRecipe(<pyrotech:material:16> * 10, <minecraft:gunpowder>, <minecraft:stonebrick> * 2, 1600);
 AlloySmelter.addRecipe(<pyrotech:material:5> * 5, <pyrotech:material:4>, <pyrotech:material:4>, 1600);
-ArcFurnace.addRecipe(<ercore:tungsten_carbide_dust>, <ore:dustTungsten>, null, 160, 1000, [<ore:dustCoke>], "Alloying");
-ArcFurnace.addRecipe(<ercore:tungsten_steel_dust> * 4, <ore:dustTungstencarbide> * 3, null, 240, 1600, [<ore:dustCobalt>], "Alloying");
+
+ArcFurnace.addRecipe(<ercore:tungsten_carbide_dust>, <ore:dustTungsten>, null, 300, 1200, [<ore:dustCoke>], "Alloying");
+ArcFurnace.addRecipe(<ercore:tungsten_steel_dust> * 4, <ore:dustTungstencarbide> * 3, null, 600, 1400, [<ore:dustCobalt>], "Alloying");
+
 MetalPress.addRecipe(<minecraft:light_weighted_pressure_plate>, <minecraft:gold_block>, <immersiveengineering:mold>, 1000);
 MetalPress.addRecipe(<minecraft:heavy_weighted_pressure_plate>, <ore:blockSteel>, <immersiveengineering:mold>, 2000);
+
 Excavator.addMineral("Wolframite", 14, 0.06, ["oreTungsten", "oreIron", "oreTin"], [0.54, 0.23, 0.23], [0]);

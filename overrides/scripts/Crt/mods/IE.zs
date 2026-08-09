@@ -27,7 +27,8 @@ var modrecipes = [
 <immersiveengineering:stone_decoration:10>,
 <immersiveengineering:tool>,
 <immersiveengineering:storage>,
-<immersiveengineering:treated_wood>
+<immersiveengineering:treated_wood>,
+<immersiveengineering:metal_device1:7>
 ] as IItemStack[];
 
 for items in modrecipes {
@@ -73,6 +74,11 @@ recipes.addShaped(<immersiveengineering:metal_device1:13>,
 [[<ore:blockGlass>, <ore:electronTube>, <ore:blockGlass>],
 [<ore:blockGlass>, <ore:runeSpringB>, <ore:blockGlass>],
 [<ore:plankTreatedWood>, <immersiveengineering:material:8>, <ore:plankTreatedWood>]]);
+
+recipes.addShaped(<immersiveengineering:metal_device1:7>,
+[[<ore:scaffoldingSteel>, <ore:fenceSteel>, <ore:scaffoldingSteel>],
+[<ore:scaffoldingSteel>, <ore:fenceSteel>, <ore:scaffoldingSteel>],
+[<immersiveengineering:metal_decoration0:4>, <pyrotech:sawmill_blade_obsidian>, <immersiveengineering:metal_decoration0:4>]]);
 
 recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:ingotSteel>, <immersiveengineering:metal_device0:1>);
 recipes.replaceAllOccurences(<ore:ingotSteel>, <ore:ingotTungsten>, <immersiveengineering:metal_device0:2>);
