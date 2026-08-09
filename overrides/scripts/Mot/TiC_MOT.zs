@@ -6,6 +6,7 @@ import mods.tconstruct.Alloy;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Drying;
 import mods.tconstruct.Melting;
+import mods.tcomplement.Blacklist;
 import mods.tcomplement.highoven.HighOven;
 
 Drying.removeRecipe(<minecraft:leather>);
@@ -103,4 +104,28 @@ val outputs = [
 for m, material in materials {
     var output = outputs[m];
     Melting.addRecipe(<liquid:clay> * output, material);
+}
+
+var wastes = [
+<minecraft:anvil>,
+<minecraft:rail>,
+<minecraft:compass>,
+<minecraft:shield>,
+<minecraft:minecart>,
+<minecraft:cauldron>,
+<minecraft:iron_bars>,
+<minecraft:iron_door>,
+<minecraft:golden_rail>,
+<minecraft:iron_trapdoor>,
+<minecraft:tripwire_hook>,
+<minecraft:detector_rail>,
+<minecraft:activator_rail>,
+<minecraft:iron_horse_armor>,
+<immersiveengineering:tool:1>,
+<futuremc:smithing_table>,
+<futuremc:chain>
+] as IItemStack[];
+
+for waste in wastes {
+    Blacklist.addRecipe(<liquid:iron>, waste);
 }
