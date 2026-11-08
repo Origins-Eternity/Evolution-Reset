@@ -271,3 +271,4 @@ recipes.addShapeless(<realistictorches:torch_lit> * 2, [<realistictorches:torch_
 recipes.addShapeless(<realistictorches:torch_lit> * 2, [<realistictorches:torch_smoldering>, <realistictorches:torch_lit>]);
 recipes.addShapeless(<ercore:herbs>, [<minecraft:bowl>, <pyrotech:strange_tuber>, <pyrotech:material:12>, <botania:petal:*>]);
 recipes.addShapeless(<ercore:cement_powder> * 4, [<ercore:clinker>, <ercore:clinker>, <ercore:clinker>, <pyrotech:material:22>]);
+recipes.addShapeless(<ercore:rock>, [<pyrotech:rock>, <pyrotech:rock>, <pyrotech:rock>, <pyrotech:rock>]);
