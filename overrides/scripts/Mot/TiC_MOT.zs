@@ -108,26 +108,35 @@ for m, material in materials {
 }
 
 var wastes = [
-<minecraft:rail>,
 <minecraft:anvil>,
 <minecraft:chest>,
-<minecraft:compass>,
+<minecraft:bucket>,
+<minecraft:hopper>,
 <minecraft:shield>,
+<minecraft:compass>,
 <minecraft:minecart>,
 <minecraft:cauldron>,
 <minecraft:iron_bars>,
 <minecraft:iron_door>,
-<minecraft:golden_rail>,
 <minecraft:iron_trapdoor>,
 <minecraft:tripwire_hook>,
-<minecraft:detector_rail>,
-<minecraft:activator_rail>,
-<minecraft:iron_horse_armor>,
 <immersiveengineering:tool:1>,
 <futuremc:smithing_table>,
 <futuremc:chain>
 ] as IItemStack[];
 
 for waste in wastes {
-    Melting.removeRecipe(<liquid:iron>, waste);
+    Blacklist.addRecipe(<liquid:iron>, waste);
 }
+
+function addIronRecycle(input as IItemStack, mount as int) {
+    Melting.removeRecipe(<liquid:iron>, input);
+    HighOven.addMeltingOverride(<liquid:iron> * mount, input);
+}
+
+addIronRecycle(<minecraft:rail>, 54);
+addIronRecycle(<minecraft:detector_rail>, 144);
+addIronRecycle(<minecraft:activator_rail>, 144);
+addIronRecycle(<minecraft:iron_horse_armor>, 576);
+
+Casting.addBasinRecipe(<pyrotech:living_tar>, null, <liquid:living_tar>, 1000);

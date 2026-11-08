@@ -133,6 +133,7 @@ var worktable_recipes = [
 "immersiveengineering:treated_wood/treated_wood_cycle2", 
 "crafttweaker:ladder", 
 "crafttweaker:tooltables", 
+"crafttweaker:armorstation", 
 "crafttweaker:ie_hammer", 
 "crafttweaker:bow_drill", 
 "tconstruct:tools/pattern", 

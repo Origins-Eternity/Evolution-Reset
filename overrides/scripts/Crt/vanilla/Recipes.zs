@@ -1,5 +1,5 @@
 #
-#priority 3
+#priority 1
 import crafttweaker.item.IItemStack;
 
 recipes.replaceAllOccurences(<minecraft:furnace>, <pyrotech:furnace_core>);

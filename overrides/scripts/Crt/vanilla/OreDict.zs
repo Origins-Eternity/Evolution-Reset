@@ -188,6 +188,8 @@ for oredict in oredictMap {
     OredictUtil.addOredictIngredients(oredict, ingredients);
 }
 
+<ore:plateSteel>.remove(<galacticraftcore:basic_item:9>);
+
 <ore:string>.add(<pyrotech:material:14>);
 <ore:chest>.add(<immersiveengineering:wooden_device0>);
 <ore:grout>.add(<tconstruct:soil>);

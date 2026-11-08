@@ -162,81 +162,81 @@ events.onPlayerRespawn(function(event as PlayerRespawnEvent) {
 });
 
 var mobs = [
-"Slime",
-"tconstruct.blueslime",
-"pyrotech.mud",
-"ZombieHorse",
-"SkeletonHorse",
-"zombiechicken",
-"zombiepig"
+    "Slime",
+    "ZombieHorse",
+    "SkeletonHorse",
+    "tconstruct.blueslime",
+    "pyrotech.mud",
+    "zombiepig",
+    "zombiechicken"
 ] as string[];
 
 var babymobs = [
-"babycreeper",
-"babyenderman",
-"babyguardian",
-"babyirongolem",
-"babyocelot",
-"babyshulker",
-"babyshulkerbullet",
-"babysnowman",
-"babyspider",
-"babycavespider",
-"babysquid",
-"babywitch",
-"babywither",
-"babyskeleton",
-"babyzombie"
+    "babycreeper",
+    "babyenderman",
+    "babyguardian",
+    "babyirongolem",
+    "babyocelot",
+    "babyshulker",
+    "babyshulkerbullet",
+    "babysnowman",
+    "babyspider",
+    "babycavespider",
+    "babysquid",
+    "babywitch",
+    "babywither",
+    "babyskeleton",
+    "babyzombie"
 ] as string[];
 
 var mutantmobs = [
-"mutantbeasts.body_part",
-"mutantbeasts.chemical_x",
-"mutantbeasts.creeper_minion",
-"mutantbeasts.creeper_minion_egg",
-"mutantbeasts.endersoul_clone",
-"mutantbeasts.endersoul_fragment",
-"mutantbeasts.mutant_arrow",
-"mutantbeasts.mutant_creeper",
-"mutantbeasts.mutant_enderman",
-"mutantbeasts.mutant_skeleton",
-"mutantbeasts.mutant_snow_golem",
-"mutantbeasts.mutant_zombie",
-"mutantbeasts.skull_spirit",
-"mutantbeasts.spider_pig",
-"mutantbeasts.throwable_block"
+    "mutantbeasts.body_part",
+    "mutantbeasts.chemical_x",
+    "mutantbeasts.creeper_minion",
+    "mutantbeasts.creeper_minion_egg",
+    "mutantbeasts.endersoul_clone",
+    "mutantbeasts.endersoul_fragment",
+    "mutantbeasts.mutant_arrow",
+    "mutantbeasts.mutant_creeper",
+    "mutantbeasts.mutant_enderman",
+    "mutantbeasts.mutant_skeleton",
+    "mutantbeasts.mutant_snow_golem",
+    "mutantbeasts.mutant_zombie",
+    "mutantbeasts.skull_spirit",
+    "mutantbeasts.spider_pig",
+    "mutantbeasts.throwable_block"
 ] as string[];
 
 events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
-    if (event.world.isRemote()) return;
-    val entity = event.entity;
-    if (event.world.dimension == 0 && entity instanceof IEntityLiving) {
+    var entity = event.entity;
+    if (entity instanceof IEntityLiving) {
         var name = entity.definition.name;
-        if (isNull(event.world.getCustomWorldData().reachingStage)) {
-            if (entity instanceof IEntityMob) {
-                if (name == "sanity.shadow_monster") return;
-                event.cancel();
-            } else {
-                for mob in mobs {
-                    if (name == mob) {
-                        event.cancel();
-                        break;
-                    }
-                }
-            }
-        } else if (isNull(event.world.getCustomWorldData().reachingStage1)) {
-            for mob in babymobs {
-                if (name == mob) {
+        if (name != "sanity.shadow_monster") {
+            val data = event.world.getCustomWorldData();
+            if (isNull(data.reachingStage)) {
+                if (entity instanceof IEntityMob) {
                     event.cancel();
-                    break;
+                    entity.setDead();
                 }
-            }
-        } else if (isNull(event.world.getCustomWorldData().reachingStage2)) {
-            for mob in mutantmobs {
-                if (name == mob) {
+                if (mobs.contains(name)) {
                     event.cancel();
-                    break;
+                    entity.setDead();
                 }
+                return;
+            }
+            if (isNull(data.reachingStage1)) {
+                if (babymobs.contains(name) || mutantmobs.contains(name)) {
+                    event.cancel();
+                    entity.setDead();
+                }
+                return;
+            }
+            if (isNull(data.reachingStage2)) {
+                if (mutantmobs.contains(name)) {
+                    event.cancel();
+                    entity.setDead();
+                }
+                return;
             }
         }
     }

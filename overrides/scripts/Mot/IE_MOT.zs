@@ -8,6 +8,7 @@ import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.Excavator;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.Refinery;
+import mods.immersiveengineering.Mixer;
 
 var slags = [
 <pyrotech:generated_pile_slag_aluminum>,
@@ -94,3 +95,5 @@ MetalPress.addRecipe(<minecraft:light_weighted_pressure_plate>, <minecraft:gold_
 MetalPress.addRecipe(<minecraft:heavy_weighted_pressure_plate>, <ore:blockSteel>, <immersiveengineering:mold>, 2000);
 
 Excavator.addMineral("Wolframite", 14, 0.06, ["oreTungsten", "oreIron", "oreTin"], [0.54, 0.23, 0.23], [0]);
+
+Mixer.addRecipe(<liquid:living_tar> * 1000, <liquid:coal_tar> * 1000, [<minecraft:netherrack>], 3000);
