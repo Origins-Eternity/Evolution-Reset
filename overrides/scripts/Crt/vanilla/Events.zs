@@ -211,7 +211,7 @@ events.onEntityJoinWorld(function(event as EntityJoinWorldEvent) {
     var entity = event.entity;
     if (entity instanceof IEntityLiving) {
         var name = entity.definition.name;
-        if (name != "sanity.shadow_monster") {
+        if (!event.world.isRemote() && name != "sanity.shadow_monster") {
             val data = event.world.getCustomWorldData();
             if (isNull(data.reachingStage)) {
                 if (entity instanceof IEntityMob) {

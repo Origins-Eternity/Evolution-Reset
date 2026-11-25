@@ -44,12 +44,13 @@ for items in compacting_bin_recipes {
     CompactingBin.removeRecipes(items);
 }
 
-for recipe in recipes.all {
-    if (recipe.fullResourceDomain.contains("minecraft") || recipe.fullResourceDomain.contains("pyrotech") || recipe.fullResourceDomain.contains("waystones")) {
-        var recipelocation = recipe.fullResourceDomain;
-        Worktable.whitelistVanillaRecipes([recipelocation]);
-    }
-}
+Worktable.whitelistVanillaRecipes([
+  "minecraft:*",
+  "pyrotech:*",
+  "waystones:*",
+  "toughasnails:*",
+  "adchimneys:*"
+]);
 
 var items = [
 <pyrotech:wither_forge>,
